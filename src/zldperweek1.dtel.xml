@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZLDPERWEEK1</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>ZLDPERWEEK1</DOMNAME>
+    <HEADLEN>14</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>14</SCRLEN2>
+    <SCRLEN3>14</SCRLEN3>
+    <DDTEXT>LD %(Per Week)</DDTEXT>
+    <REPTEXT>LD %(Per Week)</REPTEXT>
+    <SCRTEXT_S>LD %(Per W</SCRTEXT_S>
+    <SCRTEXT_M>LD %(Per Week)</SCRTEXT_M>
+    <SCRTEXT_L>LD %(Per Week)</SCRTEXT_L>
+    <DTELMASTER>E</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+  </asx:values>
+ </asx:abap>
+</abapGit>

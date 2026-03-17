@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SFPI" serializer_version="v1.0.0">
+ <asx:abap version="1.0" xmlns:asx="http://www.sap.com/abapxml">
+  <asx:values>
+   <VERSION>1</VERSION>
+   <TYPE/>
+   <INTERFACE href="#o1"/>
+   <INTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID/>
+     <TEXT>INTERFACE FOR PAYMENT_VOUCHER_NEW</TEXT>
+    </FPINTERFACET>
+   </INTERFACET>
+  </asx:values>
+  <asx:heap xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:abap="http://www.sap.com/abapxml/types/built-in" xmlns:cls="http://www.sap.com/abapxml/classes/global" xmlns:dic="http://www.sap.com/abapxml/types/dictionary">
+   <cls:CL_FP_INTERFACE_DATA id="o1">
+    <CL_FP_INTERFACE_DATA classVersion="1">
+     <CODING href="#o5"/>
+     <PARAMETERS href="#o4"/>
+     <GLOBAL_DEFINITIONS href="#o3"/>
+     <REFERENCE_FIELDS href="#o2"/>
+     <XSD_DEFINITIONS/>
+    </CL_FP_INTERFACE_DATA>
+   </cls:CL_FP_INTERFACE_DATA>
+   <cls:CL_FP_REFERENCE_FIELDS id="o2">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_REFERENCE_FIELDS classVersion="1">
+     <REFERENCE_FIELDS/>
+    </CL_FP_REFERENCE_FIELDS>
+   </cls:CL_FP_REFERENCE_FIELDS>
+   <cls:CL_FP_GLOBAL_DEFINITIONS id="o3">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_GLOBAL_DEFINITIONS classVersion="1">
+     <GLOBAL_DATA>
+      <SFPGDATA>
+       <NAME>WA_FINAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZSU_FI_PAYMENT_VOUCHER</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_DMBTR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>DMBTR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_NET</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>DMBTR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_BSAK</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_BSAK</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_BSAK</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_BSAK</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_TOTAL1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BSAK-WRBTR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_INVNO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>P_WAERS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BKPF-WAERS</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_TOTAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BSAK-WRBTR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_BSAK1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_BSAK1</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_BSAK1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_BSAK1</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_FINAL_N</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_FINAL1</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_FINAL_N</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_FINAL1</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_NET</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>DMBTR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_TOT_LINES</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>I</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_WORD</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+     </GLOBAL_DATA>
+     <TYPES>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>TYPES : BEGIN OF ty_bsak,</FPCLINE>
+      <FPCLINE>          bukrs TYPE bsak-bukrs,</FPCLINE>
+      <FPCLINE>          lifnr TYPE bsak-lifnr,</FPCLINE>
+      <FPCLINE>          augbl TYPE bsak-augbl,</FPCLINE>
+      <FPCLINE>          gjahr TYPE bsak-gjahr,</FPCLINE>
+      <FPCLINE>          belnr TYPE bsak-belnr,</FPCLINE>
+      <FPCLINE>          blart TYPE bsak-blart,</FPCLINE>
+      <FPCLINE>          dmbtr TYPE bsak-dmbtr,</FPCLINE>
+      <FPCLINE>          budat TYPE bsak-budat,</FPCLINE>
+      <FPCLINE>          wrbtr TYPE bsak-wrbtr,</FPCLINE>
+      <FPCLINE>        END OF ty_bsak,</FPCLINE>
+      <FPCLINE>        tt_bsak TYPE STANDARD TABLE OF ty_bsak.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>TYPES : BEGIN OF ty_bsak1,</FPCLINE>
+      <FPCLINE>          bukrs TYPE bsak-bukrs,</FPCLINE>
+      <FPCLINE>          lifnr TYPE bsak-lifnr,</FPCLINE>
+      <FPCLINE>          augbl TYPE bsak-augbl,</FPCLINE>
+      <FPCLINE>          gjahr TYPE bsak-gjahr,</FPCLINE>
+      <FPCLINE>          belnr TYPE bsak-belnr,</FPCLINE>
+      <FPCLINE>          blart TYPE bsak-blart,</FPCLINE>
+      <FPCLINE>          dmbtr TYPE bsak-dmbtr,</FPCLINE>
+      <FPCLINE>          budat TYPE bsak-budat,</FPCLINE>
+      <FPCLINE>          wrbtr TYPE bsak-wrbtr,</FPCLINE>
+      <FPCLINE>        END OF ty_bsak1,</FPCLINE>
+      <FPCLINE>        tt_bsak1 TYPE STANDARD TABLE OF ty_bsak1.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>TYPES : BEGIN OF ty_final1,</FPCLINE>
+      <FPCLINE>          belnr  TYPE bsak-belnr,</FPCLINE>
+      <FPCLINE>          bldat  TYPE bsak-bldat,</FPCLINE>
+      <FPCLINE>          dmbtr  TYPE bsak-dmbtr,</FPCLINE>
+      <FPCLINE>          dmbtr1 TYPE bsak-dmbtr,</FPCLINE>
+      <FPCLINE>          xblnr  TYPE bkpf-xblnr,</FPCLINE>
+      <FPCLINE>        END OF ty_final1,</FPCLINE>
+      <FPCLINE>        tt_final1 TYPE STANDARD TABLE OF ty_final1.</FPCLINE>
+     </TYPES>
+     <FIELDSYMBOLS/>
+    </CL_FP_GLOBAL_DEFINITIONS>
+   </cls:CL_FP_GLOBAL_DEFINITIONS>
+   <cls:CL_FP_PARAMETERS id="o4">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_PARAMETERS classVersion="1">
+     <IMPORT_PARAMETERS>
+      <SFPIOPAR>
+       <NAME>WA_FINAL1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZSU_FI_PAYMENT_VOUCHER</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>BELNR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BKPF-BELNR</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>WAERS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BKPF-WAERS</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IT_FINAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZSUFI_PV1</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+     </IMPORT_PARAMETERS>
+     <EXPORT_PARAMETERS/>
+     <TABLE_PARAMETERS/>
+     <EXCEPTIONS/>
+    </CL_FP_PARAMETERS>
+   </cls:CL_FP_PARAMETERS>
+   <cls:CL_FP_CODING id="o5">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_CODING classVersion="1">
+     <INPUT_PARAMETERS/>
+     <OUTPUT_PARAMETERS/>
+     <INITIALIZATION>
+      <FPCLINE>*BREAK-POINT.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  SELECT BUKRS</FPCLINE>
+      <FPCLINE>         LIFNR</FPCLINE>
+      <FPCLINE>         AUGBL</FPCLINE>
+      <FPCLINE>         GJAHR</FPCLINE>
+      <FPCLINE>         BELNR</FPCLINE>
+      <FPCLINE>         BLART</FPCLINE>
+      <FPCLINE>         DMBTR</FPCLINE>
+      <FPCLINE>         BUDAT</FPCLINE>
+      <FPCLINE>         WRBTR</FPCLINE>
+      <FPCLINE>    FROM BSAK</FPCLINE>
+      <FPCLINE>    INTO TABLE IT_BSAK</FPCLINE>
+      <FPCLINE>    WHERE BLART IN (&apos;KR&apos;,&apos;RE&apos;)</FPCLINE>
+      <FPCLINE>    AND AUGBL = WA_FINAL1-BELNR</FPCLINE>
+      <FPCLINE>    AND GJAHR = WA_FINAL1-GJAHR</FPCLINE>
+      <FPCLINE>    AND BUKRS = &apos;SU00&apos;.</FPCLINE>
+      <FPCLINE>    DELETE ADJACENT DUPLICATES FROM IT_BSAK COMPARING ALL FIELDS.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  SELECT BUKRS</FPCLINE>
+      <FPCLINE>         LIFNR</FPCLINE>
+      <FPCLINE>         AUGBL</FPCLINE>
+      <FPCLINE>         GJAHR</FPCLINE>
+      <FPCLINE>         BELNR</FPCLINE>
+      <FPCLINE>         BLART</FPCLINE>
+      <FPCLINE>    SUM( DMBTR )</FPCLINE>
+      <FPCLINE>         BUDAT</FPCLINE>
+      <FPCLINE>    FROM BSAK</FPCLINE>
+      <FPCLINE>    INTO TABLE IT_BSAK1</FPCLINE>
+      <FPCLINE>    WHERE BLART IN (&apos;KR&apos;,&apos;RE&apos;,&apos;KG&apos;)</FPCLINE>
+      <FPCLINE>    AND AUGBL = WA_FINAL1-BELNR</FPCLINE>
+      <FPCLINE>    AND GJAHR = WA_FINAL1-GJAHR</FPCLINE>
+      <FPCLINE>    AND BUKRS EQ &apos;SU00&apos;</FPCLINE>
+      <FPCLINE>    GROUP BY AUGBL BUKRS LIFNR GJAHR BELNR BLART BUDAT.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>       SELECT BUKRS ,</FPCLINE>
+      <FPCLINE>              GJAHR,</FPCLINE>
+      <FPCLINE>              BELNR,</FPCLINE>
+      <FPCLINE>              BLART,</FPCLINE>
+      <FPCLINE>              BUDAT,</FPCLINE>
+      <FPCLINE>              XBLNR</FPCLINE>
+      <FPCLINE>         FROM BKPF</FPCLINE>
+      <FPCLINE>         INTO TABLE @DATA(IT_BKPF)</FPCLINE>
+      <FPCLINE>         FOR ALL ENTRIES IN @IT_BSAK1</FPCLINE>
+      <FPCLINE>         WHERE BELNR = @IT_BSAK1-BELNR</FPCLINE>
+      <FPCLINE>         AND GJAHR = @IT_BSAK1-GJAHR.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>       LOOP AT IT_BSAK1 INTO WA_BSAK1.</FPCLINE>
+      <FPCLINE>         IF sy-tabix = 1.</FPCLINE>
+      <FPCLINE>        WA_FINAL_N-BELNR = WA_BSAK1-BELNR.</FPCLINE>
+      <FPCLINE>         ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        WA_FINAL_N-BLDAT = WA_BSAK1-BUDAT.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        IF WA_BSAK1-BLART = &apos;KR&apos;.</FPCLINE>
+      <FPCLINE>          WA_FINAL_N-DMBTR = WA_BSAK1-DMBTR.</FPCLINE>
+      <FPCLINE>        ENDIF.</FPCLINE>
+      <FPCLINE>           IF WA_BSAK1-BLART = &apos;KG&apos;.</FPCLINE>
+      <FPCLINE>          WA_FINAL_N-DMBTR1 = WA_BSAK1-DMBTR.</FPCLINE>
+      <FPCLINE>        ENDIF.</FPCLINE>
+      <FPCLINE>        ON CHANGE OF WA_BSAK1-AUGBL.</FPCLINE>
+      <FPCLINE>  READ TABLE IT_BKPF INTO DATA(WA_BKPF) WITH KEY BELNR = WA_BSAK1-BELNR.</FPCLINE>
+      <FPCLINE>        WA_FINAL_N-XBLNR = WA_BKPF-XBLNR.</FPCLINE>
+      <FPCLINE>        ENDON.</FPCLINE>
+      <FPCLINE>        APPEND WA_FINAL_N TO IT_FINAL_N.</FPCLINE>
+      <FPCLINE>         ENDLOOP.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>          DESCRIBE TABLE IT_FINAL_N LINES GV_TOT_LINES.</FPCLINE>
+      <FPCLINE>          IF GV_TOT_LINES  NE 1.</FPCLINE>
+      <FPCLINE>           DELETE IT_FINAL_N WHERE DMBTR1 EQ SPACE.</FPCLINE>
+      <FPCLINE>          ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>         GV_NET = WA_FINAL_N-DMBTR -  WA_FINAL_N-DMBTR1.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>         DATA:str TYPE char255.</FPCLINE>
+      <FPCLINE>*BREAK-POINT.</FPCLINE>
+      <FPCLINE>str = &apos;شركة دلفال فلو كونترولز الشرق الأوسط المحدودة&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>lv_invno = REVERSE( str ).</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>loop AT IT_BSAK INTO WA_BSAK.</FPCLINE>
+      <FPCLINE>gv_total = gv_total + WA_BSAK-DMBTR.</FPCLINE>
+      <FPCLINE>gv_total1 = gv_total1 + WA_BSAK-WRBTR.</FPCLINE>
+      <FPCLINE>ENDLOOP.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>DATA ls_word TYPE spell.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*CLEAR ls_word.</FPCLINE>
+      <FPCLINE>IF  WA_FINAL1-CURR = &apos;SAR&apos;.               &quot;&quot;&quot;&quot;For SAR only</FPCLINE>
+      <FPCLINE>  CALL FUNCTION &apos;SPELL_AMOUNT&apos;</FPCLINE>
+      <FPCLINE>    EXPORTING</FPCLINE>
+      <FPCLINE>      amount    = gv_net</FPCLINE>
+      <FPCLINE>      currency  = WA_FINAL1-CURR</FPCLINE>
+      <FPCLINE>*      FILLER    = &apos; &apos;</FPCLINE>
+      <FPCLINE>*      language  = sy-langu</FPCLINE>
+      <FPCLINE>      language  = &apos;E&apos;</FPCLINE>
+      <FPCLINE>    IMPORTING</FPCLINE>
+      <FPCLINE>      in_words  = ls_word</FPCLINE>
+      <FPCLINE>    EXCEPTIONS</FPCLINE>
+      <FPCLINE>      not_found = 1</FPCLINE>
+      <FPCLINE>      too_large = 2</FPCLINE>
+      <FPCLINE>      OTHERS    = 3.</FPCLINE>
+      <FPCLINE>  IF sy-subrc &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>* Implement suitable error handling here</FPCLINE>
+      <FPCLINE> ENDIF.</FPCLINE>
+      <FPCLINE>IF ls_word-decword = &apos;ZERO&apos;.</FPCLINE>
+      <FPCLINE>  CONCATENATE  &apos;SAUDI RIYAL&apos;ls_word-word &apos;ONLY&apos; INTO</FPCLINE>
+      <FPCLINE>  GV_WORD SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE>ELSE.</FPCLINE>
+      <FPCLINE> CONCATENATE &apos;SAUDI RIYAL&apos;  ls_word-word &apos;AND&apos;</FPCLINE>
+      <FPCLINE>             ls_word-decword &apos;HALALAS ONLY&apos; INTO GV_WORD SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ELSEIF WA_FINAL1-CURR = &apos;USD&apos;.     &quot;&quot;fOR USD CURR.</FPCLINE>
+      <FPCLINE>  CALL FUNCTION &apos;SPELL_AMOUNT&apos;</FPCLINE>
+      <FPCLINE>    EXPORTING</FPCLINE>
+      <FPCLINE>      amount    = WA_FINAL1-WRBTR</FPCLINE>
+      <FPCLINE>      currency  = WA_FINAL1-CURR</FPCLINE>
+      <FPCLINE>*      FILLER    = &apos; &apos;</FPCLINE>
+      <FPCLINE>*      language  = sy-langu</FPCLINE>
+      <FPCLINE>      language  = &apos;E&apos;</FPCLINE>
+      <FPCLINE>    IMPORTING</FPCLINE>
+      <FPCLINE>      in_words  = ls_word</FPCLINE>
+      <FPCLINE>    EXCEPTIONS</FPCLINE>
+      <FPCLINE>      not_found = 1</FPCLINE>
+      <FPCLINE>      too_large = 2</FPCLINE>
+      <FPCLINE>      OTHERS    = 3.</FPCLINE>
+      <FPCLINE>  IF sy-subrc &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>* Implement suitable error handling here</FPCLINE>
+      <FPCLINE> ENDIF.</FPCLINE>
+      <FPCLINE> IF ls_word-decword NE &apos;ZERO&apos;.</FPCLINE>
+      <FPCLINE> CONCATENATE  ls_word-word&apos;DOLLARS&apos; &apos;AND&apos;</FPCLINE>
+      <FPCLINE>             ls_word-decword &apos;CENTS &apos; INTO GV_WORD SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE> ELSEIF</FPCLINE>
+      <FPCLINE>    ls_word-decword = &apos;ZERO&apos; .</FPCLINE>
+      <FPCLINE>    CONCATENATE  ls_word-word&apos;DOLLARS&apos;</FPCLINE>
+      <FPCLINE>              INTO GV_WORD SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE> ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE> ELSEIF WA_FINAL1-CURR = &apos;INR&apos;.     &quot;&quot;fOR USD CURR.</FPCLINE>
+      <FPCLINE>  CALL FUNCTION &apos;SPELL_AMOUNT&apos;</FPCLINE>
+      <FPCLINE>    EXPORTING</FPCLINE>
+      <FPCLINE>      amount    = WA_FINAL1-WRBTR</FPCLINE>
+      <FPCLINE>      currency  = WA_FINAL1-CURR</FPCLINE>
+      <FPCLINE>*      FILLER    = &apos; &apos;</FPCLINE>
+      <FPCLINE>*      language  = sy-langu</FPCLINE>
+      <FPCLINE>      language  = &apos;E&apos;</FPCLINE>
+      <FPCLINE>    IMPORTING</FPCLINE>
+      <FPCLINE>      in_words  = ls_word</FPCLINE>
+      <FPCLINE>    EXCEPTIONS</FPCLINE>
+      <FPCLINE>      not_found = 1</FPCLINE>
+      <FPCLINE>      too_large = 2</FPCLINE>
+      <FPCLINE>      OTHERS    = 3.</FPCLINE>
+      <FPCLINE>  IF sy-subrc &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>* Implement suitable error handling here</FPCLINE>
+      <FPCLINE> ENDIF.</FPCLINE>
+      <FPCLINE> IF ls_word-decword NE &apos;ZERO&apos;.</FPCLINE>
+      <FPCLINE> CONCATENATE &apos;RUPEES&apos; ls_word-word &apos;AND&apos;</FPCLINE>
+      <FPCLINE>             ls_word-decword &apos;PAISA ONLY&apos; INTO GV_WORD SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE> ELSEIF</FPCLINE>
+      <FPCLINE>    ls_word-decword = &apos;ZERO&apos; .</FPCLINE>
+      <FPCLINE>    CONCATENATE  &apos;RUPEES&apos; ls_word-word &apos;ONLY&apos;</FPCLINE>
+      <FPCLINE>              INTO GV_WORD SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE> ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>LV_dmbtr = WA_FINAL1-DMBTR.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+     </INITIALIZATION>
+     <FORMS/>
+    </CL_FP_CODING>
+   </cls:CL_FP_CODING>
+  </asx:heap>
+ </asx:abap>
+</abapGit>

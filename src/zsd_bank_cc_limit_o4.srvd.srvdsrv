@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service definition for ZC_BANK_CC_LIMIT'
+define service ZSD_BANK_CC_LIMIT_O4 {
+  expose ZC_BANK_CC_LIMIT;
+}

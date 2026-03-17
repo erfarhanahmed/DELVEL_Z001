@@ -1,0 +1,1093 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SFPI" serializer_version="v1.0.0">
+ <asx:abap version="1.0" xmlns:asx="http://www.sap.com/abapxml">
+  <asx:values>
+   <VERSION>1</VERSION>
+   <TYPE/>
+   <INTERFACE href="#o1"/>
+   <INTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID/>
+     <TEXT>Vendor Debit Rejection note</TEXT>
+    </FPINTERFACET>
+   </INTERFACET>
+  </asx:values>
+  <asx:heap xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:abap="http://www.sap.com/abapxml/types/built-in" xmlns:cls="http://www.sap.com/abapxml/classes/global" xmlns:dic="http://www.sap.com/abapxml/types/dictionary">
+   <cls:CL_FP_INTERFACE_DATA id="o1">
+    <CL_FP_INTERFACE_DATA classVersion="1">
+     <CODING href="#o5"/>
+     <PARAMETERS href="#o4"/>
+     <GLOBAL_DEFINITIONS href="#o3"/>
+     <REFERENCE_FIELDS href="#o2"/>
+     <XSD_DEFINITIONS/>
+    </CL_FP_INTERFACE_DATA>
+   </cls:CL_FP_INTERFACE_DATA>
+   <cls:CL_FP_REFERENCE_FIELDS id="o2">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_REFERENCE_FIELDS classVersion="1">
+     <REFERENCE_FIELDS>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>GS_MATERIAL_DOC-RATE</VALUE>
+       <UNIT>WA_MSEG-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>GT_MATERIAL_DOC-RATE</VALUE>
+       <UNIT>WA_MSEG-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>QUAN</DATATYPE>
+       <VALUE>GS_MATERIAL_DOC-MENGE</VALUE>
+       <UNIT>WA_MSEG-MEINS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>QUAN</DATATYPE>
+       <VALUE>WA_MSEG-PBAMG</VALUE>
+       <UNIT>WA_MSEG-MEINS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>QUAN</DATATYPE>
+       <VALUE>GT_MATERIAL_DOC-MENGE</VALUE>
+       <UNIT>WA_MSEG-MEINS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>GT_MATERIAL_DOC-WRBTR</VALUE>
+       <UNIT>WA_MSEG-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>GS_MATERIAL_DOC-WRBTR</VALUE>
+       <UNIT>WA_MSEG-WAERS</UNIT>
+      </SFPREF>
+     </REFERENCE_FIELDS>
+    </CL_FP_REFERENCE_FIELDS>
+   </cls:CL_FP_REFERENCE_FIELDS>
+   <cls:CL_FP_GLOBAL_DEFINITIONS id="o3">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_GLOBAL_DEFINITIONS classVersion="1">
+     <GLOBAL_DATA>
+      <SFPGDATA>
+       <NAME>GS_MATERIAL_DOC_HDR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZMATERIAL_DOC_HDR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GS_MATERIAL_DOC</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZMATERIAL_DOC</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GS_ADRC</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ADRC</TYPENAME>
+       <DEFAULTVAL>&apos;&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GS_ADRC_C</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ADRC</TYPENAME>
+       <DEFAULTVAL>&apos;&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_COUNTRY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>LANDX</TYPENAME>
+       <DEFAULTVAL>&apos;&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_COUNTRY_C</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>LANDX</TYPENAME>
+       <DEFAULTVAL>&apos;&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_REG</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BEZEI</TYPENAME>
+       <DEFAULTVAL>&apos;&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_REG_C</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BEZEI</TYPENAME>
+       <DEFAULTVAL>&apos;&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_GST_C</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KNA1-STCD3</TYPENAME>
+       <DEFAULTVAL>&apos;&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_GST_REG_C</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZGST_REGION-GST_REGION</TYPENAME>
+       <DEFAULTVAL>&apos;&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_EMAIL_C</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ADR6-SMTP_ADDR</TYPENAME>
+       <DEFAULTVAL>&apos;&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_QTY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>INT2</TYPENAME>
+       <DEFAULTVAL>0</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_TOT_QTY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>INT2</TYPENAME>
+       <DEFAULTVAL>0</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_EMAIL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ADR6-SMTP_ADDR</TYPENAME>
+       <DEFAULTVAL>&apos;&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_GST_REG</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZGST_REGION-GST_REGION</TYPENAME>
+       <DEFAULTVAL>&apos;&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_GST</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KNA1-STCD3</TYPENAME>
+       <DEFAULTVAL>&apos;&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_GST_P</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>J_1BBRANCH-GSTIN</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_GST_WRD</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR256</TYPENAME>
+       <DEFAULTVAL>&apos;&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_TOT_WRD</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR256</TYPENAME>
+       <DEFAULTVAL>&apos;&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_STEUC</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>MARC-STEUC</TYPENAME>
+       <DEFAULTVAL>&apos;&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_AMV</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>FRI_VAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_SCQ</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>CGST</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_DEL_TAX</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>SGST</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IGST</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>TOT_TAX</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GRAND_TOT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>NET_VAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>PFL_RATE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KBETR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>KB_CGST</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KBETR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>KB_SGST</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KBETR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>KB_IGST</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KBETR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>INS_VAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>PFL_VAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_TOT_AMT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>EKPO-NETWR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_RATE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>EKPO-NETPR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_AMT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>EKPO-NETWR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GT_T157E</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_T157E</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GS_T157E</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>T_T157E</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_MSEG</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>MSEG</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_XBLNR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>XBLNR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_IRN_NO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR80</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_QRCODE2</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GT_ZEINV_RESPONSE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>Z_J_1IG_INVREFNUM_TT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GS_ZEINV_RESPONSE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>J_1IG_INVREFNUM</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_DYNAMIC_LEN</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_LEN</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_FIRST</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_SECOND</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_THIRD</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_FOURTH</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>FWSTE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BSET-FWSTE</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>FWAST</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BSET-FWSTE</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_WORD</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR256</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+     </GLOBAL_DATA>
+     <TYPES>
+      <FPCLINE>TYPES:</FPCLINE>
+      <FPCLINE>  BEGIN OF t_item,</FPCLINE>
+      <FPCLINE>    ebeln TYPE ekpo-ebeln,</FPCLINE>
+      <FPCLINE>    ebelp TYPE ekpo-ebelp,</FPCLINE>
+      <FPCLINE>    matnr TYPE ekpo-matnr,</FPCLINE>
+      <FPCLINE>    werks TYPE ekpo-werks,</FPCLINE>
+      <FPCLINE>    matkl TYPE ekpo-matkl,</FPCLINE>
+      <FPCLINE>    menge TYPE ekpo-menge,</FPCLINE>
+      <FPCLINE>    meins TYPE ekpo-meins,</FPCLINE>
+      <FPCLINE>    netpr TYPE ekpo-netpr,</FPCLINE>
+      <FPCLINE>    netwr TYPE ekpo-netwr,</FPCLINE>
+      <FPCLINE>    mwskz TYPE ekpo-mwskz,</FPCLINE>
+      <FPCLINE>    mtart TYPE ekpo-mtart,</FPCLINE>
+      <FPCLINE>  END OF t_item,</FPCLINE>
+      <FPCLINE>  tt_item TYPE STANDARD TABLE OF t_item.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>TYPES:</FPCLINE>
+      <FPCLINE>  BEGIN OF t_mkpf,</FPCLINE>
+      <FPCLINE>    mblnr TYPE mkpf-mblnr,</FPCLINE>
+      <FPCLINE>    mjahr TYPE mkpf-mjahr,</FPCLINE>
+      <FPCLINE>    bldat TYPE mkpf-bldat,</FPCLINE>
+      <FPCLINE>    budat TYPE mkpf-budat,</FPCLINE>
+      <FPCLINE>    xblnr TYPE mkpf-xblnr,</FPCLINE>
+      <FPCLINE>    bktxt TYPE mkpf-bktxt,</FPCLINE>
+      <FPCLINE>    frbnr TYPE mkpf-frbnr,</FPCLINE>
+      <FPCLINE>  END OF t_mkpf,</FPCLINE>
+      <FPCLINE>  tt_mkpf TYPE STANDARD TABLE OF t_mkpf.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>TYPES:</FPCLINE>
+      <FPCLINE>  BEGIN OF t_mseg,</FPCLINE>
+      <FPCLINE>    mblnr TYPE mseg-mblnr,</FPCLINE>
+      <FPCLINE>    mjahr TYPE mseg-mjahr,</FPCLINE>
+      <FPCLINE>    zeile TYPE mseg-zeile,</FPCLINE>
+      <FPCLINE>    matnr TYPE mseg-matnr,</FPCLINE>
+      <FPCLINE>    werks TYPE mseg-werks,</FPCLINE>
+      <FPCLINE>    ebeln TYPE mseg-ebeln,</FPCLINE>
+      <FPCLINE>    ebelp TYPE mseg-ebelp,</FPCLINE>
+      <FPCLINE>    lifnr TYPE mseg-lifnr,</FPCLINE>
+      <FPCLINE>    bukrs TYPE mseg-bukrs,</FPCLINE>
+      <FPCLINE>    grund TYPE mseg-grund,</FPCLINE>
+      <FPCLINE>  END OF t_mseg,</FPCLINE>
+      <FPCLINE>  tt_mseg TYPE STANDARD TABLE OF t_mseg.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>TYPES:</FPCLINE>
+      <FPCLINE>  BEGIN OF t_ekko,</FPCLINE>
+      <FPCLINE>    ebeln TYPE ekko-ebeln,</FPCLINE>
+      <FPCLINE>    bukrs TYPE ekko-bukrs,</FPCLINE>
+      <FPCLINE>    aedat TYPE ekko-aedat,</FPCLINE>
+      <FPCLINE>    lifnr TYPE ekko-lifnr,</FPCLINE>
+      <FPCLINE>    ekorg TYPE ekko-ekorg,</FPCLINE>
+      <FPCLINE>    waers TYPE ekko-waers,</FPCLINE>
+      <FPCLINE>    bedat TYPE ekko-bedat,</FPCLINE>
+      <FPCLINE>    knumv TYPE ekko-knumv,</FPCLINE>
+      <FPCLINE>    lands TYPE ekko-lands,</FPCLINE>
+      <FPCLINE>  END OF t_ekko.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>TYPES:</FPCLINE>
+      <FPCLINE>  BEGIN OF t_conditions,</FPCLINE>
+      <FPCLINE>    knumv TYPE konv-knumv,</FPCLINE>
+      <FPCLINE>    kposn TYPE konv-kposn,</FPCLINE>
+      <FPCLINE>    kschl TYPE konv-kschl,</FPCLINE>
+      <FPCLINE>    kbetr TYPE konv-kbetr,</FPCLINE>
+      <FPCLINE>    waers TYPE konv-waers,</FPCLINE>
+      <FPCLINE>    kwert TYPE konv-kwert,</FPCLINE>
+      <FPCLINE>  END OF t_conditions,</FPCLINE>
+      <FPCLINE>  tt_conditions TYPE STANDARD TABLE OF t_conditions.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>TYPES:</FPCLINE>
+      <FPCLINE>  BEGIN OF t_mat_desc,</FPCLINE>
+      <FPCLINE>    matnr TYPE makt-matnr,</FPCLINE>
+      <FPCLINE>    maktx TYPE makt-maktx,</FPCLINE>
+      <FPCLINE>  END OF t_mat_desc,</FPCLINE>
+      <FPCLINE>  tt_mat_desc TYPE STANDARD TABLE OF t_mat_desc.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>TYPES:</FPCLINE>
+      <FPCLINE>  BEGIN OF t_t157e,</FPCLINE>
+      <FPCLINE>    bwart TYPE t157e-bwart,</FPCLINE>
+      <FPCLINE>    grund TYPE t157e-grund,</FPCLINE>
+      <FPCLINE>    grtxt TYPE t157e-grtxt,</FPCLINE>
+      <FPCLINE>  END OF t_t157e,</FPCLINE>
+      <FPCLINE>  tt_t157e TYPE STANDARD TABLE OF t_t157e.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>TYPES:</FPCLINE>
+      <FPCLINE>  BEGIN OF t_bset,</FPCLINE>
+      <FPCLINE>    bukrs TYPE bset-bukrs,</FPCLINE>
+      <FPCLINE>    belnr TYPE bset-belnr,</FPCLINE>
+      <FPCLINE>    gjahr TYPE bset-gjahr,</FPCLINE>
+      <FPCLINE>    buzei TYPE bset-buzei,</FPCLINE>
+      <FPCLINE>    hwste TYPE bset-hwste,</FPCLINE>
+      <FPCLINE>    kschl TYPE bset-kschl,</FPCLINE>
+      <FPCLINE>    kbetr TYPE bset-kbetr,</FPCLINE>
+      <FPCLINE>  END OF t_bset,</FPCLINE>
+      <FPCLINE>  tt_bset TYPE STANDARD TABLE OF t_bset.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+     </TYPES>
+     <FIELDSYMBOLS/>
+    </CL_FP_GLOBAL_DEFINITIONS>
+   </cls:CL_FP_GLOBAL_DEFINITIONS>
+   <cls:CL_FP_PARAMETERS id="o4">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_PARAMETERS classVersion="1">
+     <IMPORT_PARAMETERS>
+      <SFPIOPAR>
+       <NAME>GT_MATERIAL_DOC_HDR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZT_MATERIAL_DOC_HDR</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>GV_PAGE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR30</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>GT_MATERIAL_DOC</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZT_MATERIAL_DOC</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+     </IMPORT_PARAMETERS>
+     <EXPORT_PARAMETERS/>
+     <TABLE_PARAMETERS/>
+     <EXCEPTIONS/>
+    </CL_FP_PARAMETERS>
+   </cls:CL_FP_PARAMETERS>
+   <cls:CL_FP_CODING id="o5">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_CODING classVersion="1">
+     <INPUT_PARAMETERS>
+      <FPPARAMETER>GT_MATERIAL_DOC_HDR</FPPARAMETER>
+      <FPPARAMETER>GT_MATERIAL_DOC</FPPARAMETER>
+      <FPPARAMETER>GV_TOT_AMT</FPPARAMETER>
+      <FPPARAMETER>GV_TOT_QTY</FPPARAMETER>
+      <FPPARAMETER>GS_MATERIAL_DOC</FPPARAMETER>
+      <FPPARAMETER>GT_MATERIAL_DOC</FPPARAMETER>
+      <FPPARAMETER>GT_MATERIAL_DOC_HDR</FPPARAMETER>
+      <FPPARAMETER>GV_TOT_AMT</FPPARAMETER>
+     </INPUT_PARAMETERS>
+     <OUTPUT_PARAMETERS>
+      <FPPARAMETER>GS_T157E</FPPARAMETER>
+      <FPPARAMETER>WA_MSEG</FPPARAMETER>
+      <FPPARAMETER>GV_GST_P</FPPARAMETER>
+      <FPPARAMETER>GT_T157E</FPPARAMETER>
+      <FPPARAMETER>GS_ZEINV_RESPONSE</FPPARAMETER>
+      <FPPARAMETER>GV_IRN_NO</FPPARAMETER>
+      <FPPARAMETER>GV_QRCODE2</FPPARAMETER>
+      <FPPARAMETER>GV_STEUC</FPPARAMETER>
+      <FPPARAMETER>TOT_TAX</FPPARAMETER>
+      <FPPARAMETER>GRAND_TOT</FPPARAMETER>
+      <FPPARAMETER>NET_VAL</FPPARAMETER>
+      <FPPARAMETER>PFL_RATE</FPPARAMETER>
+      <FPPARAMETER>KB_CGST</FPPARAMETER>
+      <FPPARAMETER>KB_SGST</FPPARAMETER>
+      <FPPARAMETER>KB_IGST</FPPARAMETER>
+      <FPPARAMETER>FWSTE</FPPARAMETER>
+      <FPPARAMETER>INS_VAL</FPPARAMETER>
+      <FPPARAMETER>PFL_VAL</FPPARAMETER>
+      <FPPARAMETER>GV_AMV</FPPARAMETER>
+      <FPPARAMETER>FRI_VAL</FPPARAMETER>
+      <FPPARAMETER>GV_DEL_TAX</FPPARAMETER>
+      <FPPARAMETER>SGST</FPPARAMETER>
+      <FPPARAMETER>IGST</FPPARAMETER>
+      <FPPARAMETER>GV_SCQ</FPPARAMETER>
+      <FPPARAMETER>CGST</FPPARAMETER>
+      <FPPARAMETER>FWAST</FPPARAMETER>
+     </OUTPUT_PARAMETERS>
+     <INITIALIZATION>
+      <FPCLINE>  DATA:</FPCLINE>
+      <FPCLINE>    lv_branch           TYPE j_1bbranch-branch,</FPCLINE>
+      <FPCLINE>    ls_material_doc     TYPE zmaterial_doc,</FPCLINE>
+      <FPCLINE>    ls_material_doc_hdr TYPE zmaterial_doc_hdr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*BREAK fujiabap.</FPCLINE>
+      <FPCLINE>  READ TABLE gt_material_doc INTO ls_material_doc</FPCLINE>
+      <FPCLINE>                             INDEX 1.</FPCLINE>
+      <FPCLINE>  READ TABLE gt_material_doc_hdr INTO ls_material_doc_hdr</FPCLINE>
+      <FPCLINE>                              INDEX 1.</FPCLINE>
+      <FPCLINE>*break fujiabap.</FPCLINE>
+      <FPCLINE>  SELECT SINGLE j_1bbranch</FPCLINE>
+      <FPCLINE>          FROM  t001w</FPCLINE>
+      <FPCLINE>          INTO lv_branch</FPCLINE>
+      <FPCLINE>          WHERE werks = ls_material_doc-werks.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  SELECT SINGLE gstin</FPCLINE>
+      <FPCLINE>          FROM  j_1bbranch</FPCLINE>
+      <FPCLINE>          INTO  gv_gst_p</FPCLINE>
+      <FPCLINE>          WHERE bukrs  = ls_material_doc_hdr-bukrs</FPCLINE>
+      <FPCLINE>           AND  branch = lv_branch.</FPCLINE>
+      <FPCLINE>  IF gv_gst_p IS INITIAL.</FPCLINE>
+      <FPCLINE>    gv_gst_p = &apos;27AACCD2898L1Z4&apos;.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  SELECT bwart</FPCLINE>
+      <FPCLINE>         grund</FPCLINE>
+      <FPCLINE>         grtxt</FPCLINE>
+      <FPCLINE>    FROM t157e</FPCLINE>
+      <FPCLINE>    INTO TABLE gt_t157e</FPCLINE>
+      <FPCLINE>    FOR ALL ENTRIES IN GT_MATERIAL_DOC_HDR</FPCLINE>
+      <FPCLINE>    WHERE bwart = &apos;161&apos;</FPCLINE>
+      <FPCLINE>    AND   grund = GT_MATERIAL_DOC_HDR-grund</FPCLINE>
+      <FPCLINE>    AND   spras = sy-langu.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>&quot;Added by Snehal Rajale on 17.02.2021</FPCLINE>
+      <FPCLINE>*BREAK-POINT.</FPCLINE>
+      <FPCLINE>SELECT SINGLE *</FPCLINE>
+      <FPCLINE>FROM j_1ig_invrefnum</FPCLINE>
+      <FPCLINE>INTO gs_zeinv_response</FPCLINE>
+      <FPCLINE>WHERE docno = ls_material_doc_hdr-belnr AND</FPCLINE>
+      <FPCLINE>doc_year = ls_material_doc_hdr-gjahr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF SY-SUBRC = 0.</FPCLINE>
+      <FPCLINE>    gv_irn_no = gs_zeinv_response-irn.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    gv_qrcode2 = gs_zeinv_response-signed_qrcode.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>  loop at GT_MATERIAL_DOC_HDR INTO GS_MATERIAL_DOC_HDR.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CLEAR: gv_tot_amt,</FPCLINE>
+      <FPCLINE>       gv_tot_qty.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  data : ls_item type ZMATERIAL_DOC.</FPCLINE>
+      <FPCLINE>*BREAK primus.</FPCLINE>
+      <FPCLINE>READ TABLE GT_MATERIAL_DOC[] INTO ls_item INDEX 1.</FPCLINE>
+      <FPCLINE>IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>SELECT SINGLE * from mseg INTO wa_mseg</FPCLINE>
+      <FPCLINE>  WHERE mblnr = ls_item-mblnr and mjahr = ls_item-mjahr</FPCLINE>
+      <FPCLINE>  and ebeln = ls_item-ebeln AND ebelp = ls_item-ebelp</FPCLINE>
+      <FPCLINE>  and bwart = &apos;101&apos;.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>LOOP at gt_material_doc INTO gs_material_doc</FPCLINE>
+      <FPCLINE>  where BELNR = GS_MATERIAL_DOC_HDR-BELNR_R.</FPCLINE>
+      <FPCLINE>*BREAK primus.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*gv_qty = gs_material_doc-menge.</FPCLINE>
+      <FPCLINE>*gv_rate = gs_material_doc-wrbtr / gs_material_doc-menge.&quot;&quot;&quot;&quot;&quot;</FPCLINE>
+      <FPCLINE>*gs_material_doc-rate = gs_material_doc-wrbtr / gs_material_doc-menge.&quot;&quot;&quot;&quot;&quot;</FPCLINE>
+      <FPCLINE>*gv_amt  = gs_material_doc-wrbtr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF gs_material_doc-kschl IS INITIAL.</FPCLINE>
+      <FPCLINE>  gv_tot_amt = gv_tot_amt + gs_material_doc-wrbtr.</FPCLINE>
+      <FPCLINE>  gv_tot_qty = gv_tot_qty + gs_material_doc-menge.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE>**</FPCLINE>
+      <FPCLINE>**</FPCLINE>
+      <FPCLINE>READ TABLE GT_T157E INTO gs_t157e</FPCLINE>
+      <FPCLINE>           with KEY grund = GS_MATERIAL_DOC_HDR-grund.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>ENDLOOP.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>CLEAR :</FPCLINE>
+      <FPCLINE>  gv_amv,fri_val,gv_scq,cgst,gv_del_tax,sgst,igst,tot_tax,</FPCLINE>
+      <FPCLINE>  grand_tot,net_val,pfl_rate,kb_cgst,kb_sgst,kb_igst,ins_val,</FPCLINE>
+      <FPCLINE>  pfl_val.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>DATA:</FPCLINE>
+      <FPCLINE>  lt_bset         TYPE tt_bset,</FPCLINE>
+      <FPCLINE>  ls_bset         TYPE t_bset,</FPCLINE>
+      <FPCLINE>  lt_material_doc TYPE zt_material_doc.</FPCLINE>
+      <FPCLINE>*  ls_material_doc TYPE zmaterial_doc.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>lt_material_doc[] = gt_material_doc[].</FPCLINE>
+      <FPCLINE>DELETE lt_material_doc WHERE kschl IS INITIAL.</FPCLINE>
+      <FPCLINE>LOOP AT lt_material_doc INTO ls_material_doc.</FPCLINE>
+      <FPCLINE>  CASE ls_material_doc-kschl.</FPCLINE>
+      <FPCLINE>    WHEN &apos;ZINS&apos;.</FPCLINE>
+      <FPCLINE>      ins_val = ins_val + ls_material_doc-wrbtr.</FPCLINE>
+      <FPCLINE>    WHEN &apos;ZPFL&apos;.</FPCLINE>
+      <FPCLINE>      pfl_val = pfl_val + ls_material_doc-wrbtr.</FPCLINE>
+      <FPCLINE>    WHEN &apos;ZRB1&apos;.</FPCLINE>
+      <FPCLINE>      fri_val = fri_val + ls_material_doc-wrbtr.</FPCLINE>
+      <FPCLINE>    WHEN &apos;ZSCV&apos;.</FPCLINE>
+      <FPCLINE>      gv_scq = gv_scq + ls_material_doc-wrbtr.</FPCLINE>
+      <FPCLINE>    WHEN &apos;ZAMV&apos;.</FPCLINE>
+      <FPCLINE>      gv_amv = gv_amv + ls_material_doc-wrbtr.</FPCLINE>
+      <FPCLINE>  ENDCASE.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDLOOP.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>**DATA:</FPCLINE>
+      <FPCLINE>**  t_mwdat  TYPE TABLE OF  rtax1u15,</FPCLINE>
+      <FPCLINE>**  ls_bset TYPE rtax1u15.</FPCLINE>
+      <FPCLINE>**</FPCLINE>
+      <FPCLINE>**</FPCLINE>
+      <FPCLINE>***&quot;&quot;&quot;&quot;&quot;&quot; CGST/IGST/SGST/CESS &quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;</FPCLINE>
+      <FPCLINE>***BREAK-POINT.</FPCLINE>
+      <FPCLINE>**CALL FUNCTION &apos;CALCULATE_TAX_FROM_NET_AMOUNT&apos;</FPCLINE>
+      <FPCLINE>**  EXPORTING</FPCLINE>
+      <FPCLINE>**    i_bukrs           = gs_material_doc_hdr-bukrs</FPCLINE>
+      <FPCLINE>**    i_mwskz           = gs_material_doc_hdr-mwskz</FPCLINE>
+      <FPCLINE>***   I_TXJCD           = &apos; &apos;</FPCLINE>
+      <FPCLINE>**    i_waers           = &apos;INR&apos;</FPCLINE>
+      <FPCLINE>**    i_wrbtr           = gv_tot_amt &quot;WA_RSEG1-WRBTR</FPCLINE>
+      <FPCLINE>***   I_ZBD1P           = 0</FPCLINE>
+      <FPCLINE>***   I_PRSDT           =</FPCLINE>
+      <FPCLINE>***   I_PROTOKOLL       =</FPCLINE>
+      <FPCLINE>***   I_TAXPS           =</FPCLINE>
+      <FPCLINE>***   I_ACCNT_EXT       =</FPCLINE>
+      <FPCLINE>***   I_ACCDATA         =</FPCLINE>
+      <FPCLINE>**  IMPORTING</FPCLINE>
+      <FPCLINE>***   E_FWNAV           =</FPCLINE>
+      <FPCLINE>***   E_FWNVV           =</FPCLINE>
+      <FPCLINE>**    e_fwste           = fwste</FPCLINE>
+      <FPCLINE>**    e_fwast           = fwast</FPCLINE>
+      <FPCLINE>**  TABLES</FPCLINE>
+      <FPCLINE>**    t_mwdat           = t_mwdat</FPCLINE>
+      <FPCLINE>**  EXCEPTIONS</FPCLINE>
+      <FPCLINE>**    bukrs_not_found   = 1</FPCLINE>
+      <FPCLINE>**    country_not_found = 2</FPCLINE>
+      <FPCLINE>**    mwskz_not_defined = 3</FPCLINE>
+      <FPCLINE>**    mwskz_not_valid   = 4</FPCLINE>
+      <FPCLINE>**    ktosl_not_found   = 5</FPCLINE>
+      <FPCLINE>**    kalsm_not_found   = 6</FPCLINE>
+      <FPCLINE>**    parameter_error   = 7</FPCLINE>
+      <FPCLINE>**    knumh_not_found   = 8</FPCLINE>
+      <FPCLINE>**    kschl_not_found   = 9</FPCLINE>
+      <FPCLINE>**    unknown_error     = 10</FPCLINE>
+      <FPCLINE>**    account_not_found = 11</FPCLINE>
+      <FPCLINE>**    txjcd_not_valid   = 12</FPCLINE>
+      <FPCLINE>**    OTHERS            = 13.</FPCLINE>
+      <FPCLINE>**IF sy-subrc &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>*** MESSAGE ID SY-MSGID TYPE SY-MSGTY NUMBER SY-MSGNO</FPCLINE>
+      <FPCLINE>***         WITH SY-MSGV1 SY-MSG  V2 SY-MSGV3 SY-MSGV4.</FPCLINE>
+      <FPCLINE>**ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*BREAK X770202.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT bukrs</FPCLINE>
+      <FPCLINE>       belnr</FPCLINE>
+      <FPCLINE>       gjahr</FPCLINE>
+      <FPCLINE>       buzei</FPCLINE>
+      <FPCLINE>       hwste</FPCLINE>
+      <FPCLINE>       kschl</FPCLINE>
+      <FPCLINE>       kbetr</FPCLINE>
+      <FPCLINE>  FROM bset</FPCLINE>
+      <FPCLINE>  INTO TABLE lt_bset</FPCLINE>
+      <FPCLINE>  FOR ALL ENTRIES IN gt_material_doc_hdr</FPCLINE>
+      <FPCLINE>  WHERE bukrs = gt_material_doc_hdr-bukrs</FPCLINE>
+      <FPCLINE>  AND   belnr = gt_material_doc_hdr-belnr</FPCLINE>
+      <FPCLINE>  AND   gjahr = gt_material_doc_hdr-gjahr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*BREAK-POINT.</FPCLINE>
+      <FPCLINE>LOOP AT lt_bset INTO ls_bset.</FPCLINE>
+      <FPCLINE>  CASE ls_bset-kschl.</FPCLINE>
+      <FPCLINE>    WHEN &apos;JICG&apos; OR &apos;JICN&apos;.</FPCLINE>
+      <FPCLINE>      kb_cgst = ls_bset-kbetr / 10.</FPCLINE>
+      <FPCLINE>      cgst    = cgst + ls_bset-hwste.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    WHEN &apos;JISG&apos; OR &apos;JISN&apos;.</FPCLINE>
+      <FPCLINE>      kb_sgst = ls_bset-kbetr / 10.</FPCLINE>
+      <FPCLINE>      sgst    = sgst + ls_bset-hwste.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    WHEN &apos;JIIG&apos; OR &apos;JIIN&apos;.</FPCLINE>
+      <FPCLINE>      kb_igst = ls_bset-kbetr / 10.</FPCLINE>
+      <FPCLINE>      igst    = igst + ls_bset-hwste.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    WHEN &apos;JICR&apos; OR &apos;ZCRN&apos; OR &apos;JISR&apos; OR &apos;ZSRN&apos; OR &apos;ZIRN&apos;.</FPCLINE>
+      <FPCLINE>      gv_del_tax = gv_del_tax + ls_bset-hwste.</FPCLINE>
+      <FPCLINE>  ENDCASE.</FPCLINE>
+      <FPCLINE>ENDLOOP.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>tot_tax = igst + cgst + sgst.</FPCLINE>
+      <FPCLINE>grand_tot = tot_tax + ins_val + gv_tot_amt + gv_del_tax</FPCLINE>
+      <FPCLINE>       + gv_scq + gv_amv + fri_val + pfl_val.&quot; +</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>net_val   = grand_tot - gv_amv.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>DATA:</FPCLINE>
+      <FPCLINE>  lv_amt TYPE pc207-betrg.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>CLEAR: GV_GST_WRD,GV_TOT_WRD.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>lv_amt = tot_tax.</FPCLINE>
+      <FPCLINE>CALL FUNCTION &apos;HR_IN_CHG_INR_WRDS&apos;</FPCLINE>
+      <FPCLINE>  EXPORTING</FPCLINE>
+      <FPCLINE>    amt_in_num         = lv_amt</FPCLINE>
+      <FPCLINE>  IMPORTING</FPCLINE>
+      <FPCLINE>    amt_in_words       = gv_gst_wrd</FPCLINE>
+      <FPCLINE>  EXCEPTIONS</FPCLINE>
+      <FPCLINE>    data_type_mismatch = 1</FPCLINE>
+      <FPCLINE>    OTHERS             = 2.</FPCLINE>
+      <FPCLINE>IF sy-subrc &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>  MESSAGE ID sy-msgid TYPE sy-msgty NUMBER sy-msgno</FPCLINE>
+      <FPCLINE>          WITH sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>CALL FUNCTION &apos;FI_CONVERT_FIRSTCHARS_TOUPPER&apos;</FPCLINE>
+      <FPCLINE>EXPORTING</FPCLINE>
+      <FPCLINE>  input_string        = gv_gst_wrd</FPCLINE>
+      <FPCLINE>  SEPARATORS          = &apos; &apos;</FPCLINE>
+      <FPCLINE>IMPORTING</FPCLINE>
+      <FPCLINE>  OUTPUT_STRING       = gv_gst_wrd</FPCLINE>
+      <FPCLINE>  .</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>CLEAR lv_amt.</FPCLINE>
+      <FPCLINE>lv_amt = net_val.</FPCLINE>
+      <FPCLINE>CALL FUNCTION &apos;HR_IN_CHG_INR_WRDS&apos;</FPCLINE>
+      <FPCLINE>  EXPORTING</FPCLINE>
+      <FPCLINE>    amt_in_num         = lv_amt</FPCLINE>
+      <FPCLINE>  IMPORTING</FPCLINE>
+      <FPCLINE>    amt_in_words       = gv_tot_wrd</FPCLINE>
+      <FPCLINE>  EXCEPTIONS</FPCLINE>
+      <FPCLINE>    data_type_mismatch = 1</FPCLINE>
+      <FPCLINE>    OTHERS             = 2.</FPCLINE>
+      <FPCLINE>IF sy-subrc &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>  MESSAGE ID sy-msgid TYPE sy-msgty NUMBER sy-msgno</FPCLINE>
+      <FPCLINE>          WITH sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>CALL FUNCTION &apos;FI_CONVERT_FIRSTCHARS_TOUPPER&apos;</FPCLINE>
+      <FPCLINE>EXPORTING</FPCLINE>
+      <FPCLINE>  input_string        = gv_tot_wrd</FPCLINE>
+      <FPCLINE>  SEPARATORS          = &apos; &apos;</FPCLINE>
+      <FPCLINE>IMPORTING</FPCLINE>
+      <FPCLINE>  OUTPUT_STRING       = gv_tot_wrd</FPCLINE>
+      <FPCLINE>  .</FPCLINE>
+      <FPCLINE>endloop.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF gv_qrcode2 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>  LV_DYNAMIC_LEN = STRLEN( GV_QRCODE2 ).</FPCLINE>
+      <FPCLINE>  IF LV_DYNAMIC_LEN GT 765.</FPCLINE>
+      <FPCLINE>    LV_LEN = LV_DYNAMIC_LEN - 765.</FPCLINE>
+      <FPCLINE>    gv_first = GV_QRCODE2(255).</FPCLINE>
+      <FPCLINE>    gv_second = GV_QRCODE2+255(255).</FPCLINE>
+      <FPCLINE>    gv_third = GV_QRCODE2+510(255).</FPCLINE>
+      <FPCLINE>    gv_fourth = GV_QRCODE2+765(lv_len).</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>*break primus.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE xblnr from bkpf</FPCLINE>
+      <FPCLINE>       into wa_xblnr</FPCLINE>
+      <FPCLINE>       where belnr = GS_MATERIAL_DOC_HDR-belnr</FPCLINE>
+      <FPCLINE>       and   gjahr = GS_MATERIAL_DOC_HDR-gjahr .</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>DATA:</FPCLINE>
+      <FPCLINE>*  ls_MATERIAL_DOC_HDR TYPE ZMATERIAL_DOC_HDR,</FPCLINE>
+      <FPCLINE>  lv_lifnr TYPE lfa1-lifnr,</FPCLINE>
+      <FPCLINE>  lv_adrnr TYPE lfa1-adrnr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>READ TABLE GT_MATERIAL_DOC_HDR INTO ls_MATERIAL_DOC_HDR INDEX 1.</FPCLINE>
+      <FPCLINE>*****Vendor</FPCLINE>
+      <FPCLINE>SELECT SINGLE adrnr</FPCLINE>
+      <FPCLINE>              stcd3</FPCLINE>
+      <FPCLINE>        FROM  lfa1</FPCLINE>
+      <FPCLINE>        INTO (lv_adrnr,gv_gst)</FPCLINE>
+      <FPCLINE>        WHERE lifnr = ls_MATERIAL_DOC_HDR-lifnr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE *</FPCLINE>
+      <FPCLINE>       FROM adrc</FPCLINE>
+      <FPCLINE>       INTO gs_adrc</FPCLINE>
+      <FPCLINE>       WHERE addrnumber = lv_adrnr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE landx</FPCLINE>
+      <FPCLINE>         FROM t005t</FPCLINE>
+      <FPCLINE>         INTO gv_country</FPCLINE>
+      <FPCLINE>         WHERE land1 = gs_adrc-country</FPCLINE>
+      <FPCLINE>          AND  spras = sy-langu.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE bezei</FPCLINE>
+      <FPCLINE>         FROM t005u</FPCLINE>
+      <FPCLINE>         INTO gv_reg</FPCLINE>
+      <FPCLINE>         WHERE land1 = gs_adrc-country</FPCLINE>
+      <FPCLINE>          AND  bland = gs_adrc-region</FPCLINE>
+      <FPCLINE>          AND  spras = sy-langu.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*BREAK primus.</FPCLINE>
+      <FPCLINE>SELECT SINGLE gst_region</FPCLINE>
+      <FPCLINE>       FROM   zgst_region</FPCLINE>
+      <FPCLINE>       INTO   gv_gst_reg</FPCLINE>
+      <FPCLINE>       WHERE  bezei = gv_reg.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE smtp_addr</FPCLINE>
+      <FPCLINE>        FROM  adr6</FPCLINE>
+      <FPCLINE>        INTO  gv_email</FPCLINE>
+      <FPCLINE>        WHERE addrnumber = lv_adrnr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>gv_gst_c = gv_gst.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE *</FPCLINE>
+      <FPCLINE>       FROM adrc</FPCLINE>
+      <FPCLINE>       INTO gs_adrc_c</FPCLINE>
+      <FPCLINE>       WHERE addrnumber = lv_adrnr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE landx</FPCLINE>
+      <FPCLINE>         FROM t005t</FPCLINE>
+      <FPCLINE>         INTO gv_country_c</FPCLINE>
+      <FPCLINE>         WHERE land1 = gs_adrc_c-country</FPCLINE>
+      <FPCLINE>          AND  spras = sy-langu.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE bezei</FPCLINE>
+      <FPCLINE>         FROM t005u</FPCLINE>
+      <FPCLINE>         INTO gv_reg_c</FPCLINE>
+      <FPCLINE>         WHERE land1 = gs_adrc_c-country</FPCLINE>
+      <FPCLINE>          AND  bland = gs_adrc_c-region</FPCLINE>
+      <FPCLINE>          AND  spras = sy-langu.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE gst_region</FPCLINE>
+      <FPCLINE>       FROM   zgst_region</FPCLINE>
+      <FPCLINE>       INTO   gv_gst_reg_c</FPCLINE>
+      <FPCLINE>       WHERE  bezei = gv_reg_c.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE smtp_addr</FPCLINE>
+      <FPCLINE>        FROM  adr6</FPCLINE>
+      <FPCLINE>        INTO  gv_email_c</FPCLINE>
+      <FPCLINE>        WHERE addrnumber = lv_adrnr.</FPCLINE>
+     </INITIALIZATION>
+     <FORMS>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>form get_text USING OBJNAME</FPCLINE>
+      <FPCLINE>                    OBJ_TYP</FPCLINE>
+      <FPCLINE>                    TXT_ID</FPCLINE>
+      <FPCLINE>                    LANG TYPE SPRAS</FPCLINE>
+      <FPCLINE>              CHANGING TXT.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  DATA :  TEXT_LINES TYPE TABLE OF TLINE,</FPCLINE>
+      <FPCLINE>          WA_TEXT_LINE TYPE TLINE.</FPCLINE>
+      <FPCLINE>DATA(lo_text_reader) = NEW zcl_read_text( ).</FPCLINE>
+      <FPCLINE>DATA : lv_lines1 TYPE STRING.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>CLEAR  lv_lines1.</FPCLINE>
+      <FPCLINE>lo_text_reader-&gt;read_text_string( EXPORTING id = TXT_ID name = OBJNAME object = OBJ_TYP IMPORTING lv_lines = lv_lines1 ).</FPCLINE>
+      <FPCLINE>TXT = lv_lines1.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF LANG IS INITIAL.</FPCLINE>
+      <FPCLINE>    LANG = &apos;E&apos;.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>**  CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>**    EXPORTING</FPCLINE>
+      <FPCLINE>***     CLIENT                        = SY-MANDT</FPCLINE>
+      <FPCLINE>**      id                            = TXT_ID</FPCLINE>
+      <FPCLINE>**      language                      = LANG</FPCLINE>
+      <FPCLINE>**      name                          = OBJNAME</FPCLINE>
+      <FPCLINE>**      object                        = OBJ_TYP</FPCLINE>
+      <FPCLINE>***     ARCHIVE_HANDLE                = 0</FPCLINE>
+      <FPCLINE>***     LOCAL_CAT                     = &apos; &apos;</FPCLINE>
+      <FPCLINE>***   IMPORTING</FPCLINE>
+      <FPCLINE>***     HEADER                        =</FPCLINE>
+      <FPCLINE>**    tables</FPCLINE>
+      <FPCLINE>**      lines                         = TEXT_LINES</FPCLINE>
+      <FPCLINE>**   EXCEPTIONS</FPCLINE>
+      <FPCLINE>**     ID                            = 1</FPCLINE>
+      <FPCLINE>**     LANGUAGE                      = 2</FPCLINE>
+      <FPCLINE>**     NAME                          = 3</FPCLINE>
+      <FPCLINE>**     NOT_FOUND                     = 4</FPCLINE>
+      <FPCLINE>**     OBJECT                        = 5</FPCLINE>
+      <FPCLINE>**     REFERENCE_CHECK               = 6</FPCLINE>
+      <FPCLINE>**     WRONG_ACCESS_TO_ARCHIVE       = 7</FPCLINE>
+      <FPCLINE>**     OTHERS                        = 8</FPCLINE>
+      <FPCLINE>**     .</FPCLINE>
+      <FPCLINE>**  IF sy-subrc &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>***   MESSAGE ID SY-MSGID TYPE SY-MSGTY NUMBER SY-MSGNO</FPCLINE>
+      <FPCLINE>***         WITH SY-MSGV1 SY-MSGV2 SY-MSGV3 SY-MSGV4.</FPCLINE>
+      <FPCLINE>**  ELSE.</FPCLINE>
+      <FPCLINE>**    DESCRIBE TABLE TEXT_LINES.</FPCLINE>
+      <FPCLINE>**    IF SY-TFILL &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>**      LOOP AT TEXT_LINES INTO WA_TEXT_LINE.</FPCLINE>
+      <FPCLINE>**        CONCATENATE TXT WA_TEXT_LINE-TDLINE INTO TXT.</FPCLINE>
+      <FPCLINE>**      ENDLOOP.</FPCLINE>
+      <FPCLINE>**    ENDIF.</FPCLINE>
+      <FPCLINE>**  ENDIF.</FPCLINE>
+      <FPCLINE>ENDFORM.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+     </FORMS>
+    </CL_FP_CODING>
+   </cls:CL_FP_CODING>
+  </asx:heap>
+ </asx:abap>
+</abapGit>

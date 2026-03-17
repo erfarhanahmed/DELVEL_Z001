@@ -1,0 +1,515 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SFPI" serializer_version="v1.0.0">
+ <asx:abap version="1.0" xmlns:asx="http://www.sap.com/abapxml">
+  <asx:values>
+   <VERSION>1</VERSION>
+   <TYPE/>
+   <INTERFACE href="#o1"/>
+   <INTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID/>
+     <TEXT>Interface for JOURNAL_VOUCHER_2</TEXT>
+    </FPINTERFACET>
+   </INTERFACET>
+  </asx:values>
+  <asx:heap xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:abap="http://www.sap.com/abapxml/types/built-in" xmlns:cls="http://www.sap.com/abapxml/classes/global" xmlns:dic="http://www.sap.com/abapxml/types/dictionary">
+   <cls:CL_FP_INTERFACE_DATA id="o1">
+    <CL_FP_INTERFACE_DATA classVersion="1">
+     <CODING href="#o5"/>
+     <PARAMETERS href="#o4"/>
+     <GLOBAL_DEFINITIONS href="#o3"/>
+     <REFERENCE_FIELDS href="#o2"/>
+     <XSD_DEFINITIONS/>
+    </CL_FP_INTERFACE_DATA>
+   </cls:CL_FP_INTERFACE_DATA>
+   <cls:CL_FP_REFERENCE_FIELDS id="o2">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_REFERENCE_FIELDS classVersion="1">
+     <REFERENCE_FIELDS/>
+    </CL_FP_REFERENCE_FIELDS>
+   </cls:CL_FP_REFERENCE_FIELDS>
+   <cls:CL_FP_GLOBAL_DEFINITIONS id="o3">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_GLOBAL_DEFINITIONS classVersion="1">
+     <GLOBAL_DATA>
+      <SFPGDATA>
+       <NAME>WA_FINAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZSU_FI</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_BKPF</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_BKPF</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_BKPF</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_BKPF</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_BSEG</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_BSEG</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_BSEG</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_BSEG</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_SKAT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_SKAT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_SKAT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_SKAT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_LFA1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_LFA1</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_LFA1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_LFA1</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_KNA1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_KNA1</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_KNA1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_KNA1</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_ANLA</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_ANLA</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_ANLA</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_ANLA</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>BG_IMG</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR40</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_TOT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR40</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_TOT1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR40</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_INVNO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+     </GLOBAL_DATA>
+     <TYPES>
+      <FPCLINE>TYPES : BEGIN OF ty_bkpf,</FPCLINE>
+      <FPCLINE>          bukrs TYPE bkpf-bukrs,</FPCLINE>
+      <FPCLINE>          belnr TYPE bkpf-belnr,</FPCLINE>
+      <FPCLINE>          gjahr TYPE bkpf-gjahr,</FPCLINE>
+      <FPCLINE>          budat TYPE bkpf-budat,</FPCLINE>
+      <FPCLINE>          usnam TYPE bkpf-usnam,</FPCLINE>
+      <FPCLINE>          blart TYPE bkpf-blart,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        END OF ty_bkpf,</FPCLINE>
+      <FPCLINE>        tt_bkpf TYPE STANDARD TABLE OF ty_bkpf.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>TYPES : BEGIN OF ty_bseg,</FPCLINE>
+      <FPCLINE>          bukrs    TYPE bseg-bukrs,</FPCLINE>
+      <FPCLINE>          gjahr    TYPE bseg-gjahr,</FPCLINE>
+      <FPCLINE>          belnr    TYPE bseg-belnr,</FPCLINE>
+      <FPCLINE>          koart    TYPE bseg-koart,</FPCLINE>
+      <FPCLINE>          hkont    TYPE bseg-hkont,</FPCLINE>
+      <FPCLINE>          lifnr    TYPE bseg-lifnr,</FPCLINE>
+      <FPCLINE>          kunnr    TYPE bseg-kunnr,</FPCLINE>
+      <FPCLINE>          anln1    TYPE bseg-anln1,</FPCLINE>
+      <FPCLINE>          dmbtr    TYPE bseg-dmbtr,</FPCLINE>
+      <FPCLINE>*          dm1    TYPE bseg-dmbtr,</FPCLINE>
+      <FPCLINE>*          dmbtr2    TYPE bseg-dmbtr,</FPCLINE>
+      <FPCLINE>          shkzg    TYPE bseg-shkzg,</FPCLINE>
+      <FPCLINE>          wrbtr    TYPE bseg-wrbtr,</FPCLINE>
+      <FPCLINE>*          wrbtr1    TYPE bseg-wrbtr,</FPCLINE>
+      <FPCLINE>*          wrbtr2    TYPE bseg-wrbtr,</FPCLINE>
+      <FPCLINE>          sgtxtend TYPE bseg-sgtxt,</FPCLINE>
+      <FPCLINE>          date     TYPE bseg-augcp,</FPCLINE>
+      <FPCLINE>          txt50    TYPE anla-txt50,</FPCLINE>
+      <FPCLINE>          txt501   TYPE skat-txt50,</FPCLINE>
+      <FPCLINE>          name1    TYPE kna1-name1,</FPCLINE>
+      <FPCLINE>          name2    TYPE lfa1-name1,</FPCLINE>
+      <FPCLINE>          dmr1     TYPE netwr,</FPCLINE>
+      <FPCLINE>          dmr2     TYPE netwr,</FPCLINE>
+      <FPCLINE>          wbr1     TYPE netwr,</FPCLINE>
+      <FPCLINE>          wbr2     TYPE netwr,</FPCLINE>
+      <FPCLINE>          debit    TYPE char30,</FPCLINE>
+      <FPCLINE>          credit   TYPE char30,</FPCLINE>
+      <FPCLINE>          total    TYPE char12,</FPCLINE>
+      <FPCLINE>          total1   TYPE char12,</FPCLINE>
+      <FPCLINE>          GV_TOT   TYPE char30,</FPCLINE>
+      <FPCLINE>          GV_TOT1   TYPE char30,</FPCLINE>
+      <FPCLINE>        END  OF       ty_bseg,</FPCLINE>
+      <FPCLINE>        tt_bseg TYPE STANDARD TABLE OF ty_bseg.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>TYPES : BEGIN OF ty_lfa1,</FPCLINE>
+      <FPCLINE>          lifnr TYPE lfa1-lifnr,</FPCLINE>
+      <FPCLINE>          name1 TYPE lfa1-name1,</FPCLINE>
+      <FPCLINE>        END OF ty_lfa1,</FPCLINE>
+      <FPCLINE>        tt_lfa1 TYPE STANDARD TABLE OF ty_lfa1,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        BEGIN OF ty_kna1,</FPCLINE>
+      <FPCLINE>          kunnr TYPE kna1-kunnr,</FPCLINE>
+      <FPCLINE>          name1 TYPE kna1-kunnr,</FPCLINE>
+      <FPCLINE>        END OF ty_kna1,</FPCLINE>
+      <FPCLINE>        tt_kna1 TYPE STANDARD TABLE OF ty_kna1,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        BEGIN OF ty_skat,</FPCLINE>
+      <FPCLINE>          saknr TYPE skat-saknr,</FPCLINE>
+      <FPCLINE>          txt50 TYPE skat-txt50,</FPCLINE>
+      <FPCLINE>        END OF ty_skat,</FPCLINE>
+      <FPCLINE>        tt_skat TYPE STANDARD TABLE OF ty_skat,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        BEGIN OF ty_anla,</FPCLINE>
+      <FPCLINE>          anln1 TYPE anla-anln1,</FPCLINE>
+      <FPCLINE>          txt50 TYPE anla-txt50,</FPCLINE>
+      <FPCLINE>        END OF ty_anla,</FPCLINE>
+      <FPCLINE>        tt_anla TYPE STANDARD TABLE OF ty_anla.</FPCLINE>
+     </TYPES>
+     <FIELDSYMBOLS/>
+    </CL_FP_GLOBAL_DEFINITIONS>
+   </cls:CL_FP_GLOBAL_DEFINITIONS>
+   <cls:CL_FP_PARAMETERS id="o4">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_PARAMETERS classVersion="1">
+     <IMPORT_PARAMETERS>
+      <SFPIOPAR>
+       <NAME>BELNR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BKPF-BELNR</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>GJAHR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BKPF-GJAHR</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>WAERS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BKPF-WAERS</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>WA_FINAL1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZSU_FI</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>LS_TEXT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IT_FINAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZSUFI_JV</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+     </IMPORT_PARAMETERS>
+     <EXPORT_PARAMETERS/>
+     <TABLE_PARAMETERS/>
+     <EXCEPTIONS/>
+    </CL_FP_PARAMETERS>
+   </cls:CL_FP_PARAMETERS>
+   <cls:CL_FP_CODING id="o5">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_CODING classVersion="1">
+     <INPUT_PARAMETERS/>
+     <OUTPUT_PARAMETERS/>
+     <INITIALIZATION>
+      <FPCLINE>DATA: lv_total_debit  TYPE bseg-wrbtr,</FPCLINE>
+      <FPCLINE>      lv_total_credit TYPE bseg-wrbtr.</FPCLINE>
+      <FPCLINE>CLEAR : wa_bseg,</FPCLINE>
+      <FPCLINE>        wa_lfa1,</FPCLINE>
+      <FPCLINE>        wa_kna1, wa_skat, wa_anla, gv_tot,gv_tot1.</FPCLINE>
+      <FPCLINE>*BREAK-POINT.</FPCLINE>
+      <FPCLINE>SELECT  bukrs</FPCLINE>
+      <FPCLINE>        gjahr</FPCLINE>
+      <FPCLINE>        belnr</FPCLINE>
+      <FPCLINE>        koart</FPCLINE>
+      <FPCLINE>        hkont</FPCLINE>
+      <FPCLINE>        lifnr</FPCLINE>
+      <FPCLINE>        kunnr</FPCLINE>
+      <FPCLINE>        anln1</FPCLINE>
+      <FPCLINE>        dmbtr</FPCLINE>
+      <FPCLINE>        shkzg</FPCLINE>
+      <FPCLINE>        wrbtr</FPCLINE>
+      <FPCLINE>        sgtxt</FPCLINE>
+      <FPCLINE>   FROM bseg</FPCLINE>
+      <FPCLINE>   INTO TABLE it_bseg</FPCLINE>
+      <FPCLINE>  WHERE belnr = belnr</FPCLINE>
+      <FPCLINE>    AND gjahr = gjahr</FPCLINE>
+      <FPCLINE>    AND bukrs = wa_final1-bukrs.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>wa_final = wa_final1.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*DATA:str TYPE char255.</FPCLINE>
+      <FPCLINE>*str = &apos;شركة دلفال فلو كونترولز الشرق الأوسط المحدودة&apos;.</FPCLINE>
+      <FPCLINE>*CALL FUNCTION &apos;STRING_REVERSE&apos;</FPCLINE>
+      <FPCLINE>*  EXPORTING</FPCLINE>
+      <FPCLINE>*    STRING          = str</FPCLINE>
+      <FPCLINE>*    LANG            = &apos;A&apos;</FPCLINE>
+      <FPCLINE>* IMPORTING</FPCLINE>
+      <FPCLINE>*   RSTRING         = lv_invno.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*lv_invno = lv_invno.</FPCLINE>
+      <FPCLINE>DATA:str TYPE char255.</FPCLINE>
+      <FPCLINE>*BREAK DVBaSIS.</FPCLINE>
+      <FPCLINE>str = &apos;شركة دلفال فلو كونترولز الشرق الأوسط المحدودة&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>lv_invno = reverse( str ).</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*CALL FUNCTION &apos;STRING_REVERSE&apos;</FPCLINE>
+      <FPCLINE>*  EXPORTING</FPCLINE>
+      <FPCLINE>*    STRING          = str</FPCLINE>
+      <FPCLINE>*    LANG            = &apos;A&apos;</FPCLINE>
+      <FPCLINE>* IMPORTING</FPCLINE>
+      <FPCLINE>*   RSTRING         = lv_invno.</FPCLINE>
+      <FPCLINE>*lv_invno = lv_invno.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>REFRESH : it_skat, it_lfa1, it_kna1, it_anla.</FPCLINE>
+      <FPCLINE>CLEAR :</FPCLINE>
+      <FPCLINE>wa_lfa1, wa_kna1, wa_anla, wa_skat.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>IF wa_bseg-koart = &apos;S&apos; OR wa_bseg-koart = &apos;M&apos;.</FPCLINE>
+      <FPCLINE>  SELECT saknr</FPCLINE>
+      <FPCLINE>         txt50</FPCLINE>
+      <FPCLINE>    FROM skat</FPCLINE>
+      <FPCLINE>    INTO TABLE it_skat</FPCLINE>
+      <FPCLINE>    FOR ALL ENTRIES IN it_bseg</FPCLINE>
+      <FPCLINE>    WHERE saknr = it_bseg-hkont.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF wa_bseg-koart = &apos;K&apos;.</FPCLINE>
+      <FPCLINE>  SELECT lifnr</FPCLINE>
+      <FPCLINE>         name1</FPCLINE>
+      <FPCLINE>       FROM lfa1</FPCLINE>
+      <FPCLINE>    INTO TABLE it_lfa1</FPCLINE>
+      <FPCLINE>    FOR ALL ENTRIES IN it_bseg</FPCLINE>
+      <FPCLINE>    WHERE lifnr = it_bseg-lifnr.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF wa_bseg-koart = &apos;D&apos;.</FPCLINE>
+      <FPCLINE>  SELECT kunnr</FPCLINE>
+      <FPCLINE>         name1</FPCLINE>
+      <FPCLINE>     FROM kna1</FPCLINE>
+      <FPCLINE>     INTO TABLE it_kna1</FPCLINE>
+      <FPCLINE>    FOR ALL ENTRIES IN it_bseg</FPCLINE>
+      <FPCLINE>    WHERE kunnr = it_bseg-kunnr.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF wa_bseg-koart = &apos;A&apos;.</FPCLINE>
+      <FPCLINE>  SELECT anln1</FPCLINE>
+      <FPCLINE>         txt50</FPCLINE>
+      <FPCLINE>     FROM anla</FPCLINE>
+      <FPCLINE>     INTO TABLE it_anla</FPCLINE>
+      <FPCLINE>    FOR ALL ENTRIES IN it_bseg</FPCLINE>
+      <FPCLINE>    WHERE anln1 = it_bseg-anln1.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>READ TABLE it_lfa1 INTO wa_lfa1 WITH KEY lifnr = wa_bseg-lifnr.</FPCLINE>
+      <FPCLINE>READ TABLE it_kna1 INTO wa_kna1 WITH KEY kunnr = wa_bseg-kunnr.</FPCLINE>
+      <FPCLINE>READ TABLE it_anla INTO wa_anla WITH KEY anln1 = wa_bseg-anln1.</FPCLINE>
+      <FPCLINE>READ TABLE it_skat INTO wa_skat WITH KEY saknr = wa_bseg-hkont.</FPCLINE>
+      <FPCLINE>READ TABLE it_bseg INTO wa_bseg WITH KEY belnr =  wa_final-belnr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>CLEAR: lv_total_debit,</FPCLINE>
+      <FPCLINE>       lv_total_credit.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>LOOP AT it_bseg INTO wa_bseg.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  READ TABLE it_final INTO wa_final WITH KEY belnr = wa_bseg-belnr.</FPCLINE>
+      <FPCLINE>  wa_bseg-date = wa_final-budat.</FPCLINE>
+      <FPCLINE>  REFRESH : it_skat, it_lfa1, it_kna1, it_anla.</FPCLINE>
+      <FPCLINE>  CLEAR :</FPCLINE>
+      <FPCLINE>  wa_lfa1, wa_kna1, wa_anla, wa_skat.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>  IF wa_bseg-koart = &apos;S&apos; OR wa_bseg-koart = &apos;M&apos;.</FPCLINE>
+      <FPCLINE>    SELECT saknr</FPCLINE>
+      <FPCLINE>           txt50</FPCLINE>
+      <FPCLINE>      FROM skat</FPCLINE>
+      <FPCLINE>      INTO TABLE it_skat</FPCLINE>
+      <FPCLINE>      FOR ALL ENTRIES IN it_bseg</FPCLINE>
+      <FPCLINE>      WHERE saknr = it_bseg-hkont.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF wa_bseg-koart = &apos;K&apos;.</FPCLINE>
+      <FPCLINE>    SELECT lifnr</FPCLINE>
+      <FPCLINE>           name1</FPCLINE>
+      <FPCLINE>         FROM lfa1</FPCLINE>
+      <FPCLINE>      INTO TABLE it_lfa1</FPCLINE>
+      <FPCLINE>      FOR ALL ENTRIES IN it_bseg</FPCLINE>
+      <FPCLINE>      WHERE lifnr = it_bseg-lifnr.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF wa_bseg-koart = &apos;D&apos;.</FPCLINE>
+      <FPCLINE>    SELECT kunnr</FPCLINE>
+      <FPCLINE>           name1</FPCLINE>
+      <FPCLINE>       FROM kna1</FPCLINE>
+      <FPCLINE>       INTO TABLE it_kna1</FPCLINE>
+      <FPCLINE>      FOR ALL ENTRIES IN it_bseg</FPCLINE>
+      <FPCLINE>      WHERE kunnr = it_bseg-kunnr.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF wa_bseg-koart = &apos;A&apos;.</FPCLINE>
+      <FPCLINE>    SELECT anln1</FPCLINE>
+      <FPCLINE>           txt50</FPCLINE>
+      <FPCLINE>       FROM anla</FPCLINE>
+      <FPCLINE>       INTO TABLE it_anla</FPCLINE>
+      <FPCLINE>      FOR ALL ENTRIES IN it_bseg</FPCLINE>
+      <FPCLINE>      WHERE anln1 = it_bseg-anln1.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  READ TABLE it_lfa1 INTO wa_lfa1 WITH KEY lifnr = wa_bseg-lifnr.</FPCLINE>
+      <FPCLINE>  wa_bseg-name2 = wa_lfa1-name1.</FPCLINE>
+      <FPCLINE>  READ TABLE it_kna1 INTO wa_kna1 WITH KEY kunnr = wa_bseg-kunnr.</FPCLINE>
+      <FPCLINE>  wa_bseg-name1 = wa_kna1-name1.</FPCLINE>
+      <FPCLINE>  READ TABLE it_anla INTO wa_anla WITH KEY anln1 = wa_bseg-anln1.</FPCLINE>
+      <FPCLINE>  wa_bseg-txt50 = wa_anla-txt50.</FPCLINE>
+      <FPCLINE>  READ TABLE it_skat INTO wa_skat WITH KEY saknr = wa_bseg-hkont.</FPCLINE>
+      <FPCLINE>  wa_bseg-txt501 = wa_skat-txt50.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF wa_bseg-shkzg = &apos;S&apos;.</FPCLINE>
+      <FPCLINE>    IF waers NE &apos;SAR&apos;.</FPCLINE>
+      <FPCLINE>      lv_total_debit  = lv_total_debit  + wa_bseg-wrbtr.</FPCLINE>
+      <FPCLINE>      wa_bseg-wbr1 = wa_bseg-wrbtr.</FPCLINE>
+      <FPCLINE>      WRITE wa_bseg-wrbtr TO   wa_bseg-debit.</FPCLINE>
+      <FPCLINE>      CONDENSE wa_bseg-debit.</FPCLINE>
+      <FPCLINE>    ELSE.</FPCLINE>
+      <FPCLINE>      lv_total_debit  = lv_total_debit + wa_bseg-dmbtr.</FPCLINE>
+      <FPCLINE>      wa_bseg-dmr1 = wa_bseg-dmbtr.</FPCLINE>
+      <FPCLINE>      WRITE wa_bseg-dmbtr TO   wa_bseg-debit.</FPCLINE>
+      <FPCLINE>      CONDENSE wa_bseg-debit.</FPCLINE>
+      <FPCLINE>    ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF wa_bseg-shkzg = &apos;H&apos;.</FPCLINE>
+      <FPCLINE>    IF waers NE &apos;SAR&apos;.</FPCLINE>
+      <FPCLINE>      lv_total_credit = lv_total_credit + wa_bseg-wrbtr.</FPCLINE>
+      <FPCLINE>      wa_bseg-wbr2 = wa_bseg-wrbtr.</FPCLINE>
+      <FPCLINE>      WRITE wa_bseg-wrbtr TO   wa_bseg-credit.</FPCLINE>
+      <FPCLINE>      CONDENSE wa_bseg-credit.</FPCLINE>
+      <FPCLINE>    ELSE.</FPCLINE>
+      <FPCLINE>      lv_total_credit = lv_total_credit + wa_bseg-dmbtr.</FPCLINE>
+      <FPCLINE>      wa_bseg-dmr2 = wa_bseg-dmbtr.</FPCLINE>
+      <FPCLINE>      WRITE wa_bseg-dmbtr TO wa_bseg-credit.</FPCLINE>
+      <FPCLINE>      CONDENSE wa_bseg-credit.</FPCLINE>
+      <FPCLINE>    ENDIF.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  MODIFY it_bseg FROM wa_bseg TRANSPORTING date name2 name1 txt501 txt50  wbr2 wbr1 dmr2 dmr1 debit credit  .</FPCLINE>
+      <FPCLINE>  CLEAR wa_bseg.</FPCLINE>
+      <FPCLINE>ENDLOOP.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>WRITE lv_total_debit  TO gv_tot.</FPCLINE>
+      <FPCLINE>WRITE lv_total_credit TO gv_tot1.</FPCLINE>
+      <FPCLINE>CONDENSE:gv_tot,gv_tot1.</FPCLINE>
+     </INITIALIZATION>
+     <FORMS/>
+    </CL_FP_CODING>
+   </cls:CL_FP_CODING>
+  </asx:heap>
+ </asx:abap>
+</abapGit>

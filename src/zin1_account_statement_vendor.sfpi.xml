@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SFPI" serializer_version="v1.0.0">
+ <asx:abap version="1.0" xmlns:asx="http://www.sap.com/abapxml">
+  <asx:values>
+   <VERSION>1</VERSION>
+   <TYPE/>
+   <INTERFACE href="#o1"/>
+   <INTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID/>
+     <TEXT>Balance confirmation of vendor</TEXT>
+    </FPINTERFACET>
+   </INTERFACET>
+  </asx:values>
+  <asx:heap xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:abap="http://www.sap.com/abapxml/types/built-in" xmlns:cls="http://www.sap.com/abapxml/classes/global" xmlns:dic="http://www.sap.com/abapxml/types/dictionary">
+   <cls:CL_FP_INTERFACE_DATA id="o1">
+    <CL_FP_INTERFACE_DATA classVersion="1">
+     <CODING href="#o5"/>
+     <PARAMETERS href="#o4"/>
+     <GLOBAL_DEFINITIONS href="#o3"/>
+     <REFERENCE_FIELDS href="#o2"/>
+     <XSD_DEFINITIONS/>
+    </CL_FP_INTERFACE_DATA>
+   </cls:CL_FP_INTERFACE_DATA>
+   <cls:CL_FP_REFERENCE_FIELDS id="o2">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_REFERENCE_FIELDS classVersion="1">
+     <REFERENCE_FIELDS/>
+    </CL_FP_REFERENCE_FIELDS>
+   </cls:CL_FP_REFERENCE_FIELDS>
+   <cls:CL_FP_GLOBAL_DEFINITIONS id="o3">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_GLOBAL_DEFINITIONS classVersion="1">
+     <GLOBAL_DATA>
+      <SFPGDATA>
+       <NAME>WA_VENDORBAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZIN1_VENDORBAL</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>TOTAL_DEBIT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>DMBTR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>TOTAL_CREDIT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>DMBTR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>T_RATE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TCURR-UKURS</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>T_AMOUNT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BSEG-WRBTR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>VEND_BAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BSEG-WRBTR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_TEMP</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZIN1_VENDOR_LEDGER</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_ADDR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_ADDR2</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_CR_DR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR2</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_ADDR1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+     </GLOBAL_DATA>
+     <TYPES/>
+     <FIELDSYMBOLS/>
+    </CL_FP_GLOBAL_DEFINITIONS>
+   </cls:CL_FP_GLOBAL_DEFINITIONS>
+   <cls:CL_FP_PARAMETERS id="o4">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_PARAMETERS classVersion="1">
+     <IMPORT_PARAMETERS>
+      <SFPIOPAR>
+       <NAME>IT_FINAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZIN1_VENDOR_LEDGER_TT</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IT_VENDORBAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZIN1_VENDORBAL_TT</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>CURRENCY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BSID-WAERS</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+     </IMPORT_PARAMETERS>
+     <EXPORT_PARAMETERS/>
+     <TABLE_PARAMETERS/>
+     <EXCEPTIONS/>
+    </CL_FP_PARAMETERS>
+   </cls:CL_FP_PARAMETERS>
+   <cls:CL_FP_CODING id="o5">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_CODING classVersion="1">
+     <INPUT_PARAMETERS/>
+     <OUTPUT_PARAMETERS/>
+     <INITIALIZATION>
+      <FPCLINE>Loop at IT_VENDORBAL INTO WA_VENDORBAL.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>TOTAL_DEBIT = 0.</FPCLINE>
+      <FPCLINE>TOTAL_CREDIT = 0.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE name2 FROM lfa1 INTO wa_vendorbal-name2</FPCLINE>
+      <FPCLINE>                      WHERE lifnr = wa_vendorbal-lifnr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>CONCATENATE WA_vendorBAL-HOUSE_NUM1</FPCLINE>
+      <FPCLINE> WA_vendorBAL-STREET</FPCLINE>
+      <FPCLINE> WA_VENDORBAL-str_suppl1</FPCLINE>
+      <FPCLINE>  WA_VENDORBAL-str_suppl1 INTO lv_addr SEPARATED BY space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>CONDENSE lv_addr.</FPCLINE>
+      <FPCLINE>CONCATENATE WA_VENDORBAL-NAME1 WA_VENDORBAL-NAME2</FPCLINE>
+      <FPCLINE>INTO lv_addr1 SEPARATED BY space.</FPCLINE>
+      <FPCLINE>CONDENSE lv_addr1.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>CONCATENATE WA_VENDORBAL-ORT02</FPCLINE>
+      <FPCLINE>WA_VENDORBAL-ORT01 &apos;-&apos;</FPCLINE>
+      <FPCLINE>WA_VENDORBAL-PSTLZ INTO lv_addr2 SEPARATED BY space.</FPCLINE>
+      <FPCLINE>CONDENSE lv_addr2 .</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF WA_VENDORBAL-CLBAL LT 0.</FPCLINE>
+      <FPCLINE>WA_VENDORBAL-CLBAL = WA_VENDORBAL-CLBAL * -1.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>LV_CR_DR = &apos;Cr&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>else.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>LV_CR_DR = &apos;Dr&apos;.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  ENDLOOP.</FPCLINE>
+     </INITIALIZATION>
+     <FORMS/>
+    </CL_FP_CODING>
+   </cls:CL_FP_CODING>
+  </asx:heap>
+ </asx:abap>
+</abapGit>

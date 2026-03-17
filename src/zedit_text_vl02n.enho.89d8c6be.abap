@@ -1,0 +1,9 @@
+"Name: \PR:SAPMV50A\FO:USEREXIT_TEXT_INPUT_CHANGE\SE:BEGIN\EI
+ENHANCEMENT 0 ZEDIT_TEXT_VL02N.
+
+if sy-tcode = 'VL02N'  .
+  cf_display_flag = ' ' .
+endif.
+
+
+ENDENHANCEMENT.

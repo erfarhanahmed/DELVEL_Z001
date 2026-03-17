@@ -1,0 +1,732 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SFPI" serializer_version="v1.0.0">
+ <asx:abap version="1.0" xmlns:asx="http://www.sap.com/abapxml">
+  <asx:values>
+   <VERSION>1</VERSION>
+   <TYPE/>
+   <INTERFACE href="#o1"/>
+   <INTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID/>
+     <TEXT>ZSD_SALESORDER</TEXT>
+    </FPINTERFACET>
+   </INTERFACET>
+  </asx:values>
+  <asx:heap xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:abap="http://www.sap.com/abapxml/types/built-in" xmlns:cls="http://www.sap.com/abapxml/classes/global" xmlns:dic="http://www.sap.com/abapxml/types/dictionary">
+   <cls:CL_FP_INTERFACE_DATA id="o1">
+    <CL_FP_INTERFACE_DATA classVersion="1">
+     <CODING href="#o5"/>
+     <PARAMETERS href="#o4"/>
+     <GLOBAL_DEFINITIONS href="#o3"/>
+     <REFERENCE_FIELDS href="#o2"/>
+     <XSD_DEFINITIONS/>
+    </CL_FP_INTERFACE_DATA>
+   </cls:CL_FP_INTERFACE_DATA>
+   <cls:CL_FP_REFERENCE_FIELDS id="o2">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_REFERENCE_FIELDS classVersion="1">
+     <REFERENCE_FIELDS/>
+    </CL_FP_REFERENCE_FIELDS>
+   </cls:CL_FP_REFERENCE_FIELDS>
+   <cls:CL_FP_GLOBAL_DEFINITIONS id="o3">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_GLOBAL_DEFINITIONS classVersion="1">
+     <GLOBAL_DATA>
+      <SFPGDATA>
+       <NAME>LV_BSTKD_ANA</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>VBAP-BSTKD_ANA</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_TAX</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_TAX</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_PRCD_JTCB</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_PRCD</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_ZPFO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>PRCD_ELEMENTS-KBETR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_PAY_TERMS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>T052U-TEXT1</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_BANK_DETAILS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_FORWARD_MEMO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_SPECIAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_DOCUMENT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_MODE_OF_TRANSPORT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_INSURANCE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_OFMDATE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_DATE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>SY-DATUM</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_AMT_WORDS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_KWERT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>PRCD_ELEMENTS-KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_VBAP</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_FINAL</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_VBAK</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>VBAK</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_CUST_ADDRESS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ADRC</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_KNA1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KNA1</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GS_ADRCT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ADRCT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GS_T005T</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>T005T</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GS_ADR6</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ADR6</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GS_ADRC</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ADRC</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+     </GLOBAL_DATA>
+     <TYPES>
+      <FPCLINE>*TYPES: tt_vbap TYPE TABLE of vbap.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>TYPES: tt_prcd TYPE TABLE of prcd_elements.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>TYPES: BEGIN OF ty_final,</FPCLINE>
+      <FPCLINE>  posnr TYPE vbap-posnr,</FPCLINE>
+      <FPCLINE>  matnr TYPE vbap-matnr,</FPCLINE>
+      <FPCLINE>  arktx TYPE vbap-arktx,</FPCLINE>
+      <FPCLINE>  vrkme TYPE vbap-vrkme,</FPCLINE>
+      <FPCLINE>*  NTGEW TYPE vbap-NTGEW,</FPCLINE>
+      <FPCLINE>  NTGEW TYPE p DECIMALS  2,</FPCLINE>
+      <FPCLINE>*  CMTD_DELIV_DATE TYPE vbap-CMTD_DELIV_DATE,</FPCLINE>
+      <FPCLINE>  CMTD_DELIV_DATE TYPE char10,</FPCLINE>
+      <FPCLINE>  netpr TYPE vbap-netpr,</FPCLINE>
+      <FPCLINE>  netwr TYPE vbap-netwr,</FPCLINE>
+      <FPCLINE>  con_drs TYPE char12,</FPCLINE>
+      <FPCLINE>*  KAWRT TYPE p DECIMALS 3,</FPCLINE>
+      <FPCLINE>  KAWRT TYPE char20,</FPCLINE>
+      <FPCLINE>*  kbetr TYPE p DECIMALS 3,</FPCLINE>
+      <FPCLINE>  kbetr TYPE char20,</FPCLINE>
+      <FPCLINE>  WAERS TYPE char4,</FPCLINE>
+      <FPCLINE>  END OF ty_final.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  TYPES: tt_final TYPE TABLE OF ty_final,</FPCLINE>
+      <FPCLINE>          wa_final TYPE ty_final.</FPCLINE>
+      <FPCLINE>*  TYPES: wa_vbrp TYPE ty_final.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>  TYPES: BEGIN OF ty_tax,</FPCLINE>
+      <FPCLINE>    KPOSN TYPE prcd_elements-KPOSN,</FPCLINE>
+      <FPCLINE>      con_drs TYPE char12,</FPCLINE>
+      <FPCLINE>  KAWRT TYPE p DECIMALS 3,</FPCLINE>
+      <FPCLINE>  kbetr TYPE p DECIMALS 3,</FPCLINE>
+      <FPCLINE>  WAERS TYPE char4,</FPCLINE>
+      <FPCLINE>    END OF ty_tax.</FPCLINE>
+      <FPCLINE>    TYPES: tt_tax TYPE TABLE OF ty_tax.</FPCLINE>
+     </TYPES>
+     <FIELDSYMBOLS/>
+    </CL_FP_GLOBAL_DEFINITIONS>
+   </cls:CL_FP_GLOBAL_DEFINITIONS>
+   <cls:CL_FP_PARAMETERS id="o4">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_PARAMETERS classVersion="1">
+     <IMPORT_PARAMETERS>
+      <SFPIOPAR>
+       <NAME>LV_VBELN</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>VBAK-VBELN</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+     </IMPORT_PARAMETERS>
+     <EXPORT_PARAMETERS/>
+     <TABLE_PARAMETERS/>
+     <EXCEPTIONS/>
+    </CL_FP_PARAMETERS>
+   </cls:CL_FP_PARAMETERS>
+   <cls:CL_FP_CODING id="o5">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_CODING classVersion="1">
+     <INPUT_PARAMETERS/>
+     <OUTPUT_PARAMETERS/>
+     <INITIALIZATION>
+      <FPCLINE/>
+      <FPCLINE>DATA(lo_text_reader) = NEW zcl_read_text( ).</FPCLINE>
+      <FPCLINE>DATA : lv_lines1 type String.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>Select SINGLE * from vbak INTO wa_vbak WHERE vbeln = lv_vbeln.</FPCLINE>
+      <FPCLINE>  SELECT * from vbap INTO  TABLE @data(it_vbap2) WHERE vbeln = @lv_vbeln.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SORT it_vbap2 by posnr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>***********Customer address*****************</FPCLINE>
+      <FPCLINE>SELECT  SINGLE * from kna1 into wa_kna1  WHERE kunnr = wa_vbak-kunnr.</FPCLINE>
+      <FPCLINE>SELECT  SINGLE * from adrc INTO wa_cust_address WHERe ADDRNUMBER = wa_kna1-adrnr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>************************** payment terms**************</FPCLINE>
+      <FPCLINE>SELECT SINGLE zterm FROM vbkd INTO @data(payment) WHERE vbeln = @wa_vbak-vbeln.</FPCLINE>
+      <FPCLINE>  SELECT SINGLE TEXT1 from t052u INTO lv_pay_terms WHERE</FPCLINE>
+      <FPCLINE>    zterm = payment and spras = &apos;E&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>***********plant address******************</FPCLINE>
+      <FPCLINE>  READ TABLE it_vbap2 INTO DATA(wa_vbap2) INDEX 1.</FPCLINE>
+      <FPCLINE>  IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>    SELECT SINGLE * FROM t001w INTO @data(ls_t001w)</FPCLINE>
+      <FPCLINE>      WHERE werks = @wa_vbap2-werks.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    SELECT SINGLE * FROM adrc INTO gs_adrc</FPCLINE>
+      <FPCLINE>      WHERE addrnumber = ls_t001w-adrnr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    SELECT SINGLE * FROM adr6 INTO gs_adr6</FPCLINE>
+      <FPCLINE>      WHERE addrnumber = ls_t001w-adrnr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    SELECT SINGLE landx FROM t005t</FPCLINE>
+      <FPCLINE>      INTO gs_t005t</FPCLINE>
+      <FPCLINE>      WHERE spras = sy-langu</FPCLINE>
+      <FPCLINE>        AND land1 = gs_adrc-country.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    SELECT SINGLE * FROM adrct INTO gs_adrct</FPCLINE>
+      <FPCLINE>      WHERE addrnumber = ls_t001w-adrnr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>lv_date = sy-datum.</FPCLINE>
+      <FPCLINE>*  BREAK-POINT.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE KBETR from prcd_elements INTO lv_zpfo</FPCLINE>
+      <FPCLINE>   WHERE knumv = wa_vbak-knumv and  KSCHL = &apos;ZPF0&apos;.</FPCLINE>
+      <FPCLINE>    SELECT * from prcd_elements INTO TABLE @DATA(it_prcd) WHERE knumv = @wa_vbak-knumv</FPCLINE>
+      <FPCLINE>       and KSCHL = &apos;ZPR0&apos;.</FPCLINE>
+      <FPCLINE>data: amt TYPE PC207-BETRG.</FPCLINE>
+      <FPCLINE>data:words TYPE char100.</FPCLINE>
+      <FPCLINE>*      CLEAR   lv_kwert1.</FPCLINE>
+      <FPCLINE>  LOOP AT it_prcd INTO DATA(wa_prcd) WHERE kschl = &apos;ZPR0&apos;.</FPCLINE>
+      <FPCLINE>    lv_kwert = lv_kwert + wa_prcd-kwert.</FPCLINE>
+      <FPCLINE>    amt = amt + wa_prcd-kwert.</FPCLINE>
+      <FPCLINE>    CLEAR: wa_prcd.</FPCLINE>
+      <FPCLINE>  ENDLOOP.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>  SELECT * from prcd_elements INTO TABLE it_prcd_JTCB WHERE knumv = wa_vbak-knumv</FPCLINE>
+      <FPCLINE>       and KSCHL = &apos;JTCB&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>REad TABLE it_vbap2 INTO wa_vbap2 INDEX 1.</FPCLINE>
+      <FPCLINE>lv_BSTKD_ANA = wa_vbap2-BSTKD_ANA.</FPCLINE>
+      <FPCLINE>data: wa_vbap TYPE ty_final.</FPCLINE>
+      <FPCLINE>DATA: wa_tax TYPE ty_tax.</FPCLINE>
+      <FPCLINE>data: lv_kawrt TYPE p DECIMALS 2.</FPCLINE>
+      <FPCLINE>data: lv_kbetr TYPE p DECIMALS 2.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>CLEAR: lv_kawrt,lv_kbetr.</FPCLINE>
+      <FPCLINE>    LOOP AT it_vbap2 INTO wa_vbap2.</FPCLINE>
+      <FPCLINE>      MOVE-CORRESPONDING wa_vbap2 to wa_vbap.</FPCLINE>
+      <FPCLINE>          SHIFT wa_vbap-posnr LEFT DELETING LEADING &apos;0&apos;.</FPCLINE>
+      <FPCLINE>          wa_vbap-NTGEW = wa_vbap2-kwmeng.</FPCLINE>
+      <FPCLINE>*      wa_vbap-CMTD_DELIV_DATE = wa_vbap2-deldate.</FPCLINE>
+      <FPCLINE>      wa_vbap-CMTD_DELIV_DATE =</FPCLINE>
+      <FPCLINE>|{ wa_vbap2-deldate+6(2) }| &amp;&amp; |.| &amp;&amp; |{ wa_vbap2-deldate+4(2) }| &amp;&amp; |.| &amp;&amp; |{ wa_vbap2-deldate+0(4) }|.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>REad TABLE it_prcd_JTCB INTO DATA(wa_prcd_JTCB) with key knumv = wa_vbak-knumv</FPCLINE>
+      <FPCLINE>                                                         KPOSN = wa_vbap2-posnr.</FPCLINE>
+      <FPCLINE>IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>wa_vbap-con_drs = &apos;IN: TCS base&apos;.</FPCLINE>
+      <FPCLINE>*BREAK-POINT.</FPCLINE>
+      <FPCLINE>lv_kawrt = wa_prcd_JTCB-kawrt.</FPCLINE>
+      <FPCLINE>wa_vbap-kawrt = lv_kawrt.</FPCLINE>
+      <FPCLINE>lv_kbetr = wa_prcd_JTCB-kbetr.</FPCLINE>
+      <FPCLINE>if lv_kbetr IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>wa_vbap-kbetr = |{ lv_kbetr }| &amp;&amp; |%| .</FPCLINE>
+      <FPCLINE>endif.</FPCLINE>
+      <FPCLINE>wa_vbap-waers = wa_prcd_JTCB-waers.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*MOVE-CORRESPONDING wa_vbap to wa_tax.</FPCLINE>
+      <FPCLINE>*wa_tax-KPOSN = wa_prcd_JTCB-KPOSN.</FPCLINE>
+      <FPCLINE>*append wa_tax to it_tax.</FPCLINE>
+      <FPCLINE>*CLEAR: wa_tax.</FPCLINE>
+      <FPCLINE>APPEND wa_vbap to it_vbap.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>CLEAR: wa_vbap.</FPCLINE>
+      <FPCLINE>    ENDLOOP.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>DATA gs_spell     TYPE spell.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>*amt = lv_kwert.</FPCLINE>
+      <FPCLINE>  IF wa_vbak-waerk = &apos;INR&apos;.</FPCLINE>
+      <FPCLINE>    CALL FUNCTION &apos;HR_IN_CHG_INR_WRDS&apos;</FPCLINE>
+      <FPCLINE>      EXPORTING</FPCLINE>
+      <FPCLINE>        amt_in_num         = amt</FPCLINE>
+      <FPCLINE>      IMPORTING</FPCLINE>
+      <FPCLINE>        amt_in_words       = words</FPCLINE>
+      <FPCLINE>      EXCEPTIONS</FPCLINE>
+      <FPCLINE>        data_type_mismatch = 1</FPCLINE>
+      <FPCLINE>        OTHERS             = 2.</FPCLINE>
+      <FPCLINE>    IF sy-subrc &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>      MESSAGE ID sy-msgid TYPE sy-msgty NUMBER sy-msgno</FPCLINE>
+      <FPCLINE>              WITH sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4.</FPCLINE>
+      <FPCLINE>    ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE> gv_amt_words = words.</FPCLINE>
+      <FPCLINE>    REPLACE ALL OCCURRENCES OF &apos;Paise&apos; IN gv_amt_words WITH &apos; &apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    IF  sy-subrc = 0.</FPCLINE>
+      <FPCLINE>      REPLACE ALL OCCURRENCES OF &apos;Rupees&apos; IN gv_amt_words WITH &apos; and Paise &apos;.</FPCLINE>
+      <FPCLINE>    ELSE.</FPCLINE>
+      <FPCLINE>      REPLACE ALL OCCURRENCES OF &apos;Rupees&apos; IN gv_amt_words WITH &apos;&apos;.</FPCLINE>
+      <FPCLINE>    ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    CONCATENATE &apos;Rupees&apos; gv_amt_words &apos;ONLY&apos; INTO gv_amt_words SEPARATED BY space.</FPCLINE>
+      <FPCLINE>  ELSE.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    CLEAR gs_spell.</FPCLINE>
+      <FPCLINE>    CALL FUNCTION &apos;SPELL_AMOUNT&apos;</FPCLINE>
+      <FPCLINE>      EXPORTING</FPCLINE>
+      <FPCLINE>        amount    = lv_kwert</FPCLINE>
+      <FPCLINE>        currency  = wa_vbak-waerk</FPCLINE>
+      <FPCLINE>*       FILLER    = &apos; &apos;</FPCLINE>
+      <FPCLINE>*       LANGUAGE  = SY-LANGU</FPCLINE>
+      <FPCLINE>      IMPORTING</FPCLINE>
+      <FPCLINE>        in_words  = gs_spell</FPCLINE>
+      <FPCLINE>      EXCEPTIONS</FPCLINE>
+      <FPCLINE>        not_found = 1</FPCLINE>
+      <FPCLINE>        too_large = 2</FPCLINE>
+      <FPCLINE>        OTHERS    = 3.</FPCLINE>
+      <FPCLINE>    IF sy-subrc &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>* Implement suitable error handling here</FPCLINE>
+      <FPCLINE>    ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    CONCATENATE wa_vbak-waerk gs_spell-word INTO gv_amt_words SEPARATED BY space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>  DATA : gt_lines TYPE TABLE OF tline,</FPCLINE>
+      <FPCLINE>        ls_lines TYPE tline.</FPCLINE>
+      <FPCLINE>  DATA : vbeln  TYPE thead-tdname.</FPCLINE>
+      <FPCLINE>  vbeln = wa_vbak-vbeln.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>****************ofm date **************</FPCLINE>
+      <FPCLINE>  SELECT SINGLE * from stxh INTO @DATA(wa_stxh) WHERE TDOBJECT = &apos;VBBK&apos;</FPCLINE>
+      <FPCLINE>                                                      and TDNAME = @vbeln</FPCLINE>
+      <FPCLINE>                                                      and TDID = &apos;Z016&apos;</FPCLINE>
+      <FPCLINE>                                                         and TDSPRAS = &apos;E&apos;.</FPCLINE>
+      <FPCLINE>    if wa_stxh is not INITIAL.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>**  CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>**      EXPORTING</FPCLINE>
+      <FPCLINE>**        client                  = sy-mandt</FPCLINE>
+      <FPCLINE>**        id                      = &apos;Z016&apos;</FPCLINE>
+      <FPCLINE>**        language                = &apos;E&apos;</FPCLINE>
+      <FPCLINE>**        name                    = vbeln</FPCLINE>
+      <FPCLINE>**        object                  = &apos;VBBK&apos;</FPCLINE>
+      <FPCLINE>**      TABLES</FPCLINE>
+      <FPCLINE>**        lines                   = gt_lines</FPCLINE>
+      <FPCLINE>**      EXCEPTIONS</FPCLINE>
+      <FPCLINE>**        id                      = 1</FPCLINE>
+      <FPCLINE>**        language                = 2</FPCLINE>
+      <FPCLINE>**        name                    = 3</FPCLINE>
+      <FPCLINE>**        not_found               = 4</FPCLINE>
+      <FPCLINE>**        object                  = 5</FPCLINE>
+      <FPCLINE>**        reference_check         = 6</FPCLINE>
+      <FPCLINE>**        wrong_access_to_archive = 7</FPCLINE>
+      <FPCLINE>**        OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>**    IF sy-subrc &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>*** IMPLEMENT SUITABLE ERROR HANDLING HERE</FPCLINE>
+      <FPCLINE>**    ENDIF.</FPCLINE>
+      <FPCLINE>**</FPCLINE>
+      <FPCLINE>**     LOOP AT gt_lines INTO ls_lines.</FPCLINE>
+      <FPCLINE>**    CONCATENATE lv_ofmdate ls_lines-tdline INTO lv_ofmdate.</FPCLINE>
+      <FPCLINE>**    CLEAR: ls_lines.</FPCLINE>
+      <FPCLINE>**       ENDLOOP.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>      Clear lv_lines1.</FPCLINE>
+      <FPCLINE>lo_text_reader-&gt;read_text_string( EXPORTING id = &apos;Z016&apos; name = vbeln object = &apos;VBBK&apos; IMPORTING lv_lines = lv_lines1 ).</FPCLINE>
+      <FPCLINE>lv_ofmdate = lv_lines1.</FPCLINE>
+      <FPCLINE>       endif.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>************* insurance *********************</FPCLINE>
+      <FPCLINE>CLEAR: wa_stxh.</FPCLINE>
+      <FPCLINE>REFRESH: gt_lines.</FPCLINE>
+      <FPCLINE>  SELECT SINGLE * from stxh INTO wa_stxh WHERE TDOBJECT = &apos;VBBK&apos;</FPCLINE>
+      <FPCLINE>                                                      and TDNAME = vbeln</FPCLINE>
+      <FPCLINE>                                                      and TDID = &apos;Z017&apos;</FPCLINE>
+      <FPCLINE>                                                         and TDSPRAS = &apos;E&apos;.</FPCLINE>
+      <FPCLINE>    if wa_stxh is not INITIAL.</FPCLINE>
+      <FPCLINE>**  CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>**      EXPORTING</FPCLINE>
+      <FPCLINE>**        client                  = sy-mandt</FPCLINE>
+      <FPCLINE>**        id                      = &apos;Z017&apos;</FPCLINE>
+      <FPCLINE>**        language                = &apos;E&apos;</FPCLINE>
+      <FPCLINE>**        name                    = vbeln</FPCLINE>
+      <FPCLINE>**        object                  = &apos;VBBK&apos;</FPCLINE>
+      <FPCLINE>**      TABLES</FPCLINE>
+      <FPCLINE>**        lines                   = gt_lines</FPCLINE>
+      <FPCLINE>**      EXCEPTIONS</FPCLINE>
+      <FPCLINE>**        id                      = 1</FPCLINE>
+      <FPCLINE>**        language                = 2</FPCLINE>
+      <FPCLINE>**        name                    = 3</FPCLINE>
+      <FPCLINE>**        not_found               = 4</FPCLINE>
+      <FPCLINE>**        object                  = 5</FPCLINE>
+      <FPCLINE>**        reference_check         = 6</FPCLINE>
+      <FPCLINE>**        wrong_access_to_archive = 7</FPCLINE>
+      <FPCLINE>**        OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>**    IF sy-subrc &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>*** IMPLEMENT SUITABLE ERROR HANDLING HERE</FPCLINE>
+      <FPCLINE>**    ENDIF.</FPCLINE>
+      <FPCLINE>**</FPCLINE>
+      <FPCLINE>**     LOOP AT gt_lines INTO ls_lines.</FPCLINE>
+      <FPCLINE>**    CONCATENATE lv_insurance ls_lines-tdline INTO lv_insurance.</FPCLINE>
+      <FPCLINE>**    CLEAR: ls_lines.</FPCLINE>
+      <FPCLINE>**       ENDLOOP.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>      Clear lv_lines1.</FPCLINE>
+      <FPCLINE>lo_text_reader-&gt;read_text_string( EXPORTING id = &apos;Z017&apos; name = vbeln object = &apos;VBBK&apos; IMPORTING lv_lines = lv_lines1 ).</FPCLINE>
+      <FPCLINE>lv_insurance = lv_lines1.</FPCLINE>
+      <FPCLINE>       endif.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>************* moode of transport  *********************</FPCLINE>
+      <FPCLINE>CLEAR: wa_stxh.</FPCLINE>
+      <FPCLINE>REFRESH: gt_lines.</FPCLINE>
+      <FPCLINE>  SELECT SINGLE * from stxh INTO wa_stxh WHERE TDOBJECT = &apos;VBBK&apos;</FPCLINE>
+      <FPCLINE>                                                      and TDNAME = vbeln</FPCLINE>
+      <FPCLINE>                                                      and TDID = &apos;Z018&apos;</FPCLINE>
+      <FPCLINE>                                                         and TDSPRAS = &apos;E&apos;.</FPCLINE>
+      <FPCLINE>    if wa_stxh is not INITIAL.</FPCLINE>
+      <FPCLINE>**  CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>**      EXPORTING</FPCLINE>
+      <FPCLINE>**        client                  = sy-mandt</FPCLINE>
+      <FPCLINE>**        id                      = &apos;Z018&apos;</FPCLINE>
+      <FPCLINE>**        language                = &apos;E&apos;</FPCLINE>
+      <FPCLINE>**        name                    = vbeln</FPCLINE>
+      <FPCLINE>**        object                  = &apos;VBBK&apos;</FPCLINE>
+      <FPCLINE>**      TABLES</FPCLINE>
+      <FPCLINE>**        lines                   = gt_lines</FPCLINE>
+      <FPCLINE>**      EXCEPTIONS</FPCLINE>
+      <FPCLINE>**        id                      = 1</FPCLINE>
+      <FPCLINE>**        language                = 2</FPCLINE>
+      <FPCLINE>**        name                    = 3</FPCLINE>
+      <FPCLINE>**        not_found               = 4</FPCLINE>
+      <FPCLINE>**        object                  = 5</FPCLINE>
+      <FPCLINE>**        reference_check         = 6</FPCLINE>
+      <FPCLINE>**        wrong_access_to_archive = 7</FPCLINE>
+      <FPCLINE>**        OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>**    IF sy-subrc &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>*** IMPLEMENT SUITABLE ERROR HANDLING HERE</FPCLINE>
+      <FPCLINE>**    ENDIF.</FPCLINE>
+      <FPCLINE>**</FPCLINE>
+      <FPCLINE>**     LOOP AT gt_lines INTO ls_lines.</FPCLINE>
+      <FPCLINE>**    CONCATENATE lv_Mode_of_transport ls_lines-tdline INTO lv_Mode_of_transport.</FPCLINE>
+      <FPCLINE>**    CLEAR: ls_lines.</FPCLINE>
+      <FPCLINE>**       ENDLOOP.</FPCLINE>
+      <FPCLINE>       Clear lv_lines1.</FPCLINE>
+      <FPCLINE>lo_text_reader-&gt;read_text_string( EXPORTING id = &apos;Z018&apos; name = vbeln object = &apos;VBBK&apos; IMPORTING lv_lines = lv_lines1 ).</FPCLINE>
+      <FPCLINE>lv_Mode_of_transport = lv_lines1.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>       endif.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>************* Document through  *********************</FPCLINE>
+      <FPCLINE>CLEAR: wa_stxh.</FPCLINE>
+      <FPCLINE>REFRESH: gt_lines.</FPCLINE>
+      <FPCLINE>  SELECT SINGLE * from stxh INTO wa_stxh WHERE TDOBJECT = &apos;VBBK&apos;</FPCLINE>
+      <FPCLINE>                                                      and TDNAME = vbeln</FPCLINE>
+      <FPCLINE>                                                      and TDID = &apos;Z019&apos;</FPCLINE>
+      <FPCLINE>                                                         and TDSPRAS = &apos;E&apos;.</FPCLINE>
+      <FPCLINE>    if wa_stxh is not INITIAL.</FPCLINE>
+      <FPCLINE>**  CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>**      EXPORTING</FPCLINE>
+      <FPCLINE>**        client                  = sy-mandt</FPCLINE>
+      <FPCLINE>**        id                      = &apos;Z019&apos;</FPCLINE>
+      <FPCLINE>**        language                = &apos;E&apos;</FPCLINE>
+      <FPCLINE>**        name                    = vbeln</FPCLINE>
+      <FPCLINE>**        object                  = &apos;VBBK&apos;</FPCLINE>
+      <FPCLINE>**      TABLES</FPCLINE>
+      <FPCLINE>**        lines                   = gt_lines</FPCLINE>
+      <FPCLINE>**      EXCEPTIONS</FPCLINE>
+      <FPCLINE>**        id                      = 1</FPCLINE>
+      <FPCLINE>**        language                = 2</FPCLINE>
+      <FPCLINE>**        name                    = 3</FPCLINE>
+      <FPCLINE>**        not_found               = 4</FPCLINE>
+      <FPCLINE>**        object                  = 5</FPCLINE>
+      <FPCLINE>**        reference_check         = 6</FPCLINE>
+      <FPCLINE>**        wrong_access_to_archive = 7</FPCLINE>
+      <FPCLINE>**        OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>**    IF sy-subrc &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>*** IMPLEMENT SUITABLE ERROR HANDLING HERE</FPCLINE>
+      <FPCLINE>**    ENDIF.</FPCLINE>
+      <FPCLINE>**</FPCLINE>
+      <FPCLINE>**     LOOP AT gt_lines INTO ls_lines.</FPCLINE>
+      <FPCLINE>**    CONCATENATE lv_document ls_lines-tdline INTO lv_document.</FPCLINE>
+      <FPCLINE>**    CLEAR: ls_lines.</FPCLINE>
+      <FPCLINE>**       ENDLOOP.</FPCLINE>
+      <FPCLINE>     Clear lv_lines1.</FPCLINE>
+      <FPCLINE>lo_text_reader-&gt;read_text_string( EXPORTING id = &apos;Z019&apos; name = vbeln object = &apos;VBBK&apos; IMPORTING lv_lines = lv_lines1 ).</FPCLINE>
+      <FPCLINE>lv_document = lv_lines1.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>       endif.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>************* special  *********************</FPCLINE>
+      <FPCLINE>CLEAR: wa_stxh.</FPCLINE>
+      <FPCLINE>REFRESH: gt_lines.</FPCLINE>
+      <FPCLINE>  SELECT SINGLE * from stxh INTO wa_stxh WHERE TDOBJECT = &apos;VBBK&apos;</FPCLINE>
+      <FPCLINE>                                                      and TDNAME = vbeln</FPCLINE>
+      <FPCLINE>                                                      and TDID = &apos;Z020&apos;</FPCLINE>
+      <FPCLINE>                                                         and TDSPRAS = &apos;E&apos;.</FPCLINE>
+      <FPCLINE>    if wa_stxh is not INITIAL.</FPCLINE>
+      <FPCLINE>**  CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>**      EXPORTING</FPCLINE>
+      <FPCLINE>**        client                  = sy-mandt</FPCLINE>
+      <FPCLINE>**        id                      = &apos;Z020&apos;</FPCLINE>
+      <FPCLINE>**        language                = &apos;E&apos;</FPCLINE>
+      <FPCLINE>**        name                    = vbeln</FPCLINE>
+      <FPCLINE>**        object                  = &apos;VBBK&apos;</FPCLINE>
+      <FPCLINE>**      TABLES</FPCLINE>
+      <FPCLINE>**        lines                   = gt_lines</FPCLINE>
+      <FPCLINE>**      EXCEPTIONS</FPCLINE>
+      <FPCLINE>**        id                      = 1</FPCLINE>
+      <FPCLINE>**        language                = 2</FPCLINE>
+      <FPCLINE>**        name                    = 3</FPCLINE>
+      <FPCLINE>**        not_found               = 4</FPCLINE>
+      <FPCLINE>**        object                  = 5</FPCLINE>
+      <FPCLINE>**        reference_check         = 6</FPCLINE>
+      <FPCLINE>**        wrong_access_to_archive = 7</FPCLINE>
+      <FPCLINE>**        OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>**    IF sy-subrc &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>*** IMPLEMENT SUITABLE ERROR HANDLING HERE</FPCLINE>
+      <FPCLINE>**    ENDIF.</FPCLINE>
+      <FPCLINE>**</FPCLINE>
+      <FPCLINE>**     LOOP AT gt_lines INTO ls_lines.</FPCLINE>
+      <FPCLINE>**    CONCATENATE lv_special ls_lines-tdline INTO lv_special.</FPCLINE>
+      <FPCLINE>**    CLEAR: ls_lines.</FPCLINE>
+      <FPCLINE>**       ENDLOOP.</FPCLINE>
+      <FPCLINE>      Clear lv_lines1.</FPCLINE>
+      <FPCLINE>lo_text_reader-&gt;read_text_string( EXPORTING id = &apos;Z020&apos; name = vbeln object = &apos;VBBK&apos; IMPORTING lv_lines = lv_lines1 ).</FPCLINE>
+      <FPCLINE>lv_special = lv_lines1.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>       endif.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*************order forwarding memo  *********************</FPCLINE>
+      <FPCLINE>CLEAR: wa_stxh.</FPCLINE>
+      <FPCLINE>REFRESH: gt_lines.</FPCLINE>
+      <FPCLINE>  SELECT SINGLE * from stxh INTO wa_stxh WHERE TDOBJECT = &apos;VBBK&apos;</FPCLINE>
+      <FPCLINE>                                                      and TDNAME = vbeln</FPCLINE>
+      <FPCLINE>                                                      and TDID = &apos;Z015&apos;</FPCLINE>
+      <FPCLINE>                                                         and TDSPRAS = &apos;E&apos;.</FPCLINE>
+      <FPCLINE>    if wa_stxh is not INITIAL.</FPCLINE>
+      <FPCLINE>**  CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>**      EXPORTING</FPCLINE>
+      <FPCLINE>**        client                  = sy-mandt</FPCLINE>
+      <FPCLINE>**        id                      = &apos;Z015&apos;</FPCLINE>
+      <FPCLINE>**        language                = &apos;E&apos;</FPCLINE>
+      <FPCLINE>**        name                    = vbeln</FPCLINE>
+      <FPCLINE>**        object                  = &apos;VBBK&apos;</FPCLINE>
+      <FPCLINE>**      TABLES</FPCLINE>
+      <FPCLINE>**        lines                   = gt_lines</FPCLINE>
+      <FPCLINE>**      EXCEPTIONS</FPCLINE>
+      <FPCLINE>**        id                      = 1</FPCLINE>
+      <FPCLINE>**        language                = 2</FPCLINE>
+      <FPCLINE>**        name                    = 3</FPCLINE>
+      <FPCLINE>**        not_found               = 4</FPCLINE>
+      <FPCLINE>**        object                  = 5</FPCLINE>
+      <FPCLINE>**        reference_check         = 6</FPCLINE>
+      <FPCLINE>**        wrong_access_to_archive = 7</FPCLINE>
+      <FPCLINE>**        OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>**    IF sy-subrc &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>*** IMPLEMENT SUITABLE ERROR HANDLING HERE</FPCLINE>
+      <FPCLINE>**    ENDIF.</FPCLINE>
+      <FPCLINE>**</FPCLINE>
+      <FPCLINE>**     LOOP AT gt_lines INTO ls_lines.</FPCLINE>
+      <FPCLINE>**    CONCATENATE lv_forward_memo ls_lines-tdline INTO lv_forward_memo.</FPCLINE>
+      <FPCLINE>**    CLEAR: ls_lines.</FPCLINE>
+      <FPCLINE>**       ENDLOOP.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>       Clear lv_lines1.</FPCLINE>
+      <FPCLINE>lo_text_reader-&gt;read_text_string( EXPORTING id = &apos;Z015&apos; name = vbeln object = &apos;VBBK&apos; IMPORTING lv_lines = lv_lines1 ).</FPCLINE>
+      <FPCLINE>lv_forward_memo = lv_lines1.</FPCLINE>
+      <FPCLINE>       endif.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>*************bank details *********************</FPCLINE>
+      <FPCLINE>CLEAR: wa_stxh.</FPCLINE>
+      <FPCLINE>REFRESH: gt_lines.</FPCLINE>
+      <FPCLINE>  SELECT SINGLE * from stxh INTO wa_stxh WHERE TDOBJECT = &apos;VBBK&apos;</FPCLINE>
+      <FPCLINE>                                                      and TDNAME = vbeln</FPCLINE>
+      <FPCLINE>                                                      and TDID = &apos;Z021&apos;</FPCLINE>
+      <FPCLINE>                                                         and TDSPRAS = &apos;E&apos;.</FPCLINE>
+      <FPCLINE>    if wa_stxh is not INITIAL.</FPCLINE>
+      <FPCLINE>**  CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>**      EXPORTING</FPCLINE>
+      <FPCLINE>**        client                  = sy-mandt</FPCLINE>
+      <FPCLINE>**        id                      = &apos;Z021&apos;</FPCLINE>
+      <FPCLINE>**        language                = &apos;E&apos;</FPCLINE>
+      <FPCLINE>**        name                    = vbeln</FPCLINE>
+      <FPCLINE>**        object                  = &apos;VBBK&apos;</FPCLINE>
+      <FPCLINE>**      TABLES</FPCLINE>
+      <FPCLINE>**        lines                   = gt_lines</FPCLINE>
+      <FPCLINE>**      EXCEPTIONS</FPCLINE>
+      <FPCLINE>**        id                      = 1</FPCLINE>
+      <FPCLINE>**        language                = 2</FPCLINE>
+      <FPCLINE>**        name                    = 3</FPCLINE>
+      <FPCLINE>**        not_found               = 4</FPCLINE>
+      <FPCLINE>**        object                  = 5</FPCLINE>
+      <FPCLINE>**        reference_check         = 6</FPCLINE>
+      <FPCLINE>**        wrong_access_to_archive = 7</FPCLINE>
+      <FPCLINE>**        OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>**    IF sy-subrc &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>*** IMPLEMENT SUITABLE ERROR HANDLING HERE</FPCLINE>
+      <FPCLINE>**    ENDIF.</FPCLINE>
+      <FPCLINE>**</FPCLINE>
+      <FPCLINE>**     LOOP AT gt_lines INTO ls_lines.</FPCLINE>
+      <FPCLINE>**    CONCATENATE lv_bank_details ls_lines-tdline INTO lv_bank_details.</FPCLINE>
+      <FPCLINE>**    CLEAR: ls_lines.</FPCLINE>
+      <FPCLINE>**       ENDLOOP.</FPCLINE>
+      <FPCLINE>       Clear lv_lines1.</FPCLINE>
+      <FPCLINE>lo_text_reader-&gt;read_text_string( EXPORTING id = &apos;Z021&apos; name = vbeln object = &apos;VBBK&apos; IMPORTING lv_lines = lv_lines1 ).</FPCLINE>
+      <FPCLINE>lv_bank_details = lv_lines1.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>       endif.</FPCLINE>
+     </INITIALIZATION>
+     <FORMS/>
+    </CL_FP_CODING>
+   </cls:CL_FP_CODING>
+  </asx:heap>
+ </asx:abap>
+</abapGit>

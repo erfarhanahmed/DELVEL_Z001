@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Function group for ZSOS_PRIMUS_NEW</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZFG_ZPP_SOS04_IND_BOM_WIPTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZFG_ZPP_SOS04_IND_BOM_WIP</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZBOM_ROUTING</FUNCNAME>
+     <SHORT_TEXT>Function Module BOM Routing</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>PM_MTNRV</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>MARA-MATNR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>PM_WERKS</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>MARC-WERKS</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>PM_CAPID</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>TC04-CAPID</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>PM_DATUV</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR10</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>PM_EHNDL</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>PM_MTNRV</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Material Number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>PM_WERKS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Plant</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>PM_CAPID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Application</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>PM_DATUV</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Valid-From Date</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>PM_EHNDL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Single-Character Flag</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZFM_ZPP_SOS04_IND_BOM_WIP_N_SA</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>function module for ZSOS_PRIMUS_NEW</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>WERKS</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>WERKS_D</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>LV_JSON</PARAMETER>
+       <TYP>STRING</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>VBELN</PARAMETER>
+       <DBSTRUCT>ZRSVBELN</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>MATNR</PARAMETER>
+       <DBSTRUCT>RSMATNR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>EDATU</PARAMETER>
+       <DBSTRUCT>ZRSVDATU</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>WERKS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Plant</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>LV_JSON</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Internal header control</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>VBELN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Ranges structure (material number)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>MATNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Ranges structure (material number)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EDATU</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Ranges structure (material number)</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

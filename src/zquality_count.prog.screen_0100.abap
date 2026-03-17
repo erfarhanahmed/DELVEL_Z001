@@ -1,0 +1,8 @@
+PROCESS BEFORE OUTPUT.
+  CALL SUBSCREEN sub INCLUDING sy-repid '0300'.
+  MODULE status_0100.
+*
+PROCESS AFTER INPUT.
+  CALL SUBSCREEN sub.
+  MODULE validation.
+  MODULE user_command_0100.

@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SFPI" serializer_version="v1.0.0">
+ <asx:abap version="1.0" xmlns:asx="http://www.sap.com/abapxml">
+  <asx:values>
+   <VERSION>1</VERSION>
+   <TYPE/>
+   <INTERFACE href="#o1"/>
+   <INTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID/>
+     <TEXT>Interface for Payment Advice</TEXT>
+    </FPINTERFACET>
+   </INTERFACET>
+  </asx:values>
+  <asx:heap xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:abap="http://www.sap.com/abapxml/types/built-in" xmlns:cls="http://www.sap.com/abapxml/classes/global" xmlns:dic="http://www.sap.com/abapxml/types/dictionary">
+   <cls:CL_FP_INTERFACE_DATA id="o1">
+    <CL_FP_INTERFACE_DATA classVersion="1">
+     <CODING href="#o5"/>
+     <PARAMETERS href="#o4"/>
+     <GLOBAL_DEFINITIONS href="#o3"/>
+     <REFERENCE_FIELDS href="#o2"/>
+     <XSD_DEFINITIONS/>
+    </CL_FP_INTERFACE_DATA>
+   </cls:CL_FP_INTERFACE_DATA>
+   <cls:CL_FP_REFERENCE_FIELDS id="o2">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_REFERENCE_FIELDS classVersion="1">
+     <REFERENCE_FIELDS/>
+    </CL_FP_REFERENCE_FIELDS>
+   </cls:CL_FP_REFERENCE_FIELDS>
+   <cls:CL_FP_GLOBAL_DEFINITIONS id="o3">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_GLOBAL_DEFINITIONS classVersion="1">
+     <GLOBAL_DATA>
+      <SFPGDATA>
+       <NAME>LV_TOTAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>DMBTR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_GROSS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>DMBTR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_TDS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>DMBTR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_REJECTION</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>DMBTR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_PARTAMT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>DMBTR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_ADDRESS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_PAY_STR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_FINAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZPAYMENT_ADVICE_STR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_IMG</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>XSTRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+     </GLOBAL_DATA>
+     <TYPES/>
+     <FIELDSYMBOLS/>
+    </CL_FP_GLOBAL_DEFINITIONS>
+   </cls:CL_FP_GLOBAL_DEFINITIONS>
+   <cls:CL_FP_PARAMETERS id="o4">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_PARAMETERS classVersion="1">
+     <IMPORT_PARAMETERS>
+      <SFPIOPAR>
+       <NAME>AUGBL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>AUGBL</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IT_FINAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZPAYMENT_ADVICE_TT</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>WA_HEADER_DETAILS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZSTR_HEADER_DETAILS_PAY_ADVICE</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+     </IMPORT_PARAMETERS>
+     <EXPORT_PARAMETERS/>
+     <TABLE_PARAMETERS/>
+     <EXCEPTIONS/>
+    </CL_FP_PARAMETERS>
+   </cls:CL_FP_PARAMETERS>
+   <cls:CL_FP_CODING id="o5">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_CODING classVersion="1">
+     <INPUT_PARAMETERS/>
+     <OUTPUT_PARAMETERS/>
+     <INITIALIZATION>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>data lv_doc_date(10) TYPE C.</FPCLINE>
+      <FPCLINE>data lv_total01 TYPE STRING.</FPCLINE>
+      <FPCLINE>data lv_total02 TYPE dmbtr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>data(lv_augbl) = augbl.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>CLEAR lv_total02.</FPCLINE>
+      <FPCLINE> LOOP AT IT_FINAL INTO WA_FINAL .</FPCLINE>
+      <FPCLINE>   IF WA_FINAL-augbl = lv_augbl .</FPCLINE>
+      <FPCLINE>      lv_total02 =  lv_total02 + WA_FINAL-NET_DMBTR  .</FPCLINE>
+      <FPCLINE>   ENDIF.</FPCLINE>
+      <FPCLINE>   ENDLOOP.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE> lv_total01 = lv_total02.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>lv_doc_date = |{ WA_HEADER_DETAILS-AUGDT+6(2) }{ &apos;.&apos; }{ WA_HEADER_DETAILS-AUGDT+4(2) }{ &apos;.&apos; }{ WA_HEADER_DETAILS-AUGDT(4) }|.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>CONCATENATE &apos;The following payment has been made against DelVal Payment Doc No&apos; augbl &apos;DT&apos; lv_doc_date</FPCLINE>
+      <FPCLINE> &apos;Total Amount in Rupees&apos; LV_TOTAL01 INTO LV_pay_str SEPARATED BY space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE> CLEAR: lv_augbl.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>CONCATENATE WA_HEADER_DETAILS-STREET WA_HEADER_DETAILS-CITY1 WA_HEADER_DETAILS-POST_CODE1 WA_HEADER_DETAILS-time_zone</FPCLINE>
+      <FPCLINE>INTO lv_address SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*BREAK-POINT.</FPCLINE>
+      <FPCLINE>LOOP AT IT_FINAL INTO WA_FINAL FROM 1.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE> IF WA_FINAL-NET_DMBTR IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>  LV_TOTAL = LV_TOTAL + WA_FINAL-NET_DMBTR.</FPCLINE>
+      <FPCLINE>endif.</FPCLINE>
+      <FPCLINE> IF  WA_FINAL-GROSS_DMBTR IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>  LV_GROSS = LV_GROSS + WA_FINAL-GROSS_DMBTR.</FPCLINE>
+      <FPCLINE>endif.</FPCLINE>
+      <FPCLINE> IF WA_FINAL-TDS_DMBTR IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>  LV_TDS = LV_TDS + WA_FINAL-TDS_DMBTR.</FPCLINE>
+      <FPCLINE>endif.</FPCLINE>
+      <FPCLINE>  IF WA_FINAL-REJECTION_DMBTR IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>  LV_REJECTION = LV_REJECTION + WA_FINAL-REJECTION_DMBTR.</FPCLINE>
+      <FPCLINE>endif.</FPCLINE>
+      <FPCLINE> IF WA_FINAL-PARTAMT IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>  LV_PARTAMT = LV_PARTAMT + WA_FINAL-PARTAMT.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CLEAR WA_FINAL.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDLOOP.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>call METHOD cl_ssf_xsf_utilities=&gt;GET_BDS_GRAPHIC_AS_BMP</FPCLINE>
+      <FPCLINE>  EXPORTING</FPCLINE>
+      <FPCLINE>    P_OBJECT       = &apos;GRAPHICS&apos;               &quot; SAPscript Graphics Management: Application object</FPCLINE>
+      <FPCLINE>    P_NAME         =  &apos;LOGO_INDIA&apos;                &quot; Name</FPCLINE>
+      <FPCLINE>    P_ID           =   &apos;BMAP&apos;               &quot; SAPscript Graphics Management: ID</FPCLINE>
+      <FPCLINE>    P_BTYPE        =   &apos;BCOL&apos;               &quot; SAPscript: Type of graphic</FPCLINE>
+      <FPCLINE>  RECEIVING</FPCLINE>
+      <FPCLINE>    P_BMP          =   GV_IMG             &quot; Graphic Data</FPCLINE>
+      <FPCLINE>  EXCEPTIONS</FPCLINE>
+      <FPCLINE>    NOT_FOUND      = 1                &quot; Graphic Not Found</FPCLINE>
+      <FPCLINE>    INTERNAL_ERROR = 2                &quot; Internal error</FPCLINE>
+      <FPCLINE>    OTHERS         = 3</FPCLINE>
+      <FPCLINE>  .</FPCLINE>
+      <FPCLINE>IF SY-SUBRC &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>* MESSAGE ID SY-MSGID TYPE SY-MSGTY NUMBER SY-MSGNO</FPCLINE>
+      <FPCLINE>*   WITH SY-MSGV1 SY-MSGV2 SY-MSGV3 SY-MSGV4.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+     </INITIALIZATION>
+     <FORMS/>
+    </CL_FP_CODING>
+   </cls:CL_FP_CODING>
+  </asx:heap>
+ </asx:abap>
+</abapGit>

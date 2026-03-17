@@ -1,0 +1,3098 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SFPI" serializer_version="v1.0.0">
+ <asx:abap version="1.0" xmlns:asx="http://www.sap.com/abapxml">
+  <asx:values>
+   <VERSION>1</VERSION>
+   <TYPE/>
+   <INTERFACE href="#o1"/>
+   <INTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID/>
+     <TEXT>Dalvel Smartform to Adobe</TEXT>
+    </FPINTERFACET>
+   </INTERFACET>
+  </asx:values>
+  <asx:heap xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:abap="http://www.sap.com/abapxml/types/built-in" xmlns:cls="http://www.sap.com/abapxml/classes/global" xmlns:dic="http://www.sap.com/abapxml/types/dictionary">
+   <cls:CL_FP_INTERFACE_DATA id="o1">
+    <CL_FP_INTERFACE_DATA classVersion="1">
+     <CODING href="#o5"/>
+     <PARAMETERS href="#o4"/>
+     <GLOBAL_DEFINITIONS href="#o3"/>
+     <REFERENCE_FIELDS href="#o2"/>
+     <XSD_DEFINITIONS/>
+    </CL_FP_INTERFACE_DATA>
+   </cls:CL_FP_INTERFACE_DATA>
+   <cls:CL_FP_REFERENCE_FIELDS id="o2">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_REFERENCE_FIELDS classVersion="1">
+     <REFERENCE_FIELDS>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-HD_GEN-BIL_NETWR</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-HD_GEN-BIL_DISC</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-HD_GEN-BIL_TAX</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-HD_GEN-DPVAL</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-HD_GEN-CCVAL</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-HD_GEN-DPNET</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-HD_GEN-DPNET</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-HD_GEN-DPMWS_END</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-HD_GEN-DPMWS</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-HD_KOMK-SUPOS</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-HD_KOMK-FKWRT</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-HD_CARD-CCVAL</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-HD_CARD-CCVAL_SUM</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-HD_KOND-KAWRT</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-HD_KOND-KBETR</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-HD_KOND-KWERT</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>QUAN</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-HD_KOND-NRMNG</VALUE>
+       <UNIT>WA_RESB-MEINS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-IT_PRICE-KZWI1</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-IT_PRICE-KZWI2</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-IT_PRICE-KZWI3</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-IT_PRICE-KZWI4</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-IT_PRICE-KZWI5</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-IT_PRICE-KZWI6</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-IT_PRICE-NETPR</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-IT_PRICE-NETWR</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-IT_PRICE-SKFBP</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-IT_PRICE-MWSBP</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-IT_KOND-KAWRT</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-IT_KOND-KBETR</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-IT_KOND-KWERT</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-HD_GEN-DPEND</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>QUAN</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-IT_KOND-NRMNG</VALUE>
+       <UNIT>WA_RESB-MEINS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-IT_FIN-KBETRL</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>QUAN</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-IT_FIN-FKIMG_VG2</VALUE>
+       <UNIT>WA_RESB-MEINS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-IT_FIN-NETWR_VG2</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-IT_FIN-MWSBP_VG2</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-IT_FIN-BRTWR_VG2</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-IT_FIN-NETPR_VG2</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_BIL_INVOICE-IT_FIN-MWSPR_VG2</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>QUAN</DATATYPE>
+       <VALUE>IT_RESB-NOMNG</VALUE>
+       <UNIT>WA_RESB-MEINS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>QUAN</DATATYPE>
+       <VALUE>IT_RESB-ROANZ</VALUE>
+       <UNIT>WA_RESB-MEINS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>IT_RESB-FPREIS</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>IT_RESB-GPREIS_2</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>IT_RESB-FPREIS_2</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>QUAN</DATATYPE>
+       <VALUE>WA_RESB-NOMNG</VALUE>
+       <UNIT>WA_RESB-MEINS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>QUAN</DATATYPE>
+       <VALUE>WA_RESB-ROANZ</VALUE>
+       <UNIT>WA_RESB-MEINS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>WA_RESB-FPREIS</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>WA_RESB-GPREIS_2</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>WA_RESB-FPREIS_2</VALUE>
+       <UNIT>WA_RESB-WAERS</UNIT>
+      </SFPREF>
+     </REFERENCE_FIELDS>
+    </CL_FP_REFERENCE_FIELDS>
+   </cls:CL_FP_REFERENCE_FIELDS>
+   <cls:CL_FP_GLOBAL_DEFINITIONS id="o3">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_GLOBAL_DEFINITIONS classVersion="1">
+     <GLOBAL_DATA>
+      <SFPGDATA>
+       <NAME>LV_BRANCH</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BEZEI</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GT_ITEM</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_ITEM</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GS_ITEM</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>T_ITEM</TYPENAME>
+       <DEFAULTVAL>&apos;&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GS_P_ADRC</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ADRC</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_P_COUNTRY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>LANDX</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_P_GST</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>J_1BBRANCH-GSTIN</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_EMAIL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ADR6-SMTP_ADDR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_GST_REG</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZGST_REGION-GST_REGION</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_P_STATE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BEZEI</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GS_VEN</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ADRC</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_V_GST</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>LFA1-STCD3</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_V_STATE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BEZEI</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_V_COUNTRY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>LANDX</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_GST_V_REG</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZGST_REGION-GST_REGION</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GT_MARC</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_MARC</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GS_MARC</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>T_MARC</TYPENAME>
+       <DEFAULTVAL>&apos;&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_SR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>I</TYPENAME>
+       <DEFAULTVAL>0</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GT_MAT_DESC</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_MAT_DESC</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GS_MAT_DESC</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>T_MAT_DESC</TYPENAME>
+       <DEFAULTVAL>&apos;&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GT_MAT_DOC</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_MAT_DOC</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GT_PURCHASING</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_PURCHASING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GS_PURCHASING</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>T_PURCHASING</TYPENAME>
+       <DEFAULTVAL>&apos;&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_RATE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>VBRP-NETWR</TYPENAME>
+       <DEFAULTVAL>0</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_PO_DATE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>EKKO-AEDAT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>TEXT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR3</TYPENAME>
+       <DEFAULTVAL>&apos;&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_ZEINR_R</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>MARA-ZEINR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_NAME</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TDNAME</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_CIN</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ADRCT-REMARK</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_ZEINR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>MARA-ZEINR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GS_MAT_DOC</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>T_MAT_DOC</TYPENAME>
+       <DEFAULTVAL>&apos;&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_INDEX</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>SY-TABIX</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_MATNR1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>MATNR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_IS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>I</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_MENGE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>EKPO-MENGE</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_BKTXT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>MKPF-BKTXT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_TEXT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_COPY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR40</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_XBLNR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>VBRK-XBLNR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_LFM1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>LFM1</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_LIFNR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>LIFNR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_MENGE1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>EKPO-MENGE</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_MAT_TEXT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_MAT_ITEM</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_STEUC</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>MARC-STEUC</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_VBRK</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_VBRK</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_VBRK</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_VBRK</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_KONV</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_KONV</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_KONV</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_KONV</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_FINAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_FINAL</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_FINAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_FINAL</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_LINES</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZV_TLINE_TT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_LINES</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TLINE</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>TXT1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR50</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>TXT2</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR50</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>TXT3</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR50</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>TXT4</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR50</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>TXT5</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR50</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>TXT6</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR50</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>TXT7</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR50</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>TXT8</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR50</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>TAX_AMT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>VBRP-NETWR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>CGST_TOT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>VBRP-NETWR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>SGST_TOT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>VBRP-NETWR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IGST_TOT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>VBRP-NETWR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>TOT_TAX</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>VBRP-NETWR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GROSS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>VBRP-NETWR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_COMM</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_KNA1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KNA1</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LS_EKPO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_EKPO</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LS_MAKT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_MAKT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LS_EKKN</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_EKKN</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LS_VBAP</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_VBAP</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_PC</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR4</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_TEXT_TPI</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LS_MARC</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_MARC</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_ZGAD</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_TEXT_LD</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_TEXT_NOTE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_TEXT_TAG</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_NOTE_X</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>C</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LS_LINE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TLINE</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LT_LINES</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZV_TLINE_TT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_LINES2</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZV_TLINE_TT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_LINES2</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TLINE</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_KNTTP</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_WRKST</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_MATNR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>MATNR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_MSEG</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_MSEG</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_MSEG</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_MSEG</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_RESB</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZV_RESB_TT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_RESB</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>RESB</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GT_J_1IG_SUBCON</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_J_1IG_SUBCON</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GS_J_1IG_SUBCON</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>T_J_1IG_SUBCON</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>TEMP_SUBCON</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>T_J_1IG_SUBCON</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_ZEWAY_NO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZV_ZEWAY_NUMBER_TT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_ZEWAY_NO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZEWAY_NUMBER</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_ZEWAY_BILL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZV_ZEWAY_BILL_TT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_ZEWAY_BILL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZEWAY_BILL</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_MSEG_1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_MSEG</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_MSEG_1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_MSEG</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_ZEWAY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZV_ZEWAY_NUMBER_TT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_ZEWAY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZEWAY_NUMBER</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_FINAL1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_FINAL1</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_FINAL1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_FINAL1</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_KONP</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>T_KONP1</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_A005</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>T_A005</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>TT_A005</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TTT_A005</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>TT_KONP</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_KONP1</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_FROM_LGORT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>MSEG-LGORT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_TO_LGORT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>MSEG-LGORT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_ADDRESS_SHIP_TO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_ADDRESS</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_ADDRESS_CON_TO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_ADDRESS</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_ADDRESS_CON_FROM</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_ADDRESS</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_ADRNR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_ADRNR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_COND</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_FROM_LOGRT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>MSEG-LGORT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_ADDRESS_HEADER</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_ADDRESS</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_CNT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR1</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+     </GLOBAL_DATA>
+     <TYPES>
+      <FPCLINE>TYPES:</FPCLINE>
+      <FPCLINE>  BEGIN OF t_item,</FPCLINE>
+      <FPCLINE>    vbeln TYPE vbrp-vbeln,</FPCLINE>
+      <FPCLINE>    posnr TYPE vbrp-posnr,</FPCLINE>
+      <FPCLINE>    vgbel TYPE vbrp-vgbel,</FPCLINE>
+      <FPCLINE>    vgpos TYPE vbrp-vgpos,</FPCLINE>
+      <FPCLINE>    matnr TYPE vbrp-matnr,</FPCLINE>
+      <FPCLINE>    arktx TYPE vbrp-arktx,</FPCLINE>
+      <FPCLINE>    fkimg TYPE vbrp-fkimg,</FPCLINE>
+      <FPCLINE>    vrkme TYPE vbrp-vrkme,</FPCLINE>
+      <FPCLINE>    netwr TYPE vbrp-netwr,</FPCLINE>
+      <FPCLINE>    werks TYPE vbrp-werks,</FPCLINE>
+      <FPCLINE>    WAVWR type vbrp-WAVWR,</FPCLINE>
+      <FPCLINE>  END OF t_item,</FPCLINE>
+      <FPCLINE>  tt_item TYPE STANDARD TABLE OF t_item.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  TYPES :BEGIN OF TY_FINAL1,</FPCLINE>
+      <FPCLINE>       TAX_AMT TYPE KONV-KWERT,</FPCLINE>
+      <FPCLINE>       KWERT   TYPE KONV-KWERT,</FPCLINE>
+      <FPCLINE> END OF TY_FINAL1,</FPCLINE>
+      <FPCLINE> tt_Final1 TYPE STANDARD TABLE OF TY_FINAL1.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>TYPES:</FPCLINE>
+      <FPCLINE>  BEGIN OF t_marc,</FPCLINE>
+      <FPCLINE>    matnr TYPE marc-matnr,</FPCLINE>
+      <FPCLINE>    werks TYPE marc-werks,</FPCLINE>
+      <FPCLINE>    steuc TYPE marc-steuc,</FPCLINE>
+      <FPCLINE>    dispo TYPE marc-dispo,</FPCLINE>
+      <FPCLINE>  END OF t_marc,</FPCLINE>
+      <FPCLINE>  tt_marc TYPE STANDARD TABLE OF t_marc.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  TYPES:BEGIN OF TY_EWAY,</FPCLINE>
+      <FPCLINE>       VBELN        TYPE ZEWAY_BILL-VBELN,</FPCLINE>
+      <FPCLINE>       VEHICAL_NO   TYPE ZEWAY_BILL-VEHICAL_NO,</FPCLINE>
+      <FPCLINE>       TRANS_NAME   TYPE ZEWAY_BILL-TRANS_NAME,</FPCLINE>
+      <FPCLINE>       VEHICAL_TYPE TYPE ZEWAY_BILL-VEHICAL_TYPE,</FPCLINE>
+      <FPCLINE>  END OF TY_EWAY.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>TYPES :BEGIN OF TY_EWAY1,</FPCLINE>
+      <FPCLINE>       VBELN     TYPE ZEWAY_NUMBER-VBELN,</FPCLINE>
+      <FPCLINE>       EWAY_BILL TYPE ZEWAY_NUMBER-EWAY_BILL,</FPCLINE>
+      <FPCLINE> END OF TY_EWAY1.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>TYPES:</FPCLINE>
+      <FPCLINE>  BEGIN OF t_mat_desc,</FPCLINE>
+      <FPCLINE>    matnr TYPE makt-matnr,</FPCLINE>
+      <FPCLINE>    maktx TYPE makt-maktx,</FPCLINE>
+      <FPCLINE>  END OF t_mat_desc,</FPCLINE>
+      <FPCLINE>  tt_mat_desc TYPE STANDARD TABLE OF t_mat_desc.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>TYPES:</FPCLINE>
+      <FPCLINE>  BEGIN OF t_mat_doc,</FPCLINE>
+      <FPCLINE>    mblnr TYPE mseg-mblnr,</FPCLINE>
+      <FPCLINE>    mjahr TYPE mseg-mjahr,</FPCLINE>
+      <FPCLINE>    zeile TYPE mseg-zeile,</FPCLINE>
+      <FPCLINE>    bwart TYPE mseg-bwart,   &quot;added by pankaj 12.10.2021</FPCLINE>
+      <FPCLINE>    matnr TYPE mseg-matnr,   &quot;added by pankaj 12.10.2021</FPCLINE>
+      <FPCLINE>    ebeln TYPE mseg-ebeln,</FPCLINE>
+      <FPCLINE>    ebelp TYPE mseg-ebelp,</FPCLINE>
+      <FPCLINE>    lgort TYPE mseg-lgort,</FPCLINE>
+      <FPCLINE>  END OF t_mat_doc,</FPCLINE>
+      <FPCLINE>  tt_mat_doc TYPE STANDARD TABLE OF t_mat_doc.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>TYPES:</FPCLINE>
+      <FPCLINE>  BEGIN OF t_purchasing,</FPCLINE>
+      <FPCLINE>    ebeln TYPE ekpo-ebeln,</FPCLINE>
+      <FPCLINE>    ebelp TYPE ekpo-ebelp,</FPCLINE>
+      <FPCLINE>    TXZ01 TYPE ekpo-TXZ01,  &quot;added by pankaj 11.11.2021</FPCLINE>
+      <FPCLINE>    matnr TYPE ekpo-matnr,</FPCLINE>
+      <FPCLINE>    menge TYPE ekpo-menge,</FPCLINE>
+      <FPCLINE>    meins TYPE ekpo-meins,</FPCLINE>
+      <FPCLINE>    mwskz TYPE ekpo-mwskz,</FPCLINE>
+      <FPCLINE>    werks TYPE ekpo-werks,</FPCLINE>
+      <FPCLINE>    netwr TYPE ekpo-netwr,</FPCLINE>
+      <FPCLINE>*    WAVWR TYPE ekpo-WAVWR,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  END OF t_purchasing,</FPCLINE>
+      <FPCLINE>  tt_purchasing TYPE STANDARD TABLE OF t_purchasing.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>TYPES:</FPCLINE>
+      <FPCLINE>  BEGIN OF t_j_1ig_subcon,</FPCLINE>
+      <FPCLINE>    bukrs    TYPE j_1ig_subcon-bukrs,</FPCLINE>
+      <FPCLINE>    mblnr    TYPE j_1ig_subcon-mblnr,</FPCLINE>
+      <FPCLINE>    mjahr    TYPE j_1ig_subcon-mjahr,</FPCLINE>
+      <FPCLINE>    zeile    TYPE j_1ig_subcon-zeile,</FPCLINE>
+      <FPCLINE>    chln_inv TYPE j_1ig_subcon-chln_inv,</FPCLINE>
+      <FPCLINE>    bwart    TYPE j_1ig_subcon-bwart,  &quot;added by pankaj 12.10.2021</FPCLINE>
+      <FPCLINE>    item     TYPE j_1ig_subcon-item,</FPCLINE>
+      <FPCLINE>    menge    TYPE j_1ig_subcon-menge,</FPCLINE>
+      <FPCLINE>    meins    TYPE j_1ig_subcon-meins,</FPCLINE>
+      <FPCLINE>    matnr    TYPE j_1ig_subcon-matnr,</FPCLINE>
+      <FPCLINE>  END OF t_j_1ig_subcon,</FPCLINE>
+      <FPCLINE>  tt_j_1ig_subcon TYPE STANDARD TABLE OF t_j_1ig_subcon.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>TYPES:</FPCLINE>
+      <FPCLINE>  BEGIN OF t_konp,</FPCLINE>
+      <FPCLINE>    knumh TYPE konp-knumh,</FPCLINE>
+      <FPCLINE>    kopos TYPE konp-kopos,</FPCLINE>
+      <FPCLINE>    kschl TYPE konp-kschl,</FPCLINE>
+      <FPCLINE>  END OF t_konp,</FPCLINE>
+      <FPCLINE>  tt_konp TYPE STANDARD TABLE OF t_konp.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  TYPES :</FPCLINE>
+      <FPCLINE>  BEGIN OF t_conditions,</FPCLINE>
+      <FPCLINE>    knumv TYPE konv-knumv,</FPCLINE>
+      <FPCLINE>    kposn TYPE konv-kposn,</FPCLINE>
+      <FPCLINE>    kschl TYPE konv-kschl,</FPCLINE>
+      <FPCLINE>    kwert TYPE konv-kwert,</FPCLINE>
+      <FPCLINE>    kbetr TYPE komv-kbetr,</FPCLINE>
+      <FPCLINE>  END OF t_conditions,</FPCLINE>
+      <FPCLINE>  tt_conditions TYPE STANDARD TABLE OF t_conditions.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* TYPES: BEGIN OF ty_mkpf,</FPCLINE>
+      <FPCLINE>*        mblnr TYPE mkpf-mblnr,</FPCLINE>
+      <FPCLINE>*        bktxt TYPE mkpf-bktxt,</FPCLINE>
+      <FPCLINE>*       END OF ty_mkpf,</FPCLINE>
+      <FPCLINE>*TT_MKPF TYPE STANDARD TABLE OF TY_MKPF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>TYPES :</FPCLINE>
+      <FPCLINE>  BEGIN OF ty_vbrk,</FPCLINE>
+      <FPCLINE>        vbeln TYPE vbrk-vbeln,</FPCLINE>
+      <FPCLINE>        knumv TYPE vbrk-knumv,</FPCLINE>
+      <FPCLINE>        fkdat TYPE vbrk-fkdat,&quot;ADDED BY PRIMUS JYOTI</FPCLINE>
+      <FPCLINE>        END OF ty_vbrk,</FPCLINE>
+      <FPCLINE>  tt_vbrk TYPE STANDARD TABLE OF ty_vbrk.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>TYPES :</FPCLINE>
+      <FPCLINE>   BEGIN OF ty_konv,</FPCLINE>
+      <FPCLINE>        knumv TYPE konv-knumv,</FPCLINE>
+      <FPCLINE>        kposn TYPE konv-kposn,</FPCLINE>
+      <FPCLINE>        kschl TYPE konv-kschl,</FPCLINE>
+      <FPCLINE>        kawrt TYPE konv-kawrt,</FPCLINE>
+      <FPCLINE>        kbetr TYPE konv-kbetr,</FPCLINE>
+      <FPCLINE>        kwert TYPE konv-kwert,</FPCLINE>
+      <FPCLINE>        END OF ty_konv,</FPCLINE>
+      <FPCLINE>   tt_konv TYPE STANDARD TABLE OF ty_konv.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>*******aDDED BY PRIMUS JYOTI ON 01.12.2023*********</FPCLINE>
+      <FPCLINE>TYPES :</FPCLINE>
+      <FPCLINE>  BEGIN OF t_konp1,</FPCLINE>
+      <FPCLINE>    knumh TYPE konp-knumh,</FPCLINE>
+      <FPCLINE>    kopos TYPE konp-kopos,</FPCLINE>
+      <FPCLINE>    kschl TYPE konp-kschl,</FPCLINE>
+      <FPCLINE>    kbetr TYPE konp-kbetr,</FPCLINE>
+      <FPCLINE>  END OF t_konp1,</FPCLINE>
+      <FPCLINE>  tt_konp1 TYPE STANDARD TABLE OF t_konp1.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>TYPES :</FPCLINE>
+      <FPCLINE>  BEGIN OF t_A005,</FPCLINE>
+      <FPCLINE>    KSCHL TYPE A005-kschl,</FPCLINE>
+      <FPCLINE>    KUNNR TYPE A005-KUNNR,</FPCLINE>
+      <FPCLINE>    MATNR TYPE A005-MATNR,</FPCLINE>
+      <FPCLINE>    DATBI TYPE A005-DATBI,</FPCLINE>
+      <FPCLINE>    DATAB TYPE A005-DATAB,</FPCLINE>
+      <FPCLINE>    KNUMH TYPE A005-KNUMH,</FPCLINE>
+      <FPCLINE>  END OF t_A005,</FPCLINE>
+      <FPCLINE>  ttt_A005 TYPE STANDARD TABLE OF t_A005.</FPCLINE>
+      <FPCLINE>**************************************************</FPCLINE>
+      <FPCLINE>TYPES:</FPCLINE>
+      <FPCLINE>        BEGIN OF ty_final,</FPCLINE>
+      <FPCLINE>        vbeln TYPE vbrp-vbeln,</FPCLINE>
+      <FPCLINE>        posnr TYPE vbrp-posnr,</FPCLINE>
+      <FPCLINE>        vgbel TYPE vbrp-vgbel,</FPCLINE>
+      <FPCLINE>        vgpos TYPE vbrp-vgpos,</FPCLINE>
+      <FPCLINE>        matnr TYPE vbrp-matnr,</FPCLINE>
+      <FPCLINE>*        arktx TYPE vbrp-arktx,</FPCLINE>
+      <FPCLINE>        arktx TYPE string,</FPCLINE>
+      <FPCLINE>        fkimg TYPE vbrp-fkimg,</FPCLINE>
+      <FPCLINE>        vrkme TYPE vbrp-vrkme,</FPCLINE>
+      <FPCLINE>        netwr TYPE vbrp-netwr,</FPCLINE>
+      <FPCLINE>        werks TYPE vbrp-werks,</FPCLINE>
+      <FPCLINE>        WAVWR TYPE vbrp-WAVWR,</FPCLINE>
+      <FPCLINE>        RATE TYPE vbrp-WAVWR,</FPCLINE>
+      <FPCLINE>        value TYPE vbrp-WAVWR,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        cgst  TYPE konv-kbetr,</FPCLINE>
+      <FPCLINE>        cgst_amt TYPE konv-kwert,</FPCLINE>
+      <FPCLINE>        sgst  TYPE konv-kbetr,</FPCLINE>
+      <FPCLINE>        sgst_amt TYPE konv-kwert,</FPCLINE>
+      <FPCLINE>        igst  TYPE konv-kbetr,</FPCLINE>
+      <FPCLINE>        igst_amt TYPE konv-kwert,</FPCLINE>
+      <FPCLINE>         kwert TYPE konv-kwert,</FPCLINE>
+      <FPCLINE>        mblnr  TYPE mseg-mblnr,</FPCLINE>
+      <FPCLINE>       MJAHR  TYPE mseg-MJAHR,</FPCLINE>
+      <FPCLINE>       ZEILE  TYPE mseg-ZEILE,</FPCLINE>
+      <FPCLINE>       BWART  TYPE mseg-BWART,</FPCLINE>
+      <FPCLINE>       XAUTO  TYPE mseg-XAUTO,</FPCLINE>
+      <FPCLINE>*       MATNR  TYPE mseg-MATNR,</FPCLINE>
+      <FPCLINE>*       WERKS  TYPE mseg-WERKS,</FPCLINE>
+      <FPCLINE>       MENGE  TYPE mseg-MENGE,</FPCLINE>
+      <FPCLINE>       MEINS  TYPE mseg-MEINS,</FPCLINE>
+      <FPCLINE>       EBELN  TYPE mseg-EBELN,</FPCLINE>
+      <FPCLINE>       EBELP  TYPE mseg-EBELP,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>       LGORT  TYPE MSEG-LGORT,</FPCLINE>
+      <FPCLINE>       BUDAT_MKPF  TYPE MSEG-BUDAT_MKPF,</FPCLINE>
+      <FPCLINE>       VEHICAL_NO   TYPE ZEWAY_BILL-VEHICAL_NO,</FPCLINE>
+      <FPCLINE>       TRANS_NAME   TYPE ZEWAY_BILL-TRANS_NAME,</FPCLINE>
+      <FPCLINE>       VEHICAL_TYPE TYPE ZEWAY_BILL-VEHICAL_TYPE,</FPCLINE>
+      <FPCLINE>       EWAY_BILL    TYPE ZEWAY_NUMBER-EWAY_BILL,</FPCLINE>
+      <FPCLINE>       tax_amt      TYPE konv-kwert,</FPCLINE>
+      <FPCLINE>************ADDED BY PRIMUS JYOTI ON 01.12.2023********</FPCLINE>
+      <FPCLINE>       KNUMH TYPE KONP-KNUMH,</FPCLINE>
+      <FPCLINE>       KBETR TYPE KONP-KBETR,</FPCLINE>
+      <FPCLINE>       GV_IS TYPE I,</FPCLINE>
+      <FPCLINE>       gv_steuc1 TYPE MARC-STEUC,</FPCLINE>
+      <FPCLINE>*******************************************************</FPCLINE>
+      <FPCLINE>        END OF ty_final,</FPCLINE>
+      <FPCLINE>        tt_final TYPE STANDARD TABLE OF ty_final.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>&quot;Added BY Snehal Rajale On 31.12.2020</FPCLINE>
+      <FPCLINE>TYPES : BEGIN OF ty_ekpo,</FPCLINE>
+      <FPCLINE>  EBELN TYPE ekpo-ebeln,</FPCLINE>
+      <FPCLINE>  EBELP TYPE ekpo-ebelp,</FPCLINE>
+      <FPCLINE>  knttp TYPE ekpo-knttp,</FPCLINE>
+      <FPCLINE>END OF ty_ekpo.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>TYPES : BEGIN OF ty_makt,</FPCLINE>
+      <FPCLINE>  MATNR TYPE makt-matnr,</FPCLINE>
+      <FPCLINE>  SPRAS TYPE makt-spras,</FPCLINE>
+      <FPCLINE>  MAKTX TYPE makt-maktx,</FPCLINE>
+      <FPCLINE>END OF ty_makt.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>TYPES : BEGIN OF ty_ekkn,</FPCLINE>
+      <FPCLINE>  EBELN TYPE ekkn-ebeln,</FPCLINE>
+      <FPCLINE>  EBELP TYPE ekkn-ebelp,</FPCLINE>
+      <FPCLINE>  ZEKKN TYPE ekkn-zekkn,</FPCLINE>
+      <FPCLINE>  VBELN TYPE ekkn-vbeln,</FPCLINE>
+      <FPCLINE>  VBELP TYPE ekkn-vbelp,</FPCLINE>
+      <FPCLINE>END OF ty_ekkn.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>TYPES :   BEGIN OF ty_vbap,</FPCLINE>
+      <FPCLINE>  vbeln TYPE vbap-vbeln,</FPCLINE>
+      <FPCLINE>  posnr TYPE vbap-posnr,</FPCLINE>
+      <FPCLINE>  zce TYPE vbap-zce,</FPCLINE>
+      <FPCLINE>  ZGAD TYPE vbap-zgad,</FPCLINE>
+      <FPCLINE>END OF ty_vbap.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>TYPES : BEGIN OF ty_marc,</FPCLINE>
+      <FPCLINE>  MATNR TYPE marc-matnr,</FPCLINE>
+      <FPCLINE>  WERKS TYPE marc-werks,</FPCLINE>
+      <FPCLINE>  dispo TYPE marc-dispo,</FPCLINE>
+      <FPCLINE>END OF ty_marc.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>TYPES: BEGIN OF ty_mseg,</FPCLINE>
+      <FPCLINE>       mblnr  TYPE mseg-mblnr,</FPCLINE>
+      <FPCLINE>       MJAHR  TYPE mseg-MJAHR,</FPCLINE>
+      <FPCLINE>       ZEILE  TYPE mseg-ZEILE,</FPCLINE>
+      <FPCLINE>       BWART  TYPE mseg-BWART,</FPCLINE>
+      <FPCLINE>       XAUTO  TYPE mseg-XAUTO,</FPCLINE>
+      <FPCLINE>       MATNR  TYPE mseg-MATNR,</FPCLINE>
+      <FPCLINE>       WERKS  TYPE mseg-WERKS,</FPCLINE>
+      <FPCLINE>       MENGE  TYPE mseg-MENGE,</FPCLINE>
+      <FPCLINE>       MEINS  TYPE mseg-MEINS,</FPCLINE>
+      <FPCLINE>       EBELN  TYPE mseg-EBELN,</FPCLINE>
+      <FPCLINE>       EBELP  TYPE mseg-EBELP,</FPCLINE>
+      <FPCLINE>       LGORT  TYPE mseg-LGORT,</FPCLINE>
+      <FPCLINE>       BUDAT_MKPF  TYPE MSEG-BUDAT_MKPF,</FPCLINE>
+      <FPCLINE>       END OF ty_mseg,</FPCLINE>
+      <FPCLINE>       tt_mseg TYPE STANDARD TABLE OF ty_mseg.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>TYPES:BEGIN OF TY_ADDRESS,</FPCLINE>
+      <FPCLINE>      STREET TYPE ADRC-STREET,</FPCLINE>
+      <FPCLINE>      CITY1 TYPE ADRC-CITY1,</FPCLINE>
+      <FPCLINE>      POST_CODE1 TYPE ADRC-POST_CODE1,</FPCLINE>
+      <FPCLINE>      STR_SUPPL3 type ADRC-STR_SUPPL3,</FPCLINE>
+      <FPCLINE>      LOCATION TYPE ADRC-LOCATION,</FPCLINE>
+      <FPCLINE>     END OF TY_ADDRESS.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>TYPES:BEGIN OF TY_ADRNR,</FPCLINE>
+      <FPCLINE>      ADRNR TYPE  TWLAD-ADRNR,</FPCLINE>
+      <FPCLINE>      END OF TY_ADRNR.</FPCLINE>
+     </TYPES>
+     <FIELDSYMBOLS/>
+    </CL_FP_GLOBAL_DEFINITIONS>
+   </cls:CL_FP_GLOBAL_DEFINITIONS>
+   <cls:CL_FP_PARAMETERS id="o4">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_PARAMETERS classVersion="1">
+     <IMPORT_PARAMETERS>
+      <SFPIOPAR>
+       <NAME>OUTPUT_OPTIONS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>SSFCOMPOP</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>USER_SETTINGS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TDBOOL</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL>&apos;X&apos;</DEFAULTVAL>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>LS_BIL_INVOICE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>LBBIL_INVOICE</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>LV_COUNT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR1</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+     </IMPORT_PARAMETERS>
+     <EXPORT_PARAMETERS/>
+     <TABLE_PARAMETERS/>
+     <EXCEPTIONS>
+      <SFPIOPAR>
+       <NAME>FORMATTING_ERROR</NAME>
+       <TYPING/>
+       <TYPENAME/>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>SEND_ERROR</NAME>
+       <TYPING/>
+       <TYPENAME/>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>USER_CANCELED</NAME>
+       <TYPING/>
+       <TYPENAME/>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+     </EXCEPTIONS>
+    </CL_FP_PARAMETERS>
+   </cls:CL_FP_PARAMETERS>
+   <cls:CL_FP_CODING id="o5">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_CODING classVersion="1">
+     <INPUT_PARAMETERS>
+      <FPPARAMETER>LS_BIL_INVOICE</FPPARAMETER>
+      <FPPARAMETER>IT_VBRK</FPPARAMETER>
+      <FPPARAMETER>IT_KONV</FPPARAMETER>
+      <FPPARAMETER>WA_VBRK</FPPARAMETER>
+      <FPPARAMETER>WA_KONV</FPPARAMETER>
+      <FPPARAMETER>IT_FINAL</FPPARAMETER>
+      <FPPARAMETER>WA_FINAL</FPPARAMETER>
+      <FPPARAMETER>GS_ITEM</FPPARAMETER>
+      <FPPARAMETER>GS_PURCHASING</FPPARAMETER>
+      <FPPARAMETER>IT_ZEWAY_BILL</FPPARAMETER>
+      <FPPARAMETER>WA_ZEWAY_BILL</FPPARAMETER>
+      <FPPARAMETER>IT_ZEWAY</FPPARAMETER>
+      <FPPARAMETER>WA_ZEWAY</FPPARAMETER>
+      <FPPARAMETER>IT_MSEG</FPPARAMETER>
+      <FPPARAMETER>WA_MSEG</FPPARAMETER>
+      <FPPARAMETER>IT_LINES2</FPPARAMETER>
+      <FPPARAMETER>WA_LINES2</FPPARAMETER>
+      <FPPARAMETER>TT_A005</FPPARAMETER>
+      <FPPARAMETER>TT_KONP</FPPARAMETER>
+     </INPUT_PARAMETERS>
+     <OUTPUT_PARAMETERS>
+      <FPPARAMETER>GT_ITEM</FPPARAMETER>
+      <FPPARAMETER>GT_MARC</FPPARAMETER>
+      <FPPARAMETER>GT_MAT_DESC</FPPARAMETER>
+      <FPPARAMETER>LS_EKPO</FPPARAMETER>
+      <FPPARAMETER>LS_MAKT</FPPARAMETER>
+      <FPPARAMETER>LS_EKKN</FPPARAMETER>
+      <FPPARAMETER>GS_MARC</FPPARAMETER>
+      <FPPARAMETER>LS_VBAP</FPPARAMETER>
+      <FPPARAMETER>GV_ZGAD</FPPARAMETER>
+      <FPPARAMETER>GV_TEXT_TAG</FPPARAMETER>
+      <FPPARAMETER>GV_TEXT_TPI</FPPARAMETER>
+      <FPPARAMETER>GV_WRKST</FPPARAMETER>
+      <FPPARAMETER>GV_MATNR1</FPPARAMETER>
+      <FPPARAMETER>IT_ZEWAY</FPPARAMETER>
+      <FPPARAMETER>WA_ZEWAY</FPPARAMETER>
+      <FPPARAMETER>WA_ZEWAY_BILL</FPPARAMETER>
+      <FPPARAMETER>IT_ZEWAY_BILL</FPPARAMETER>
+      <FPPARAMETER>IT_MSEG</FPPARAMETER>
+      <FPPARAMETER>WA_MSEG</FPPARAMETER>
+      <FPPARAMETER>WA_KONP</FPPARAMETER>
+      <FPPARAMETER>WA_A005</FPPARAMETER>
+     </OUTPUT_PARAMETERS>
+     <INITIALIZATION>
+      <FPCLINE>SELECT VBELN</FPCLINE>
+      <FPCLINE>       POSNR</FPCLINE>
+      <FPCLINE>       VGBEL</FPCLINE>
+      <FPCLINE>       VGPOS</FPCLINE>
+      <FPCLINE>       MATNR</FPCLINE>
+      <FPCLINE>       ARKTX</FPCLINE>
+      <FPCLINE>       FKIMG</FPCLINE>
+      <FPCLINE>       VRKME</FPCLINE>
+      <FPCLINE>       NETWR</FPCLINE>
+      <FPCLINE>       WERKS</FPCLINE>
+      <FPCLINE>       WAVWR</FPCLINE>
+      <FPCLINE>  FROM VBRP</FPCLINE>
+      <FPCLINE>  INTO TABLE GT_ITEM</FPCLINE>
+      <FPCLINE>  WHERE VBELN = LS_BIL_INVOICE-HD_GEN-BIL_NUMBER.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*IF gt_item IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>*SELECT mblnr</FPCLINE>
+      <FPCLINE>*       MJAHR</FPCLINE>
+      <FPCLINE>*       ZEILE</FPCLINE>
+      <FPCLINE>*       BWART</FPCLINE>
+      <FPCLINE>*       XAUTO</FPCLINE>
+      <FPCLINE>*       MATNR</FPCLINE>
+      <FPCLINE>*       WERKS</FPCLINE>
+      <FPCLINE>*       MENGE</FPCLINE>
+      <FPCLINE>*       MEINS</FPCLINE>
+      <FPCLINE>*       BUDAT_MKPF</FPCLINE>
+      <FPCLINE>*       EBELN</FPCLINE>
+      <FPCLINE>*       EBELP</FPCLINE>
+      <FPCLINE>*       LGORT</FPCLINE>
+      <FPCLINE>*  FROM mseg INTO TABLE IT_MSEG</FPCLINE>
+      <FPCLINE>*  where mblnr = gs_item-vgbel.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*BREAK-POINT.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*SELECT</FPCLINE>
+      <FPCLINE>*   VBELN</FPCLINE>
+      <FPCLINE>*   EWAY_BILL FROM ZEWAY_NUMBER</FPCLINE>
+      <FPCLINE>*   INTO TABLE IT_ZEWAY</FPCLINE>
+      <FPCLINE>*   FOR ALL ENTRIES IN GT_ITEM</FPCLINE>
+      <FPCLINE>*   WHERE VBELN = GT_ITEM-VBELN.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*   SELECT</FPCLINE>
+      <FPCLINE>*       VBELN</FPCLINE>
+      <FPCLINE>*       VEHICAL_NO</FPCLINE>
+      <FPCLINE>*       TRANS_NAME</FPCLINE>
+      <FPCLINE>*       VEHICAL_TYPE FROM ZEWAY_BILL</FPCLINE>
+      <FPCLINE>*       INTO TABLE IT_ZEWAY_BILL</FPCLINE>
+      <FPCLINE>*       FOR ALL ENTRIES IN IT_ZEWAY</FPCLINE>
+      <FPCLINE>*       WHERE VBELN = IT_ZEWAY-VBELN.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*ENDIF.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>IF NOT GT_ITEM IS INITIAL.</FPCLINE>
+      <FPCLINE>  SELECT VBELN</FPCLINE>
+      <FPCLINE>         KNUMV</FPCLINE>
+      <FPCLINE>         FKDAT</FPCLINE>
+      <FPCLINE>    FROM VBRK INTO TABLE IT_VBRK</FPCLINE>
+      <FPCLINE>         FOR ALL ENTRIES IN GT_ITEM</FPCLINE>
+      <FPCLINE>         WHERE VBELN = GT_ITEM-VBELN.</FPCLINE>
+      <FPCLINE>  SELECT MATNR</FPCLINE>
+      <FPCLINE>         WERKS</FPCLINE>
+      <FPCLINE>         STEUC</FPCLINE>
+      <FPCLINE>         DISPO</FPCLINE>
+      <FPCLINE>    FROM MARC</FPCLINE>
+      <FPCLINE>    INTO TABLE GT_MARC</FPCLINE>
+      <FPCLINE>    FOR ALL ENTRIES IN GT_ITEM</FPCLINE>
+      <FPCLINE>    WHERE MATNR = GT_ITEM-MATNR</FPCLINE>
+      <FPCLINE>      AND WERKS = GT_ITEM-WERKS.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE>IF IT_VBRK IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>  SELECT KNUMV</FPCLINE>
+      <FPCLINE>         KPOSN</FPCLINE>
+      <FPCLINE>         KSCHL</FPCLINE>
+      <FPCLINE>         KAWRT</FPCLINE>
+      <FPCLINE>         KBETR</FPCLINE>
+      <FPCLINE>         KWERT FROM KONV INTO TABLE IT_KONV</FPCLINE>
+      <FPCLINE>         FOR ALL ENTRIES IN IT_VBRK</FPCLINE>
+      <FPCLINE>         WHERE KNUMV = IT_VBRK-KNUMV.</FPCLINE>
+      <FPCLINE>********ADDED BY PRIMUS JYOTI ON 01.12.2023*******</FPCLINE>
+      <FPCLINE>  SELECT KSCHL</FPCLINE>
+      <FPCLINE>        KUNNR</FPCLINE>
+      <FPCLINE>        MATNR</FPCLINE>
+      <FPCLINE>        DATBI</FPCLINE>
+      <FPCLINE>        DATAB</FPCLINE>
+      <FPCLINE>        KNUMH</FPCLINE>
+      <FPCLINE>   FROM A005</FPCLINE>
+      <FPCLINE>   INTO TABLE TT_A005</FPCLINE>
+      <FPCLINE>   FOR ALL ENTRIES IN GT_ITEM</FPCLINE>
+      <FPCLINE>   WHERE MATNR = GT_ITEM-MATNR</FPCLINE>
+      <FPCLINE>   AND KSCHL = &apos;ZSTO&apos;</FPCLINE>
+      <FPCLINE>   AND DATBI = &apos;99991231&apos;.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE>********ADDED BY PRIMUS JYOTI ON 01.12.2023*******</FPCLINE>
+      <FPCLINE>IF TT_A005 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  SELECT KNUMH</FPCLINE>
+      <FPCLINE>         KOPOS</FPCLINE>
+      <FPCLINE>         KSCHL</FPCLINE>
+      <FPCLINE>         KBETR</FPCLINE>
+      <FPCLINE>    FROM KONP</FPCLINE>
+      <FPCLINE>    INTO TABLE TT_KONP</FPCLINE>
+      <FPCLINE>    FOR ALL ENTRIES IN TT_A005</FPCLINE>
+      <FPCLINE>    WHERE KNUMH = TT_A005-KNUMH.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE>**************************************************</FPCLINE>
+      <FPCLINE>SORT GT_ITEM BY POSNR.</FPCLINE>
+      <FPCLINE>*BREAK-POINT.</FPCLINE>
+      <FPCLINE>LOOP AT GT_ITEM INTO GS_ITEM.</FPCLINE>
+      <FPCLINE>  CLEAR WA_FINAL.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  WA_FINAL-VBELN   = GS_ITEM-VBELN.</FPCLINE>
+      <FPCLINE>  WA_FINAL-POSNR   = GS_ITEM-POSNR.</FPCLINE>
+      <FPCLINE>  WA_FINAL-VGBEL   = GS_ITEM-VGBEL.</FPCLINE>
+      <FPCLINE>  WA_FINAL-VGPOS   = GS_ITEM-VGPOS.</FPCLINE>
+      <FPCLINE>  WA_FINAL-MATNR   = GS_ITEM-MATNR.</FPCLINE>
+      <FPCLINE>  WA_FINAL-ARKTX   = GS_ITEM-ARKTX.</FPCLINE>
+      <FPCLINE>  WA_FINAL-FKIMG   = GS_ITEM-FKIMG.</FPCLINE>
+      <FPCLINE>  WA_FINAL-VRKME   = GS_ITEM-VRKME.</FPCLINE>
+      <FPCLINE>  WA_FINAL-NETWR   = GS_ITEM-NETWR.</FPCLINE>
+      <FPCLINE>  WA_FINAL-WERKS   = GS_ITEM-WERKS.</FPCLINE>
+      <FPCLINE>  WA_FINAL-WAVWR   = GS_ITEM-WAVWR.</FPCLINE>
+      <FPCLINE>  WA_FINAL-RATE   =  GS_ITEM-WAVWR / GS_ITEM-FKIMG.</FPCLINE>
+      <FPCLINE>  WA_FINAL-VALUE   = WA_FINAL-RATE * GS_ITEM-FKIMG.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CLEAR GV_STEUC.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  SELECT SINGLE STEUC INTO GV_STEUC FROM MARC</FPCLINE>
+      <FPCLINE>    WHERE MATNR = WA_FINAL-MATNR</FPCLINE>
+      <FPCLINE>    AND WERKS = &apos;PL01&apos;.</FPCLINE>
+      <FPCLINE>  WA_FINAL-GV_STEUC1 = GV_STEUC.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  READ TABLE IT_VBRK INTO WA_VBRK WITH KEY VBELN = WA_FINAL-VBELN.</FPCLINE>
+      <FPCLINE>*BREAK-POINT.</FPCLINE>
+      <FPCLINE>  READ TABLE IT_MSEG INTO WA_MSEG WITH  KEY MBLNR = GS_ITEM-VGBEL.</FPCLINE>
+      <FPCLINE>  IF SY-SUBRC = 0.</FPCLINE>
+      <FPCLINE>    WA_FINAL-MBLNR = WA_MSEG-MBLNR.</FPCLINE>
+      <FPCLINE>    WA_FINAL-BUDAT_MKPF = WA_MSEG-BUDAT_MKPF.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  READ TABLE IT_ZEWAY_BILL INTO WA_ZEWAY_BILL WITH KEY VBELN = GS_ITEM-VBELN.</FPCLINE>
+      <FPCLINE>  IF SY-SUBRC = 0.</FPCLINE>
+      <FPCLINE>    WA_FINAL-TRANS_NAME = WA_ZEWAY_BILL-TRANS_NAME.</FPCLINE>
+      <FPCLINE>    WA_FINAL-VEHICAL_NO = WA_ZEWAY_BILL-VEHICAL_NO.</FPCLINE>
+      <FPCLINE>    WA_FINAL-VEHICAL_TYPE = WA_ZEWAY_BILL-VEHICAL_TYPE.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>  READ TABLE IT_ZEWAY INTO WA_ZEWAY WITH KEY VBELN = WA_ZEWAY_BILL-VBELN.</FPCLINE>
+      <FPCLINE>  IF SY-SUBRC = 0.</FPCLINE>
+      <FPCLINE>    WA_FINAL-EWAY_BILL = WA_ZEWAY-EWAY_BILL.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  LOOP AT IT_KONV INTO WA_KONV WHERE KNUMV = WA_VBRK-KNUMV AND KPOSN = WA_FINAL-POSNR.</FPCLINE>
+      <FPCLINE>    CASE WA_KONV-KSCHL.</FPCLINE>
+      <FPCLINE>      WHEN &apos;JOCG&apos;.</FPCLINE>
+      <FPCLINE>        WA_FINAL-CGST = WA_KONV-KBETR / 10.</FPCLINE>
+      <FPCLINE>        WA_FINAL-CGST_AMT = WA_KONV-KWERT.</FPCLINE>
+      <FPCLINE>      WHEN &apos;JOSG&apos;.</FPCLINE>
+      <FPCLINE>        WA_FINAL-SGST = WA_KONV-KBETR / 10.</FPCLINE>
+      <FPCLINE>        WA_FINAL-SGST_AMT = WA_KONV-KWERT.</FPCLINE>
+      <FPCLINE>      WHEN &apos;JOIG&apos;.</FPCLINE>
+      <FPCLINE>        WA_FINAL-IGST = WA_KONV-KBETR / 10.</FPCLINE>
+      <FPCLINE>        WA_FINAL-IGST_AMT = WA_KONV-KWERT.</FPCLINE>
+      <FPCLINE>      WHEN &apos;VPRS&apos;.</FPCLINE>
+      <FPCLINE>        WA_FINAL-KWERT = WA_KONV-KWERT.</FPCLINE>
+      <FPCLINE>*   wa_final-tax_amt = wa_konv-kwert.</FPCLINE>
+      <FPCLINE>    ENDCASE.</FPCLINE>
+      <FPCLINE>  ENDLOOP.</FPCLINE>
+      <FPCLINE>**********ADDED BY PRIMUS JYOTI ON 01.12.2023***********************</FPCLINE>
+      <FPCLINE>  READ TABLE TT_A005 INTO WA_A005 WITH KEY MATNR = WA_FINAL-MATNR.</FPCLINE>
+      <FPCLINE>*    IF WA_VBRK-FKDAT EQ WA_A005-DATAB.</FPCLINE>
+      <FPCLINE>  WA_FINAL-KNUMH = WA_A005-KNUMH.</FPCLINE>
+      <FPCLINE>*    ENDIF.</FPCLINE>
+      <FPCLINE>  CLEAR : WA_KONP.</FPCLINE>
+      <FPCLINE>  READ TABLE TT_KONP INTO WA_KONP WITH  KEY KNUMH =  WA_FINAL-KNUMH.</FPCLINE>
+      <FPCLINE>*                             AND kposn = wa_final-posnr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF  WA_KONP-KSCHL = &apos;ZSTO&apos;.</FPCLINE>
+      <FPCLINE>    CLEAR : WA_FINAL-KWERT.</FPCLINE>
+      <FPCLINE>    WA_FINAL-RATE = WA_KONP-KBETR.</FPCLINE>
+      <FPCLINE>    WA_FINAL-VALUE   =  WA_FINAL-RATE  *  GS_ITEM-FKIMG.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>********************************************************</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  DATA : LV_NAME1 TYPE THEAD-TDNAME,</FPCLINE>
+      <FPCLINE>         TXT1     TYPE STRING.</FPCLINE>
+      <FPCLINE>  LV_NAME1 = WA_FINAL-MATNR.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>  &quot;                                                                     &quot; Changed Here for READ fn.</FPCLINE>
+      <FPCLINE>DATA(LO_TEXT_READER) = NEW ZCL_READ_TEXT( ).</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  LO_TEXT_READER-&gt;READ_TEXT_STRING( EXPORTING ID       = &apos;GRUN&apos;</FPCLINE>
+      <FPCLINE>                                            NAME     = LV_NAME1</FPCLINE>
+      <FPCLINE>                                            OBJECT   = &apos;MATERIAL&apos;</FPCLINE>
+      <FPCLINE>                                  IMPORTING LV_LINES = DATA(LV_LINES1)</FPCLINE>
+      <FPCLINE>                                           ).</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*  CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>*    EXPORTING</FPCLINE>
+      <FPCLINE>**     CLIENT                  = SY-MANDT</FPCLINE>
+      <FPCLINE>*      ID                      = &apos;GRUN&apos;</FPCLINE>
+      <FPCLINE>*      LANGUAGE                = SY-LANGU</FPCLINE>
+      <FPCLINE>*      NAME                    = LV_NAME1</FPCLINE>
+      <FPCLINE>*      OBJECT                  = &apos;MATERIAL&apos;</FPCLINE>
+      <FPCLINE>**     ARCHIVE_HANDLE          = 0</FPCLINE>
+      <FPCLINE>**     LOCAL_CAT               = &apos; &apos;</FPCLINE>
+      <FPCLINE>**   IMPORTING</FPCLINE>
+      <FPCLINE>**     HEADER                  =</FPCLINE>
+      <FPCLINE>*    TABLES</FPCLINE>
+      <FPCLINE>*      LINES                   = IT_LINES2</FPCLINE>
+      <FPCLINE>*    EXCEPTIONS</FPCLINE>
+      <FPCLINE>*      ID                      = 1</FPCLINE>
+      <FPCLINE>*      LANGUAGE                = 2</FPCLINE>
+      <FPCLINE>*      NAME                    = 3</FPCLINE>
+      <FPCLINE>*      NOT_FOUND               = 4</FPCLINE>
+      <FPCLINE>*      OBJECT                  = 5</FPCLINE>
+      <FPCLINE>*      REFERENCE_CHECK         = 6</FPCLINE>
+      <FPCLINE>*      WRONG_ACCESS_TO_ARCHIVE = 7</FPCLINE>
+      <FPCLINE>*      OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>*  IF SY-SUBRC &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>***   MESSAGE ID SY-MSGID TYPE SY-MSGTY NUMBER SY-MSGNO</FPCLINE>
+      <FPCLINE>***         WITH SY-MSGV1 SY-MSGV2 SY-MSGV3 SY-MSGV4.</FPCLINE>
+      <FPCLINE>**  ELSE.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*    DELETE IT_LINES2 WHERE TDLINE IS INITIAL.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*    IF SY-TFILL &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>*      IF IT_LINES2 is NOT INITIAL.</FPCLINE>
+      <FPCLINE>*        CLEAR WA_FINAL-ARKTX.</FPCLINE>
+      <FPCLINE>*       LOOP AT IT_LINES2 INTO WA_LINES2.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*       &quot; CONCATENATE &apos;&apos; WA_LINES2-TDLINE INTO WA_FINAL-ARKTX.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*        CONCATENATE &apos;&apos; WA_FINAL-ARKTX WA_LINES2-TDLINE INTO WA_FINAL-ARKTX.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*       ENDLOOP.</FPCLINE>
+      <FPCLINE>*        ENDIF.</FPCLINE>
+      <FPCLINE>*    ENDIF.</FPCLINE>
+      <FPCLINE>*    ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    &quot;                                                                          &quot;End of READ fn.</FPCLINE>
+      <FPCLINE>    WA_FINAL-ARKTX = LV_LINES1.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    REPLACE ALL OCCURRENCES OF &apos;&lt;(&gt;&amp;&lt;)&gt;&apos; IN wa_final-arktx WITH &apos;&amp;&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>********************************************************</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>  APPEND WA_FINAL TO IT_FINAL.</FPCLINE>
+      <FPCLINE>  CLEAR: WA_FINAL, WA_KONP,WA_A005,WA_KONV.</FPCLINE>
+      <FPCLINE>  CLEAR : lv_lines1.                                                            &quot; clear for read class.</FPCLINE>
+      <FPCLINE>ENDLOOP.</FPCLINE>
+      <FPCLINE>*BREAK-POINT.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>**********************************************************************************************</FPCLINE>
+      <FPCLINE>*CASE sfsy-copycount.</FPCLINE>
+      <FPCLINE>*  WHEN 001.</FPCLINE>
+      <FPCLINE>*    gv_copy = &apos;Original&apos;.</FPCLINE>
+      <FPCLINE>*  WHEN 002.</FPCLINE>
+      <FPCLINE>*    gv_copy = &apos;Duplicate&apos;.</FPCLINE>
+      <FPCLINE>*  WHEN 003.</FPCLINE>
+      <FPCLINE>*    gv_copy = &apos;Triplicate&apos;.</FPCLINE>
+      <FPCLINE>*  WHEN 004.</FPCLINE>
+      <FPCLINE>*    gv_copy = &apos;Gate Copy&apos;.</FPCLINE>
+      <FPCLINE>*ENDCASE.</FPCLINE>
+      <FPCLINE>*******************************************************************************************</FPCLINE>
+      <FPCLINE>DATA:</FPCLINE>
+      <FPCLINE>  LV_ADRNR  TYPE ADRC-ADDRNUMBER,</FPCLINE>
+      <FPCLINE>  LS_ITEM   TYPE T_ITEM,</FPCLINE>
+      <FPCLINE>  LV_BRANCH TYPE T001W-J_1BBRANCH.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>*BREAK-POINT.</FPCLINE>
+      <FPCLINE>READ TABLE GT_ITEM INTO LS_ITEM INDEX 1.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE ADRNR</FPCLINE>
+      <FPCLINE>              J_1BBRANCH</FPCLINE>
+      <FPCLINE>        FROM  T001W</FPCLINE>
+      <FPCLINE>        INTO  (LV_ADRNR,LV_BRANCH)</FPCLINE>
+      <FPCLINE>        WHERE WERKS = LS_ITEM-WERKS.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE GSTIN</FPCLINE>
+      <FPCLINE>        FROM  J_1BBRANCH</FPCLINE>
+      <FPCLINE>        INTO  GV_P_GST</FPCLINE>
+      <FPCLINE>        WHERE BUKRS = LS_BIL_INVOICE-HD_ORG-COMP_CODE</FPCLINE>
+      <FPCLINE>         AND  BRANCH = LV_BRANCH.</FPCLINE>
+      <FPCLINE>IF GV_P_GST IS INITIAL.</FPCLINE>
+      <FPCLINE>  GV_P_GST = &apos;27AACCD2898L1Z4&apos;.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE>SELECT SINGLE *</FPCLINE>
+      <FPCLINE>         FROM ADRC</FPCLINE>
+      <FPCLINE>         INTO GS_P_ADRC</FPCLINE>
+      <FPCLINE>         WHERE ADDRNUMBER = LV_ADRNR.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE LANDX</FPCLINE>
+      <FPCLINE>         FROM T005T</FPCLINE>
+      <FPCLINE>         INTO GV_P_COUNTRY</FPCLINE>
+      <FPCLINE>         WHERE SPRAS = SY-LANGU</FPCLINE>
+      <FPCLINE>           AND LAND1 = GS_P_ADRC-COUNTRY.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE SMTP_ADDR</FPCLINE>
+      <FPCLINE>         FROM ADR6</FPCLINE>
+      <FPCLINE>         INTO GV_EMAIL</FPCLINE>
+      <FPCLINE>         WHERE  ADDRNUMBER = LV_ADRNR</FPCLINE>
+      <FPCLINE>         AND    CONSNUMBER = &apos;2&apos;.         &quot;ADDED BY GANGA</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE BEZEI</FPCLINE>
+      <FPCLINE>         FROM T005U</FPCLINE>
+      <FPCLINE>         INTO GV_P_STATE</FPCLINE>
+      <FPCLINE>         WHERE SPRAS = SY-LANGU</FPCLINE>
+      <FPCLINE>           AND LAND1 = GS_P_ADRC-COUNTRY</FPCLINE>
+      <FPCLINE>           AND BLAND = GS_P_ADRC-REGION.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF NOT GV_P_STATE IS INITIAL.</FPCLINE>
+      <FPCLINE>  SELECT SINGLE GST_REGION</FPCLINE>
+      <FPCLINE>          FROM  ZGST_REGION</FPCLINE>
+      <FPCLINE>          INTO  GV_GST_REG</FPCLINE>
+      <FPCLINE>          WHERE REGION = GS_P_ADRC-REGION.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE REMARK FROM ADRCT</FPCLINE>
+      <FPCLINE>    INTO GV_CIN</FPCLINE>
+      <FPCLINE>    WHERE ADDRNUMBER = GS_P_ADRC-ADDRNUMBER.</FPCLINE>
+      <FPCLINE>**************************************************************************</FPCLINE>
+      <FPCLINE>*BREAK-POINT.</FPCLINE>
+      <FPCLINE>SELECT SINGLE LIFNR</FPCLINE>
+      <FPCLINE>       FROM EKKO</FPCLINE>
+      <FPCLINE>       INTO WA_LIFNR</FPCLINE>
+      <FPCLINE>       WHERE EBELN  = GS_PURCHASING-EBELN.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT VBELN</FPCLINE>
+      <FPCLINE>     POSNR</FPCLINE>
+      <FPCLINE>     VGBEL</FPCLINE>
+      <FPCLINE>     VGPOS</FPCLINE>
+      <FPCLINE>     MATNR</FPCLINE>
+      <FPCLINE>     ARKTX</FPCLINE>
+      <FPCLINE>     FKIMG</FPCLINE>
+      <FPCLINE>     VRKME</FPCLINE>
+      <FPCLINE>     NETWR</FPCLINE>
+      <FPCLINE>     WERKS</FPCLINE>
+      <FPCLINE>FROM VBRP</FPCLINE>
+      <FPCLINE>INTO TABLE GT_ITEM</FPCLINE>
+      <FPCLINE>WHERE VBELN = LS_BIL_INVOICE-HD_GEN-BIL_NUMBER.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>SELECT MBLNR</FPCLINE>
+      <FPCLINE>       MJAHR</FPCLINE>
+      <FPCLINE>       ZEILE</FPCLINE>
+      <FPCLINE>       BWART</FPCLINE>
+      <FPCLINE>       XAUTO</FPCLINE>
+      <FPCLINE>       MATNR</FPCLINE>
+      <FPCLINE>       WERKS</FPCLINE>
+      <FPCLINE>       MENGE</FPCLINE>
+      <FPCLINE>       MEINS</FPCLINE>
+      <FPCLINE>       EBELN</FPCLINE>
+      <FPCLINE>       EBELP</FPCLINE>
+      <FPCLINE>       LGORT</FPCLINE>
+      <FPCLINE>       BUDAT_MKPF</FPCLINE>
+      <FPCLINE>  FROM MSEG INTO TABLE IT_MSEG</FPCLINE>
+      <FPCLINE>  WHERE MBLNR = GS_ITEM-VGBEL.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>LOOP AT GT_ITEM INTO GS_ITEM.</FPCLINE>
+      <FPCLINE>  READ TABLE IT_MSEG INTO WA_MSEG WITH KEY MBLNR = GS_ITEM-VGBEL XAUTO =&apos;X&apos; .</FPCLINE>
+      <FPCLINE>  IF SY-SUBRC = 0.</FPCLINE>
+      <FPCLINE>*     GV_FROM_LGORT = WA_MSEG-LGORT.</FPCLINE>
+      <FPCLINE>    GV_TO_LGORT = WA_MSEG-LGORT.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDLOOP.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>**********************************************************************************************</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*DATA:</FPCLINE>
+      <FPCLINE>*  lv_adrnr TYPE kna1-adrnr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE ADRNR</FPCLINE>
+      <FPCLINE>              STCD3</FPCLINE>
+      <FPCLINE>         FROM KNA1</FPCLINE>
+      <FPCLINE>         INTO (LV_ADRNR,GV_V_GST)</FPCLINE>
+      <FPCLINE>         WHERE KUNNR = LS_BIL_INVOICE-HD_GEN-SOLD_TO_PARTY.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE * FROM KNA1 INTO WA_KNA1</FPCLINE>
+      <FPCLINE>  WHERE KUNNR = LS_BIL_INVOICE-HD_GEN-SOLD_TO_PARTY.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE * FROM LFM1 INTO WA_LFM1</FPCLINE>
+      <FPCLINE>  WHERE LIFNR = WA_KNA1-LIFNR.&quot;ls_bil_invoice-hd_gen-sold_to_party.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE *</FPCLINE>
+      <FPCLINE>         FROM ADRC</FPCLINE>
+      <FPCLINE>         INTO GS_VEN</FPCLINE>
+      <FPCLINE>         WHERE ADDRNUMBER = LV_ADRNR.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE LANDX</FPCLINE>
+      <FPCLINE>         FROM T005T</FPCLINE>
+      <FPCLINE>         INTO GV_V_COUNTRY</FPCLINE>
+      <FPCLINE>         WHERE SPRAS = SY-LANGU</FPCLINE>
+      <FPCLINE>           AND LAND1 = GS_VEN-COUNTRY.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE BEZEI</FPCLINE>
+      <FPCLINE>         FROM T005U</FPCLINE>
+      <FPCLINE>         INTO GV_V_STATE</FPCLINE>
+      <FPCLINE>         WHERE SPRAS = SY-LANGU</FPCLINE>
+      <FPCLINE>           AND LAND1 = GS_VEN-COUNTRY</FPCLINE>
+      <FPCLINE>           AND BLAND = GS_VEN-REGION.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF NOT GV_V_STATE IS INITIAL.</FPCLINE>
+      <FPCLINE>  SELECT SINGLE GST_REGION</FPCLINE>
+      <FPCLINE>          FROM  ZGST_REGION</FPCLINE>
+      <FPCLINE>          INTO  GV_GST_V_REG</FPCLINE>
+      <FPCLINE>          WHERE BEZEI = GV_V_STATE.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT VBELN</FPCLINE>
+      <FPCLINE>       POSNR</FPCLINE>
+      <FPCLINE>       VGBEL</FPCLINE>
+      <FPCLINE>       VGPOS</FPCLINE>
+      <FPCLINE>       MATNR</FPCLINE>
+      <FPCLINE>       ARKTX</FPCLINE>
+      <FPCLINE>       FKIMG</FPCLINE>
+      <FPCLINE>       VRKME</FPCLINE>
+      <FPCLINE>       NETWR</FPCLINE>
+      <FPCLINE>       WERKS</FPCLINE>
+      <FPCLINE>  FROM VBRP</FPCLINE>
+      <FPCLINE>  INTO TABLE GT_ITEM</FPCLINE>
+      <FPCLINE>  WHERE VBELN = LS_BIL_INVOICE-HD_GEN-BIL_NUMBER.</FPCLINE>
+      <FPCLINE>*BREAK-POINT.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT MBLNR</FPCLINE>
+      <FPCLINE>       MJAHR</FPCLINE>
+      <FPCLINE>       ZEILE</FPCLINE>
+      <FPCLINE>       BWART</FPCLINE>
+      <FPCLINE>       XAUTO</FPCLINE>
+      <FPCLINE>       MATNR</FPCLINE>
+      <FPCLINE>       WERKS</FPCLINE>
+      <FPCLINE>       MENGE</FPCLINE>
+      <FPCLINE>       MEINS</FPCLINE>
+      <FPCLINE>       EBELN</FPCLINE>
+      <FPCLINE>       EBELP</FPCLINE>
+      <FPCLINE>       LGORT</FPCLINE>
+      <FPCLINE>  FROM MSEG INTO TABLE IT_MSEG_1</FPCLINE>
+      <FPCLINE>  WHERE MBLNR = GS_ITEM-VGBEL.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT</FPCLINE>
+      <FPCLINE>   VBELN</FPCLINE>
+      <FPCLINE>   EWAY_BILL FROM ZEWAY_NUMBER</FPCLINE>
+      <FPCLINE>  INTO TABLE IT_ZEWAY</FPCLINE>
+      <FPCLINE>   WHERE VBELN = GS_ITEM-VBELN.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT</FPCLINE>
+      <FPCLINE>    VBELN</FPCLINE>
+      <FPCLINE>    VEHICAL_NO</FPCLINE>
+      <FPCLINE>    TRANS_NAME</FPCLINE>
+      <FPCLINE>    VEHICAL_TYPE FROM ZEWAY_BILL</FPCLINE>
+      <FPCLINE>    INTO CORRESPONDING FIELDS OF TABLE IT_ZEWAY_BILL</FPCLINE>
+      <FPCLINE>    WHERE VBELN = GS_ITEM-VBELN.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>LOOP AT GT_ITEM INTO GS_ITEM.</FPCLINE>
+      <FPCLINE>  READ TABLE IT_MSEG_1 INTO WA_MSEG_1 WITH KEY MBLNR = GS_ITEM-VGBEL XAUTO = &apos;&apos;..</FPCLINE>
+      <FPCLINE>  IF SY-SUBRC = 0.</FPCLINE>
+      <FPCLINE>    WA_FINAL-MBLNR = WA_MSEG_1-MBLNR.</FPCLINE>
+      <FPCLINE>    WA_FINAL-MJAHR = WA_MSEG_1-MJAHR.</FPCLINE>
+      <FPCLINE>    WA_FINAL-ZEILE = WA_MSEG_1-ZEILE.</FPCLINE>
+      <FPCLINE>    WA_FINAL-BWART = WA_MSEG_1-BWART.</FPCLINE>
+      <FPCLINE>    WA_FINAL-XAUTO = WA_MSEG_1-XAUTO.</FPCLINE>
+      <FPCLINE>    WA_FINAL-LGORT = WA_MSEG_1-LGORT.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*     GV_TO_LGORT = wa_mseg_1-LGORT.</FPCLINE>
+      <FPCLINE>    GV_FROM_LGORT = WA_MSEG_1-LGORT.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  READ TABLE IT_ZEWAY INTO WA_ZEWAY WITH KEY VBELN = GS_ITEM-VBELN.</FPCLINE>
+      <FPCLINE>  IF SY-SUBRC = 0.</FPCLINE>
+      <FPCLINE>    WA_FINAL-EWAY_BILL = WA_ZEWAY-EWAY_BILL.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>  READ TABLE IT_ZEWAY_BILL INTO WA_ZEWAY_BILL WITH KEY VBELN = GS_ITEM-VBELN.</FPCLINE>
+      <FPCLINE>  IF SY-SUBRC = 0.</FPCLINE>
+      <FPCLINE>    WA_FINAL-TRANS_NAME = WA_ZEWAY_BILL-TRANS_NAME.</FPCLINE>
+      <FPCLINE>    WA_FINAL-VEHICAL_NO = WA_ZEWAY_BILL-VEHICAL_NO.</FPCLINE>
+      <FPCLINE>    WA_FINAL-VEHICAL_TYPE = WA_ZEWAY_BILL-VEHICAL_TYPE.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>*APPEND WA_FINAL TO IT_FINAL.</FPCLINE>
+      <FPCLINE>ENDLOOP.</FPCLINE>
+      <FPCLINE>***********************************************************************</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Condition 1</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>DATA:LV_FROM_LGORT TYPE MSEG-LGORT,</FPCLINE>
+      <FPCLINE>     LV_TO_LGORT   TYPE MSEG-LGORT.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>LV_FROM_LGORT = GV_FROM_LGORT.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>DATA: SL_FROM TYPE C LENGTH 4.</FPCLINE>
+      <FPCLINE>SL_FROM = GV_FROM_LGORT+0(1).</FPCLINE>
+      <FPCLINE>CONDENSE SL_FROM.</FPCLINE>
+      <FPCLINE>IF SL_FROM &lt;&gt; &apos;K&apos;.</FPCLINE>
+      <FPCLINE>  CLEAR SL_FROM.</FPCLINE>
+      <FPCLINE>  SL_FROM = LV_FROM_LGORT.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>LV_TO_LGORT = GV_TO_LGORT.</FPCLINE>
+      <FPCLINE>DATA: SL_TO TYPE C LENGTH 4.</FPCLINE>
+      <FPCLINE>SL_TO = GV_TO_LGORT+0(1).</FPCLINE>
+      <FPCLINE>CONDENSE SL_TO.</FPCLINE>
+      <FPCLINE>IF SL_TO &lt;&gt; &apos;K&apos;.</FPCLINE>
+      <FPCLINE>  CLEAR SL_TO.</FPCLINE>
+      <FPCLINE>  SL_TO = LV_TO_LGORT.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>* CONIDITON 1</FPCLINE>
+      <FPCLINE>*BREAK-POINT.</FPCLINE>
+      <FPCLINE>*BREAK dvbasis.</FPCLINE>
+      <FPCLINE>IF  SL_FROM NE &apos;K&apos; AND GV_FROM_LGORT NE &apos;SAN1&apos;  AND SL_TO EQ &apos;K&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>*HEADER LOGIC</FPCLINE>
+      <FPCLINE>*BREAK dvbasis.</FPCLINE>
+      <FPCLINE>  SELECT SINGLE ADRNR FROM TWLAD</FPCLINE>
+      <FPCLINE>    INTO WA_ADRNR</FPCLINE>
+      <FPCLINE>    WHERE LGORT = &apos;RM01&apos; AND WERKS = &apos;PL01&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF SY-SUBRC EQ 0.</FPCLINE>
+      <FPCLINE>    SELECT SINGLE STREET CITY1 POST_CODE1 STR_SUPPL3 LOCATION</FPCLINE>
+      <FPCLINE>      FROM ADRC</FPCLINE>
+      <FPCLINE>      INTO WA_ADDRESS_HEADER</FPCLINE>
+      <FPCLINE>      WHERE ADDRNUMBER = WA_ADRNR-ADRNR.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  GV_COND = &apos;1&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ELSEIF  SL_FROM EQ &apos;K&apos; AND  SL_TO NE &apos;K&apos; AND GV_TO_LGORT NE &apos;SAN1&apos; .</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*HEADER LOGIC</FPCLINE>
+      <FPCLINE>  SELECT SINGLE ADRNR FROM TWLAD</FPCLINE>
+      <FPCLINE>    INTO WA_ADRNR</FPCLINE>
+      <FPCLINE>    WHERE LGORT = &apos;KPR1&apos; AND WERKS = &apos;PL01&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF SY-SUBRC EQ 0.</FPCLINE>
+      <FPCLINE>    SELECT SINGLE STREET CITY1 POST_CODE1 STR_SUPPL3 LOCATION</FPCLINE>
+      <FPCLINE>      FROM ADRC</FPCLINE>
+      <FPCLINE>      INTO WA_ADDRESS_HEADER</FPCLINE>
+      <FPCLINE>      WHERE ADDRNUMBER = WA_ADRNR-ADRNR.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF GV_COND IS INITIAL.</FPCLINE>
+      <FPCLINE>    GV_COND = &apos;2&apos;.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ELSEIF SL_FROM EQ &apos;K&apos; AND  GV_TO_LGORT EQ &apos;SAN1&apos; .</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*HEADER LOGIC</FPCLINE>
+      <FPCLINE>  SELECT SINGLE ADRNR FROM TWLAD</FPCLINE>
+      <FPCLINE>    INTO WA_ADRNR</FPCLINE>
+      <FPCLINE>    WHERE LGORT = &apos;KPR1&apos; AND WERKS = &apos;PL01&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF SY-SUBRC EQ 0.</FPCLINE>
+      <FPCLINE>    SELECT SINGLE STREET CITY1 POST_CODE1 STR_SUPPL3 LOCATION</FPCLINE>
+      <FPCLINE>      FROM ADRC</FPCLINE>
+      <FPCLINE>      INTO WA_ADDRESS_HEADER</FPCLINE>
+      <FPCLINE>      WHERE ADDRNUMBER = WA_ADRNR-ADRNR.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF GV_COND IS INITIAL.</FPCLINE>
+      <FPCLINE>    GV_COND = &apos;3&apos;.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ELSEIF GV_FROM_LGORT EQ &apos;SAN1&apos; AND  SL_TO EQ &apos;K&apos; .</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*HEADER LOGIC</FPCLINE>
+      <FPCLINE>  SELECT SINGLE ADRNR FROM TWLAD</FPCLINE>
+      <FPCLINE>    INTO WA_ADRNR</FPCLINE>
+      <FPCLINE>    WHERE LGORT = &apos;SAN1&apos; AND WERKS = &apos;PL01&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF SY-SUBRC EQ 0.</FPCLINE>
+      <FPCLINE>    SELECT SINGLE STREET CITY1 POST_CODE1 STR_SUPPL3 LOCATION</FPCLINE>
+      <FPCLINE>      FROM ADRC</FPCLINE>
+      <FPCLINE>      INTO WA_ADDRESS_HEADER</FPCLINE>
+      <FPCLINE>      WHERE ADDRNUMBER = WA_ADRNR-ADRNR.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF GV_COND IS INITIAL.</FPCLINE>
+      <FPCLINE>    GV_COND = &apos;4&apos;.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE>*************************************************************************************************</FPCLINE>
+      <FPCLINE>DATA : OBJNAME TYPE TDOBNAME.</FPCLINE>
+      <FPCLINE>DATA:</FPCLINE>
+      <FPCLINE>  LT_J_1IG_SUBCON TYPE TT_J_1IG_SUBCON,</FPCLINE>
+      <FPCLINE>  LS_J_1IG_SUBCON TYPE T_J_1IG_SUBCON.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF GT_J_1IG_SUBCON IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>  SELECT BUKRS</FPCLINE>
+      <FPCLINE>         MBLNR</FPCLINE>
+      <FPCLINE>         MJAHR</FPCLINE>
+      <FPCLINE>         ZEILE</FPCLINE>
+      <FPCLINE>         CHLN_INV</FPCLINE>
+      <FPCLINE>         BWART     &quot;added by pankaj 12.10.2021</FPCLINE>
+      <FPCLINE>         ITEM</FPCLINE>
+      <FPCLINE>         MENGE</FPCLINE>
+      <FPCLINE>         MEINS</FPCLINE>
+      <FPCLINE>         MATNR</FPCLINE>
+      <FPCLINE>    FROM J_1IG_SUBCON</FPCLINE>
+      <FPCLINE>    INTO TABLE GT_J_1IG_SUBCON</FPCLINE>
+      <FPCLINE>    FOR ALL ENTRIES IN GT_ITEM</FPCLINE>
+      <FPCLINE>    WHERE CHLN_INV = GT_ITEM-VBELN.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF NOT GT_J_1IG_SUBCON IS INITIAL.</FPCLINE>
+      <FPCLINE>  SELECT MBLNR</FPCLINE>
+      <FPCLINE>         MJAHR</FPCLINE>
+      <FPCLINE>         ZEILE</FPCLINE>
+      <FPCLINE>         BWART    &quot;added by pankaj 12.10.2021</FPCLINE>
+      <FPCLINE>         MATNR    &quot;added by pankaj 12.10.2021</FPCLINE>
+      <FPCLINE>         EBELN</FPCLINE>
+      <FPCLINE>         EBELP</FPCLINE>
+      <FPCLINE>    FROM MSEG</FPCLINE>
+      <FPCLINE>    INTO TABLE GT_MAT_DOC</FPCLINE>
+      <FPCLINE>    FOR ALL ENTRIES IN GT_J_1IG_SUBCON</FPCLINE>
+      <FPCLINE>    WHERE MBLNR = GT_J_1IG_SUBCON-MBLNR</FPCLINE>
+      <FPCLINE>    AND   MJAHR = GT_J_1IG_SUBCON-MJAHR</FPCLINE>
+      <FPCLINE>    AND   ZEILE = GT_J_1IG_SUBCON-ZEILE</FPCLINE>
+      <FPCLINE>    &quot;code added by panka 12.10.2021</FPCLINE>
+      <FPCLINE>    AND   BWART = &apos;541&apos;  &quot;Commented by Pankaj 10.11.21 &apos;543&apos;   &quot;gt_j_1ig_subcon-bwart</FPCLINE>
+      <FPCLINE>    AND   MATNR = GT_J_1IG_SUBCON-MATNR.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  &quot; added by pankaj 13.10.2021</FPCLINE>
+      <FPCLINE>  SORT GT_MAT_DOC BY MBLNR DESCENDING.</FPCLINE>
+      <FPCLINE>  SORT GT_MAT_DOC BY ZEILE DESCENDING.</FPCLINE>
+      <FPCLINE>  SORT GT_MAT_DOC BY EBELN ASCENDING.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF GT_MAT_DOC IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    SELECT EBELN</FPCLINE>
+      <FPCLINE>           EBELP</FPCLINE>
+      <FPCLINE>           TXZ01</FPCLINE>
+      <FPCLINE>           MATNR</FPCLINE>
+      <FPCLINE>           MENGE</FPCLINE>
+      <FPCLINE>           MEINS</FPCLINE>
+      <FPCLINE>           MWSKZ</FPCLINE>
+      <FPCLINE>           WERKS</FPCLINE>
+      <FPCLINE>           NETWR</FPCLINE>
+      <FPCLINE>      FROM EKPO</FPCLINE>
+      <FPCLINE>      INTO TABLE GT_PURCHASING</FPCLINE>
+      <FPCLINE>      FOR ALL ENTRIES IN GT_MAT_DOC</FPCLINE>
+      <FPCLINE>      WHERE EBELN = GT_MAT_DOC-EBELN</FPCLINE>
+      <FPCLINE>      AND   EBELP = GT_MAT_DOC-EBELP.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>  &quot;commented by pankaj 11.11.2021</FPCLINE>
+      <FPCLINE>*    IF sy-subrc is INITIAL.</FPCLINE>
+      <FPCLINE>*     SELECT matnr</FPCLINE>
+      <FPCLINE>*         maktx</FPCLINE>
+      <FPCLINE>*    FROM makt</FPCLINE>
+      <FPCLINE>*    INTO TABLE GT_MAT_DESC</FPCLINE>
+      <FPCLINE>*    FOR ALL ENTRIES IN gt_purchasing</FPCLINE>
+      <FPCLINE>*    WHERE matnr = gt_purchasing-matnr</FPCLINE>
+      <FPCLINE>*      AND spras = sy-langu.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*    ENDIF.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>READ TABLE IT_FINAL INTO WA_FINAL INDEX 1.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>&quot;Added BY Snehal Rajale on 31.12.2020</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>LOOP AT GT_PURCHASING INTO GS_PURCHASING.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  SELECT SINGLE EBELN</FPCLINE>
+      <FPCLINE>  EBELP</FPCLINE>
+      <FPCLINE>  KNTTP</FPCLINE>
+      <FPCLINE>  FROM EKPO</FPCLINE>
+      <FPCLINE>  INTO LS_EKPO</FPCLINE>
+      <FPCLINE>  WHERE EBELN = GS_PURCHASING-EBELN AND</FPCLINE>
+      <FPCLINE>  EBELP = GS_PURCHASING-EBELP AND</FPCLINE>
+      <FPCLINE>  KNTTP = &apos;E&apos;.</FPCLINE>
+      <FPCLINE>  IF SY-SUBRC = 0 .</FPCLINE>
+      <FPCLINE>    GV_KNTTP = LS_EKPO-KNTTP.</FPCLINE>
+      <FPCLINE>    SELECT SINGLE MATNR</FPCLINE>
+      <FPCLINE>                  SPRAS</FPCLINE>
+      <FPCLINE>                  MAKTX</FPCLINE>
+      <FPCLINE>                  FROM MAKT</FPCLINE>
+      <FPCLINE>                  INTO LS_MAKT</FPCLINE>
+      <FPCLINE>                  WHERE MATNR = GS_PURCHASING-MATNR.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    SELECT SINGLE EBELN</FPCLINE>
+      <FPCLINE>                  EBELP</FPCLINE>
+      <FPCLINE>                  ZEKKN</FPCLINE>
+      <FPCLINE>                  VBELN</FPCLINE>
+      <FPCLINE>                  VBELP</FPCLINE>
+      <FPCLINE>              FROM EKKN</FPCLINE>
+      <FPCLINE>              INTO LS_EKKN</FPCLINE>
+      <FPCLINE>              WHERE EBELN = GS_PURCHASING-EBELN  AND</FPCLINE>
+      <FPCLINE>              EBELP = GS_PURCHASING-EBELP.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    SELECT SINGLE  VKBUR FROM VBAK INTO @DATA(LV_VKBUR)</FPCLINE>
+      <FPCLINE>      WHERE VBELN = @LS_EKKN-VBELN.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    SELECT SINGLE BEZEI FROM TVKBT INTO LV_BRANCH</FPCLINE>
+      <FPCLINE>      WHERE VKBUR = LV_VKBUR.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    SELECT SINGLE MATNR</FPCLINE>
+      <FPCLINE>    WERKS</FPCLINE>
+      <FPCLINE>    DISPO</FPCLINE>
+      <FPCLINE>    FROM MARC</FPCLINE>
+      <FPCLINE>    INTO LS_MARC</FPCLINE>
+      <FPCLINE>    WHERE MATNR = GS_PURCHASING-MATNR AND</FPCLINE>
+      <FPCLINE>    WERKS = GS_PURCHASING-WERKS.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    SELECT SINGLE WRKST</FPCLINE>
+      <FPCLINE>    INTO GV_WRKST</FPCLINE>
+      <FPCLINE>    FROM MARA</FPCLINE>
+      <FPCLINE>    WHERE MATNR = GS_PURCHASING-MATNR .</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>    SELECT SINGLE VBELN</FPCLINE>
+      <FPCLINE>    POSNR</FPCLINE>
+      <FPCLINE>    ZCE</FPCLINE>
+      <FPCLINE>    ZGAD</FPCLINE>
+      <FPCLINE>    FROM VBAP</FPCLINE>
+      <FPCLINE>    INTO LS_VBAP</FPCLINE>
+      <FPCLINE>    WHERE VBELN = LS_EKKN-VBELN.</FPCLINE>
+      <FPCLINE>    IF LS_VBAP-ZCE = &apos;X&apos;.</FPCLINE>
+      <FPCLINE>      GV_PC = &apos;CE&apos;.</FPCLINE>
+      <FPCLINE>    ENDIF.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>    IF LS_VBAP-ZGAD = &apos;1&apos;.</FPCLINE>
+      <FPCLINE>      GV_ZGAD = &apos;Reference&apos;.</FPCLINE>
+      <FPCLINE>    ELSEIF LS_VBAP-ZGAD = &apos;2&apos;.</FPCLINE>
+      <FPCLINE>      GV_ZGAD = &apos;Approved&apos;.</FPCLINE>
+      <FPCLINE>    ELSEIF LS_VBAP-ZGAD = &apos;3&apos;.</FPCLINE>
+      <FPCLINE>      GV_ZGAD = &apos;Standard&apos;.</FPCLINE>
+      <FPCLINE>    ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>    CLEAR OBJNAME.</FPCLINE>
+      <FPCLINE>    OBJNAME = LS_EKKN-VBELN.</FPCLINE>
+      <FPCLINE>    PERFORM GET_TEXT USING OBJNAME &apos;VBBK&apos; &apos;Z038&apos; &apos;E&apos; CHANGING GV_TEXT_LD.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>    CLEAR OBJNAME.</FPCLINE>
+      <FPCLINE>    OBJNAME = LS_EKKN-VBELN.</FPCLINE>
+      <FPCLINE>    PERFORM GET_TEXT USING OBJNAME &apos;VBBK&apos; &apos;Z039&apos; &apos;E&apos; CHANGING GV_TEXT_TAG.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>    CLEAR OBJNAME.</FPCLINE>
+      <FPCLINE>    OBJNAME = LS_EKKN-VBELN.</FPCLINE>
+      <FPCLINE>    PERFORM GET_TEXT USING OBJNAME &apos;VBBK&apos; &apos;Z999&apos; &apos;E&apos; CHANGING GV_TEXT_TPI.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    CLEAR OBJNAME.</FPCLINE>
+      <FPCLINE>    OBJNAME = GS_PURCHASING-MATNR.</FPCLINE>
+      <FPCLINE>    PERFORM GET_TEXT USING OBJNAME &apos;MATERIAL&apos; &apos;GRUN&apos; &apos;S&apos; CHANGING GV_TEXT_NOTE.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>ENDLOOP.</FPCLINE>
+      <FPCLINE>********************************************************************************************</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>GV_IS = GV_IS + 1.</FPCLINE>
+      <FPCLINE>*BREAK dvbasis.</FPCLINE>
+      <FPCLINE>*SELECT SINGLE steuc INTO GV_STEUC FROM marc</FPCLINE>
+      <FPCLINE>*  WHERE matnr = wa_final-matnr</FPCLINE>
+      <FPCLINE>*  and WERKS = &apos;PL01&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>TAX_AMT = WA_FINAL-NETWR + TAX_AMT.</FPCLINE>
+      <FPCLINE>CGST_TOT = WA_FINAL-CGST_AMT + CGST_TOT.</FPCLINE>
+      <FPCLINE>SGST_TOT = WA_FINAL-SGST_AMT + SGST_TOT.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>***************************************************************************************</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>DATA: LT_LINES TYPE STANDARD TABLE OF TLINE,</FPCLINE>
+      <FPCLINE>      WA_LINES TYPE TLINE.</FPCLINE>
+      <FPCLINE>*CONSTANTS: c_id TYPE thead-tdid VALUE  &apos;Z888&apos;,</FPCLINE>
+      <FPCLINE>*                      c_object TYPE thead-tdobject VALUE &apos;VBBP&apos;.</FPCLINE>
+      <FPCLINE>DATA: LV_NAME TYPE TDOBNAME.</FPCLINE>
+      <FPCLINE>DATA: LD_TEXT(1000) TYPE C.</FPCLINE>
+      <FPCLINE>*DATA: gv_text(1300) TYPE c.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>CONCATENATE WA_FINAL-VBELN WA_FINAL-POSNR INTO LV_NAME.</FPCLINE>
+      <FPCLINE>&quot;                                                                          &quot;&quot;changed here for READ fn.</FPCLINE>
+      <FPCLINE>  LO_TEXT_READER-&gt;READ_TEXT_STRING( EXPORTING ID       = &apos;Z888&apos;</FPCLINE>
+      <FPCLINE>                                            NAME     = LV_NAME</FPCLINE>
+      <FPCLINE>                                            OBJECT   = &apos;VBBP&apos;</FPCLINE>
+      <FPCLINE>                                  IMPORTING LV_LINES = LV_LINES1</FPCLINE>
+      <FPCLINE>                                           ).</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*CONCATENATE</FPCLINE>
+      <FPCLINE>*CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>*  EXPORTING</FPCLINE>
+      <FPCLINE>*    ID        = &apos;Z888&apos;</FPCLINE>
+      <FPCLINE>*    LANGUAGE  = &apos;E&apos;</FPCLINE>
+      <FPCLINE>*    NAME      = LV_NAME</FPCLINE>
+      <FPCLINE>*    OBJECT    = &apos;VBBP&apos;</FPCLINE>
+      <FPCLINE>**  IMPORTING</FPCLINE>
+      <FPCLINE>**   header    = ld_header</FPCLINE>
+      <FPCLINE>*  TABLES</FPCLINE>
+      <FPCLINE>*    LINES     = LT_LINES</FPCLINE>
+      <FPCLINE>*  EXCEPTIONS</FPCLINE>
+      <FPCLINE>*    ID        = 1</FPCLINE>
+      <FPCLINE>*    LANGUAGE  = 2</FPCLINE>
+      <FPCLINE>*    NAME      = 3</FPCLINE>
+      <FPCLINE>*    NOT_FOUND = 4</FPCLINE>
+      <FPCLINE>*    OBJECT    = 5.</FPCLINE>
+      <FPCLINE>*IF SY-SUBRC &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>*ELSE.</FPCLINE>
+      <FPCLINE>*  LOOP AT LT_LINES INTO WA_LINES.</FPCLINE>
+      <FPCLINE>*    CONCATENATE LD_TEXT WA_LINES-TDLINE INTO LD_TEXT.</FPCLINE>
+      <FPCLINE>*  ENDLOOP.</FPCLINE>
+      <FPCLINE>*ENDIF.</FPCLINE>
+      <FPCLINE>&quot;                                                                             &quot; end of READ fn.</FPCLINE>
+      <FPCLINE>*GV_TEXT = LD_TEXT.</FPCLINE>
+      <FPCLINE>GV_TEXT = LV_LINES1.</FPCLINE>
+      <FPCLINE>CLEAR:LV_LINES1.</FPCLINE>
+      <FPCLINE>************************************************************************************************</FPCLINE>
+      <FPCLINE>*BREAK-POINT.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>LOOP AT IT_FINAL INTO WA_FINAL.</FPCLINE>
+      <FPCLINE>  WA_FINAL1-TAX_AMT = WA_FINAL1-TAX_AMT + WA_FINAL-KWERT.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF WA_FINAL-KWERT IS INITIAL.</FPCLINE>
+      <FPCLINE>    WA_FINAL1-TAX_AMT = WA_FINAL1-TAX_AMT + WA_FINAL-VALUE.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>ENDLOOP.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>APPEND WA_FINAL1 TO IT_FINAL1.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>GROSS = WA_FINAL1-TAX_AMT.</FPCLINE>
+      <FPCLINE>*********************************************************************************************</FPCLINE>
+      <FPCLINE>****</FPCLINE>
+      <FPCLINE>****tot_tax =  igst_tot.</FPCLINE>
+      <FPCLINE>****gross = tot_tax + TAX_AMT.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>************************************************************************************************</FPCLINE>
+      <FPCLINE>*DATA: lv_name   TYPE thead-tdname.</FPCLINE>
+      <FPCLINE>CLEAR: IT_LINES,WA_LINES.</FPCLINE>
+      <FPCLINE>REFRESH IT_LINES.</FPCLINE>
+      <FPCLINE>LV_NAME = LS_BIL_INVOICE-HD_GEN-BIL_NUMBER.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>&quot;                                                                 &quot; Changed for read fn.</FPCLINE>
+      <FPCLINE>  LO_TEXT_READER-&gt;READ_TEXT_STRING( EXPORTING ID       = &apos;Z041&apos;</FPCLINE>
+      <FPCLINE>                                            NAME     = LV_NAME</FPCLINE>
+      <FPCLINE>                                            OBJECT   = &apos;VBBK&apos;</FPCLINE>
+      <FPCLINE>                                  IMPORTING LV_LINES = LV_LINES1</FPCLINE>
+      <FPCLINE>                                           ).</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>*  EXPORTING</FPCLINE>
+      <FPCLINE>*    CLIENT                  = SY-MANDT</FPCLINE>
+      <FPCLINE>*    ID                      = &apos;Z041&apos;</FPCLINE>
+      <FPCLINE>*    LANGUAGE                = SY-LANGU</FPCLINE>
+      <FPCLINE>*    NAME                    = LV_NAME</FPCLINE>
+      <FPCLINE>*    OBJECT                  = &apos;VBBK&apos;</FPCLINE>
+      <FPCLINE>*  TABLES</FPCLINE>
+      <FPCLINE>*    LINES                   = IT_LINES</FPCLINE>
+      <FPCLINE>*  EXCEPTIONS</FPCLINE>
+      <FPCLINE>*    ID                      = 1</FPCLINE>
+      <FPCLINE>*    LANGUAGE                = 2</FPCLINE>
+      <FPCLINE>*    NAME                    = 3</FPCLINE>
+      <FPCLINE>*    NOT_FOUND               = 4</FPCLINE>
+      <FPCLINE>*    OBJECT                  = 5</FPCLINE>
+      <FPCLINE>*    REFERENCE_CHECK         = 6</FPCLINE>
+      <FPCLINE>*    WRONG_ACCESS_TO_ARCHIVE = 7</FPCLINE>
+      <FPCLINE>*    OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>*IF SY-SUBRC &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>** MESSAGE ID SY-MSGID TYPE SY-MSGTY NUMBER SY-MSGNO</FPCLINE>
+      <FPCLINE>**         WITH SY-MSGV1 SY-MSGV2 SY-MSGV3 SY-MSGV4.</FPCLINE>
+      <FPCLINE>*ENDIF.</FPCLINE>
+      <FPCLINE>&quot;</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*IF IT_LINES IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>*  LOOP AT IT_LINES INTO WA_LINES.</FPCLINE>
+      <FPCLINE>*    IF NOT WA_LINES-TDLINE IS INITIAL.</FPCLINE>
+      <FPCLINE>*      CONCATENATE GV_COMM WA_LINES-TDLINE INTO GV_COMM SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE>*    ENDIF.</FPCLINE>
+      <FPCLINE>*  ENDLOOP.</FPCLINE>
+      <FPCLINE>*ENDIF.                                                                         &quot;End of READ fn.</FPCLINE>
+      <FPCLINE>GV_COMM = LV_LINES1.</FPCLINE>
+      <FPCLINE>CLEAR: LV_LINES1.</FPCLINE>
+      <FPCLINE>********************************************************************************************</FPCLINE>
+      <FPCLINE>*BREAK-POINT.</FPCLINE>
+      <FPCLINE>SELECT SINGLE LIFNR</FPCLINE>
+      <FPCLINE>       FROM EKKO</FPCLINE>
+      <FPCLINE>       INTO WA_LIFNR</FPCLINE>
+      <FPCLINE>       WHERE EBELN  = GS_PURCHASING-EBELN.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>SELECT VBELN</FPCLINE>
+      <FPCLINE>     POSNR</FPCLINE>
+      <FPCLINE>     VGBEL</FPCLINE>
+      <FPCLINE>     VGPOS</FPCLINE>
+      <FPCLINE>     MATNR</FPCLINE>
+      <FPCLINE>     ARKTX</FPCLINE>
+      <FPCLINE>     FKIMG</FPCLINE>
+      <FPCLINE>     VRKME</FPCLINE>
+      <FPCLINE>     NETWR</FPCLINE>
+      <FPCLINE>     WERKS</FPCLINE>
+      <FPCLINE>FROM VBRP</FPCLINE>
+      <FPCLINE>INTO TABLE GT_ITEM</FPCLINE>
+      <FPCLINE>WHERE VBELN = LS_BIL_INVOICE-HD_GEN-BIL_NUMBER.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>SELECT MBLNR</FPCLINE>
+      <FPCLINE>       MJAHR</FPCLINE>
+      <FPCLINE>       ZEILE</FPCLINE>
+      <FPCLINE>       BWART</FPCLINE>
+      <FPCLINE>       XAUTO</FPCLINE>
+      <FPCLINE>       MATNR</FPCLINE>
+      <FPCLINE>       WERKS</FPCLINE>
+      <FPCLINE>       MENGE</FPCLINE>
+      <FPCLINE>       MEINS</FPCLINE>
+      <FPCLINE>       EBELN</FPCLINE>
+      <FPCLINE>       EBELP</FPCLINE>
+      <FPCLINE>       LGORT</FPCLINE>
+      <FPCLINE>       BUDAT_MKPF</FPCLINE>
+      <FPCLINE>  FROM MSEG INTO TABLE IT_MSEG</FPCLINE>
+      <FPCLINE>  WHERE MBLNR = GS_ITEM-VGBEL.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>LOOP AT GT_ITEM INTO GS_ITEM.</FPCLINE>
+      <FPCLINE>  READ TABLE IT_MSEG INTO WA_MSEG WITH KEY MBLNR = GS_ITEM-VGBEL XAUTO =&apos;X&apos; .</FPCLINE>
+      <FPCLINE>  IF SY-SUBRC = 0.</FPCLINE>
+      <FPCLINE>    WA_FINAL-MBLNR = WA_MSEG-MBLNR.</FPCLINE>
+      <FPCLINE>    WA_FINAL-MJAHR = WA_MSEG-MJAHR.</FPCLINE>
+      <FPCLINE>    WA_FINAL-ZEILE = WA_MSEG-ZEILE.</FPCLINE>
+      <FPCLINE>    WA_FINAL-BWART = WA_MSEG-BWART.</FPCLINE>
+      <FPCLINE>    WA_FINAL-XAUTO = WA_MSEG-XAUTO.</FPCLINE>
+      <FPCLINE>    WA_FINAL-BUDAT_MKPF  = WA_MSEG-BUDAT_MKPF .</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*     GV_FROM_LGORT = WA_MSEG-LGORT.</FPCLINE>
+      <FPCLINE>    GV_TO_LGORT = WA_MSEG-LGORT.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDLOOP.</FPCLINE>
+      <FPCLINE>*****************************************************************************************</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*BREAK fujiabap.</FPCLINE>
+      <FPCLINE>SELECT SINGLE BKTXT FROM MKPF INTO GV_BKTXT</FPCLINE>
+      <FPCLINE>  WHERE MBLNR = GS_J_1IG_SUBCON-MBLNR.</FPCLINE>
+      <FPCLINE>*-----------Added By Abhishek Pisolkar (10.04.2018)</FPCLINE>
+      <FPCLINE>SELECT SINGLE XBLNR INTO GV_XBLNR</FPCLINE>
+      <FPCLINE>  FROM VBRK WHERE VBELN = LS_BIL_INVOICE-HD_GEN-BIL_NUMBER.</FPCLINE>
+      <FPCLINE>*--------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*DATA: lv_name   TYPE thead-tdname.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>CLEAR: IT_LINES,WA_LINES.</FPCLINE>
+      <FPCLINE>REFRESH IT_LINES.</FPCLINE>
+      <FPCLINE>LV_NAME = LS_BIL_INVOICE-HD_GEN-BIL_NUMBER.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>&quot;                                                               &quot; changed for READ fn.</FPCLINE>
+      <FPCLINE>  LO_TEXT_READER-&gt;READ_TEXT_STRING( EXPORTING ID       = &apos;0002&apos;</FPCLINE>
+      <FPCLINE>                                            NAME     = LV_NAME</FPCLINE>
+      <FPCLINE>                                            OBJECT   = &apos;VBBK&apos;</FPCLINE>
+      <FPCLINE>                                  IMPORTING LV_LINES = LV_LINES1</FPCLINE>
+      <FPCLINE>                                           ).</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>*  EXPORTING</FPCLINE>
+      <FPCLINE>*    CLIENT                  = SY-MANDT</FPCLINE>
+      <FPCLINE>*    ID                      = &apos;0002&apos;</FPCLINE>
+      <FPCLINE>*    LANGUAGE                = SY-LANGU</FPCLINE>
+      <FPCLINE>*    NAME                    = LV_NAME</FPCLINE>
+      <FPCLINE>*    OBJECT                  = &apos;VBBK&apos;</FPCLINE>
+      <FPCLINE>*  TABLES</FPCLINE>
+      <FPCLINE>*    LINES                   = IT_LINES</FPCLINE>
+      <FPCLINE>*  EXCEPTIONS</FPCLINE>
+      <FPCLINE>*    ID                      = 1</FPCLINE>
+      <FPCLINE>*    LANGUAGE                = 2</FPCLINE>
+      <FPCLINE>*    NAME                    = 3</FPCLINE>
+      <FPCLINE>*    NOT_FOUND               = 4</FPCLINE>
+      <FPCLINE>*    OBJECT                  = 5</FPCLINE>
+      <FPCLINE>*    REFERENCE_CHECK         = 6</FPCLINE>
+      <FPCLINE>*    WRONG_ACCESS_TO_ARCHIVE = 7</FPCLINE>
+      <FPCLINE>*    OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>*IF SY-SUBRC &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>** MESSAGE ID SY-MSGID TYPE SY-MSGTY NUMBER SY-MSGNO</FPCLINE>
+      <FPCLINE>**         WITH SY-MSGV1 SY-MSGV2 SY-MSGV3 SY-MSGV4.</FPCLINE>
+      <FPCLINE>*ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>READ TABLE IT_LINES INTO WA_LINES INDEX 1.</FPCLINE>
+      <FPCLINE>IF SY-SUBRC = 0.</FPCLINE>
+      <FPCLINE>  TXT1  = WA_LINES-TDLINE.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE>**READ TABLE IT_LINES INTO WA_LINES INDEX 2.                      &quot; COMMENTED LOGIC FOR READ FN.</FPCLINE>
+      <FPCLINE>**IF SY-SUBRC = 0.</FPCLINE>
+      <FPCLINE>**  TXT2  = WA_LINES-TDLINE.</FPCLINE>
+      <FPCLINE>**ENDIF.</FPCLINE>
+      <FPCLINE>**READ TABLE IT_LINES INTO WA_LINES INDEX 3.</FPCLINE>
+      <FPCLINE>**IF SY-SUBRC = 0.</FPCLINE>
+      <FPCLINE>**  TXT3  = WA_LINES-TDLINE.</FPCLINE>
+      <FPCLINE>**ENDIF.</FPCLINE>
+      <FPCLINE>**READ TABLE IT_LINES INTO WA_LINES INDEX 4.</FPCLINE>
+      <FPCLINE>**IF SY-SUBRC = 0.</FPCLINE>
+      <FPCLINE>**  TXT4  = WA_LINES-TDLINE.</FPCLINE>
+      <FPCLINE>**ENDIF.</FPCLINE>
+      <FPCLINE>**READ TABLE IT_LINES INTO WA_LINES INDEX 5.</FPCLINE>
+      <FPCLINE>**IF SY-SUBRC = 0.</FPCLINE>
+      <FPCLINE>**  TXT5  = WA_LINES-TDLINE.</FPCLINE>
+      <FPCLINE>**ENDIF.</FPCLINE>
+      <FPCLINE>**READ TABLE IT_LINES INTO WA_LINES INDEX 6.</FPCLINE>
+      <FPCLINE>**IF SY-SUBRC = 0.</FPCLINE>
+      <FPCLINE>**  TXT6  = WA_LINES-TDLINE.</FPCLINE>
+      <FPCLINE>**ENDIF.</FPCLINE>
+      <FPCLINE>**READ TABLE IT_LINES INTO WA_LINES INDEX 7.</FPCLINE>
+      <FPCLINE>**IF SY-SUBRC = 0.</FPCLINE>
+      <FPCLINE>**  TXT7  = WA_LINES-TDLINE.</FPCLINE>
+      <FPCLINE>**ENDIF.</FPCLINE>
+      <FPCLINE>**READ TABLE IT_LINES INTO WA_LINES INDEX 8.</FPCLINE>
+      <FPCLINE>**IF SY-SUBRC = 0.</FPCLINE>
+      <FPCLINE>**  TXT8  = WA_LINES-TDLINE.</FPCLINE>
+      <FPCLINE>**ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>TXT1 = LV_LINES1.</FPCLINE>
+      <FPCLINE>CLEAR: LV_LINES1.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*******************************************************************************************</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*DATA:</FPCLINE>
+      <FPCLINE>*  lv_adrnr TYPE kna1-adrnr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE ADRNR</FPCLINE>
+      <FPCLINE>              STCD3</FPCLINE>
+      <FPCLINE>         FROM KNA1</FPCLINE>
+      <FPCLINE>         INTO (LV_ADRNR,GV_V_GST)</FPCLINE>
+      <FPCLINE>         WHERE KUNNR = LS_BIL_INVOICE-HD_GEN-SOLD_TO_PARTY.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE * FROM KNA1 INTO WA_KNA1</FPCLINE>
+      <FPCLINE>  WHERE KUNNR = LS_BIL_INVOICE-HD_GEN-SOLD_TO_PARTY.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE * FROM LFM1 INTO WA_LFM1</FPCLINE>
+      <FPCLINE>  WHERE LIFNR = WA_KNA1-LIFNR.&quot;ls_bil_invoice-hd_gen-sold_to_party.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE *</FPCLINE>
+      <FPCLINE>         FROM ADRC</FPCLINE>
+      <FPCLINE>         INTO GS_VEN</FPCLINE>
+      <FPCLINE>         WHERE ADDRNUMBER = LV_ADRNR.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE LANDX</FPCLINE>
+      <FPCLINE>         FROM T005T</FPCLINE>
+      <FPCLINE>         INTO GV_V_COUNTRY</FPCLINE>
+      <FPCLINE>         WHERE SPRAS = SY-LANGU</FPCLINE>
+      <FPCLINE>           AND LAND1 = GS_VEN-COUNTRY.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE BEZEI</FPCLINE>
+      <FPCLINE>         FROM T005U</FPCLINE>
+      <FPCLINE>         INTO GV_V_STATE</FPCLINE>
+      <FPCLINE>         WHERE SPRAS = SY-LANGU</FPCLINE>
+      <FPCLINE>           AND LAND1 = GS_VEN-COUNTRY</FPCLINE>
+      <FPCLINE>           AND BLAND = GS_VEN-REGION.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF NOT GV_V_STATE IS INITIAL.</FPCLINE>
+      <FPCLINE>  SELECT SINGLE GST_REGION</FPCLINE>
+      <FPCLINE>          FROM  ZGST_REGION</FPCLINE>
+      <FPCLINE>          INTO  GV_GST_V_REG</FPCLINE>
+      <FPCLINE>          WHERE BEZEI = GV_V_STATE.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT VBELN</FPCLINE>
+      <FPCLINE>       POSNR</FPCLINE>
+      <FPCLINE>       VGBEL</FPCLINE>
+      <FPCLINE>       VGPOS</FPCLINE>
+      <FPCLINE>       MATNR</FPCLINE>
+      <FPCLINE>       ARKTX</FPCLINE>
+      <FPCLINE>       FKIMG</FPCLINE>
+      <FPCLINE>       VRKME</FPCLINE>
+      <FPCLINE>       NETWR</FPCLINE>
+      <FPCLINE>       WERKS</FPCLINE>
+      <FPCLINE>  FROM VBRP</FPCLINE>
+      <FPCLINE>  INTO TABLE GT_ITEM</FPCLINE>
+      <FPCLINE>  WHERE VBELN = LS_BIL_INVOICE-HD_GEN-BIL_NUMBER.</FPCLINE>
+      <FPCLINE>*BREAK-POINT.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT MBLNR</FPCLINE>
+      <FPCLINE>       MJAHR</FPCLINE>
+      <FPCLINE>       ZEILE</FPCLINE>
+      <FPCLINE>       BWART</FPCLINE>
+      <FPCLINE>       XAUTO</FPCLINE>
+      <FPCLINE>       MATNR</FPCLINE>
+      <FPCLINE>       WERKS</FPCLINE>
+      <FPCLINE>       MENGE</FPCLINE>
+      <FPCLINE>       MEINS</FPCLINE>
+      <FPCLINE>       EBELN</FPCLINE>
+      <FPCLINE>       EBELP</FPCLINE>
+      <FPCLINE>       LGORT</FPCLINE>
+      <FPCLINE>  FROM MSEG INTO TABLE IT_MSEG_1</FPCLINE>
+      <FPCLINE>  WHERE MBLNR = GS_ITEM-VGBEL.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT</FPCLINE>
+      <FPCLINE>   VBELN</FPCLINE>
+      <FPCLINE>   EWAY_BILL FROM ZEWAY_NUMBER</FPCLINE>
+      <FPCLINE>  INTO TABLE IT_ZEWAY</FPCLINE>
+      <FPCLINE>   WHERE VBELN = GS_ITEM-VBELN.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT</FPCLINE>
+      <FPCLINE>    VBELN</FPCLINE>
+      <FPCLINE>    VEHICAL_NO</FPCLINE>
+      <FPCLINE>    TRANS_NAME</FPCLINE>
+      <FPCLINE>    VEHICAL_TYPE FROM ZEWAY_BILL</FPCLINE>
+      <FPCLINE>    INTO CORRESPONDING FIELDS OF TABLE IT_ZEWAY_BILL</FPCLINE>
+      <FPCLINE>    WHERE VBELN = GS_ITEM-VBELN.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>LOOP AT GT_ITEM INTO GS_ITEM.</FPCLINE>
+      <FPCLINE>  READ TABLE IT_MSEG_1 INTO WA_MSEG_1 WITH KEY MBLNR = GS_ITEM-VGBEL XAUTO = &apos;&apos;..</FPCLINE>
+      <FPCLINE>  IF SY-SUBRC = 0.</FPCLINE>
+      <FPCLINE>    WA_FINAL-MBLNR = WA_MSEG_1-MBLNR.</FPCLINE>
+      <FPCLINE>    WA_FINAL-MJAHR = WA_MSEG_1-MJAHR.</FPCLINE>
+      <FPCLINE>    WA_FINAL-ZEILE = WA_MSEG_1-ZEILE.</FPCLINE>
+      <FPCLINE>    WA_FINAL-BWART = WA_MSEG_1-BWART.</FPCLINE>
+      <FPCLINE>    WA_FINAL-XAUTO = WA_MSEG_1-XAUTO.</FPCLINE>
+      <FPCLINE>    WA_FINAL-LGORT = WA_MSEG_1-LGORT.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*     GV_TO_LGORT = wa_mseg_1-LGORT.</FPCLINE>
+      <FPCLINE>    GV_FROM_LGORT = WA_MSEG_1-LGORT.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  READ TABLE IT_ZEWAY INTO WA_ZEWAY WITH KEY VBELN = GS_ITEM-VBELN.</FPCLINE>
+      <FPCLINE>  IF SY-SUBRC = 0.</FPCLINE>
+      <FPCLINE>    WA_FINAL-EWAY_BILL = WA_ZEWAY-EWAY_BILL.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>  READ TABLE IT_ZEWAY_BILL INTO WA_ZEWAY_BILL WITH KEY VBELN = GS_ITEM-VBELN.</FPCLINE>
+      <FPCLINE>  IF SY-SUBRC = 0.</FPCLINE>
+      <FPCLINE>    WA_FINAL-TRANS_NAME = WA_ZEWAY_BILL-TRANS_NAME.</FPCLINE>
+      <FPCLINE>    WA_FINAL-VEHICAL_NO = WA_ZEWAY_BILL-VEHICAL_NO.</FPCLINE>
+      <FPCLINE>    WA_FINAL-VEHICAL_TYPE = WA_ZEWAY_BILL-VEHICAL_TYPE.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDLOOP.</FPCLINE>
+      <FPCLINE>***************************************************************************************</FPCLINE>
+      <FPCLINE>DATA : IT_XKOMV TYPE KOMV OCCURS 0 WITH HEADER LINE.</FPCLINE>
+      <FPCLINE>DATA : IT_TAXCON TYPE TAXCOM,</FPCLINE>
+      <FPCLINE>       LS_EKKO   TYPE EKKO.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>READ TABLE GT_PURCHASING INTO GS_PURCHASING INDEX 1.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE AEDAT</FPCLINE>
+      <FPCLINE>        FROM  EKKO</FPCLINE>
+      <FPCLINE>        INTO  GV_PO_DATE</FPCLINE>
+      <FPCLINE>        WHERE EBELN = GS_PURCHASING-EBELN.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE * FROM EKKO</FPCLINE>
+      <FPCLINE>        INTO LS_EKKO</FPCLINE>
+      <FPCLINE>        WHERE EBELN = GS_PURCHASING-EBELN.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IT_TAXCON-BUKRS = LS_EKKO-BUKRS.</FPCLINE>
+      <FPCLINE>IT_TAXCON-BUDAT = GV_PO_DATE.</FPCLINE>
+      <FPCLINE>IT_TAXCON-BLDAT = GV_PO_DATE.</FPCLINE>
+      <FPCLINE>IT_TAXCON-WAERS = LS_EKKO-WAERS.</FPCLINE>
+      <FPCLINE>IT_TAXCON-HWAER = LS_EKKO-WAERS.</FPCLINE>
+      <FPCLINE>IT_TAXCON-KPOSN = GS_PURCHASING-EBELP.</FPCLINE>
+      <FPCLINE>IT_TAXCON-MWSKZ = GS_PURCHASING-MWSKZ.</FPCLINE>
+      <FPCLINE>IT_TAXCON-WRBTR = GS_PURCHASING-NETWR.</FPCLINE>
+      <FPCLINE>IT_TAXCON-XMWST = &apos;X&apos;.</FPCLINE>
+      <FPCLINE>IT_TAXCON-SHKZG =  &apos;H&apos;.</FPCLINE>
+      <FPCLINE>IT_TAXCON-LIFNR = LS_EKKO-LIFNR.</FPCLINE>
+      <FPCLINE>IT_TAXCON-EKORG = LS_EKKO-EKORG.</FPCLINE>
+      <FPCLINE>IT_TAXCON-EBELN = LS_EKKO-EBELN.</FPCLINE>
+      <FPCLINE>IT_TAXCON-EBELP = GS_PURCHASING-EBELP.</FPCLINE>
+      <FPCLINE>IT_TAXCON-MATNR = GS_PURCHASING-MATNR.</FPCLINE>
+      <FPCLINE>IT_TAXCON-WERKS = GS_PURCHASING-WERKS.</FPCLINE>
+      <FPCLINE>*  it_taxcon-matkl = it_ekpo-matkl.</FPCLINE>
+      <FPCLINE>IT_TAXCON-MEINS = GS_PURCHASING-MEINS.</FPCLINE>
+      <FPCLINE>IT_TAXCON-MGLME = GS_PURCHASING-MENGE.</FPCLINE>
+      <FPCLINE>*  it_taxcon-mtart = it_ekpo-mtart.</FPCLINE>
+      <FPCLINE>IT_TAXCON-LAND1 = GS_VEN-COUNTRY.</FPCLINE>
+      <FPCLINE>&quot;**************************START OF FUNCTION CALCULATE TAX</FPCLINE>
+      <FPCLINE>&quot;ITEM****************************</FPCLINE>
+      <FPCLINE>*BREAK fujiabap.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>***CALL FUNCTION &apos;CALCULATE_TAX_ITEM&apos;   &quot;This is tHe Function Module</FPCLINE>
+      <FPCLINE>***  EXPORTING</FPCLINE>
+      <FPCLINE>***    dialog              = &apos;DIAKZ&apos;</FPCLINE>
+      <FPCLINE>***    display_only        = &apos;X&apos;</FPCLINE>
+      <FPCLINE>***    i_taxcom            = it_taxcon</FPCLINE>
+      <FPCLINE>***  TABLES</FPCLINE>
+      <FPCLINE>***    t_xkomv             = it_xkomv</FPCLINE>
+      <FPCLINE>***  EXCEPTIONS</FPCLINE>
+      <FPCLINE>***    mwskz_not_defined   = 1</FPCLINE>
+      <FPCLINE>***    mwskz_not_found     = 2</FPCLINE>
+      <FPCLINE>***    mwskz_not_valid     = 3</FPCLINE>
+      <FPCLINE>***    steuerbetrag_falsch = 4</FPCLINE>
+      <FPCLINE>***    country_not_found   = 5</FPCLINE>
+      <FPCLINE>***    OTHERS              = 6.</FPCLINE>
+      <FPCLINE>***</FPCLINE>
+      <FPCLINE>***</FPCLINE>
+      <FPCLINE>***READ TABLE it_xkomv WITH KEY kschl = &apos;JICR&apos;. &quot; AND</FPCLINE>
+      <FPCLINE>***IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>***  text = &apos;YES&apos;.</FPCLINE>
+      <FPCLINE>***ENDIF.</FPCLINE>
+      <FPCLINE>***</FPCLINE>
+      <FPCLINE>***READ TABLE it_xkomv WITH KEY kschl = &apos;ZCRN&apos;. &quot; AND</FPCLINE>
+      <FPCLINE>***IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>***  text = &apos;YES&apos;.</FPCLINE>
+      <FPCLINE>***</FPCLINE>
+      <FPCLINE>***ENDIF.</FPCLINE>
+      <FPCLINE>***</FPCLINE>
+      <FPCLINE>***READ TABLE it_xkomv WITH KEY kschl = &apos;JISR&apos;. &quot; AND</FPCLINE>
+      <FPCLINE>***IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>***  text = &apos;YES&apos;.</FPCLINE>
+      <FPCLINE>***ENDIF.</FPCLINE>
+      <FPCLINE>***</FPCLINE>
+      <FPCLINE>***READ TABLE it_xkomv WITH KEY kschl = &apos;ZSRN&apos;. &quot; AND</FPCLINE>
+      <FPCLINE>***IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>***  text = &apos;YES&apos;.</FPCLINE>
+      <FPCLINE>***ENDIF.</FPCLINE>
+      <FPCLINE>***</FPCLINE>
+      <FPCLINE>***READ TABLE it_xkomv WITH KEY kschl = &apos;ZIRN&apos;. &quot; AND</FPCLINE>
+      <FPCLINE>***IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>***  text = &apos;YES&apos;.</FPCLINE>
+      <FPCLINE>***ENDIF.</FPCLINE>
+      <FPCLINE>***</FPCLINE>
+      <FPCLINE>***</FPCLINE>
+      <FPCLINE>***IF text IS INITIAL.</FPCLINE>
+      <FPCLINE>***  text = &apos;NO&apos;.</FPCLINE>
+      <FPCLINE>***ENDIF.</FPCLINE>
+      <FPCLINE>***</FPCLINE>
+      <FPCLINE>***</FPCLINE>
+      <FPCLINE>***</FPCLINE>
+      <FPCLINE>***</FPCLINE>
+      <FPCLINE>***</FPCLINE>
+      <FPCLINE>***</FPCLINE>
+      <FPCLINE>***</FPCLINE>
+      <FPCLINE>***</FPCLINE>
+      <FPCLINE>***</FPCLINE>
+      <FPCLINE>***********************************************************************************************</FPCLINE>
+      <FPCLINE>BREAK  PRIMUSABAP.</FPCLINE>
+      <FPCLINE>* Condition 1</FPCLINE>
+      <FPCLINE>CLEAR GV_COND.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>break dvbasis.</FPCLINE>
+      <FPCLINE>*DATA:LV_FROM_LGORT type MSEG-LGORT,</FPCLINE>
+      <FPCLINE>*      LV_TO_LGORT type MSEG-LGORT.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>LV_FROM_LGORT = GV_FROM_LGORT.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*DATA: SL_FROM TYPE c LENGTH 4.</FPCLINE>
+      <FPCLINE>SL_FROM = GV_FROM_LGORT+0(1).</FPCLINE>
+      <FPCLINE>CONDENSE SL_FROM.</FPCLINE>
+      <FPCLINE>IF SL_FROM &lt;&gt; &apos;K&apos;.</FPCLINE>
+      <FPCLINE>  CLEAR SL_FROM.</FPCLINE>
+      <FPCLINE>  SL_FROM = LV_FROM_LGORT.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>LV_TO_LGORT = GV_TO_LGORT.</FPCLINE>
+      <FPCLINE>*DATA: SL_TO TYPE c LENGTH 4.</FPCLINE>
+      <FPCLINE>SL_TO = GV_TO_LGORT+0(1).</FPCLINE>
+      <FPCLINE>CONDENSE SL_TO.</FPCLINE>
+      <FPCLINE>IF SL_TO &lt;&gt; &apos;K&apos;.</FPCLINE>
+      <FPCLINE>  CLEAR SL_TO.</FPCLINE>
+      <FPCLINE>  SL_TO = LV_TO_LGORT.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* cONIDITON 1</FPCLINE>
+      <FPCLINE>IF  SL_FROM NE &apos;K&apos; AND GV_FROM_LGORT NE &apos;SAN1&apos;  AND  SL_TO EQ &apos;K&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>*  ship-to &amp; consignee logic</FPCLINE>
+      <FPCLINE>  SELECT SINGLE ADRNR FROM TWLAD</FPCLINE>
+      <FPCLINE>    INTO WA_ADRNR</FPCLINE>
+      <FPCLINE>    WHERE LGORT = &apos;KPR1&apos; AND WERKS = &apos;PL01&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF SY-SUBRC EQ 0.</FPCLINE>
+      <FPCLINE>    SELECT SINGLE STREET CITY1 POST_CODE1 STR_SUPPL3 LOCATION</FPCLINE>
+      <FPCLINE>      FROM ADRC</FPCLINE>
+      <FPCLINE>      INTO WA_ADDRESS_SHIP_TO</FPCLINE>
+      <FPCLINE>      WHERE ADDRNUMBER = WA_ADRNR-ADRNR.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>*BREAK-POINT.</FPCLINE>
+      <FPCLINE>*from logiv</FPCLINE>
+      <FPCLINE>  SELECT SINGLE ADRNR FROM TWLAD</FPCLINE>
+      <FPCLINE>  INTO WA_ADRNR</FPCLINE>
+      <FPCLINE>  WHERE LGORT = &apos;RM01&apos; AND WERKS = &apos;PL01&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF SY-SUBRC EQ 0.</FPCLINE>
+      <FPCLINE>    SELECT SINGLE STREET CITY1 POST_CODE1 STR_SUPPL3 LOCATION</FPCLINE>
+      <FPCLINE>      FROM ADRC</FPCLINE>
+      <FPCLINE>      INTO WA_ADDRESS_CON_FROM</FPCLINE>
+      <FPCLINE>      WHERE ADDRNUMBER = WA_ADRNR-ADRNR.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*  GV_COND = &apos;1&apos;.</FPCLINE>
+      <FPCLINE>  GV_COND = &apos;+91-9763720100/9763661000&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ELSEIF SL_FROM EQ &apos;K&apos; AND  SL_TO NE &apos;K&apos; AND GV_TO_LGORT NE &apos;SAN1&apos; .</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*  ship-to &amp; consignee logic</FPCLINE>
+      <FPCLINE>  SELECT SINGLE ADRNR FROM TWLAD</FPCLINE>
+      <FPCLINE>    INTO WA_ADRNR</FPCLINE>
+      <FPCLINE>    WHERE LGORT = &apos;RM01&apos; AND WERKS = &apos;PL01&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF SY-SUBRC EQ 0.</FPCLINE>
+      <FPCLINE>    SELECT SINGLE STREET CITY1 POST_CODE1 STR_SUPPL3 LOCATION</FPCLINE>
+      <FPCLINE>      FROM ADRC</FPCLINE>
+      <FPCLINE>      INTO WA_ADDRESS_SHIP_TO</FPCLINE>
+      <FPCLINE>      WHERE ADDRNUMBER = WA_ADRNR-ADRNR.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*from logiv</FPCLINE>
+      <FPCLINE>  SELECT SINGLE ADRNR FROM TWLAD</FPCLINE>
+      <FPCLINE>  INTO WA_ADRNR</FPCLINE>
+      <FPCLINE>  WHERE LGORT = &apos;KPR1&apos; AND WERKS = &apos;PL01&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF SY-SUBRC EQ 0.</FPCLINE>
+      <FPCLINE>    SELECT SINGLE STREET CITY1 POST_CODE1 STR_SUPPL3 LOCATION</FPCLINE>
+      <FPCLINE>      FROM ADRC</FPCLINE>
+      <FPCLINE>      INTO WA_ADDRESS_CON_FROM</FPCLINE>
+      <FPCLINE>      WHERE ADDRNUMBER = WA_ADRNR-ADRNR.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF GV_COND IS INITIAL.</FPCLINE>
+      <FPCLINE>*    GV_COND = &apos;2&apos;.</FPCLINE>
+      <FPCLINE>    GV_COND = &apos;+91-8484881472&apos;.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ELSEIF SL_FROM EQ &apos;K&apos; AND GV_TO_LGORT EQ &apos;SAN1&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*  ship-to &amp; consignee logic</FPCLINE>
+      <FPCLINE>  SELECT SINGLE ADRNR FROM TWLAD</FPCLINE>
+      <FPCLINE>    INTO WA_ADRNR</FPCLINE>
+      <FPCLINE>    WHERE LGORT = &apos;SAN1&apos; AND WERKS = &apos;PL01&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF SY-SUBRC EQ 0.</FPCLINE>
+      <FPCLINE>    SELECT SINGLE STREET CITY1 POST_CODE1 STR_SUPPL3 LOCATION</FPCLINE>
+      <FPCLINE>      FROM ADRC</FPCLINE>
+      <FPCLINE>      INTO WA_ADDRESS_SHIP_TO</FPCLINE>
+      <FPCLINE>      WHERE ADDRNUMBER = WA_ADRNR-ADRNR.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*from logiv</FPCLINE>
+      <FPCLINE>  SELECT SINGLE ADRNR FROM TWLAD</FPCLINE>
+      <FPCLINE>  INTO WA_ADRNR</FPCLINE>
+      <FPCLINE>  WHERE LGORT = &apos;KPR1&apos; AND WERKS = &apos;PL01&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF SY-SUBRC EQ 0.</FPCLINE>
+      <FPCLINE>    SELECT SINGLE STREET CITY1 POST_CODE1 STR_SUPPL3 LOCATION</FPCLINE>
+      <FPCLINE>      FROM ADRC</FPCLINE>
+      <FPCLINE>      INTO WA_ADDRESS_CON_FROM</FPCLINE>
+      <FPCLINE>      WHERE ADDRNUMBER = WA_ADRNR-ADRNR.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF GV_COND IS INITIAL.</FPCLINE>
+      <FPCLINE>*    GV_COND = &apos;3&apos;.  +91-8484881472</FPCLINE>
+      <FPCLINE>    GV_COND = &apos;+91-8484881472&apos;.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ELSEIF GV_FROM_LGORT EQ &apos;SAN1&apos; AND  SL_TO EQ &apos;K&apos; .</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*  ship-to &amp; consignee logic</FPCLINE>
+      <FPCLINE>  SELECT SINGLE ADRNR FROM TWLAD</FPCLINE>
+      <FPCLINE>    INTO WA_ADRNR</FPCLINE>
+      <FPCLINE>    WHERE LGORT = &apos;KPR1&apos; AND WERKS = &apos;PL01&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF SY-SUBRC EQ 0.</FPCLINE>
+      <FPCLINE>    SELECT SINGLE STREET CITY1 POST_CODE1 STR_SUPPL3 LOCATION</FPCLINE>
+      <FPCLINE>      FROM ADRC</FPCLINE>
+      <FPCLINE>      INTO WA_ADDRESS_SHIP_TO</FPCLINE>
+      <FPCLINE>      WHERE ADDRNUMBER = WA_ADRNR-ADRNR.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*from logiv</FPCLINE>
+      <FPCLINE>  SELECT SINGLE ADRNR FROM TWLAD</FPCLINE>
+      <FPCLINE>  INTO WA_ADRNR</FPCLINE>
+      <FPCLINE>  WHERE LGORT = &apos;SAN1&apos; AND WERKS = &apos;PL01&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF SY-SUBRC EQ 0.</FPCLINE>
+      <FPCLINE>    SELECT SINGLE STREET CITY1 POST_CODE1 STR_SUPPL3 LOCATION</FPCLINE>
+      <FPCLINE>      FROM ADRC</FPCLINE>
+      <FPCLINE>      INTO WA_ADDRESS_CON_FROM</FPCLINE>
+      <FPCLINE>      WHERE ADDRNUMBER = WA_ADRNR-ADRNR.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF GV_COND IS INITIAL.</FPCLINE>
+      <FPCLINE>*    GV_COND = &apos;4&apos;.</FPCLINE>
+      <FPCLINE>    GV_COND = &apos;+91-8484881472&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*WA_ADDRESS_CON_FROM-STREET        =</FPCLINE>
+      <FPCLINE>    WA_ADDRESS_CON_FROM-CITY1         =  WA_ADDRESS_CON_FROM-STR_SUPPL3.</FPCLINE>
+      <FPCLINE>    WA_ADDRESS_CON_FROM-STR_SUPPL3    =  WA_ADDRESS_CON_FROM-LOCATION.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>     WA_ADDRESS_ship_to-CITY1         =  WA_ADDRESS_ship_to-STR_SUPPL3.</FPCLINE>
+      <FPCLINE>     WA_ADDRESS_ship_to-STR_SUPPL3    =  WA_ADDRESS_ship_to-LOCATION.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE>*data :LV_CNT  TYPE  CHAR1   .</FPCLINE>
+      <FPCLINE>IF LV_COUNT  = 1.</FPCLINE>
+      <FPCLINE>  GV_COPY = &apos;Original&apos;.</FPCLINE>
+      <FPCLINE>ELSEIF LV_COUNT  = 2.</FPCLINE>
+      <FPCLINE>  GV_COPY = &apos;Duplicate&apos;.</FPCLINE>
+      <FPCLINE>ELSEIF LV_COUNT  = 3.</FPCLINE>
+      <FPCLINE>  GV_COPY = &apos;Triplicate&apos;.</FPCLINE>
+      <FPCLINE>ELSEIF LV_COUNT  = 4.</FPCLINE>
+      <FPCLINE>  GV_COPY = &apos;Gate Copy&apos;.</FPCLINE>
+      <FPCLINE>**gv_page = &apos;SECURITY COPY&apos;.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>BREAK CTPLMM.</FPCLINE>
+     </INITIALIZATION>
+     <FORMS>
+      <FPCLINE>FORM get_text USING objname TYPE tdobname</FPCLINE>
+      <FPCLINE>      obj_typ</FPCLINE>
+      <FPCLINE>      txt_id</FPCLINE>
+      <FPCLINE>      lang TYPE spras</FPCLINE>
+      <FPCLINE>CHANGING txt.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  DATA : text_lines   TYPE TABLE OF tline,</FPCLINE>
+      <FPCLINE>        wa_text_line TYPE tline.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF lang IS INITIAL.</FPCLINE>
+      <FPCLINE>    lang = &apos;E&apos;.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>  EXPORTING</FPCLINE>
+      <FPCLINE>*     CLIENT                  = SY-MANDT</FPCLINE>
+      <FPCLINE>    ID                      = txt_id</FPCLINE>
+      <FPCLINE>    LANGUAGE                = lang</FPCLINE>
+      <FPCLINE>    name                    = objname</FPCLINE>
+      <FPCLINE>    object                  = obj_typ</FPCLINE>
+      <FPCLINE>*     ARCHIVE_HANDLE          = 0</FPCLINE>
+      <FPCLINE>*     LOCAL_CAT               = &apos; &apos;</FPCLINE>
+      <FPCLINE>*   IMPORTING</FPCLINE>
+      <FPCLINE>*     HEADER                  =</FPCLINE>
+      <FPCLINE>  TABLES</FPCLINE>
+      <FPCLINE>    LINES                   = text_lines</FPCLINE>
+      <FPCLINE>  EXCEPTIONS</FPCLINE>
+      <FPCLINE>    ID                      = 1</FPCLINE>
+      <FPCLINE>    LANGUAGE                = 2</FPCLINE>
+      <FPCLINE>    name                    = 3</FPCLINE>
+      <FPCLINE>    not_found               = 4</FPCLINE>
+      <FPCLINE>    object                  = 5</FPCLINE>
+      <FPCLINE>    reference_check         = 6</FPCLINE>
+      <FPCLINE>    wrong_access_to_archive = 7</FPCLINE>
+      <FPCLINE>    OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>  IF sy-subrc &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>*   MESSAGE ID SY-MSGID TYPE SY-MSGTY NUMBER SY-MSGNO</FPCLINE>
+      <FPCLINE>*         WITH SY-MSGV1 SY-MSGV2 SY-MSGV3 SY-MSGV4.</FPCLINE>
+      <FPCLINE>  ELSE.</FPCLINE>
+      <FPCLINE>    DESCRIBE TABLE text_lines.</FPCLINE>
+      <FPCLINE>    IF sy-tfill &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>      LOOP AT text_lines INTO wa_text_line.</FPCLINE>
+      <FPCLINE>        CONCATENATE txt wa_text_line-tdline INTO txt.</FPCLINE>
+      <FPCLINE>      ENDLOOP.</FPCLINE>
+      <FPCLINE>    ENDIF.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>ENDFORM.</FPCLINE>
+      <FPCLINE/>
+     </FORMS>
+    </CL_FP_CODING>
+   </cls:CL_FP_CODING>
+  </asx:heap>
+ </asx:abap>
+</abapGit>

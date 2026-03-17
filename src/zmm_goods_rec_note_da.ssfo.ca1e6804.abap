@@ -1,0 +1,24 @@
+READ TABLE gt_mkpf INTO wa_mkpf INDEX 1.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

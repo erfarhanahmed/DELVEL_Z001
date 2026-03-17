@@ -1,0 +1,1991 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SFPI" serializer_version="v1.0.0">
+ <asx:abap version="1.0" xmlns:asx="http://www.sap.com/abapxml">
+  <asx:values>
+   <VERSION>1</VERSION>
+   <TYPE/>
+   <INTERFACE href="#o1"/>
+   <INTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID/>
+     <TEXT>adobe for ZINITIAL_ORDER</TEXT>
+    </FPINTERFACET>
+   </INTERFACET>
+  </asx:values>
+  <asx:heap xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:abap="http://www.sap.com/abapxml/types/built-in" xmlns:cls="http://www.sap.com/abapxml/classes/global" xmlns:dic="http://www.sap.com/abapxml/types/dictionary">
+   <cls:CL_FP_INTERFACE_DATA id="o1">
+    <CL_FP_INTERFACE_DATA classVersion="1">
+     <CODING href="#o5"/>
+     <PARAMETERS href="#o4"/>
+     <GLOBAL_DEFINITIONS href="#o3"/>
+     <REFERENCE_FIELDS href="#o2"/>
+     <XSD_DEFINITIONS/>
+    </CL_FP_INTERFACE_DATA>
+   </cls:CL_FP_INTERFACE_DATA>
+   <cls:CL_FP_REFERENCE_FIELDS id="o2">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_REFERENCE_FIELDS classVersion="1">
+     <REFERENCE_FIELDS/>
+    </CL_FP_REFERENCE_FIELDS>
+   </cls:CL_FP_REFERENCE_FIELDS>
+   <cls:CL_FP_GLOBAL_DEFINITIONS id="o3">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_GLOBAL_DEFINITIONS classVersion="1">
+     <GLOBAL_DATA>
+      <SFPGDATA>
+       <NAME>WA_FINAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZSALESORDER_STR_NEW</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_QTY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>P DECIMALS 2</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>NO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>SY-INDEX</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>FLG</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR1</TYPENAME>
+       <DEFAULTVAL>&apos;0&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>CNT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>I</TYPENAME>
+       <DEFAULTVAL>&apos;0&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_BASE_AMT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>NETWR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_TOTAL_AMT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>NETWR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_CGST_TOT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>NETWR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_SGST_TOT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>NETWR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_IGST_TOT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>NETWR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_TOTAL_QTY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>P DECIMALS 2</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_PF</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>P DECIMALS 2</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_ZIN1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>P DECIMALS 2</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_ZFR1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>P DECIMALS 2</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_ZTE1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>P DECIMALS 2</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_ZTCS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>P DECIMALS 2</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_VAMT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LS_ADRC_AG</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ADRC</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LS_ADRC_WE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ADRC</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_STATE_AG</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BEZEI</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_STATE_WE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BEZEI</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_ADR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_ADR1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_LINES</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZTTLINE</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_LINES</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TLINE</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_MAT_TEXT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_VBAK</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>VBAK</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_VBKD</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>VBKD</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_DATE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR11</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_SALE_DT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR11</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_PO_DT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR11</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_CDD_DT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR11</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_OFM_DATE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZOFM_DATE</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_OFM_DT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR11</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_DEL_DT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR11</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>US_CODE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR50</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>SHIP_CODE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR100</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>CUST_DT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR11</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_VBAP</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>VBAP</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_TAG</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR50</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_TPI</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR50</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_VAR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR250</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>CURR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR1</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_NAME</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>THEAD-TDNAME</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LT_LINES</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZTTLINE</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LS_LINES</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TLINE</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_FLAG</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR1</TYPENAME>
+       <DEFAULTVAL>&apos;X&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_INSURANCE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR50</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_MODE_DESP</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR50</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_LD_AP</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR50</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_INCO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR50</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_SGST</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_PF_AMT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_CGST_VAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_SGST_VAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_IGST_VAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_INS_VAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_FRG_VAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_TERMS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR3000</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_CUST_INSP</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR100</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_DOC_APPROVAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR50</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_CON_DELIVERY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR100</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_PO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_KONV</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_KONV</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_KONV</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_KONV</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_VBAK</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_VBAK</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_VBAK</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>VBAK</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_CURRENCY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZCURRENCY</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_FINAL2</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZTT_ZSALESORDER</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_FINAL2</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZSALESORDER_STR_NEW</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_REC</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_FINAL3</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZTT_ZSALESORDER</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+     </GLOBAL_DATA>
+     <TYPES>
+      <FPCLINE>TYPES : BEGIN OF TY_KONV,</FPCLINE>
+      <FPCLINE>        KNUMV TYPE PRCD_ELEMENTS-KNUMV,</FPCLINE>
+      <FPCLINE>        KSCHL TYPE PRCD_ELEMENTS-KSCHL,</FPCLINE>
+      <FPCLINE>        KBETR TYPE PRCD_ELEMENTS-KBETR,</FPCLINE>
+      <FPCLINE>        END OF TY_KONV,</FPCLINE>
+      <FPCLINE>        tt_konv TYPE STANDARD TABLE OF ty_konv.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>*TYPES: BEGIN OF ty_vbak,</FPCLINE>
+      <FPCLINE>*  s_vbak TYPE</FPCLINE>
+      <FPCLINE>*  END OF ty_vbak,</FPCLINE>
+      <FPCLINE>*  tt_vbak TYPE STANDARD TABLE OF vbak.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+     </TYPES>
+     <FIELDSYMBOLS/>
+    </CL_FP_GLOBAL_DEFINITIONS>
+   </cls:CL_FP_GLOBAL_DEFINITIONS>
+   <cls:CL_FP_PARAMETERS id="o4">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_PARAMETERS classVersion="1">
+     <IMPORT_PARAMETERS>
+      <SFPIOPAR>
+       <NAME>LV_VBELN</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>VBAK-VBELN</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>V_AMT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>C</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>LT_LINES1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZTTLINE</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IT_FINAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZTT_ZSALESORDER</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+     </IMPORT_PARAMETERS>
+     <EXPORT_PARAMETERS/>
+     <TABLE_PARAMETERS/>
+     <EXCEPTIONS/>
+    </CL_FP_PARAMETERS>
+   </cls:CL_FP_PARAMETERS>
+   <cls:CL_FP_CODING id="o5">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_CODING classVersion="1">
+     <INPUT_PARAMETERS>
+      <FPPARAMETER>WA_FINAL</FPPARAMETER>
+      <FPPARAMETER>GV_DATE</FPPARAMETER>
+      <FPPARAMETER>IT_FINAL</FPPARAMETER>
+      <FPPARAMETER>GV_ADR</FPPARAMETER>
+      <FPPARAMETER>GV_ADR1</FPPARAMETER>
+      <FPPARAMETER>WA_FINAL</FPPARAMETER>
+      <FPPARAMETER>LV_TOTAL_AMT</FPPARAMETER>
+      <FPPARAMETER>LV_IGST_TOT</FPPARAMETER>
+      <FPPARAMETER>LV_TOTAL_QTY</FPPARAMETER>
+      <FPPARAMETER>LV_CGST_TOT</FPPARAMETER>
+      <FPPARAMETER>LV_SGST_TOT</FPPARAMETER>
+      <FPPARAMETER>LV_PF</FPPARAMETER>
+      <FPPARAMETER>LV_ZIN1</FPPARAMETER>
+      <FPPARAMETER>LV_ZFR1</FPPARAMETER>
+      <FPPARAMETER>LV_ZTE1</FPPARAMETER>
+      <FPPARAMETER>LV_ZTCS</FPPARAMETER>
+      <FPPARAMETER>IT_FINAL</FPPARAMETER>
+      <FPPARAMETER>LV_STATE_AG</FPPARAMETER>
+      <FPPARAMETER>LV_STATE_WE</FPPARAMETER>
+      <FPPARAMETER>LV_VBELN</FPPARAMETER>
+      <FPPARAMETER>LV_NAME</FPPARAMETER>
+      <FPPARAMETER>LT_LINES</FPPARAMETER>
+      <FPPARAMETER>LS_LINES</FPPARAMETER>
+      <FPPARAMETER>LV_ZTE1</FPPARAMETER>
+     </INPUT_PARAMETERS>
+     <OUTPUT_PARAMETERS>
+      <FPPARAMETER>GV_PO</FPPARAMETER>
+      <FPPARAMETER>GV_OFM_DT</FPPARAMETER>
+      <FPPARAMETER>WA_FINAL</FPPARAMETER>
+      <FPPARAMETER>GV_PO_DT</FPPARAMETER>
+      <FPPARAMETER>GV_CDD_DT</FPPARAMETER>
+      <FPPARAMETER>LS_ADRC_AG</FPPARAMETER>
+      <FPPARAMETER>LS_ADRC_WE</FPPARAMETER>
+      <FPPARAMETER>LS_ADRC_AG</FPPARAMETER>
+      <FPPARAMETER>LS_ADRC_WE</FPPARAMETER>
+      <FPPARAMETER>LS_ADRC_WE</FPPARAMETER>
+     </OUTPUT_PARAMETERS>
+     <INITIALIZATION>
+      <FPCLINE>DATA: LV_LENGTH     TYPE STRING.</FPCLINE>
+      <FPCLINE>DATA: LV_LATRS      TYPE C.</FPCLINE>
+      <FPCLINE>DATA: LV_LATRS1     TYPE C.</FPCLINE>
+      <FPCLINE>DATA: LV_INDEX      TYPE SY-INDEX.</FPCLINE>
+      <FPCLINE>DATA: LV_SAFE_LEN   TYPE SY-INDEX.</FPCLINE>
+      <FPCLINE>DATA: LV_LINE      TYPE STRING.</FPCLINE>
+      <FPCLINE>DATA: LV_SPACE      TYPE STRING.</FPCLINE>
+      <FPCLINE>DATA: LV_SPACE1     TYPE STRING.</FPCLINE>
+      <FPCLINE>DATA: LV_SPACE2     TYPE STRING.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>DATA(lo_text_reader) = NEW zcl_read_text( ).</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*BREAK-POINT.</FPCLINE>
+      <FPCLINE>CLEAR: WA_FINAL ,LV_TOTAL_AMT, LV_CGST_TOT,</FPCLINE>
+      <FPCLINE>       LV_SGST_TOT,LV_IGST_TOT,LV_TOTAL_QTY,</FPCLINE>
+      <FPCLINE>       LV_PF,LV_ZIN1,LV_ZFR1,LV_ZTE1,LV_ZTCS.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>DATA: LV_TEXTNAME TYPE THEAD-TDNAME,</FPCLINE>
+      <FPCLINE>      LV_TEXT     TYPE STRING,</FPCLINE>
+      <FPCLINE>      LT_LINES    TYPE TABLE OF TLINE,</FPCLINE>
+      <FPCLINE>      LS_LINE     TYPE TLINE.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;</FPCLINE>
+      <FPCLINE>READ TABLE IT_FINAL INTO WA_FINAL INDEX 1.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT ADRNR,PARVW  FROM VBPA</FPCLINE>
+      <FPCLINE> INTO TABLE @DATA(LT_VBPA)</FPCLINE>
+      <FPCLINE>  WHERE VBELN = @LV_VBELN&quot;@wa_final-vbeln</FPCLINE>
+      <FPCLINE>  AND      POSNR = &apos; &apos;</FPCLINE>
+      <FPCLINE>  AND ( PARVW = &apos;AG&apos; OR PARVW = &apos;WE&apos; ).</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF LT_VBPA IS NOT INITIAL.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  LOOP AT LT_VBPA ASSIGNING FIELD-SYMBOL(&lt;F1&gt;).</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    CASE &lt;F1&gt;-PARVW.</FPCLINE>
+      <FPCLINE>      WHEN &apos;AG&apos;.</FPCLINE>
+      <FPCLINE>        SELECT SINGLE * FROM ADRC INTO LS_ADRC_AG</FPCLINE>
+      <FPCLINE>       WHERE ADDRNUMBER = &lt;F1&gt;-ADRNR.</FPCLINE>
+      <FPCLINE>        IF LS_ADRC_AG-COUNTRY = &apos;IN&apos; .</FPCLINE>
+      <FPCLINE>          SELECT SINGLE BEZEI FROM ZGST_REGION1</FPCLINE>
+      <FPCLINE>            INTO LV_STATE_AG</FPCLINE>
+      <FPCLINE>            WHERE REGION = LS_ADRC_AG-REGION.</FPCLINE>
+      <FPCLINE>        ENDIF.</FPCLINE>
+      <FPCLINE>      WHEN &apos;WE&apos;.</FPCLINE>
+      <FPCLINE>        SELECT SINGLE * FROM ADRC INTO LS_ADRC_WE</FPCLINE>
+      <FPCLINE>              WHERE ADDRNUMBER = &lt;F1&gt;-ADRNR.</FPCLINE>
+      <FPCLINE>        IF LS_ADRC_WE-COUNTRY = &apos;IN&apos; .</FPCLINE>
+      <FPCLINE>          SELECT SINGLE BEZEI FROM ZGST_REGION1</FPCLINE>
+      <FPCLINE>          INTO LV_STATE_WE</FPCLINE>
+      <FPCLINE>          WHERE REGION = LS_ADRC_WE-REGION.</FPCLINE>
+      <FPCLINE>        ENDIF.</FPCLINE>
+      <FPCLINE>      WHEN OTHERS.</FPCLINE>
+      <FPCLINE>    ENDCASE.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  ENDLOOP.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>CLEAR WA_FINAL.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*---------------------------------------------------------*</FPCLINE>
+      <FPCLINE>LV_NAME = LV_VBELN.</FPCLINE>
+      <FPCLINE>CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>  EXPORTING</FPCLINE>
+      <FPCLINE>    CLIENT                  = SY-MANDT</FPCLINE>
+      <FPCLINE>    ID                      = &apos;Z020&apos;</FPCLINE>
+      <FPCLINE>    LANGUAGE                = SY-LANGU</FPCLINE>
+      <FPCLINE>    NAME                    = LV_NAME</FPCLINE>
+      <FPCLINE>    OBJECT                  = &apos;VBBK&apos;</FPCLINE>
+      <FPCLINE>*   ARCHIVE_HANDLE          = 0</FPCLINE>
+      <FPCLINE>*   LOCAL_CAT               = &apos; &apos;</FPCLINE>
+      <FPCLINE>* IMPORTING</FPCLINE>
+      <FPCLINE>*   HEADER                  =</FPCLINE>
+      <FPCLINE>*   OLD_LINE_COUNTER        =</FPCLINE>
+      <FPCLINE>  TABLES</FPCLINE>
+      <FPCLINE>    LINES                   = LT_LINES</FPCLINE>
+      <FPCLINE>  EXCEPTIONS</FPCLINE>
+      <FPCLINE>    ID                      = 1</FPCLINE>
+      <FPCLINE>    LANGUAGE                = 2</FPCLINE>
+      <FPCLINE>    NAME                    = 3</FPCLINE>
+      <FPCLINE>    NOT_FOUND               = 4</FPCLINE>
+      <FPCLINE>    OBJECT                  = 5</FPCLINE>
+      <FPCLINE>    REFERENCE_CHECK         = 6</FPCLINE>
+      <FPCLINE>    WRONG_ACCESS_TO_ARCHIVE = 7</FPCLINE>
+      <FPCLINE>    OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>IF SY-SUBRC &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>* Implement suitable error handling here</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*---------------------------------------------------------*</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>CONCATENATE LS_ADRC_AG-STR_SUPPL1</FPCLINE>
+      <FPCLINE>LS_ADRC_AG-STR_SUPPL2 LS_ADRC_AG-LOCATION INTO GV_ADR.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>CONCATENATE LS_ADRC_WE-STR_SUPPL1 LS_ADRC_WE-STR_SUPPL2</FPCLINE>
+      <FPCLINE>LS_ADRC_WE-LOCATION INTO GV_ADR1.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>CONCATENATE  SY-DATUM+6(2) SY-DATUM+4(2) SY-DATUM+0(4)</FPCLINE>
+      <FPCLINE>                INTO GV_DATE SEPARATED BY &apos;-&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>READ TABLE IT_FINAL INTO WA_FINAL INDEX 1.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE * FROM VBAK INTO GV_VBAK</FPCLINE>
+      <FPCLINE>  WHERE VBELN = LV_VBELN.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE * FROM VBKD INTO GV_VBKD</FPCLINE>
+      <FPCLINE>  WHERE VBELN = LV_VBELN.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*************Sale Order Date</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>CONCATENATE  GV_VBAK-ERDAT+6(2) GV_VBAK-ERDAT+4(2) GV_VBAK-ERDAT+0(4)</FPCLINE>
+      <FPCLINE>                INTO GV_SALE_DT SEPARATED BY &apos;-&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>**************PO DATE</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>CONCATENATE  GV_VBKD-BSTDK+6(2) GV_VBKD-BSTDK+4(2) GV_VBKD-BSTDK+0(4)</FPCLINE>
+      <FPCLINE>                INTO GV_PO_DT SEPARATED BY &apos;-&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>************CDD Date</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>CONCATENATE GV_VBAK-VDATU+6(2) GV_VBAK-VDATU+4(2) GV_VBAK-VDATU+0(4)</FPCLINE>
+      <FPCLINE>            INTO GV_CDD_DT SEPARATED BY &apos;-&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>************OFM Date</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>MOVE WA_FINAL-LV_LINES1 TO GV_OFM_DT.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>DATA: LV_NAME  TYPE THEAD-TDNAME,</FPCLINE>
+      <FPCLINE>      LV_LINES TYPE STANDARD TABLE OF TLINE,</FPCLINE>
+      <FPCLINE>      WA_LINES LIKE TLINE.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>CLEAR: LV_LINES,  LV_NAME.</FPCLINE>
+      <FPCLINE>REFRESH LV_LINES.</FPCLINE>
+      <FPCLINE>LV_NAME = GV_VBAK-VBELN.</FPCLINE>
+      <FPCLINE>*CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>*  EXPORTING</FPCLINE>
+      <FPCLINE>*    CLIENT                  = SY-MANDT</FPCLINE>
+      <FPCLINE>*    ID                      = &apos;ZZ99&apos; &quot;&apos;0009&apos;</FPCLINE>
+      <FPCLINE>*    LANGUAGE                = &apos;E&apos; &quot;&apos;S&apos;</FPCLINE>
+      <FPCLINE>*    NAME                    = LV_NAME</FPCLINE>
+      <FPCLINE>*    OBJECT                  = &apos;VBBK&apos;</FPCLINE>
+      <FPCLINE>*  TABLES</FPCLINE>
+      <FPCLINE>*    LINES                   = LV_LINES</FPCLINE>
+      <FPCLINE>*  EXCEPTIONS</FPCLINE>
+      <FPCLINE>*    ID                      = 1</FPCLINE>
+      <FPCLINE>*    LANGUAGE                = 2</FPCLINE>
+      <FPCLINE>*    NAME                    = 3</FPCLINE>
+      <FPCLINE>*    NOT_FOUND               = 4</FPCLINE>
+      <FPCLINE>*    OBJECT                  = 5</FPCLINE>
+      <FPCLINE>*    REFERENCE_CHECK         = 6</FPCLINE>
+      <FPCLINE>*    WRONG_ACCESS_TO_ARCHIVE = 7</FPCLINE>
+      <FPCLINE>*    OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>*IF SY-SUBRC &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>** MESSAGE ID SY-MSGID TYPE SY-MSGTY NUMBER SY-MSGNO</FPCLINE>
+      <FPCLINE>**         WITH SY-MSGV1 SY-MSGV2 SY-MSGV3 SY-MSGV4.</FPCLINE>
+      <FPCLINE>*ENDIF.</FPCLINE>
+      <FPCLINE>*IF NOT LV_LINES IS INITIAL.</FPCLINE>
+      <FPCLINE>*  LOOP AT LV_LINES INTO WA_LINES.</FPCLINE>
+      <FPCLINE>*    IF NOT WA_LINES-TDLINE IS INITIAL.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*      LV_LENGTH = STRLEN( WA_LINES-TDLINE ).</FPCLINE>
+      <FPCLINE>*      CLEAR: LV_INDEX,LV_SAFE_LEN, LV_LINE.</FPCLINE>
+      <FPCLINE>*      DO  LV_LENGTH TIMES.</FPCLINE>
+      <FPCLINE>*        CLEAR: LV_LATRS.</FPCLINE>
+      <FPCLINE>*        LV_INDEX    = SY-INDEX - 1.</FPCLINE>
+      <FPCLINE>*        LV_SAFE_LEN = LV_LENGTH - LV_INDEX.</FPCLINE>
+      <FPCLINE>*        LV_LATRS = WA_LINES-TDLINE+LV_INDEX(LV_SAFE_LEN).</FPCLINE>
+      <FPCLINE>*        LV_LATRS1 = LV_LATRS.</FPCLINE>
+      <FPCLINE>*        TRANSLATE LV_LATRS TO UPPER CASE.</FPCLINE>
+      <FPCLINE>*        IF LV_LATRS CA &apos;ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890&apos; OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos; ! @ # $ % \^ &amp; * ( ) - _ = + {} [] | : ; &quot; &lt; &gt; , . ? / \  ~&apos;  OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos; &apos; OR LV_LATRS EQ &apos; &apos; OR LV_LATRS EQ SPACE OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos;&apos;&apos;&apos;&apos;&apos;.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>* IF LV_LATRS EQ &apos; &apos;.</FPCLINE>
+      <FPCLINE>*            CONCATENATE LV_LINE LV_LATRS1 INTO LV_LINE SEPARATED BY &apos; &apos;.</FPCLINE>
+      <FPCLINE>*          ELSE.</FPCLINE>
+      <FPCLINE>*            CONCATENATE LV_LINE LV_LATRS1 INTO LV_LINE.</FPCLINE>
+      <FPCLINE>*          ENDIF.</FPCLINE>
+      <FPCLINE>*        ENDIF.</FPCLINE>
+      <FPCLINE>*      ENDDO.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*IF LV_LINE IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>*        CLEAR: WA_LINES-TDLINE.</FPCLINE>
+      <FPCLINE>*        WA_LINES-TDLINE = LV_LINE.</FPCLINE>
+      <FPCLINE>*      ENDIF.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*      CONCATENATE GV_PO WA_LINES-TDLINE INTO GV_PO SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE>*    ENDIF.</FPCLINE>
+      <FPCLINE>*  ENDLOOP.</FPCLINE>
+      <FPCLINE>*  CONDENSE GV_PO.</FPCLINE>
+      <FPCLINE>*ENDIF.</FPCLINE>
+      <FPCLINE>*BREAK dvbasis.</FPCLINE>
+      <FPCLINE>lo_text_reader-&gt;read_text_string( EXPORTING id = &apos;ZZ99&apos; name = LV_NAME object = &apos;VBBK&apos; IMPORTING lv_lines = DATA(lv_lines1) ).</FPCLINE>
+      <FPCLINE>GV_PO = lv_lines1.</FPCLINE>
+      <FPCLINE>clear lv_lines1.</FPCLINE>
+      <FPCLINE>LOOP AT IT_FINAL INTO WA_FINAL .</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  NO = NO + 1.</FPCLINE>
+      <FPCLINE>  DATA NL TYPE I.</FPCLINE>
+      <FPCLINE>  NL = NO MOD 10.</FPCLINE>
+      <FPCLINE>  IF NL = 0.</FPCLINE>
+      <FPCLINE>    FLG = &apos;X&apos;.</FPCLINE>
+      <FPCLINE>  ELSE.</FPCLINE>
+      <FPCLINE>    FLG = &apos; &apos;.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CLEAR WA_VBAP.</FPCLINE>
+      <FPCLINE>  SELECT SINGLE * FROM VBAP INTO WA_VBAP</FPCLINE>
+      <FPCLINE>    WHERE VBELN = WA_FINAL-VBELN AND POSNR = WA_FINAL-POSNR.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CLEAR US_CODE.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  SELECT SINGLE WRKST INTO US_CODE FROM MARA WHERE</FPCLINE>
+      <FPCLINE>    MATNR = WA_FINAL-MATNR.</FPCLINE>
+      <FPCLINE>  IF US_CODE IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    CONCATENATE &apos;(&apos; US_CODE &apos;)&apos; INTO US_CODE.</FPCLINE>
+      <FPCLINE>    CONDENSE US_CODE.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>  CLEAR WA_VBAP.</FPCLINE>
+      <FPCLINE>  SELECT SINGLE * FROM VBAP INTO WA_VBAP</FPCLINE>
+      <FPCLINE>    WHERE VBELN = WA_FINAL-VBELN AND POSNR = WA_FINAL-POSNR.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CLEAR: CUST_DT.</FPCLINE>
+      <FPCLINE>  IF WA_VBAP-CUSTDELDATE IS NOT INITIAL.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    CONCATENATE  WA_VBAP-CUSTDELDATE+6(2) WA_VBAP-CUSTDELDATE+4(2) WA_VBAP-CUSTDELDATE+0(4)</FPCLINE>
+      <FPCLINE>                    INTO CUST_DT SEPARATED BY &apos;-&apos;.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*DATA: lv_name   TYPE thead-tdname.</FPCLINE>
+      <FPCLINE>  CLEAR: IT_LINES,WA_LINES,LV_NAME,SHIP_CODE,LV_LENGTH.</FPCLINE>
+      <FPCLINE>  CONCATENATE WA_FINAL-VBELN WA_FINAL-POSNR INTO LV_NAME.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  REFRESH IT_LINES.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*  CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>*    EXPORTING</FPCLINE>
+      <FPCLINE>*      CLIENT                  = SY-MANDT</FPCLINE>
+      <FPCLINE>*      ID                      = &apos;0010&apos;</FPCLINE>
+      <FPCLINE>*      LANGUAGE                = SY-LANGU</FPCLINE>
+      <FPCLINE>*      NAME                    = LV_NAME</FPCLINE>
+      <FPCLINE>*      OBJECT                  = &apos;VBBP&apos;</FPCLINE>
+      <FPCLINE>*    TABLES</FPCLINE>
+      <FPCLINE>*      LINES                   = IT_LINES</FPCLINE>
+      <FPCLINE>*    EXCEPTIONS</FPCLINE>
+      <FPCLINE>*      ID                      = 1</FPCLINE>
+      <FPCLINE>*      LANGUAGE                = 2</FPCLINE>
+      <FPCLINE>*      NAME                    = 3</FPCLINE>
+      <FPCLINE>*      NOT_FOUND               = 4</FPCLINE>
+      <FPCLINE>*      OBJECT                  = 5</FPCLINE>
+      <FPCLINE>*      REFERENCE_CHECK         = 6</FPCLINE>
+      <FPCLINE>*      WRONG_ACCESS_TO_ARCHIVE = 7</FPCLINE>
+      <FPCLINE>*      OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>*  IF SY-SUBRC &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>** MESSAGE ID SY-MSGID TYPE SY-MSGTY NUMBER SY-MSGNO</FPCLINE>
+      <FPCLINE>**         WITH SY-MSGV1 SY-MSGV2 SY-MSGV3 SY-MSGV4.</FPCLINE>
+      <FPCLINE>*  ENDIF.</FPCLINE>
+      <FPCLINE>*  IF IT_LINES IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>*    READ TABLE IT_LINES INTO WA_LINES INDEX 1.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*    LV_LENGTH = STRLEN( WA_LINES-TDLINE ).</FPCLINE>
+      <FPCLINE>*      CLEAR: LV_INDEX,LV_SAFE_LEN, LV_LINE.</FPCLINE>
+      <FPCLINE>*      DO  LV_LENGTH TIMES.</FPCLINE>
+      <FPCLINE>*        CLEAR: LV_LATRS.</FPCLINE>
+      <FPCLINE>*        LV_INDEX    = SY-INDEX - 1.</FPCLINE>
+      <FPCLINE>*        LV_SAFE_LEN = LV_LENGTH - LV_INDEX.</FPCLINE>
+      <FPCLINE>*        LV_LATRS = WA_LINES-TDLINE+LV_INDEX(LV_SAFE_LEN).</FPCLINE>
+      <FPCLINE>*        LV_LATRS1 = LV_LATRS.</FPCLINE>
+      <FPCLINE>*        TRANSLATE LV_LATRS TO UPPER CASE.</FPCLINE>
+      <FPCLINE>*        IF LV_LATRS CA &apos;ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890&apos; OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos; ! @ # $ % \^ &amp; * ( ) - _ = + {} [] | : ; &quot; &lt; &gt; , . ? / \  ~&apos;  OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos; &apos; OR LV_LATRS EQ &apos; &apos; OR LV_LATRS EQ SPACE OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos;&apos;&apos;&apos;&apos;&apos;.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>* IF LV_LATRS EQ &apos; &apos;.</FPCLINE>
+      <FPCLINE>*            CONCATENATE LV_LINE LV_LATRS1 INTO LV_LINE SEPARATED BY &apos; &apos;.</FPCLINE>
+      <FPCLINE>*          ELSE.</FPCLINE>
+      <FPCLINE>*            CONCATENATE LV_LINE LV_LATRS1 INTO LV_LINE.</FPCLINE>
+      <FPCLINE>*          ENDIF.</FPCLINE>
+      <FPCLINE>*        ENDIF.</FPCLINE>
+      <FPCLINE>*      ENDDO.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*IF LV_LINE IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>*        CLEAR: WA_LINES-TDLINE.</FPCLINE>
+      <FPCLINE>*        WA_LINES-TDLINE = LV_LINE.</FPCLINE>
+      <FPCLINE>*      ENDIF.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*    IF SY-SUBRC = 0.</FPCLINE>
+      <FPCLINE>*      SHIP_CODE = WA_LINES-TDLINE.</FPCLINE>
+      <FPCLINE>*    ENDIF.</FPCLINE>
+      <FPCLINE>*  ENDIF.</FPCLINE>
+      <FPCLINE>lo_text_reader-&gt;read_text_string( EXPORTING id = &apos;0010&apos; name = LV_NAME object = &apos;VBBP&apos; IMPORTING lv_lines = lv_lines1 ).</FPCLINE>
+      <FPCLINE>  SHIP_CODE  = lv_lines1.</FPCLINE>
+      <FPCLINE>  clear lv_lines1.</FPCLINE>
+      <FPCLINE>  IF SHIP_CODE IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    CONCATENATE &apos;(&apos;SHIP_CODE &apos;)&apos; INTO SHIP_CODE.</FPCLINE>
+      <FPCLINE>    CONDENSE SHIP_CODE.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>*  IF WA_FINAL-KWMENG IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>*    GV_QTY = WA_FINAL-KWMENG.</FPCLINE>
+      <FPCLINE>*  ELSE.</FPCLINE>
+      <FPCLINE>*    GV_QTY = WA_FINAL-ZMENG.</FPCLINE>
+      <FPCLINE>*  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>  CLEAR :CURR.</FPCLINE>
+      <FPCLINE>  IF WA_FINAL-WAERK = &apos;USD&apos;.</FPCLINE>
+      <FPCLINE>    CURR = &apos;$&apos;.</FPCLINE>
+      <FPCLINE>  ELSEIF WA_FINAL-WAERK = &apos;EUR&apos;.</FPCLINE>
+      <FPCLINE>    CURR = &apos;€&apos;.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CNT = CNT + 1.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*BREAK-POINT.</FPCLINE>
+      <FPCLINE>  CLEAR: GV_DEL_DT, GV_OFM_DATE, WA_FINAL-OFM_DATE.</FPCLINE>
+      <FPCLINE>*BREAK dvbasis.</FPCLINE>
+      <FPCLINE>  SELECT SINGLE * FROM VBAP INTO WA_VBAP</FPCLINE>
+      <FPCLINE>    WHERE VBELN = WA_FINAL-VBELN AND POSNR = WA_FINAL-POSNR.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  WA_FINAL-OFM_DATE = WA_VBAP-OFM_DATE.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*CONCATENATE  WA_FINAL-DELDATE+6(2) WA_FINAL-DELDATE+4(2) WA_FINAL-DELDATE+0(4)</FPCLINE>
+      <FPCLINE>*                INTO GV_DEL_DT SEPARATED BY &apos;-&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*SELECT SINGLE OFM_DATE FROM VBAP INTO GV_OFM_DATE WHERE VBELN = WA_FINAL-VBELN.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*WA_FINAL-OFM_DATE = GV_OFM_DATE.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*CONCATENATE  WA_FINAL-OFM_DATE+6(2) WA_FINAL-OFM_DATE+4(2) WA_FINAL-OFM_DATE+0(4)</FPCLINE>
+      <FPCLINE>*                INTO WA_FINAL-OFM_DATE SEPARATED BY &apos;-&apos;.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*CONCATENATE  GV_OFM_DATE+6(2) GV_OFM_DATE+4(2) GV_OFM_DATE+0(4)</FPCLINE>
+      <FPCLINE>*                INTO GV_OFM_DATE SEPARATED BY &apos;-&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>  AT END OF VBELN.</FPCLINE>
+      <FPCLINE>    &quot;Customer Inspection</FPCLINE>
+      <FPCLINE>    CLEAR: IT_LINES,WA_LINES,LV_NAME, LV_LENGTH.</FPCLINE>
+      <FPCLINE>    LV_NAME = WA_FINAL-VBELN.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*    REFRESH IT_LINES.</FPCLINE>
+      <FPCLINE>*    CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>*      EXPORTING</FPCLINE>
+      <FPCLINE>*        CLIENT                  = SY-MANDT</FPCLINE>
+      <FPCLINE>*        ID                      = &apos;Z999&apos;</FPCLINE>
+      <FPCLINE>*        LANGUAGE                = SY-LANGU</FPCLINE>
+      <FPCLINE>*        NAME                    = LV_NAME</FPCLINE>
+      <FPCLINE>*        OBJECT                  = &apos;VBBK&apos;</FPCLINE>
+      <FPCLINE>*      TABLES</FPCLINE>
+      <FPCLINE>*        LINES                   = IT_LINES</FPCLINE>
+      <FPCLINE>*      EXCEPTIONS</FPCLINE>
+      <FPCLINE>*        ID                      = 1</FPCLINE>
+      <FPCLINE>*        LANGUAGE                = 2</FPCLINE>
+      <FPCLINE>*        NAME                    = 3</FPCLINE>
+      <FPCLINE>*        NOT_FOUND               = 4</FPCLINE>
+      <FPCLINE>*        OBJECT                  = 5</FPCLINE>
+      <FPCLINE>*        REFERENCE_CHECK         = 6</FPCLINE>
+      <FPCLINE>*        WRONG_ACCESS_TO_ARCHIVE = 7</FPCLINE>
+      <FPCLINE>*        OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*    IF SY-SUBRC &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>** MESSAGE ID SY-MSGID TYPE SY-MSGTY NUMBER SY-MSGNO</FPCLINE>
+      <FPCLINE>**         WITH SY-MSGV1 SY-MSGV2 SY-MSGV3 SY-MSGV4.</FPCLINE>
+      <FPCLINE>*    ENDIF.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*    IF IT_LINES IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>*      LOOP AT IT_LINES INTO WA_LINES.</FPCLINE>
+      <FPCLINE>*        IF NOT WA_LINES-TDLINE IS INITIAL.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*          LV_LENGTH = STRLEN( WA_LINES-TDLINE ).</FPCLINE>
+      <FPCLINE>*      CLEAR: LV_INDEX,LV_SAFE_LEN, LV_LINE.</FPCLINE>
+      <FPCLINE>*      DO  LV_LENGTH TIMES.</FPCLINE>
+      <FPCLINE>*        CLEAR: LV_LATRS.</FPCLINE>
+      <FPCLINE>*        LV_INDEX    = SY-INDEX - 1.</FPCLINE>
+      <FPCLINE>*        LV_SAFE_LEN = LV_LENGTH - LV_INDEX.</FPCLINE>
+      <FPCLINE>*        LV_LATRS = WA_LINES-TDLINE+LV_INDEX(LV_SAFE_LEN).</FPCLINE>
+      <FPCLINE>*        LV_LATRS1 = LV_LATRS.</FPCLINE>
+      <FPCLINE>*        TRANSLATE LV_LATRS TO UPPER CASE.</FPCLINE>
+      <FPCLINE>*        IF LV_LATRS CA &apos;ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890&apos; OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos; ! @ # $ % \^ &amp; * ( ) - _ = + {} [] | : ; &quot; &lt; &gt; , . ? / \  ~&apos;  OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos; &apos; OR LV_LATRS EQ &apos; &apos; OR LV_LATRS EQ SPACE OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos;&apos;&apos;&apos;&apos;&apos;.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>* IF LV_LATRS EQ &apos; &apos;.</FPCLINE>
+      <FPCLINE>*            CONCATENATE LV_LINE LV_LATRS1 INTO LV_LINE SEPARATED BY &apos; &apos;.</FPCLINE>
+      <FPCLINE>*          ELSE.</FPCLINE>
+      <FPCLINE>*            CONCATENATE LV_LINE LV_LATRS1 INTO LV_LINE.</FPCLINE>
+      <FPCLINE>*          ENDIF.</FPCLINE>
+      <FPCLINE>*        ENDIF.</FPCLINE>
+      <FPCLINE>*      ENDDO.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*IF LV_LINE IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>*        CLEAR: WA_LINES-TDLINE.</FPCLINE>
+      <FPCLINE>*        WA_LINES-TDLINE = LV_LINE.</FPCLINE>
+      <FPCLINE>*      ENDIF.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*          CONCATENATE GV_CUST_INSP WA_LINES-TDLINE</FPCLINE>
+      <FPCLINE>*                      INTO GV_CUST_INSP SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE>*        ENDIF.</FPCLINE>
+      <FPCLINE>*      ENDLOOP.</FPCLINE>
+      <FPCLINE>*    ENDIF.</FPCLINE>
+      <FPCLINE>lo_text_reader-&gt;read_text_string( EXPORTING id = &apos;Z999&apos; name = LV_NAME object = &apos;VBBK&apos; IMPORTING lv_lines = lv_lines1 ).</FPCLINE>
+      <FPCLINE>  GV_CUST_INSP  = lv_lines1.</FPCLINE>
+      <FPCLINE>clear lv_lines1.</FPCLINE>
+      <FPCLINE>    &quot;Document Approval By Customer</FPCLINE>
+      <FPCLINE>    CLEAR: IT_LINES,WA_LINES,LV_NAME, LV_LENGTH.</FPCLINE>
+      <FPCLINE>    LV_NAME = WA_FINAL-VBELN.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*    REFRESH IT_LINES.</FPCLINE>
+      <FPCLINE>*    CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>*      EXPORTING</FPCLINE>
+      <FPCLINE>*        CLIENT                  = SY-MANDT</FPCLINE>
+      <FPCLINE>*        ID                      = &apos;Z020&apos;</FPCLINE>
+      <FPCLINE>*        LANGUAGE                = SY-LANGU</FPCLINE>
+      <FPCLINE>*        NAME                    = LV_NAME</FPCLINE>
+      <FPCLINE>*        OBJECT                  = &apos;VBBK&apos;</FPCLINE>
+      <FPCLINE>*      TABLES</FPCLINE>
+      <FPCLINE>*        LINES                   = IT_LINES</FPCLINE>
+      <FPCLINE>*      EXCEPTIONS</FPCLINE>
+      <FPCLINE>*        ID                      = 1</FPCLINE>
+      <FPCLINE>*        LANGUAGE                = 2</FPCLINE>
+      <FPCLINE>*        NAME                    = 3</FPCLINE>
+      <FPCLINE>*        NOT_FOUND               = 4</FPCLINE>
+      <FPCLINE>*        OBJECT                  = 5</FPCLINE>
+      <FPCLINE>*        REFERENCE_CHECK         = 6</FPCLINE>
+      <FPCLINE>*        WRONG_ACCESS_TO_ARCHIVE = 7</FPCLINE>
+      <FPCLINE>*        OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*    IF SY-SUBRC &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>** MESSAGE ID SY-MSGID TYPE SY-MSGTY NUMBER SY-MSGNO</FPCLINE>
+      <FPCLINE>**         WITH SY-MSGV1 SY-MSGV2 SY-MSGV3 SY-MSGV4.</FPCLINE>
+      <FPCLINE>*    ENDIF.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*    IF IT_LINES IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>*      LOOP AT IT_LINES INTO WA_LINES.</FPCLINE>
+      <FPCLINE>*        IF NOT WA_LINES-TDLINE IS INITIAL.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*          LV_LENGTH = STRLEN( WA_LINES-TDLINE ).</FPCLINE>
+      <FPCLINE>*      CLEAR: LV_INDEX,LV_SAFE_LEN, LV_LINE.</FPCLINE>
+      <FPCLINE>*      DO  LV_LENGTH TIMES.</FPCLINE>
+      <FPCLINE>*        CLEAR: LV_LATRS.</FPCLINE>
+      <FPCLINE>*        LV_INDEX    = SY-INDEX - 1.</FPCLINE>
+      <FPCLINE>*        LV_SAFE_LEN = LV_LENGTH - LV_INDEX.</FPCLINE>
+      <FPCLINE>*        LV_LATRS = WA_LINES-TDLINE+LV_INDEX(LV_SAFE_LEN).</FPCLINE>
+      <FPCLINE>*        LV_LATRS1 = LV_LATRS.</FPCLINE>
+      <FPCLINE>*        TRANSLATE LV_LATRS TO UPPER CASE.</FPCLINE>
+      <FPCLINE>*        IF LV_LATRS CA &apos;ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890&apos; OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos; ! @ # $ % \^ &amp; * ( ) - _ = + {} [] | : ; &quot; &lt; &gt; , . ? / \  ~&apos;  OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos; &apos; OR LV_LATRS EQ &apos; &apos; OR LV_LATRS EQ SPACE OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos;&apos;&apos;&apos;&apos;&apos;.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>* IF LV_LATRS EQ &apos; &apos;.</FPCLINE>
+      <FPCLINE>*            CONCATENATE LV_LINE LV_LATRS1 INTO LV_LINE SEPARATED BY &apos; &apos;.</FPCLINE>
+      <FPCLINE>*          ELSE.</FPCLINE>
+      <FPCLINE>*            CONCATENATE LV_LINE LV_LATRS1 INTO LV_LINE.</FPCLINE>
+      <FPCLINE>*          ENDIF.</FPCLINE>
+      <FPCLINE>*        ENDIF.</FPCLINE>
+      <FPCLINE>*      ENDDO.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*IF LV_LINE IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>*        CLEAR: WA_LINES-TDLINE.</FPCLINE>
+      <FPCLINE>*        WA_LINES-TDLINE = LV_LINE.</FPCLINE>
+      <FPCLINE>*      ENDIF.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*          CONCATENATE GV_DOC_APPROVAL WA_LINES-TDLINE</FPCLINE>
+      <FPCLINE>*                      INTO GV_DOC_APPROVAL SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE>*        ENDIF.</FPCLINE>
+      <FPCLINE>*      ENDLOOP.</FPCLINE>
+      <FPCLINE>*    ENDIF.</FPCLINE>
+      <FPCLINE>lo_text_reader-&gt;read_text_string( EXPORTING id = &apos;Z020&apos; name = LV_NAME object = &apos;VBBk&apos; IMPORTING lv_lines = lv_lines1 ).</FPCLINE>
+      <FPCLINE>  GV_DOC_APPROVAL  = lv_lines1.</FPCLINE>
+      <FPCLINE>  clear LV_LINES1.</FPCLINE>
+      <FPCLINE>    &quot;Conditional Delivery</FPCLINE>
+      <FPCLINE>    CLEAR: IT_LINES,WA_LINES,LV_NAME, LV_LENGTH.</FPCLINE>
+      <FPCLINE>    LV_NAME = WA_FINAL-VBELN.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*    REFRESH IT_LINES.</FPCLINE>
+      <FPCLINE>*    CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>*      EXPORTING</FPCLINE>
+      <FPCLINE>*        CLIENT                  = SY-MANDT</FPCLINE>
+      <FPCLINE>*        ID                      = &apos;Z103&apos;</FPCLINE>
+      <FPCLINE>*        LANGUAGE                = SY-LANGU</FPCLINE>
+      <FPCLINE>*        NAME                    = LV_NAME</FPCLINE>
+      <FPCLINE>*        OBJECT                  = &apos;VBBK&apos;</FPCLINE>
+      <FPCLINE>*      TABLES</FPCLINE>
+      <FPCLINE>*        LINES                   = IT_LINES</FPCLINE>
+      <FPCLINE>*      EXCEPTIONS</FPCLINE>
+      <FPCLINE>*        ID                      = 1</FPCLINE>
+      <FPCLINE>*        LANGUAGE                = 2</FPCLINE>
+      <FPCLINE>*        NAME                    = 3</FPCLINE>
+      <FPCLINE>*        NOT_FOUND               = 4</FPCLINE>
+      <FPCLINE>*        OBJECT                  = 5</FPCLINE>
+      <FPCLINE>*        REFERENCE_CHECK         = 6</FPCLINE>
+      <FPCLINE>*        WRONG_ACCESS_TO_ARCHIVE = 7</FPCLINE>
+      <FPCLINE>*        OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*    IF SY-SUBRC &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>** MESSAGE ID SY-MSGID TYPE SY-MSGTY NUMBER SY-MSGNO</FPCLINE>
+      <FPCLINE>**         WITH SY-MSGV1 SY-MSGV2 SY-MSGV3 SY-MSGV4.</FPCLINE>
+      <FPCLINE>*    ENDIF.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*    IF IT_LINES IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>*      LOOP AT IT_LINES INTO WA_LINES.</FPCLINE>
+      <FPCLINE>*        IF NOT WA_LINES-TDLINE IS INITIAL.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*          LV_LENGTH = STRLEN( WA_LINES-TDLINE ).</FPCLINE>
+      <FPCLINE>*      CLEAR: LV_INDEX,LV_SAFE_LEN, LV_LINE.</FPCLINE>
+      <FPCLINE>*      DO  LV_LENGTH TIMES.</FPCLINE>
+      <FPCLINE>*        CLEAR: LV_LATRS.</FPCLINE>
+      <FPCLINE>*        LV_INDEX    = SY-INDEX - 1.</FPCLINE>
+      <FPCLINE>*        LV_SAFE_LEN = LV_LENGTH - LV_INDEX.</FPCLINE>
+      <FPCLINE>*        LV_LATRS = WA_LINES-TDLINE+LV_INDEX(LV_SAFE_LEN).</FPCLINE>
+      <FPCLINE>*        LV_LATRS1 = LV_LATRS.</FPCLINE>
+      <FPCLINE>*        TRANSLATE LV_LATRS TO UPPER CASE.</FPCLINE>
+      <FPCLINE>*        IF LV_LATRS CA &apos;ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890&apos; OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos; ! @ # $ % \^ &amp; * ( ) - _ = + {} [] | : ; &quot; &lt; &gt; , . ? / \  ~&apos;  OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos; &apos; OR LV_LATRS EQ &apos; &apos; OR LV_LATRS EQ SPACE OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos;&apos;&apos;&apos;&apos;&apos;.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>* IF LV_LATRS EQ &apos; &apos;.</FPCLINE>
+      <FPCLINE>*            CONCATENATE LV_LINE LV_LATRS1 INTO LV_LINE SEPARATED BY &apos; &apos;.</FPCLINE>
+      <FPCLINE>*          ELSE.</FPCLINE>
+      <FPCLINE>*            CONCATENATE LV_LINE LV_LATRS1 INTO LV_LINE.</FPCLINE>
+      <FPCLINE>*          ENDIF.</FPCLINE>
+      <FPCLINE>*        ENDIF.</FPCLINE>
+      <FPCLINE>*      ENDDO.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*IF LV_LINE IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>*        CLEAR: WA_LINES-TDLINE.</FPCLINE>
+      <FPCLINE>*        WA_LINES-TDLINE = LV_LINE.</FPCLINE>
+      <FPCLINE>*      ENDIF.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*          CONCATENATE GV_CON_DELIVERY WA_LINES-TDLINE</FPCLINE>
+      <FPCLINE>*                      INTO GV_CON_DELIVERY SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE>*        ENDIF.</FPCLINE>
+      <FPCLINE>*      ENDLOOP.</FPCLINE>
+      <FPCLINE>*    ENDIF.</FPCLINE>
+      <FPCLINE>lo_text_reader-&gt;read_text_string( EXPORTING id = &apos;Z103&apos; name = LV_NAME object = &apos;VBBK&apos; IMPORTING lv_lines = lv_lines1 ).</FPCLINE>
+      <FPCLINE> GV_CON_DELIVERY   = lv_lines1.</FPCLINE>
+      <FPCLINE> clear lv_lines1.</FPCLINE>
+      <FPCLINE>  ENDAT.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*BREAK dvbasis.</FPCLINE>
+      <FPCLINE>*LOOP AT it_final INTO wa_final.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*lv_pf_amt   = lv_pf_amt   + wa_final-pf_amt.</FPCLINE>
+      <FPCLINE>*lv_cgst_val = lv_cgst_val + wa_final-cgst_amt.</FPCLINE>
+      <FPCLINE>*lv_sgst_val = lv_sgst_val + wa_final-sgst_amt.</FPCLINE>
+      <FPCLINE>*lv_igst_val = lv_igst_val + wa_final-igst_amt.</FPCLINE>
+      <FPCLINE>*lv_ins_val  = lv_ins_val  + wa_final-ins_amt.</FPCLINE>
+      <FPCLINE>*lv_frg_val  = lv_frg_val  + wa_final-frg_amt.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*ENDLOOP.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>*BREAK-POINT.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  SELECT  VBELN KNUMV FROM VBAK INTO CORRESPONDING FIELDS OF TABLE IT_VBAK</FPCLINE>
+      <FPCLINE>    WHERE VBELN = LV_VBELN.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF IT_VBAK  IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    SELECT  KNUMV  KSCHL  KBETR</FPCLINE>
+      <FPCLINE>      FROM PRCD_ELEMENTS</FPCLINE>
+      <FPCLINE>      INTO CORRESPONDING FIELDS OF TABLE IT_KONV</FPCLINE>
+      <FPCLINE>      FOR ALL ENTRIES IN IT_VBAK</FPCLINE>
+      <FPCLINE>      WHERE KNUMV = IT_VBAK-KNUMV</FPCLINE>
+      <FPCLINE>      AND   KSCHL = &apos;ZTE1&apos;.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  LOOP AT IT_VBAK INTO WA_VBAK WHERE VBELN = LV_VBELN.</FPCLINE>
+      <FPCLINE>    WA_FINAL-KNUMV = WA_VBAK-KNUMV.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    READ TABLE IT_KONV INTO WA_KONV WITH KEY KNUMV = WA_VBAK-KNUMV.</FPCLINE>
+      <FPCLINE>*    WA_FINAL-KBETR = WA_KONV-KBETR.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    CLEAR : WA_KONV-KBETR.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  ENDLOOP.</FPCLINE>
+      <FPCLINE>  CLEAR WA_FINAL-KBETR.</FPCLINE>
+      <FPCLINE>*BREAK dvbasis.</FPCLINE>
+      <FPCLINE>  LOOP AT IT_KONV INTO DATA(LS).</FPCLINE>
+      <FPCLINE>    WA_FINAL-KBETR = WA_FINAL-KBETR + LS-KBETR.</FPCLINE>
+      <FPCLINE>  ENDLOOP.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>*LV_TOTAL_AMT = LV_BASE_AMT + lv_pf + lv_zin1 + lv_zfr1</FPCLINE>
+      <FPCLINE>*              + LV_ZTE1 + LV_ZTCS.</FPCLINE>
+      <FPCLINE>  &quot;</FPCLINE>
+      <FPCLINE>*LV_TOTAL_AMT = LV_BASE_AMT + lv_pf_amt + lv_zin1 + lv_zfr1</FPCLINE>
+      <FPCLINE>*              + LV_ZTCS + WA_FINAL-KBETR.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>**BREAK dvbasis.</FPCLINE>
+      <FPCLINE>*CASE wa_final-auart.</FPCLINE>
+      <FPCLINE>*  WHEN &apos;ZEXP&apos; OR &apos;ZDEX&apos;.</FPCLINE>
+      <FPCLINE>*  WA_FINAL-GRAND = LV_TOTAL_AMT .</FPCLINE>
+      <FPCLINE>*  WHEN OTHERS.</FPCLINE>
+      <FPCLINE>**    WA_FINAL-GRAND = LV_TOTAL_AMT + LV_CGST_TOT</FPCLINE>
+      <FPCLINE>**                + LV_SGST_TOT + LV_IGST_TOT.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*    WA_FINAL-GRAND = LV_TOTAL_AMT + LV_CGST_val</FPCLINE>
+      <FPCLINE>*                   + LV_SGST_val + LV_IGST_val.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*ENDCASE.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>*BREAK dvbasis.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  DATA LV_BASE TYPE PC207-BETRG.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*lv_base = lv_base_amt.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*CALL FUNCTION &apos;HR_IN_CHG_INR_WRDS&apos;</FPCLINE>
+      <FPCLINE>*  EXPORTING</FPCLINE>
+      <FPCLINE>*    amt_in_num               = LV_BASE</FPCLINE>
+      <FPCLINE>* IMPORTING</FPCLINE>
+      <FPCLINE>*   AMT_IN_WORDS             = lv_vamt</FPCLINE>
+      <FPCLINE>* EXCEPTIONS</FPCLINE>
+      <FPCLINE>*   DATA_TYPE_MISMATCH       = 1</FPCLINE>
+      <FPCLINE>*   OTHERS                   = 2</FPCLINE>
+      <FPCLINE>*          .</FPCLINE>
+      <FPCLINE>*IF sy-subrc &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>** Implement suitable error handling here</FPCLINE>
+      <FPCLINE>*ENDIF.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*IF wa_final-waerk = &apos;USD&apos;.</FPCLINE>
+      <FPCLINE>*  REPLACE &apos;Rupees&apos; IN lv_vamt with &apos;DOLLAR&apos;.</FPCLINE>
+      <FPCLINE>*  REPLACE &apos;Paise&apos;  IN lv_vamt with &apos;CENTS ONLY&apos;.</FPCLINE>
+      <FPCLINE>*ELSEIF wa_final-waerk = &apos;EUR&apos;.</FPCLINE>
+      <FPCLINE>*  REPLACE &apos;Rupees&apos; IN lv_vamt with &apos;EURO&apos;.</FPCLINE>
+      <FPCLINE>*  REPLACE &apos;Paise&apos;  IN lv_vamt with &apos;CENTS ONLY&apos;.</FPCLINE>
+      <FPCLINE>*ENDIF.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>**CALL FUNCTION &apos;ISP_CONVERT_FIRSTCHARS_TOUPPER&apos;</FPCLINE>
+      <FPCLINE>**  EXPORTING</FPCLINE>
+      <FPCLINE>**    input_string        = lv_vamt</FPCLINE>
+      <FPCLINE>***   SEPARATORS          = &apos; -.,;:&apos;</FPCLINE>
+      <FPCLINE>** IMPORTING</FPCLINE>
+      <FPCLINE>**   OUTPUT_STRING       = lv_vamt</FPCLINE>
+      <FPCLINE>*          .</FPCLINE>
+      <FPCLINE>*BREAK dvbasis.</FPCLINE>
+      <FPCLINE>*CALL FUNCTION &apos;FI_CONVERT_FIRSTCHARS_TOUPPER&apos;</FPCLINE>
+      <FPCLINE>*  EXPORTING</FPCLINE>
+      <FPCLINE>*    input_string        = lv_vamt</FPCLINE>
+      <FPCLINE>**   SEPARATORS          = &apos; -.,;:&apos;</FPCLINE>
+      <FPCLINE>* IMPORTING</FPCLINE>
+      <FPCLINE>*   OUTPUT_STRING       = lv_vamt</FPCLINE>
+      <FPCLINE>*          .</FPCLINE>
+      <FPCLINE>  AT END OF VBELN.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    &quot;TAG Applicable</FPCLINE>
+      <FPCLINE>    CLEAR: IT_LINES,WA_LINES,LV_NAME, LV_LENGTH.</FPCLINE>
+      <FPCLINE>    LV_NAME = WA_FINAL-VBELN.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*    REFRESH IT_LINES.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*    CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>*      EXPORTING</FPCLINE>
+      <FPCLINE>*        CLIENT                  = SY-MANDT</FPCLINE>
+      <FPCLINE>*        ID                      = &apos;Z039&apos;</FPCLINE>
+      <FPCLINE>*        LANGUAGE                = SY-LANGU</FPCLINE>
+      <FPCLINE>*        NAME                    = LV_NAME</FPCLINE>
+      <FPCLINE>*        OBJECT                  = &apos;VBBK&apos;</FPCLINE>
+      <FPCLINE>*      TABLES</FPCLINE>
+      <FPCLINE>*        LINES                   = IT_LINES</FPCLINE>
+      <FPCLINE>*      EXCEPTIONS</FPCLINE>
+      <FPCLINE>*        ID                      = 1</FPCLINE>
+      <FPCLINE>*        LANGUAGE                = 2</FPCLINE>
+      <FPCLINE>*        NAME                    = 3</FPCLINE>
+      <FPCLINE>*        NOT_FOUND               = 4</FPCLINE>
+      <FPCLINE>*        OBJECT                  = 5</FPCLINE>
+      <FPCLINE>*        REFERENCE_CHECK         = 6</FPCLINE>
+      <FPCLINE>*        WRONG_ACCESS_TO_ARCHIVE = 7</FPCLINE>
+      <FPCLINE>*        OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>*    IF SY-SUBRC &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>** MESSAGE ID SY-MSGID TYPE SY-MSGTY NUMBER SY-MSGNO</FPCLINE>
+      <FPCLINE>**         WITH SY-MSGV1 SY-MSGV2 SY-MSGV3 SY-MSGV4.</FPCLINE>
+      <FPCLINE>*    ENDIF.</FPCLINE>
+      <FPCLINE>*    IF IT_LINES IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>*      LOOP AT IT_LINES INTO WA_LINES.</FPCLINE>
+      <FPCLINE>*        IF NOT WA_LINES-TDLINE IS INITIAL.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*          LV_LENGTH = STRLEN( WA_LINES-TDLINE ).</FPCLINE>
+      <FPCLINE>*      CLEAR: LV_INDEX,LV_SAFE_LEN, LV_LINE.</FPCLINE>
+      <FPCLINE>*      DO  LV_LENGTH TIMES.</FPCLINE>
+      <FPCLINE>*        CLEAR: LV_LATRS.</FPCLINE>
+      <FPCLINE>*        LV_INDEX    = SY-INDEX - 1.</FPCLINE>
+      <FPCLINE>*        LV_SAFE_LEN = LV_LENGTH - LV_INDEX.</FPCLINE>
+      <FPCLINE>*        LV_LATRS = WA_LINES-TDLINE+LV_INDEX(LV_SAFE_LEN).</FPCLINE>
+      <FPCLINE>*        LV_LATRS1 = LV_LATRS.</FPCLINE>
+      <FPCLINE>*        TRANSLATE LV_LATRS TO UPPER CASE.</FPCLINE>
+      <FPCLINE>*        IF LV_LATRS CA &apos;ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890&apos; OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos; ! @ # $ % \^ &amp; * ( ) - _ = + {} [] | : ; &quot; &lt; &gt; , . ? / \  ~&apos;  OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos; &apos; OR LV_LATRS EQ &apos; &apos; OR LV_LATRS EQ SPACE OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos;&apos;&apos;&apos;&apos;&apos;.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>* IF LV_LATRS EQ &apos; &apos;.</FPCLINE>
+      <FPCLINE>*            CONCATENATE LV_LINE LV_LATRS1 INTO LV_LINE SEPARATED BY &apos; &apos;.</FPCLINE>
+      <FPCLINE>*          ELSE.</FPCLINE>
+      <FPCLINE>*            CONCATENATE LV_LINE LV_LATRS1 INTO LV_LINE.</FPCLINE>
+      <FPCLINE>*          ENDIF.</FPCLINE>
+      <FPCLINE>*        ENDIF.</FPCLINE>
+      <FPCLINE>*      ENDDO.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*IF LV_LINE IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>*        CLEAR: WA_LINES-TDLINE.</FPCLINE>
+      <FPCLINE>*        WA_LINES-TDLINE = LV_LINE.</FPCLINE>
+      <FPCLINE>*      ENDIF.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*          CONCATENATE GV_TAG WA_LINES-TDLINE INTO GV_TAG SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE>*        ENDIF.</FPCLINE>
+      <FPCLINE>*      ENDLOOP.</FPCLINE>
+      <FPCLINE>*    ENDIF.</FPCLINE>
+      <FPCLINE>lo_text_reader-&gt;read_text_string( EXPORTING id = &apos;Z039&apos; name = LV_NAME object = &apos;VBBK&apos; IMPORTING lv_lines = lv_lines1 ).</FPCLINE>
+      <FPCLINE>   GV_TAG = lv_lines1.</FPCLINE>
+      <FPCLINE>   clear lv_lines1.</FPCLINE>
+      <FPCLINE>&quot;ENDAT.</FPCLINE>
+      <FPCLINE>    &quot;TPI Applicable</FPCLINE>
+      <FPCLINE>    CLEAR: IT_LINES,WA_LINES,LV_NAME, LV_LENGTH.</FPCLINE>
+      <FPCLINE>    LV_NAME = WA_FINAL-VBELN.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    REFRESH IT_LINES.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*    CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>*      EXPORTING</FPCLINE>
+      <FPCLINE>*        CLIENT                  = SY-MANDT</FPCLINE>
+      <FPCLINE>*        ID                      = &apos;Z999&apos;</FPCLINE>
+      <FPCLINE>*        LANGUAGE                = SY-LANGU</FPCLINE>
+      <FPCLINE>*        NAME                    = LV_NAME</FPCLINE>
+      <FPCLINE>*        OBJECT                  = &apos;VBBK&apos;</FPCLINE>
+      <FPCLINE>*      TABLES</FPCLINE>
+      <FPCLINE>*        LINES                   = IT_LINES</FPCLINE>
+      <FPCLINE>*      EXCEPTIONS</FPCLINE>
+      <FPCLINE>*        ID                      = 1</FPCLINE>
+      <FPCLINE>*        LANGUAGE                = 2</FPCLINE>
+      <FPCLINE>*        NAME                    = 3</FPCLINE>
+      <FPCLINE>*        NOT_FOUND               = 4</FPCLINE>
+      <FPCLINE>*        OBJECT                  = 5</FPCLINE>
+      <FPCLINE>*        REFERENCE_CHECK         = 6</FPCLINE>
+      <FPCLINE>*        WRONG_ACCESS_TO_ARCHIVE = 7</FPCLINE>
+      <FPCLINE>*        OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>*    IF SY-SUBRC &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>** MESSAGE ID SY-MSGID TYPE SY-MSGTY NUMBER SY-MSGNO</FPCLINE>
+      <FPCLINE>**         WITH SY-MSGV1 SY-MSGV2 SY-MSGV3 SY-MSGV4.</FPCLINE>
+      <FPCLINE>*    ENDIF.</FPCLINE>
+      <FPCLINE>*    IF IT_LINES IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>*      LOOP AT IT_LINES INTO WA_LINES.</FPCLINE>
+      <FPCLINE>*        IF NOT WA_LINES-TDLINE IS INITIAL.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*          LV_LENGTH = STRLEN( WA_LINES-TDLINE ).</FPCLINE>
+      <FPCLINE>*      CLEAR: LV_INDEX,LV_SAFE_LEN, LV_LINE.</FPCLINE>
+      <FPCLINE>*      DO  LV_LENGTH TIMES.</FPCLINE>
+      <FPCLINE>*        CLEAR: LV_LATRS.</FPCLINE>
+      <FPCLINE>*        LV_INDEX    = SY-INDEX - 1.</FPCLINE>
+      <FPCLINE>*        LV_SAFE_LEN = LV_LENGTH - LV_INDEX.</FPCLINE>
+      <FPCLINE>*        LV_LATRS = WA_LINES-TDLINE+LV_INDEX(LV_SAFE_LEN).</FPCLINE>
+      <FPCLINE>*        LV_LATRS1 = LV_LATRS.</FPCLINE>
+      <FPCLINE>*        TRANSLATE LV_LATRS TO UPPER CASE.</FPCLINE>
+      <FPCLINE>*        IF LV_LATRS CA &apos;ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890&apos; OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos; ! @ # $ % \^ &amp; * ( ) - _ = + {} [] | : ; &quot; &lt; &gt; , . ? / \  ~&apos;  OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos; &apos; OR LV_LATRS EQ &apos; &apos; OR LV_LATRS EQ SPACE OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos;&apos;&apos;&apos;&apos;&apos;.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>* IF LV_LATRS EQ &apos; &apos;.</FPCLINE>
+      <FPCLINE>*            CONCATENATE LV_LINE LV_LATRS1 INTO LV_LINE SEPARATED BY &apos; &apos;.</FPCLINE>
+      <FPCLINE>*          ELSE.</FPCLINE>
+      <FPCLINE>*            CONCATENATE LV_LINE LV_LATRS1 INTO LV_LINE.</FPCLINE>
+      <FPCLINE>*          ENDIF.</FPCLINE>
+      <FPCLINE>*        ENDIF.</FPCLINE>
+      <FPCLINE>*      ENDDO.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*IF LV_LINE IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>*        CLEAR: WA_LINES-TDLINE.</FPCLINE>
+      <FPCLINE>*        WA_LINES-TDLINE = LV_LINE.</FPCLINE>
+      <FPCLINE>*      ENDIF.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*          CONCATENATE GV_TPI WA_LINES-TDLINE INTO GV_TPI SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE>*        ENDIF.</FPCLINE>
+      <FPCLINE>*      ENDLOOP.</FPCLINE>
+      <FPCLINE>*    ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>lo_text_reader-&gt;read_text_string( EXPORTING id = &apos;Z999&apos; name = LV_NAME object = &apos;VBBK&apos; IMPORTING lv_lines = lv_lines1 ).</FPCLINE>
+      <FPCLINE> GV_TPI  = lv_lines1.</FPCLINE>
+      <FPCLINE> clear lv_lines1.</FPCLINE>
+      <FPCLINE>*&quot;Insurance</FPCLINE>
+      <FPCLINE>    CLEAR: IT_LINES,WA_LINES,LV_NAME,LV_LENGTH.</FPCLINE>
+      <FPCLINE>    LV_NAME = WA_FINAL-VBELN.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*    REFRESH IT_LINES.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*    CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>*      EXPORTING</FPCLINE>
+      <FPCLINE>*        CLIENT                  = SY-MANDT</FPCLINE>
+      <FPCLINE>*        ID                      = &apos;Z017&apos;</FPCLINE>
+      <FPCLINE>*        LANGUAGE                = SY-LANGU</FPCLINE>
+      <FPCLINE>*        NAME                    = LV_NAME</FPCLINE>
+      <FPCLINE>*        OBJECT                  = &apos;VBBK&apos;</FPCLINE>
+      <FPCLINE>*      TABLES</FPCLINE>
+      <FPCLINE>*        LINES                   = IT_LINES</FPCLINE>
+      <FPCLINE>*      EXCEPTIONS</FPCLINE>
+      <FPCLINE>*        ID                      = 1</FPCLINE>
+      <FPCLINE>*        LANGUAGE                = 2</FPCLINE>
+      <FPCLINE>*        NAME                    = 3</FPCLINE>
+      <FPCLINE>*        NOT_FOUND               = 4</FPCLINE>
+      <FPCLINE>*        OBJECT                  = 5</FPCLINE>
+      <FPCLINE>*        REFERENCE_CHECK         = 6</FPCLINE>
+      <FPCLINE>*        WRONG_ACCESS_TO_ARCHIVE = 7</FPCLINE>
+      <FPCLINE>*        OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>*    IF SY-SUBRC &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>** MESSAGE ID SY-MSGID TYPE SY-MSGTY NUMBER SY-MSGNO</FPCLINE>
+      <FPCLINE>**         WITH SY-MSGV1 SY-MSGV2 SY-MSGV3 SY-MSGV4.</FPCLINE>
+      <FPCLINE>*    ENDIF.</FPCLINE>
+      <FPCLINE>*    IF IT_LINES IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>*      LOOP AT IT_LINES INTO WA_LINES.</FPCLINE>
+      <FPCLINE>*        IF NOT WA_LINES-TDLINE IS INITIAL.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*          LV_LENGTH = STRLEN( WA_LINES-TDLINE ).</FPCLINE>
+      <FPCLINE>*      CLEAR: LV_INDEX,LV_SAFE_LEN, LV_LINE.</FPCLINE>
+      <FPCLINE>*      DO  LV_LENGTH TIMES.</FPCLINE>
+      <FPCLINE>*        CLEAR: LV_LATRS.</FPCLINE>
+      <FPCLINE>*        LV_INDEX    = SY-INDEX - 1.</FPCLINE>
+      <FPCLINE>*        LV_SAFE_LEN = LV_LENGTH - LV_INDEX.</FPCLINE>
+      <FPCLINE>*        LV_LATRS = WA_LINES-TDLINE+LV_INDEX(LV_SAFE_LEN).</FPCLINE>
+      <FPCLINE>*        LV_LATRS1 = LV_LATRS.</FPCLINE>
+      <FPCLINE>*        TRANSLATE LV_LATRS TO UPPER CASE.</FPCLINE>
+      <FPCLINE>*        IF LV_LATRS CA &apos;ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890&apos; OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos; ! @ # $ % \^ &amp; * ( ) - _ = + {} [] | : ; &quot; &lt; &gt; , . ? / \  ~&apos;  OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos; &apos; OR LV_LATRS EQ &apos; &apos; OR LV_LATRS EQ SPACE OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos;&apos;&apos;&apos;&apos;&apos;.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>* IF LV_LATRS EQ &apos; &apos;.</FPCLINE>
+      <FPCLINE>*            CONCATENATE LV_LINE LV_LATRS1 INTO LV_LINE SEPARATED BY &apos; &apos;.</FPCLINE>
+      <FPCLINE>*          ELSE.</FPCLINE>
+      <FPCLINE>*            CONCATENATE LV_LINE LV_LATRS1 INTO LV_LINE.</FPCLINE>
+      <FPCLINE>*          ENDIF.</FPCLINE>
+      <FPCLINE>*        ENDIF.</FPCLINE>
+      <FPCLINE>*      ENDDO.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*IF LV_LINE IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>*        CLEAR: WA_LINES-TDLINE.</FPCLINE>
+      <FPCLINE>*        WA_LINES-TDLINE = LV_LINE.</FPCLINE>
+      <FPCLINE>*      ENDIF.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*          CONCATENATE GV_INSURANCE WA_LINES-TDLINE INTO GV_INSURANCE SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE>*        ENDIF.</FPCLINE>
+      <FPCLINE>*      ENDLOOP.</FPCLINE>
+      <FPCLINE>*    ENDIF.</FPCLINE>
+      <FPCLINE>lo_text_reader-&gt;read_text_string( EXPORTING id = &apos;Z017&apos; name = LV_NAME object = &apos;VBBK&apos; IMPORTING lv_lines = lv_lines1 ).</FPCLINE>
+      <FPCLINE>   GV_INSURANCE  = lv_lines1.</FPCLINE>
+      <FPCLINE>clear lv_lines1.</FPCLINE>
+      <FPCLINE>*at END of vbeln.</FPCLINE>
+      <FPCLINE>    &quot;Mode of Despatch</FPCLINE>
+      <FPCLINE>    CLEAR: IT_LINES,WA_LINES,LV_NAME, LV_LENGTH.</FPCLINE>
+      <FPCLINE>    LV_NAME = WA_FINAL-VBELN.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*    REFRESH IT_LINES.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*    CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>*      EXPORTING</FPCLINE>
+      <FPCLINE>*        CLIENT                  = SY-MANDT</FPCLINE>
+      <FPCLINE>*        ID                      = &apos;Z018&apos;</FPCLINE>
+      <FPCLINE>*        LANGUAGE                = SY-LANGU</FPCLINE>
+      <FPCLINE>*        NAME                    = LV_NAME</FPCLINE>
+      <FPCLINE>*        OBJECT                  = &apos;VBBK&apos;</FPCLINE>
+      <FPCLINE>*      TABLES</FPCLINE>
+      <FPCLINE>*        LINES                   = IT_LINES</FPCLINE>
+      <FPCLINE>*      EXCEPTIONS</FPCLINE>
+      <FPCLINE>*        ID                      = 1</FPCLINE>
+      <FPCLINE>*        LANGUAGE                = 2</FPCLINE>
+      <FPCLINE>*        NAME                    = 3</FPCLINE>
+      <FPCLINE>*        NOT_FOUND               = 4</FPCLINE>
+      <FPCLINE>*        OBJECT                  = 5</FPCLINE>
+      <FPCLINE>*        REFERENCE_CHECK         = 6</FPCLINE>
+      <FPCLINE>*        WRONG_ACCESS_TO_ARCHIVE = 7</FPCLINE>
+      <FPCLINE>*        OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>*    IF SY-SUBRC &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>** MESSAGE ID SY-MSGID TYPE SY-MSGTY NUMBER SY-MSGNO</FPCLINE>
+      <FPCLINE>**         WITH SY-MSGV1 SY-MSGV2 SY-MSGV3 SY-MSGV4.</FPCLINE>
+      <FPCLINE>*    ENDIF.</FPCLINE>
+      <FPCLINE>*    IF IT_LINES IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>*      LOOP AT IT_LINES INTO WA_LINES.</FPCLINE>
+      <FPCLINE>*        IF NOT WA_LINES-TDLINE IS INITIAL.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*          LV_LENGTH = STRLEN( WA_LINES-TDLINE ).</FPCLINE>
+      <FPCLINE>*      CLEAR: LV_INDEX,LV_SAFE_LEN, LV_LINE.</FPCLINE>
+      <FPCLINE>*      DO  LV_LENGTH TIMES.</FPCLINE>
+      <FPCLINE>*        CLEAR: LV_LATRS.</FPCLINE>
+      <FPCLINE>*        LV_INDEX    = SY-INDEX - 1.</FPCLINE>
+      <FPCLINE>*        LV_SAFE_LEN = LV_LENGTH - LV_INDEX.</FPCLINE>
+      <FPCLINE>*        LV_LATRS = WA_LINES-TDLINE+LV_INDEX(LV_SAFE_LEN).</FPCLINE>
+      <FPCLINE>*        LV_LATRS1 = LV_LATRS.</FPCLINE>
+      <FPCLINE>*        TRANSLATE LV_LATRS TO UPPER CASE.</FPCLINE>
+      <FPCLINE>*        IF LV_LATRS CA &apos;ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890&apos; OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos; ! @ # $ % \^ &amp; * ( ) - _ = + {} [] | : ; &quot; &lt; &gt; , . ? / \  ~&apos;  OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos; &apos; OR LV_LATRS EQ &apos; &apos; OR LV_LATRS EQ SPACE OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos;&apos;&apos;&apos;&apos;&apos;.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>* IF LV_LATRS EQ &apos; &apos;.</FPCLINE>
+      <FPCLINE>*            CONCATENATE LV_LINE LV_LATRS1 INTO LV_LINE SEPARATED BY &apos; &apos;.</FPCLINE>
+      <FPCLINE>*          ELSE.</FPCLINE>
+      <FPCLINE>*            CONCATENATE LV_LINE LV_LATRS1 INTO LV_LINE.</FPCLINE>
+      <FPCLINE>*          ENDIF.</FPCLINE>
+      <FPCLINE>*        ENDIF.</FPCLINE>
+      <FPCLINE>*      ENDDO.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*IF LV_LINE IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>*        CLEAR: WA_LINES-TDLINE.</FPCLINE>
+      <FPCLINE>*        WA_LINES-TDLINE = LV_LINE.</FPCLINE>
+      <FPCLINE>*      ENDIF.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*          CONCATENATE GV_MODE_DESP WA_LINES-TDLINE INTO GV_MODE_DESP SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE>*        ENDIF.</FPCLINE>
+      <FPCLINE>*      ENDLOOP.</FPCLINE>
+      <FPCLINE>*    ENDIF.</FPCLINE>
+      <FPCLINE>*ENDAT.</FPCLINE>
+      <FPCLINE>lo_text_reader-&gt;read_text_string( EXPORTING id = &apos;Z018&apos; name = LV_NAME object = &apos;VBBK&apos; IMPORTING lv_lines = lv_lines1 ).</FPCLINE>
+      <FPCLINE>   GV_MODE_DESP  = lv_lines1.</FPCLINE>
+      <FPCLINE>clear lv_lines1.</FPCLINE>
+      <FPCLINE>    &quot;LD Applicable</FPCLINE>
+      <FPCLINE>    CLEAR: IT_LINES,WA_LINES,LV_NAME, LV_LENGTH.</FPCLINE>
+      <FPCLINE>    LV_NAME = WA_FINAL-VBELN.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    REFRESH IT_LINES.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*    CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>*      EXPORTING</FPCLINE>
+      <FPCLINE>*        CLIENT                  = SY-MANDT</FPCLINE>
+      <FPCLINE>*        ID                      = &apos;Z038&apos;</FPCLINE>
+      <FPCLINE>*        LANGUAGE                = SY-LANGU</FPCLINE>
+      <FPCLINE>*        NAME                    = LV_NAME</FPCLINE>
+      <FPCLINE>*        OBJECT                  = &apos;VBBK&apos;</FPCLINE>
+      <FPCLINE>*      TABLES</FPCLINE>
+      <FPCLINE>*        LINES                   = IT_LINES</FPCLINE>
+      <FPCLINE>*      EXCEPTIONS</FPCLINE>
+      <FPCLINE>*        ID                      = 1</FPCLINE>
+      <FPCLINE>*        LANGUAGE                = 2</FPCLINE>
+      <FPCLINE>*        NAME                    = 3</FPCLINE>
+      <FPCLINE>*        NOT_FOUND               = 4</FPCLINE>
+      <FPCLINE>*        OBJECT                  = 5</FPCLINE>
+      <FPCLINE>*        REFERENCE_CHECK         = 6</FPCLINE>
+      <FPCLINE>*        WRONG_ACCESS_TO_ARCHIVE = 7</FPCLINE>
+      <FPCLINE>*        OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>*    IF SY-SUBRC &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>** MESSAGE ID SY-MSGID TYPE SY-MSGTY NUMBER SY-MSGNO</FPCLINE>
+      <FPCLINE>**         WITH SY-MSGV1 SY-MSGV2 SY-MSGV3 SY-MSGV4.</FPCLINE>
+      <FPCLINE>*    ENDIF.</FPCLINE>
+      <FPCLINE>*    IF IT_LINES IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>*      LOOP AT IT_LINES INTO WA_LINES.</FPCLINE>
+      <FPCLINE>*        IF NOT WA_LINES-TDLINE IS INITIAL.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*          LV_LENGTH = STRLEN( WA_LINES-TDLINE ).</FPCLINE>
+      <FPCLINE>*      CLEAR: LV_INDEX,LV_SAFE_LEN, LV_LINE.</FPCLINE>
+      <FPCLINE>*      DO  LV_LENGTH TIMES.</FPCLINE>
+      <FPCLINE>*        CLEAR: LV_LATRS.</FPCLINE>
+      <FPCLINE>*        LV_INDEX    = SY-INDEX - 1.</FPCLINE>
+      <FPCLINE>*        LV_SAFE_LEN = LV_LENGTH - LV_INDEX.</FPCLINE>
+      <FPCLINE>*        LV_LATRS = WA_LINES-TDLINE+LV_INDEX(LV_SAFE_LEN).</FPCLINE>
+      <FPCLINE>*        LV_LATRS1 = LV_LATRS.</FPCLINE>
+      <FPCLINE>*        TRANSLATE LV_LATRS TO UPPER CASE.</FPCLINE>
+      <FPCLINE>*        IF LV_LATRS CA &apos;ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890&apos; OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos; ! @ # $ % \^ &amp; * ( ) - _ = + {} [] | : ; &quot; &lt; &gt; , . ? / \  ~&apos;  OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos; &apos; OR LV_LATRS EQ &apos; &apos; OR LV_LATRS EQ SPACE OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos;&apos;&apos;&apos;&apos;&apos;.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>* IF LV_LATRS EQ &apos; &apos;.</FPCLINE>
+      <FPCLINE>*            CONCATENATE LV_LINE LV_LATRS1 INTO LV_LINE SEPARATED BY &apos; &apos;.</FPCLINE>
+      <FPCLINE>*          ELSE.</FPCLINE>
+      <FPCLINE>*            CONCATENATE LV_LINE LV_LATRS1 INTO LV_LINE.</FPCLINE>
+      <FPCLINE>*          ENDIF.</FPCLINE>
+      <FPCLINE>*        ENDIF.</FPCLINE>
+      <FPCLINE>*      ENDDO.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*IF LV_LINE IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>*        CLEAR: WA_LINES-TDLINE.</FPCLINE>
+      <FPCLINE>*        WA_LINES-TDLINE = LV_LINE.</FPCLINE>
+      <FPCLINE>*      ENDIF.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*          CONCATENATE GV_LD_AP WA_LINES-TDLINE INTO GV_LD_AP SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE>*        ENDIF.</FPCLINE>
+      <FPCLINE>*      ENDLOOP.</FPCLINE>
+      <FPCLINE>*    ENDIF.</FPCLINE>
+      <FPCLINE>lo_text_reader-&gt;read_text_string( EXPORTING id = &apos;Z038&apos; name = LV_NAME object = &apos;VBBK&apos; IMPORTING lv_lines = lv_lines1 ).</FPCLINE>
+      <FPCLINE>  GV_LD_AP  = lv_lines1.</FPCLINE>
+      <FPCLINE>clear lv_lines1.</FPCLINE>
+      <FPCLINE>    &quot;Incoterms</FPCLINE>
+      <FPCLINE>    CLEAR: IT_LINES,WA_LINES,LV_NAME, LV_LENGTH.</FPCLINE>
+      <FPCLINE>    LV_NAME = WA_FINAL-VBELN.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    REFRESH IT_LINES.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*    CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>*      EXPORTING</FPCLINE>
+      <FPCLINE>*        CLIENT                  = SY-MANDT</FPCLINE>
+      <FPCLINE>*        ID                      = &apos;Z019&apos;</FPCLINE>
+      <FPCLINE>*        LANGUAGE                = SY-LANGU</FPCLINE>
+      <FPCLINE>*        NAME                    = LV_NAME</FPCLINE>
+      <FPCLINE>*        OBJECT                  = &apos;VBBK&apos;</FPCLINE>
+      <FPCLINE>*      TABLES</FPCLINE>
+      <FPCLINE>*        LINES                   = IT_LINES</FPCLINE>
+      <FPCLINE>*      EXCEPTIONS</FPCLINE>
+      <FPCLINE>*        ID                      = 1</FPCLINE>
+      <FPCLINE>*        LANGUAGE                = 2</FPCLINE>
+      <FPCLINE>*        NAME                    = 3</FPCLINE>
+      <FPCLINE>*        NOT_FOUND               = 4</FPCLINE>
+      <FPCLINE>*        OBJECT                  = 5</FPCLINE>
+      <FPCLINE>*        REFERENCE_CHECK         = 6</FPCLINE>
+      <FPCLINE>*        WRONG_ACCESS_TO_ARCHIVE = 7</FPCLINE>
+      <FPCLINE>*        OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>*    IF SY-SUBRC &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>** MESSAGE ID SY-MSGID TYPE SY-MSGTY NUMBER SY-MSGNO</FPCLINE>
+      <FPCLINE>**         WITH SY-MSGV1 SY-MSGV2 SY-MSGV3 SY-MSGV4.</FPCLINE>
+      <FPCLINE>*    ENDIF.</FPCLINE>
+      <FPCLINE>*    IF IT_LINES IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>*      LOOP AT IT_LINES INTO WA_LINES.</FPCLINE>
+      <FPCLINE>*        IF NOT WA_LINES-TDLINE IS INITIAL.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*          LV_LENGTH = STRLEN( WA_LINES-TDLINE ).</FPCLINE>
+      <FPCLINE>*      CLEAR: LV_INDEX,LV_SAFE_LEN, LV_LINE.</FPCLINE>
+      <FPCLINE>*      DO  LV_LENGTH TIMES.</FPCLINE>
+      <FPCLINE>*        CLEAR: LV_LATRS.</FPCLINE>
+      <FPCLINE>*        LV_INDEX    = SY-INDEX - 1.</FPCLINE>
+      <FPCLINE>*        LV_SAFE_LEN = LV_LENGTH - LV_INDEX.</FPCLINE>
+      <FPCLINE>*        LV_LATRS = WA_LINES-TDLINE+LV_INDEX(LV_SAFE_LEN).</FPCLINE>
+      <FPCLINE>*        LV_LATRS1 = LV_LATRS.</FPCLINE>
+      <FPCLINE>*        TRANSLATE LV_LATRS TO UPPER CASE.</FPCLINE>
+      <FPCLINE>*        IF LV_LATRS CA &apos;ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890&apos; OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos; ! @ # $ % \^ &amp; * ( ) - _ = + {} [] | : ; &quot; &lt; &gt; , . ? / \  ~&apos;  OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos; &apos; OR LV_LATRS EQ &apos; &apos; OR LV_LATRS EQ SPACE OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos;&apos;&apos;&apos;&apos;&apos;.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>* IF LV_LATRS EQ &apos; &apos;.</FPCLINE>
+      <FPCLINE>*            CONCATENATE LV_LINE LV_LATRS1 INTO LV_LINE SEPARATED BY &apos; &apos;.</FPCLINE>
+      <FPCLINE>*          ELSE.</FPCLINE>
+      <FPCLINE>*            CONCATENATE LV_LINE LV_LATRS1 INTO LV_LINE.</FPCLINE>
+      <FPCLINE>*          ENDIF.</FPCLINE>
+      <FPCLINE>*        ENDIF.</FPCLINE>
+      <FPCLINE>*      ENDDO.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*IF LV_LINE IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>*        CLEAR: WA_LINES-TDLINE.</FPCLINE>
+      <FPCLINE>*        WA_LINES-TDLINE = LV_LINE.</FPCLINE>
+      <FPCLINE>*      ENDIF.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*          CONCATENATE GV_INCO WA_LINES-TDLINE INTO GV_INCO SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE>*        ENDIF.</FPCLINE>
+      <FPCLINE>*      ENDLOOP.</FPCLINE>
+      <FPCLINE>*    ENDIF.</FPCLINE>
+      <FPCLINE>*BREAK dvbasis.</FPCLINE>
+      <FPCLINE>lo_text_reader-&gt;read_text_string( EXPORTING id = &apos;Z019&apos; name = LV_NAME object = &apos;VBBK&apos; IMPORTING lv_lines = lv_lines1 ).</FPCLINE>
+      <FPCLINE>  GV_INCO  = lv_lines1.</FPCLINE>
+      <FPCLINE>clear lv_lines1.</FPCLINE>
+      <FPCLINE>    &quot;Terms of Payment</FPCLINE>
+      <FPCLINE>    CLEAR: IT_LINES,WA_LINES,LV_NAME, LV_LENGTH.</FPCLINE>
+      <FPCLINE>    LV_NAME = WA_FINAL-VBELN.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    REFRESH IT_LINES.</FPCLINE>
+      <FPCLINE>*    CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>*      EXPORTING</FPCLINE>
+      <FPCLINE>*        CLIENT                  = SY-MANDT</FPCLINE>
+      <FPCLINE>*        ID                      = &apos;Z101&apos;</FPCLINE>
+      <FPCLINE>*        LANGUAGE                = SY-LANGU</FPCLINE>
+      <FPCLINE>*        NAME                    = LV_NAME</FPCLINE>
+      <FPCLINE>*        OBJECT                  = &apos;VBBK&apos;</FPCLINE>
+      <FPCLINE>*      TABLES</FPCLINE>
+      <FPCLINE>*        LINES                   = IT_LINES</FPCLINE>
+      <FPCLINE>*      EXCEPTIONS</FPCLINE>
+      <FPCLINE>*        ID                      = 1</FPCLINE>
+      <FPCLINE>*        LANGUAGE                = 2</FPCLINE>
+      <FPCLINE>*        NAME                    = 3</FPCLINE>
+      <FPCLINE>*        NOT_FOUND               = 4</FPCLINE>
+      <FPCLINE>*        OBJECT                  = 5</FPCLINE>
+      <FPCLINE>*        REFERENCE_CHECK         = 6</FPCLINE>
+      <FPCLINE>*        WRONG_ACCESS_TO_ARCHIVE = 7</FPCLINE>
+      <FPCLINE>*        OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*    IF SY-SUBRC &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>** MESSAGE ID SY-MSGID TYPE SY-MSGTY NUMBER SY-MSGNO</FPCLINE>
+      <FPCLINE>**         WITH SY-MSGV1 SY-MSGV2 SY-MSGV3 SY-MSGV4.</FPCLINE>
+      <FPCLINE>*    ENDIF.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*    IF IT_LINES IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>*      LOOP AT IT_LINES INTO WA_LINES.</FPCLINE>
+      <FPCLINE>*        IF NOT WA_LINES-TDLINE IS INITIAL.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*          LV_LENGTH = STRLEN( WA_LINES-TDLINE ).</FPCLINE>
+      <FPCLINE>*      CLEAR: LV_INDEX,LV_SAFE_LEN, LV_LINE.</FPCLINE>
+      <FPCLINE>*      DO  LV_LENGTH TIMES.</FPCLINE>
+      <FPCLINE>*        CLEAR: LV_LATRS.</FPCLINE>
+      <FPCLINE>*        LV_INDEX    = SY-INDEX - 1.</FPCLINE>
+      <FPCLINE>*        LV_SAFE_LEN = LV_LENGTH - LV_INDEX.</FPCLINE>
+      <FPCLINE>*        LV_LATRS = WA_LINES-TDLINE+LV_INDEX(LV_SAFE_LEN).</FPCLINE>
+      <FPCLINE>*        LV_LATRS1 = LV_LATRS.</FPCLINE>
+      <FPCLINE>*        TRANSLATE LV_LATRS TO UPPER CASE.</FPCLINE>
+      <FPCLINE>*        IF LV_LATRS CA &apos;ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890&apos; OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos; ! @ # $ % \^ &amp; * ( ) - _ = + {} [] | : ; &quot; &lt; &gt; , . ? / \  ~&apos;  OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos; &apos; OR LV_LATRS EQ &apos; &apos; OR LV_LATRS EQ SPACE OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos;&apos;&apos;&apos;&apos;&apos;.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>* IF LV_LATRS EQ &apos; &apos;.</FPCLINE>
+      <FPCLINE>*            CONCATENATE LV_LINE LV_LATRS1 INTO LV_LINE SEPARATED BY &apos; &apos;.</FPCLINE>
+      <FPCLINE>*          ELSE.</FPCLINE>
+      <FPCLINE>*            CONCATENATE LV_LINE LV_LATRS1 INTO LV_LINE.</FPCLINE>
+      <FPCLINE>*          ENDIF.</FPCLINE>
+      <FPCLINE>*        ENDIF.</FPCLINE>
+      <FPCLINE>*      ENDDO.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*IF LV_LINE IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>*        CLEAR: WA_LINES-TDLINE.</FPCLINE>
+      <FPCLINE>*        WA_LINES-TDLINE = LV_LINE.</FPCLINE>
+      <FPCLINE>*      ENDIF.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*          CONCATENATE GV_TERMS WA_LINES-TDLINE INTO GV_TERMS SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE>*        ENDIF.</FPCLINE>
+      <FPCLINE>*      ENDLOOP.</FPCLINE>
+      <FPCLINE>*    ENDIF.</FPCLINE>
+      <FPCLINE>lo_text_reader-&gt;read_text_string( EXPORTING id = &apos;Z101&apos; name = LV_NAME object = &apos;VBBK&apos; IMPORTING lv_lines = lv_lines1 ).</FPCLINE>
+      <FPCLINE>  GV_TERMS  = lv_lines1.</FPCLINE>
+      <FPCLINE>clear lv_lines1.</FPCLINE>
+      <FPCLINE>    &quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;</FPCLINE>
+      <FPCLINE>    BREAK DVBASIS.</FPCLINE>
+      <FPCLINE>*lv_textname = is_bil_invoice-hd_gen-bil_number.</FPCLINE>
+      <FPCLINE>    LV_TEXTNAME = WA_FINAL-VBELN.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*    CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>*      EXPORTING</FPCLINE>
+      <FPCLINE>*        ID        = &apos;ST&apos;         &quot;</FPCLINE>
+      <FPCLINE>*        LANGUAGE  = SY-LANGU</FPCLINE>
+      <FPCLINE>*        NAME      = LV_TEXTNAME</FPCLINE>
+      <FPCLINE>*        OBJECT    = &apos;TEXT&apos;</FPCLINE>
+      <FPCLINE>*      TABLES</FPCLINE>
+      <FPCLINE>*        LINES     = LT_LINES</FPCLINE>
+      <FPCLINE>*      EXCEPTIONS</FPCLINE>
+      <FPCLINE>*        NOT_FOUND = 1</FPCLINE>
+      <FPCLINE>*        OTHERS    = 2.</FPCLINE>
+      <FPCLINE>**IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>*    LOOP AT LT_LINES INTO LS_LINE.</FPCLINE>
+      <FPCLINE>*      IF LS_LINE-TDFORMAT = &apos;*&apos;.</FPCLINE>
+      <FPCLINE>*        LV_LENGTH = STRLEN( LS_LINE-TDLINE ).</FPCLINE>
+      <FPCLINE>*      CLEAR: LV_INDEX,LV_SAFE_LEN, LV_LINE.</FPCLINE>
+      <FPCLINE>*      DO  LV_LENGTH TIMES.</FPCLINE>
+      <FPCLINE>*        CLEAR: LV_LATRS.</FPCLINE>
+      <FPCLINE>*        LV_INDEX    = SY-INDEX - 1.</FPCLINE>
+      <FPCLINE>*        LV_SAFE_LEN = LV_LENGTH - LV_INDEX.</FPCLINE>
+      <FPCLINE>*        LV_LATRS = LS_LINE-TDLINE+LV_INDEX(LV_SAFE_LEN).</FPCLINE>
+      <FPCLINE>*        LV_LATRS1 = LV_LATRS.</FPCLINE>
+      <FPCLINE>*        TRANSLATE LV_LATRS TO UPPER CASE.</FPCLINE>
+      <FPCLINE>*        IF LV_LATRS CA &apos;ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890&apos; OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos; ! @ # $ % \^ &amp; * ( ) - _ = + {} [] | : ; &quot; &lt; &gt; , . ? / \  ~&apos;  OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos; &apos; OR LV_LATRS EQ &apos; &apos; OR LV_LATRS EQ SPACE OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos;&apos;&apos;&apos;&apos;&apos;.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>* IF LV_LATRS EQ &apos; &apos;.</FPCLINE>
+      <FPCLINE>*            CONCATENATE LV_LINE LV_LATRS1 INTO LV_LINE SEPARATED BY &apos; &apos;.</FPCLINE>
+      <FPCLINE>*          ELSE.</FPCLINE>
+      <FPCLINE>*            CONCATENATE LV_LINE LV_LATRS1 INTO LV_LINE.</FPCLINE>
+      <FPCLINE>*          ENDIF.</FPCLINE>
+      <FPCLINE>*        ENDIF.</FPCLINE>
+      <FPCLINE>*      ENDDO.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*IF LV_LINE IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>*        CLEAR: LS_LINE-TDLINE.</FPCLINE>
+      <FPCLINE>*        LS_LINE-TDLINE = LV_LINE.</FPCLINE>
+      <FPCLINE>*      ENDIF.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*        CONCATENATE LV_TEXT LS_LINE-TDLINE INTO LV_TEXT SEPARATED BY CL_ABAP_CHAR_UTILITIES=&gt;NEWLINE.</FPCLINE>
+      <FPCLINE>*      ELSE.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*        LV_LENGTH = STRLEN( WA_LINES-TDLINE ).</FPCLINE>
+      <FPCLINE>*      CLEAR: LV_INDEX,LV_SAFE_LEN, LV_LINE.</FPCLINE>
+      <FPCLINE>*      DO  LV_LENGTH TIMES.</FPCLINE>
+      <FPCLINE>*        CLEAR: LV_LATRS.</FPCLINE>
+      <FPCLINE>*        LV_INDEX    = SY-INDEX - 1.</FPCLINE>
+      <FPCLINE>*        LV_SAFE_LEN = LV_LENGTH - LV_INDEX.</FPCLINE>
+      <FPCLINE>*        LV_LATRS = WA_LINES-TDLINE+LV_INDEX(LV_SAFE_LEN).</FPCLINE>
+      <FPCLINE>*        LV_LATRS1 = LV_LATRS.</FPCLINE>
+      <FPCLINE>*        TRANSLATE LV_LATRS TO UPPER CASE.</FPCLINE>
+      <FPCLINE>*        IF LV_LATRS CA &apos;ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890&apos; OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos; ! @ # $ % \^ &amp; * ( ) - _ = + {} [] | : ; &quot; &lt; &gt; , . ? / \  ~&apos;  OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos; &apos; OR LV_LATRS EQ &apos; &apos; OR LV_LATRS EQ SPACE OR</FPCLINE>
+      <FPCLINE>*           LV_LATRS CA &apos;&apos;&apos;&apos;&apos;&apos;.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>* IF LV_LATRS EQ &apos; &apos;.</FPCLINE>
+      <FPCLINE>*            CONCATENATE LV_LINE LV_LATRS1 INTO LV_LINE SEPARATED BY &apos; &apos;.</FPCLINE>
+      <FPCLINE>*          ELSE.</FPCLINE>
+      <FPCLINE>*            CONCATENATE LV_LINE LV_LATRS1 INTO LV_LINE.</FPCLINE>
+      <FPCLINE>*          ENDIF.</FPCLINE>
+      <FPCLINE>*        ENDIF.</FPCLINE>
+      <FPCLINE>*      ENDDO.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*IF LV_LINE IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>*        CLEAR: LS_LINE-TDLINE.</FPCLINE>
+      <FPCLINE>*        LS_LINE-TDLINE = LV_LINE.</FPCLINE>
+      <FPCLINE>*      ENDIF.</FPCLINE>
+      <FPCLINE>*        CONCATENATE LV_TEXT LS_LINE-TDLINE INTO LV_TEXT SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE>*      ENDIF.</FPCLINE>
+      <FPCLINE>*    ENDLOOP.</FPCLINE>
+      <FPCLINE>*    LV_REC = LV_TEXT.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*  REPLACE ALL OCCURRENCES OF &apos;&lt;(&gt;&apos;IN LV_REC WITH &apos;&apos;.</FPCLINE>
+      <FPCLINE>*  REPLACE ALL OCCURRENCES OF &apos;&lt;)&gt;&apos;IN LV_REC WITH &apos;&apos;.</FPCLINE>
+      <FPCLINE>&quot;ENDLOOP.</FPCLINE>
+      <FPCLINE>lo_text_reader-&gt;read_text_string( EXPORTING id = &apos;Z020&apos; name = LV_TEXTNAME object = &apos;VBBK&apos; IMPORTING lv_lines = lv_lines1 ).</FPCLINE>
+      <FPCLINE>   LV_REC  = lv_lines1.</FPCLINE>
+      <FPCLINE>   clear lv_lines1.</FPCLINE>
+      <FPCLINE>endat.</FPCLINE>
+      <FPCLINE>ENDLOOP.</FPCLINE>
+      <FPCLINE>clear lv_lines1.</FPCLINE>
+      <FPCLINE>BREAK DVBASIS.</FPCLINE>
+      <FPCLINE>LOOP AT LT_LINES INTO LS_LINES.</FPCLINE>
+      <FPCLINE>  CLEAR LV_FLAG.</FPCLINE>
+      <FPCLINE>ENDLOOP.</FPCLINE>
+      <FPCLINE>BREAK DVBASIS.</FPCLINE>
+      <FPCLINE>IT_FINAL2[] = IT_FINAL[].</FPCLINE>
+      <FPCLINE>LOOP AT IT_FINAL2 INTO WA_FINAL2 .</FPCLINE>
+      <FPCLINE>  LV_BASE_AMT = LV_BASE_AMT + WA_FINAL2-NETWR.</FPCLINE>
+      <FPCLINE>  LV_CGST_TOT = WA_FINAL2-JOCG_AMT   .</FPCLINE>
+      <FPCLINE>  LV_SGST_TOT = WA_FINAL2-JOSG_AMT   .</FPCLINE>
+      <FPCLINE>  LV_IGST_TOT =  WA_FINAL2-TOTAL1     .</FPCLINE>
+      <FPCLINE>  LV_TOTAL_QTY = LV_TOTAL_QTY + WA_FINAL2-TOT_QTY    .</FPCLINE>
+      <FPCLINE>  LV_PF = WA_FINAL2-KWERT      .</FPCLINE>
+      <FPCLINE>  LV_ZIN1 = WA_FINAL2-KBETR1     .</FPCLINE>
+      <FPCLINE>  LV_ZIN1 = WA_FINAL2-KBETR2     .</FPCLINE>
+      <FPCLINE>  LV_ZTE1 = WA_FINAL2-KBETR3     .</FPCLINE>
+      <FPCLINE>  LV_ZTCS =  WA_FINAL2-KBETR4     .</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  LV_PF_AMT   = LV_PF_AMT   + WA_FINAL2-PF_AMT.</FPCLINE>
+      <FPCLINE>  LV_CGST_VAL = LV_CGST_VAL + WA_FINAL2-CGST_AMT.</FPCLINE>
+      <FPCLINE>  LV_SGST_VAL = LV_SGST_VAL + WA_FINAL2-SGST_AMT.</FPCLINE>
+      <FPCLINE>  LV_IGST_VAL = LV_IGST_VAL + WA_FINAL2-IGST_AMT.</FPCLINE>
+      <FPCLINE>  LV_INS_VAL  = LV_INS_VAL  + WA_FINAL2-INS_AMT.</FPCLINE>
+      <FPCLINE>  LV_FRG_VAL  = LV_FRG_VAL  + WA_FINAL2-FRG_AMT.</FPCLINE>
+      <FPCLINE>break dvbasis.</FPCLINE>
+      <FPCLINE>*  LV_TOTAL_AMT = LV_BASE_AMT + LV_PF_AMT + LV_ZIN1 + LV_ZFR1</FPCLINE>
+      <FPCLINE>*                + LV_ZTCS + WA_FINAL2-KBETR.</FPCLINE>
+      <FPCLINE>LV_TOTAL_AMT = LV_BASE_AMT + LV_PF_AMT + LV_INS_VAL + LV_FRG_VAL + WA_FINAL2-KBETR  .</FPCLINE>
+      <FPCLINE>  CASE WA_FINAL2-AUART.</FPCLINE>
+      <FPCLINE>    WHEN &apos;ZEXP&apos; OR &apos;ZDEX&apos;.</FPCLINE>
+      <FPCLINE>      WA_FINAL2-GRAND = LV_TOTAL_AMT .</FPCLINE>
+      <FPCLINE>    WHEN OTHERS.</FPCLINE>
+      <FPCLINE>*    WA_FINAL-GRAND = LV_TOTAL_AMT + LV_CGST_TOT</FPCLINE>
+      <FPCLINE>*                + LV_SGST_TOT + LV_IGST_TOT.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>      WA_FINAL2-GRAND = LV_TOTAL_AMT + LV_CGST_VAL</FPCLINE>
+      <FPCLINE>                     + LV_SGST_VAL + LV_IGST_VAL.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  ENDCASE.</FPCLINE>
+      <FPCLINE>  SELECT SINGLE * FROM VBAP INTO WA_VBAP</FPCLINE>
+      <FPCLINE>    WHERE VBELN = WA_FINAL2-VBELN AND POSNR = WA_FINAL2-POSNR.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  WA_FINAL2-OFM_DATE = WA_VBAP-OFM_DATE.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  MODIFY IT_FINAL2 FROM WA_FINAL2 TRANSPORTING OFM_DATE . &quot;DPVAL CCVAL.</FPCLINE>
+      <FPCLINE>  IF SY-TABIX &gt;= 5.</FPCLINE>
+      <FPCLINE>    APPEND WA_FINAL2 TO IT_FINAL3.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>break dvbasis.</FPCLINE>
+      <FPCLINE>*  CLEAR wa_final2.</FPCLINE>
+      <FPCLINE>  LV_BASE = LV_BASE_AMT.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CALL FUNCTION &apos;HR_IN_CHG_INR_WRDS&apos;</FPCLINE>
+      <FPCLINE>    EXPORTING</FPCLINE>
+      <FPCLINE>      AMT_IN_NUM         = LV_BASE</FPCLINE>
+      <FPCLINE>    IMPORTING</FPCLINE>
+      <FPCLINE>      AMT_IN_WORDS       = LV_VAMT</FPCLINE>
+      <FPCLINE>    EXCEPTIONS</FPCLINE>
+      <FPCLINE>      DATA_TYPE_MISMATCH = 1</FPCLINE>
+      <FPCLINE>      OTHERS             = 2.</FPCLINE>
+      <FPCLINE>  IF SY-SUBRC &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>* Implement suitable error handling here</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF WA_FINAL-WAERK = &apos;USD&apos;.</FPCLINE>
+      <FPCLINE>    REPLACE &apos;Rupees&apos; IN LV_VAMT WITH &apos;DOLLAR&apos;.</FPCLINE>
+      <FPCLINE>    REPLACE &apos;Paise&apos;  IN LV_VAMT WITH &apos;CENTS ONLY&apos;.</FPCLINE>
+      <FPCLINE>  ELSEIF WA_FINAL-WAERK = &apos;EUR&apos;.</FPCLINE>
+      <FPCLINE>    REPLACE &apos;Rupees&apos; IN LV_VAMT WITH &apos;EURO&apos;.</FPCLINE>
+      <FPCLINE>    REPLACE &apos;Paise&apos;  IN LV_VAMT WITH &apos;CENTS ONLY&apos;.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>*CALL FUNCTION &apos;ISP_CONVERT_FIRSTCHARS_TOUPPER&apos;</FPCLINE>
+      <FPCLINE>*  EXPORTING</FPCLINE>
+      <FPCLINE>*    input_string        = lv_vamt</FPCLINE>
+      <FPCLINE>**   SEPARATORS          = &apos; -.,;:&apos;</FPCLINE>
+      <FPCLINE>* IMPORTING</FPCLINE>
+      <FPCLINE>*   OUTPUT_STRING       = lv_vamt</FPCLINE>
+      <FPCLINE>  .</FPCLINE>
+      <FPCLINE>*BREAK dvbasis.</FPCLINE>
+      <FPCLINE>  CALL FUNCTION &apos;FI_CONVERT_FIRSTCHARS_TOUPPER&apos;</FPCLINE>
+      <FPCLINE>    EXPORTING</FPCLINE>
+      <FPCLINE>      INPUT_STRING  = LV_VAMT</FPCLINE>
+      <FPCLINE>*     SEPARATORS    = &apos; -.,;:&apos;</FPCLINE>
+      <FPCLINE>    IMPORTING</FPCLINE>
+      <FPCLINE>      OUTPUT_STRING = LV_VAMT.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDLOOP.</FPCLINE>
+      <FPCLINE>BREAK DVBASIS.</FPCLINE>
+     </INITIALIZATION>
+     <FORMS/>
+    </CL_FP_CODING>
+   </cls:CL_FP_CODING>
+  </asx:heap>
+ </asx:abap>
+</abapGit>

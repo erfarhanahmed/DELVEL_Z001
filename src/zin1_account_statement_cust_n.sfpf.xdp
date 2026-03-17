@@ -1,0 +1,970 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xfa generator="AdobeLiveCycleDesigner_V11.0.9.20211220.1.16_SAP" APIVersion="3.6.21350.0"?><xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2025-07-29T05:02:26Z" uuid="231a51f9-67bb-47c6-aa60-4652036964d0">
+<template xmlns:xliff="urn:oasis:names:tc:xliff:document:1.1" xmlns="http://www.xfa.org/schema/xfa-template/3.3/">
+   <?formServer defaultPDFRenderFormat acrobat10.0dynamic?>
+   <subform layout="tb" locale="en_IN" name="data" restoreState="auto">
+      <pageSet>
+         <pageArea id="Page1" name="Page1">
+            <contentArea h="284.3mm" w="197.3mm" x="0.25in" y="0.25in"/>
+            <medium long="297mm" short="210mm" stock="a4"/>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <subform h="284.3mm" w="197.3mm">
+         <draw h="25.4mm" name="Image1" w="25.4mm" x="170.815mm">
+            <value>
+               <image contentType="image/png">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</image>
+            </value>
+            <ui>
+               <imageEdit/>
+            </ui>
+            <desc>
+               <text name="embeddedHref">C:\Users\CAZ-MUM-VARSHA\Desktop\delval logo.png</text>
+            </desc>
+         </draw>
+         <draw h="30.633mm" name="Text1" w="168.275mm" x="1.27mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <exData contentType="text/html" xliff:rid="B0B32C73-C8B8-4328-BDB1-17C5AA95B281">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="font-family:'Times New Roman';font-size:18pt;font-weight:bold;letter-spacing:0in">DelVal Flow Controls Private Limited</p><p style="font-family:'Times New Roman';font-size:18pt;font-weight:bold;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="font-family:'Times New Roman';font-size:11pt;letter-spacing:0in">Gat No. 25,At - Kavathe, Post - Javale, Tal. Khandala, Dist. Satara, Pin - 412801, INDIA.</p><p style="font-family:'Times New Roman';font-size:11pt;letter-spacing:0in">Phone : +91 9763661000,9763720100</p><p style="font-family:'Times New Roman';font-size:11pt;letter-spacing:0in">Website : www.delvalflow.com</p><p style="font-size:12pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p></body>
+               </exData>
+            </value>
+            <font baselineShift="0pt" typeface="Courier New"/>
+            <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+            <para hAlign="center" lineHeight="12pt" marginLeft="0pt" marginRight="28.35pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+         </draw>
+         <field access="readOnly" h="9mm" id="floatingField000041" name="GJAHR" presence="hidden" w="62mm" x="0mm" y="0mm">
+            <ui>
+               <textEdit>
+                  <border>
+                     <edge stroke="lowered"/>
+                  </border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Arial"/>
+            <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+            <para vAlign="middle"/>
+            <value>
+               <text maxChars="4"/>
+            </value>
+            <bind match="dataRef" ref="$.WA_CUSTBAL.GJAHR"/>
+            <caption>
+               <value>
+                  <text xliff:rid="8AF4E934-B94F-41BA-A021-A2CFC64DD376">Year</text>
+               </value>
+            </caption>
+            <desc>
+               <text name="Schema Annotation">Fiscal Year</text>
+            </desc>
+         </field>
+         <field access="readOnly" h="9mm" id="floatingField000491" name="KUNNR" presence="hidden" w="62mm" x="0mm" y="0mm">
+            <ui>
+               <textEdit>
+                  <border>
+                     <edge stroke="lowered"/>
+                  </border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Arial"/>
+            <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+            <para vAlign="middle"/>
+            <value>
+               <text maxChars="10"/>
+            </value>
+            <bind match="dataRef" ref="$.WA_CUSTBAL.KUNNR"/>
+            <caption>
+               <value>
+                  <text xliff:rid="607A52AB-A333-4DBE-9E1D-2CDFF9640DA5">Customer</text>
+               </value>
+            </caption>
+            <desc>
+               <text name="Schema Annotation">Customer Number</text>
+            </desc>
+         </field>
+         <draw h="8.391mm" name="Text2" w="63.5mm" x="1.27mm" y="28.575mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <exData contentType="text/html" xliff:rid="628F8467-E94A-49A5-93B9-AEA3AD83CEDA">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-decoration:none;letter-spacing:0in">Ref:Delval-<span xfa:embed="#floatingField000041" xfa:embedMode="raw" xfa:embedType="uri"/>/<span xfa:embed="#floatingField000491" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+               </exData>
+            </value>
+            <font baselineShift="0pt" typeface="Times New Roman"/>
+            <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+            <para lineHeight="12.95pt" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="8pt" textIndent="0pt"/>
+         </draw>
+         <field access="readOnly" h="9mm" id="floatingField018467" name="CLDATE" presence="hidden" w="62mm" x="0mm" y="0mm">
+            <ui>
+               <dateTimeEdit>
+                  <border>
+                     <edge stroke="lowered"/>
+                  </border>
+                  <margin/>
+               </dateTimeEdit>
+            </ui>
+            <font typeface="Arial"/>
+            <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+            <para vAlign="middle"/>
+            <value>
+               <date/>
+            </value>
+            <caption>
+               <value>
+                  <text xliff:rid="AB6E2AD7-ED60-4AAE-B145-680B79AF4698">CLDATE</text>
+               </value>
+            </caption>
+            <desc>
+               <text name="Schema Annotation">DATE</text>
+            </desc>
+            <validate nullTest="error"/>
+            <bind match="dataRef" ref="$.WA_CUSTBAL.CLDATE">
+               <picture>date{YYYY-MM-DD}</picture>
+            </bind>
+            <format>
+               <picture>date{DD.MM.YYYY}</picture>
+            </format>
+         </field>
+         <draw h="8.391mm" name="Text3" w="57.15mm" x="106.68mm" y="28.575mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <exData contentType="text/html" xliff:rid="F347368C-A012-4704-8B33-FDE1E65000DA">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-decoration:none;letter-spacing:0in">Date:<span xfa:embed="#floatingField018467" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+               </exData>
+            </value>
+            <font baselineShift="0pt" typeface="Times New Roman"/>
+            <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+            <para lineHeight="12.95pt" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="8pt" textIndent="0pt"/>
+         </draw>
+         <subform h="53.97mm" name="Subform1" w="100.01mm" x="1.143mm" y="38.1mm">
+            <bind match="none"/>
+            <draw h="5.2331mm" name="Text4" w="29.2864mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text xliff:rid="871D5D49-2C8E-493E-A220-C2E02A1EFB1E">To</text>
+               </value>
+               <font baselineShift="0pt" size="9pt" typeface="Times New Roman"/>
+               <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+               <para marginLeft="1.44pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+               <?renderCache.bounds 80183 12000 0 0 1417 1417 0 0?>
+               <?renderCache.textRun 2 To 0 2857 8475 0 0 0 "Times New Roman" 0 0 9000 ISO-8859-1?></draw>
+            <field access="readOnly" h="9mm" id="floatingField006334" name="LV_ADDR1" presence="hidden" w="62mm" x="0mm" y="0mm">
+               <ui>
+                  <textEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.LV_ADDR1"/>
+               <caption>
+                  <value>
+                     <text xliff:rid="98FABDA4-5689-4E54-B0E1-EE53D9A17F03">LV_ADDR1</text>
+                  </value>
+               </caption>
+            </field>
+            <draw h="25.694mm" name="Text5" w="95.25mm" y="6.35mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <exData contentType="text/html" xliff:rid="F1396D71-9559-4C8E-9AA4-5130F7DE36C8">
+                     <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in"><span xfa:embed="#floatingField006334" xfa:embedMode="raw" xfa:embedType="uri"/></p><p style="letter-spacing:0in"><span xfa:embed="#floatingField026500" xfa:embedMode="raw" xfa:embedType="uri"/></p><p style="letter-spacing:0in"><span xfa:embed="#floatingField019169" xfa:embedMode="raw" xfa:embedType="uri"/></p><p style="letter-spacing:0in"><span xfa:embed="#floatingField015724" xfa:embedMode="raw" xfa:embedType="uri"/></p><p style="letter-spacing:0in"><span xfa:embed="#floatingField011478" xfa:embedMode="raw" xfa:embedType="uri"/></p><p style="letter-spacing:0in">Contact No:<span style="xfa-spacerun:yes">  </span><span xfa:embed="#floatingField029358" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                  </exData>
+               </value>
+               <font baselineShift="0pt" size="9pt" typeface="Times New Roman"/>
+               <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+               <para marginLeft="2.16pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+            </draw>
+            <field access="readOnly" h="9mm" id="floatingField026500" name="LV_ADDR2" presence="hidden" w="62mm" x="3.175mm" y="15.875mm">
+               <ui>
+                  <textEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.LV_ADDR2"/>
+               <caption>
+                  <value>
+                     <text xliff:rid="02B5C726-E7E5-4E71-AB1D-EC7466B378BA">LV_ADDR2</text>
+                  </value>
+               </caption>
+            </field>
+            <field access="readOnly" h="9mm" id="floatingField019169" name="LV_ADDR3" presence="hidden" w="62mm" x="3.175mm" y="25.4mm">
+               <ui>
+                  <textEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.LV_ADDR3"/>
+               <caption>
+                  <value>
+                     <text xliff:rid="4B5E1F45-485C-4584-9472-2538F04F4254">LV_ADDR3</text>
+                  </value>
+               </caption>
+            </field>
+            <field access="readOnly" h="9mm" id="floatingField015724" name="LV_ADDR4" presence="hidden" w="62mm" x="3.175mm" y="31.75mm">
+               <ui>
+                  <textEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.LV_ADDR4"/>
+               <caption>
+                  <value>
+                     <text xliff:rid="763755B5-5689-4E16-980F-8DB4FA253D7B">LV_ADDR4</text>
+                  </value>
+               </caption>
+            </field>
+            <field access="readOnly" h="9mm" id="floatingField011478" name="LV_ADDR5" presence="hidden" w="62mm" x="3.175mm" y="38.1mm">
+               <ui>
+                  <textEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.LV_ADDR5"/>
+               <caption>
+                  <value>
+                     <text xliff:rid="85970609-8F0B-4DCB-BC0B-27CD576C1899">LV_ADDR5</text>
+                  </value>
+               </caption>
+            </field>
+            <field access="readOnly" h="9mm" id="floatingField029358" name="TELF1" presence="hidden" w="62mm" x="3.175mm" y="44.45mm">
+               <ui>
+                  <textEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <value>
+                  <text maxChars="16"/>
+               </value>
+               <bind match="dataRef" ref="$.WA_CUSTBAL.TELF1"/>
+               <caption>
+                  <value>
+                     <text xliff:rid="B68AE198-49A4-499C-A77D-DE575B6FD702">Telephone 1</text>
+                  </value>
+               </caption>
+               <desc>
+                  <text name="Schema Annotation">First telephone number</text>
+               </desc>
+            </field>
+            <?templateDesigner expand 1?></subform>
+         <subform h="161.925mm" name="Subform2" w="193.675mm" x="1.143mm" y="88.9mm">
+            <bind match="none"/>
+            <?templateDesigner expand 1?></subform>
+         <draw h="0.75in" name="Text7" w="195.707mm" x="1.143mm" y="263.525mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <exData contentType="text/html" xliff:rid="4E7F12A6-09A2-4A95-9DCB-D37267B816EB">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-align:left;letter-spacing:0in">______________________________________________________________________________________________________</p><p style="font-family:'Times New Roman';letter-spacing:0in">Regd. office: B Cube Building, Bavdhan, Opp. Bavdhan Police Station, Pune - 411021.</p><p style="font-family:'Times New Roman';letter-spacing:0in">CIN U29299PN2005PTC021445</p></body>
+               </exData>
+            </value>
+            <font baselineShift="0pt" size="9pt" typeface="Courier New"/>
+            <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+            <para hAlign="center" lineHeight="12pt" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+         </draw>
+         <draw h="171.45mm" name="Text6" w="7.625in" x="1.143mm" y="76.2mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <exData contentType="text/html" xliff:rid="BF79BE64-FB90-4D67-A5FB-B5D2C1745561">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="font-size:10pt;letter-spacing:0in">Subject :- Balance Confirmation as on<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField026962" xfa:embedMode="raw" xfa:embedType="uri"/></p><p style="margin-right:56.7pt;margin-bottom:0pt;line-height:12pt;font-size:10pt;font-weight:normal;text-decoration:none;letter-spacing:0in">Dear Sir,</p><p style="margin-right:56.7pt;margin-bottom:0pt;line-height:12pt;font-weight:normal;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:56.7pt;margin-bottom:0pt;line-height:12pt;font-size:10pt;font-weight:normal;text-decoration:none;letter-spacing:0in">Your balance as on<span style="font-size:11pt"><span style="xfa-spacerun:yes"> </span></span><span xfa:embed="#floatingField009961" xfa:embedMode="raw" xfa:embedType="uri"/><span style="font-size:11pt"><span style="xfa-spacerun:yes"> </span></span><span style="font-size:9pt">as per our Statement of Accounts is<span style="xfa-spacerun:yes"> </span></span><span style="font-size:11pt;font-weight:bold;text-decoration:underline"><span xfa:embed="#floatingField024464" xfa:embedMode="raw" xfa:embedType="uri"/></span><span style="font-size:11pt;font-weight:bold;text-decoration:underline"><span style="xfa-spacerun:yes"> </span></span><span style="font-size:11pt;font-weight:bold;text-decoration:underline"><span xfa:embed="#floatingField005705" xfa:embedMode="raw" xfa:embedType="uri"/></span><span style="font-size:11pt;font-weight:bold;text-decoration:underline"><span style="xfa-spacerun:yes"> </span></span><span style="font-size:11pt;font-weight:bold;text-decoration:underline"><span xfa:embed="#floatingField028145" xfa:embedMode="raw" xfa:embedType="uri"/></span></p><p style="margin-right:56.7pt;margin-bottom:0pt;line-height:12pt;font-weight:normal;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:56.7pt;margin-bottom:0pt;line-height:12pt;font-size:12pt;font-weight:normal;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:56.7pt;margin-bottom:0pt;line-height:12pt;font-size:10pt;font-weight:normal;text-decoration:none;letter-spacing:0in">We wish you to confirm the same by signing the statement given below. Please attatch your Statement of Accounts in case balance is not matching.</p><p style="margin-right:56.7pt;margin-bottom:0pt;line-height:12pt;font-size:10pt;font-weight:normal;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:56.7pt;margin-bottom:0pt;line-height:12pt;font-size:10pt;font-weight:normal;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:56.7pt;margin-bottom:0pt;line-height:12pt;font-size:10pt;font-weight:normal;text-decoration:none;letter-spacing:0in">Please note that if no reply is received within a fortnight, the balance will then be assumed to have been accepted by you as shown above.</p><p style="margin-right:56.7pt;margin-bottom:0pt;line-height:12pt;font-size:10pt;font-weight:normal;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:56.7pt;margin-bottom:0pt;line-height:12pt;font-size:10pt;font-weight:normal;text-decoration:none;letter-spacing:0in">Your reply within the given period will be highly appreciated.</p><p style="margin-right:56.7pt;margin-bottom:0pt;line-height:12pt;font-size:10pt;font-weight:normal;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:56.7pt;margin-bottom:0pt;line-height:12pt;font-size:10pt;font-weight:normal;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:56.7pt;margin-bottom:0pt;line-height:12pt;font-size:10pt;font-weight:normal;text-decoration:none;letter-spacing:0in">Thanking You</p><p style="margin-right:56.7pt;margin-bottom:0pt;line-height:12pt;font-size:12pt;font-weight:normal;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:56.7pt;margin-bottom:0pt;line-height:12pt;font-size:12pt;font-weight:normal;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:56.7pt;margin-bottom:0pt;line-height:12pt;font-size:10pt;font-weight:normal;text-decoration:none;letter-spacing:0in">For<span style="font-size:12pt"><span style="xfa-spacerun:yes"> </span></span><span style="font-size:12pt;font-weight:bold">DELVAL FLOW CONTROLS PVT. LTD.</span></p><p style="margin-right:56.7pt;margin-bottom:0pt;line-height:12pt;font-size:12pt;font-weight:normal;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:56.7pt;margin-bottom:0pt;line-height:12pt;font-size:12pt;font-weight:normal;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:56.7pt;margin-bottom:0pt;line-height:12pt;font-size:12pt;font-weight:normal;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:56.7pt;margin-bottom:0pt;line-height:12pt;font-size:10pt;font-weight:normal;text-decoration:none;letter-spacing:0in">This is system generated Balance Confirmation and hence does not require a Signature.</p><p style="margin-right:56.7pt;margin-bottom:0pt;line-height:12pt;font-weight:normal;text-decoration:none;letter-spacing:0in">________________________________________________________________________________________</p><p style="margin-right:56.7pt;margin-bottom:0pt;line-height:12pt;font-weight:normal;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:56.7pt;margin-bottom:0pt;line-height:12pt;font-weight:normal;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span><span style="font-size:10pt">For Customer use only</span></p><p style="margin-right:56.7pt;margin-bottom:0pt;line-height:12pt;font-size:10pt;font-weight:normal;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:56.7pt;margin-bottom:0pt;line-height:12pt;font-size:10pt;font-weight:normal;text-decoration:none;letter-spacing:0in">We confirm the balance as on<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField023281" xfa:embedMode="raw" xfa:embedType="uri"/> as per our books of accounts is<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField016827" xfa:embedMode="raw" xfa:embedType="uri"/>________________________</p><p style="margin-right:56.7pt;margin-bottom:0pt;line-height:12pt;font-size:10pt;font-weight:normal;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:56.7pt;margin-bottom:0pt;line-height:12pt;font-size:10pt;font-weight:normal;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:56.7pt;margin-bottom:0pt;line-height:12pt;font-size:10pt;font-weight:normal;text-decoration:none;letter-spacing:0in">Stamp &amp; Sign</p><p style="margin-right:56.7pt;margin-bottom:0pt;line-height:12pt;font-size:12pt;font-weight:normal;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p></body>
+               </exData>
+            </value>
+            <font baselineShift="0pt" size="11pt" typeface="Times New Roman" underline="1" weight="bold"/>
+            <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+            <para hAlign="justify" lineHeight="12.95pt" marginLeft="3.6pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="8pt" textIndent="0pt"/>
+         </draw>
+         <field access="readOnly" h="9mm" id="floatingField026962" name="CLDATE" presence="hidden" w="62mm" x="0mm" y="0mm">
+            <ui>
+               <dateTimeEdit>
+                  <border>
+                     <edge stroke="lowered"/>
+                  </border>
+                  <margin/>
+               </dateTimeEdit>
+            </ui>
+            <font typeface="Arial"/>
+            <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+            <para vAlign="middle"/>
+            <value>
+               <date/>
+            </value>
+            <caption>
+               <value>
+                  <text xliff:rid="769E53C4-2A05-43F6-96DE-2CA52FC46133">CLDATE</text>
+               </value>
+            </caption>
+            <desc>
+               <text name="Schema Annotation">DATE</text>
+            </desc>
+            <validate nullTest="error"/>
+            <bind match="dataRef" ref="$.WA_CUSTBAL.CLDATE">
+               <picture>date{YYYY-MM-DD}</picture>
+            </bind>
+            <format>
+               <picture>date{DD.MM.YYYY}</picture>
+            </format>
+         </field>
+         <field access="readOnly" h="9mm" id="floatingField009961" name="CLDATE" presence="hidden" w="62mm" x="0mm" y="0mm">
+            <ui>
+               <dateTimeEdit>
+                  <border>
+                     <edge stroke="lowered"/>
+                  </border>
+                  <margin/>
+               </dateTimeEdit>
+            </ui>
+            <font typeface="Arial"/>
+            <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+            <para vAlign="middle"/>
+            <value>
+               <date/>
+            </value>
+            <caption>
+               <value>
+                  <text xliff:rid="01F4C7C2-06D9-4454-A05E-482C456F0A99">CLDATE</text>
+               </value>
+            </caption>
+            <desc>
+               <text name="Schema Annotation">DATE</text>
+            </desc>
+            <validate nullTest="error"/>
+            <bind match="dataRef" ref="$.WA_CUSTBAL.CLDATE">
+               <picture>date{YYYY-MM-DD}</picture>
+            </bind>
+            <format>
+               <picture>date{DD.MM.YYYY}</picture>
+            </format>
+         </field>
+         <field access="readOnly" h="9mm" id="floatingField024464" name="WAERS" presence="hidden" w="62mm" x="0mm" y="0mm">
+            <ui>
+               <textEdit>
+                  <border>
+                     <edge stroke="lowered"/>
+                  </border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Arial"/>
+            <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+            <para vAlign="middle"/>
+            <value>
+               <text maxChars="5"/>
+            </value>
+            <bind match="dataRef" ref="$.IT_FINAL.DATA[*].WAERS"/>
+            <caption>
+               <value>
+                  <text xliff:rid="24962E43-F974-4C18-B370-E7AD3D19FC6B">Crcy</text>
+               </value>
+            </caption>
+            <desc>
+               <text name="Schema Annotation">Currency Key</text>
+            </desc>
+         </field>
+         <field access="readOnly" h="9mm" id="floatingField005705" name="CLBAL" presence="hidden" w="62mm" x="0mm" y="0mm">
+            <ui>
+               <numericEdit>
+                  <border>
+                     <edge stroke="lowered"/>
+                  </border>
+                  <margin/>
+               </numericEdit>
+            </ui>
+            <font typeface="Arial"/>
+            <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+            <para vAlign="middle"/>
+            <value>
+               <decimal leadDigits="11"/>
+            </value>
+            <caption>
+               <value>
+                  <text xliff:rid="BEB42C5F-79B7-4616-A0F6-347E5000E7B3">CLBAL</text>
+               </value>
+            </caption>
+            <desc>
+               <text name="Schema Annotation">AMOUNT IN LOCAL CURRENCY</text>
+            </desc>
+            <validate nullTest="error"/>
+            <bind match="dataRef" ref="$.WA_CUSTBAL.CLBAL"/>
+         </field>
+         <field access="readOnly" h="9mm" id="floatingField028145" name="LV_DR_CR" presence="hidden" w="62mm" x="0mm" y="0mm">
+            <ui>
+               <textEdit>
+                  <border>
+                     <edge stroke="lowered"/>
+                  </border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Arial"/>
+            <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+            <para vAlign="middle"/>
+            <value>
+               <text maxChars="2"/>
+            </value>
+            <bind match="dataRef" ref="$.LV_DR_CR"/>
+            <caption>
+               <value>
+                  <text xliff:rid="6F4B7CC9-BBF3-4922-8168-0DED9D888070">LV_DR_CR</text>
+               </value>
+            </caption>
+            <desc>
+               <text name="Schema Annotation">Component of the Version Number</text>
+            </desc>
+         </field>
+         <field access="readOnly" h="9mm" id="floatingField023281" name="CLDATE" presence="hidden" w="62mm" x="0mm" y="0mm">
+            <ui>
+               <dateTimeEdit>
+                  <border>
+                     <edge stroke="lowered"/>
+                  </border>
+                  <margin/>
+               </dateTimeEdit>
+            </ui>
+            <font typeface="Arial"/>
+            <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+            <para vAlign="middle"/>
+            <value>
+               <date/>
+            </value>
+            <caption>
+               <value>
+                  <text xliff:rid="97F3A345-2519-46D6-AD36-3CE90FE70BB3">CLDATE</text>
+               </value>
+            </caption>
+            <desc>
+               <text name="Schema Annotation">DATE</text>
+            </desc>
+            <validate nullTest="error"/>
+            <bind match="dataRef" ref="$.WA_CUSTBAL.CLDATE">
+               <picture>date{YYYY-MM-DD}</picture>
+            </bind>
+            <format>
+               <picture>date{DD.MM.YYYY}</picture>
+            </format>
+         </field>
+         <field access="readOnly" h="9mm" id="floatingField016827" name="WAERS" presence="hidden" w="62mm" x="0mm" y="0mm">
+            <ui>
+               <textEdit>
+                  <border>
+                     <edge stroke="lowered"/>
+                  </border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Arial"/>
+            <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+            <para vAlign="middle"/>
+            <value>
+               <text maxChars="5"/>
+            </value>
+            <bind match="dataRef" ref="$.IT_FINAL.DATA[*].WAERS"/>
+            <caption>
+               <value>
+                  <text xliff:rid="8EF9041D-C2FD-4519-8A4E-C4E89C222117">Crcy</text>
+               </value>
+            </caption>
+            <desc>
+               <text name="Schema Annotation">Currency Key</text>
+            </desc>
+         </field>
+         <?templateDesigner expand 1?></subform>
+      <proto/>
+      <desc>
+         <text name="version">11.0.9.20211220.1.16.2</text>
+      </desc>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Arial" 0 0 ISO-8859-1 4 124 31 00030014001500160017001800240025002600270028002F003500370039003C0042004400460048004B004F00500051005200530055005600570058005C 12345ABCDELRTVY_acehlmnoprstuy?>
+      <?renderCache.subset "Courier New" 0 0 ISO-8859-1 4 8 2 00030042 _?>
+      <?renderCache.subset "Times New Roman" 0 0 ISO-8859-1 4 264 66 00030009000E000F0010001100120013001400150016001700180019001A001B001C001D002400250026002700280029002A002B002C002D002E002F00310032003300350036003700380039003A003C0042004400450046004700480049004A004B004C004E004F0050005100520053005400550056005700580059005A005C005E0060 &+,-./0123456789:ABCDEFGHIJKLNOPRSTUVWY_abcdefghiklmnopqrstuvwy{}?>
+      <?renderCache.subset "Times New Roman" 1 0 ISO-8859-1 4 160 40 000300100011001D002400250026002700280029002F0031003200330035003600370039003A0042004400450046004700480049004C004D004F00500051005200550056005700580059005A005E0060 -.:ABCDEFLNOPRSTVW_abcdefijlmnorstuvw{}?></subform>
+   <?templateDesigner DefaultPreviewDynamic 1?>
+   <?templateDesigner DefaultRunAt client?>
+   <?templateDesigner Grid show:1, snap:1, units:0, color:ff8080, origin:(0,0), interval:(125000,125000)?>
+   <?templateDesigner WidowOrphanControl 0?>
+   <?templateDesigner DefaultCaptionFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultValueFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultLanguage JavaScript?>
+   <?acrobat JavaScript strictScoping?>
+   <?templateDesigner SaveTaggedPDF 1?>
+   <?templateDesigner SavePDFWithEmbeddedFonts 1?>
+   <?templateDesigner FormTargetVersion 33?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?>
+   <?templateDesigner Zoom 107?></template>
+<config xmlns="http://www.xfa.org/schema/xci/3.0/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+      <common>
+         <template>
+            <base>https://vhdvfdevap01.sap.delvalflow.com:44300/sap/bc/fp/form/layout/</base>
+         </template>
+      </common>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <pdf>
+         <!--  [0..n]  -->
+         <version>1.7</version>
+         <adobeExtensionLevel>8</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data>
+            <xsl>
+               <uri/>
+            </xsl>
+            <outputXSL>
+               <uri/>
+            </outputXSL>
+         </data>
+      </common>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+   <psMap>
+      <font posture="normal" psName="Calibri" typeface="Calibri" weight="normal"/>
+   </psMap>
+</config>
+<connectionSet xmlns="http://www.xfa.org/schema/xfa-connection-set/2.8/">
+   <xsdConnection dataDescription="data" name="ZIN1_ACCOUNT_STATEMENT_CUST_N">
+      <uri/>
+      <rootElement>data</rootElement>
+   </xsdConnection>
+</connectionSet>
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+   <xfa:data xfa:dataNode="dataGroup"/>
+   <dd:dataDescription xmlns:dd="http://ns.adobe.com/data-description/" dd:name="data">
+      <data>
+         <IT_FINAL dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <ICON/>
+               <BUKRS/>
+               <KUNNR/>
+               <NAME1/>
+               <UMSKS/>
+               <UMSKZ/>
+               <AUGDT/>
+               <AUGBL/>
+               <ZUONR/>
+               <GJAHR/>
+               <BELNR/>
+               <BUZEI/>
+               <BUDAT/>
+               <BLDAT/>
+               <XBLNR/>
+               <BLART/>
+               <BSCHL/>
+               <SHKZG/>
+               <GSBER/>
+               <SGTXT/>
+               <HKONT/>
+               <ZFBDT/>
+               <KOSTL/>
+               <PRCTR/>
+               <BUPLA/>
+               <SECCO/>
+               <BKTXT/>
+               <CHECT/>
+               <TEXT/>
+               <CREDIT/>
+               <DEBIT/>
+               <CNAME/>
+               <PNAME/>
+               <SAKNR/>
+               <GLT20/>
+               <GLT50/>
+               <TXT20/>
+               <TXT50/>
+               <WAERS/>
+            </DATA>
+         </IT_FINAL>
+         <IT_CUSTBAL dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <KUNNR/>
+               <NAME1/>
+               <NAME2/>
+               <STRAS/>
+               <ORT01/>
+               <PSTLZ/>
+               <OPBAL/>
+               <CLBAL/>
+               <LANDX/>
+               <BEZEI/>
+               <OPDATE/>
+               <CLDATE/>
+               <TELF1/>
+               <STREET/>
+               <HOUSE_NUM1/>
+               <STR_SUPPL1/>
+               <STR_SUPPL2/>
+               <STR_SUPPL3/>
+               <LOCATION/>
+               <GJAHR/>
+               <WAERS/>
+            </DATA>
+         </IT_CUSTBAL>
+         <CURRENCY/>
+         <WA_FINAL>
+            <ICON/>
+            <BUKRS/>
+            <KUNNR/>
+            <NAME1/>
+            <UMSKS/>
+            <UMSKZ/>
+            <AUGDT/>
+            <AUGBL/>
+            <ZUONR/>
+            <GJAHR/>
+            <BELNR/>
+            <BUZEI/>
+            <BUDAT/>
+            <BLDAT/>
+            <XBLNR/>
+            <BLART/>
+            <BSCHL/>
+            <SHKZG/>
+            <GSBER/>
+            <SGTXT/>
+            <HKONT/>
+            <ZFBDT/>
+            <KOSTL/>
+            <PRCTR/>
+            <BUPLA/>
+            <SECCO/>
+            <BKTXT/>
+            <CHECT/>
+            <TEXT/>
+            <CREDIT/>
+            <DEBIT/>
+            <CNAME/>
+            <PNAME/>
+            <SAKNR/>
+            <GLT20/>
+            <GLT50/>
+            <TXT20/>
+            <TXT50/>
+            <WAERS/>
+         </WA_FINAL>
+         <WA_CUSTBAL>
+            <KUNNR/>
+            <NAME1/>
+            <NAME2/>
+            <STRAS/>
+            <ORT01/>
+            <PSTLZ/>
+            <OPBAL/>
+            <CLBAL/>
+            <LANDX/>
+            <BEZEI/>
+            <OPDATE/>
+            <CLDATE/>
+            <TELF1/>
+            <STREET/>
+            <HOUSE_NUM1/>
+            <STR_SUPPL1/>
+            <STR_SUPPL2/>
+            <STR_SUPPL3/>
+            <LOCATION/>
+            <GJAHR/>
+            <WAERS/>
+         </WA_CUSTBAL>
+         <TOTAL_DEBIT/>
+         <TOTAL_CREDIT/>
+         <T_RATE/>
+         <T_AMOUNT/>
+         <CUST_BAL/>
+         <LV_STRING/>
+         <LV_DR_CR/>
+         <LV_ADDR1/>
+         <LV_ADDR2/>
+         <LV_ADDR3/>
+         <LV_ADDR4/>
+         <LV_ADDR5/>
+         <LV_ADDR/>
+         <SFPSY>
+            <DATE/>
+            <TIME/>
+            <USERNAME/>
+            <SUBRC/>
+         </SFPSY>
+      </data>
+   </dd:dataDescription>
+</xfa:datasets>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale desc="English (India)" name="en_IN">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE D MMMM YYYY</datePattern>
+         <datePattern name="long">D MMMM YYYY</datePattern>
+         <datePattern name="med">DD-MMM-YY</datePattern>
+         <datePattern name="short">DD/MM/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A Z</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$ z,zz,zz9.99</numberPattern>
+         <numberPattern name="percent">z,zz,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">Rs.</currencySymbol>
+         <currencySymbol name="isoname">INR</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+         <typeface name="Adobe Devanagari"/>
+      </typefaces>
+   </locale>
+</localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c015 81.161580, 2017/12/01-01:38:21        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <xmp:MetadataDate>2025-07-29T05:02:26Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer 11.0</xmp:CreatorTool>
+         <pdf:Producer>Adobe LiveCycle Designer 11.0</pdf:Producer>
+         <xmpMM:DocumentID>uuid:231a51f9-67bb-47c6-aa60-4652036964d0</xmpMM:DocumentID>
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>11.0.9.20211220.1.16.2</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta></xdp:xdp>

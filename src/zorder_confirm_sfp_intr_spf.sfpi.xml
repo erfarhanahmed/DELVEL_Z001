@@ -1,0 +1,598 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SFPI" serializer_version="v1.0.0">
+ <asx:abap version="1.0" xmlns:asx="http://www.sap.com/abapxml">
+  <asx:values>
+   <VERSION>1</VERSION>
+   <TYPE>S</TYPE>
+   <INTERFACE href="#o1"/>
+   <INTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID/>
+     <TEXT>New Form</TEXT>
+    </FPINTERFACET>
+   </INTERFACET>
+  </asx:values>
+  <asx:heap xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:abap="http://www.sap.com/abapxml/types/built-in" xmlns:cls="http://www.sap.com/abapxml/classes/global" xmlns:dic="http://www.sap.com/abapxml/types/dictionary">
+   <cls:CL_FP_INTERFACE_DATA id="o1">
+    <CL_FP_INTERFACE_DATA classVersion="1">
+     <CODING href="#o5"/>
+     <PARAMETERS href="#o4"/>
+     <GLOBAL_DEFINITIONS href="#o3"/>
+     <REFERENCE_FIELDS href="#o2"/>
+     <XSD_DEFINITIONS/>
+    </CL_FP_INTERFACE_DATA>
+   </cls:CL_FP_INTERFACE_DATA>
+   <cls:CL_FP_REFERENCE_FIELDS id="o2">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_REFERENCE_FIELDS classVersion="1">
+     <REFERENCE_FIELDS>
+      <SFPREF>
+       <ACTIVE>X</ACTIVE>
+       <STANDARD/>
+       <DATATYPE>QUAN</DATATYPE>
+       <VALUE>WA_FINAL-KWMENG</VALUE>
+       <UNIT>WA_FINAL-KWMENG</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE>X</ACTIVE>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>WA_FINAL-NETPR</VALUE>
+       <UNIT>WA_FINAL-NETPR</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE>X</ACTIVE>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>WA_FINAL-NETWR</VALUE>
+       <UNIT>WA_FINAL-NETWR</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE>X</ACTIVE>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>WA_FINAL-BASIC_AMT</VALUE>
+       <UNIT>WA_FINAL-BASIC_AMT</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE>X</ACTIVE>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>WA_FINAL-KBETR</VALUE>
+       <UNIT>WA_FINAL-KBETR</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE>X</ACTIVE>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>WA_FINAL-ZKBETR</VALUE>
+       <UNIT>WA_FINAL-ZKBETR</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE>X</ACTIVE>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>WA_FINAL-KBETR1</VALUE>
+       <UNIT>WA_FINAL-KBETR1</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE>X</ACTIVE>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>WA_FINAL-KBETR2</VALUE>
+       <UNIT>WA_FINAL-KBETR2</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE>X</ACTIVE>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>WA_FINAL-KBETR3</VALUE>
+       <UNIT>WA_FINAL-KBETR3</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE>X</ACTIVE>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>WA_FINAL-KBETR4</VALUE>
+       <UNIT>WA_FINAL-KBETR4</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE>X</ACTIVE>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>WA_FINAL-TOTAL</VALUE>
+       <UNIT>WA_FINAL-TOTAL</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE>X</ACTIVE>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>WA_FINAL-KBETR5</VALUE>
+       <UNIT>WA_FINAL-KBETR5</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE>X</ACTIVE>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>WA_FINAL-TOTAL1</VALUE>
+       <UNIT>WA_FINAL-TOTAL1</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE>X</ACTIVE>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>WA_FINAL-GRAND</VALUE>
+       <UNIT>WA_FINAL-GRAND</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE>X</ACTIVE>
+       <STANDARD/>
+       <DATATYPE>QUAN</DATATYPE>
+       <VALUE>WA_FINAL-TOT_QTY</VALUE>
+       <UNIT>WA_FINAL-TOT_QTY</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE>X</ACTIVE>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>WA_FINAL-JOCG_AMT</VALUE>
+       <UNIT>WA_FINAL-JOCG_AMT</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE>X</ACTIVE>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>WA_FINAL-JOSG_AMT</VALUE>
+       <UNIT>WA_FINAL-JOSG_AMT</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE>X</ACTIVE>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LV_BASE_AMT</VALUE>
+       <UNIT>WA_FINAL-NETWR</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE>X</ACTIVE>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LV_TOTAL_AMT</VALUE>
+       <UNIT>WA_FINAL-NETWR</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE>X</ACTIVE>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LV_CGST_TOT</VALUE>
+       <UNIT>WA_FINAL-NETWR</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE>X</ACTIVE>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LV_SGST_TOT</VALUE>
+       <UNIT>WA_FINAL-NETWR</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE>X</ACTIVE>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LV_IGST_TOT</VALUE>
+       <UNIT>WA_FINAL-NETWR</UNIT>
+      </SFPREF>
+     </REFERENCE_FIELDS>
+    </CL_FP_REFERENCE_FIELDS>
+   </cls:CL_FP_REFERENCE_FIELDS>
+   <cls:CL_FP_GLOBAL_DEFINITIONS id="o3">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_GLOBAL_DEFINITIONS classVersion="1">
+     <GLOBAL_DATA>
+      <SFPGDATA>
+       <NAME>WA_FINAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZSALESORDER_STR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_QTY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>P DECIMALS 2</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>NO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>SY-INDEX</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>FLG</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR1</TYPENAME>
+       <DEFAULTVAL>&apos;0&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>CNT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>I</TYPENAME>
+       <DEFAULTVAL>&apos;0&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_BASE_AMT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>NETWR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_TOTAL_AMT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>NETWR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_CGST_TOT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>NETWR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_SGST_TOT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>NETWR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_IGST_TOT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>NETWR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_TOTAL_QTY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>P DECIMALS 2</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_PF</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>P DECIMALS 2</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_ZIN1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>P DECIMALS 2</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_ZFR1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>P DECIMALS 2</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_ZTE1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>P DECIMALS 2</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_ZTCS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>P DECIMALS 2</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_VAMT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LS_ADRC_AG</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ADRC</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LS_ADRC_WE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ADRC</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_STATE_AG</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BEZEI</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_STATE_WE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BEZEI</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_ADR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_ADR1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_LINES</NAME>
+       <TYPING>TYPE TABLE OF</TYPING>
+       <TYPENAME>TLINE</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_LINES</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TLINE</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_MAT_TEXT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_VBAK</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>VBAK</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_VBKD</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>VBKD</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_PO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>NAME</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>THEAD-TDNAME</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LS_TLINE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TLINE</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LT_TLINE</NAME>
+       <TYPING>TYPE TABLE OF</TYPING>
+       <TYPENAME>TLINE</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_VTEXT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>CUST_DT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR11</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_VBAP</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>VBAP</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_TAG_REQ</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR50</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_TPI_REQ</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR50</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_PACK_D</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR50</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_PART_D</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR50</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+     </GLOBAL_DATA>
+     <TYPES/>
+     <FIELDSYMBOLS/>
+    </CL_FP_GLOBAL_DEFINITIONS>
+   </cls:CL_FP_GLOBAL_DEFINITIONS>
+   <cls:CL_FP_PARAMETERS id="o4">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_PARAMETERS classVersion="1">
+     <IMPORT_PARAMETERS>
+      <SFPIOPAR>
+       <NAME>LV_VBELN</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>VBAK-VBELN</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>V_AMT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>C</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+     </IMPORT_PARAMETERS>
+     <EXPORT_PARAMETERS/>
+     <TABLE_PARAMETERS>
+      <SFPIOPAR>
+       <NAME>IT_FINAL</NAME>
+       <TYPING>LIKE</TYPING>
+       <TYPENAME>ZSALESORDER_STR</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+     </TABLE_PARAMETERS>
+     <EXCEPTIONS/>
+    </CL_FP_PARAMETERS>
+   </cls:CL_FP_PARAMETERS>
+   <cls:CL_FP_CODING id="o5">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_CODING classVersion="1">
+     <INPUT_PARAMETERS>
+      <FPPARAMETER>WA_FINAL</FPPARAMETER>
+      <FPPARAMETER>LV_TOTAL_AMT</FPPARAMETER>
+      <FPPARAMETER>LV_CGST_TOT</FPPARAMETER>
+      <FPPARAMETER>LV_SGST_TOT</FPPARAMETER>
+      <FPPARAMETER>LV_IGST_TOT</FPPARAMETER>
+      <FPPARAMETER>LV_TOTAL_QTY</FPPARAMETER>
+      <FPPARAMETER>LV_PF</FPPARAMETER>
+      <FPPARAMETER>LV_ZIN1</FPPARAMETER>
+      <FPPARAMETER>LV_ZFR1</FPPARAMETER>
+      <FPPARAMETER>LV_ZTE1</FPPARAMETER>
+      <FPPARAMETER>LV_ZTCS</FPPARAMETER>
+      <FPPARAMETER>IT_FINAL</FPPARAMETER>
+      <FPPARAMETER>LV_STATE_AG</FPPARAMETER>
+      <FPPARAMETER>LV_STATE_WE</FPPARAMETER>
+      <FPPARAMETER>LV_VBELN</FPPARAMETER>
+     </INPUT_PARAMETERS>
+     <OUTPUT_PARAMETERS>
+      <FPPARAMETER>LS_ADRC_AG</FPPARAMETER>
+      <FPPARAMETER>LS_ADRC_WE</FPPARAMETER>
+     </OUTPUT_PARAMETERS>
+     <INITIALIZATION>
+      <FPCLINE/>
+      <FPCLINE>CLEAR: wa_final ,lv_total_amt, lv_cgst_tot,</FPCLINE>
+      <FPCLINE>       lv_sgst_tot,lv_igst_tot,lv_total_qty,</FPCLINE>
+      <FPCLINE>       lv_pf,lv_zin1,lv_zfr1,lv_zte1,lv_ztcs</FPCLINE>
+      <FPCLINE>.</FPCLINE>
+      <FPCLINE>*BREAK-POINT.</FPCLINE>
+      <FPCLINE>READ TABLE it_final INTO wa_final INDEX 1.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT adrnr,parvw  FROM vbpa</FPCLINE>
+      <FPCLINE> INTO TABLE @DATA(lt_vbpa)</FPCLINE>
+      <FPCLINE>  WHERE vbeln = @LV_VBELN&quot;@wa_final-vbeln</FPCLINE>
+      <FPCLINE>  AND      posnr = &apos; &apos;</FPCLINE>
+      <FPCLINE>  AND ( parvw = &apos;AG&apos; OR parvw = &apos;WE&apos; ).</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF lt_vbpa IS NOT INITIAL.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  LOOP AT lt_vbpa ASSIGNING FIELD-SYMBOL(&lt;f1&gt;).</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    CASE &lt;f1&gt;-parvw.</FPCLINE>
+      <FPCLINE>      WHEN &apos;AG&apos;.</FPCLINE>
+      <FPCLINE>        SELECT SINGLE * FROM adrc INTO ls_adrc_ag</FPCLINE>
+      <FPCLINE>       WHERE addrnumber = &lt;f1&gt;-adrnr.</FPCLINE>
+      <FPCLINE>        IF ls_adrc_AG-COUNTRY = &apos;IN&apos; .</FPCLINE>
+      <FPCLINE>         SELECT SINGLE bezei FROM zgst_region1</FPCLINE>
+      <FPCLINE>           INTO lv_state_ag</FPCLINE>
+      <FPCLINE>           WHERE region = ls_adrc_AG-region.</FPCLINE>
+      <FPCLINE>         ENDIF.</FPCLINE>
+      <FPCLINE>      WHEN &apos;WE&apos;.</FPCLINE>
+      <FPCLINE>        SELECT SINGLE * FROM adrc INTO ls_adrc_we</FPCLINE>
+      <FPCLINE>              WHERE addrnumber = &lt;f1&gt;-adrnr.</FPCLINE>
+      <FPCLINE>        IF ls_adrc_we-COUNTRY = &apos;IN&apos; .</FPCLINE>
+      <FPCLINE>           SELECT SINGLE bezei FROM zgst_region1</FPCLINE>
+      <FPCLINE>           INTO lv_state_we</FPCLINE>
+      <FPCLINE>           WHERE region = ls_adrc_we-region.</FPCLINE>
+      <FPCLINE>        ENDIF.</FPCLINE>
+      <FPCLINE>      WHEN OTHERS.</FPCLINE>
+      <FPCLINE>    ENDCASE.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  ENDLOOP.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>CLEAR WA_FINAL.</FPCLINE>
+     </INITIALIZATION>
+     <FORMS/>
+    </CL_FP_CODING>
+   </cls:CL_FP_CODING>
+  </asx:heap>
+ </asx:abap>
+</abapGit>

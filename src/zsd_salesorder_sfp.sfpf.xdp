@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xfa generator="AdobeLiveCycleDesigner_V11.0.9.20211220.1.16_SAP" APIVersion="3.6.21350.0"?><xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2025-04-18T07:24:34Z" uuid="63093e61-005e-4cca-8511-2588426e124e">
+<template xmlns="http://www.xfa.org/schema/xfa-template/3.3/">
+   <?formServer defaultPDFRenderFormat acrobat10.0dynamic?>
+   <subform layout="tb" locale="en_IN" name="data" restoreState="auto">
+      <pageSet>
+         <pageArea id="Page1" name="Page1">
+            <contentArea h="10.5in" w="8in" x="0.25in" y="0.25in"/>
+            <medium long="11in" short="8.5in" stock="letter"/>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <subform h="10.5in" w="8in"/>
+      <proto/>
+      <desc>
+         <text name="version">11.0.9.20211220.1.16.2</text>
+      </desc>
+      <?templateDesigner expand 1?></subform>
+   <?templateDesigner DefaultPreviewDynamic 1?>
+   <?templateDesigner DefaultRunAt client?>
+   <?templateDesigner Grid show:1, snap:1, units:0, color:ff8080, origin:(0,0), interval:(125000,125000)?>
+   <?templateDesigner FormTargetVersion 33?>
+   <?templateDesigner WidowOrphanControl 0?>
+   <?templateDesigner DefaultCaptionFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultValueFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultLanguage JavaScript?>
+   <?acrobat JavaScript strictScoping?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?>
+   <?templateDesigner Zoom 104?></template>
+<config xmlns="http://www.xfa.org/schema/xci/3.0/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+      <common>
+         <template>
+            <base>https://vhdvfdevap01.sap.delvalflow.com:44300/sap/bc/fp/form/layout/</base>
+         </template>
+      </common>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+         <version>1.7</version>
+         <adobeExtensionLevel>8</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data>
+            <xsl>
+               <uri/>
+            </xsl>
+            <outputXSL>
+               <uri/>
+            </outputXSL>
+         </data>
+      </common>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+</config>
+<connectionSet xmlns="http://www.xfa.org/schema/xfa-connection-set/2.8/">
+   <xsdConnection dataDescription="data" name="ZSD_SALESORDER_SFP">
+      <uri/>
+      <rootElement>data</rootElement>
+   </xsdConnection>
+</connectionSet>
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+   <xfa:data xfa:dataNode="dataGroup"/>
+   <dd:dataDescription xmlns:dd="http://ns.adobe.com/data-description/" dd:name="data">
+      <data>
+         <IS_VBAK>
+            <MANDT/>
+            <VBELN/>
+            <ERDAT/>
+            <ERZET/>
+            <ERNAM/>
+            <ANGDT/>
+            <BNDDT/>
+            <AUDAT/>
+            <VBTYP/>
+            <TRVOG/>
+            <AUART/>
+            <AUGRU/>
+            <GWLDT/>
+            <SUBMI/>
+            <LIFSK/>
+            <FAKSK/>
+            <NETWR/>
+            <WAERK/>
+            <VKORG/>
+            <VTWEG/>
+            <SPART/>
+            <VKGRP/>
+            <VKBUR/>
+            <GSBER/>
+            <GSKST/>
+            <GUEBG/>
+            <GUEEN/>
+            <KNUMV/>
+            <VDATU/>
+            <DELIVERY_DATE_TYPE_RULE/>
+            <VPRGR/>
+            <AUTLF/>
+            <VBKLA/>
+            <VBKLT/>
+            <KALSM/>
+            <VSBED/>
+            <FKARA/>
+            <AWAHR/>
+            <KTEXT/>
+            <BSTNK/>
+            <BSARK/>
+            <BSTDK/>
+            <BSTZD/>
+            <IHREZ/>
+            <BNAME/>
+            <TELF1/>
+            <MAHZA/>
+            <MAHDT/>
+            <KUNNR/>
+            <KOSTL/>
+            <STAFO/>
+            <STWAE/>
+            <AEDAT/>
+            <KVGR1/>
+            <KVGR2/>
+            <KVGR3/>
+            <KVGR4/>
+            <KVGR5/>
+            <KNUMA/>
+            <KOKRS/>
+            <PS_PSP_PNR/>
+            <KURST/>
+            <KKBER/>
+            <KNKLI/>
+            <GRUPP/>
+            <SBGRP/>
+            <CTLPC/>
+            <CMWAE/>
+            <CMFRE/>
+            <CMNUP/>
+            <CMNGV/>
+            <AMTBL/>
+            <CM_LAST_CHECK/>
+            <HITYP_PR/>
+            <CUSTH_UNIV_SALES_RELVNCE/>
+            <CUSTH_BRANCH_UUID/>
+            <ABRVW/>
+            <ABDIS/>
+            <VGBEL/>
+            <OBJNR/>
+            <BUKRS_VF/>
+            <TAXK1/>
+            <TAXK2/>
+            <TAXK3/>
+            <TAXK4/>
+            <TAXK5/>
+            <TAXK6/>
+            <TAXK7/>
+            <TAXK8/>
+            <TAXK9/>
+            <XBLNR/>
+            <ZUONR/>
+            <VGTYP/>
+            <KALSM_CH/>
+            <AGRZR/>
+            <AUFNR/>
+            <QMNUM/>
+            <VBELN_GRP/>
+            <SCHEME_GRP/>
+            <ABRUF_PART/>
+            <ABHOD/>
+            <ABHOV/>
+            <ABHOB/>
+            <RPLNR/>
+            <VZEIT/>
+            <STCEG_L/>
+            <LANDTX/>
+            <XEGDR/>
+            <ENQUEUE_GRP/>
+            <DAT_FZAU/>
+            <FMBDAT/>
+            <VSNMR_V/>
+            <HANDLE/>
+            <PROLI/>
+            <CONT_DG/>
+            <CRM_GUID/>
+            <UPD_TMSTMP/>
+            <MSR_ID/>
+            <TM_CTRL_KEY/>
+            <OIPBL/>
+            <LAST_CHANGED_BY_USER/>
+            <HANDOVERLOC/>
+            <EXT_BUS_SYST_ID/>
+            <EXT_REF_DOC_ID/>
+            <EXT_REV_TMSTMP/>
+            <APM_APPROVAL_STATUS/>
+            <APM_APPROVAL_REASON/>
+            <APM_REJECTION_REASON/>
+            <SOLUTION_ORDER_ID/>
+            <EXT_COMM_SYST_TYPE/>
+            <RETRO_PURCHDOC_CREATION/>
+            <CROSSITEM_PRC_DATE/>
+            <X_DATAAGING/>
+            <ABSTK/>
+            <BESTK/>
+            <CMPSC/>
+            <CMPSD/>
+            <CMPSI/>
+            <CMPSJ/>
+            <CMPSK/>
+            <CMPS_CM/>
+            <CMPS_TE/>
+            <CMGST/>
+            <COSTA/>
+            <DCSTK/>
+            <FKSAK/>
+            <FMSTK/>
+            <FSSTK/>
+            <GBSTK/>
+            <LFGSK/>
+            <LFSTK/>
+            <LSSTK/>
+            <MANEK/>
+            <RFGSK/>
+            <RFSTK/>
+            <SPSTG/>
+            <TRSTA/>
+            <UVALL/>
+            <UVALS/>
+            <UVFAK/>
+            <UVFAS/>
+            <UVPRS/>
+            <UVVLK/>
+            <UVVLS/>
+            <UVK01/>
+            <UVK02/>
+            <UVK03/>
+            <UVK04/>
+            <UVK05/>
+            <UVS01/>
+            <UVS02/>
+            <UVS03/>
+            <UVS04/>
+            <UVS05/>
+            <WBSTK/>
+            <TOTAL_EMCST/>
+            <TOTAL_SLCST/>
+            <TOTAL_LCCST/>
+            <TOTAL_PCSTA/>
+            <TOTAL_DGSTA/>
+            <TOTAL_SDSSTA/>
+            <BOB_STATUS/>
+            <DP_CLEAR_STA_HDR/>
+            <B2B_MSG_PROCESSING_STATUS/>
+            <TOTAL_DELIV_RELTD_BILLG_STA/>
+            <SDM_VERSION/>
+            <DUMMY_SALESDOC_INCL_EEW_PS/>
+            <GLO_LOG_REF1_HD/>
+            <XDMBEXDEALNUMBER/>
+            <XDMBEXEVGIDRENEWAL/>
+            <XDMBEXEVGIDCANCEL/>
+            <ZAPCGKH/>
+            <APCGK_EXTENDH/>
+            <ZABDATH/>
+            <AD01FAREG/>
+            <AD01BASDOC/>
+            <LASTVCHR/>
+            <PSM_BUDAT/>
+            <FSH_KVGR6/>
+            <FSH_KVGR7/>
+            <FSH_KVGR8/>
+            <FSH_KVGR9/>
+            <FSH_KVGR10/>
+            <FSH_REREG/>
+            <FSH_CQ_CHECK/>
+            <FSH_VRSN_STATUS/>
+            <FSH_TRANSACTION/>
+            <FSH_VAS_CG/>
+            <FSH_CANDATE/>
+            <FSH_SS/>
+            <FSH_OS_STG_CHANGE/>
+            <J_3GKBAUL/>
+            <MILL_APPL_ID/>
+            <TAS/>
+            <BETC/>
+            <MOD_ALLOW/>
+            <CANCEL_ALLOW/>
+            <PAY_METHOD/>
+            <BPN/>
+            <REP_FREQ/>
+            <LOGSYSB/>
+            <KALCD/>
+            <MULTI/>
+            <SPPAYM/>
+            <WTYSC_CLM_HDR/>
+            <ZLDFROMDATE/>
+            <ZLDPERWEEK/>
+            <ZLDMAX/>
+            <ZPAYTAG/>
+            <ZADVTAG/>
+            <ZPBG/>
+            <ZABG/>
+         </IS_VBAK>
+         <GS_PRINTDATA>
+            <BSTDK/>
+            <BSTKD/>
+            <KUNNR/>
+            <KUNAG/>
+            <MOBILE/>
+            <ADRNR1/>
+            <ADRNR2/>
+            <LANDX2/>
+            <LANDX1/>
+            <NAME1/>
+            <PAFKT/>
+            <VTEXT/>
+            <EMAIL/>
+            <J_1IEXCD/>
+            <J_1ICSTNO/>
+            <J_1ILSTNO/>
+            <J_1IPANNO/>
+            <TAXKD/>
+            <TATYP/>
+            <VTEXT1/>
+         </GS_PRINTDATA>
+         <GS_ADRC1>
+            <CLIENT/>
+            <ADDRNUMBER/>
+            <DATE_FROM/>
+            <NATION/>
+            <DATE_TO/>
+            <TITLE/>
+            <NAME1/>
+            <NAME2/>
+            <NAME3/>
+            <NAME4/>
+            <NAME_TEXT/>
+            <NAME_CO/>
+            <CITY1/>
+            <CITY2/>
+            <CITY_CODE/>
+            <CITYP_CODE/>
+            <HOME_CITY/>
+            <CITYH_CODE/>
+            <CHCKSTATUS/>
+            <REGIOGROUP/>
+            <POST_CODE1/>
+            <POST_CODE2/>
+            <POST_CODE3/>
+            <PCODE1_EXT/>
+            <PCODE2_EXT/>
+            <PCODE3_EXT/>
+            <PO_BOX/>
+            <DONT_USE_P/>
+            <PO_BOX_NUM/>
+            <PO_BOX_LOC/>
+            <CITY_CODE2/>
+            <PO_BOX_REG/>
+            <PO_BOX_CTY/>
+            <POSTALAREA/>
+            <TRANSPZONE/>
+            <STREET/>
+            <DONT_USE_S/>
+            <STREETCODE/>
+            <STREETABBR/>
+            <HOUSE_NUM1/>
+            <HOUSE_NUM2/>
+            <HOUSE_NUM3/>
+            <STR_SUPPL1/>
+            <STR_SUPPL2/>
+            <STR_SUPPL3/>
+            <LOCATION/>
+            <BUILDING/>
+            <FLOOR/>
+            <ROOMNUMBER/>
+            <COUNTRY/>
+            <LANGU/>
+            <REGION/>
+            <ADDR_GROUP/>
+            <FLAGGROUPS/>
+            <PERS_ADDR/>
+            <SORT1/>
+            <SORT2/>
+            <SORT_PHN/>
+            <DEFLT_COMM/>
+            <TEL_NUMBER/>
+            <TEL_EXTENS/>
+            <FAX_NUMBER/>
+            <FAX_EXTENS/>
+            <FLAGCOMM2/>
+            <FLAGCOMM3/>
+            <FLAGCOMM4/>
+            <FLAGCOMM5/>
+            <FLAGCOMM6/>
+            <FLAGCOMM7/>
+            <FLAGCOMM8/>
+            <FLAGCOMM9/>
+            <FLAGCOMM10/>
+            <FLAGCOMM11/>
+            <FLAGCOMM12/>
+            <FLAGCOMM13/>
+            <ADDRORIGIN/>
+            <MC_NAME1/>
+            <MC_CITY1/>
+            <MC_STREET/>
+            <EXTENSION1/>
+            <EXTENSION2/>
+            <TIME_ZONE/>
+            <TAXJURCODE/>
+            <ADDRESS_ID/>
+            <LANGU_CREA/>
+            <ADRC_UUID/>
+            <UUID_BELATED/>
+            <ID_CATEGORY/>
+            <ADRC_ERR_STATUS/>
+            <PO_BOX_LOBBY/>
+            <DELI_SERV_TYPE/>
+            <DELI_SERV_NUMBER/>
+            <COUNTY_CODE/>
+            <COUNTY/>
+            <TOWNSHIP_CODE/>
+            <TOWNSHIP/>
+            <MC_COUNTY/>
+            <MC_TOWNSHIP/>
+            <XPCPT/>
+            <X_DATAAGING/>
+            <ADDRESSCREATEDBYUSER/>
+            <ADDRESSCREATEDONDATETIME/>
+            <ADDRESSCHANGEDBYUSER/>
+            <ADDRESSCHANGEDONDATETIME/>
+            <DUNS/>
+            <DUNSP4/>
+         </GS_ADRC1>
+         <GS_ADRC2>
+            <CLIENT/>
+            <ADDRNUMBER/>
+            <DATE_FROM/>
+            <NATION/>
+            <DATE_TO/>
+            <TITLE/>
+            <NAME1/>
+            <NAME2/>
+            <NAME3/>
+            <NAME4/>
+            <NAME_TEXT/>
+            <NAME_CO/>
+            <CITY1/>
+            <CITY2/>
+            <CITY_CODE/>
+            <CITYP_CODE/>
+            <HOME_CITY/>
+            <CITYH_CODE/>
+            <CHCKSTATUS/>
+            <REGIOGROUP/>
+            <POST_CODE1/>
+            <POST_CODE2/>
+            <POST_CODE3/>
+            <PCODE1_EXT/>
+            <PCODE2_EXT/>
+            <PCODE3_EXT/>
+            <PO_BOX/>
+            <DONT_USE_P/>
+            <PO_BOX_NUM/>
+            <PO_BOX_LOC/>
+            <CITY_CODE2/>
+            <PO_BOX_REG/>
+            <PO_BOX_CTY/>
+            <POSTALAREA/>
+            <TRANSPZONE/>
+            <STREET/>
+            <DONT_USE_S/>
+            <STREETCODE/>
+            <STREETABBR/>
+            <HOUSE_NUM1/>
+            <HOUSE_NUM2/>
+            <HOUSE_NUM3/>
+            <STR_SUPPL1/>
+            <STR_SUPPL2/>
+            <STR_SUPPL3/>
+            <LOCATION/>
+            <BUILDING/>
+            <FLOOR/>
+            <ROOMNUMBER/>
+            <COUNTRY/>
+            <LANGU/>
+            <REGION/>
+            <ADDR_GROUP/>
+            <FLAGGROUPS/>
+            <PERS_ADDR/>
+            <SORT1/>
+            <SORT2/>
+            <SORT_PHN/>
+            <DEFLT_COMM/>
+            <TEL_NUMBER/>
+            <TEL_EXTENS/>
+            <FAX_NUMBER/>
+            <FAX_EXTENS/>
+            <FLAGCOMM2/>
+            <FLAGCOMM3/>
+            <FLAGCOMM4/>
+            <FLAGCOMM5/>
+            <FLAGCOMM6/>
+            <FLAGCOMM7/>
+            <FLAGCOMM8/>
+            <FLAGCOMM9/>
+            <FLAGCOMM10/>
+            <FLAGCOMM11/>
+            <FLAGCOMM12/>
+            <FLAGCOMM13/>
+            <ADDRORIGIN/>
+            <MC_NAME1/>
+            <MC_CITY1/>
+            <MC_STREET/>
+            <EXTENSION1/>
+            <EXTENSION2/>
+            <TIME_ZONE/>
+            <TAXJURCODE/>
+            <ADDRESS_ID/>
+            <LANGU_CREA/>
+            <ADRC_UUID/>
+            <UUID_BELATED/>
+            <ID_CATEGORY/>
+            <ADRC_ERR_STATUS/>
+            <PO_BOX_LOBBY/>
+            <DELI_SERV_TYPE/>
+            <DELI_SERV_NUMBER/>
+            <COUNTY_CODE/>
+            <COUNTY/>
+            <TOWNSHIP_CODE/>
+            <TOWNSHIP/>
+            <MC_COUNTY/>
+            <MC_TOWNSHIP/>
+            <XPCPT/>
+            <X_DATAAGING/>
+            <ADDRESSCREATEDBYUSER/>
+            <ADDRESSCREATEDONDATETIME/>
+            <ADDRESSCHANGEDBYUSER/>
+            <ADDRESSCHANGEDONDATETIME/>
+            <DUNS/>
+            <DUNSP4/>
+         </GS_ADRC2>
+         <GS_KUAGV>
+            <KUNNR/>
+            <NAME1/>
+            <NAME2/>
+            <STRAS/>
+            <PFACH/>
+            <PSTLZ/>
+            <PSTL2/>
+            <ORT01/>
+            <SPRAS/>
+            <LAND1/>
+            <BLAND/>
+            <TELF1/>
+            <VERSG/>
+            <AUFSD/>
+            <KALKS/>
+            <KDGRP/>
+            <BZIRK/>
+            <KONDA/>
+            <PLTYP/>
+            <INCO1/>
+            <INCO2/>
+            <AUTLF/>
+            <ANTLF/>
+            <KZAZU/>
+            <CHSPL/>
+            <LPRIO/>
+            <WAERK/>
+            <KURST/>
+            <VSBED/>
+            <KZTLF/>
+            <AWAHR/>
+            <LIFSD/>
+            <VSORT/>
+            <XCPDK/>
+            <VKBUR/>
+            <VKGRP/>
+            <STCEG/>
+            <STCEG_L/>
+            <TAXK1/>
+            <TAXK2/>
+            <TAXK3/>
+            <TAXK4/>
+            <TAXK5/>
+            <TAXK6/>
+            <TAXK7/>
+            <TAXK8/>
+            <TAXK9/>
+            <VBUND/>
+            <TXTPA/>
+            <RDOFF/>
+            <KVGR1/>
+            <KVGR2/>
+            <KVGR3/>
+            <KVGR4/>
+            <KVGR5/>
+            <FSH_KVGR6/>
+            <FSH_KVGR7/>
+            <FSH_KVGR8/>
+            <FSH_KVGR9/>
+            <FSH_KVGR10/>
+            <FSH_REREG/>
+            <FSH_VAS_CG/>
+            <KDKG1/>
+            <KDKG2/>
+            <KDKG3/>
+            <KDKG4/>
+            <KDKG5/>
+            <ADRNR/>
+            <ADRNP/>
+            <ADDRESS_TYPE/>
+            <ADDRESS_GUID/>
+            <DEAR5/>
+            <DEAR6/>
+            <UEBTO/>
+            <UNTTO/>
+            <UEBTK/>
+            <PVKSM/>
+            <BRSCH/>
+            <CVP_XBLCK/>
+            <INCOV/>
+            <INCO2_L/>
+            <INCO3_L/>
+            <INCO2_KEY/>
+            <INCO3_KEY/>
+            <INCO4_KEY/>
+         </GS_KUAGV>
+         <SFPSY>
+            <DATE/>
+            <TIME/>
+            <USERNAME/>
+            <SUBRC/>
+         </SFPSY>
+      </data>
+   </dd:dataDescription>
+</xfa:datasets>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale desc="English (India)" name="en_IN">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE D MMMM YYYY</datePattern>
+         <datePattern name="long">D MMMM YYYY</datePattern>
+         <datePattern name="med">DD-MMM-YY</datePattern>
+         <datePattern name="short">DD/MM/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A Z</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$ z,zz,zz9.99</numberPattern>
+         <numberPattern name="percent">z,zz,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">Rs.</currencySymbol>
+         <currencySymbol name="isoname">INR</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+         <typeface name="Adobe Devanagari"/>
+      </typefaces>
+   </locale>
+</localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c015 81.161580, 2017/12/01-01:38:21        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <xmp:MetadataDate>2025-04-18T07:24:34Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer 11.0</xmp:CreatorTool>
+         <pdf:Producer>Adobe LiveCycle Designer 11.0</pdf:Producer>
+         <xmpMM:DocumentID>uuid:63093e61-005e-4cca-8511-2588426e124e</xmpMM:DocumentID>
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>11.0.9.20211220.1.16.2</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta></xdp:xdp>

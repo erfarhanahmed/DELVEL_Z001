@@ -1,0 +1,3064 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SFPF" serializer_version="v1.0.0">
+ <asx:abap version="1.0" xmlns:asx="http://www.sap.com/abapxml">
+  <asx:values>
+   <VERSION>1</VERSION>
+   <TYPE>M</TYPE>
+   <INTERFACE>ZUS_MM_PURCHASE_ORDER_INT</INTERFACE>
+   <OFFLINEHANDLER/>
+   <DATAPROVIDER/>
+   <FRTYPE/>
+   <CNTSET/>
+   <FNTEMB/>
+   <MIRRORING/>
+   <CONTEXT href="#o2"/>
+   <CONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID/>
+     <TEXT>PURCHASE ORDER</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF2F86AFF7514</ID>
+     <TEXT>New Graphic 2</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF2F86AFF9514</ID>
+     <TEXT>New Graphic 2</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF2F86AFFB514</ID>
+     <TEXT>New Window 1</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF2F86AFFD514</ID>
+     <TEXT>New Template 1</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF2F86AFFF514</ID>
+     <TEXT>New Program Lines 2</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF2F86B001514</ID>
+     <TEXT>New Window 2</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF2F86B003514</ID>
+     <TEXT>New Template 2</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF2F86B005514</ID>
+     <TEXT>New Program Lines 4</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF2F86B007514</ID>
+     <TEXT>New Window 2</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF2F86B009514</ID>
+     <TEXT>New Window 3</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF2F86B00B514</ID>
+     <TEXT>New Template 3</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF2F86B00D514</ID>
+     <TEXT>New Program Lines 11</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF2F86B00F514</ID>
+     <TEXT>New Window 1</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF2F86B011514</ID>
+     <TEXT>New Template 4</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF2F86B013514</ID>
+     <TEXT>New Program Lines 13</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF2F86B015514</ID>
+     <TEXT>Main Window</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF2F86B017514</ID>
+     <TEXT>New Table 1</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF2F86B04F514</ID>
+     <TEXT>New Line 1</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF2F86B051514</ID>
+     <TEXT>New Line 2</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF2F86B053514</ID>
+     <TEXT>New Program Lines 7</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF2F86B055514</ID>
+     <TEXT>New Program Lines 1</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF2F86B057514</ID>
+     <TEXT>New Loop 1</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF2F86B05F514</ID>
+     <TEXT>New Program Lines 12</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF2F86B061514</ID>
+     <TEXT>New Program Lines 8</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF2F86B063514</ID>
+     <TEXT>New Program Lines 10</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF2F86B065514</ID>
+     <TEXT>New Program Lines 9</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF2F86B067514</ID>
+     <TEXT>New Program Lines 3</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF2F86B069514</ID>
+     <TEXT>New Template 5</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF2F86B06B514</ID>
+     <TEXT>New Program Lines 6</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF2F86B06D514</ID>
+     <TEXT>New Template 6</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF2F86B06F514</ID>
+     <TEXT>New Program Lines 1</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF2F86B071514</ID>
+     <TEXT>New Table 2</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF2F86B073514</ID>
+     <TEXT>New Line 4</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF308D2A55514</ID>
+     <TEXT>New Line 3</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF308D2A57514</ID>
+     <TEXT>New Text 37</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF308D2A59514</ID>
+     <TEXT>New Table 2</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF308D2A5B514</ID>
+     <TEXT>New Line 4</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF308D2A5D514</ID>
+     <TEXT>New Line 3</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF308D2A5F514</ID>
+     <TEXT>New Text 37</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF308D2A61514</ID>
+     <TEXT>New Template 8</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF308D2A63514</ID>
+     <TEXT>New Window 1</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF308D2A65514</ID>
+     <TEXT>New Graphic 2</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF308D2A67514</ID>
+     <TEXT>New Graphic 2</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF308D2A69514</ID>
+     <TEXT>New Window 1</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF308D2A6B514</ID>
+     <TEXT>New Template 1</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF308D2A6D514</ID>
+     <TEXT>New Program Lines 2</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF308D2A6F514</ID>
+     <TEXT>New Window 2</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF308D2A71514</ID>
+     <TEXT>New Template 2</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF308D2A73514</ID>
+     <TEXT>New Program Lines 4</TEXT>
+    </FPCONTEXTT>
+    <FPCONTEXTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID>0050568A8B361FE08EDBF308D2A75514</ID>
+     <TEXT>New Window 1</TEXT>
+    </FPCONTEXTT>
+   </CONTEXTT>
+   <LAYOUT href="#o1"/>
+   <LAYOUTT>
+    <FPLAYOUTT>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID/>
+     <DIRTY/>
+     <LAYOUT/>
+     <LAYOUTM/>
+    </FPLAYOUTT>
+   </LAYOUTT>
+  </asx:values>
+  <asx:heap xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:abap="http://www.sap.com/abapxml/types/built-in" xmlns:cls="http://www.sap.com/abapxml/classes/global" xmlns:dic="http://www.sap.com/abapxml/types/dictionary">
+   <cls:CL_FP_LAYOUT id="o1">
+    <CL_FP_LAYOUT classVersion="1">
+     <TRANSLATION_TYPE/>
+     <CACHE_INFO/>
+     <LAYOUT_TYPE/>
+     <FORM_TECH/>
+    </CL_FP_LAYOUT>
+   </cls:CL_FP_LAYOUT>
+   <cls:CL_FP_CONTEXT id="o2">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF1C93EAC7514</ID>
+     <NAME>CONTEXT</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION/>
+     <PARENT/>
+     <SUCCESSOR/>
+     <CHILD href="#o3"/>
+    </CL_FP_NODE>
+    <CL_FP_CONTEXT classVersion="1"/>
+   </cls:CL_FP_CONTEXT>
+   <cls:CL_FP_FOLDER id="o3">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86AFF7514</ID>
+     <NAME>X2500_PAGE1_X2500_GRAPHIC2</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o164"/>
+     <PARENT href="#o2"/>
+     <SUCCESSOR href="#o6"/>
+     <CHILD href="#o4"/>
+    </CL_FP_NODE>
+    <CL_FP_FOLDER classVersion="1"/>
+   </cls:CL_FP_FOLDER>
+   <cls:CL_FP_GRAPHIC_URL id="o4">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86AFF9514</ID>
+     <NAME>X2500_GRAPHIC2</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o5"/>
+     <PARENT href="#o3"/>
+     <SUCCESSOR/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_GRAPHIC classVersion="1"/>
+    <CL_FP_GRAPHIC_URL classVersion="1">
+     <GRAPHIC_URL>
+      <SFPGRAPHICURL>
+       <URL>&apos;/sap/bc/fp/graphics/public&apos;</URL>
+       <URLDELIMITER>/</URLDELIMITER>
+      </SFPGRAPHICURL>
+      <SFPGRAPHICURL>
+       <URL>&apos;graphics&apos;</URL>
+       <URLDELIMITER>/</URLDELIMITER>
+      </SFPGRAPHICURL>
+      <SFPGRAPHICURL>
+       <URL>&apos;bmap&apos;</URL>
+       <URLDELIMITER>/</URLDELIMITER>
+      </SFPGRAPHICURL>
+      <SFPGRAPHICURL>
+       <URL>&apos;bcol&apos;</URL>
+       <URLDELIMITER>/</URLDELIMITER>
+      </SFPGRAPHICURL>
+      <SFPGRAPHICURL>
+       <URL>&apos;logo_final&apos;</URL>
+       <URLDELIMITER/>
+      </SFPGRAPHICURL>
+      <SFPGRAPHICURL>
+       <URL>&apos;.bmp&apos;</URL>
+       <URLDELIMITER/>
+      </SFPGRAPHICURL>
+     </GRAPHIC_URL>
+    </CL_FP_GRAPHIC_URL>
+   </cls:CL_FP_GRAPHIC_URL>
+   <cls:CL_FP_CONDITION id="o5">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o4"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_FOLDER id="o6">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86AFFB514</ID>
+     <NAME>X2500_PAGE1_ADDRESS</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o163"/>
+     <PARENT href="#o2"/>
+     <SUCCESSOR href="#o11"/>
+     <CHILD href="#o7"/>
+    </CL_FP_NODE>
+    <CL_FP_FOLDER classVersion="1"/>
+   </cls:CL_FP_FOLDER>
+   <cls:CL_FP_FOLDER id="o7">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86AFFD514</ID>
+     <NAME>X2500_TEMPLATE1</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o10"/>
+     <PARENT href="#o6"/>
+     <SUCCESSOR/>
+     <CHILD href="#o8"/>
+    </CL_FP_NODE>
+    <CL_FP_FOLDER classVersion="1"/>
+   </cls:CL_FP_FOLDER>
+   <cls:CL_FP_PROGRAMLINES id="o8">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86AFFF514</ID>
+     <NAME>X2500_CODE2</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o9"/>
+     <PARENT href="#o7"/>
+     <SUCCESSOR/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_PROGRAMLINES classVersion="1">
+     <INPUT_PARAMETERS>
+      <FPFIELD>WA_HDR</FPFIELD>
+      <FPFIELD>WA_T001W</FPFIELD>
+      <FPFIELD>WA_ADRC</FPFIELD>
+     </INPUT_PARAMETERS>
+     <OUTPUT_PARAMETERS>
+      <FPFIELD>GV_REVCNT</FPFIELD>
+      <FPFIELD>IT_CDHDR</FPFIELD>
+      <FPFIELD>WA_CDHDR</FPFIELD>
+      <FPFIELD>GV_REV_DAT</FPFIELD>
+      <FPFIELD>WA_PLANT</FPFIELD>
+     </OUTPUT_PARAMETERS>
+     <CODING>
+      <item/>
+      <item>*SELECT SINGLE * FROM T001W INTO WA_T001W</item>
+      <item>*  WHERE WERKS = WA_HDR-WERKS.</item>
+      <item>*</item>
+      <item>*SELECT SINGLE * FROM t005t INTO wa_plant</item>
+      <item>*  WHERE SPRAS = wa_t001w-SPRAS</item>
+      <item>*   AND  LAND1 = wa_t001w-LAND1.</item>
+      <item>*</item>
+      <item>*SELECT SINGLE * FROM ADRC INTO WA_ADRC</item>
+      <item>*  WHERE ADDRNUMBER = WA_T001W-ADRNR.</item>
+      <item>*</item>
+      <item>*SELECT COUNT(*) FROM cdhdr INTO gv_revcnt</item>
+      <item>*  WHERE objectclas = &apos;EINKBELEG&apos;</item>
+      <item>*    AND objectid = wa_hdr-ebeln</item>
+      <item>*    AND ( tcode = &apos;ME23N&apos;</item>
+      <item>*       OR tcode = &apos;ME22N&apos; ).</item>
+      <item>**    AND CHANGE_IND = &apos;U&apos;.</item>
+      <item>*</item>
+      <item>* SELECT * FROM cdhdr INTO TABLE it_cdhdr</item>
+      <item>*   WHERE objectid = wa_hdr-ebeln</item>
+      <item>*     AND objectclas = &apos;EINKBELEG&apos;</item>
+      <item>*     AND ( tcode = &apos;ME23N&apos;</item>
+      <item>*       OR tcode = &apos;ME22N&apos; ).</item>
+      <item>*</item>
+      <item>*SORT it_cdhdr DESCENDING by CHANGENR.</item>
+      <item>*</item>
+      <item>*</item>
+      <item>*data:hh TYPE string,</item>
+      <item>*     time TYPE cdhdr-utime.</item>
+      <item>*time = &apos;103000&apos;.</item>
+      <item>*READ TABLE it_cdhdr INTO wa_cdhdr INDEX 1.</item>
+      <item>*hh = wa_cdhdr-utime - time.</item>
+      <item>*IF hh &lt; 0.</item>
+      <item>*wa_cdhdr-udate = wa_cdhdr-udate - 1.</item>
+      <item>*ENDIF.</item>
+      <item>*CONCATENATE wa_cdhdr-udate+4(2) wa_cdhdr-udate+6(2)  wa_cdhdr-udate+0(4)</item>
+      <item>*                INTO GV_rev_dat SEPARATED BY &apos;/&apos;.</item>
+      <item/>
+      <item/>
+      <item>**********</item>
+      <item>DATA: lv_name   TYPE thead-tdname,        &quot;ADDED BY SUPRIYA ON 13TH AUGUST 2024</item>
+      <item>      lv_bedat  TYPE ekko-bedat,          &quot;ADDED BY SUPRIYA ON 13TH AUGUST 2024</item>
+      <item>      lv_cutoff TYPE d VALUE &apos;20240812&apos;.  &quot;ADDED BY SUPRIYA ON 13TH AUGUST 2024</item>
+      <item>lv_bedat = wa_hdr-bedat.                  &quot;ADDED BY SUPRIYA ON 13TH AUGUST 2024</item>
+      <item/>
+      <item>SELECT SINGLE * FROM T001W INTO WA_T001W</item>
+      <item> WHERE WERKS = WA_HDR-WERKS.</item>
+      <item/>
+      <item>SELECT SINGLE * FROM t005t INTO wa_plant</item>
+      <item>  WHERE SPRAS = wa_t001w-SPRAS</item>
+      <item>   AND  LAND1 = wa_t001w-LAND1.</item>
+      <item/>
+      <item>SELECT SINGLE * FROM ADRC INTO WA_ADRC</item>
+      <item>  WHERE ADDRNUMBER = WA_T001W-ADRNR.</item>
+      <item>SELECT COUNT(*) FROM cdhdr INTO gv_revcnt</item>
+      <item>  WHERE objectclas = &apos;EINKBELEG&apos;</item>
+      <item>    AND objectid = wa_hdr-ebeln</item>
+      <item>    AND ( tcode = &apos;ME23N&apos;</item>
+      <item>       OR tcode = &apos;ME22N&apos; ).</item>
+      <item>*    AND CHANGE_IND = &apos;U&apos;.</item>
+      <item>SELECT * FROM cdhdr INTO TABLE it_cdhdr</item>
+      <item>   WHERE objectid = wa_hdr-ebeln</item>
+      <item>     AND objectclas = &apos;EINKBELEG&apos;</item>
+      <item>     AND ( tcode = &apos;ME23N&apos;</item>
+      <item>       OR tcode = &apos;ME22N&apos; ).</item>
+      <item/>
+      <item>SORT it_cdhdr DESCENDING by CHANGENR.</item>
+      <item>data:hh TYPE string,</item>
+      <item>     time TYPE cdhdr-utime.</item>
+      <item>time = &apos;103000&apos;.</item>
+      <item>READ TABLE it_cdhdr INTO wa_cdhdr INDEX 1.</item>
+      <item>hh = wa_cdhdr-utime - time.</item>
+      <item>IF hh &lt; 0.</item>
+      <item>wa_cdhdr-udate = wa_cdhdr-udate - 1.</item>
+      <item>ENDIF.</item>
+      <item>CONCATENATE wa_cdhdr-udate+4(2) wa_cdhdr-udate+6(2)  wa_cdhdr-udate+0(4)</item>
+      <item>                INTO GV_rev_dat SEPARATED BY &apos;/&apos;.</item>
+      <item/>
+      <item/>
+      <item>IF lv_bedat &gt; lv_cutoff.</item>
+      <item>  wa_adrc-street = &apos;6535 Industrial Dr, Ste 103&apos;.</item>
+      <item/>
+      <item>  ENDIF.</item>
+     </CODING>
+    </CL_FP_PROGRAMLINES>
+   </cls:CL_FP_PROGRAMLINES>
+   <cls:CL_FP_CONDITION id="o9">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o8"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o10">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o7"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_FOLDER id="o11">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B001514</ID>
+     <NAME>X2500_PAGE1_PO</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o162"/>
+     <PARENT href="#o2"/>
+     <SUCCESSOR href="#o16"/>
+     <CHILD href="#o12"/>
+    </CL_FP_NODE>
+    <CL_FP_FOLDER classVersion="1"/>
+   </cls:CL_FP_FOLDER>
+   <cls:CL_FP_FOLDER id="o12">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B003514</ID>
+     <NAME>X2500_TEMPLATE2</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o15"/>
+     <PARENT href="#o11"/>
+     <SUCCESSOR/>
+     <CHILD href="#o13"/>
+    </CL_FP_NODE>
+    <CL_FP_FOLDER classVersion="1"/>
+   </cls:CL_FP_FOLDER>
+   <cls:CL_FP_PROGRAMLINES id="o13">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B005514</ID>
+     <NAME>X2500_CODE4</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o14"/>
+     <PARENT href="#o12"/>
+     <SUCCESSOR/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_PROGRAMLINES classVersion="1">
+     <INPUT_PARAMETERS>
+      <FPFIELD>WA_HDR</FPFIELD>
+      <FPFIELD>GV_ISSUE</FPFIELD>
+      <FPFIELD>GV_EXP</FPFIELD>
+      <FPFIELD>LT_LINES</FPFIELD>
+      <FPFIELD>LS_LINES</FPFIELD>
+     </INPUT_PARAMETERS>
+     <OUTPUT_PARAMETERS>
+      <FPFIELD>CUST</FPFIELD>
+      <FPFIELD>CUST1</FPFIELD>
+     </OUTPUT_PARAMETERS>
+     <CODING>
+      <item/>
+      <item>CONCATENATE wa_hdr-bedat+4(2) wa_hdr-bedat+6(2)  wa_hdr-bedat+0(4)</item>
+      <item>                INTO gv_issue SEPARATED BY &apos;/&apos;.</item>
+      <item/>
+      <item>CONCATENATE wa_hdr-eindt+4(2) wa_hdr-eindt+6(2) wa_hdr-eindt+0(4)</item>
+      <item>                INTO gv_exp SEPARATED BY &apos;/&apos;.</item>
+      <item/>
+      <item>DATA: lv_name   TYPE thead-tdname.</item>
+      <item> CLEAR: lt_lines,ls_LINES.</item>
+      <item>      REFRESH lt_lines.</item>
+      <item>      lv_name = wa_hdr-ebeln.</item>
+      <item>      CALL FUNCTION &apos;READ_TEXT&apos;</item>
+      <item>        EXPORTING</item>
+      <item>          client                  = sy-mandt</item>
+      <item>          id                      = &apos;F22&apos;</item>
+      <item>          language                = sy-langu</item>
+      <item>          name                    = lv_name</item>
+      <item>          object                  = &apos;EKKO&apos;</item>
+      <item>        TABLES</item>
+      <item>          lines                   = lt_lines</item>
+      <item>        EXCEPTIONS</item>
+      <item>          id                      = 1</item>
+      <item>          language                = 2</item>
+      <item>          name                    = 3</item>
+      <item>          not_found               = 4</item>
+      <item>          object                  = 5</item>
+      <item>          reference_check         = 6</item>
+      <item>          wrong_access_to_archive = 7</item>
+      <item>          OTHERS                  = 8.</item>
+      <item>      IF sy-subrc &lt;&gt; 0.</item>
+      <item>* MESSAGE ID SY-MSGID TYPE SY-MSGTY NUMBER SY-MSGNO</item>
+      <item>*         WITH SY-MSGV1 SY-MSGV2 SY-MSGV3 SY-MSGV4.</item>
+      <item>      ENDIF.</item>
+      <item/>
+      <item> IF lt_lines IS NOT INITIAL.</item>
+      <item>   READ TABLE lt_lines INTO ls_lines INDEX 1.</item>
+      <item>   IF sy-subrc = 0 .</item>
+      <item>     cust = ls_lines-tdline.</item>
+      <item>   ENDIF.</item>
+      <item/>
+      <item>   READ TABLE lt_lines INTO ls_lines INDEX 2.</item>
+      <item>   IF sy-subrc = 0 .</item>
+      <item>     cust1 = ls_lines-tdline.</item>
+      <item>   ENDIF.</item>
+      <item>ENDIF.</item>
+      <item/>
+      <item>REPLACE ALL OCCURRENCES OF &apos;&lt;(&gt;&apos; IN cust WITH SPACE.</item>
+      <item>REPLACE ALL OCCURRENCES OF &apos;&lt;)&gt;&apos; IN cust WITH SPACE.</item>
+      <item>REPLACE ALL OCCURRENCES OF &apos;&lt;(&gt;&apos; IN cust1 WITH SPACE.</item>
+      <item>REPLACE ALL OCCURRENCES OF &apos;&lt;)&gt;&apos; IN cust1 WITH SPACE.</item>
+      <item/>
+      <item>IF cust IS INITIAL .</item>
+      <item>  IF cust1 IS INITIAL.</item>
+      <item>    cust = &apos;STOCK ORDER&apos;.</item>
+      <item>  ENDIF.</item>
+      <item/>
+      <item>ENDIF.</item>
+     </CODING>
+    </CL_FP_PROGRAMLINES>
+   </cls:CL_FP_PROGRAMLINES>
+   <cls:CL_FP_CONDITION id="o14">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o13"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o15">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o12"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_FOLDER id="o16">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B007514</ID>
+     <NAME>X2500_PAGE1_X2500_WINDOW2</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o161"/>
+     <PARENT href="#o2"/>
+     <SUCCESSOR href="#o17"/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_FOLDER classVersion="1"/>
+   </cls:CL_FP_FOLDER>
+   <cls:CL_FP_FOLDER id="o17">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B009514</ID>
+     <NAME>X2500_PAGE1_TO_SHIP_TO</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o160"/>
+     <PARENT href="#o2"/>
+     <SUCCESSOR href="#o22"/>
+     <CHILD href="#o18"/>
+    </CL_FP_NODE>
+    <CL_FP_FOLDER classVersion="1"/>
+   </cls:CL_FP_FOLDER>
+   <cls:CL_FP_FOLDER id="o18">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B00B514</ID>
+     <NAME>X2500_TEMPLATE3</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o21"/>
+     <PARENT href="#o17"/>
+     <SUCCESSOR/>
+     <CHILD href="#o19"/>
+    </CL_FP_NODE>
+    <CL_FP_FOLDER classVersion="1"/>
+   </cls:CL_FP_FOLDER>
+   <cls:CL_FP_PROGRAMLINES id="o19">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B00D514</ID>
+     <NAME>X2500_CODE11</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o20"/>
+     <PARENT href="#o18"/>
+     <SUCCESSOR/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_PROGRAMLINES classVersion="1">
+     <INPUT_PARAMETERS>
+      <FPFIELD>WA_HDR</FPFIELD>
+      <FPFIELD>LT_LINES</FPFIELD>
+     </INPUT_PARAMETERS>
+     <OUTPUT_PARAMETERS>
+      <FPFIELD>LS_LINES</FPFIELD>
+      <FPFIELD>SHIP_TO</FPFIELD>
+      <FPFIELD>SHIP_TO1</FPFIELD>
+      <FPFIELD>SHIP_TO2</FPFIELD>
+      <FPFIELD>SHIP_TO3</FPFIELD>
+      <FPFIELD>SHIP_TO4</FPFIELD>
+      <FPFIELD>SHIP_TO5</FPFIELD>
+     </OUTPUT_PARAMETERS>
+     <CODING>
+      <item>DATA: lv_name   TYPE thead-tdname.</item>
+      <item> CLEAR: lt_lines,ls_LINES.</item>
+      <item>      REFRESH lt_lines.</item>
+      <item>      lv_name = wa_hdr-ebeln.</item>
+      <item>      CALL FUNCTION &apos;READ_TEXT&apos;</item>
+      <item>        EXPORTING</item>
+      <item>          client                  = sy-mandt</item>
+      <item>          id                      = &apos;F14&apos;</item>
+      <item>          language                = sy-langu</item>
+      <item>          name                    = lv_name</item>
+      <item>          object                  = &apos;EKKO&apos;</item>
+      <item>        TABLES</item>
+      <item>          lines                   = lt_lines</item>
+      <item>        EXCEPTIONS</item>
+      <item>          id                      = 1</item>
+      <item>          language                = 2</item>
+      <item>          name                    = 3</item>
+      <item>          not_found               = 4</item>
+      <item>          object                  = 5</item>
+      <item>          reference_check         = 6</item>
+      <item>          wrong_access_to_archive = 7</item>
+      <item>          OTHERS                  = 8.</item>
+      <item>      IF sy-subrc &lt;&gt; 0.</item>
+      <item>* MESSAGE ID SY-MSGID TYPE SY-MSGTY NUMBER SY-MSGNO</item>
+      <item>*         WITH SY-MSGV1 SY-MSGV2 SY-MSGV3 SY-MSGV4.</item>
+      <item>      ENDIF.</item>
+      <item> IF lt_lines IS NOT INITIAL.</item>
+      <item> READ TABLE lt_lines INTO ls_lines INDEX 1.</item>
+      <item> IF sy-subrc = 0.</item>
+      <item>   ship_to = ls_lines-tdline.</item>
+      <item> ENDIF.</item>
+      <item/>
+      <item> READ TABLE lt_lines INTO ls_lines INDEX 2.</item>
+      <item> IF sy-subrc = 0.</item>
+      <item>   ship_to1 = ls_lines-tdline.</item>
+      <item> ENDIF.</item>
+      <item/>
+      <item> READ TABLE lt_lines INTO ls_lines INDEX 3.</item>
+      <item> IF sy-subrc = 0.</item>
+      <item>   ship_to2 = ls_lines-tdline.</item>
+      <item> ENDIF.</item>
+      <item/>
+      <item> READ TABLE lt_lines INTO ls_lines INDEX 4.</item>
+      <item> IF sy-subrc = 0.</item>
+      <item>   ship_to3 = ls_lines-tdline.</item>
+      <item> ENDIF.</item>
+      <item/>
+      <item> READ TABLE lt_lines INTO ls_lines INDEX 5.</item>
+      <item> IF sy-subrc = 0.</item>
+      <item>   ship_to4 = ls_lines-tdline.</item>
+      <item> ENDIF.</item>
+      <item/>
+      <item> READ TABLE lt_lines INTO ls_lines INDEX 6.</item>
+      <item> IF sy-subrc = 0.</item>
+      <item>   ship_to5 = ls_lines-tdline.</item>
+      <item> ENDIF.</item>
+      <item/>
+      <item>*</item>
+      <item>*   LOOP AT lt_lines INTO ls_lines.</item>
+      <item>*     IF NOT ls_lines-tdline IS INITIAL.</item>
+      <item>*            CONCATENATE ship_to ls_lines-tdline INTO ship_to SEPARATED BY space.</item>
+      <item>*     ENDIF.</item>
+      <item>*   ENDLOOP.</item>
+      <item> ENDIF.</item>
+      <item/>
+      <item>REPLACE ALL OCCURRENCES OF &apos;&lt;(&gt;&apos; IN ship_to WITH SPACE.</item>
+      <item>REPLACE ALL OCCURRENCES OF &apos;&lt;)&gt;&apos; IN ship_to WITH SPACE.</item>
+      <item>REPLACE ALL OCCURRENCES OF &apos;&lt;(&gt;&apos; IN ship_to1 WITH SPACE.</item>
+      <item>REPLACE ALL OCCURRENCES OF &apos;&lt;)&gt;&apos; IN ship_to1 WITH SPACE.</item>
+      <item>REPLACE ALL OCCURRENCES OF &apos;&lt;(&gt;&apos; IN ship_to2 WITH SPACE.</item>
+      <item>REPLACE ALL OCCURRENCES OF &apos;&lt;)&gt;&apos; IN ship_to2 WITH SPACE.</item>
+      <item>REPLACE ALL OCCURRENCES OF &apos;&lt;(&gt;&apos; IN ship_to3 WITH SPACE.</item>
+      <item>REPLACE ALL OCCURRENCES OF &apos;&lt;)&gt;&apos; IN ship_to3 WITH SPACE.</item>
+      <item>REPLACE ALL OCCURRENCES OF &apos;&lt;(&gt;&apos; IN ship_to4 WITH SPACE.</item>
+      <item>REPLACE ALL OCCURRENCES OF &apos;&lt;)&gt;&apos; IN ship_to4 WITH SPACE.</item>
+      <item>REPLACE ALL OCCURRENCES OF &apos;&lt;(&gt;&apos; IN ship_to5 WITH SPACE.</item>
+      <item>REPLACE ALL OCCURRENCES OF &apos;&lt;)&gt;&apos; IN ship_to5 WITH SPACE.</item>
+     </CODING>
+    </CL_FP_PROGRAMLINES>
+   </cls:CL_FP_PROGRAMLINES>
+   <cls:CL_FP_CONDITION id="o20">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o19"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o21">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o18"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_FOLDER id="o22">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B00F514</ID>
+     <NAME>X2500_PAGE1_SUPPLIER</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o159"/>
+     <PARENT href="#o2"/>
+     <SUCCESSOR href="#o27"/>
+     <CHILD href="#o23"/>
+    </CL_FP_NODE>
+    <CL_FP_FOLDER classVersion="1"/>
+   </cls:CL_FP_FOLDER>
+   <cls:CL_FP_FOLDER id="o23">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B011514</ID>
+     <NAME>X2500_TEMPLATE4</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o26"/>
+     <PARENT href="#o22"/>
+     <SUCCESSOR/>
+     <CHILD href="#o24"/>
+    </CL_FP_NODE>
+    <CL_FP_FOLDER classVersion="1"/>
+   </cls:CL_FP_FOLDER>
+   <cls:CL_FP_PROGRAMLINES id="o24">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B013514</ID>
+     <NAME>X2500_CODE13</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o25"/>
+     <PARENT href="#o23"/>
+     <SUCCESSOR/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_PROGRAMLINES classVersion="1">
+     <INPUT_PARAMETERS>
+      <FPFIELD>WA_EKKO1</FPFIELD>
+      <FPFIELD>IT_EKKO1</FPFIELD>
+      <FPFIELD>WA_HDR</FPFIELD>
+      <FPFIELD>WA_ITEM</FPFIELD>
+     </INPUT_PARAMETERS>
+     <OUTPUT_PARAMETERS/>
+     <CODING>
+      <item>SELECT ebeln</item>
+      <item>       inco2</item>
+      <item>  from ekko</item>
+      <item>  into TABLE it_ekko1</item>
+      <item>  where ebeln = WA_HDR-EBELN.</item>
+      <item/>
+      <item>  loop at it_ekko1 into wa_ekko1.</item>
+      <item/>
+      <item>    wa_item-inco2 = wa_ekko1-inco2.</item>
+      <item>    ENDLOOP.</item>
+     </CODING>
+    </CL_FP_PROGRAMLINES>
+   </cls:CL_FP_PROGRAMLINES>
+   <cls:CL_FP_CONDITION id="o25">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o24"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o26">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o23"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_FOLDER id="o27">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B015514</ID>
+     <NAME>MAIN</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o158"/>
+     <PARENT href="#o2"/>
+     <SUCCESSOR href="#o138"/>
+     <CHILD href="#o28"/>
+    </CL_FP_NODE>
+    <CL_FP_FOLDER classVersion="1"/>
+   </cls:CL_FP_FOLDER>
+   <cls:CL_FP_LOOP id="o28">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B017514</ID>
+     <NAME>X2500_TABLE1</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o137"/>
+     <PARENT href="#o27"/>
+     <SUCCESSOR href="#o111"/>
+     <CHILD href="#o30"/>
+    </CL_FP_NODE>
+    <CL_FP_LOOP classVersion="1">
+     <TABLE_NAME>IT_ITEMS</TABLE_NAME>
+     <LOOP_INTO>X</LOOP_INTO>
+     <WORK_AREA>WA_ITEM</WORK_AREA>
+     <FIRST_LINE>0000000000</FIRST_LINE>
+     <LAST_LINE>0000000000</LAST_LINE>
+     <WHERE_CONDITION href="#o29"/>
+     <SORTED/>
+     <CONTROL_LEVEL/>
+    </CL_FP_LOOP>
+   </cls:CL_FP_LOOP>
+   <cls:CL_FP_CONDITION id="o29">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o28"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_LOOP_DATA id="o30">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B019514</ID>
+     <NAME>WA_ITEM</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o110"/>
+     <PARENT href="#o28"/>
+     <SUCCESSOR/>
+     <CHILD href="#o31"/>
+    </CL_FP_NODE>
+    <CL_FP_LOOP_DATA classVersion="1"/>
+   </cls:CL_FP_LOOP_DATA>
+   <cls:CL_FP_DATA id="o31">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B01B514</ID>
+     <NAME>EBELP</NAME>
+     <GENERATED>X</GENERATED>
+     <STATE>A</STATE>
+     <CONDITION href="#o109"/>
+     <PARENT href="#o30"/>
+     <SUCCESSOR href="#o32"/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_DATA classVersion="1">
+     <FIELD>WA_ITEM-EBELP</FIELD>
+     <FIELD_LABEL/>
+    </CL_FP_DATA>
+   </cls:CL_FP_DATA>
+   <cls:CL_FP_DATA id="o32">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B01D514</ID>
+     <NAME>MATNR</NAME>
+     <GENERATED>X</GENERATED>
+     <STATE>A</STATE>
+     <CONDITION href="#o108"/>
+     <PARENT href="#o30"/>
+     <SUCCESSOR href="#o33"/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_DATA classVersion="1">
+     <FIELD>WA_ITEM-MATNR</FIELD>
+     <FIELD_LABEL/>
+    </CL_FP_DATA>
+   </cls:CL_FP_DATA>
+   <cls:CL_FP_DATA id="o33">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B01F514</ID>
+     <NAME>TXZ01</NAME>
+     <GENERATED>X</GENERATED>
+     <STATE>A</STATE>
+     <CONDITION href="#o107"/>
+     <PARENT href="#o30"/>
+     <SUCCESSOR href="#o34"/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_DATA classVersion="1">
+     <FIELD>WA_ITEM-TXZ01</FIELD>
+     <FIELD_LABEL/>
+    </CL_FP_DATA>
+   </cls:CL_FP_DATA>
+   <cls:CL_FP_DATA id="o34">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B021514</ID>
+     <NAME>WERKS</NAME>
+     <GENERATED>X</GENERATED>
+     <STATE>A</STATE>
+     <CONDITION href="#o106"/>
+     <PARENT href="#o30"/>
+     <SUCCESSOR href="#o35"/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_DATA classVersion="1">
+     <FIELD>WA_ITEM-WERKS</FIELD>
+     <FIELD_LABEL/>
+    </CL_FP_DATA>
+   </cls:CL_FP_DATA>
+   <cls:CL_FP_DATA id="o35">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B023514</ID>
+     <NAME>MENGE</NAME>
+     <GENERATED>X</GENERATED>
+     <STATE>A</STATE>
+     <CONDITION href="#o105"/>
+     <PARENT href="#o30"/>
+     <SUCCESSOR href="#o36"/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_DATA classVersion="1">
+     <FIELD>WA_ITEM-MENGE</FIELD>
+     <FIELD_LABEL/>
+    </CL_FP_DATA>
+   </cls:CL_FP_DATA>
+   <cls:CL_FP_DATA id="o36">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B025514</ID>
+     <NAME>MEINS</NAME>
+     <GENERATED>X</GENERATED>
+     <STATE>A</STATE>
+     <CONDITION href="#o104"/>
+     <PARENT href="#o30"/>
+     <SUCCESSOR href="#o37"/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_DATA classVersion="1">
+     <FIELD>WA_ITEM-MEINS</FIELD>
+     <FIELD_LABEL/>
+    </CL_FP_DATA>
+   </cls:CL_FP_DATA>
+   <cls:CL_FP_DATA id="o37">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B027514</ID>
+     <NAME>NETPR</NAME>
+     <GENERATED>X</GENERATED>
+     <STATE>A</STATE>
+     <CONDITION href="#o103"/>
+     <PARENT href="#o30"/>
+     <SUCCESSOR href="#o38"/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_DATA classVersion="1">
+     <FIELD>WA_ITEM-NETPR</FIELD>
+     <FIELD_LABEL/>
+    </CL_FP_DATA>
+   </cls:CL_FP_DATA>
+   <cls:CL_FP_DATA id="o38">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B029514</ID>
+     <NAME>NETWR</NAME>
+     <GENERATED>X</GENERATED>
+     <STATE>A</STATE>
+     <CONDITION href="#o102"/>
+     <PARENT href="#o30"/>
+     <SUCCESSOR href="#o39"/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_DATA classVersion="1">
+     <FIELD>WA_ITEM-NETWR</FIELD>
+     <FIELD_LABEL/>
+    </CL_FP_DATA>
+   </cls:CL_FP_DATA>
+   <cls:CL_FP_DATA id="o39">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B02B514</ID>
+     <NAME>BRTWR</NAME>
+     <GENERATED>X</GENERATED>
+     <STATE>A</STATE>
+     <CONDITION href="#o101"/>
+     <PARENT href="#o30"/>
+     <SUCCESSOR href="#o40"/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_DATA classVersion="1">
+     <FIELD>WA_ITEM-BRTWR</FIELD>
+     <FIELD_LABEL/>
+    </CL_FP_DATA>
+   </cls:CL_FP_DATA>
+   <cls:CL_FP_DATA id="o40">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B02D514</ID>
+     <NAME>NTGEW</NAME>
+     <GENERATED>X</GENERATED>
+     <STATE>A</STATE>
+     <CONDITION href="#o100"/>
+     <PARENT href="#o30"/>
+     <SUCCESSOR href="#o41"/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_DATA classVersion="1">
+     <FIELD>WA_ITEM-NTGEW</FIELD>
+     <FIELD_LABEL/>
+    </CL_FP_DATA>
+   </cls:CL_FP_DATA>
+   <cls:CL_FP_DATA id="o41">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B02F514</ID>
+     <NAME>GEWEI</NAME>
+     <GENERATED>X</GENERATED>
+     <STATE>A</STATE>
+     <CONDITION href="#o99"/>
+     <PARENT href="#o30"/>
+     <SUCCESSOR href="#o42"/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_DATA classVersion="1">
+     <FIELD>WA_ITEM-GEWEI</FIELD>
+     <FIELD_LABEL/>
+    </CL_FP_DATA>
+   </cls:CL_FP_DATA>
+   <cls:CL_FP_DATA id="o42">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B031514</ID>
+     <NAME>BANFN</NAME>
+     <GENERATED>X</GENERATED>
+     <STATE>A</STATE>
+     <CONDITION href="#o98"/>
+     <PARENT href="#o30"/>
+     <SUCCESSOR href="#o43"/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_DATA classVersion="1">
+     <FIELD>WA_ITEM-BANFN</FIELD>
+     <FIELD_LABEL/>
+    </CL_FP_DATA>
+   </cls:CL_FP_DATA>
+   <cls:CL_FP_DATA id="o43">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B033514</ID>
+     <NAME>EINDT</NAME>
+     <GENERATED>X</GENERATED>
+     <STATE>A</STATE>
+     <CONDITION href="#o97"/>
+     <PARENT href="#o30"/>
+     <SUCCESSOR href="#o44"/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_DATA classVersion="1">
+     <FIELD>WA_ITEM-EINDT</FIELD>
+     <FIELD_LABEL/>
+    </CL_FP_DATA>
+   </cls:CL_FP_DATA>
+   <cls:CL_FP_DATA id="o44">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B035514</ID>
+     <NAME>SLFDT</NAME>
+     <GENERATED>X</GENERATED>
+     <STATE>A</STATE>
+     <CONDITION href="#o96"/>
+     <PARENT href="#o30"/>
+     <SUCCESSOR href="#o45"/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_DATA classVersion="1">
+     <FIELD>WA_ITEM-SLFDT</FIELD>
+     <FIELD_LABEL/>
+    </CL_FP_DATA>
+   </cls:CL_FP_DATA>
+   <cls:CL_FP_DATA id="o45">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B037514</ID>
+     <NAME>ZEINR</NAME>
+     <GENERATED>X</GENERATED>
+     <STATE>A</STATE>
+     <CONDITION href="#o95"/>
+     <PARENT href="#o30"/>
+     <SUCCESSOR href="#o46"/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_DATA classVersion="1">
+     <FIELD>WA_ITEM-ZEINR</FIELD>
+     <FIELD_LABEL/>
+    </CL_FP_DATA>
+   </cls:CL_FP_DATA>
+   <cls:CL_FP_DATA id="o46">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B039514</ID>
+     <NAME>VBELN</NAME>
+     <GENERATED>X</GENERATED>
+     <STATE>A</STATE>
+     <CONDITION href="#o94"/>
+     <PARENT href="#o30"/>
+     <SUCCESSOR href="#o47"/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_DATA classVersion="1">
+     <FIELD>WA_ITEM-VBELN</FIELD>
+     <FIELD_LABEL/>
+    </CL_FP_DATA>
+   </cls:CL_FP_DATA>
+   <cls:CL_FP_DATA id="o47">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B03B514</ID>
+     <NAME>VBELP</NAME>
+     <GENERATED>X</GENERATED>
+     <STATE>A</STATE>
+     <CONDITION href="#o93"/>
+     <PARENT href="#o30"/>
+     <SUCCESSOR href="#o48"/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_DATA classVersion="1">
+     <FIELD>WA_ITEM-VBELP</FIELD>
+     <FIELD_LABEL/>
+    </CL_FP_DATA>
+   </cls:CL_FP_DATA>
+   <cls:CL_FP_DATA id="o48">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B03D514</ID>
+     <NAME>ITM_TXT</NAME>
+     <GENERATED>X</GENERATED>
+     <STATE>A</STATE>
+     <CONDITION href="#o92"/>
+     <PARENT href="#o30"/>
+     <SUCCESSOR href="#o49"/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_DATA classVersion="1">
+     <FIELD>WA_ITEM-ITM_TXT</FIELD>
+     <FIELD_LABEL/>
+    </CL_FP_DATA>
+   </cls:CL_FP_DATA>
+   <cls:CL_FP_DATA id="o49">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B03F514</ID>
+     <NAME>ADTXT</NAME>
+     <GENERATED>X</GENERATED>
+     <STATE>A</STATE>
+     <CONDITION href="#o91"/>
+     <PARENT href="#o30"/>
+     <SUCCESSOR href="#o50"/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_DATA classVersion="1">
+     <FIELD>WA_ITEM-ADTXT</FIELD>
+     <FIELD_LABEL/>
+    </CL_FP_DATA>
+   </cls:CL_FP_DATA>
+   <cls:CL_FP_DATA id="o50">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B041514</ID>
+     <NAME>ZEIVR</NAME>
+     <GENERATED>X</GENERATED>
+     <STATE>A</STATE>
+     <CONDITION href="#o90"/>
+     <PARENT href="#o30"/>
+     <SUCCESSOR href="#o51"/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_DATA classVersion="1">
+     <FIELD>WA_ITEM-ZEIVR</FIELD>
+     <FIELD_LABEL/>
+    </CL_FP_DATA>
+   </cls:CL_FP_DATA>
+   <cls:CL_FP_DATA id="o51">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B043514</ID>
+     <NAME>PSTYP</NAME>
+     <GENERATED>X</GENERATED>
+     <STATE>A</STATE>
+     <CONDITION href="#o89"/>
+     <PARENT href="#o30"/>
+     <SUCCESSOR href="#o52"/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_DATA classVersion="1">
+     <FIELD>WA_ITEM-PSTYP</FIELD>
+     <FIELD_LABEL/>
+    </CL_FP_DATA>
+   </cls:CL_FP_DATA>
+   <cls:CL_FP_DATA id="o52">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B045514</ID>
+     <NAME>PACKNO</NAME>
+     <GENERATED>X</GENERATED>
+     <STATE>A</STATE>
+     <CONDITION href="#o88"/>
+     <PARENT href="#o30"/>
+     <SUCCESSOR href="#o53"/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_DATA classVersion="1">
+     <FIELD>WA_ITEM-PACKNO</FIELD>
+     <FIELD_LABEL/>
+    </CL_FP_DATA>
+   </cls:CL_FP_DATA>
+   <cls:CL_FP_DATA id="o53">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B047514</ID>
+     <NAME>INCO2</NAME>
+     <GENERATED>X</GENERATED>
+     <STATE>A</STATE>
+     <CONDITION href="#o87"/>
+     <PARENT href="#o30"/>
+     <SUCCESSOR href="#o54"/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_DATA classVersion="1">
+     <FIELD>WA_ITEM-INCO2</FIELD>
+     <FIELD_LABEL/>
+    </CL_FP_DATA>
+   </cls:CL_FP_DATA>
+   <cls:CL_FP_DATA id="o54">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B049514</ID>
+     <NAME>INFNR</NAME>
+     <GENERATED>X</GENERATED>
+     <STATE>A</STATE>
+     <CONDITION href="#o86"/>
+     <PARENT href="#o30"/>
+     <SUCCESSOR href="#o55"/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_DATA classVersion="1">
+     <FIELD>WA_ITEM-INFNR</FIELD>
+     <FIELD_LABEL/>
+    </CL_FP_DATA>
+   </cls:CL_FP_DATA>
+   <cls:CL_FP_DATA id="o55">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B04B514</ID>
+     <NAME>EKORG</NAME>
+     <GENERATED>X</GENERATED>
+     <STATE>A</STATE>
+     <CONDITION href="#o85"/>
+     <PARENT href="#o30"/>
+     <SUCCESSOR href="#o56"/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_DATA classVersion="1">
+     <FIELD>WA_ITEM-EKORG</FIELD>
+     <FIELD_LABEL/>
+    </CL_FP_DATA>
+   </cls:CL_FP_DATA>
+   <cls:CL_FP_DATA id="o56">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B04D514</ID>
+     <NAME>ESOKZ</NAME>
+     <GENERATED>X</GENERATED>
+     <STATE>A</STATE>
+     <CONDITION href="#o84"/>
+     <PARENT href="#o30"/>
+     <SUCCESSOR href="#o57"/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_DATA classVersion="1">
+     <FIELD>WA_ITEM-ESOKZ</FIELD>
+     <FIELD_LABEL/>
+    </CL_FP_DATA>
+   </cls:CL_FP_DATA>
+   <cls:CL_FP_FOLDER id="o57">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B04F514</ID>
+     <NAME>X2500_ROW1</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o83"/>
+     <PARENT href="#o30"/>
+     <SUCCESSOR href="#o58"/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_FOLDER classVersion="1"/>
+   </cls:CL_FP_FOLDER>
+   <cls:CL_FP_FOLDER id="o58">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B051514</ID>
+     <NAME>X2500_ROW2</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o82"/>
+     <PARENT href="#o30"/>
+     <SUCCESSOR/>
+     <CHILD href="#o59"/>
+    </CL_FP_NODE>
+    <CL_FP_FOLDER classVersion="1"/>
+   </cls:CL_FP_FOLDER>
+   <cls:CL_FP_PROGRAMLINES id="o59">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B053514</ID>
+     <NAME>X2500_CODE7</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o81"/>
+     <PARENT href="#o58"/>
+     <SUCCESSOR href="#o60"/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_PROGRAMLINES classVersion="1">
+     <INPUT_PARAMETERS>
+      <FPFIELD>GV_MARA</FPFIELD>
+      <FPFIELD>WA_ITEM</FPFIELD>
+     </INPUT_PARAMETERS>
+     <OUTPUT_PARAMETERS>
+      <FPFIELD>GV_USA</FPFIELD>
+     </OUTPUT_PARAMETERS>
+     <CODING>
+      <item/>
+      <item/>
+      <item>clear:gv_usa.</item>
+      <item/>
+      <item>SELECT SINGLE * FROM mara INTO gv_mara</item>
+      <item>  WHERE matnr = wa_item-matnr.</item>
+      <item>IF wa_item-matnr NE gv_mara-wrkst .</item>
+      <item/>
+      <item/>
+      <item>IF gv_mara-wrkst IS NOT INITIAL.</item>
+      <item>CONCATENATE  &apos;(&apos; gv_mara-wrkst &apos;)&apos; INTO gv_usa.</item>
+      <item>ENDIF.</item>
+      <item/>
+      <item>ENDIF.</item>
+     </CODING>
+    </CL_FP_PROGRAMLINES>
+   </cls:CL_FP_PROGRAMLINES>
+   <cls:CL_FP_PROGRAMLINES id="o60">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B055514</ID>
+     <NAME>X2500_CODE1</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o80"/>
+     <PARENT href="#o58"/>
+     <SUCCESSOR href="#o61"/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_PROGRAMLINES classVersion="1">
+     <INPUT_PARAMETERS>
+      <FPFIELD>WA_MAKT</FPFIELD>
+      <FPFIELD>WA_ITEM</FPFIELD>
+      <FPFIELD>WA_EKET</FPFIELD>
+      <FPFIELD>WA_HDR</FPFIELD>
+      <FPFIELD>GV_SHIP</FPFIELD>
+      <FPFIELD>IT_LINES</FPFIELD>
+      <FPFIELD>LINES</FPFIELD>
+      <FPFIELD>GV_TEXT</FPFIELD>
+      <FPFIELD>LV_MEMO</FPFIELD>
+     </INPUT_PARAMETERS>
+     <OUTPUT_PARAMETERS/>
+     <CODING>
+      <item/>
+      <item/>
+      <item>SELECT SINGLE * FROM EKET INTO WA_EKET</item>
+      <item>  WHERE EBELN = WA_HDR-EBELN</item>
+      <item>   AND  EBELP = WA_ITEM-EBELP.</item>
+      <item>*BREAK primus.</item>
+      <item>CONCATENATE WA_EKET-EINDT+4(2) WA_EKET-EINDT+6(2)  WA_EKET-EINDT+0(4)</item>
+      <item>                INTO gv_ship SEPARATED BY &apos;/&apos;.</item>
+      <item/>
+      <item>DATA: lv_name   TYPE thead-tdname.</item>
+      <item/>
+      <item>  CLEAR: it_lines,LINES.</item>
+      <item>      REFRESH it_lines.</item>
+      <item>      lv_name = wa_item-matnr.</item>
+      <item>      CALL FUNCTION &apos;READ_TEXT&apos;</item>
+      <item>        EXPORTING</item>
+      <item>          client                  = sy-mandt</item>
+      <item>          id                      = &apos;GRUN&apos;</item>
+      <item>          language                = sy-langu</item>
+      <item>          name                    = lv_name</item>
+      <item>          object                  = &apos;MATERIAL&apos;</item>
+      <item>        TABLES</item>
+      <item>          lines                   = it_lines</item>
+      <item>        EXCEPTIONS</item>
+      <item>          id                      = 1</item>
+      <item>          language                = 2</item>
+      <item>          name                    = 3</item>
+      <item>          not_found               = 4</item>
+      <item>          object                  = 5</item>
+      <item>          reference_check         = 6</item>
+      <item>          wrong_access_to_archive = 7</item>
+      <item>          OTHERS                  = 8.</item>
+      <item>      IF sy-subrc &lt;&gt; 0.</item>
+      <item>* MESSAGE ID SY-MSGID TYPE SY-MSGTY NUMBER SY-MSGNO</item>
+      <item>*         WITH SY-MSGV1 SY-MSGV2 SY-MSGV3 SY-MSGV4.</item>
+      <item>      ENDIF.</item>
+      <item/>
+      <item>*IF it_lines IS INITIAL .</item>
+      <item>SELECT SINGLE * FROM MAKT INTO WA_MAKT</item>
+      <item>  WHERE MATNR = WA_ITEM-MATNR.</item>
+      <item>*ENDIF.</item>
+     </CODING>
+    </CL_FP_PROGRAMLINES>
+   </cls:CL_FP_PROGRAMLINES>
+   <cls:CL_FP_LOOP id="o61">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B057514</ID>
+     <NAME>X2500_LOOP1</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o79"/>
+     <PARENT href="#o58"/>
+     <SUCCESSOR href="#o71"/>
+     <CHILD href="#o63"/>
+    </CL_FP_NODE>
+    <CL_FP_LOOP classVersion="1">
+     <TABLE_NAME>IT_LINES</TABLE_NAME>
+     <LOOP_INTO>X</LOOP_INTO>
+     <WORK_AREA>LINES</WORK_AREA>
+     <FIRST_LINE>0000000000</FIRST_LINE>
+     <LAST_LINE>0000000000</LAST_LINE>
+     <WHERE_CONDITION href="#o62"/>
+     <SORTED/>
+     <CONTROL_LEVEL/>
+    </CL_FP_LOOP>
+   </cls:CL_FP_LOOP>
+   <cls:CL_FP_CONDITION id="o62">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o61"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_LOOP_DATA id="o63">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B059514</ID>
+     <NAME>LINES</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o70"/>
+     <PARENT href="#o61"/>
+     <SUCCESSOR/>
+     <CHILD href="#o64"/>
+    </CL_FP_NODE>
+    <CL_FP_LOOP_DATA classVersion="1"/>
+   </cls:CL_FP_LOOP_DATA>
+   <cls:CL_FP_DATA id="o64">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B05B514</ID>
+     <NAME>TDFORMAT</NAME>
+     <GENERATED>X</GENERATED>
+     <STATE>A</STATE>
+     <CONDITION href="#o69"/>
+     <PARENT href="#o63"/>
+     <SUCCESSOR href="#o65"/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_DATA classVersion="1">
+     <FIELD>LINES-TDFORMAT</FIELD>
+     <FIELD_LABEL/>
+    </CL_FP_DATA>
+   </cls:CL_FP_DATA>
+   <cls:CL_FP_DATA id="o65">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B05D514</ID>
+     <NAME>TDLINE</NAME>
+     <GENERATED>X</GENERATED>
+     <STATE>A</STATE>
+     <CONDITION href="#o68"/>
+     <PARENT href="#o63"/>
+     <SUCCESSOR href="#o66"/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_DATA classVersion="1">
+     <FIELD>LINES-TDLINE</FIELD>
+     <FIELD_LABEL/>
+    </CL_FP_DATA>
+   </cls:CL_FP_DATA>
+   <cls:CL_FP_PROGRAMLINES id="o66">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B05F514</ID>
+     <NAME>X2500_CODE12</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o67"/>
+     <PARENT href="#o63"/>
+     <SUCCESSOR/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_PROGRAMLINES classVersion="1">
+     <INPUT_PARAMETERS>
+      <FPFIELD>LINES</FPFIELD>
+     </INPUT_PARAMETERS>
+     <OUTPUT_PARAMETERS/>
+     <CODING>
+      <item>REPLACE ALL OCCURRENCES OF &apos;&lt;(&gt;&apos; IN lines-tdline WITH SPACE.</item>
+      <item>REPLACE ALL OCCURRENCES OF &apos;&lt;)&gt;&apos; IN lines-tdline WITH SPACE.</item>
+     </CODING>
+    </CL_FP_PROGRAMLINES>
+   </cls:CL_FP_PROGRAMLINES>
+   <cls:CL_FP_CONDITION id="o67">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o66"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o68">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o65"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o69">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o64"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o70">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o63"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_PROGRAMLINES id="o71">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B061514</ID>
+     <NAME>X2500_CODE8</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o78"/>
+     <PARENT href="#o58"/>
+     <SUCCESSOR href="#o72"/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_PROGRAMLINES classVersion="1">
+     <INPUT_PARAMETERS>
+      <FPFIELD>WA_EKET</FPFIELD>
+      <FPFIELD>WA_ITEM</FPFIELD>
+      <FPFIELD>WA_EINE</FPFIELD>
+     </INPUT_PARAMETERS>
+     <OUTPUT_PARAMETERS>
+      <FPFIELD>WA_LINES</FPFIELD>
+      <FPFIELD>IT_LINES</FPFIELD>
+      <FPFIELD>LV_MEMO</FPFIELD>
+      <FPFIELD>IT_EINE</FPFIELD>
+     </OUTPUT_PARAMETERS>
+     <CODING>
+      <item>DATA: lv_name   TYPE thead-tdname.</item>
+      <item/>
+      <item>  SELECT infnr</item>
+      <item>       ekorg</item>
+      <item>       werks</item>
+      <item>       esokz</item>
+      <item>  from eine</item>
+      <item>  into table it_eine</item>
+      <item>  where infnr = WA_ITEM-infnr.</item>
+      <item/>
+      <item>READ TABLE it_eine INTO wa_eine with key infnr = wa_ITEM-infnr.</item>
+      <item> wa_ITEM-esokz = wa_eine-esokz.</item>
+      <item> WA_ITEM-ekorg = WA_EINE-ekorg.</item>
+      <item/>
+      <item>&quot;DATA: lv_name   TYPE thead-tdname.</item>
+      <item/>
+      <item>&quot;BREAK-POINT.</item>
+      <item>  CLEAR: it_lines,WA_LINES,lv_memo.</item>
+      <item>      REFRESH it_lines.</item>
+      <item>&quot;BREAK PRIMUS.</item>
+      <item>      CONCATENATE WA_ITEM-infnr WA_ITEM-ekorg wa_item-esokz WA_ITEM-werks</item>
+      <item>                INTO lv_name.&quot; SEPARATED BY &apos;&apos;.</item>
+      <item>*      lv_name = gv_text.</item>
+      <item>      CALL FUNCTION &apos;READ_TEXT&apos;</item>
+      <item>        EXPORTING</item>
+      <item>          client                  = sy-mandt</item>
+      <item>          id                      = &apos;BT&apos;</item>
+      <item>          language                = sy-langu</item>
+      <item>          name                    = lv_name</item>
+      <item>          object                  = &apos;EINE&apos;</item>
+      <item>        TABLES</item>
+      <item>          lines                   = it_lines</item>
+      <item>        EXCEPTIONS</item>
+      <item>          id                      = 1</item>
+      <item>          language                = 2</item>
+      <item>          name                    = 3</item>
+      <item>          not_found               = 4</item>
+      <item>          object                  = 5</item>
+      <item>          reference_check         = 6</item>
+      <item>          wrong_access_to_archive = 7</item>
+      <item>          OTHERS                  = 8.</item>
+      <item>      IF sy-subrc &lt;&gt; 0.</item>
+      <item>* MESSAGE ID SY-MSGID TYPE SY-MSGTY NUMBER SY-MSGNO</item>
+      <item>*         WITH SY-MSGV1 SY-MSGV2 SY-MSGV3 SY-MSGV4.</item>
+      <item>        CLEAR: it_lines,WA_LINES,lv_memo.</item>
+      <item>      REFRESH it_lines.</item>
+      <item>&quot;BREAK PRIMUS.</item>
+      <item>      CONCATENATE WA_ITEM-infnr WA_ITEM-ekorg wa_item-esokz</item>
+      <item>                INTO lv_name.&quot; SEPARATED BY &apos;&apos;.</item>
+      <item>*      lv_name = gv_text.</item>
+      <item>      CALL FUNCTION &apos;READ_TEXT&apos;</item>
+      <item>        EXPORTING</item>
+      <item>          client                  = sy-mandt</item>
+      <item>          id                      = &apos;BT&apos;</item>
+      <item>          language                = sy-langu</item>
+      <item>          name                    = lv_name</item>
+      <item>          object                  = &apos;EINE&apos;</item>
+      <item>        TABLES</item>
+      <item>          lines                   = it_lines</item>
+      <item>        EXCEPTIONS</item>
+      <item>          id                      = 1</item>
+      <item>          language                = 2</item>
+      <item>          name                    = 3</item>
+      <item>          not_found               = 4</item>
+      <item>          object                  = 5</item>
+      <item>          reference_check         = 6</item>
+      <item>          wrong_access_to_archive = 7</item>
+      <item>          OTHERS                  = 8.</item>
+      <item>  IF sy-subrc &lt;&gt; 0.</item>
+      <item>        CLEAR: it_lines,WA_LINES,lv_memo.</item>
+      <item>      REFRESH it_lines.</item>
+      <item>&quot;BREAK PRIMUS.</item>
+      <item>      CONCATENATE WA_EKET-EBELN WA_EKET-EBELP</item>
+      <item>                INTO lv_name.&quot; SEPARATED BY &apos;&apos;.</item>
+      <item>*      lv_name = gv_text.</item>
+      <item>      CALL FUNCTION &apos;READ_TEXT&apos;</item>
+      <item>        EXPORTING</item>
+      <item>          client                  = sy-mandt</item>
+      <item>          id                      = &apos;F02&apos;</item>
+      <item>          language                = sy-langu</item>
+      <item>          name                    = lv_name</item>
+      <item>          object                  = &apos;EKPO&apos;</item>
+      <item>        TABLES</item>
+      <item>          lines                   = it_lines</item>
+      <item>        EXCEPTIONS</item>
+      <item>          id                      = 1</item>
+      <item>          language                = 2</item>
+      <item>          name                    = 3</item>
+      <item>          not_found               = 4</item>
+      <item>          object                  = 5</item>
+      <item>          reference_check         = 6</item>
+      <item>          wrong_access_to_archive = 7</item>
+      <item>          OTHERS                  = 8.</item>
+      <item>      IF sy-subrc &lt;&gt; 0.</item>
+      <item>* MESSAGE ID SY-MSGID TYPE SY-MSGTY NUMBER SY-MSGNO</item>
+      <item>*         WITH SY-MSGV1 SY-MSGV2 SY-MSGV3 SY-MSGV4.</item>
+      <item>      ENDIF.</item>
+      <item/>
+      <item>       endif.</item>
+      <item>     ENDIF.</item>
+      <item>IF it_lines IS NOT INITIAL.</item>
+      <item>      READ TABLE it_lines INTO WA_LINES INDEX 1.</item>
+      <item>      IF SY-SUBRC = 0.</item>
+      <item>      lv_memo = WA_LINES-tdline.</item>
+      <item>*      wa_final-lv_memo  = lv_memo  .</item>
+      <item>ENDIF.</item>
+      <item>    ENDIF.</item>
+     </CODING>
+    </CL_FP_PROGRAMLINES>
+   </cls:CL_FP_PROGRAMLINES>
+   <cls:CL_FP_PROGRAMLINES id="o72">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B063514</ID>
+     <NAME>X2500_CODE10</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o77"/>
+     <PARENT href="#o58"/>
+     <SUCCESSOR href="#o73"/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_PROGRAMLINES classVersion="1">
+     <INPUT_PARAMETERS>
+      <FPFIELD>WA_ITEM</FPFIELD>
+      <FPFIELD>WA_ESKL</FPFIELD>
+      <FPFIELD>WA_ESLL</FPFIELD>
+      <FPFIELD>WA_SERV</FPFIELD>
+     </INPUT_PARAMETERS>
+     <OUTPUT_PARAMETERS/>
+     <CODING>
+      <item/>
+      <item>CLEAR wa_eskl.</item>
+      <item>select SINGLE * from eskl into wa_eskl where HPACKNO =  wa_item-packno.</item>
+      <item/>
+      <item>SELECT SINGLE * FROM esll INTO wa_esll WHERE PACKNO = wa_item-packno.</item>
+      <item/>
+      <item>SELECT SINGLE * FROM esll INTO wa_serv WHERE PACKNO = wa_esll-SUB_PACKNO.</item>
+     </CODING>
+    </CL_FP_PROGRAMLINES>
+   </cls:CL_FP_PROGRAMLINES>
+   <cls:CL_FP_PROGRAMLINES id="o73">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B065514</ID>
+     <NAME>X2500_CODE9</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o76"/>
+     <PARENT href="#o58"/>
+     <SUCCESSOR href="#o74"/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_PROGRAMLINES classVersion="1">
+     <INPUT_PARAMETERS>
+      <FPFIELD>WA_HDR</FPFIELD>
+      <FPFIELD>WA_ITEM</FPFIELD>
+      <FPFIELD>GV_DAMT</FPFIELD>
+      <FPFIELD>GV_DIS</FPFIELD>
+      <FPFIELD>AMOUNT</FPFIELD>
+      <FPFIELD>GV_ZEXP</FPFIELD>
+      <FPFIELD>GV_AFR</FPFIELD>
+     </INPUT_PARAMETERS>
+     <OUTPUT_PARAMETERS>
+      <FPFIELD>LS_KONV</FPFIELD>
+      <FPFIELD>XTKOMV</FPFIELD>
+      <FPFIELD>ZCH</FPFIELD>
+      <FPFIELD>ZCH1</FPFIELD>
+      <FPFIELD>UNIT</FPFIELD>
+      <FPFIELD>ZCH_AMT</FPFIELD>
+      <FPFIELD>ZCH1_AMT</FPFIELD>
+      <FPFIELD>LV_FLAG1</FPFIELD>
+     </OUTPUT_PARAMETERS>
+     <CODING>
+      <item/>
+      <item>CLEAR ls_konv.</item>
+      <item>READ TABLE xtkomv INTO ls_konv WITH KEY knumv = wa_hdr-knumv kposn = wa_item-ebelp</item>
+      <item> kschl = &apos;P000&apos;.</item>
+      <item>IF sy-subrc = 0.</item>
+      <item>unit = ls_konv-kbetr.</item>
+      <item>ENDIF.</item>
+      <item/>
+      <item>CLEAR ls_konv.</item>
+      <item>READ TABLE xtkomv INTO ls_konv WITH KEY knumv = wa_hdr-knumv kposn = wa_item-ebelp</item>
+      <item> kschl = &apos;ZCH%&apos; .</item>
+      <item>IF sy-subrc = 0.</item>
+      <item>  ls_konv-kbetr = ls_konv-kbetr / 10.</item>
+      <item>zch = ls_konv-kbetr.</item>
+      <item>zch_amt = zch_amt + ls_konv-kwert.</item>
+      <item>ENDIF.</item>
+      <item>CLEAR ls_konv.</item>
+      <item>READ TABLE xtkomv INTO ls_konv WITH KEY knumv = wa_hdr-knumv kposn = wa_item-ebelp</item>
+      <item> kschl = &apos;ZCH1&apos; .</item>
+      <item>IF sy-subrc = 0.</item>
+      <item>zch1_amt = zch1_amt + ls_konv-kwert.</item>
+      <item>ENDIF.</item>
+      <item/>
+      <item>CLEAR ls_konv.</item>
+      <item>READ TABLE xtkomv INTO ls_konv WITH KEY kschl = &apos;HB01&apos; kposn = wa_item-ebelp.</item>
+      <item>IF sy-subrc = 0.</item>
+      <item>IF ls_konv-kbetr IS NOT INITIAL.</item>
+      <item>GV_DAMT = GV_DAMT + ls_konv-kbetr.</item>
+      <item>ENDIF.</item>
+      <item>ENDIF.</item>
+      <item/>
+      <item>CLEAR ls_konv.</item>
+      <item>READ TABLE xtkomv INTO ls_konv WITH KEY kschl = &apos;R000&apos; kposn = wa_item-ebelp.</item>
+      <item>IF sy-subrc = 0.</item>
+      <item>  IF ls_konv-kwert IS NOT INITIAL.</item>
+      <item>    GV_DAMT = GV_DAMT + ls_konv-kwert.</item>
+      <item>  ENDIF.</item>
+      <item>  IF ls_konv-kbetr IS NOT INITIAL.</item>
+      <item>    gv_dis = ls_konv-kbetr / 10.</item>
+      <item>  ENDIF.</item>
+      <item>  endif.</item>
+      <item/>
+      <item>**************  Avinash Bhagat</item>
+      <item>*  break primus.</item>
+      <item>  CLEAR ls_konv.</item>
+      <item>READ TABLE xtkomv INTO ls_konv WITH KEY kschl = &apos;ZEXP&apos; kposn = wa_item-ebelp.</item>
+      <item>IF sy-subrc = 0.</item>
+      <item>  IF ls_konv-kwert IS NOT INITIAL.</item>
+      <item>    gv_zexp = gv_zexp + ls_konv-kwert.</item>
+      <item>  ENDIF.</item>
+      <item>*  IF ls_konv-kbetr IS NOT INITIAL.</item>
+      <item>*    gv_dis = ls_konv-kbetr / 10.</item>
+      <item>  ENDIF.</item>
+      <item/>
+      <item>    CLEAR ls_konv.</item>
+      <item>READ TABLE xtkomv INTO ls_konv WITH KEY kschl = &apos;ZAFR&apos; kposn = wa_item-ebelp.</item>
+      <item>IF sy-subrc = 0.</item>
+      <item>  IF ls_konv-kwert IS NOT INITIAL.</item>
+      <item>    GV_AFR = GV_AFR + ls_konv-kwert.</item>
+      <item>  ENDIF.</item>
+      <item>*  IF ls_konv-kbetr IS NOT INITIAL.</item>
+      <item>*    gv_dis = ls_konv-kbetr / 10.</item>
+      <item>  ENDIF.</item>
+      <item/>
+      <item>****************  End Avinash Bhagat</item>
+      <item/>
+      <item>IF gv_afr IS NOT INITIAL.</item>
+      <item>    lv_flag1 = &apos;X&apos;.</item>
+      <item>ENDIF.</item>
+     </CODING>
+    </CL_FP_PROGRAMLINES>
+   </cls:CL_FP_PROGRAMLINES>
+   <cls:CL_FP_PROGRAMLINES id="o74">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B067514</ID>
+     <NAME>X2500_CODE3</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o75"/>
+     <PARENT href="#o58"/>
+     <SUCCESSOR/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_PROGRAMLINES classVersion="1">
+     <INPUT_PARAMETERS>
+      <FPFIELD>GV_TOTAL</FPFIELD>
+      <FPFIELD>WA_ITEM</FPFIELD>
+      <FPFIELD>GV_QTY</FPFIELD>
+      <FPFIELD>WA_ESKL</FPFIELD>
+      <FPFIELD>AMOUNT</FPFIELD>
+     </INPUT_PARAMETERS>
+     <OUTPUT_PARAMETERS>
+      <FPFIELD>XTKOMV</FPFIELD>
+     </OUTPUT_PARAMETERS>
+     <CODING>
+      <item>IF WA_ITEM-PSTYP = &apos;9&apos;.</item>
+      <item>GV_QTY = GV_QTY + WA_ESKL-MENGE.</item>
+      <item>ELSE.</item>
+      <item>GV_QTY = GV_QTY + WA_ITEM-MENGE.</item>
+      <item>ENDIF.</item>
+      <item/>
+      <item/>
+      <item/>
+      <item>GV_TOTAL = GV_TOTAL + WA_ITEM-NETWR.</item>
+      <item/>
+      <item>amount = amount + WA_ITEM-BRTWR.</item>
+     </CODING>
+    </CL_FP_PROGRAMLINES>
+   </cls:CL_FP_PROGRAMLINES>
+   <cls:CL_FP_CONDITION id="o75">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o74"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o76">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o73"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o77">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o72"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o78">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o71"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o79">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o61"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o80">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o60"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o81">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o59"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o82">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o58"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o83">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o57"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o84">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o56"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o85">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o55"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o86">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o54"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o87">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o53"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o88">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o52"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o89">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o51"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o90">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o50"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o91">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o49"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o92">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o48"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o93">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o47"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o94">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o46"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o95">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o45"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o96">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o44"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o97">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o43"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o98">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o42"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o99">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o41"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o100">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o40"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o101">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o39"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o102">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o38"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o103">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o37"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o104">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o36"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o105">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o35"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o106">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o34"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o107">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o33"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o108">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o32"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o109">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o31"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o110">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o30"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_FOLDER id="o111">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B069514</ID>
+     <NAME>X2500_TEMPLATE5</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o136"/>
+     <PARENT href="#o27"/>
+     <SUCCESSOR href="#o114"/>
+     <CHILD href="#o112"/>
+    </CL_FP_NODE>
+    <CL_FP_FOLDER classVersion="1"/>
+   </cls:CL_FP_FOLDER>
+   <cls:CL_FP_PROGRAMLINES id="o112">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B06B514</ID>
+     <NAME>X2500_CODE6</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o113"/>
+     <PARENT href="#o111"/>
+     <SUCCESSOR/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_PROGRAMLINES classVersion="1">
+     <INPUT_PARAMETERS>
+      <FPFIELD>GV_AMT</FPFIELD>
+      <FPFIELD>GV_TOTAL</FPFIELD>
+      <FPFIELD>GV_AMT_WRD</FPFIELD>
+      <FPFIELD>GV_DIS</FPFIELD>
+      <FPFIELD>AMOUNT</FPFIELD>
+      <FPFIELD>GV_WRD</FPFIELD>
+      <FPFIELD>GV_AFR</FPFIELD>
+      <FPFIELD>GV_ZEXP</FPFIELD>
+     </INPUT_PARAMETERS>
+     <OUTPUT_PARAMETERS>
+      <FPFIELD>GV_DAMT</FPFIELD>
+      <FPFIELD>TOTAL</FPFIELD>
+      <FPFIELD>ZCH_AMT</FPFIELD>
+      <FPFIELD>ZCH1_AMT</FPFIELD>
+      <FPFIELD>LV_FLAG</FPFIELD>
+     </OUTPUT_PARAMETERS>
+     <CODING>
+      <item/>
+      <item>REPLACE &apos;-&apos; INTO gv_dis WITH &apos;&apos;.</item>
+      <item>gv_damt = gv_damt * -1.</item>
+      <item/>
+      <item>IF gv_dis IS NOT INITIAL.</item>
+      <item>CONCATENATE gv_dis &apos;%&apos; INTO gv_dis.</item>
+      <item>ENDIF.</item>
+      <item/>
+      <item>total = gv_total.</item>
+      <item>gv_total = gv_total + zch_amt + zch1_amt + GV_AFR + GV_ZEXP.</item>
+      <item>clear gv_amt.</item>
+      <item>gv_amt = gv_total.</item>
+      <item/>
+      <item>CALL FUNCTION &apos;SPELL_AMOUNT&apos;</item>
+      <item> EXPORTING</item>
+      <item>   AMOUNT          = gv_total</item>
+      <item>   CURRENCY        = &apos;USD&apos;</item>
+      <item>*   FILLER          = &apos; &apos;</item>
+      <item>   LANGUAGE        = SY-LANGU</item>
+      <item> IMPORTING</item>
+      <item>   IN_WORDS        = gv_wrd</item>
+      <item>* EXCEPTIONS</item>
+      <item>*   NOT_FOUND       = 1</item>
+      <item>*   TOO_LARGE       = 2</item>
+      <item>*   OTHERS          = 3</item>
+      <item>          .</item>
+      <item>IF sy-subrc &lt;&gt; 0.</item>
+      <item>* Implement suitable error handling here</item>
+      <item>ENDIF.</item>
+      <item/>
+      <item>IF gv_wrd-DECWORD NE &apos;ZERO&apos;.</item>
+      <item>  CONCATENATE gv_wrd-WORD &apos;DOLLAR &amp;&apos; gv_wrd-DECWORD &apos;CENTS ONLY&apos;</item>
+      <item>  INTO gv_amt_wrd SEPARATED BY space.</item>
+      <item>ELSE.</item>
+      <item>  CONCATENATE gv_wrd-WORD &apos;DOLLAR ONLY&apos;</item>
+      <item>  INTO gv_amt_wrd SEPARATED BY space.</item>
+      <item>ENDIF.</item>
+      <item/>
+      <item>IF gv_damt IS NOT INITIAL.</item>
+      <item>    lv_flag = &apos;X&apos;.</item>
+      <item>ENDIF.</item>
+     </CODING>
+    </CL_FP_PROGRAMLINES>
+   </cls:CL_FP_PROGRAMLINES>
+   <cls:CL_FP_CONDITION id="o113">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o112"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_FOLDER id="o114">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B06D514</ID>
+     <NAME>X2500_TEMPLATE6</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o135"/>
+     <PARENT href="#o27"/>
+     <SUCCESSOR href="#o117"/>
+     <CHILD href="#o115"/>
+    </CL_FP_NODE>
+    <CL_FP_FOLDER classVersion="1"/>
+   </cls:CL_FP_FOLDER>
+   <cls:CL_FP_PROGRAMLINES id="o115">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B06F514</ID>
+     <NAME>X2500_CODE5</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o116"/>
+     <PARENT href="#o114"/>
+     <SUCCESSOR/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_PROGRAMLINES classVersion="1">
+     <INPUT_PARAMETERS>
+      <FPFIELD>WA_MAKT</FPFIELD>
+      <FPFIELD>WA_ITEM</FPFIELD>
+      <FPFIELD>WA_EKET</FPFIELD>
+      <FPFIELD>WA_HDR</FPFIELD>
+      <FPFIELD>GV_SHIP</FPFIELD>
+      <FPFIELD>IT_LINES</FPFIELD>
+      <FPFIELD>LINES</FPFIELD>
+     </INPUT_PARAMETERS>
+     <OUTPUT_PARAMETERS>
+      <FPFIELD>IT_TEXT</FPFIELD>
+      <FPFIELD>WA_TEXT</FPFIELD>
+     </OUTPUT_PARAMETERS>
+     <CODING>
+      <item>*break primus.</item>
+      <item>DATA: lv_name   TYPE thead-tdname.</item>
+      <item/>
+      <item>  CLEAR: it_lines,LINES.</item>
+      <item>      REFRESH it_lines.</item>
+      <item>      lv_name = WA_HDR-EBELN.</item>
+      <item>      CALL FUNCTION &apos;READ_TEXT&apos;</item>
+      <item>        EXPORTING</item>
+      <item>          client                  = sy-mandt</item>
+      <item>          id                      = &apos;F01&apos;</item>
+      <item>          language                = sy-langu</item>
+      <item>          name                    = lv_name</item>
+      <item>          object                  = &apos;EKKO&apos;</item>
+      <item>        TABLES</item>
+      <item>          lines                   = it_lines</item>
+      <item>        EXCEPTIONS</item>
+      <item>          id                      = 1</item>
+      <item>          language                = 2</item>
+      <item>          name                    = 3</item>
+      <item>          not_found               = 4</item>
+      <item>          object                  = 5</item>
+      <item>          reference_check         = 6</item>
+      <item>          wrong_access_to_archive = 7</item>
+      <item>          OTHERS                  = 8.</item>
+      <item>      IF sy-subrc &lt;&gt; 0.</item>
+      <item>* MESSAGE ID SY-MSGID TYPE SY-MSGTY NUMBER SY-MSGNO</item>
+      <item>*         WITH SY-MSGV1 SY-MSGV2 SY-MSGV3 SY-MSGV4.</item>
+      <item>      ENDIF.</item>
+      <item/>
+      <item>CLEAR wa_text.</item>
+      <item>IF it_lines IS NOT INITIAL.</item>
+      <item>        LOOP AT  it_lines INTO lines.</item>
+      <item>      replace all occurences of &apos;&lt;(&gt;&amp;&lt;)&gt;&apos; in lines-tdline with &apos;&amp;&apos;.</item>
+      <item>         condense lines-tdline .</item>
+      <item>*         SHIFT lines-tdline RIGHT DELETING TRAILING &apos;* &apos;.</item>
+      <item>*          CONCATENATE  Ls_lines-tdline &apos;&apos; INTO ls_text-lv_lines.</item>
+      <item>          wa_text-lines = lines-tdline.</item>
+      <item>*          CONDENSE ls_text-lv_lines .</item>
+      <item>*           replace all occurences of space in</item>
+      <item>*           ls_text-lv_lines with &apos;&apos;.</item>
+      <item>         APPEND wa_text to it_text.</item>
+      <item>          CLEAR wa_text.</item>
+      <item>        ENDLOOP.</item>
+      <item/>
+      <item>ENDIF.</item>
+     </CODING>
+    </CL_FP_PROGRAMLINES>
+   </cls:CL_FP_PROGRAMLINES>
+   <cls:CL_FP_CONDITION id="o116">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o115"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_FOLDER id="o117">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B071514</ID>
+     <NAME>X2500_TABLE2</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o134"/>
+     <PARENT href="#o27"/>
+     <SUCCESSOR href="#o124"/>
+     <CHILD href="#o118"/>
+    </CL_FP_NODE>
+    <CL_FP_FOLDER classVersion="1"/>
+   </cls:CL_FP_FOLDER>
+   <cls:CL_FP_FOLDER id="o118">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF2F86B073514</ID>
+     <NAME>X2500_ROW4</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o123"/>
+     <PARENT href="#o117"/>
+     <SUCCESSOR href="#o119"/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_FOLDER classVersion="1"/>
+   </cls:CL_FP_FOLDER>
+   <cls:CL_FP_FOLDER id="o119">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF308D2A55514</ID>
+     <NAME>X2500_ROW3</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o122"/>
+     <PARENT href="#o117"/>
+     <SUCCESSOR/>
+     <CHILD href="#o120"/>
+    </CL_FP_NODE>
+    <CL_FP_FOLDER classVersion="1"/>
+   </cls:CL_FP_FOLDER>
+   <cls:CL_FP_TEXT_INCLUDE id="o120">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF308D2A57514</ID>
+     <NAME>X2500_TEXT37</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o121"/>
+     <PARENT href="#o119"/>
+     <SUCCESSOR/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_TEXT classVersion="1">
+     <APPEND_MODE/>
+    </CL_FP_TEXT>
+    <CL_FP_TEXT_INCLUDE classVersion="1">
+     <STYLE_NAME>ZUS_MM_PURCHASE_ORDER</STYLE_NAME>
+     <TEXT_NAME>
+      <NAME/>
+      <NAMEFIELD>WA_HDR-EBELN</NAMEFIELD>
+     </TEXT_NAME>
+     <TEXT_LANGUAGE>
+      <LANGUAGE>E</LANGUAGE>
+      <LANGUAGEFIELD/>
+     </TEXT_LANGUAGE>
+     <TEXT_OBJECT>
+      <OBJECT>EKKO</OBJECT>
+      <OBJECTFIELD/>
+     </TEXT_OBJECT>
+     <TEXT_ID>
+      <ID>F01</ID>
+      <IDFIELD/>
+     </TEXT_ID>
+     <DEFAULT_PARAGRAPH/>
+     <FIRST_PARAGRAPH/>
+     <IGNORE_ERROR>X</IGNORE_ERROR>
+    </CL_FP_TEXT_INCLUDE>
+   </cls:CL_FP_TEXT_INCLUDE>
+   <cls:CL_FP_CONDITION id="o121">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o120"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o122">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o119"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o123">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o118"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_FOLDER id="o124">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF308D2A59514</ID>
+     <NAME>X2500_TABLE3</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o133"/>
+     <PARENT href="#o27"/>
+     <SUCCESSOR href="#o131"/>
+     <CHILD href="#o125"/>
+    </CL_FP_NODE>
+    <CL_FP_FOLDER classVersion="1"/>
+   </cls:CL_FP_FOLDER>
+   <cls:CL_FP_FOLDER id="o125">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF308D2A5B514</ID>
+     <NAME>X2500_ROW5</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o130"/>
+     <PARENT href="#o124"/>
+     <SUCCESSOR href="#o126"/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_FOLDER classVersion="1"/>
+   </cls:CL_FP_FOLDER>
+   <cls:CL_FP_FOLDER id="o126">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF308D2A5D514</ID>
+     <NAME>X2500_ROW6</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o129"/>
+     <PARENT href="#o124"/>
+     <SUCCESSOR/>
+     <CHILD href="#o127"/>
+    </CL_FP_NODE>
+    <CL_FP_FOLDER classVersion="1"/>
+   </cls:CL_FP_FOLDER>
+   <cls:CL_FP_TEXT_INCLUDE id="o127">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF308D2A5F514</ID>
+     <NAME>X2500_TEXT38</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o128"/>
+     <PARENT href="#o126"/>
+     <SUCCESSOR/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_TEXT classVersion="1">
+     <APPEND_MODE/>
+    </CL_FP_TEXT>
+    <CL_FP_TEXT_INCLUDE classVersion="1">
+     <STYLE_NAME>ZUS_MM_PURCHASE_ORDER</STYLE_NAME>
+     <TEXT_NAME>
+      <NAME/>
+      <NAMEFIELD>WA_HDR-EBELN</NAMEFIELD>
+     </TEXT_NAME>
+     <TEXT_LANGUAGE>
+      <LANGUAGE>E</LANGUAGE>
+      <LANGUAGEFIELD/>
+     </TEXT_LANGUAGE>
+     <TEXT_OBJECT>
+      <OBJECT>EKKO</OBJECT>
+      <OBJECTFIELD/>
+     </TEXT_OBJECT>
+     <TEXT_ID>
+      <ID>F21</ID>
+      <IDFIELD/>
+     </TEXT_ID>
+     <DEFAULT_PARAGRAPH/>
+     <FIRST_PARAGRAPH/>
+     <IGNORE_ERROR>X</IGNORE_ERROR>
+    </CL_FP_TEXT_INCLUDE>
+   </cls:CL_FP_TEXT_INCLUDE>
+   <cls:CL_FP_CONDITION id="o128">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o127"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o129">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o126"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o130">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o125"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_FOLDER id="o131">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF308D2A61514</ID>
+     <NAME>X2500_TEMPLATE8</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o132"/>
+     <PARENT href="#o27"/>
+     <SUCCESSOR/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_FOLDER classVersion="1"/>
+   </cls:CL_FP_FOLDER>
+   <cls:CL_FP_CONDITION id="o132">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o131"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o133">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o124"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o134">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o117"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o135">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o114"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o136">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o111"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o137">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o28"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_FOLDER id="o138">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF308D2A63514</ID>
+     <NAME>X2500_PAGE1_X2500_WINDOW1</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o157"/>
+     <PARENT href="#o2"/>
+     <SUCCESSOR href="#o139"/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_FOLDER classVersion="1"/>
+   </cls:CL_FP_FOLDER>
+   <cls:CL_FP_FOLDER id="o139">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF308D2A65514</ID>
+     <NAME>X2500_PAGE2_X2500_GRAPHIC2</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o156"/>
+     <PARENT href="#o2"/>
+     <SUCCESSOR href="#o142"/>
+     <CHILD href="#o140"/>
+    </CL_FP_NODE>
+    <CL_FP_FOLDER classVersion="1"/>
+   </cls:CL_FP_FOLDER>
+   <cls:CL_FP_GRAPHIC_URL id="o140">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF308D2A67514</ID>
+     <NAME>X2500_GRAPHIC2</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o141"/>
+     <PARENT href="#o139"/>
+     <SUCCESSOR/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_GRAPHIC classVersion="1"/>
+    <CL_FP_GRAPHIC_URL classVersion="1">
+     <GRAPHIC_URL>
+      <SFPGRAPHICURL>
+       <URL>&apos;/sap/bc/fp/graphics/public&apos;</URL>
+       <URLDELIMITER>/</URLDELIMITER>
+      </SFPGRAPHICURL>
+      <SFPGRAPHICURL>
+       <URL>&apos;graphics&apos;</URL>
+       <URLDELIMITER>/</URLDELIMITER>
+      </SFPGRAPHICURL>
+      <SFPGRAPHICURL>
+       <URL>&apos;bmap&apos;</URL>
+       <URLDELIMITER>/</URLDELIMITER>
+      </SFPGRAPHICURL>
+      <SFPGRAPHICURL>
+       <URL>&apos;bcol&apos;</URL>
+       <URLDELIMITER>/</URLDELIMITER>
+      </SFPGRAPHICURL>
+      <SFPGRAPHICURL>
+       <URL>&apos;logo_final&apos;</URL>
+       <URLDELIMITER/>
+      </SFPGRAPHICURL>
+      <SFPGRAPHICURL>
+       <URL>&apos;.bmp&apos;</URL>
+       <URLDELIMITER/>
+      </SFPGRAPHICURL>
+     </GRAPHIC_URL>
+    </CL_FP_GRAPHIC_URL>
+   </cls:CL_FP_GRAPHIC_URL>
+   <cls:CL_FP_CONDITION id="o141">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o140"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_FOLDER id="o142">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF308D2A69514</ID>
+     <NAME>X2500_PAGE2_ADDRESS</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o155"/>
+     <PARENT href="#o2"/>
+     <SUCCESSOR href="#o147"/>
+     <CHILD href="#o143"/>
+    </CL_FP_NODE>
+    <CL_FP_FOLDER classVersion="1"/>
+   </cls:CL_FP_FOLDER>
+   <cls:CL_FP_FOLDER id="o143">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF308D2A6B514</ID>
+     <NAME>X2500_TEMPLATE1</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o146"/>
+     <PARENT href="#o142"/>
+     <SUCCESSOR/>
+     <CHILD href="#o144"/>
+    </CL_FP_NODE>
+    <CL_FP_FOLDER classVersion="1"/>
+   </cls:CL_FP_FOLDER>
+   <cls:CL_FP_PROGRAMLINES id="o144">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF308D2A6D514</ID>
+     <NAME>X2500_CODE2</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o145"/>
+     <PARENT href="#o143"/>
+     <SUCCESSOR/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_PROGRAMLINES classVersion="1">
+     <INPUT_PARAMETERS>
+      <FPFIELD>WA_HDR</FPFIELD>
+      <FPFIELD>WA_T001W</FPFIELD>
+      <FPFIELD>WA_ADRC</FPFIELD>
+     </INPUT_PARAMETERS>
+     <OUTPUT_PARAMETERS>
+      <FPFIELD>GV_REVCNT</FPFIELD>
+      <FPFIELD>IT_CDHDR</FPFIELD>
+      <FPFIELD>WA_CDHDR</FPFIELD>
+      <FPFIELD>GV_REV_DAT</FPFIELD>
+      <FPFIELD>WA_PLANT</FPFIELD>
+     </OUTPUT_PARAMETERS>
+     <CODING>
+      <item/>
+      <item>*SELECT SINGLE * FROM T001W INTO WA_T001W</item>
+      <item>*  WHERE WERKS = WA_HDR-WERKS.</item>
+      <item>*</item>
+      <item>*SELECT SINGLE * FROM t005t INTO wa_plant</item>
+      <item>*  WHERE SPRAS = wa_t001w-SPRAS</item>
+      <item>*   AND  LAND1 = wa_t001w-LAND1.</item>
+      <item>*</item>
+      <item>*SELECT SINGLE * FROM ADRC INTO WA_ADRC</item>
+      <item>*  WHERE ADDRNUMBER = WA_T001W-ADRNR.</item>
+      <item>*</item>
+      <item>*SELECT COUNT(*) FROM cdhdr INTO gv_revcnt</item>
+      <item>*  WHERE objectclas = &apos;EINKBELEG&apos;</item>
+      <item>*    AND objectid = wa_hdr-ebeln</item>
+      <item>*    AND ( tcode = &apos;ME23N&apos;</item>
+      <item>*       OR tcode = &apos;ME22N&apos; ).</item>
+      <item>**    AND CHANGE_IND = &apos;U&apos;.</item>
+      <item>*</item>
+      <item>* SELECT * FROM cdhdr INTO TABLE it_cdhdr</item>
+      <item>*   WHERE objectid = wa_hdr-ebeln</item>
+      <item>*     AND objectclas = &apos;EINKBELEG&apos;</item>
+      <item>*     AND ( tcode = &apos;ME23N&apos;</item>
+      <item>*       OR tcode = &apos;ME22N&apos; ).</item>
+      <item>*</item>
+      <item>*SORT it_cdhdr DESCENDING by CHANGENR.</item>
+      <item>*</item>
+      <item>*</item>
+      <item>*data:hh TYPE string,</item>
+      <item>*     time TYPE cdhdr-utime.</item>
+      <item>*time = &apos;103000&apos;.</item>
+      <item>*READ TABLE it_cdhdr INTO wa_cdhdr INDEX 1.</item>
+      <item>*hh = wa_cdhdr-utime - time.</item>
+      <item>*IF hh &lt; 0.</item>
+      <item>*wa_cdhdr-udate = wa_cdhdr-udate - 1.</item>
+      <item>*ENDIF.</item>
+      <item>*CONCATENATE wa_cdhdr-udate+4(2) wa_cdhdr-udate+6(2)  wa_cdhdr-udate+0(4)</item>
+      <item>*                INTO GV_rev_dat SEPARATED BY &apos;/&apos;.</item>
+      <item/>
+      <item/>
+      <item>**********</item>
+      <item>DATA: lv_name   TYPE thead-tdname,        &quot;ADDED BY SUPRIYA ON 13TH AUGUST 2024</item>
+      <item>      lv_bedat  TYPE ekko-bedat,          &quot;ADDED BY SUPRIYA ON 13TH AUGUST 2024</item>
+      <item>      lv_cutoff TYPE d VALUE &apos;20240812&apos;.  &quot;ADDED BY SUPRIYA ON 13TH AUGUST 2024</item>
+      <item>lv_bedat = wa_hdr-bedat.                  &quot;ADDED BY SUPRIYA ON 13TH AUGUST 2024</item>
+      <item/>
+      <item>SELECT SINGLE * FROM T001W INTO WA_T001W</item>
+      <item> WHERE WERKS = WA_HDR-WERKS.</item>
+      <item/>
+      <item>SELECT SINGLE * FROM t005t INTO wa_plant</item>
+      <item>  WHERE SPRAS = wa_t001w-SPRAS</item>
+      <item>   AND  LAND1 = wa_t001w-LAND1.</item>
+      <item/>
+      <item>SELECT SINGLE * FROM ADRC INTO WA_ADRC</item>
+      <item>  WHERE ADDRNUMBER = WA_T001W-ADRNR.</item>
+      <item>SELECT COUNT(*) FROM cdhdr INTO gv_revcnt</item>
+      <item>  WHERE objectclas = &apos;EINKBELEG&apos;</item>
+      <item>    AND objectid = wa_hdr-ebeln</item>
+      <item>    AND ( tcode = &apos;ME23N&apos;</item>
+      <item>       OR tcode = &apos;ME22N&apos; ).</item>
+      <item>*    AND CHANGE_IND = &apos;U&apos;.</item>
+      <item>SELECT * FROM cdhdr INTO TABLE it_cdhdr</item>
+      <item>   WHERE objectid = wa_hdr-ebeln</item>
+      <item>     AND objectclas = &apos;EINKBELEG&apos;</item>
+      <item>     AND ( tcode = &apos;ME23N&apos;</item>
+      <item>       OR tcode = &apos;ME22N&apos; ).</item>
+      <item/>
+      <item>SORT it_cdhdr DESCENDING by CHANGENR.</item>
+      <item>data:hh TYPE string,</item>
+      <item>     time TYPE cdhdr-utime.</item>
+      <item>time = &apos;103000&apos;.</item>
+      <item>READ TABLE it_cdhdr INTO wa_cdhdr INDEX 1.</item>
+      <item>hh = wa_cdhdr-utime - time.</item>
+      <item>IF hh &lt; 0.</item>
+      <item>wa_cdhdr-udate = wa_cdhdr-udate - 1.</item>
+      <item>ENDIF.</item>
+      <item>CONCATENATE wa_cdhdr-udate+4(2) wa_cdhdr-udate+6(2)  wa_cdhdr-udate+0(4)</item>
+      <item>                INTO GV_rev_dat SEPARATED BY &apos;/&apos;.</item>
+      <item/>
+      <item/>
+      <item>IF lv_bedat &gt; lv_cutoff.</item>
+      <item>  wa_adrc-street = &apos;6535 Industrial Dr, Ste 103&apos;.</item>
+      <item/>
+      <item>  ENDIF.</item>
+     </CODING>
+    </CL_FP_PROGRAMLINES>
+   </cls:CL_FP_PROGRAMLINES>
+   <cls:CL_FP_CONDITION id="o145">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o144"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o146">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o143"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_FOLDER id="o147">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF308D2A6F514</ID>
+     <NAME>X2500_PAGE2_PO</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o154"/>
+     <PARENT href="#o2"/>
+     <SUCCESSOR href="#o152"/>
+     <CHILD href="#o148"/>
+    </CL_FP_NODE>
+    <CL_FP_FOLDER classVersion="1"/>
+   </cls:CL_FP_FOLDER>
+   <cls:CL_FP_FOLDER id="o148">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF308D2A71514</ID>
+     <NAME>X2500_TEMPLATE2</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o151"/>
+     <PARENT href="#o147"/>
+     <SUCCESSOR/>
+     <CHILD href="#o149"/>
+    </CL_FP_NODE>
+    <CL_FP_FOLDER classVersion="1"/>
+   </cls:CL_FP_FOLDER>
+   <cls:CL_FP_PROGRAMLINES id="o149">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF308D2A73514</ID>
+     <NAME>X2500_CODE4</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o150"/>
+     <PARENT href="#o148"/>
+     <SUCCESSOR/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_PROGRAMLINES classVersion="1">
+     <INPUT_PARAMETERS>
+      <FPFIELD>WA_HDR</FPFIELD>
+      <FPFIELD>GV_ISSUE</FPFIELD>
+      <FPFIELD>GV_EXP</FPFIELD>
+      <FPFIELD>LT_LINES</FPFIELD>
+      <FPFIELD>LS_LINES</FPFIELD>
+     </INPUT_PARAMETERS>
+     <OUTPUT_PARAMETERS>
+      <FPFIELD>CUST</FPFIELD>
+      <FPFIELD>CUST1</FPFIELD>
+     </OUTPUT_PARAMETERS>
+     <CODING>
+      <item/>
+      <item>CONCATENATE wa_hdr-bedat+4(2) wa_hdr-bedat+6(2)  wa_hdr-bedat+0(4)</item>
+      <item>                INTO gv_issue SEPARATED BY &apos;/&apos;.</item>
+      <item/>
+      <item>CONCATENATE wa_hdr-eindt+4(2) wa_hdr-eindt+6(2) wa_hdr-eindt+0(4)</item>
+      <item>                INTO gv_exp SEPARATED BY &apos;/&apos;.</item>
+      <item/>
+      <item>DATA: lv_name   TYPE thead-tdname.</item>
+      <item> CLEAR: lt_lines,ls_LINES.</item>
+      <item>      REFRESH lt_lines.</item>
+      <item>      lv_name = wa_hdr-ebeln.</item>
+      <item>      CALL FUNCTION &apos;READ_TEXT&apos;</item>
+      <item>        EXPORTING</item>
+      <item>          client                  = sy-mandt</item>
+      <item>          id                      = &apos;F22&apos;</item>
+      <item>          language                = sy-langu</item>
+      <item>          name                    = lv_name</item>
+      <item>          object                  = &apos;EKKO&apos;</item>
+      <item>        TABLES</item>
+      <item>          lines                   = lt_lines</item>
+      <item>        EXCEPTIONS</item>
+      <item>          id                      = 1</item>
+      <item>          language                = 2</item>
+      <item>          name                    = 3</item>
+      <item>          not_found               = 4</item>
+      <item>          object                  = 5</item>
+      <item>          reference_check         = 6</item>
+      <item>          wrong_access_to_archive = 7</item>
+      <item>          OTHERS                  = 8.</item>
+      <item>      IF sy-subrc &lt;&gt; 0.</item>
+      <item>* MESSAGE ID SY-MSGID TYPE SY-MSGTY NUMBER SY-MSGNO</item>
+      <item>*         WITH SY-MSGV1 SY-MSGV2 SY-MSGV3 SY-MSGV4.</item>
+      <item>      ENDIF.</item>
+      <item/>
+      <item> IF lt_lines IS NOT INITIAL.</item>
+      <item>   READ TABLE lt_lines INTO ls_lines INDEX 1.</item>
+      <item>   IF sy-subrc = 0 .</item>
+      <item>     cust = ls_lines-tdline.</item>
+      <item>   ENDIF.</item>
+      <item/>
+      <item>   READ TABLE lt_lines INTO ls_lines INDEX 2.</item>
+      <item>   IF sy-subrc = 0 .</item>
+      <item>     cust1 = ls_lines-tdline.</item>
+      <item>   ENDIF.</item>
+      <item>ENDIF.</item>
+      <item/>
+      <item>REPLACE ALL OCCURRENCES OF &apos;&lt;(&gt;&apos; IN cust WITH SPACE.</item>
+      <item>REPLACE ALL OCCURRENCES OF &apos;&lt;)&gt;&apos; IN cust WITH SPACE.</item>
+      <item>REPLACE ALL OCCURRENCES OF &apos;&lt;(&gt;&apos; IN cust1 WITH SPACE.</item>
+      <item>REPLACE ALL OCCURRENCES OF &apos;&lt;)&gt;&apos; IN cust1 WITH SPACE.</item>
+      <item/>
+      <item>IF cust IS INITIAL .</item>
+      <item>  IF cust1 IS INITIAL.</item>
+      <item>    cust = &apos;STOCK ORDER&apos;.</item>
+      <item>  ENDIF.</item>
+      <item/>
+      <item>ENDIF.</item>
+     </CODING>
+    </CL_FP_PROGRAMLINES>
+   </cls:CL_FP_PROGRAMLINES>
+   <cls:CL_FP_CONDITION id="o150">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o149"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o151">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o148"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_FOLDER id="o152">
+    <CL_FP_NODE classVersion="1">
+     <ID>0050568A8B361FE08EDBF308D2A75514</ID>
+     <NAME>X2500_PAGE2_X2500_WINDOW1</NAME>
+     <GENERATED/>
+     <STATE>A</STATE>
+     <CONDITION href="#o153"/>
+     <PARENT href="#o2"/>
+     <SUCCESSOR/>
+     <CHILD/>
+    </CL_FP_NODE>
+    <CL_FP_FOLDER classVersion="1"/>
+   </cls:CL_FP_FOLDER>
+   <cls:CL_FP_CONDITION id="o153">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o152"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o154">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o147"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o155">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o142"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o156">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o139"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o157">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o138"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o158">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o27"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o159">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o22"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o160">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o17"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o161">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o16"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o162">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o11"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o163">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o6"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+   <cls:CL_FP_CONDITION id="o164">
+    <CL_FP_CONDITION classVersion="1">
+     <NODE href="#o3"/>
+     <CONDITIONS/>
+    </CL_FP_CONDITION>
+   </cls:CL_FP_CONDITION>
+  </asx:heap>
+ </asx:abap>
+</abapGit>

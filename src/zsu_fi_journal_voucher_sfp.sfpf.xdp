@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xfa generator="AdobeLiveCycleDesigner_V11.0.9.20211220.1.16_SAP" APIVersion="3.6.21350.0"?><xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2025-05-07T05:26:49Z" uuid="1bf00032-3497-455c-94e3-1dbb661e78a4">
+<template xmlns="http://www.xfa.org/schema/xfa-template/3.3/">
+   <?formServer defaultPDFRenderFormat acrobat10.0dynamic?>
+   <subform layout="tb" locale="en_IN" name="data" restoreState="auto">
+      <pageSet>
+         <pageArea id="Page1" name="Page1">
+            <contentArea h="10.5in" w="8in" x="0.25in" y="0.25in"/>
+            <medium long="11in" short="8.5in" stock="letter"/>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <subform h="10.5in" w="8in"/>
+      <proto/>
+      <desc>
+         <text name="version">11.0.9.20211220.1.16.2</text>
+      </desc>
+      <?templateDesigner expand 1?></subform>
+   <?templateDesigner DefaultPreviewDynamic 1?>
+   <?templateDesigner DefaultRunAt client?>
+   <?templateDesigner Grid show:1, snap:1, units:0, color:ff8080, origin:(0,0), interval:(125000,125000)?>
+   <?templateDesigner FormTargetVersion 33?>
+   <?templateDesigner WidowOrphanControl 0?>
+   <?templateDesigner DefaultCaptionFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultValueFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultLanguage JavaScript?>
+   <?acrobat JavaScript strictScoping?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?>
+   <?templateDesigner Zoom 74?></template>
+<config xmlns="http://www.xfa.org/schema/xci/3.0/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+      <common>
+         <template>
+            <base>https://vhdvfdevap01.sap.delvalflow.com:44300/sap/bc/fp/form/layout/</base>
+         </template>
+      </common>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+         <version>1.7</version>
+         <adobeExtensionLevel>8</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data>
+            <xsl>
+               <uri/>
+            </xsl>
+            <outputXSL>
+               <uri/>
+            </outputXSL>
+         </data>
+      </common>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+</config>
+<connectionSet xmlns="http://www.xfa.org/schema/xfa-connection-set/2.8/">
+   <xsdConnection dataDescription="data" name="ZSU_FI_JOURNAL_VOUCHER_SFP">
+      <uri/>
+      <rootElement>data</rootElement>
+   </xsdConnection>
+</connectionSet>
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+   <xfa:data xfa:dataNode="dataGroup"/>
+   <dd:dataDescription xmlns:dd="http://ns.adobe.com/data-description/" dd:name="data">
+      <data>
+         <ARCHIVE_PARAMETERS>
+            <SAP_OBJECT/>
+            <AR_OBJECT/>
+            <ARCHIV_ID/>
+            <DOC_TYPE/>
+            <RPC_HOST/>
+            <RPC_SERVIC/>
+            <INTERFACE/>
+            <MANDANT/>
+            <REPORT/>
+            <INFO/>
+            <ARCTEXT/>
+            <DATUM/>
+            <ARCUSER/>
+            <PRINTER/>
+            <FORMULAR/>
+            <ARCHIVPATH/>
+            <PROTOKOLL/>
+            <VERSION/>
+            <ACHECK/>
+         </ARCHIVE_PARAMETERS>
+         <CONTROL_PARAMETERS>
+            <NO_OPEN/>
+            <NO_CLOSE/>
+            <DEVICE/>
+            <NO_DIALOG/>
+            <PREVIEW/>
+            <GETOTF/>
+            <LANGU/>
+            <REPLANGU1/>
+            <REPLANGU2/>
+            <REPLANGU3/>
+            <STARTPAGE/>
+         </CONTROL_PARAMETERS>
+         <MAIL_APPL_OBJ>
+            <LOGSYS/>
+            <OBJTYPE/>
+            <OBJKEY/>
+            <DESCRIBE/>
+         </MAIL_APPL_OBJ>
+         <MAIL_RECIPIENT>
+            <LOGSYS/>
+            <OBJTYPE/>
+            <OBJKEY/>
+            <DESCRIBE/>
+         </MAIL_RECIPIENT>
+         <MAIL_SENDER>
+            <LOGSYS/>
+            <OBJTYPE/>
+            <OBJKEY/>
+            <DESCRIBE/>
+         </MAIL_SENDER>
+         <OUTPUT_OPTIONS>
+            <TDTELELAND/>
+            <TDTELENUM/>
+            <TDTELENUME/>
+            <TDFAXUSER/>
+            <FAXFORMAT/>
+            <TDSCHEDULE/>
+            <TDSENDDATE/>
+            <TDSENDTIME/>
+            <BCS_REQST/>
+            <BCS_STATUS/>
+            <BCS_COMMIT/>
+            <BCS_LANGU/>
+            <TDARMOD/>
+            <TDNOARMCH/>
+            <TDARCCOP/>
+            <TDTITLE/>
+            <TDNOPREV/>
+            <TDNOPRINT/>
+            <TDNOARCH/>
+            <TDIEXIT/>
+            <TDDATASET/>
+            <TDSUFFIX1/>
+            <TDSUFFIX2/>
+            <TDCOVTITLE/>
+            <TDDEST/>
+            <TDPRINTER/>
+            <RQPOSNAME/>
+            <TDNEWID/>
+            <TDIMMED/>
+            <TDDELETE/>
+            <TDLIFETIME/>
+            <TDAUTORITY/>
+            <TDFINAL/>
+            <SPONUMIV/>
+            <PRINTTICKET/>
+            <TDCOVER/>
+            <TDRECEIVER/>
+            <TDDIVISION/>
+            <TDCOPIES/>
+            <TDGROUP/>
+            <TDPAGESLCT/>
+            <URLCALL/>
+            <XSFCMODE/>
+            <XSF/>
+            <XSFOUTMODE/>
+            <XSFOUTDEV/>
+            <XSFFORMAT/>
+            <XSFACTION/>
+            <XSFPARS dd:minOccur="0">
+               <DATA dd:maxOccur="-1">
+                  <NAME/>
+                  <VALUE/>
+               </DATA>
+            </XSFPARS>
+            <XDFCMODE/>
+            <XDF/>
+            <XDFOUTMODE/>
+            <XDFOUTDEV/>
+            <XDF2CMODE/>
+            <XDF2/>
+            <XDF2OUTMODE/>
+            <XDF2OUTDEV/>
+         </OUTPUT_OPTIONS>
+         <USER_SETTINGS/>
+         <BELNR/>
+         <GJAHR/>
+         <WA_FINAL1>
+            <BUKRS/>
+            <BELNR/>
+            <GJAHR/>
+            <BUDAT/>
+            <USNAM/>
+            <BLART/>
+            <WAERS/>
+            <KURSF/>
+            <HWAER/>
+         </WA_FINAL1>
+         <LS_TEXT/>
+         <IT_FINAL dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <BUKRS/>
+               <BELNR/>
+               <GJAHR/>
+               <BUDAT/>
+               <USNAM/>
+               <BLART/>
+               <WAERS/>
+               <KURSF/>
+               <HWAER/>
+            </DATA>
+         </IT_FINAL>
+         <WA_FINAL>
+            <BUKRS/>
+            <BELNR/>
+            <GJAHR/>
+            <BUDAT/>
+            <USNAM/>
+            <BLART/>
+            <WAERS/>
+            <KURSF/>
+            <HWAER/>
+         </WA_FINAL>
+         <WA_BKPF>
+            <BUKRS/>
+            <BELNR/>
+            <GJAHR/>
+            <BUDAT/>
+            <USNAM/>
+            <BLART/>
+         </WA_BKPF>
+         <IT_BKPF dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <BUKRS/>
+               <BELNR/>
+               <GJAHR/>
+               <BUDAT/>
+               <USNAM/>
+               <BLART/>
+            </DATA>
+         </IT_BKPF>
+         <WA_BSEG>
+            <BUKRS/>
+            <GJAHR/>
+            <BELNR/>
+            <KOART/>
+            <HKONT/>
+            <LIFNR/>
+            <KUNNR/>
+            <ANLN1/>
+            <DMBTR/>
+            <SHKZG/>
+         </WA_BSEG>
+         <IT_BSEG dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <BUKRS/>
+               <GJAHR/>
+               <BELNR/>
+               <KOART/>
+               <HKONT/>
+               <LIFNR/>
+               <KUNNR/>
+               <ANLN1/>
+               <DMBTR/>
+               <SHKZG/>
+            </DATA>
+         </IT_BSEG>
+         <IT_SKAT dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <SAKNR/>
+               <TXT50/>
+            </DATA>
+         </IT_SKAT>
+         <WA_SKAT>
+            <SAKNR/>
+            <TXT50/>
+         </WA_SKAT>
+         <IT_LFA1 dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <LIFNR/>
+               <NAME1/>
+            </DATA>
+         </IT_LFA1>
+         <WA_LFA1>
+            <LIFNR/>
+            <NAME1/>
+         </WA_LFA1>
+         <IT_KNA1 dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <KUNNR/>
+               <NAME1/>
+            </DATA>
+         </IT_KNA1>
+         <WA_KNA1>
+            <KUNNR/>
+            <NAME1/>
+         </WA_KNA1>
+         <IT_ANLA dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <ANLN1/>
+               <TXT50/>
+            </DATA>
+         </IT_ANLA>
+         <WA_ANLA>
+            <ANLN1/>
+            <TXT50/>
+         </WA_ANLA>
+         <BG_IMG/>
+         <GV_TOT/>
+         <GV_TOT1/>
+         <LV_INVNO/>
+         <SFPSY>
+            <DATE/>
+            <TIME/>
+            <USERNAME/>
+            <SUBRC/>
+         </SFPSY>
+      </data>
+   </dd:dataDescription>
+</xfa:datasets>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale desc="English (India)" name="en_IN">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE D MMMM YYYY</datePattern>
+         <datePattern name="long">D MMMM YYYY</datePattern>
+         <datePattern name="med">DD-MMM-YY</datePattern>
+         <datePattern name="short">DD/MM/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A Z</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$ z,zz,zz9.99</numberPattern>
+         <numberPattern name="percent">z,zz,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">Rs.</currencySymbol>
+         <currencySymbol name="isoname">INR</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+         <typeface name="Adobe Devanagari"/>
+      </typefaces>
+   </locale>
+</localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c015 81.161580, 2017/12/01-01:38:21        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <xmp:MetadataDate>2025-05-07T05:26:49Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer 11.0</xmp:CreatorTool>
+         <pdf:Producer>Adobe LiveCycle Designer 11.0</pdf:Producer>
+         <xmpMM:DocumentID>uuid:1bf00032-3497-455c-94e3-1dbb661e78a4</xmpMM:DocumentID>
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>11.0.9.20211220.1.16.2</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta></xdp:xdp>

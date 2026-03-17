@@ -1,0 +1,922 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SFPI" serializer_version="v1.0.0">
+ <asx:abap version="1.0" xmlns:asx="http://www.sap.com/abapxml">
+  <asx:values>
+   <VERSION>1</VERSION>
+   <TYPE>S</TYPE>
+   <INTERFACE href="#o1"/>
+   <INTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID/>
+     <TEXT>PURCHASE ORDER</TEXT>
+    </FPINTERFACET>
+   </INTERFACET>
+  </asx:values>
+  <asx:heap xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:abap="http://www.sap.com/abapxml/types/built-in" xmlns:cls="http://www.sap.com/abapxml/classes/global" xmlns:dic="http://www.sap.com/abapxml/types/dictionary">
+   <cls:CL_FP_INTERFACE_DATA id="o1">
+    <CL_FP_INTERFACE_DATA classVersion="1">
+     <CODING href="#o5"/>
+     <PARAMETERS href="#o4"/>
+     <GLOBAL_DEFINITIONS href="#o3"/>
+     <REFERENCE_FIELDS href="#o2"/>
+     <XSD_DEFINITIONS/>
+    </CL_FP_INTERFACE_DATA>
+   </cls:CL_FP_INTERFACE_DATA>
+   <cls:CL_FP_REFERENCE_FIELDS id="o2">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_REFERENCE_FIELDS classVersion="1">
+     <REFERENCE_FIELDS>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>QUAN</DATATYPE>
+       <VALUE>WA_ESKL-MENGE</VALUE>
+       <UNIT/>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>WA_SERV-TBTWR</VALUE>
+       <UNIT/>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_KONV-KBETR</VALUE>
+       <UNIT/>
+      </SFPREF>
+     </REFERENCE_FIELDS>
+    </CL_FP_REFERENCE_FIELDS>
+   </cls:CL_FP_REFERENCE_FIELDS>
+   <cls:CL_FP_GLOBAL_DEFINITIONS id="o3">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_GLOBAL_DEFINITIONS classVersion="1">
+     <GLOBAL_DATA>
+      <SFPGDATA>
+       <NAME>WA_HDR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_HDR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_ITEM</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_ITEM</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_ITEMS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_TAB_ITEMS</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_MARA</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>MARA</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_MARA</NAME>
+       <TYPING>TYPE TABLE OF</TYPING>
+       <TYPENAME>MARA</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_MAKT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>MAKT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_T001W</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>T001W</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_ADRC</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ADRC</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_LFA1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>LFA1</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_T052U</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>T052U</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_TINCT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TINCT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_LINES</NAME>
+       <TYPING>TYPE TABLE OF</TYPING>
+       <TYPENAME>TLINE</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_LINES</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TLINE</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_TOTAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_ISSUE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR11</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_EKET</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>EKET</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_REV_DAT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR11</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_LINES</NAME>
+       <TYPING>TYPE TABLE OF</TYPING>
+       <TYPENAME>TLINE</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LINES</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TLINE</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_EXP</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR11</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_REVCNT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>I</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_CDHDR</NAME>
+       <TYPING>TYPE TABLE OF</TYPING>
+       <TYPENAME>CDHDR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_CDHDR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CDHDR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_SHIP</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR11</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_QTY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>EKPO-MENGE</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_AMT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>PC207-BETRG</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_AMT_WRD</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_MARA</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>MARA</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_USA</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR100</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_T005T</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>T005T</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_T005U</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>T005U</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_TEXT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_NAME1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_MEMO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_MEMO1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_ESKL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ESKL</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_TEXT</NAME>
+       <TYPING>TYPE TABLE OF</TYPING>
+       <TYPENAME>TY_TEXT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_TEXT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_TEXT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_PLANT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>T005T</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_ESLL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ESLL</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_SERV</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ESLL</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_DIS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR16</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>AMOUNT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_DAMT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>P DECIMALS 2</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LS_KONV</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>ZCH1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KBETR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>ZCH</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KAWRT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>UNIT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KBETR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>ZCH_AMT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>TOTAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>ZCH1_AMT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LT_LINES</NAME>
+       <TYPING>TYPE TABLE OF</TYPING>
+       <TYPENAME>TLINE</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LS_LINES</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TLINE</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>SHIP_TO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>SHIP_TO1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>SHIP_TO2</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>SHIP_TO3</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>SHIP_TO4</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>SHIP_TO5</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>CUST1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>CUST</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_WRD</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>SPELL</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_ZEXP</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_AFR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_FLAG</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR1</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_FLAG1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR1</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_EKKO1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_EKKO1</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_EKKO1</NAME>
+       <TYPING>TYPE TABLE OF</TYPING>
+       <TYPENAME>TY_EKKO1</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_EINE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_EINE</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_EINE</NAME>
+       <TYPING>TYPE TABLE OF</TYPING>
+       <TYPENAME>TY_EINE</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+     </GLOBAL_DATA>
+     <TYPES>
+      <FPCLINE>TYPES : BEGIN OF ty_hdr,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>          ebeln         TYPE ebeln,       &quot; Purchasing Document Number</FPCLINE>
+      <FPCLINE>          bsart	        TYPE esart,       &quot; Purchasing Document Type</FPCLINE>
+      <FPCLINE>          bukrs	        TYPE bukrs,       &quot; Company Code</FPCLINE>
+      <FPCLINE>          werks	        TYPE ewerk,       &quot; Plant</FPCLINE>
+      <FPCLINE>          lifnr	        TYPE elifn,       &quot; Vendor Account Number</FPCLINE>
+      <FPCLINE>          zterm	        TYPE dzterm,      &quot;	Terms of Payment Key</FPCLINE>
+      <FPCLINE>          waers	        TYPE waers,       &quot; Currency Key</FPCLINE>
+      <FPCLINE>          inco1	        TYPE inco1,       &quot;	Incoterms (Part 1)</FPCLINE>
+      <FPCLINE>          inco2	        TYPE inco2,       &quot;	Incoterms (Part 2)</FPCLINE>
+      <FPCLINE>          knumv	        TYPE knumv,       &quot;	Number of the document condition</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>          aedat	        TYPE erdat,       &quot; Date on Which Record Was Created</FPCLINE>
+      <FPCLINE>          bedat	        TYPE bedat,</FPCLINE>
+      <FPCLINE>          zbd1t	        TYPE dzbdet,      &quot; Cash (Prompt Payment) Discount Days</FPCLINE>
+      <FPCLINE>          eindt         TYPE eindt,       &quot; Delivery Date</FPCLINE>
+      <FPCLINE>          slfdt	        TYPE slfdt,        &quot; Statistics-Relevant Delivery Date</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>          j_1iexrn      TYPE j_1iexrn,    &quot; Excise Registration Number</FPCLINE>
+      <FPCLINE>          j_1iexrg      TYPE j_1iexrg,    &quot; Excise Range</FPCLINE>
+      <FPCLINE>          j_1iexdi      TYPE j_1iexdi,    &quot; Excise Division</FPCLINE>
+      <FPCLINE>          j_1iexco      TYPE j_1iexco,    &quot; Excise Commissionerate</FPCLINE>
+      <FPCLINE>          j_1isern      TYPE j_1isern,    &quot; TIN nO./Service Tax Registration Number</FPCLINE>
+      <FPCLINE>          j_1icstno	    TYPE j_1icstno,   &quot; Central Sales Tax Number</FPCLINE>
+      <FPCLINE>          j_1ilstno     TYPE j_1ilstno,   &quot; Local Sales Tax Number</FPCLINE>
+      <FPCLINE>          j_1icstdt(10) TYPE c,       &quot; CST-Date</FPCLINE>
+      <FPCLINE>          j_1ilstdt(10) TYPE c,       &quot; LST-Date</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>          butxt         TYPE butxt,       &quot; Name Of Company Code Or Company</FPCLINE>
+      <FPCLINE>          v_name1       TYPE name1_gp,    &quot; Vendor Name</FPCLINE>
+      <FPCLINE>          mp_adrnr      TYPE adrnr,       &quot; Main Plant Address_number</FPCLINE>
+      <FPCLINE>          p_adrnr       TYPE adrnr,       &quot; Plant Address</FPCLINE>
+      <FPCLINE>          v_adrnr       TYPE adrnr,       &quot; Vendor Address Number</FPCLINE>
+      <FPCLINE>          po_note       TYPE string,</FPCLINE>
+      <FPCLINE>          banfn         TYPE banfn,       &quot; Purchase Requisition Number</FPCLINE>
+      <FPCLINE>          udate	        TYPE cddatum,     &quot;	Creation date of the change document</FPCLINE>
+      <FPCLINE>          zterm_txt     TYPE t052u-text1,   &quot; Payment-terms Text</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*          zterm_txt     TYPE j_3rt53apaymtx,   &quot; Payment-terms Text</FPCLINE>
+      <FPCLINE>        END OF ty_hdr,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        BEGIN OF ty_item,</FPCLINE>
+      <FPCLINE>          ebelp   TYPE ebelp,        &quot; Item Number of Purchasing Document</FPCLINE>
+      <FPCLINE>          matnr   TYPE matnr,        &quot; Material Number</FPCLINE>
+      <FPCLINE>          txz01   TYPE txz01,        &quot;  Short Text</FPCLINE>
+      <FPCLINE>          &quot;MAKTX    TYPE MAKTX,       &quot; Material Description (Short Text)</FPCLINE>
+      <FPCLINE>          werks   TYPE ewerk,        &quot; Plant</FPCLINE>
+      <FPCLINE>          menge   TYPE bstmg,        &quot; Purchase Order Quantity</FPCLINE>
+      <FPCLINE>          meins   TYPE bstme,        &quot; Purchase Order Unit of Measure</FPCLINE>
+      <FPCLINE>          netpr   TYPE bprei,        &quot; Net Price in Purchasing Document (in Document Currency)</FPCLINE>
+      <FPCLINE>          netwr   TYPE bwert,        &quot; Net Order Value in PO Currency</FPCLINE>
+      <FPCLINE>          BRTWR   TYPE bwert,        &quot; Gross Value in PO Currency</FPCLINE>
+      <FPCLINE>          ntgew   TYPE entge,        &quot; Net Weight</FPCLINE>
+      <FPCLINE>          gewei   TYPE egewe,        &quot; Unit of Weight</FPCLINE>
+      <FPCLINE>          banfn   TYPE banfn,        &quot; Purchase Requisition Number</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>          eindt   TYPE eindt,        &quot;  Item Delivery Date</FPCLINE>
+      <FPCLINE>          slfdt	  TYPE slfdt,        &quot; Statistics-Relevant Delivery Date</FPCLINE>
+      <FPCLINE>          zeinr   TYPE dzeinr,       &quot;  Document number (without document management system)</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>          vbeln   TYPE vbeln,        &quot; Sales Order Number</FPCLINE>
+      <FPCLINE>          vbelp   TYPE vbelp,        &quot; Sales Order Item NUmber</FPCLINE>
+      <FPCLINE>          itm_txt TYPE string,</FPCLINE>
+      <FPCLINE>          adtxt   TYPE string,</FPCLINE>
+      <FPCLINE>          zeivr   TYPE mara-zeivr,</FPCLINE>
+      <FPCLINE>          pstyp   TYPE pstyp,</FPCLINE>
+      <FPCLINE>          packno type ekpo-packno,</FPCLINE>
+      <FPCLINE>          inco2 TYPE ekko-inco2, &quot; added by shreya</FPCLINE>
+      <FPCLINE>          INFNR TYPE EKPO-INFNR,</FPCLINE>
+      <FPCLINE>          ekorg TYPE eine-ekorg,</FPCLINE>
+      <FPCLINE>        &quot;werks type eine-werks,</FPCLINE>
+      <FPCLINE>        esokz TYPE eine-esokz,</FPCLINE>
+      <FPCLINE>        END OF ty_item,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*        BEGIN OF TY_MAKT,</FPCLINE>
+      <FPCLINE>*          MATNR  TYPE MATNR,</FPCLINE>
+      <FPCLINE>*          MAKTX  TYPE MAKTX,</FPCLINE>
+      <FPCLINE>*        END OF TY_MAKT,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        &quot; structure declaration for address &quot;</FPCLINE>
+      <FPCLINE>        BEGIN OF ty_adrc,</FPCLINE>
+      <FPCLINE>          addrnumber TYPE ad_addrnum, &quot; ADDRESS NO&quot;</FPCLINE>
+      <FPCLINE>*          name_co    TYPE ad_name_co, &quot; COMPANY NAME  &quot;</FPCLINE>
+      <FPCLINE>          name1      TYPE adrc-name1,</FPCLINE>
+      <FPCLINE>          str_suppl1 TYPE ad_strspp1, &quot; STREET 2 &quot;</FPCLINE>
+      <FPCLINE>          str_suppl2 TYPE ad_strspp2, &quot; STREET 3 &quot;</FPCLINE>
+      <FPCLINE>          street     TYPE ad_street, &quot; STREET &quot;</FPCLINE>
+      <FPCLINE>          city1      TYPE ad_city1, &quot; CITY1 &quot;</FPCLINE>
+      <FPCLINE>          post_code1 TYPE ad_pstcd1, &quot; POSTCODE 1 &quot;</FPCLINE>
+      <FPCLINE>*          time_zone  TYPE ad_tzone, &quot; TIME ZONE(COUNTRY) &quot;</FPCLINE>
+      <FPCLINE>          bezei      TYPE bezei20,    &quot; REGION DESRIPTION &quot;</FPCLINE>
+      <FPCLINE>          country    TYPE adrc-country,</FPCLINE>
+      <FPCLINE>          tel_number TYPE adrc-tel_number,</FPCLINE>
+      <FPCLINE>          fax_number TYPE adrc-fax_number,</FPCLINE>
+      <FPCLINE>          extension2 TYPE adrc-extension2,</FPCLINE>
+      <FPCLINE>          smtp_addr  TYPE adr6-smtp_addr,</FPCLINE>
+      <FPCLINE>          landx      TYPE t005t-landx,  &quot;Country name</FPCLINE>
+      <FPCLINE>          CIN        TYPE ADRCT-REMARK,</FPCLINE>
+      <FPCLINE>        END OF ty_adrc,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>        BEGIN OF ty_mara,</FPCLINE>
+      <FPCLINE>          matnr TYPE matnr,</FPCLINE>
+      <FPCLINE>          zeinr	TYPE dzeinr,    &quot; Document number (without document management system)</FPCLINE>
+      <FPCLINE>          ntgew TYPE entge,     &quot; Net Weight</FPCLINE>
+      <FPCLINE>          gewei TYPE egewe,     &quot; Unit of Weight</FPCLINE>
+      <FPCLINE>        END OF ty_mara,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        BEGIN OF ty_konv,</FPCLINE>
+      <FPCLINE>          sq_no TYPE i,</FPCLINE>
+      <FPCLINE>          kschl TYPE kscha,</FPCLINE>
+      <FPCLINE>          kbetr TYPE string, &quot;KBETR, &quot;  Rate (condition amount or percentage)</FPCLINE>
+      <FPCLINE>          waers	TYPE waers, &quot;	Currency Key</FPCLINE>
+      <FPCLINE>          descr TYPE text30,  &quot;vtext,</FPCLINE>
+      <FPCLINE>          kwert TYPE kwert,</FPCLINE>
+      <FPCLINE>        END OF ty_konv,</FPCLINE>
+      <FPCLINE>**** added by shreya****</FPCLINE>
+      <FPCLINE>        BEGIN OF ty_ekko1,</FPCLINE>
+      <FPCLINE>        ebeln TYPE ekko-ebeln,</FPCLINE>
+      <FPCLINE>        inco2 TYPE ekko-inco2,</FPCLINE>
+      <FPCLINE>        END OF ty_ekko1,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>**** added by shreya****</FPCLINE>
+      <FPCLINE> BEGIN OF ty_eine,</FPCLINE>
+      <FPCLINE>        infnr TYPE eine-infnr,</FPCLINE>
+      <FPCLINE>        ekorg TYPE eine-ekorg,</FPCLINE>
+      <FPCLINE>        werks type eine-werks,</FPCLINE>
+      <FPCLINE>        esokz TYPE eine-esokz,</FPCLINE>
+      <FPCLINE>        END OF TY_EINE,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        ty_tab_items     TYPE TABLE OF ty_item,</FPCLINE>
+      <FPCLINE>        ty_tab_mara      TYPE TABLE OF ty_mara,</FPCLINE>
+      <FPCLINE>*        TY_TAB_MAKT TYPE TABLE OF TY_MAKT</FPCLINE>
+      <FPCLINE>        ty_tab_konv      TYPE TABLE OF ty_konv,</FPCLINE>
+      <FPCLINE>        ty_tab_item_konv TYPE TABLE OF komv,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        ty_text_lines1   TYPE TABLE OF tline.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>         TYPES : BEGIN OF ty_text,</FPCLINE>
+      <FPCLINE>          lines TYPE string,</FPCLINE>
+      <FPCLINE>          END OF ty_text.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+     </TYPES>
+     <FIELDSYMBOLS/>
+    </CL_FP_GLOBAL_DEFINITIONS>
+   </cls:CL_FP_GLOBAL_DEFINITIONS>
+   <cls:CL_FP_PARAMETERS id="o4">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_PARAMETERS classVersion="1">
+     <IMPORT_PARAMETERS>
+      <SFPIOPAR>
+       <NAME>XEKKO</NAME>
+       <TYPING>LIKE</TYPING>
+       <TYPENAME>EKKO</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+     </IMPORT_PARAMETERS>
+     <EXPORT_PARAMETERS/>
+     <TABLE_PARAMETERS>
+      <SFPIOPAR>
+       <NAME>XEKPO</NAME>
+       <TYPING>LIKE</TYPING>
+       <TYPENAME>EKPO</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>XEKET</NAME>
+       <TYPING>LIKE</TYPING>
+       <TYPENAME>EKET</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>XTKOMV</NAME>
+       <TYPING>LIKE</TYPING>
+       <TYPENAME>KONV</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+     </TABLE_PARAMETERS>
+     <EXCEPTIONS/>
+    </CL_FP_PARAMETERS>
+   </cls:CL_FP_PARAMETERS>
+   <cls:CL_FP_CODING id="o5">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_CODING classVersion="1">
+     <INPUT_PARAMETERS>
+      <FPPARAMETER>XEKPO</FPPARAMETER>
+      <FPPARAMETER>XEKET</FPPARAMETER>
+      <FPPARAMETER>XTKOMV</FPPARAMETER>
+      <FPPARAMETER>WA_HDR</FPPARAMETER>
+      <FPPARAMETER>XEKKO</FPPARAMETER>
+      <FPPARAMETER>WA_ITEM</FPPARAMETER>
+      <FPPARAMETER>IT_ITEMS</FPPARAMETER>
+      <FPPARAMETER>WA_LFA1</FPPARAMETER>
+      <FPPARAMETER>WA_TINCT</FPPARAMETER>
+      <FPPARAMETER>WA_T052U</FPPARAMETER>
+      <FPPARAMETER>WA_LINES</FPPARAMETER>
+      <FPPARAMETER>LV_LINES</FPPARAMETER>
+      <FPPARAMETER>WA_ESKL</FPPARAMETER>
+      <FPPARAMETER>GV_DIS</FPPARAMETER>
+      <FPPARAMETER>AMOUNT</FPPARAMETER>
+      <FPPARAMETER>GV_DAMT</FPPARAMETER>
+     </INPUT_PARAMETERS>
+     <OUTPUT_PARAMETERS>
+      <FPPARAMETER>WA_T005T</FPPARAMETER>
+      <FPPARAMETER>WA_T005U</FPPARAMETER>
+      <FPPARAMETER>WA_ESKL</FPPARAMETER>
+     </OUTPUT_PARAMETERS>
+     <INITIALIZATION>
+      <FPCLINE/>
+      <FPCLINE>DATA : wa_ekpo      LIKE LINE OF xekpo,</FPCLINE>
+      <FPCLINE>       wa_eket      LIKE LINE OF xeket,</FPCLINE>
+      <FPCLINE>       wa_konv      LIKE LINE OF xtkomv.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*CLEAR gv_dis.</FPCLINE>
+      <FPCLINE>*READ TABLE xtkomv INTO wa_konv WITH KEY kschl = &apos;HB01&apos; kposn = &apos; &apos;.</FPCLINE>
+      <FPCLINE>*IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>**gv_dis = wa_konv-kbetr.</FPCLINE>
+      <FPCLINE>*amount = wa_konv-kawrt.</FPCLINE>
+      <FPCLINE>*GV_DAMT = wa_konv-kbetr.</FPCLINE>
+      <FPCLINE>*REPLACE &apos;-&apos; INTO gv_dis WITH &apos;&apos;.</FPCLINE>
+      <FPCLINE>*REPLACE &apos;-&apos; INTO GV_DAMT WITH &apos;&apos;.</FPCLINE>
+      <FPCLINE>*ENDIF.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*READ TABLE xtkomv INTO wa_konv WITH KEY kschl = &apos;R000&apos; kposn = &apos; &apos;.</FPCLINE>
+      <FPCLINE>*IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>*GV_DAMT = wa_konv-kwert.</FPCLINE>
+      <FPCLINE>*gv_dis = wa_konv-kbetr / 10.</FPCLINE>
+      <FPCLINE>*amount = wa_konv-kawrt .</FPCLINE>
+      <FPCLINE>*REPLACE &apos;-&apos; INTO gv_dis WITH &apos;&apos;.</FPCLINE>
+      <FPCLINE>*REPLACE &apos;-&apos; INTO GV_DAMT WITH &apos;&apos;.</FPCLINE>
+      <FPCLINE>*CONCATENATE gv_dis &apos;%&apos; INTO gv_dis.</FPCLINE>
+      <FPCLINE>*ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>wa_hdr-ebeln = xekko-ebeln.</FPCLINE>
+      <FPCLINE>wa_hdr-bsart = xekko-bsart.</FPCLINE>
+      <FPCLINE>wa_hdr-bukrs = xekko-bukrs.</FPCLINE>
+      <FPCLINE>wa_hdr-lifnr = xekko-lifnr.</FPCLINE>
+      <FPCLINE>wa_hdr-zterm = xekko-zterm.</FPCLINE>
+      <FPCLINE>wa_hdr-aedat = xekko-aedat.</FPCLINE>
+      <FPCLINE>wa_hdr-zbd1t = xekko-zbd1t.</FPCLINE>
+      <FPCLINE>wa_hdr-waers = xekko-waers.</FPCLINE>
+      <FPCLINE>wa_hdr-inco1 = xekko-inco1.</FPCLINE>
+      <FPCLINE>wa_hdr-inco2 = xekko-inco2.</FPCLINE>
+      <FPCLINE>wa_hdr-knumv = xekko-knumv.</FPCLINE>
+      <FPCLINE>wa_hdr-bedat = xekko-bedat.</FPCLINE>
+      <FPCLINE>wa_hdr-waers = xekko-waers.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>LOOP AT xekpo INTO wa_ekpo.</FPCLINE>
+      <FPCLINE>  CLEAR wa_item.</FPCLINE>
+      <FPCLINE>  wa_item-ebelp = wa_ekpo-ebelp.</FPCLINE>
+      <FPCLINE>  wa_item-matnr = wa_ekpo-matnr.</FPCLINE>
+      <FPCLINE>  wa_item-txz01 = wa_ekpo-txz01.</FPCLINE>
+      <FPCLINE>  wa_item-werks = wa_ekpo-werks.</FPCLINE>
+      <FPCLINE>  wa_item-menge = wa_ekpo-menge.</FPCLINE>
+      <FPCLINE>  wa_item-meins = wa_ekpo-meins.</FPCLINE>
+      <FPCLINE>  wa_item-netpr = wa_ekpo-netpr.</FPCLINE>
+      <FPCLINE>  wa_item-netwr = wa_ekpo-netwr.</FPCLINE>
+      <FPCLINE>  wa_item-BRTWR = wa_ekpo-BRTWR.</FPCLINE>
+      <FPCLINE>  wa_item-ntgew = wa_ekpo-ntgew.</FPCLINE>
+      <FPCLINE>  wa_item-gewei = wa_ekpo-gewei.</FPCLINE>
+      <FPCLINE>  wa_item-banfn = wa_ekpo-banfn.</FPCLINE>
+      <FPCLINE>  wa_item-pstyp = wa_ekpo-pstyp.</FPCLINE>
+      <FPCLINE>  wa_item-packno = wa_ekpo-packno.</FPCLINE>
+      <FPCLINE>  WA_ITEM-infnr  = wa_ekpo-infnr.</FPCLINE>
+      <FPCLINE>  APPEND wa_item TO it_items.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDLOOP.</FPCLINE>
+      <FPCLINE>*BREAK-POINT.</FPCLINE>
+      <FPCLINE>************************************************</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>************************************************</FPCLINE>
+      <FPCLINE>READ TABLE xeket INTO wa_eket INDEX 1.</FPCLINE>
+      <FPCLINE>wa_hdr-werks  = wa_item-werks.</FPCLINE>
+      <FPCLINE>wa_hdr-banfn  = wa_item-banfn.</FPCLINE>
+      <FPCLINE>wa_hdr-eindt  = wa_eket-eindt.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*BREAK-POINT.</FPCLINE>
+      <FPCLINE>SELECT SINGLE * FROM lfa1 INTO wa_lfa1</FPCLINE>
+      <FPCLINE>  WHERE lifnr = wa_hdr-lifnr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE * FROM t005t INTO wa_t005t</FPCLINE>
+      <FPCLINE>  WHERE spras = &apos;E&apos;</FPCLINE>
+      <FPCLINE>    AND LAND1 = wa_lfa1-land1.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE * FROM t005u INTO wa_t005u</FPCLINE>
+      <FPCLINE>  WHERE spras = &apos;E&apos;</FPCLINE>
+      <FPCLINE>    AND LAND1 = wa_lfa1-land1</FPCLINE>
+      <FPCLINE>    AND BLAND = wa_lfa1-regio.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE * FROM t052u INTO wa_t052u</FPCLINE>
+      <FPCLINE>  WHERE zterm = wa_hdr-zterm.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE * FROM tinct INTO wa_tinct</FPCLINE>
+      <FPCLINE>  WHERE inco1 = wa_hdr-inco1</FPCLINE>
+      <FPCLINE>    AND spras = &apos;EN&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>DATA: lv_name   TYPE thead-tdname.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CLEAR: lv_lines,WA_LINES.</FPCLINE>
+      <FPCLINE>      REFRESH lv_lines.</FPCLINE>
+      <FPCLINE>      lv_name = wa_hdr-ebeln.</FPCLINE>
+      <FPCLINE>      CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>        EXPORTING</FPCLINE>
+      <FPCLINE>          client                  = sy-mandt</FPCLINE>
+      <FPCLINE>          id                      = &apos;F06&apos;</FPCLINE>
+      <FPCLINE>          language                = sy-langu</FPCLINE>
+      <FPCLINE>          name                    = lv_name</FPCLINE>
+      <FPCLINE>          object                  = &apos;EKKO&apos;</FPCLINE>
+      <FPCLINE>        TABLES</FPCLINE>
+      <FPCLINE>          lines                   = lv_lines</FPCLINE>
+      <FPCLINE>        EXCEPTIONS</FPCLINE>
+      <FPCLINE>          id                      = 1</FPCLINE>
+      <FPCLINE>          language                = 2</FPCLINE>
+      <FPCLINE>          name                    = 3</FPCLINE>
+      <FPCLINE>          not_found               = 4</FPCLINE>
+      <FPCLINE>          object                  = 5</FPCLINE>
+      <FPCLINE>          reference_check         = 6</FPCLINE>
+      <FPCLINE>          wrong_access_to_archive = 7</FPCLINE>
+      <FPCLINE>          OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>      IF sy-subrc &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>* MESSAGE ID SY-MSGID TYPE SY-MSGTY NUMBER SY-MSGNO</FPCLINE>
+      <FPCLINE>*         WITH SY-MSGV1 SY-MSGV2 SY-MSGV3 SY-MSGV4.</FPCLINE>
+      <FPCLINE>      ENDIF.</FPCLINE>
+      <FPCLINE>      READ TABLE lv_lines INTO WA_LINES INDEX 1.</FPCLINE>
+     </INITIALIZATION>
+     <FORMS/>
+    </CL_FP_CODING>
+   </cls:CL_FP_CODING>
+  </asx:heap>
+ </asx:abap>
+</abapGit>

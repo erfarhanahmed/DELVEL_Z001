@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SFPI" serializer_version="v1.0.0">
+ <asx:abap version="1.0" xmlns:asx="http://www.sap.com/abapxml">
+  <asx:values>
+   <VERSION>1</VERSION>
+   <TYPE/>
+   <INTERFACE href="#o1"/>
+   <INTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID/>
+     <TEXT>Interface for ZSD_SALESORDER</TEXT>
+    </FPINTERFACET>
+   </INTERFACET>
+  </asx:values>
+  <asx:heap xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:abap="http://www.sap.com/abapxml/types/built-in" xmlns:cls="http://www.sap.com/abapxml/classes/global" xmlns:dic="http://www.sap.com/abapxml/types/dictionary">
+   <cls:CL_FP_INTERFACE_DATA id="o1">
+    <CL_FP_INTERFACE_DATA classVersion="1">
+     <CODING href="#o5"/>
+     <PARAMETERS href="#o4"/>
+     <GLOBAL_DEFINITIONS href="#o3"/>
+     <REFERENCE_FIELDS href="#o2"/>
+     <XSD_DEFINITIONS/>
+    </CL_FP_INTERFACE_DATA>
+   </cls:CL_FP_INTERFACE_DATA>
+   <cls:CL_FP_REFERENCE_FIELDS id="o2">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_REFERENCE_FIELDS classVersion="1">
+     <REFERENCE_FIELDS/>
+    </CL_FP_REFERENCE_FIELDS>
+   </cls:CL_FP_REFERENCE_FIELDS>
+   <cls:CL_FP_GLOBAL_DEFINITIONS id="o3">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_GLOBAL_DEFINITIONS classVersion="1">
+     <GLOBAL_DATA>
+      <SFPGDATA>
+       <NAME>GS_PRINTDATA</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>S_ALLDATA</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GS_ADRC1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ADRC</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GS_ADRC2</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ADRC</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GS_KUAGV</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KUAGV</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+     </GLOBAL_DATA>
+     <TYPES>
+      <FPCLINE>TYPES: BEGIN OF S_ALLDATA,</FPCLINE>
+      <FPCLINE>bstdk like vbkd-bstdk, &quot;PO Number</FPCLINE>
+      <FPCLINE>bstkd like vbkd-bstkd, &quot;PO Date</FPCLINE>
+      <FPCLINE>kunnr like vbpa-kunnr, &quot;Ship-to-party</FPCLINE>
+      <FPCLINE>kunag like vbpa-kunnr, &quot;Sold-to-party</FPCLINE>
+      <FPCLINE>mobile like kna1-telf2, &quot;Mobile Number</FPCLINE>
+      <FPCLINE>adrnr1 like kna1-adrnr, &quot;ship-to-party address</FPCLINE>
+      <FPCLINE>adrnr2 like kna1-adrnr,&quot;sold-to-party address</FPCLINE>
+      <FPCLINE>landx2 like t005t-landx, &quot;Ship-to Country text</FPCLINE>
+      <FPCLINE>landx1 like t005t-landx, &quot;Sold-to Country text</FPCLINE>
+      <FPCLINE>name1 like knvk-name1, &quot;Contact Person</FPCLINE>
+      <FPCLINE>pafkt like knvk-pafkt, &quot;Contact Person Role</FPCLINE>
+      <FPCLINE>vtext like tpfkt-vtext, &quot;Designation</FPCLINE>
+      <FPCLINE>email like adr6-smtp_addr, &quot;Email Addrss</FPCLINE>
+      <FPCLINE>J_1IEXCD like J_1IMOCUST-J_1IEXCD, &quot;ECC Number</FPCLINE>
+      <FPCLINE>J_1ICSTNO like J_1IMOCUST-J_1ICSTNO, &quot;Central Sales Tax Number</FPCLINE>
+      <FPCLINE>J_1ILSTNO like J_1IMOCUST-J_1ILSTNO, &quot;Local Sales Tax Number</FPCLINE>
+      <FPCLINE>J_1IPANNO like J_1IMOCUST-J_1IPANNO, &quot;Permanent Account Number</FPCLINE>
+      <FPCLINE>taxkd     like knvi-taxkd,           &quot;Tax classification for customer</FPCLINE>
+      <FPCLINE>tatyp     like knvi-tatyp,           &quot;Tax Category</FPCLINE>
+      <FPCLINE>vtext1    like tskdt-vtext,          &quot;Description</FPCLINE>
+      <FPCLINE>END OF S_ALLDATA.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+     </TYPES>
+     <FIELDSYMBOLS/>
+    </CL_FP_GLOBAL_DEFINITIONS>
+   </cls:CL_FP_GLOBAL_DEFINITIONS>
+   <cls:CL_FP_PARAMETERS id="o4">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_PARAMETERS classVersion="1">
+     <IMPORT_PARAMETERS>
+      <SFPIOPAR>
+       <NAME>IS_VBAK</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>VBAK</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+     </IMPORT_PARAMETERS>
+     <EXPORT_PARAMETERS/>
+     <TABLE_PARAMETERS/>
+     <EXCEPTIONS/>
+    </CL_FP_PARAMETERS>
+   </cls:CL_FP_PARAMETERS>
+   <cls:CL_FP_CODING id="o5">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_CODING classVersion="1">
+     <INPUT_PARAMETERS/>
+     <OUTPUT_PARAMETERS/>
+     <INITIALIZATION>
+      <FPCLINE>select single bstdk bstkd</FPCLINE>
+      <FPCLINE>into (GS_PRINTDATA-bstdk, GS_PRINTDATA-bstkd)</FPCLINE>
+      <FPCLINE>from vbkd</FPCLINE>
+      <FPCLINE>where vbeln eq is_vbak-vbeln.</FPCLINE>
+      <FPCLINE>if sy-subrc is initial.</FPCLINE>
+      <FPCLINE>* do nothing.</FPCLINE>
+      <FPCLINE>endif.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>select single kunnr adrnr</FPCLINE>
+      <FPCLINE>into (gs_printdata-kunnr, gs_printdata-adrnr1)</FPCLINE>
+      <FPCLINE>from vbpa</FPCLINE>
+      <FPCLINE>where vbeln eq is_vbak-vbeln</FPCLINE>
+      <FPCLINE>and parvw eq &apos;AG&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>select single kunnr adrnr</FPCLINE>
+      <FPCLINE>into (gs_printdata-kunag, gs_printdata-adrnr2)</FPCLINE>
+      <FPCLINE>from vbpa</FPCLINE>
+      <FPCLINE>where vbeln eq is_vbak-vbeln</FPCLINE>
+      <FPCLINE>and parvw eq &apos;WE&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*sold-to address</FPCLINE>
+      <FPCLINE>select single telf2 from kna1</FPCLINE>
+      <FPCLINE>into  gs_printdata-mobile</FPCLINE>
+      <FPCLINE>where kunnr eq gs_printdata-kunnr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>select single *  from adrc</FPCLINE>
+      <FPCLINE>into gs_adrc1</FPCLINE>
+      <FPCLINE>where ADDRNUMBER eq gs_printdata-adrnr1.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE LANDX INTO</FPCLINE>
+      <FPCLINE>GS_PRINTDATA-LANDX1</FPCLINE>
+      <FPCLINE>FROM T005T</FPCLINE>
+      <FPCLINE>WHERE LAND1 EQ GS_ADRC1-country</FPCLINE>
+      <FPCLINE>AND SPRAS EQ &apos;EN&apos;.</FPCLINE>
+      <FPCLINE>if gs_printdata-kunnr ne gs_printdata-kunag.</FPCLINE>
+      <FPCLINE>* Ship to address</FPCLINE>
+      <FPCLINE>*select single adrnr from kna1</FPCLINE>
+      <FPCLINE>*       into gs_printdata-adrnr1</FPCLINE>
+      <FPCLINE>*       where kunnr eq gs_printdata-kunnr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>select single *</FPCLINE>
+      <FPCLINE>from adrc</FPCLINE>
+      <FPCLINE>into gs_adrc2</FPCLINE>
+      <FPCLINE>where ADDRNUMBER eq gs_printdata-adrnr2.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE LANDX INTO</FPCLINE>
+      <FPCLINE>GS_PRINTDATA-LANDX2</FPCLINE>
+      <FPCLINE>FROM T005T</FPCLINE>
+      <FPCLINE>WHERE LAND1 EQ GS_ADRC2-country</FPCLINE>
+      <FPCLINE>AND SPRAS EQ &apos;EN&apos;.</FPCLINE>
+      <FPCLINE>endif.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>select single name1 pafkt</FPCLINE>
+      <FPCLINE>into (gs_printdata-name1, gs_printdata-pafkt)</FPCLINE>
+      <FPCLINE>from knvk</FPCLINE>
+      <FPCLINE>where kunnr eq gs_printdata-kunnr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>select single vtext</FPCLINE>
+      <FPCLINE>into gs_printdata-vtext</FPCLINE>
+      <FPCLINE>from tpfkt</FPCLINE>
+      <FPCLINE>where spras eq &apos;EN&apos;</FPCLINE>
+      <FPCLINE>and pafkt eq gs_printdata-pafkt.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>select single smtp_addr</FPCLINE>
+      <FPCLINE>into gs_printdata-email</FPCLINE>
+      <FPCLINE>from adr6</FPCLINE>
+      <FPCLINE>where ADDRNUMBER eq gs_printdata-adrnr1.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  select single  J_1IEXCD J_1ICSTNO J_1ILSTNO J_1IPANNO</FPCLINE>
+      <FPCLINE>into (gs_printdata-J_1IEXCD, gs_printdata-J_1ICSTNO,</FPCLINE>
+      <FPCLINE>gs_printdata-J_1ILSTNO, gs_printdata-J_1IPANNO)</FPCLINE>
+      <FPCLINE>from J_1IMOCUST</FPCLINE>
+      <FPCLINE>where KUNNR eq gs_printdata-kunnr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>select single TATYP TAXKD</FPCLINE>
+      <FPCLINE>into (gs_printdata-tatyp, gs_printdata-taxkd)</FPCLINE>
+      <FPCLINE>from knvi</FPCLINE>
+      <FPCLINE>where kunnr eq gs_printdata-kunnr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>select single vtext</FPCLINE>
+      <FPCLINE>into gs_printdata-vtext1</FPCLINE>
+      <FPCLINE>from tskdt</FPCLINE>
+      <FPCLINE>where spras eq &apos;EN&apos;</FPCLINE>
+      <FPCLINE>and tatyp eq gs_printdata-tatyp</FPCLINE>
+      <FPCLINE>and taxkd eq gs_printdata-taxkd.</FPCLINE>
+     </INITIALIZATION>
+     <FORMS/>
+    </CL_FP_CODING>
+   </cls:CL_FP_CODING>
+  </asx:heap>
+ </asx:abap>
+</abapGit>

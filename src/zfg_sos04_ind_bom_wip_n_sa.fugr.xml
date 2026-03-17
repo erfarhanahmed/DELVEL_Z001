@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>FG for SOS report for parallel processin</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZFG_SOS04_IND_BOM_WIP_N_SATOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZFG_SOS04_IND_BOM_WIP_N_SA</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZFM_SOS04_IND_BOM_WIP_N_SA</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>RFC Function Module for Sos parallel processing report</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>WERKS</PARAMETER>
+       <TYP>WERKS_D</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_HDONLY</PARAMETER>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_NOZERO</PARAMETER>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_DOWN</PARAMETER>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_FOLDER</PARAMETER>
+       <TYP>RLGRAP-FILENAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_HIDDEN</PARAMETER>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>LV_JSON</PARAMETER>
+       <TYP>STRING</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>LV_JSON_GT_COMPS</PARAMETER>
+       <TYP>STRING</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>LV_JSON_GT_WIP1</PARAMETER>
+       <TYP>STRING</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>LV_JSON_GT_LIST_AP</PARAMETER>
+       <TYP>STRING</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>R_VBELN</PARAMETER>
+       <DBSTRUCT>/CWM/R_VBELN</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>R_MATNR</PARAMETER>
+       <DBSTRUCT>RSMATNR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>R_EDATU</PARAMETER>
+       <DBSTRUCT>/ACCGO/CAS_S_EDATU_RANGE</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>WERKS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Plant</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_HDONLY</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Single-Character Flag</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_NOZERO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Single-Character Flag</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_DOWN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Single-Character Flag</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_FOLDER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Local file for upload/download</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_HIDDEN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Single-Character Flag</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>LV_JSON</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>LV_JSON_GT_COMPS</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>LV_JSON_GT_WIP1</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>LV_JSON_GT_LIST_AP</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>R_VBELN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Range for Item Number in a Sales Document</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>R_MATNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Ranges structure (material number)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>R_EDATU</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Range for Requested Delivery date</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

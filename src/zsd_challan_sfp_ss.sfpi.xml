@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SFPI" serializer_version="v1.0.0">
+ <asx:abap version="1.0" xmlns:asx="http://www.sap.com/abapxml">
+  <asx:values>
+   <VERSION>1</VERSION>
+   <TYPE/>
+   <INTERFACE href="#o1"/>
+   <INTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID/>
+     <TEXT/>
+    </FPINTERFACET>
+   </INTERFACET>
+  </asx:values>
+  <asx:heap xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:abap="http://www.sap.com/abapxml/types/built-in" xmlns:cls="http://www.sap.com/abapxml/classes/global" xmlns:dic="http://www.sap.com/abapxml/types/dictionary">
+   <cls:CL_FP_INTERFACE_DATA id="o1">
+    <CL_FP_INTERFACE_DATA classVersion="1">
+     <CODING href="#o5"/>
+     <PARAMETERS href="#o4"/>
+     <GLOBAL_DEFINITIONS href="#o3"/>
+     <REFERENCE_FIELDS href="#o2"/>
+     <XSD_DEFINITIONS/>
+    </CL_FP_INTERFACE_DATA>
+   </cls:CL_FP_INTERFACE_DATA>
+   <cls:CL_FP_REFERENCE_FIELDS id="o2">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_REFERENCE_FIELDS classVersion="1">
+     <REFERENCE_FIELDS/>
+    </CL_FP_REFERENCE_FIELDS>
+   </cls:CL_FP_REFERENCE_FIELDS>
+   <cls:CL_FP_GLOBAL_DEFINITIONS id="o3">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_GLOBAL_DEFINITIONS classVersion="1">
+     <GLOBAL_DATA/>
+     <TYPES>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>  TYPES : BEGIN OF TY_RECEIPT_TEXT,</FPCLINE>
+      <FPCLINE>            RECEIPT_TEXT TYPE STRING,</FPCLINE>
+      <FPCLINE>          END OF TY_RECEIPT_TEXT,</FPCLINE>
+      <FPCLINE>          TT_RECEIPT_TEXT TYPE STANDARD TABLE OF TY_RECEIPT_TEXT.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>  TYPES : BEGIN OF TY_CUST,</FPCLINE>
+      <FPCLINE>            WRKST    TYPE MARA-WRKST,</FPCLINE>
+      <FPCLINE>            VBELN    TYPE EKKN-VBELN,</FPCLINE>
+      <FPCLINE>            VBELP    TYPE EKKN-VBELP,</FPCLINE>
+      <FPCLINE>            BRANCH   TYPE BEZEI,</FPCLINE>
+      <FPCLINE>            PC       TYPE CHAR4,</FPCLINE>
+      <FPCLINE>            TEXT_LD  TYPE  CHAR50,</FPCLINE>
+      <FPCLINE>            TEXT_TAG TYPE CHAR50,</FPCLINE>
+      <FPCLINE>            TEXT_TPI TYPE CHAR50,</FPCLINE>
+      <FPCLINE>            ZGAD     TYPE CHAR50,</FPCLINE>
+      <FPCLINE>            LS_MARC  TYPE MARC-DISPO,</FPCLINE>
+      <FPCLINE>          END OF TY_CUST.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>  TYPES : BEGIN OF TY_NOTE ,</FPCLINE>
+      <FPCLINE>            NOTE_TEXT TYPE STRING,</FPCLINE>
+      <FPCLINE>          END OF TY_NOTE.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  TYPES : BEGIN OF TY_ISSUE,</FPCLINE>
+      <FPCLINE>            SR       TYPE I,</FPCLINE>
+      <FPCLINE>            IS       TYPE I,</FPCLINE>
+      <FPCLINE>            MATNR    TYPE VBRP-MATNR,</FPCLINE>
+      <FPCLINE>            STEUC    TYPE MARC-STEUC,</FPCLINE>
+      <FPCLINE>            FKIMG    TYPE VBRP-FKIMG,</FPCLINE>
+      <FPCLINE>            VRKME    TYPE VBRP-VRKME,</FPCLINE>
+      <FPCLINE>            RATE     TYPE VBRP-NETWR,</FPCLINE>
+      <FPCLINE>            PR_TXT   TYPE CHAR250,</FPCLINE>
+      <FPCLINE>            NETWR    TYPE VBRP-NETWR,</FPCLINE>
+      <FPCLINE>            CGST     TYPE PRCD_ELEMENTS-KBETR,</FPCLINE>
+      <FPCLINE>            CGST_AMT TYPE PRCD_ELEMENTS-KWERT,</FPCLINE>
+      <FPCLINE>            SGST     TYPE PRCD_ELEMENTS-KBETR,</FPCLINE>
+      <FPCLINE>            SGST_AMT TYPE PRCD_ELEMENTS-KWERT,</FPCLINE>
+      <FPCLINE>            IGST     TYPE PRCD_ELEMENTS-KBETR,</FPCLINE>
+      <FPCLINE>            IGST_AMT TYPE PRCD_ELEMENTS-KWERT,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>          END OF TY_ISSUE.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  TYPES : BEGIN OF ISSUE_TEXT,</FPCLINE>
+      <FPCLINE>            ISS_TEXT TYPE STRING,</FPCLINE>
+      <FPCLINE>          END OF ISSUE_TEXT.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>  TYPES :</FPCLINE>
+      <FPCLINE>    BEGIN OF TY_RECEIPT,</FPCLINE>
+      <FPCLINE>      SR              TYPE I,</FPCLINE>
+      <FPCLINE>      MATNR           TYPE EKPO-MATNR,</FPCLINE>
+      <FPCLINE>      STEUC           TYPE MARC-STEUC,</FPCLINE>
+      <FPCLINE>      MENGE           TYPE EKPO-MENGE,</FPCLINE>
+      <FPCLINE>      MEINS           TYPE EKPO-MEINS,</FPCLINE>
+      <FPCLINE>      RATE            TYPE VBRP-NETWR,</FPCLINE>
+      <FPCLINE>      VAL             TYPE CHAR250,</FPCLINE>
+      <FPCLINE>      NETWR           TYPE VBRP-NETWR,</FPCLINE>
+      <FPCLINE>      CGST            TYPE PRCD_ELEMENTS-KBETR,</FPCLINE>
+      <FPCLINE>      CGST_AMT        TYPE PRCD_ELEMENTS-KWERT,</FPCLINE>
+      <FPCLINE>      SGST            TYPE PRCD_ELEMENTS-KBETR,</FPCLINE>
+      <FPCLINE>      SGST_AMT        TYPE PRCD_ELEMENTS-KWERT,</FPCLINE>
+      <FPCLINE>      IGST            TYPE PRCD_ELEMENTS-KBETR,</FPCLINE>
+      <FPCLINE>      IGST_AMT        TYPE PRCD_ELEMENTS-KWERT,</FPCLINE>
+      <FPCLINE>      Tb_RECEIPT_TEXT TYPE  TT_RECEIPT_TEXT,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    END OF TY_RECEIPT,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    TT_RECEIPT TYPE STANDARD TABLE OF TY_RECEIPT.</FPCLINE>
+     </TYPES>
+     <FIELDSYMBOLS/>
+    </CL_FP_GLOBAL_DEFINITIONS>
+   </cls:CL_FP_GLOBAL_DEFINITIONS>
+   <cls:CL_FP_PARAMETERS id="o4">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_PARAMETERS classVersion="1">
+     <IMPORT_PARAMETERS/>
+     <EXPORT_PARAMETERS/>
+     <TABLE_PARAMETERS/>
+     <EXCEPTIONS/>
+    </CL_FP_PARAMETERS>
+   </cls:CL_FP_PARAMETERS>
+   <cls:CL_FP_CODING id="o5">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_CODING classVersion="1">
+     <INPUT_PARAMETERS/>
+     <OUTPUT_PARAMETERS/>
+     <INITIALIZATION/>
+     <FORMS/>
+    </CL_FP_CODING>
+   </cls:CL_FP_CODING>
+  </asx:heap>
+ </asx:abap>
+</abapGit>

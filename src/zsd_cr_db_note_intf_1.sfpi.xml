@@ -1,0 +1,1320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SFPI" serializer_version="v1.0.0">
+ <asx:abap version="1.0" xmlns:asx="http://www.sap.com/abapxml">
+  <asx:values>
+   <VERSION>1</VERSION>
+   <TYPE/>
+   <INTERFACE href="#o1"/>
+   <INTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID/>
+     <TEXT>Interface for CR Note</TEXT>
+    </FPINTERFACET>
+   </INTERFACET>
+  </asx:values>
+  <asx:heap xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:abap="http://www.sap.com/abapxml/types/built-in" xmlns:cls="http://www.sap.com/abapxml/classes/global" xmlns:dic="http://www.sap.com/abapxml/types/dictionary">
+   <cls:CL_FP_INTERFACE_DATA id="o1">
+    <CL_FP_INTERFACE_DATA classVersion="1">
+     <CODING href="#o5"/>
+     <PARAMETERS href="#o4"/>
+     <GLOBAL_DEFINITIONS href="#o3"/>
+     <REFERENCE_FIELDS href="#o2"/>
+     <XSD_DEFINITIONS/>
+    </CL_FP_INTERFACE_DATA>
+   </cls:CL_FP_INTERFACE_DATA>
+   <cls:CL_FP_REFERENCE_FIELDS id="o2">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_REFERENCE_FIELDS classVersion="1">
+     <REFERENCE_FIELDS/>
+    </CL_FP_REFERENCE_FIELDS>
+   </cls:CL_FP_REFERENCE_FIELDS>
+   <cls:CL_FP_GLOBAL_DEFINITIONS id="o3">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_GLOBAL_DEFINITIONS classVersion="1">
+     <GLOBAL_DATA>
+      <SFPGDATA>
+       <NAME>GS_ACCOUNTING_DOC_HDR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>T_ACCOUNTING_DOC_HDR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GT_ACCOUNTING_DOC_ITEM</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_ACCOUNTING_DOC_ITEM</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GS_ACCOUNTING_DOC_ITEM</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>T_ACCOUNTING_DOC_ITEM</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GS_ADRC</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ADRC</TYPENAME>
+       <DEFAULTVAL>&apos;&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GS_ADRC_C</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ADRC</TYPENAME>
+       <DEFAULTVAL>&apos;&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_COUNTRY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>LANDX</TYPENAME>
+       <DEFAULTVAL>&apos;&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_COUNTRY_C</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>LANDX</TYPENAME>
+       <DEFAULTVAL>&apos;&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_REG</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BEZEI</TYPENAME>
+       <DEFAULTVAL>&apos;&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_REG_C</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BEZEI</TYPENAME>
+       <DEFAULTVAL>&apos;&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_GST_C</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KNA1-STCD3</TYPENAME>
+       <DEFAULTVAL>&apos;&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_GST_REG_C</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZGST_REGION-GST_REGION</TYPENAME>
+       <DEFAULTVAL>&apos;&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_EMAIL_C</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ADR6-SMTP_ADDR</TYPENAME>
+       <DEFAULTVAL>&apos;&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_TOT_QTY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>INT2</TYPENAME>
+       <DEFAULTVAL>0</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_EMAIL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ADR6-SMTP_ADDR</TYPENAME>
+       <DEFAULTVAL>&apos;&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_GST_REG</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZGST_REGION-GST_REGION</TYPENAME>
+       <DEFAULTVAL>&apos;&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_GST</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KNA1-STCD3</TYPENAME>
+       <DEFAULTVAL>&apos;&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_GST_P</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>J_1BBRANCH-GSTIN</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_GST_WRD</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR256</TYPENAME>
+       <DEFAULTVAL>&apos;&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_TOT_WRD</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR256</TYPENAME>
+       <DEFAULTVAL>&apos;&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_STEUC</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>MARC-STEUC</TYPENAME>
+       <DEFAULTVAL>&apos;&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_AMV</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>FRI_VAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_SCQ</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>CGST</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_DEL_TAX</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>SGST</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IGST</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>TOT_TAX</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GRAND_TOT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>NET_VAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>PFL_RATE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KBETR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>KB_CGST</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KBETR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>KB_SGST</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KBETR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>KB_IGST</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KBETR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>INS_VAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>PFL_VAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_TOT_AMT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BSEG-WRBTR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_RATE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>EKPO-NETPR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_AMT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BSEG-WRBTR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_SGTXT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BSEG-SGTXT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_KUNNR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BSEG-KUNNR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_VBELN</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>VBAK-VBELN</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_TDS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KONV-KWERT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_ZUONR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BSEG-ZUONR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_TCS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BSET-HWSTE</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_IRN_NO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR80</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_QRCODE2</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GT_ZEINV_RESPONSE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>J_1IG_INVREFNUM</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GS_ZEINV_RESPONSE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>J_1IG_INVREFNUM</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_DYNAMIC_LEN</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_LEN</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_FIRST</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_SECOND</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_THIRD</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_FOURTH</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_SHKZG</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR4</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_REBZG</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR10</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LS_BSEG_INV</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_BSEG_INV</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_BLDAT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>DATS</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_AMOUNT1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_AMOUNT2</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>SPELL</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>AMT1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>AMT2</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>AMOUNT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_AMOUNT3</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_AMOUNT4</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>SPELL</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_AMOUNT5</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>NET_AMOUNT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>TAX_AMOUNT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_PROFARMA</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_BSET</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_BSET</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_BSET</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_BSET</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_SGTXT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BSEG-SGTXT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_BUDAT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_CR_NO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR40</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>LV_XSTRING</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>XSTRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_CR_NO_TEXT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR40</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_ADD1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR100</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_ADD2</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR100</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_CR_NO1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BELNR_D</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_AMT1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>DMBTR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_ADD_NAME</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR100</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_HEADER</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR30</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+     </GLOBAL_DATA>
+     <TYPES>
+      <FPCLINE>TYPES:</FPCLINE>
+      <FPCLINE>  BEGIN OF t_accounting_doc_hdr,</FPCLINE>
+      <FPCLINE>    bukrs TYPE bkpf-bukrs,</FPCLINE>
+      <FPCLINE>    belnr TYPE bkpf-belnr,</FPCLINE>
+      <FPCLINE>    gjahr TYPE bkpf-gjahr,</FPCLINE>
+      <FPCLINE>    blart TYPE bkpf-blart,</FPCLINE>
+      <FPCLINE>    budat TYPE bkpf-budat,</FPCLINE>
+      <FPCLINE>    xblnr TYPE bkpf-xblnr,</FPCLINE>
+      <FPCLINE>    bktxt TYPE bkpf-bktxt,</FPCLINE>
+      <FPCLINE>    waers TYPE bkpf-waers,</FPCLINE>
+      <FPCLINE>    kursf TYPE bkpf-kursf,</FPCLINE>
+      <FPCLINE>  END OF t_accounting_doc_hdr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>TYPES:</FPCLINE>
+      <FPCLINE>  BEGIN OF t_accounting_doc_item,</FPCLINE>
+      <FPCLINE>    bukrs   TYPE bseg-bukrs,</FPCLINE>
+      <FPCLINE>    belnr   TYPE bseg-belnr,</FPCLINE>
+      <FPCLINE>    gjahr   TYPE bseg-gjahr,</FPCLINE>
+      <FPCLINE>    buzei   TYPE bseg-buzei,</FPCLINE>
+      <FPCLINE>    shkzg   TYPE bseg-shkzg,</FPCLINE>
+      <FPCLINE>    wrbtr   TYPE bseg-wrbtr,</FPCLINE>
+      <FPCLINE>    dmbtr   TYPE bseg-wrbtr,</FPCLINE>
+      <FPCLINE>    fwbas   TYPE bseg-fwbas,</FPCLINE>
+      <FPCLINE>    sgtxt   TYPE bseg-sgtxt,</FPCLINE>
+      <FPCLINE>    kunnr   TYPE bseg-kunnr,</FPCLINE>
+      <FPCLINE>    lifnr   TYPE bseg-lifnr,</FPCLINE>
+      <FPCLINE>    vbel2   TYPE bseg-vbeln,</FPCLINE>
+      <FPCLINE>    hsn_sac TYPE bseg-hsn_sac,</FPCLINE>
+      <FPCLINE>  END OF t_accounting_doc_item,</FPCLINE>
+      <FPCLINE>  tt_accounting_doc_item TYPE STANDARD TABLE OF t_accounting_doc_item.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>TYPES:</FPCLINE>
+      <FPCLINE>  BEGIN OF t_bset,</FPCLINE>
+      <FPCLINE>    bukrs TYPE bset-bukrs,</FPCLINE>
+      <FPCLINE>    belnr TYPE bset-belnr,</FPCLINE>
+      <FPCLINE>    gjahr TYPE bset-gjahr,</FPCLINE>
+      <FPCLINE>    buzei TYPE bset-buzei,</FPCLINE>
+      <FPCLINE>    shkzg TYPE bset-shkzg,</FPCLINE>
+      <FPCLINE>    hwbas TYPE bset-hwbas,</FPCLINE>
+      <FPCLINE>    fwbas TYPE bset-fwbas,</FPCLINE>
+      <FPCLINE>    hwste TYPE bset-hwste,</FPCLINE>
+      <FPCLINE>    fwste TYPE bset-fwste,</FPCLINE>
+      <FPCLINE>    kschl TYPE bset-kschl,</FPCLINE>
+      <FPCLINE>    kbetr TYPE bset-kbetr,</FPCLINE>
+      <FPCLINE>    mwskz TYPE bset-mwskz,</FPCLINE>
+      <FPCLINE>  END OF t_bset,</FPCLINE>
+      <FPCLINE>  tt_bset TYPE STANDARD TABLE OF t_bset.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>TYPES : BEGIN OF ty_bseg_inv,</FPCLINE>
+      <FPCLINE>           BUKRS TYPE bseg-bukrs,</FPCLINE>
+      <FPCLINE>           BELNR TYPE bseg-belnr,</FPCLINE>
+      <FPCLINE>           GJAHR TYPE bseg-gjahr,</FPCLINE>
+      <FPCLINE>           BUZEI TYPE bseg-buzei,</FPCLINE>
+      <FPCLINE>           rebzg TYPE bseg-rebzg,</FPCLINE>
+      <FPCLINE>       END OF ty_bseg_inv.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>TYPES:BEGIN OF TY_BSET,</FPCLINE>
+      <FPCLINE>      KTOSL TYPE BSET-KTOSL,</FPCLINE>
+      <FPCLINE>      KSCHL TYPE BSET-KSCHL ,</FPCLINE>
+      <FPCLINE>      END OF TY_BSET.</FPCLINE>
+     </TYPES>
+     <FIELDSYMBOLS/>
+    </CL_FP_GLOBAL_DEFINITIONS>
+   </cls:CL_FP_GLOBAL_DEFINITIONS>
+   <cls:CL_FP_PARAMETERS id="o4">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_PARAMETERS classVersion="1">
+     <IMPORT_PARAMETERS>
+      <SFPIOPAR>
+       <NAME>GV_PAGE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR30</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>BELNR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BKPF-BELNR</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>GJAHR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BKPF-GJAHR</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>P_WAERS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BKPF-WAERS</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+     </IMPORT_PARAMETERS>
+     <EXPORT_PARAMETERS/>
+     <TABLE_PARAMETERS/>
+     <EXCEPTIONS/>
+    </CL_FP_PARAMETERS>
+   </cls:CL_FP_PARAMETERS>
+   <cls:CL_FP_CODING id="o5">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_CODING classVersion="1">
+     <INPUT_PARAMETERS/>
+     <OUTPUT_PARAMETERS/>
+     <INITIALIZATION>
+      <FPCLINE>*    gv_gst_p = &apos;27AACCD2898L1Z4&apos;.</FPCLINE>
+      <FPCLINE>data:</FPCLINE>
+      <FPCLINE>  lv_igst type char3,</FPCLINE>
+      <FPCLINE>  lv_cgst TYPE char3,</FPCLINE>
+      <FPCLINE>  lv_shkzg TYPE bseg-shkzg.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>    SELECT SINGLE bukrs</FPCLINE>
+      <FPCLINE>                  belnr</FPCLINE>
+      <FPCLINE>                  gjahr</FPCLINE>
+      <FPCLINE>                  blart</FPCLINE>
+      <FPCLINE>                  budat</FPCLINE>
+      <FPCLINE>                  xblnr</FPCLINE>
+      <FPCLINE>                  bktxt</FPCLINE>
+      <FPCLINE>                  waers</FPCLINE>
+      <FPCLINE>                  kursf</FPCLINE>
+      <FPCLINE>             FROM bkpf</FPCLINE>
+      <FPCLINE>             INTO gs_accounting_doc_hdr</FPCLINE>
+      <FPCLINE>             WHERE belnr = belnr</FPCLINE>
+      <FPCLINE>             AND   gjahr = gjahr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*BREAK-POINT.</FPCLINE>
+      <FPCLINE>IF gs_accounting_doc_hdr-blart = &apos;DG&apos;.</FPCLINE>
+      <FPCLINE>*  lv_igst = &apos;JII&apos;.</FPCLINE>
+      <FPCLINE>  lv_cgst = &apos;MWS&apos;.</FPCLINE>
+      <FPCLINE>  lv_shkzg = &apos;S&apos;.</FPCLINE>
+      <FPCLINE>ELSEIF gs_accounting_doc_hdr-blart = &apos;DR&apos;.</FPCLINE>
+      <FPCLINE>*  lv_igst = &apos;JOI&apos;.</FPCLINE>
+      <FPCLINE>  lv_cgst = &apos;MWS&apos;.</FPCLINE>
+      <FPCLINE>  lv_shkzg = &apos;H&apos;.</FPCLINE>
+      <FPCLINE>*------------------ANJALI DT:17.04.2018------------</FPCLINE>
+      <FPCLINE>ELSEIF gs_accounting_doc_hdr-blart = &apos;DV&apos;.</FPCLINE>
+      <FPCLINE>*  lv_igst = &apos;JOI&apos;.</FPCLINE>
+      <FPCLINE>  lv_cgst = &apos;MWS&apos;.</FPCLINE>
+      <FPCLINE>  lv_shkzg = &apos;H&apos;.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>*IF gt_accounting_doc_item is INITIAL.</FPCLINE>
+      <FPCLINE>    SELECT bukrs</FPCLINE>
+      <FPCLINE>           belnr</FPCLINE>
+      <FPCLINE>           gjahr</FPCLINE>
+      <FPCLINE>           buzei</FPCLINE>
+      <FPCLINE>           shkzg</FPCLINE>
+      <FPCLINE>           DMBTR</FPCLINE>
+      <FPCLINE>           wrbtr</FPCLINE>
+      <FPCLINE>           fwbas</FPCLINE>
+      <FPCLINE>           sgtxt</FPCLINE>
+      <FPCLINE>           kunnr</FPCLINE>
+      <FPCLINE>           lifnr</FPCLINE>
+      <FPCLINE>           vbel2</FPCLINE>
+      <FPCLINE>           hsn_sac</FPCLINE>
+      <FPCLINE>      FROM bseg</FPCLINE>
+      <FPCLINE>      INTO TABLE gt_accounting_doc_item</FPCLINE>
+      <FPCLINE>      WHERE belnr = gs_accounting_doc_hdr-belnr</FPCLINE>
+      <FPCLINE>      AND   gjahr = gs_accounting_doc_hdr-gjahr</FPCLINE>
+      <FPCLINE>      AND   koart = &apos;S&apos;</FPCLINE>
+      <FPCLINE>      AND   ktosl = space.</FPCLINE>
+      <FPCLINE>*ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE sgtxt</FPCLINE>
+      <FPCLINE>      FROM bseg</FPCLINE>
+      <FPCLINE>      INTO  LV_SGTXT</FPCLINE>
+      <FPCLINE>      WHERE belnr = gs_accounting_doc_hdr-belnr</FPCLINE>
+      <FPCLINE>      AND   gjahr = gs_accounting_doc_hdr-gjahr</FPCLINE>
+      <FPCLINE>      AND   koart = &apos;D&apos;.</FPCLINE>
+      <FPCLINE>* ENDSELECT.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*BREAK-POINT.</FPCLINE>
+      <FPCLINE>    SELECT SINGLE sgtxt</FPCLINE>
+      <FPCLINE>             INTO gv_sgtxt</FPCLINE>
+      <FPCLINE>             FROM bseg</FPCLINE>
+      <FPCLINE>             WHERE belnr = gs_accounting_doc_hdr-belnr</FPCLINE>
+      <FPCLINE>             AND   gjahr = gs_accounting_doc_hdr-gjahr</FPCLINE>
+      <FPCLINE>             AND   sgtxt NE space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    SELECT SINGLE zuonr</FPCLINE>
+      <FPCLINE>              INTO gv_zuonr</FPCLINE>
+      <FPCLINE>              FROM bseg</FPCLINE>
+      <FPCLINE>              WHERE belnr = gs_accounting_doc_hdr-belnr</FPCLINE>
+      <FPCLINE>              AND   gjahr = gs_accounting_doc_hdr-gjahr</FPCLINE>
+      <FPCLINE>              AND   zuonr NE space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*   BREAK primus.</FPCLINE>
+      <FPCLINE>SELECT SINGLE BUKRS</FPCLINE>
+      <FPCLINE>              BELNR</FPCLINE>
+      <FPCLINE>              GJAHR</FPCLINE>
+      <FPCLINE>              BUZEI</FPCLINE>
+      <FPCLINE>              rebzg</FPCLINE>
+      <FPCLINE>             INTO ls_bseg_inv</FPCLINE>
+      <FPCLINE>             FROM bseg</FPCLINE>
+      <FPCLINE>             WHERE belnr = gs_accounting_doc_hdr-belnr</FPCLINE>
+      <FPCLINE>             AND   gjahr = gs_accounting_doc_hdr-gjahr</FPCLINE>
+      <FPCLINE>             AND   rebzg NE space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>   SELECT SINGLE bldat</FPCLINE>
+      <FPCLINE>          INTO gv_bldat</FPCLINE>
+      <FPCLINE>          FROM bkpf</FPCLINE>
+      <FPCLINE>          WHERE belnr = ls_bseg_inv-rebzg</FPCLINE>
+      <FPCLINE>          and gjahr = ls_bseg_inv-gjahr</FPCLINE>
+      <FPCLINE>          AND BUKRS = ls_bseg_inv-bukrs.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>&quot;Added by Snehal Rajale on 29.12.2020</FPCLINE>
+      <FPCLINE>*BREAK-POINT.</FPCLINE>
+      <FPCLINE>SELECT SINGLE *</FPCLINE>
+      <FPCLINE>FROM j_1ig_invrefnum</FPCLINE>
+      <FPCLINE>INTO gs_zeinv_response</FPCLINE>
+      <FPCLINE>WHERE docno = gs_accounting_doc_hdr-belnr AND</FPCLINE>
+      <FPCLINE>      doc_year = gs_accounting_doc_hdr-gjahr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF SY-SUBRC = 0.</FPCLINE>
+      <FPCLINE>  gv_irn_no = gs_zeinv_response-irn.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  gv_qrcode2 = gs_zeinv_response-signed_qrcode.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*** --- Header text</FPCLINE>
+      <FPCLINE>DATA:str TYPE char255.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>str = &apos;شركة دلفال فلو كونترولز الشرق الأوسط المحدودة&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>LV_PROFARMA = REVERSE( str ).</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>** -- Address</FPCLINE>
+      <FPCLINE>DATA:</FPCLINE>
+      <FPCLINE>  ls_accounting_doc_item TYPE t_accounting_doc_item,</FPCLINE>
+      <FPCLINE>  lv_kunnr               TYPE lfa1-lifnr,</FPCLINE>
+      <FPCLINE>  lv_adrnr               TYPE lfa1-adrnr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE kunnr</FPCLINE>
+      <FPCLINE>        FROM  bseg</FPCLINE>
+      <FPCLINE>        INTO  gv_kunnr</FPCLINE>
+      <FPCLINE>        WHERE belnr = gs_accounting_doc_hdr-belnr</FPCLINE>
+      <FPCLINE>        AND   gjahr = gs_accounting_doc_hdr-gjahr</FPCLINE>
+      <FPCLINE>        AND   kunnr ne space.</FPCLINE>
+      <FPCLINE>*****Vendor</FPCLINE>
+      <FPCLINE>SELECT SINGLE adrnr</FPCLINE>
+      <FPCLINE>              stcd3</FPCLINE>
+      <FPCLINE>        FROM  kna1</FPCLINE>
+      <FPCLINE>        INTO (lv_adrnr,gv_gst)</FPCLINE>
+      <FPCLINE>        WHERE kunnr = gv_kunnr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE *</FPCLINE>
+      <FPCLINE>       FROM adrc</FPCLINE>
+      <FPCLINE>       INTO gs_adrc</FPCLINE>
+      <FPCLINE>       WHERE addrnumber = lv_adrnr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE landx</FPCLINE>
+      <FPCLINE>         FROM t005t</FPCLINE>
+      <FPCLINE>         INTO gv_country</FPCLINE>
+      <FPCLINE>         WHERE land1 = gs_adrc-country</FPCLINE>
+      <FPCLINE>          AND  spras = sy-langu.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE bezei</FPCLINE>
+      <FPCLINE>         FROM t005u</FPCLINE>
+      <FPCLINE>         INTO gv_reg</FPCLINE>
+      <FPCLINE>         WHERE land1 = gs_adrc-country</FPCLINE>
+      <FPCLINE>          AND  bland = gs_adrc-region</FPCLINE>
+      <FPCLINE>          AND  spras = sy-langu.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*BREAK primus.</FPCLINE>
+      <FPCLINE>SELECT SINGLE gst_region</FPCLINE>
+      <FPCLINE>       FROM   zgst_region</FPCLINE>
+      <FPCLINE>       INTO   gv_gst_reg</FPCLINE>
+      <FPCLINE>       WHERE  bezei = gv_reg.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE smtp_addr</FPCLINE>
+      <FPCLINE>        FROM  adr6</FPCLINE>
+      <FPCLINE>        INTO  gv_email</FPCLINE>
+      <FPCLINE>        WHERE addrnumber = lv_adrnr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>gv_add_name = gs_adrc-name1 &amp;&amp; | | &amp;&amp; gs_adrc-name2.</FPCLINE>
+      <FPCLINE>   gv_add1 = gs_adrc-STR_SUPPL3 &amp;&amp; | | &amp;&amp; gs_adrc-location.</FPCLINE>
+      <FPCLINE>  gv_add2 = gs_adrc-city1 &amp;&amp; | | &amp;&amp; &apos;PIN : &apos; &amp;&amp; gs_adrc-POST_CODE1 &amp;&amp;</FPCLINE>
+      <FPCLINE>             | | &amp;&amp; gv_reg.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>gv_gst_c = gv_gst.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE *</FPCLINE>
+      <FPCLINE>       FROM adrc</FPCLINE>
+      <FPCLINE>       INTO gs_adrc_c</FPCLINE>
+      <FPCLINE>       WHERE addrnumber = lv_adrnr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE landx</FPCLINE>
+      <FPCLINE>         FROM t005t</FPCLINE>
+      <FPCLINE>         INTO gv_country_c</FPCLINE>
+      <FPCLINE>         WHERE land1 = gs_adrc_c-country</FPCLINE>
+      <FPCLINE>          AND  spras = sy-langu.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE bezei</FPCLINE>
+      <FPCLINE>         FROM t005u</FPCLINE>
+      <FPCLINE>         INTO gv_reg_c</FPCLINE>
+      <FPCLINE>         WHERE land1 = gs_adrc_c-country</FPCLINE>
+      <FPCLINE>          AND  bland = gs_adrc_c-region</FPCLINE>
+      <FPCLINE>          AND  spras = sy-langu.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE gst_region</FPCLINE>
+      <FPCLINE>       FROM   zgst_region</FPCLINE>
+      <FPCLINE>       INTO   gv_gst_reg_c</FPCLINE>
+      <FPCLINE>       WHERE  bezei = gv_reg_c.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE smtp_addr</FPCLINE>
+      <FPCLINE>        FROM  adr6</FPCLINE>
+      <FPCLINE>        INTO  gv_email_c</FPCLINE>
+      <FPCLINE>        WHERE addrnumber = lv_adrnr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>*** --- Amount</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>LOOP AT GT_ACCOUNTING_DOC_ITEM     INTO GS_ACCOUNTING_DOC_ITEM    .</FPCLINE>
+      <FPCLINE>IF NOT gs_accounting_doc_item-vbel2 IS INITIAL.</FPCLINE>
+      <FPCLINE>  gv_vbeln = gs_accounting_doc_item-vbel2.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF P_WAERS = &apos;SAR&apos;.</FPCLINE>
+      <FPCLINE>gv_amt  = gs_accounting_doc_item-wrbtr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ELSE .</FPCLINE>
+      <FPCLINE>  gv_amt  = gs_accounting_doc_item-wrbtr.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>IF gs_accounting_doc_item-shkzg = &apos;S&apos;.</FPCLINE>
+      <FPCLINE>  gv_tot_amt = gv_tot_amt + gv_amt.</FPCLINE>
+      <FPCLINE>ELSE.</FPCLINE>
+      <FPCLINE>  gv_tot_amt = gv_tot_amt - gv_amt.</FPCLINE>
+      <FPCLINE>  gv_amt = gv_amt * -1.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE>ENDLOOP.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>DATA:</FPCLINE>
+      <FPCLINE>  lt_bset                TYPE tt_bset,</FPCLINE>
+      <FPCLINE>  ls_bset                TYPE t_bset,</FPCLINE>
+      <FPCLINE>  lt_accounting_doc_item TYPE tt_accounting_doc_item.</FPCLINE>
+      <FPCLINE> &quot; ls_accounting_doc_item TYPE t_accounting_doc_item.</FPCLINE>
+      <FPCLINE>CLEAR :</FPCLINE>
+      <FPCLINE>  gv_amv,fri_val,gv_scq,cgst,gv_del_tax,sgst,igst,tot_tax,</FPCLINE>
+      <FPCLINE>  grand_tot,net_val,pfl_rate,kb_cgst,kb_sgst,kb_igst,ins_val,</FPCLINE>
+      <FPCLINE>  pfl_val,gv_tcs.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*BREAK-POINT.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT bukrs</FPCLINE>
+      <FPCLINE>       belnr</FPCLINE>
+      <FPCLINE>       gjahr</FPCLINE>
+      <FPCLINE>       buzei</FPCLINE>
+      <FPCLINE>       shkzg</FPCLINE>
+      <FPCLINE>       DMBTR</FPCLINE>
+      <FPCLINE>       wrbtr</FPCLINE>
+      <FPCLINE>       fwbas</FPCLINE>
+      <FPCLINE>       sgtxt</FPCLINE>
+      <FPCLINE>       kunnr</FPCLINE>
+      <FPCLINE>       lifnr</FPCLINE>
+      <FPCLINE>       vbel2</FPCLINE>
+      <FPCLINE>       hsn_sac</FPCLINE>
+      <FPCLINE>  FROM bseg</FPCLINE>
+      <FPCLINE>  INTO TABLE lt_accounting_doc_item</FPCLINE>
+      <FPCLINE>  WHERE belnr = gs_accounting_doc_hdr-belnr</FPCLINE>
+      <FPCLINE>  AND   gjahr = gs_accounting_doc_hdr-gjahr</FPCLINE>
+      <FPCLINE>  AND   xbilk NE space</FPCLINE>
+      <FPCLINE>  AND   ktosl EQ &apos;WIT&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>LOOP AT lt_accounting_doc_item INTO ls_accounting_doc_item.</FPCLINE>
+      <FPCLINE>  gv_tds = gv_tds + ls_accounting_doc_item-wrbtr.</FPCLINE>
+      <FPCLINE>ENDLOOP.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT bukrs</FPCLINE>
+      <FPCLINE>       belnr</FPCLINE>
+      <FPCLINE>       gjahr</FPCLINE>
+      <FPCLINE>       buzei</FPCLINE>
+      <FPCLINE>       shkzg</FPCLINE>
+      <FPCLINE>       hwbas</FPCLINE>
+      <FPCLINE>       fwbas</FPCLINE>
+      <FPCLINE>       hwste</FPCLINE>
+      <FPCLINE>       fwste</FPCLINE>
+      <FPCLINE>       kschl</FPCLINE>
+      <FPCLINE>       kbetr</FPCLINE>
+      <FPCLINE>       mwskz</FPCLINE>
+      <FPCLINE>  FROM bset</FPCLINE>
+      <FPCLINE>  INTO TABLE lt_bset</FPCLINE>
+      <FPCLINE>  WHERE belnr = gs_accounting_doc_hdr-belnr</FPCLINE>
+      <FPCLINE>  AND   gjahr = gs_accounting_doc_hdr-gjahr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*BREAK X770202.</FPCLINE>
+      <FPCLINE>LOOP AT lt_bset INTO ls_bset.</FPCLINE>
+      <FPCLINE>  CASE ls_bset-kschl.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    WHEN &apos;MWAS&apos;.</FPCLINE>
+      <FPCLINE>    IF P_WAERS = &apos;SAR&apos;.</FPCLINE>
+      <FPCLINE>         IF kb_cgst IS INITIAL.</FPCLINE>
+      <FPCLINE>        kb_cgst = ls_bset-kbetr / 10.</FPCLINE>
+      <FPCLINE>      ENDIF.</FPCLINE>
+      <FPCLINE>      IF ls_bset-shkzg = &apos;H&apos;.</FPCLINE>
+      <FPCLINE>        cgst    =  cgst - ls_bset-hwste  .</FPCLINE>
+      <FPCLINE>      ELSE.</FPCLINE>
+      <FPCLINE>        cgst    = cgst + ls_bset-hwste.</FPCLINE>
+      <FPCLINE>      ENDIF.</FPCLINE>
+      <FPCLINE>    ELSE.</FPCLINE>
+      <FPCLINE>       IF kb_cgst IS INITIAL.</FPCLINE>
+      <FPCLINE>        kb_cgst = ls_bset-kbetr / 10.</FPCLINE>
+      <FPCLINE>      ENDIF.</FPCLINE>
+      <FPCLINE>      IF ls_bset-shkzg = &apos;H&apos;.</FPCLINE>
+      <FPCLINE>        cgst    =  cgst - ls_bset-hwste  .</FPCLINE>
+      <FPCLINE>      ELSE.</FPCLINE>
+      <FPCLINE>        cgst    = cgst + ls_bset-FWSTE.</FPCLINE>
+      <FPCLINE>      ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  ENDCASE.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDLOOP.</FPCLINE>
+      <FPCLINE>*break primus.</FPCLINE>
+      <FPCLINE>gv_shkzg = ls_bset-shkzg.</FPCLINE>
+      <FPCLINE>tot_tax = igst + cgst + sgst.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF ls_bset-shkzg = &apos;H&apos;.</FPCLINE>
+      <FPCLINE>*grand_tot = tot_tax + ins_val + gv_tot_amt + gv_del_tax</FPCLINE>
+      <FPCLINE>*       + gv_scq + fri_val + pfl_val.&quot; +</FPCLINE>
+      <FPCLINE>  grand_tot =  ins_val + gv_tot_amt + gv_del_tax</FPCLINE>
+      <FPCLINE>         + gv_scq + fri_val + pfl_val - tot_tax .&quot; +</FPCLINE>
+      <FPCLINE>  gv_amv = grand_tot + tot_tax.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IGST = IGST * ( -1 ).</FPCLINE>
+      <FPCLINE>  sgst = sgst * ( -1 ).</FPCLINE>
+      <FPCLINE>  cgst = cgst * ( -1 ).</FPCLINE>
+      <FPCLINE>  TOT_TAX = TOT_TAX * ( -1 ).</FPCLINE>
+      <FPCLINE> else.</FPCLINE>
+      <FPCLINE>   grand_tot =  ins_val + gv_tot_amt + gv_del_tax</FPCLINE>
+      <FPCLINE>         + gv_scq + fri_val + pfl_val + tot_tax .&quot; +</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>   gv_amv = grand_tot - tot_tax.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*gv_amv = grand_tot - tot_tax.</FPCLINE>
+      <FPCLINE>net_val   = grand_tot - gv_tds + gv_tcs.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF P_WAERS = &apos;SAR&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>net_val = GS_ACCOUNTING_DOC_ITEM-WRBTR + tot_tax.</FPCLINE>
+      <FPCLINE>ELSE.</FPCLINE>
+      <FPCLINE>net_val = GS_ACCOUNTING_DOC_ITEM-DMBTR + tot_tax.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>DATA:</FPCLINE>
+      <FPCLINE>  lv_amt TYPE pc207-betrg.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>CLEAR: GV_amount3,GV_TOT_WRD.</FPCLINE>
+      <FPCLINE>*BREAK primus.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  lv_amt = net_val.</FPCLINE>
+      <FPCLINE>  CLEAR gv_amount1.</FPCLINE>
+      <FPCLINE>  CLEAR AMOUNT.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  gv_amount1 = LV_AMT.</FPCLINE>
+      <FPCLINE>  amount = LV_AMT.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  split AMOUNT at &apos;.&apos; Into amt1 Amt2.&quot; AMT3.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CALL FUNCTION &apos;SPELL_AMOUNT&apos;</FPCLINE>
+      <FPCLINE>  EXPORTING</FPCLINE>
+      <FPCLINE>    AMOUNT          = GV_AMOUNT1</FPCLINE>
+      <FPCLINE>*    CURRENCY        = gs_accounting_doc_hdr-waers</FPCLINE>
+      <FPCLINE>    CURRENCY        = P_WAERS</FPCLINE>
+      <FPCLINE>*   FILLER          = &apos; &apos;</FPCLINE>
+      <FPCLINE>    LANGUAGE        = SY-LANGU</FPCLINE>
+      <FPCLINE>  IMPORTING</FPCLINE>
+      <FPCLINE>    IN_WORDS        = gv_AMOUNT2</FPCLINE>
+      <FPCLINE>* EXCEPTIONS</FPCLINE>
+      <FPCLINE>*   NOT_FOUND       = 1</FPCLINE>
+      <FPCLINE>*   TOO_LARGE       = 2</FPCLINE>
+      <FPCLINE>*   OTHERS          = 3</FPCLINE>
+      <FPCLINE>    .</FPCLINE>
+      <FPCLINE>  IF sy-subrc &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>* Implement suitable error handling here</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>if P_WAERS = &apos;USD&apos;.</FPCLINE>
+      <FPCLINE>IF GV_AMOUNT2-DECWORD NE &apos;ZERO&apos;.</FPCLINE>
+      <FPCLINE> CONCATENATE  GV_AMOUNT2-word&apos;DOLLARS&apos; &apos;AND&apos;</FPCLINE>
+      <FPCLINE>             GV_AMOUNT2-DECWORD&apos;CENTS &apos; INTO net_amount SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE> ELSEIF</FPCLINE>
+      <FPCLINE>    GV_AMOUNT2-DECWORD = &apos;ZERO&apos; .</FPCLINE>
+      <FPCLINE>    CONCATENATE  GV_AMOUNT2-word&apos;DOLLARS&apos;</FPCLINE>
+      <FPCLINE>              INTO net_amount SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE> ENDIF.</FPCLINE>
+      <FPCLINE>elseif P_WAERS = &apos;SAR&apos;.</FPCLINE>
+      <FPCLINE>      IF GV_AMOUNT2-DECWORD = &apos;ZERO&apos;.</FPCLINE>
+      <FPCLINE>     CONCATENATE &apos;SAUDI RIYAL&apos; GV_AMOUNT2-WORD &apos;ONLY&apos; INTO net_amount SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE>*     ENDIF.</FPCLINE>
+      <FPCLINE>*     IF IN_WORDS-DECWORD IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>     ELSE.</FPCLINE>
+      <FPCLINE>     CONCATENATE &apos;SAUDI RIYAL&apos; GV_AMOUNT2-WORD &apos;AND&apos; GV_AMOUNT2-DECWORD &apos;HALALAS ONLY&apos; INTO net_amount SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE>     endif.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>elseif P_WAERS = &apos;INR&apos;.</FPCLINE>
+      <FPCLINE>      IF GV_AMOUNT2-DECWORD = &apos;ZERO&apos;.</FPCLINE>
+      <FPCLINE>     CONCATENATE GV_AMOUNT2-WORD &apos;RUPEES ONLY&apos; INTO net_amount SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE>*     ENDIF.</FPCLINE>
+      <FPCLINE>*     IF IN_WORDS-DECWORD IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>     ELSE.</FPCLINE>
+      <FPCLINE>     CONCATENATE GV_AMOUNT2-WORD &apos;RUPEES AND&apos; GV_AMOUNT2-DECWORD &apos;PAISE&apos; INTO net_amount SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE>     endif.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>elseif P_WAERS = &apos;EUR&apos;.</FPCLINE>
+      <FPCLINE>      IF GV_AMOUNT2-DECWORD = &apos;ZERO&apos;.</FPCLINE>
+      <FPCLINE>     CONCATENATE  GV_AMOUNT2-WORD &apos;EURO&apos;  INTO net_amount SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE>*     ENDIF.</FPCLINE>
+      <FPCLINE>*     IF IN_WORDS-DECWORD IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>     ELSE.</FPCLINE>
+      <FPCLINE>     CONCATENATE GV_AMOUNT2-WORD &apos;EURO AND&apos; GV_AMOUNT2-DECWORD &apos;CENTS&apos; INTO net_amount SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE>     endif.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>elseif P_WAERS = &apos;CNY&apos;.</FPCLINE>
+      <FPCLINE>      IF GV_AMOUNT2-DECWORD = &apos;ZERO&apos;.</FPCLINE>
+      <FPCLINE>     CONCATENATE  GV_AMOUNT2-WORD &apos;YUANS&apos;  INTO net_amount SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE>*     ENDIF.</FPCLINE>
+      <FPCLINE>*     IF IN_WORDS-DECWORD IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>     ELSE.</FPCLINE>
+      <FPCLINE>     CONCATENATE GV_AMOUNT2-WORD &apos;YUANS AND&apos; GV_AMOUNT2-DECWORD &apos;JIAOS&apos; INTO net_amount SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE>     endif.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>elseif P_WAERS = &apos;GBP&apos;.</FPCLINE>
+      <FPCLINE>      IF GV_AMOUNT2-DECWORD = &apos;ZERO&apos;.</FPCLINE>
+      <FPCLINE>     CONCATENATE  GV_AMOUNT2-WORD &apos;POUNDS&apos;  INTO net_amount SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE>*     ENDIF.</FPCLINE>
+      <FPCLINE>*     IF IN_WORDS-DECWORD IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>     ELSE.</FPCLINE>
+      <FPCLINE>     CONCATENATE GV_AMOUNT2-WORD &apos;POUNDS AND&apos; GV_AMOUNT2-DECWORD &apos;PENNYS&apos; INTO net_amount SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE>     endif.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>endif.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>clear : lv_Amt,AMT1,AMT2.</FPCLINE>
+      <FPCLINE>lv_amt = tot_tax.</FPCLINE>
+      <FPCLINE>CLEAR gv_amount1.</FPCLINE>
+      <FPCLINE>CLEAR AMOUNT.</FPCLINE>
+      <FPCLINE>gv_amount1 = LV_AMT.</FPCLINE>
+      <FPCLINE>amount = LV_AMT.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>SPLIT AMOUNT AT &apos;.&apos; INTO amt1 Amt2.&quot; AMT3.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>CALL FUNCTION &apos;SPELL_AMOUNT&apos;</FPCLINE>
+      <FPCLINE>EXPORTING</FPCLINE>
+      <FPCLINE>  AMOUNT          = GV_AMOUNT1</FPCLINE>
+      <FPCLINE>  CURRENCY        = P_WAERS</FPCLINE>
+      <FPCLINE>*  CURRENCY        = gs_accounting_doc_hdr-waers</FPCLINE>
+      <FPCLINE>*   FILLER          = &apos; &apos;</FPCLINE>
+      <FPCLINE>  LANGUAGE        = SY-LANGU</FPCLINE>
+      <FPCLINE>IMPORTING</FPCLINE>
+      <FPCLINE>  IN_WORDS        = gv_AMOUNT2</FPCLINE>
+      <FPCLINE> EXCEPTIONS</FPCLINE>
+      <FPCLINE>   NOT_FOUND       = 1</FPCLINE>
+      <FPCLINE>   TOO_LARGE       = 2</FPCLINE>
+      <FPCLINE>   OTHERS          = 3</FPCLINE>
+      <FPCLINE>  .</FPCLINE>
+      <FPCLINE>IF sy-subrc &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>* Implement suitable error handling here</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE>*GV_AMOUNT5 = GV_AMOUNT2-WORD.</FPCLINE>
+      <FPCLINE>*amt2       = GV_AMOUNT2-DECWORD.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>if P_WAERS = &apos;USD&apos;.</FPCLINE>
+      <FPCLINE>  gv_amt1 = GS_ACCOUNTING_DOC_ITEM-DMBTR.</FPCLINE>
+      <FPCLINE>IF GV_AMOUNT2-DECWORD NE &apos;ZERO&apos;.</FPCLINE>
+      <FPCLINE> CONCATENATE  GV_AMOUNT2-word&apos;DOLLARS&apos; &apos;AND&apos;</FPCLINE>
+      <FPCLINE>             GV_AMOUNT2-DECWORD&apos;CENTS &apos; INTO tax_amount SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE> ELSEIF</FPCLINE>
+      <FPCLINE>    GV_AMOUNT2-DECWORD = &apos;ZERO&apos; .</FPCLINE>
+      <FPCLINE>    CONCATENATE  GV_AMOUNT2-word&apos;DOLLARS&apos;</FPCLINE>
+      <FPCLINE>              INTO tax_amount SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE> ENDIF.</FPCLINE>
+      <FPCLINE>elseif P_WAERS = &apos;SAR&apos;.</FPCLINE>
+      <FPCLINE>   gv_amt1 = GS_ACCOUNTING_DOC_ITEM-WRBTR.</FPCLINE>
+      <FPCLINE>      IF GV_AMOUNT2-DECWORD = &apos;ZERO&apos;.</FPCLINE>
+      <FPCLINE>     CONCATENATE &apos;SAUDI RIYAL&apos; GV_AMOUNT2-WORD &apos;ONLY&apos; INTO tax_amount SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE>*     ENDIF.</FPCLINE>
+      <FPCLINE>*     IF IN_WORDS-DECWORD IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>     ELSE.</FPCLINE>
+      <FPCLINE>     CONCATENATE &apos;SAUDI RIYAL&apos; GV_AMOUNT2-WORD &apos;AND&apos;</FPCLINE>
+      <FPCLINE>     GV_AMOUNT2-DECWORD &apos;HALALAS ONLY&apos; INTO tax_amount SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE>     endif.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE> elseif P_WAERS = &apos;INR&apos;.</FPCLINE>
+      <FPCLINE>    gv_amt1 = GS_ACCOUNTING_DOC_ITEM-DMBTR.</FPCLINE>
+      <FPCLINE>      IF GV_AMOUNT2-DECWORD = &apos;ZERO&apos;.</FPCLINE>
+      <FPCLINE>     CONCATENATE GV_AMOUNT2-WORD &apos;RUPEES ONLY&apos; INTO tax_amount SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE>*     ENDIF.</FPCLINE>
+      <FPCLINE>*     IF IN_WORDS-DECWORD IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>     ELSE.</FPCLINE>
+      <FPCLINE>     CONCATENATE GV_AMOUNT2-WORD &apos;RUPEES&apos; &apos;AND&apos;</FPCLINE>
+      <FPCLINE>     GV_AMOUNT2-DECWORD &apos;PAISE&apos; INTO tax_amount SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE>     endif.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE> elseif P_WAERS = &apos;EUR&apos;.</FPCLINE>
+      <FPCLINE>      IF GV_AMOUNT2-DECWORD = &apos;ZERO&apos;.</FPCLINE>
+      <FPCLINE>     CONCATENATE GV_AMOUNT2-WORD &apos;EURO&apos; INTO tax_amount SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE>*     ENDIF.</FPCLINE>
+      <FPCLINE>*     IF IN_WORDS-DECWORD IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>     ELSE.</FPCLINE>
+      <FPCLINE>     CONCATENATE GV_AMOUNT2-WORD &apos;EURO AND&apos;</FPCLINE>
+      <FPCLINE>     GV_AMOUNT2-DECWORD &apos;CENTS&apos; INTO tax_amount SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE>     endif.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  elseif P_WAERS = &apos;CNY&apos;.</FPCLINE>
+      <FPCLINE>      IF GV_AMOUNT2-DECWORD = &apos;ZERO&apos;.</FPCLINE>
+      <FPCLINE>     CONCATENATE GV_AMOUNT2-WORD &apos;YUANS&apos; INTO tax_amount SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE>*     ENDIF.</FPCLINE>
+      <FPCLINE>*     IF IN_WORDS-DECWORD IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>     ELSE.</FPCLINE>
+      <FPCLINE>     CONCATENATE GV_AMOUNT2-WORD &apos;YUANS AND&apos;</FPCLINE>
+      <FPCLINE>     GV_AMOUNT2-DECWORD &apos;JIAOS&apos; INTO tax_amount SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE>     endif.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>   elseif P_WAERS = &apos;GBP&apos;.</FPCLINE>
+      <FPCLINE>      IF GV_AMOUNT2-DECWORD = &apos;ZERO&apos;.</FPCLINE>
+      <FPCLINE>     CONCATENATE GV_AMOUNT2-WORD &apos;POUNDS&apos; INTO tax_amount SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE>*     ENDIF.</FPCLINE>
+      <FPCLINE>*     IF IN_WORDS-DECWORD IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>     ELSE.</FPCLINE>
+      <FPCLINE>     CONCATENATE GV_AMOUNT2-WORD &apos;POUNDS and&apos;</FPCLINE>
+      <FPCLINE>     GV_AMOUNT2-DECWORD &apos;PENNYS&apos; INTO tax_amount SEPARATED BY SPACE.</FPCLINE>
+      <FPCLINE>     endif.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>endif.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>** -- LOGO</FPCLINE>
+      <FPCLINE>CALL METHOD cl_ssf_xsf_utilities=&gt;get_bds_graphic_as_bmp</FPCLINE>
+      <FPCLINE>  EXPORTING</FPCLINE>
+      <FPCLINE>    p_object       = &apos;GRAPHICS&apos;     &quot;SAPscript Graphics Management: Application object</FPCLINE>
+      <FPCLINE>    p_name         = &apos;DELVAL LOGO&apos;    &quot; logo Name</FPCLINE>
+      <FPCLINE>    p_id           = &apos;BMAP&apos;    &quot;SAPscript Graphics Management: ID</FPCLINE>
+      <FPCLINE>    p_btype        = &apos;BCOL&apos;    &quot; SAPscript: Type of graphic</FPCLINE>
+      <FPCLINE>  RECEIVING</FPCLINE>
+      <FPCLINE>    p_bmp          =   lv_xstring  &quot; Graphic Data</FPCLINE>
+      <FPCLINE>  EXCEPTIONS</FPCLINE>
+      <FPCLINE>    not_found      = 1</FPCLINE>
+      <FPCLINE>    internal_error = 2</FPCLINE>
+      <FPCLINE>    others         = 3.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>** -- CR No.</FPCLINE>
+      <FPCLINE>if gs_accounting_doc_hdr-blart = &apos;DG&apos;.</FPCLINE>
+      <FPCLINE>  gv_cr_no_text = &apos;CREDIT NOTE NO.:&apos;.</FPCLINE>
+      <FPCLINE>  gv_cr_no = gs_accounting_doc_hdr-belnr.</FPCLINE>
+      <FPCLINE>  gv_header = &apos;CREDIT NOTE&apos;.</FPCLINE>
+      <FPCLINE>  endif.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+     </INITIALIZATION>
+     <FORMS/>
+    </CL_FP_CODING>
+   </cls:CL_FP_CODING>
+  </asx:heap>
+ </asx:abap>
+</abapGit>

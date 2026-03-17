@@ -1,0 +1,121 @@
+*----------------------------------------------------------------------*
+***INCLUDE ZI_QM_PERF_SUPP_DISP_ALV.
+*----------------------------------------------------------------------*
+*&---------------------------------------------------------------------*
+*& Form display_alv
+*&---------------------------------------------------------------------*
+*& text
+*&---------------------------------------------------------------------*
+*& -->  p1        text
+*& <--  p2        text
+*&---------------------------------------------------------------------*
+FORM DISPLAY_ALV .
+
+  GV_REPID = SY-REPID.
+*    ls_layout-colwidth_optimize = abap_true. " Optimize column widths
+  LS_LAYOUT-EDIT              = ABAP_FALSE. " Set to abap_true for editable ALV
+
+  LS_FIELDCAT-FIELDNAME = 'LIFNR'.
+  LS_FIELDCAT-SELTEXT_M = 'Supplier'.
+  LS_FIELDCAT-COL_POS   = 1.
+  APPEND LS_FIELDCAT TO LT_FIELDCAT.
+
+  LS_FIELDCAT-FIELDNAME = 'NAME1'.
+  LS_FIELDCAT-SELTEXT_M = 'Supplier Name'.
+  LS_FIELDCAT-COL_POS   = 2.
+  APPEND LS_FIELDCAT TO LT_FIELDCAT.
+
+  LS_FIELDCAT-FIELDNAME = 'ORT01'.
+  LS_FIELDCAT-SELTEXT_M = 'CITY'.
+  LS_FIELDCAT-COL_POS   = 3.
+  LS_FIELDCAT-OUTPUTLEN = 10.
+  APPEND LS_FIELDCAT TO LT_FIELDCAT.
+
+  LS_FIELDCAT-FIELDNAME = 'SUM_REC'.
+  LS_FIELDCAT-SELTEXT_M = 'Sum of received_Qty'.
+  LS_FIELDCAT-COL_POS   = 4.
+  LS_FIELDCAT-OUTPUTLEN = 20.
+  APPEND LS_FIELDCAT TO LT_FIELDCAT.
+
+  LS_FIELDCAT-FIELDNAME = 'SUM_ACC'.
+  LS_FIELDCAT-SELTEXT_M = 'Sum of accepted_qty'.
+  LS_FIELDCAT-COL_POS   = 5.
+  LS_FIELDCAT-OUTPUTLEN = 20.
+  APPEND LS_FIELDCAT TO LT_FIELDCAT.
+
+  LS_FIELDCAT-FIELDNAME = 'SUM_REJ'.
+  LS_FIELDCAT-SELTEXT_M = 'Sum of rejected qty'.
+  LS_FIELDCAT-COL_POS   = 6.
+  LS_FIELDCAT-OUTPUTLEN = 10.
+  APPEND LS_FIELDCAT TO LT_FIELDCAT.
+
+  LS_FIELDCAT-FIELDNAME = 'SUM_REW'.
+  LS_FIELDCAT-SELTEXT_M = 'Sum of rework qty'.
+  LS_FIELDCAT-COL_POS   = 7.
+  LS_FIELDCAT-OUTPUTLEN = 20.
+  APPEND LS_FIELDCAT TO LT_FIELDCAT.
+
+  LS_FIELDCAT-FIELDNAME = 'SUM_SRN'.
+  LS_FIELDCAT-SELTEXT_M = 'Sum of SRN qty'.
+  LS_FIELDCAT-COL_POS   = 8.
+  LS_FIELDCAT-OUTPUTLEN = 20.
+  APPEND LS_FIELDCAT TO LT_FIELDCAT.
+
+  LS_FIELDCAT-FIELDNAME = 'TOT_REJ'.
+  LS_FIELDCAT-SELTEXT_M = 'Sum of total rej. qty'.
+  LS_FIELDCAT-COL_POS   = 9.
+  LS_FIELDCAT-OUTPUTLEN = 20.
+  APPEND LS_FIELDCAT TO LT_FIELDCAT.
+
+
+  LS_FIELDCAT-FIELDNAME = 'TOT_REW'.
+  LS_FIELDCAT-SELTEXT_M = 'Sum Of Total Rework + Rejected Qty'.
+  LS_FIELDCAT-COL_POS   = 10.
+  LS_FIELDCAT-OUTPUTLEN = 20.
+  APPEND LS_FIELDCAT TO LT_FIELDCAT.
+
+
+  LS_FIELDCAT-FIELDNAME = 'PER_SRN_REJ_QTY'.
+  LS_FIELDCAT-SELTEXT_M = '% of Total rejection (SRN+Rej) Qty'.
+  LS_FIELDCAT-COL_POS   = 11.
+  LS_FIELDCAT-OUTPUTLEN = 20.
+  APPEND LS_FIELDCAT TO LT_FIELDCAT.
+
+  LS_FIELDCAT-FIELDNAME = 'PER_REW_QTY'.
+  LS_FIELDCAT-SELTEXT_M = '% Rework Qty'.
+  LS_FIELDCAT-COL_POS   = 12.
+  LS_FIELDCAT-OUTPUTLEN = 20.
+  APPEND LS_FIELDCAT TO LT_FIELDCAT.
+
+  LS_FIELDCAT-FIELDNAME = 'PER_REW_REJ_QTY'.
+  LS_FIELDCAT-SELTEXT_M = '% Total Rework + Rejection Qty'.
+  LS_FIELDCAT-COL_POS   = 13.
+  LS_FIELDCAT-OUTPUTLEN = 20.
+  APPEND LS_FIELDCAT TO LT_FIELDCAT.
+
+  LS_FIELDCAT-FIELDNAME = 'REJ_IN_PPM'.
+  LS_FIELDCAT-SELTEXT_M = 'Rej In PPM'.
+  LS_FIELDCAT-COL_POS   = 14.
+  LS_FIELDCAT-OUTPUTLEN = 20.
+  APPEND LS_FIELDCAT TO LT_FIELDCAT.
+
+  LS_FIELDCAT-FIELDNAME = 'QUALITY_RATING'.
+  LS_FIELDCAT-SELTEXT_M = 'Quality Rating'.
+  LS_FIELDCAT-COL_POS   = 15.
+  LS_FIELDCAT-OUTPUTLEN = 20.
+
+  APPEND LS_FIELDCAT TO LT_FIELDCAT.
+
+
+  CALL FUNCTION 'REUSE_ALV_GRID_DISPLAY'
+    EXPORTING
+      I_CALLBACK_PROGRAM = SY-REPID
+*i_structure_name = '
+      IS_LAYOUT          = LS_LAYOUT
+      IT_FIELDCAT        = LT_FIELDCAT
+    TABLES
+      T_OUTTAB           = LT_MON_FINAL
+    EXCEPTIONS
+      PROGRAM_ERROR      = 1
+      OTHERS             = 2.
+ENDFORM.

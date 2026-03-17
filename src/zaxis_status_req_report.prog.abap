@@ -1,0 +1,267 @@
+*&---------------------------------------------------------------------*
+*& Report ZAXIS_STATUS_REQ_REPORT
+*&---------------------------------------------------------------------*
+*&
+*&---------------------------------------------------------------------*
+REPORT ZAXIS_STATUS_REQ_REPORT.
+
+DATA: O_ALV   TYPE REF TO CL_SALV_TABLE.
+
+SELECT-OPTIONS S_DATE FOR SYST-DATUM.
+
+SELECT * FROM ZAXIS_RES_API
+  INTO TABLE @DATA(IT_RES)
+    WHERE CRE_DATE IN @S_DATE.
+
+IF IT_RES IS NOT INITIAL .
+  SELECT * FROM ZAXIS_TRANS_RES
+    FOR ALL ENTRIES IN @IT_RES
+       WHERE CRN =  @IT_RES-CUSTUNIQREF
+          INTO TABLE @DATA(IT_TRAN).
+ENDIF.
+
+LOOP AT IT_RES INTO DATA(WA_RES).
+  READ TABLE IT_TRAN INTO DATA(WA_TRAN) WITH KEY CRN =  WA_RES-CUSTUNIQREF .
+  IF SY-SUBRC EQ 0 .
+    WA_RES-ERRORMESSAGE  = WA_TRAN-TRANSACTIONSTATUS.
+    WA_RES-MESSAGE        = WA_TRAN-ERRORMESSAGE.
+    WA_RES-BATCHNO        = WA_TRAN-REQUESTUUID.
+    MODIFY IT_RES FROM WA_RES TRANSPORTING ERRORMESSAGE MESSAGE BATCHNO.
+  ENDIF.
+
+  CLEAR : WA_RES,WA_TRAN .
+ENDLOOP .
+
+TRY.
+    CL_SALV_TABLE=>FACTORY(
+      IMPORTING
+        R_SALV_TABLE = O_ALV
+      CHANGING
+        T_TABLE      = IT_RES ).
+
+    " Hide column MATKL (Material Group)
+    DATA(LO_COLUMNS) = O_ALV->GET_COLUMNS( ).
+    DATA(LO_COLUMN)  = LO_COLUMNS->GET_COLUMN( 'MANDT' ).
+    LO_COLUMN->SET_VISIBLE( ABAP_FALSE ).
+    LO_COLUMNS->GET_COLUMN( 'RESPONCE' )->SET_VISIBLE( ABAP_FALSE ).
+    LO_COLUMNS->GET_COLUMN( 'BENEMOBILENO' )->SET_VISIBLE( ABAP_FALSE ).
+    LO_COLUMNS->GET_COLUMN( 'REQUESTUUID' )->SET_VISIBLE( ABAP_FALSE ).
+    LO_COLUMNS->GET_COLUMN( 'REQUESTID' )->SET_VISIBLE( ABAP_FALSE ).
+    LO_COLUMNS->GET_COLUMN( 'STATUSDESCRIPTION' )->SET_VISIBLE( ABAP_FALSE ).
+*    LO_COLUMNS->GET_COLUMN( 'BATCHNO' )->SET_VISIBLE( ABAP_FALSE ).
+    LO_COLUMNS->GET_COLUMN( 'RESPONSECODE' )->SET_VISIBLE( ABAP_FALSE ).
+    LO_COLUMNS->GET_COLUMN( 'CHECKSUM' )->SET_VISIBLE( ABAP_FALSE ).
+    LO_COLUMNS->GET_COLUMN( 'PROCESSINGDATE' )->SET_VISIBLE( ABAP_FALSE ).
+    LO_COLUMNS->GET_COLUMN( 'TRANSACTIONSTATUS' )->SET_VISIBLE( ABAP_FALSE ).
+    LO_COLUMNS->GET_COLUMN( 'CRN' )->SET_VISIBLE( ABAP_FALSE ).
+    LO_COLUMNS->GET_COLUMN( 'RESPONSECODE' )->SET_VISIBLE( ABAP_FALSE ).
+*    LO_COLUMNS->GET_COLUMN( 'MESSAGE' )->SET_VISIBLE( ABAP_FALSE ).
+    LO_COLUMNS->GET_COLUMN( 'STATUS' )->SET_VISIBLE( ABAP_FALSE ).
+*    lo_columns->get_column( 'ERRORMESSAGE' )->set_visible( abap_false ).
+* Set custom column headings
+    LO_COLUMN = LO_COLUMNS->GET_COLUMN( 'CUSTUNIQREF' ).
+    LO_COLUMN->SET_SHORT_TEXT( 'REF' ).
+    LO_COLUMN->SET_MEDIUM_TEXT( 'REF ID' ).
+    LO_COLUMN->SET_LONG_TEXT( 'REF ID' ).
+    LO_COLUMN->SET_OUTPUT_LENGTH( 20 ).  " Restrict width
+*
+    LO_COLUMN = LO_COLUMNS->GET_COLUMN( 'BELNR' ).
+    LO_COLUMN->SET_SHORT_TEXT( 'Doc No' ).
+    LO_COLUMN->SET_MEDIUM_TEXT( 'Document Number' ).
+    LO_COLUMN->SET_LONG_TEXT( 'Document Number' ).
+    LO_COLUMN->SET_OUTPUT_LENGTH( 12 ).  " Restrict width
+*
+    LO_COLUMN = LO_COLUMNS->GET_COLUMN( 'GJAHR' ).
+    LO_COLUMN->SET_SHORT_TEXT( 'Fc Year' ).
+    LO_COLUMN->SET_MEDIUM_TEXT( 'Fiscal Year' ).
+    LO_COLUMN->SET_LONG_TEXT( 'Fiscal Year' ).
+    LO_COLUMN->SET_OUTPUT_LENGTH( 4 ).  " Restrict width
+
+    LO_COLUMN = LO_COLUMNS->GET_COLUMN( 'BUKRS' ).
+    LO_COLUMN->SET_SHORT_TEXT( 'Com Code' ).
+    LO_COLUMN->SET_MEDIUM_TEXT( 'Company Code' ).
+    LO_COLUMN->SET_LONG_TEXT( 'Company Code' ).
+    LO_COLUMN->SET_OUTPUT_LENGTH( 20 ).  " Restrict width
+*
+    LO_COLUMN = LO_COLUMNS->GET_COLUMN( 'REQUESTUUID' ).
+    LO_COLUMN->SET_SHORT_TEXT( 'Req UUID' ).
+    LO_COLUMN->SET_MEDIUM_TEXT( 'Requesr UUID' ).
+    LO_COLUMN->SET_LONG_TEXT( 'Requesr UUID' ).
+    LO_COLUMN->SET_OUTPUT_LENGTH( 20 ).  " Restrict width
+*
+    LO_COLUMN = LO_COLUMNS->GET_COLUMN( 'ERRORMESSAGE' ).
+    LO_COLUMN->SET_SHORT_TEXT( 'Status' ).
+    LO_COLUMN->SET_MEDIUM_TEXT( 'Status' ).
+    LO_COLUMN->SET_LONG_TEXT( 'Status' ).
+    LO_COLUMN->SET_OUTPUT_LENGTH( 7 ).  " Restrict width
+*
+    LO_COLUMN = LO_COLUMNS->GET_COLUMN( 'CRE_DATE' ).
+    LO_COLUMN->SET_SHORT_TEXT( 'Created On' ).
+    LO_COLUMN->SET_MEDIUM_TEXT( 'Created Date' ).
+    LO_COLUMN->SET_LONG_TEXT( 'Created Date' ).
+    LO_COLUMN->SET_OUTPUT_LENGTH( 20 ).  " Restrict width
+*
+    LO_COLUMN = LO_COLUMNS->GET_COLUMN( 'USER_ID' ).
+    LO_COLUMN->SET_SHORT_TEXT( 'User ID' ).
+    LO_COLUMN->SET_MEDIUM_TEXT( 'User ID' ).
+    LO_COLUMN->SET_LONG_TEXT( 'User ID' ).
+    LO_COLUMN->SET_OUTPUT_LENGTH( 20 ).  " Restrict width
+
+    LO_COLUMN = LO_COLUMNS->GET_COLUMN( 'RESPONCE' ).
+    LO_COLUMN->SET_SHORT_TEXT( 'API Res' ).
+    LO_COLUMN->SET_MEDIUM_TEXT( 'API Responce' ).
+    LO_COLUMN->SET_LONG_TEXT( 'API Responce' ).
+    LO_COLUMN->SET_OUTPUT_LENGTH( 20 ).  " Restrict width
+
+    LO_COLUMN = LO_COLUMNS->GET_COLUMN( 'BENECODE' ).
+    LO_COLUMN->SET_SHORT_TEXT( 'Bene Code' ).
+    LO_COLUMN->SET_MEDIUM_TEXT( 'BeneficiaryCode' ).
+    LO_COLUMN->SET_LONG_TEXT( 'BeneficiaryCode' ).
+    LO_COLUMN->SET_OUTPUT_LENGTH( 15 ).  " Restrict width
+*
+    LO_COLUMN = LO_COLUMNS->GET_COLUMN( 'BENEACCNUM' ).
+    LO_COLUMN->SET_SHORT_TEXT( 'BeneAcc No' ).
+    LO_COLUMN->SET_MEDIUM_TEXT( 'Bene Acc Number' ).
+    LO_COLUMN->SET_LONG_TEXT( 'BeneficiaryAccountNumber' ).
+    LO_COLUMN->SET_OUTPUT_LENGTH( 20 ).  " Restrict width
+*
+*
+    LO_COLUMN = LO_COLUMNS->GET_COLUMN( 'BENEIFSCCODE' ).
+    LO_COLUMN->SET_SHORT_TEXT( 'Ifsc Code' ).
+    LO_COLUMN->SET_MEDIUM_TEXT( 'Ifsc Code' ).
+    LO_COLUMN->SET_LONG_TEXT( 'Beneficiary Ifsc Code' ).
+    LO_COLUMN->SET_OUTPUT_LENGTH( 20 ).  " Restrict width
+*
+    LO_COLUMN = LO_COLUMNS->GET_COLUMN( 'BENEBANKNAME' ).
+    LO_COLUMN->SET_SHORT_TEXT( 'Bank Name' ).
+    LO_COLUMN->SET_MEDIUM_TEXT( 'Bene Bank Name' ).
+    LO_COLUMN->SET_LONG_TEXT( 'Beneficiary Bank Name' ).
+    LO_COLUMN->SET_OUTPUT_LENGTH( 20 ).  " Restrict width
+*
+    LO_COLUMN = LO_COLUMNS->GET_COLUMN( 'BENEEMAILADDR1' ).
+    LO_COLUMN->SET_SHORT_TEXT( 'Email Addr' ).
+    LO_COLUMN->SET_MEDIUM_TEXT( 'Bene E-mail Address' ).
+    LO_COLUMN->SET_LONG_TEXT( 'Beneficiary E-mail Address' ).
+    LO_COLUMN->SET_OUTPUT_LENGTH( 20 ).  " Restrict width
+*
+    LO_COLUMN = LO_COLUMNS->GET_COLUMN( 'BENEMOBILENO' ).
+    LO_COLUMN->SET_SHORT_TEXT( 'Mobile No' ).
+    LO_COLUMN->SET_MEDIUM_TEXT( 'Bene Mob Number' ).
+    LO_COLUMN->SET_LONG_TEXT( 'Beneficiary Mobile Number' ).
+    LO_COLUMN->SET_OUTPUT_LENGTH( 20 ).  " Restrict width
+*
+    LO_COLUMN = LO_COLUMNS->GET_COLUMN( 'BATCHNO' ).
+    LO_COLUMN->SET_SHORT_TEXT( 'Batch No' ).
+    LO_COLUMN->SET_MEDIUM_TEXT( 'Batch Number' ).
+    LO_COLUMN->SET_LONG_TEXT( 'Batch Number' ).
+    LO_COLUMN->SET_OUTPUT_LENGTH( 20 ).  " Restrict width
+
+    LO_COLUMN = LO_COLUMNS->GET_COLUMN( 'MESSAGE' ).
+    LO_COLUMN->SET_SHORT_TEXT( 'API Resp' ).
+    LO_COLUMN->SET_MEDIUM_TEXT( 'API Responce' ).
+    LO_COLUMN->SET_LONG_TEXT( 'API Responce' ).
+    LO_COLUMN->SET_OUTPUT_LENGTH( 25 ).  " Restrict width
+*
+*
+**    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+*    LO_COLUMN = LO_COLUMNS->GET_COLUMN( 'BATCHNO' ).
+*    LO_COLUMN->SET_SHORT_TEXT( 'Batch No' ).
+*    LO_COLUMN->SET_MEDIUM_TEXT( 'Batch No' ).
+*    LO_COLUMN->SET_LONG_TEXT( 'Batch No' ).
+*    LO_COLUMN->SET_OUTPUT_LENGTH( 20 ).  " Restrict width
+
+    LO_COLUMN = LO_COLUMNS->GET_COLUMN( 'UTRNO' ).
+    LO_COLUMN->SET_SHORT_TEXT( 'UTR No' ).
+    LO_COLUMN->SET_MEDIUM_TEXT( 'UTR Number' ).
+    LO_COLUMN->SET_LONG_TEXT( 'UTR Number' ).
+    LO_COLUMN->SET_OUTPUT_LENGTH( 35 ).  " Restrict width
+
+
+    LO_COLUMN = LO_COLUMNS->GET_COLUMN( 'CRN' ).
+    LO_COLUMN->SET_SHORT_TEXT( 'CRN' ).
+    LO_COLUMN->SET_MEDIUM_TEXT( 'CRN' ).
+    LO_COLUMN->SET_LONG_TEXT( 'CRN ' ).
+    LO_COLUMN->SET_OUTPUT_LENGTH( 20 ).  " Restrict width
+
+*    LO_COLUMN = LO_COLUMNS->GET_COLUMN( 'TRANSACTIONSTATUS' ).
+*    LO_COLUMN->SET_SHORT_TEXT('Trans stat' ).
+*    LO_COLUMN->SET_MEDIUM_TEXT('Transaction status' ).
+*    LO_COLUMN->SET_LONG_TEXT('Transaction status' ).
+*    LO_COLUMN->SET_OUTPUT_LENGTH( 20 ).  " Restrict width
+
+    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+    LO_COLUMN = LO_COLUMNS->GET_COLUMN( 'VALUEDATE' ).
+    LO_COLUMN->SET_SHORT_TEXT( 'Value Date' ).
+    LO_COLUMN->SET_MEDIUM_TEXT( 'Value Date' ).
+    LO_COLUMN->SET_LONG_TEXT( 'Value Date' ).
+    LO_COLUMN->SET_OUTPUT_LENGTH( 10 ).  " Restrict width
+
+
+    LO_COLUMN = LO_COLUMNS->GET_COLUMN( 'TXNAMOUNT' ).
+    LO_COLUMN->SET_SHORT_TEXT( 'Amount' ).
+    LO_COLUMN->SET_MEDIUM_TEXT( 'Amount' ).
+    LO_COLUMN->SET_LONG_TEXT( 'Amount' ).
+    LO_COLUMN->SET_OUTPUT_LENGTH( 15 ).  " Restrict width
+
+
+    LO_COLUMN = LO_COLUMNS->GET_COLUMN( 'BENENAME' ).
+    LO_COLUMN->SET_SHORT_TEXT( 'Bene Name' ).
+    LO_COLUMN->SET_MEDIUM_TEXT( 'Beneficiary Name' ).
+    LO_COLUMN->SET_LONG_TEXT( 'Beneficiary Name' ).
+    LO_COLUMN->SET_OUTPUT_LENGTH( 20 ).  " Restrict width
+
+
+    LO_COLUMN = LO_COLUMNS->GET_COLUMN( 'CHECKSUM' ).
+    LO_COLUMN->SET_SHORT_TEXT( 'Checksum' ).
+    LO_COLUMN->SET_MEDIUM_TEXT( 'Checksum' ).
+    LO_COLUMN->SET_LONG_TEXT( 'Checksum' ).
+    LO_COLUMN->SET_OUTPUT_LENGTH( 20 ).  " Restrict width
+
+
+*    LO_COLUMN = LO_COLUMNS->GET_COLUMN( 'MESSAGE' ).
+*    LO_COLUMN->SET_SHORT_TEXT('API Resp' ).
+*    LO_COLUMN->SET_MEDIUM_TEXT('API Responce' ).
+*    LO_COLUMN->SET_LONG_TEXT('API Responce' ).
+*    LO_COLUMN->SET_OUTPUT_LENGTH( 55 ).  " Restrict width
+
+*    LO_COLUMN = LO_COLUMNS->GET_COLUMN( 'STATUS' ).
+*    LO_COLUMN->SET_SHORT_TEXT( 'Status' ).
+*    LO_COLUMN->SET_MEDIUM_TEXT( 'Status' ).
+*    LO_COLUMN->SET_LONG_TEXT( 'Status' ).
+*    LO_COLUMN->SET_OUTPUT_LENGTH( 15 ).  " Restrict width  "  nc
+
+
+*    LO_COLUMN = LO_COLUMNS->GET_COLUMN( 'RESPONSECODE' ).
+*    LO_COLUMN->SET_SHORT_TEXT('Resp code' ).
+*    LO_COLUMN->SET_MEDIUM_TEXT('Response code' ).
+*    LO_COLUMN->SET_LONG_TEXT('Response as per code' ).
+*    LO_COLUMN->SET_OUTPUT_LENGTH( 12 ).  " Restrict width
+
+
+    LO_COLUMNS->GET_COLUMN( 'TRANSACTIONSTATUS' )->SET_VISIBLE( ABAP_FALSE ).
+
+
+    O_ALV->SET_SCREEN_STATUS(
+      PFSTATUS      = 'STANDARD'         " Use standard SAP status
+      REPORT        = 'SAPLKKBL'         " System program with standard GUI status
+      SET_FUNCTIONS = CL_SALV_TABLE=>C_FUNCTIONS_ALL
+    ).
+
+*    O_ALV->GET_DISPLAY_SETTINGS( )->SET_LIST_HEADER( 'SFLIGHT Report with Standard Functions' ).
+    O_ALV->GET_DISPLAY_SETTINGS( )->SET_LIST_HEADER( 'Payment Run Report' ).
+
+
+    TRY.
+        LO_COLUMN = LO_COLUMNS->GET_COLUMN( 'REQUESTUUID' ).
+        LO_COLUMN->SET_VISIBLE( ABAP_FALSE ).
+      CATCH CX_SALV_NOT_FOUND.
+    ENDTRY.
+
+
+    O_ALV->DISPLAY( ).
+
+  CATCH CX_SALV_MSG INTO DATA(LX_MSG).
+    MESSAGE LX_MSG->GET_TEXT( ) TYPE 'E'.
+ENDTRY.

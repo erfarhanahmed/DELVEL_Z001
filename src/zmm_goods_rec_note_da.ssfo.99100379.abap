@@ -1,0 +1,85 @@
+IF GV_LFA1-LIFNR IS NOT INITIAL.
+    SELECT SINGLE CITY1
+                  NAME1
+                  POST_CODE1
+                  STREET
+                  STR_SUPPL1
+                  STR_SUPPL2
+                  STR_SUPPL3
+                  LOCATION
+                  COUNTRY
+                  REGION
+                  TEL_NUMBER
+                  FAX_NUMBER
+             FROM ADRC
+             INTO (WA_ADD-CITY1,
+                   WA_ADD-NAME1,
+                   WA_ADD-POST_CODE1,
+                   WA_ADD-STREET,
+                   WA_ADD-STR_SUPPL1,
+                   WA_ADD-STR_SUPPL2,
+                   WA_ADD-STR_SUPPL3,
+                   WA_ADD-LOCATION,
+                   WA_ADD-COUNTRY,
+                   WA_ADD-REGION,
+                   WA_ADD-TEL_NUMBER,
+                   WA_ADD-FAX_NUMBER)
+             WHERE ADDRNUMBER = GV_LFA1-ADRNR .
+ELSE.
+
+    SELECT SINGLE  RESWK
+             FROM  EKKO
+             INTO  L_WERKS
+             WHERE EBELN = GV_MSEG-EBELN.
+
+SELECT SINGLE NAME1
+              ADRNR
+        INTO (L_NAME2, L_ADRNR2 )
+        FROM T001W
+        WHERE WERKS = L_WERKS.
+
+SELECT SINGLE CITY1 NAME1
+POST_CODE1 STREET STR_SUPPL1 STR_SUPPL2
+STR_SUPPL3 LOCATION
+COUNTRY REGION
+TEL_NUMBER FAX_NUMBER
+FROM ADRC
+INTO (WA_ADD-CITY1, WA_ADD-NAME1,
+WA_ADD-POST_CODE1, WA_ADD-STREET,
+WA_ADD-STR_SUPPL1, WA_ADD-STR_SUPPL2,
+WA_ADD-STR_SUPPL3, WA_ADD-LOCATION,
+WA_ADD-COUNTRY, WA_ADD-REGION,
+WA_ADD-TEL_NUMBER, WA_ADD-FAX_NUMBER)
+WHERE ADDRNUMBER = L_ADRNR2 .
+
+ENDIF.
+
+SELECT SINGLE LANDX
+FROM T005T
+INTO WA_ADD-LANDX
+WHERE LAND1 = WA_ADD-COUNTRY
+AND SPRAS = 'EN'.
+SELECT SINGLE BEZEI
+FROM T005U
+INTO WA_ADD-BEZEI
+WHERE LAND1 = WA_ADD-COUNTRY
+AND BLAND = WA_ADD-REGION
+AND SPRAS = 'EN'.
+
+
+*BREAK primus.
+IF gv_vbak-kunnr IS NOT INITIAL.
+  SELECT SINGLE * FROM kna1 INTO gv_kna1
+    WHERE kunnr = gv_vbak-kunnr.
+
+ENDIF.
+
+*******ADDEED BY JYOTI ON 28.03.2025**********
+READ TABLE lt_afpo INTO DATA(WA) INDEX 1.
+IF WA-KDAUF IS NOT INITIAL.
+  SELECT SINGLE VKBUR INTO GV_VKBUR FROM VBAK
+    WHERE VBELN = WA-KDAUF.
+  SELECT SINGLE BEZEI INTO GV_BEZEI FROM TVKBT
+    WHERE  VKBUR = GV_VKBUR AND SPRAS = 'EN'.
+ENDIF.
+***************************************************************

@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Update Record</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZFG_DELVAL_PEND_SO1TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZFG_DELVAL_PEND_SO1</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZFM_DELVAL_PEND_SO1</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Update Records</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>P_HIDDEN</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>CHAR8</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_ALL_SO</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_OPEN_SO</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>LV_JSON</PARAMETER>
+       <TYP>STRING</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>VBELN</PARAMETER>
+       <DBSTRUCT>RANGE_VBELN</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>KUNNR</PARAMETER>
+       <DBSTRUCT>VDKUNNR_RANGE</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>ERDAT</PARAMETER>
+       <DBSTRUCT>WTYSC_WWB_S_ERDAT</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>MATNR</PARAMETER>
+       <DBSTRUCT>RSMATNR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>P_HIDDEN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Character field, 8 characters long</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_ALL_SO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>All Orders</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_OPEN_SO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Open Sales Orders</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>LV_JSON</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>VBELN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Range table for VBELN</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>KUNNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Range for KUNNR</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ERDAT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>structure for erdat ranges</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>MATNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Ranges structure (material number)</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

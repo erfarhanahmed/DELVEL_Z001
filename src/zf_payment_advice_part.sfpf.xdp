@@ -1,0 +1,2708 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xfa generator="AdobeLiveCycleDesigner_V11.0.9.20211220.1.16_SAP" APIVersion="3.6.21350.0"?><xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2025-07-23T08:58:31Z" uuid="3e9d2f21-47ea-4c02-ac13-7fc23e3c16ae">
+<template xmlns:xliff="urn:oasis:names:tc:xliff:document:1.1" xmlns="http://www.xfa.org/schema/xfa-template/2.8/">
+   <?formServer defaultPDFRenderFormat acrobat9.0static?>
+   <subform layout="tb" locale="en_IN" name="data">
+      <pageSet>
+         <pageArea id="PageArea1" name="PageArea1">
+            <contentArea h="116.983mm" id="ContentArea1_ID" name="ContentArea1" w="281.7784mm" x="7.312mm" y="85.469mm"/>
+            <medium long="297mm" orientation="landscape" short="210mm" stock="a4"/>
+            <field access="readOnly" h="7.5mm" id="floatingField000041" name="CurrentPage" presence="hidden" w="55mm" x="106.249mm" y="101.125mm">
+               <ui>
+                  <numericEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </numericEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="20mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="6E42FC36-E578-40A7-B98B-782085FD6922">Text Field</text>
+                  </value>
+               </caption>
+               <calculate override="error"/>
+               <event activity="ready" name="event__layout_ready" ref="$layout">
+                  <script contentType="application/x-javascript">this.rawValue = xfa.layout.page(this);
+</script>
+               </event>
+               <?templateDesigner floatingFieldPlaceholder #?>
+               <bind match="none"/>
+            </field>
+            <field access="readOnly" h="7.5mm" id="floatingField018467" name="PageCount" presence="hidden" w="55mm" x="106.249mm" y="101.125mm">
+               <ui>
+                  <numericEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </numericEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="20mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="2CEFB34A-DA16-4AE9-B8EC-52BA9313D16D">Text Field</text>
+                  </value>
+               </caption>
+               <calculate override="error"/>
+               <event activity="ready" name="event__layout_ready" ref="$layout">
+                  <script contentType="application/x-javascript">this.rawValue = xfa.layout.pageCount();
+</script>
+               </event>
+               <?templateDesigner floatingFieldPlaceholder ##?>
+               <bind match="none"/>
+            </field>
+            <draw name="Pages" x="241.3mm" y="203.2mm">
+               <ui>
+                  <textEdit>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <value>
+                  <exData contentType="text/html" maxLength="0" xliff:rid="32CF5A0D-8844-4E88-9465-F62540A5D907">
+                     <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-decoration:none;letter-spacing:0in">Page<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField000041" xfa:embedMode="raw" xfa:embedType="uri"/> of<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField018467" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                  </exData>
+               </value>
+               <font baselineShift="0pt" typeface="Times New Roman"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+            </draw>
+            <subform h="80.892mm" name="Page1" x="6.099mm" y="4.34mm">
+               <breakBefore target="PageArea1" targetType="pageArea"/>
+               <bind match="none"/>
+               <field access="readOnly" h="9mm" id="floatingField026500" name="LIFNR" presence="hidden" w="62mm" x="1.403mm">
+                  <ui>
+                     <textEdit>
+                        <border>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <text maxChars="10"/>
+                  </value>
+                  <bind match="dataRef" ref="$.WA_HEADER_DETAILS.LIFNR"/>
+                  <desc>
+                     <text name="Schema Annotation">Account Number of Supplier</text>
+                  </desc>
+                  <caption>
+                     <value>
+                        <text xliff:rid="3EAE5D49-584F-4255-8D39-5CD92463C452">Supplier</text>
+                     </value>
+                  </caption>
+               </field>
+               <field access="readOnly" h="9mm" id="floatingField006334" name="NAME1" presence="hidden" w="62mm" x="1.403mm">
+                  <ui>
+                     <textEdit>
+                        <border>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <text maxChars="35"/>
+                  </value>
+                  <bind match="dataRef" ref="$.WA_HEADER_DETAILS.NAME1"/>
+                  <desc>
+                     <text name="Schema Annotation">Name 1</text>
+                  </desc>
+                  <caption>
+                     <value>
+                        <text xliff:rid="9EB34DF7-8FA3-450C-90D0-151B96143E86">Name 1</text>
+                     </value>
+                  </caption>
+               </field>
+               <field access="readOnly" h="9mm" id="floatingField019169" name="STREET" presence="hidden" w="62mm" x="1.403mm">
+                  <ui>
+                     <textEdit>
+                        <border>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <text maxChars="80"/>
+                  </value>
+                  <bind match="dataRef" ref="$.WA_HEADER_DETAILS.STREET"/>
+                  <desc>
+                     <text name="Schema Annotation">Char 80</text>
+                  </desc>
+                  <caption>
+                     <value>
+                        <text xliff:rid="33241BC6-C052-42CA-A7BD-F06FFBE8D423">Char80</text>
+                     </value>
+                  </caption>
+               </field>
+               <field access="readOnly" h="9mm" id="floatingField015724" name="CITY1" presence="hidden" w="62mm" x="1.403mm">
+                  <ui>
+                     <textEdit>
+                        <border>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <text maxChars="40"/>
+                  </value>
+                  <bind match="dataRef" ref="$.WA_HEADER_DETAILS.CITY1"/>
+                  <desc>
+                     <text name="Schema Annotation">City</text>
+                  </desc>
+                  <caption>
+                     <value>
+                        <text xliff:rid="42D714E3-76BB-4E0E-AC48-A232D8522342">City</text>
+                     </value>
+                  </caption>
+               </field>
+               <field access="readOnly" h="9mm" id="floatingField011478" name="POST_CODE1" presence="hidden" w="62mm" x="1.403mm">
+                  <ui>
+                     <textEdit>
+                        <border>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <text maxChars="10"/>
+                  </value>
+                  <bind match="dataRef" ref="$.WA_HEADER_DETAILS.POST_CODE1"/>
+                  <desc>
+                     <text name="Schema Annotation">City postal code</text>
+                  </desc>
+                  <caption>
+                     <value>
+                        <text xliff:rid="D81AAD84-91CA-4F26-BC3D-F11BE45D3199">Postl Code</text>
+                     </value>
+                  </caption>
+               </field>
+               <field access="readOnly" h="9mm" id="floatingField029358" name="TIME_ZONE" presence="hidden" w="62mm" x="1.403mm">
+                  <ui>
+                     <textEdit>
+                        <border>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <text maxChars="6"/>
+                  </value>
+                  <bind match="dataRef" ref="$.WA_HEADER_DETAILS.TIME_ZONE"/>
+                  <desc>
+                     <text name="Schema Annotation">Address Time Zone</text>
+                  </desc>
+                  <caption>
+                     <value>
+                        <text xliff:rid="DD1DC4A4-77C7-4D18-A14B-97EB91A0B9E1">Zone</text>
+                     </value>
+                  </caption>
+               </field>
+               <traversal>
+                  <traverse operation="first" ref="G0[0]"/>
+                  <traverse ref="IT_FINAL[0]"/>
+               </traversal>
+               <field access="readOnly" h="9mm" id="floatingField026962" name="LV_PAY_STR" presence="hidden" w="62mm" x="1.403mm">
+                  <ui>
+                     <textEdit>
+                        <border>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.LV_PAY_STR"/>
+                  <caption>
+                     <value>
+                        <text xliff:rid="BF7438C1-83A5-4BC2-83EE-3B9AEB81615D">LV_PAY_STR</text>
+                     </value>
+                  </caption>
+               </field>
+               <draw h="87.85pt" name="G0" w="90pt" x="240.352mm" y="5.123mm">
+                  <value>
+                     <image aspect="none" contentType="image/bmp">Qk1+7gAAAAAAADYEAAAoAAAA+gAAAPQAAAABAAgAAAAAAAAAAAA8DwAAPA8AAAABAAAAAAAAAAAA
+AAAAgAAAgAAAAICAAIAAAACAAIAAgIAAAMDAwADA3MAA8MqmAAAgQAAAIGAAACCAAAAgoAAAIMAA
+ACDgAABAAAAAQCAAAEBAAABAYAAAQIAAAECgAABAwAAAQOAAAGAAAABgIAAAYEAAAGBgAABggAAA
+YKAAAGDAAABg4AAAgAAAAIAgAACAQAAAgGAAAICAAACAoAAAgMAAAIDgAACgAAAAoCAAAKBAAACg
+YAAAoIAAAKCgAACgwAAAoOAAAMAAAADAIAAAwEAAAMBgAADAgAAAwKAAAMDAAADA4AAA4AAAAOAg
+AADgQAAA4GAAAOCAAADgoAAA4MAAAODgAEAAAABAACAAQABAAEAAYABAAIAAQACgAEAAwABAAOAA
+QCAAAEAgIABAIEAAQCBgAEAggABAIKAAQCDAAEAg4ABAQAAAQEAgAEBAQABAQGAAQECAAEBAoABA
+QMAAQEDgAEBgAABAYCAAQGBAAEBgYABAYIAAQGCgAEBgwABAYOAAQIAAAECAIABAgEAAQIBgAECA
+gABAgKAAQIDAAECA4ABAoAAAQKAgAECgQABAoGAAQKCAAECgoABAoMAAQKDgAEDAAABAwCAAQMBA
+AEDAYABAwIAAQMCgAEDAwABAwOAAQOAAAEDgIABA4EAAQOBgAEDggABA4KAAQODAAEDg4ACAAAAA
+gAAgAIAAQACAAGAAgACAAIAAoACAAMAAgADgAIAgAACAICAAgCBAAIAgYACAIIAAgCCgAIAgwACA
+IOAAgEAAAIBAIACAQEAAgEBgAIBAgACAQKAAgEDAAIBA4ACAYAAAgGAgAIBgQACAYGAAgGCAAIBg
+oACAYMAAgGDgAICAAACAgCAAgIBAAICAYACAgIAAgICgAICAwACAgOAAgKAAAICgIACAoEAAgKBg
+AICggACAoKAAgKDAAICg4ACAwAAAgMAgAIDAQACAwGAAgMCAAIDAoACAwMAAgMDgAIDgAACA4CAA
+gOBAAIDgYACA4IAAgOCgAIDgwACA4OAAwAAAAMAAIADAAEAAwABgAMAAgADAAKAAwADAAMAA4ADA
+IAAAwCAgAMAgQADAIGAAwCCAAMAgoADAIMAAwCDgAMBAAADAQCAAwEBAAMBAYADAQIAAwECgAMBA
+wADAQOAAwGAAAMBgIADAYEAAwGBgAMBggADAYKAAwGDAAMBg4ADAgAAAwIAgAMCAQADAgGAAwICA
+AMCAoADAgMAAwIDgAMCgAADAoCAAwKBAAMCgYADAoIAAwKCgAMCgwADAoOAAwMAAAMDAIADAwEAA
+wMBgAMDAgADAwKAA8Pv/AKSgoACAgIAAAAD/AAD/AAAA//8A/wAAAP8A/wD//wAA////AP//////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////8AAP//////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////8AAP//////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////8AAP//////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////8AAP//////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////8A
+AP//////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////8AAP//////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////8AAP//////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////8AAP//////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////8AAP//////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////8AAP//////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////8AAP//////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////8AAP//
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////8AAP////////////////////////b29vYI9vb/////////////
+////9gj2///2//////////YIBwgI//////b/////////9ggI9v/29v/2CAj2///2////////////
+///////29vb29v////8ICOz29v/////2//b////2//8I7Aj29v/2//b2///2//YICP//////9gj2
+//////b////2/wgICP//9vb////2CAj29v//////9v//////9gcICPb/////9vb/9v//9gj29vb2
+////////9ggICPb///////////////////////////////////////////8AAP//////////////
+///////////2//ZSWgj/////////////////90mk////9vb////2B6NSUVKSrfb/////////////
+CFuSm/b29v8HUlL3///2///////////////////29v//////B6OSUlJTm/f2//b2////////96RS
+kVFb7Pb///b////2/whSUgn/9v//91Kk///29v/2////95pSm6T////2//8HWZv2///29v//////
+///3W1FSkpsH//b29v/29vb/91Gk//b29v////btWpJRklsH////////////////////////////
+//////////////8AAP////////////////////////b///9SUgj/////////////////90n3////
+9vb////1m0mbopuSkZv2////////////B1JSUgj///9bUlKa///2////////////////////9v//
+//+kUlJSkpKSUlKk9v/2//////8HklGSpJtSUuT2///2///2//abif//////90nk////9v/2///3
+UpmbUqT2//////8ISVv2/////////////6SSUZqkmkpS5P/29v//9vb/7Ymj//b///b/9ptJkZrj
+m5Ga9v////////////////////////////////////////8AAP//////////////////////////
+//9SUgj/////////////////90mk//////////abSff2///2W1Kk////////////m1Jakuz//wiS
+UlJRCP//////////////////////9v///9uJUpsH//8JrZtJB/b29v///whSUvf////2mlHj///2
+////9ghaSf////b/91Ls////9v////+Skvf/////9v////8ISVv2////9vb/9v/27VGaB////+1S
+Sfb/////9vb/7ZKj/////////wek9v///6RJB///////////////////////////////////////
+//8AAP/////////////////////////2//9Skgn/////////////////90mk//////////dJmv//
+////CJJSCP/////////2Upr1kpr//+1R9+xJ7f/////////////////////2////B1KS5Pb/////
+//UH//b//////6xRpP//9vb/B1GS//b2//////aSSf//9v//94qk//////////+Skgf////2////
+//8ISZv2////9vb///8IkpLt//////+lUWP/////9v//7VKk//b2///2////////B5tS9///////
+//////////////////////////////////8AAP////////////////////////////+Skvb/////
+////////////7Unk////9v///6NJB///9v//9ptSB//////////tiZv/m5EJ/9uR9QdSW/b/////
+////////////////9v//o5taCP//////////9v/2////9qNRB///9vb/9pqJB//2/////wiSiQn/
+////95Ks////////9gmSUgf/////9v////8IiZv2///29vb2///2kpMI//////8HUpr2///29vb/
+7VGk////////////9vWjmlJJ9v////////////////////////////////////////8AAP//////
+///////////////////2/wmSkuz2CPb29vb/////////7Un3/////////5JJB/b/9v//CZuS7P//
+//////+bUe3/7IrcCJKR///bUgf////////////////////////2W4rk////////9v////b/9v//
+9qNSB//29vb//5uJB//2/////wiSkf//9v//95Lk///29v////aSkgj/////9v////8IiZv2///2
+9vb2//8Hmpv2//////8HUlP/////////7ZKk//b////////1kkmaUaMH////////////////////
+//////////////////////8AAP///////////////////////////wmSkZJSUVJSUgf/////////
+90mk//////b//6RJo///////9pqSB////////whSkgj/CZKa7FKa//+sUqT/////////////////
+//////8IW1IH////9vb/9vb29v//////9lua7f//9vb/CJuJ9v///////wiaUfb/////5FHk////
+9vb///+SUgf////2//b///8IiZIH////9vb///8IkpII///////3UZv2////////7ZKk//b////2
+/wiaUpr1B/b/9v////////////////////////////////////////8AAP//////////////////
+//////b///aSkpJSUpJSUgf/////////90mk//////b//wiJUvb/////7ZKb9vb//////wdSm/b/
+9puSkVHs///1SZv/////////////////////9v8IUlIH////9vb2////9vb2//b///dSm///////
+pJKS///2/////wiSkvf////2m5L3//b29v///wmamuz///////////8IiZKS////////////pEmk
+/////wmbkff/////9v//7ZKk//b//////+xRpP//////////////////////////////////////
+//////////8AAP////////////////////////b///aSkgj/////////////////90mk//////b/
+///kkpr39gmkkVIH/////////6RJ7f//9qySklL2///2klII///////////////////29vb2m5L3
+//////b///b2//////////akUlL39fWbkVL2///////2/wiSkpKkB/Wkm1EI//b/9vb29gmSkuwJ
+Cfb///b///8IiZpJm6QI9v//////CJJR2wkIB5tSkv/2////9v//7VKk//b///b///ZSkgf29ffk
+//////////////////////////////////////////8AAP//////////////////////9vb2//9S
+kgn/////////////////90mk//////b2///2o0lSkVJJkvX/9vb/////B1JS9v///weSiaT/////
+m0mk///////////////////2///2pJKbCf//////9v////b///b////2m0lRUpJRW/X/9v/////2
+/wiSSQeRUVGKUvf////29vb/7pKSkZJSm/b/9vb///8HUpoIUlGs//////////WaUVKSSkmbCP/2
+9v//9v//7VKk//b///////asSZKSUklS//////////////////////////////////////////8A
+AP//////////////////////9vb///+Skvb/////////////////90mk////9v/2/////wejm5vt
+CP/////2////B5ut//////ak5Af/9v//CJv3////////////////////////B5KS5P///////wgH
+//b29v////b/9vWjo5vj9v/2///////29vbkm/8IpFubB/b2//b29v//B+OSmtuk5Pb/9v/////2
+pKz2CKQH////9v/2///291ubnO32///29v//9v//7VGk//b///b29v/2B6Sbm/cI////////////
+//////////////////////////////8AAP////////////////////////////+SkuwJCQkICAj2
+9v/2//b/90mk///////2////////////////////////////////////////////////////////
+///////////2//////dRkpsH9v/27JtS9/////b/////////////////////////////////////
+//////b29v////+ZWgj///b///////////////////////////////////////////b/9v//90nj
+///2//////////////////////////////////////////////////////////8AAP//////////
+//////////////////9SUZKSkpJRUVL2////////90mk////////9v//////////////////////
+////////////////////////////////////////////9v////bsUlJSUVJSUZGaB/b////2////
+///////////////////////////////////////////2//+SUgf///b/9v//////////////////
+//////////////////////b2////7VKj////////////////////////////////////////////
+//////////////////8AAP////////////////////////////abkpqamppaW5v2////9v//7Umk
+////////////////////////////////////////////////////////////////////////////
+9v/////29ZtSSVGRkpz2////////////////////////////////////////////////////////
+//+bmwj/////////////////////////////////////////////////////90mk////////////
+//////////////////////////////////////////////////8AAP//////////////////////
+//b////2//b29vb29vb/////9v//91Ks////////////////////////////////////////////
+////////////////////////////////9v//////9v/2CAcH9v////8I////////////////////
+///////////////////////////////////29v//////////////////////////////////////
+////////////////9VLj////////////////////////////////////////////////////////
+//////8AAP////////////////////////b///////////////////b/////////////////////
+////////////////////////////////////////////////////////////////9v//9v//////
+//////b/////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////9v////b/////////////////////
+//////////////////////////////////////8AAP/////////////////////////2////////
+////////9vb/9v////////b/////////////////////////////////////////////////////
+////////////////////9v//9v/29v//9v/2//b2///29vb2////////////////////////////
+////////////9vb29v////////////b29vb2//////////////////////////////////////b/
+9v/////////2//////////////////////////////////////////////////////////8AAP//
+////////////////////////9vb/9vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb2
+9vb2//b///b///b/9v//9v//9v//9v//9v//9v//9v//9v//9v/29vb29vb29vb29vb29vb29vb2
+9vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb///b29vb29vb29vb29vb/
+9v//9v//9v//9vb29vb29vb29vb29vb29vb2////9vb29vb29vb29vb29v//9vb/////////////
+//////////////////////////8AAP////////////////////////b29v/29vb29vb29vb29vb2
+9vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb2
+9vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb2
+9vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb2
+9vb29vb29vb29vb29v////////////////////////////////////////8AAP//////////////
+//////////b///aknJydnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2enp6enp6enp6enp6enp6enp6e
+np6enp6enp6enp6enp6enp6enp6enp6enp6enp6dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnp6e
+np6enp6enp6enZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZWVnZ2enp6enp6enp6e
+np6enp6enp6enp6enp6enp6enp6enp6enZ2dnZ2dnZ2dlZ1c//b/////////////////////////
+//////////////8AAP//////////////////////////9vYH9u/m5ubm5ubm5ubm5ubm5ubm5ubm
+5ubm5ubn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fm5ubm
+5ubm5ubm5ubm5ubm5ubm5ubm5ubm5+fn5+fn5+fn5+fn5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm
+5ubm5ubm5ubm7/b2pubn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5ubm5ubm5ubm
+9u/39vb///////////////////////////////////////8AAP//////////////////////////
+//////b/////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////b///////////////////b2////////////////////////////
+///////////////////////2////9v//9v//9v//////////////////////////////////////
+//8AAP//////////////////////////9vb/////////////////////////////////9v//////
+///////////////////////////////////////////////////////////////29vb29vb2////
+//////////////////////////////////////////////////////////b/////////////////
+///////////////////////////////////////////////////////29vb/9vb/9v//9v//////
+//////////////////////////////////8AAP////////////////////////b/////////////
+///////////2///////////29vb/////////////////////////////////9v//////////////
+////////////////9vb2///29v/////2//////////////b2////////////////9vb/9v//////
+//////////////////////////////b/////9v/////////////////2///2//////////////b/
+9v////////b////2//////b/9v////////////////////////////////////////8AAP//////
+///////////////////////29vb29vb29vb29vb29vb29vb2///////29v/////2//b/////////
+///////////////////2////////9vb29vb29vb/////9vb2///2//b2//b29vb29vb29vb29vb2
+//////////////////////b///////b29vb29vb29v////////////////////b/9v//////////
+9vb29vb2////9v/////////////////2////////9v/29vb29vb29vb2////////////////////
+//////////////////////8AAP/////////////////////////2//9bmpqbm5ubm5ubm5ubm5qa
+m5ubm+Pj7QcJ9v/////////////////////////////////2///////2CPWkm5KSkpJSWpvj7Qf2
+//////b////2//////dSm5ubm5ubm1Kk///////////////////////2////9ptbkpubmlqbm///
+///29v/////////////////////2CPebm5KSkZKbpAj2////9qSkpKSkpKSs9/b/9v////////+b
+Wlubm5ubmpqS9v////////////////////////////////////////8AAP//////////////////
+//////////9SkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSm6P1//////b/////////////////////
+//////////WbkpKSkpKRkZKSkpKRkZKbpPb////29vb2/////6SSkpKSkpKSkpL3////////////
+////////////////5EmSkpKSklFRUgf///b2//////////////b//////webUpKSkpKSkZGSmlKa
+B///CEmSkpKSkpJSSfb/9v////////9SkpKSkZKRkpJJCf//////////////////////////////
+//////////8AAP////////////////////////////9SkpKSkpKSkpGRkZGRkZGRkpKRkZGRkpKS
+kpJRSe329v//////////////////////////9vYJUlGSkZKRkZGRkZKSkZGRkpGSkprj9v/2//b2
+9v///6SSkpKSkpKSkpLk////////////////////9v/////2kpqRkZKRkpKSkpr///b29v//////
+///////////2pIqSkpKSkpKSkpKRkZJRUOT/B5KSkpKSkpKSkfb/9vb///////+SkpKSkpKRkpKK
+Cf////////////////////////////////////////8AAP////////////////////////////+a
+kpKSkpKSkpGRkZGRkZGRkZGRkZGSkpGRkpKRmZKa7fb/////9vb/////////////////9vdRkpKS
+kZGRkZGRkZGRkZGSkZKSkpKSmwj///b29v///6WSkZGRkZGSkpLk///2////////////////9v//
+///tkpGSkpKRkZKSklEI///29v///////////////whbkZKSkZKRkZGRkpGRkZGRmpHtB5KSkpKS
+kpGSkfb/9vb2//////+SkZKRkZGRkpGRCP////////////////////////////////////////8A
+AP////////////////////////////+akpKRkZGRkZGRkZKRkpGRkZGRkZGRkZGRkZGSkpKSkpsI
+////9vb////////2//b////2m5GSkZKRkZGRkZKSkZGRkZGRkZKRkpKSkpLt//b29v///6ySkZGR
+kZGRkZLk////////////////////9vb2///jkpGRkZGRkpGSkpLt///29v/2////////////9puS
+kpGSkZGRkZGRkZGRkZGRkZGSmpGRkZGSkpGRkfb/9vb2//////+SkpGRkZGRkpGSCf//////////
+//////////////////////////////8AAP////////////////////////////+akpGRkZGRkZGR
+kZGRkZGRkZGRkZGRkZKSkpKRkZGRkpKS7P//9vb/////////9v///wibkpqRkZKRkZGSkpGRkZGS
+kpKZkpGRkpKRkZpJB//29v///6ySkZGRkZGRkZLk////////////////////9vb//wiSkZGRkZGR
+kpGRkpKb9vb/9vb/////////////pJKSkZGRkZKRkZKSkpGRkpKRkpKRkpGRkZGRkZGRkfb/9vb2
+//////+SkpGRkZGRkZKKCf////////////////////////////////////////8AAP//////////
+//////////////////+akpGRkZGRkZKSkZGSkpqSkZGRkZGRkZGRkZGRkZGRkZKSkqT/////////
+////9v//9qSSkZKRkZGRkZKRkZKSkpKRkpKSkZKSkZGSkpLt///29v///6ySkZGRkZGRkZLk////
+////////////////9vb//+NRkZGRkZGRkpGSkpKSB///9vb///////////8JUpKSkZKRkZGRkZGR
+kpKRkpKSkZGSkpGRkZGRkZGRkfb///b2//////+SkpGRkZGRkZKKCf//////////////////////
+//////////////////8AAP////////////////////////////+akpGRkZGRkZKRkZKSkpKSkpGR
+kZGSkZGRkZGRkZGRkZGRkpH39v/////////2//b/91KRkZGSkpGRkpKSkpKSkpqakpGSkpKSkZGR
+iez2/////////6ySkpGRkZGRkZHk///2////////////////9v//9pKSkZGRkZGRkZGSkpKS5P/2
+///2//////////+kkpKRkZGSkZGSklGSkpubkpKSkpKRkZGRkZGRkZGRkfb///////////+SkpGR
+kZGRkZKKCP////////////////////////////////////////8AAP//////////////////////
+//b///+akpGRkZGRkpqSkpKSkpKSkpKSmpqSkpKSkpKSkZGRkZGRkpKSB/////////////8JkpKR
+kZGSkZGSkZGbpAf2//b2CAekm5KSkpGR5P/////2/////6ySkpKRkZGRkZHk////////////////
+////////7ZKRkZGRkZGRkZGSkZKSkvb/9v////////////+SkpGSkZGSkZpRkqQJ9vb/9gj3kpKS
+kZGRkZGRkZKRkfb///////////+SkpGRkZGRkZKKCf//////////////////////////////////
+//////8AAP////////////////////////b///+akpGRkZGRkpKSCQn/9vb29vYJB/f3o5KRkZKS
+kpGRkZGakZJRkwj///////////+bUZGSkpKRkZKSkuQI////////////9qySkpLk//b2///2////
+/6ySkpKRkZGRkZHk//////////////////////8Jm5KRkZGRkZGSkZGRkpKSkpv///b29v//////
+/wiSkpGSkZGSkZJR9///////////CJqRmpGRkZGRkZKRkfb///////////+SkpGRkZGRkpGKCf//
+//////////////////////////////////////8AAP////////////////////////////+akpGR
+kZGRkpKSCf//////////////9gftm5KSkpKRkZKRkZKSkqP////29vb//wmRkpGRkZKSkZKR7fb/
+//////////////8HWqP///b2//////b2/6SRkpKRkZGRkZLk//////////////////////8HkpKS
+kZGRkZGRkZGRkZGSkpL2///2//////////eSkpKRkZGRkZKa///////29v///wibkpGRkZGRkZGS
+kfb///////////+SkpGRkZGRkZGKCP////////////////////////////////////////8AAP//
+//////////////////////////+akpKRkZGRkZKSCf//////////////9vb/CKRRkZKakpGSkpKS
+kpIH///29v////eSkpGRkpGRkpLs//////b/9v//////////9vb///b29v//9vb2/6ySkpKRkZGR
+kpLk///////////////////////tkpKSkZGRkZGRkZGRkZGRkpr1////9v////////eSkZKRkZGR
+kZHj//////b2//b////kkZKRkZGRkZGSifb///////////+SkpGRkZGRkZKKCP//////////////
+//////////////////////////8AAP////////////////////////////+akpKRkZGRkZGSCf//
+///////////////////kkpGRkZGSkZKSkpKk//b29v//9pqSkZGRkpGRmpr2////////////////
+///////2////////9vb2/6yRkpKRkZGRkpLk//////////////////////abkpKSkZGRkZGRkZGR
+kZGRkpKk////9v////////eSkZGRkZGRkZGk///////29vb2//8IUpKSkZGRkZKSifb/////////
+//+SkpGRkZGRkZKKCP////////////////////////////////////////8AAP//////////////
+//////////////+akpKRkZGRkZKSCf//////////////9v//////95KSkpGRkZKSkpKSCP//9v//
+9pKSkZGSkZKRku3///////////////////////////////////b2/6yRkpKRkZGRkpLk////////
+//////////////WSkZKRkZGRkZGRkZGRkZGRkpKaCP////////////VSkpGRkZKSkZqS9v//////
+//b2///2m5KSkpKSkpKSifb///////////+SkpGRkZGRkZKKCP//////////////////////////
+//////////////8AAP////////////////////////////+akpKRkZGRkZKSCf//////////////
+/////////5KZkpGRkZGRkpKaB///9v//CJKSkpGRkpKRkuwHBwcHBwcHBwcHBwcHBwcHB+7tB/X1
+9Qft9v/2/6SSkpKRkZGRkpLk/////////////////////5qSkZKRkZGRkZGRkZGRkZGRkpFR9f//
+/////////wiSkpGRkZGSkpKSmwn/////////////m5KSkpKSkpKSifb///////////+SkpGRkZGR
+kZKKCP////////////////////////////////////////8AAP//////////////////////////
+//+akpKRkZGRkZKSCf//////////////9vb///b2/wmSkZGRkZGRkZKRpPb/////B5KSkZGRkpKS
+kpKSkpKKkYqSkpKSkpJSkZKSipKSkpKSkpKS9////6SSkpKRkZGRkpLk////////////////////
+CZGRkZGRkZGRkZGRkZGRkZGRkpGSm/b///////////+jkpGRkZGSkpGSSZKc7Pf39/f37fTskpKS
+kpKSkpKSifb///////////+SkpGRkZGRkZKKCP//////////////////////////////////////
+//8AAP////////////////////////////+akpKRkZGRkZKSCP//////////////9v/29vb2///j
+kZGRkZGRkpGRm/b/////B5KSkpGRkpKRkZGRkpKSkpKSkZGRkZGSkpKSkpKRkZGRkZKS9////6SS
+kpKRkZGRkpLk////////////////////5JmRkpGRkpGRkpGRkpKSkZGRkZKSkfX////////////3
+kZKakZKSkZKSmpKSkpKSkpKSkpKRkZGRkZKRkZKSifb///////////+SkpGRkZGRkZKKCP//////
+//////////////////////////////////8AAP////////////////////////////+akpKRkZGR
+kZKSCP////////////////b29vb2///skZKRkZGRkZGSkvb/////B5KSkpGRkZGSkpGRkZGRkZGR
+kZGRkZGRkZGRkpKRkZGRkZGS9////6ySkpKRkZGRkpLk///////////////////2mpKRkZGRkZKR
+kpqkkpKSkZKRkpGSkuP////////////2mpGSkpGRkZGRkpGRkZGRkZGRkZGRkZGRkZGRkZKSifb/
+//////////+SkpGRkZGRkZKKCP////////////////////////////////////////8AAP//////
+//////////////////////+akpKRkZGRkZKSCP////////////////b29vb2///2k5KRkZGRkZGS
+kuz/////95KSkZKakZGRkZGRkZGRkZGRkZGRkZGRkpGRkZGRkZGRkZGS9////6ySkpKRkZGRkpLk
+///////////////////3kpGRkZGRkZqRkaz/mpKSkZKRkZGSkpH/////////9v//CONRkpKSkpGR
+kZGRkZGRkZGRkZGRkZGRkZGRkZGSifb///////////+SkpGRkZGRkZKKCP//////////////////
+//////////////////////8AAP////////////////////////////+akpKRkZGRkZKSCP//////
+//////////////b29v/2m5GRkZGRkZGSkvf/////B5KSkZGRkZGRkZKRkZGRkZGRkZGRkZGRkZGR
+kZGSkZGRkZGS7P///6SSkpKRkZGRkpLk//////////////////+bkpGRkZGRkpGRkgn/7ZKSkZKR
+kZGSkpL3////////9vb///bkUZKRkZGSmpGRkZGRkZGSkZGRkZGRkZGRkZGSifb///////////+S
+kpGRkZGRkZKKCP////////////////////////////////////////8AAP//////////////////
+//////////+akpKRkZGRkZKSCP/////////////////////29v//5JKRkZGRkZGRktv/////B5KS
+kpGRkZGSkpKSkpKSkpKSkpKSkpKSkpGSkpKRkZGRkZGS7P/2/6ySkpKRkZGRkpLk////////////
+/////wiSkpGRkZGRkpKSm///CZKRkpGSkZKRkpKa///////29v/////295OSkpKSkpGRkpKSkpKS
+kpKSkpGRkZGRkZKSifb///////////+SkpGRkZGRkZKKCP//////////////////////////////
+//////////8AAP////////////////////////////+akpKRkZGRkZKSCP//////////////////
+////////5JKRkZGRkpGSkpr/////B5KRkpGSkZKSktrsra2tra2tra2trffsrO2bkpqRkpGRkZGS
+7P/2/6ySkpKRkZGRkpLk//////////b//////+OSkpGRkZKRkpKS7P///5tRkZKSkZGSkZKR9///
+///29vb2//////8Hm5KSkpKSkpKSkpKSkpKSkZGRkZKSkpKSifb///////////+SkpGRkZGRkZKK
+CP////////////////////////////////////////8AAP////////////////////////////+a
+kpKRkZGRkZKSCP//////////////////////////95KRkZGRkpKSkZv/////CJORkZGSkZGRkuP/
+///////////////////jkZmRkZGRkZKS7f///6SSkpKRkZGRkpLk////////////////9puSkZKS
+kZGRkpKa9v///weRkpKRkZGRkZKSo/b///////b29vb/9v////8JB+339+Ss9/f39/fskpKSkpKS
+kpKRkfb///////////+SkpGRkZGRkZKKCP////////////////////////////////////////8A
+AP////////////////////////////+akpKRkZGRkZKSCP//////////////////////////7JKR
+kZGRkpKSkZv/9v//9puakZGRkpGSkZL2///29vb///////////aSkZKRkZKRkpKSB/////eSkpKR
+kZGRkpLk////////////9vb/7ZKSkZGRkZGRkZL3///2//+akpGRkZGRkZGSkgf///////b/9v/2
+///2///////////2///2////m5KSkZGRkZKRkfb///////////+SkpGRkZGRkZKKCP//////////
+//////////////////////////////8AAP////////////////////////////+akpKRkZGRkZKS
+CP//////////////////////////7JKRkZGRkpKSkpL//////+ySkpGRkpGRkpLk//////b////2
+9v///+ySkZGSkZGRUZKb9v////eSkpKRkZGRkpLk////////////9v//m5KRkZGRkZGSkpIH///2
+9v/3kpGRkZGRkZGSkvf///////b/9v/2//b///////////////b///8IkpKSkZGRkZGSkvb/////
+//////+SkpGRkZGRkZKKCP////////////////////////////////////////8AAP//////////
+//////////////////+akpKRkZGRkZKSCP//////////////////////////pJKRkZGRkZGSkpr/
+//b//wmSkZGRkZGRkpKS7f/////2////////B1KSkpGSkZKSkpuj//////eSkpKRkZGRkpLk////
+////////9v8HkpKRkZGRkZGSkpv2////9v8ImpGSkZGRkZGSkpv///////b2//b/CKSk9v//////
+///////////tkZKRkZGRkZKSmvb/9v////////+SkpGRkZGRkZKKCP//////////////////////
+//////////////////8AAP////////////////////////////+akpKRkZGRkZKSCP//////////
+////////////9v/2m5GRkZGRkZGSkqT///b///+aUZKSkZKRkZKRUu32//////////8Im5KSkZKR
+kZGRkkkJ//b//6ySkpKRkZGRkpLk////9v////////+jkpGRkZGRkZKSSvf///b/////rJGSkZGR
+kZGSklIJ////9vb2////pFGSo+3//////////////wibkpGRkZGRkZKS4/////////////+SkpGR
+kZGRkZKKCP////////////////////////////////////////8AAP//////////////////////
+//////+akpKRkZGRkZKSCP////////////////////////8ImpGRkZGRkZGSkuz///b2//8JkZKS
+kZGRkZGaklGb7Qn2////B/eSUpKSkZKRkpGRkpv///b2/6SSkpKRkZGRkpLk////9vb///////ab
+kpKRkZGRkZKSkQj///b/////B5GSkZGRkZGRkpGb9v//9vb///8HkZGSkpKb9wf29v/////2B5tR
+kZGRkZGRkZKS7P////////////+SkpGRkZGRkZKKCP//////////////////////////////////
+//////8AAP////////////////////////////+akpKRkZGRkZKSCP//////////////////////
+///tmpGRkZGRkZGSkgn///b/////pFKSkpGSkpKRkpKakpKa25uSkpKSkpKRkpGSkZJRUgj///b2
+/6SSkpKRkZGRkpLk////9vb2/////+2SkpGRkZGRkpKSo///9v//9v//9pqSkpGRkZGRkpKSCP/2
+9vb//wmakpKSkpKSkpKbpOT396ObklKSkZGRkZGRkpKSCP/2//////////+SkpGRkZGRkZKKCP//
+//////////////////////////////////////8AAP////////////////////////////+akpKR
+kZGRkZKSCf/////////////////////////kUZqRkZGRkZGSkgj/////////9qOZUZKRkZGRkZGS
+kpKSkpKSkZGRkZKRkZGRkZqSpP////b2/6SSkpKRkZGRkpLk//////b29v///9uSkZGRkZGSkpKS
+CP///////////+SSkpKSkZGSkpKS7P//9vb//+SSkZGRkZGSkpGSkpKSkpKSkpKRkZGaiZGRklKj
+9v//9v////////+SkpGRkZGRkZKKCP////////////////////////////////////////8AAP//
+//////////////////////////+akpKRkZGRkZKSCf/////////////////////2//aSkZKRkZGR
+kZKSm/b///b/9v///whSmZKSkZGRkZGRkpKRkZGRkZGakZGakZGRmlLk//b///b2/6ySkpKRkZGR
+kpLk//////b2////CZKSkZGRkZGSkZKb///2//////////+RkpKSkpGSkpKSmvb///b/90qSmpKS
+kpGRkZGRkZGSkpKSkpKRkZKRmpqSklIH////9v////////+SkpGRkZGRkZKKCP//////////////
+//////////////////////////8AAP////////////////////////////+akpKRkZGRkZKSCf//
+///////////////////2/+SSkpGRkZGRkZKS9//29vb/9v/////2kpKRkpGRkZGRkZGRkZGRkZGR
+kZGRkZGSkuz2///2//b2/6ySkpKRkZGRkpLk////////////pEmRkZGRkpGSkZLt///29v//////
+9v+kkpKSkpGRkZGSkQf////295uSUpGRkZGRkZGRkZGRkZKSkpKSkZGSkYmSUff///b29v//////
+//+SkpGRkZGRkZKKCP////////////////////////////////////////8AAP//////////////
+//////////////+akpKRkZGRkZKSCf//////////////////////9ZGSkZGRkZGSkpKSCP////b2
+9v//////9veSkpmRkZGRkZGSkpKSkZGRkpGSkpKS9/////b///b2/6ySkpKRkZGRkpLk////////
+9v/2kZGRkpGRkZKSkpII////9v////b///8HkpKSkZGRkZGSkZv//////wejkpKRkpKRkZGRkZKS
+kpKSkpKSkpKRmpJSrPb////29v////////+SkpGRkZGRkZKKCP//////////////////////////
+//////////////8AAP////////////////////////////+akpKRkZGRkZKSCf//////////////
+//////8HUZqSkZGRkZGSkpKb9v//9vb29v/////2//8JkZGSkpGRkZGSkpKSkpKRkZKSSZsI//b2
+9v/2//b2/6ySkpKRkZGRkpLk////////9v/3kpqRkpKRkZKSkqT/////9v/////2///2m5KSkZKS
+kZGRkVIJ////////7JuSkpKSkpKSkpKSkpKSkpKSkpKSUVIH////9v/29v////////+SkpGRkZGR
+kZKKCP////////////////////////////////////////8AAP//////////////////////////
+//+akpKRkZGRkZKSCf//////////////////9geSkpKRkZGRkZGSkpL3///2////9v/2//b29v//
+/+2bkpKSkpKSkpKSkpKSkpKb7f/////2//b///b//6ySkpGRkZGRkpLk////////9v+bkpKRkZKR
+kpGSkgj////2///////2////7JKSkpGRkZGRkpLk///////2//8HpJqSkpKSkpKSkpKSkpKSkpKS
+pAn///////b2//////////+SkpGRkZGRkpKKCP//////////////9vb/9v//////////////////
+//8AAP////////////////////////////+SkpGRkZGRkZKSCf//9v////////////YH5JGSkpKR
+kZGSkpKSkpL2///////////////////////2B6Sbm5KSkYmRkpuj9wf2////////////9v///6yS
+kZGRkZGRkpLk///2/////weSkpGRkpGRkpKSmv//////////////////CFKRkpKRkZGRkZKa9v//
+9v////////YH7eObmpGRkZKRkZKbpAf2//////////////////////+SkpGRkpGSkpKKCf/29v//
+9v///wcH96T39wf/////////9v////////8AAP////////////////////////////+SkpKRkZGR
+kZKSCf////////////8J95qSkpKSkpGRkZGRkpGSUgf///////////////////////////b29vYJ
+CAgI9vb2////////////////9v///6ySkpGRkZGRkpLk///2//////eSkZGRkZKSkZKK9///////
+/////////////5uRkpGRkZGRkZKSCf//9v//////////////9vYICAkI9vb/9v//////////////
+//////////+SkpGRkpGSkpKKCP/2//b/9v/2rFJJkptSUZKaB///////9v////////8AAP//////
+//////////////////////+SkpKRkZGRkZGRo9vbm6Sk25ubkpGSkpKSkZKSkpGRkZGSkZGa5P//
+////////////////////////////////////////////////////////9v///6ySkZGRkZGRkZLk
+///2//b/9pKSkZGRkZGSkZKS9v/2/////////////////weRkZKRkZGRkZKSov////b/////////
+////////////////////////9v////////////////+SkpGRkZGRkpGKCP/29v/29qxSmwf2////
+9gekSff2///29v////////8AAP////////////////////////////+SkpKRkZGRkZGSkpKSkpKS
+kpKRkZGSkZKSkpKRkZGRkZGRkpKb9v////////////////////////////////////b///b29vb2
+9v//////////9v///6yRkZGRkZGRkZLk///29v//7JGRkZGRkZGSkpLj////////////////////
+//+akpKSkZGRkZGSkgj///b29vb2//b29v//9v//9vb29v//9vb29vb2//////////////////9S
+kZGRkZGRkZKK9v//////91L39v////b/////B0qj9v/2//////////8AAP//////////////////
+//////////+akpKSkZGRkZGSkZKSkZGRkZGRkpKRkZGRkZGRkZGRkZGSkZr2////////////////
+////////////////////9vb29v//////9vb2////////9v///6ySkZGRkZGRkZH3///29v//m5KR
+kZGRkZGSkpIH///2////////////9v////+jkpGRkZKRkZGRkuT///b29vb29vb////29vb/////
+////9vb////29v////////////////9SkZGRkZGRkZKKCf/////2Uvf//wcI////9ggI/wdS7f//
+//////////8AAP////////////////////////////+akpKSkpKRkZGSkZGSkZKRkZGRkZGRkZGR
+kpGRkZGRkZKRm//////////////////////////////2////9vb29v//9vb29vb2////////////
+9v///6ySkpGRkZGRkZH3////9v8IkZKRkZGRkZGSkqP2///2///////////29v////8IkpGakZKR
+kZGRkpL2//b29vb////29v/////29v/29vb/9v//9vb///////////////////+SkZGRkZGRkZKK
+Cf////ZSpP//B0lb9v//91GaCP/3kvb/9v////////8AAP////////////////////////b///+S
+kpKSkpKSkpGRkZGRkZGRkZGRkZGRkZKRkZKRkZKSkZr3////////////////////////////////
+////////9v//////////////////////9v///6SSkpGRkZGRmpLk////9v+kkpKRkZGSkZKSku3/
+///2///////////29v//////5JKRkZGRkZGSklHs///2////////////////9v//////////////
+//////////////////+SkZGRkZGRkZKKCf////dR9v//B0la9v8JklKs///2m5v///////////8A
+AP////////////////////////////9SkpKRkpKSkpKSkpGRkZGRkZGRkZGSkpKSkpGSkpmRmuz/
+////9vb///////////////////////////////////////////////////////////b///eSkpKR
+kZGRkpL3//////abkpKRkpGSkZKSk/b////2////////////////////9ZKSkpKRkZGRkZKb//b2
+9v////////////////////////////////////////////////+SkZKRkpGSkpKKCf///5ub////
+B1Gb///sUpII////5FL///////////8AAP////////////////////////b2//+ampKRkpKSkpKS
+kpKRkZGRkZGRkZGRkZGSkpKSUZIH////////9v//////////////////////////////////////
+////////////////////9vb//6SSkpKSkpKSkpHk/////+2SkpGSkpGRkpKSpP//9v/2////////
+/////////////5uSUZKSkZGRkZJSCPb/////////////////////////////////////////////
+//////+SkpGSkpKRkZKKCP//9lL3////B0la9vabkff/////91L2//////////8AAP//////////
+//////////////////+SkZGSkpKSkpKSkpKSkpKSkpKSkpKSklGSkpukB//////////2////////
+////////////////////////////////////////////////////9v///6ySkpKSkpKSkpLk////
+9ptSkpKSkZKSklFRCP//9vb2/////////////////////+1SkpKSkpKSklJS9///////////////
+//////////////////////////////////////9SkpKSkpGSkpKKCP//9lq1////B1KSm5uJkgf/
+////CFII//////////8AAP////////////////////////b29v+aipGJkpKSkpKSkpKSkpKSkpKJ
+kZKTnKz3CPb2//////////////b/////////////////////////////////////////////9vb/
+////////9vb//6yJkpKSkpKSiZH3////90lKiZKJkZJRiUmS////9vb2////////////////9v//
+/wdSSpKSkpKSipFRUvb///////////////////////////////////////////////////ZRiZKK
+kZKKkoqRCP//9lL3////9Uqa4+zkk1Ls////CFII//////////8AAP//////////////////////
+//b///8J9gkJCQkJCQkJCQkJCQkJCQn29v/////////////////////2////////////////////
+///////////////////////////29vb//////////////wcH9QkJCQkJCfUH////9gkJ9gn2CQkJ
+9gn29v//9vb2///////////////////////2CQkJCQkJCQgI9gj/////////////////////////
+//////////////////////////YHCQkJ9QkJ9Qft//b/9lql////B0mb////CVJRCP//91L/////
+//////8AAP//////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////b29vb2////////////////////////////////
+///////////////////////////////////////////////////////////////////////////2
+/6xa9v//7VGb9v///5JRB///5FL/9v////////8AAP//////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////9vb////////////29vb/////////////////////////////////////9vb29vb/
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////wdSCP//B0la///27JJSB//2m6T///////////8AAP//
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////9v/29v/2////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////b///9bm/b/B0lR
+mlJSUpqs9v+sUv////////////8AAP//////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////9vb29v//
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+///////////////////////2Upv29gcHBwcHCPb//6xS9/////////////8AAP//////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////9vb///////b2
+9vb29vb29vb29vb29vb29vb29vb29vb2////////////////////////////////////////////
+///////////////////////////////////////////////////2////B1Kj9v/////////2pFL3
+//////////////8AAP//////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////2CAkJCAgI
+CAgICQkJCAkJCQkICPbv7+/v7+/v7+/v7+/v7+/v7+/v////////////////9vb29vb2////////
+////////////////////////////////////////////////////////////////////////////
+///////////2/wdSUvcHCP8ICPebUvX/////9v////////8AAP//////////////////////////
+///////////////////////////////////////////////////////////////////////2///2
+//b/////////9vb27OyjkpGJiYqKiYmJiYmJioqKioqSkZGKi5SVTVVWTk5OTk5OTk5OTk5OTk5O
+Tk5OTldXV5eXl5+f5ub29vb29vb2////9vb/////////////////////////////////////////
+///////////////////////////////////////////////291JSSUlRUlKkCP//////////////
+//8AAP//////////////////////////////////////////////////////////////////////
+////////////////////////////9vb2////////9gftpJqSkpKSkpKSkpKSkpKSkpKSkpKSkpKR
+kZKSUlNVVVZOTw8PT09PT09PTk9PT09OT09PT09OTk5OTk5OTU1WXp6e7+/2//b29v/29vb/////
+////////////////////////////////////////////////////////////////////////////
+//////YHBwcHBwj///b///////////////8AAP//////////////////////////////////////
+////////////////////////////////////////////////////////////9vb///////ako5qR
+kpKSkpGSkpKSkZKSkpKSkpKSkpKSkpKSkZKSklNTVVZOTw8PT09PT09PT09PT09PT09PT09PT09P
+T09PT09PTk5OVlZer+//9vb29v//9v//////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////8AAP//////
+////////////////////////////////////////////////////////////////////////////
+///////////////2//////YJmkmSkZGRkZGRkZKSkpGRkZKRkZGRkZGRkZGRkZGRkZGSkpJLS0xO
+Tk8PT09PT09PT09PT09PDw8PD09PT09PT09PT09PT09PT05WVU2f5/b29vb29v//////////////
+///////////////////////////////////////////////////////////////////2////////
+////9vb///////////////8AAP//////////////////////////////////////////////////
+///////////////////////////////////////////////////27ZuSkpKSkpGRkpKSkZGRkZGR
+kZGRkZGRkZGRkZGRkZGSkpGRkpGSk0tMTk5PT09PT09PT09PT09PT09PT09PD09PT09PDw9PT08P
+T09PTk4OTVan9vb2////////////////////////////////////////////////////////////
+///////////////2///////2//b29v////////////////////////8AAP//////////////////
+////////////////////////////////////////////////////////////////////////////
+/////wdbkpKSkpKRkZGSkZGSkZGRkZGRkZGRkZGRkZGRkZGRkZGSkpKRkZGSklNTVVZOT09PT09P
+T09PT09PT09PT09PT09PT09PT09PT09PT09PT09PTlZOVafv////////////////////////////
+///////////////////////////////////////////////////////////////////2////////
+//////////8AAP//////////////////////////////////////////////////////////////
+////////////////////////9v////////8J45GSkpKRkZKSkpKRkZGRkZGRkZGRkZGRkZGRkZGR
+kZGRkZGRkpKRkZGSkpJSU1VVTk8PD09PT09PT08PDw9PT09PT09PT09PT09PT09PT09PT09PT05P
+T06Xt/b29v/////2////////////////////////////////////////////////////////////
+//////////////////////////////////////////8AAP//////////////////////////////
+////////////////////////////////////////////////////////9v/2////9u2SkpGSkZGR
+kZGSkpKSkZGRkZGRkpKSkpGRkZGRkZGRkZGRkZGRkpGRkpKSkpKSUlNVVk5PTw8PT09PT08PT09P
+Tw9PDw8PT09PT09PT09PT09PT09PT09PT09OVp72//////b/////////////////////////////
+//////////////////////////////////////////////////////////////////////////8A
+AP//////////////////////////////////////////////////////////////////////////
+///////////////////2pJKSkpKRkpGRkZGRkpKRkZGRkZGRkpKSkpKSkpKSkpKSkpKSkpKSkpKS
+kpKSkpKSkpJLVVZOTk9PT09PT08PD09PT09PDw8PD09PT09PT09PT09PT09PT09PT09PVk5d7/b/
+9v//////////////////////////////////////////////////////////////////////////
+//////////////////////////////8AAP//////////////////////////////////////////
+/////////////////////////////////////////////////wibUZKRkZGRkpGRkZGRkZGRkZGR
+kZGSkZGSkpKSkpKRkZGRkpGRkZGRkZKSkZKKkpKSkpOTS0xOTk9PT09PT09OT09PT09PT09PT09P
+T09PTw8PT09PT09PT09PT09PT05WVab29v/29v//////////////////////////////////////
+//////////////////////////////////////////////////////////////8AAP//////////
+////////////////////////////////////////////////////////////////////////////
+////B5pJkpGSkpKRkZGRkZGRkZGRkZGRkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpGSkpNLS5KSkouL
+S0tVVk5OTU5PT05NTk9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1We9vb/9v//////
+////////////////////////////////////////////////////////////////////////////
+//////////////////8AAP//////////////////////////////////////////////////////
+///////////////////////////////////tkZKRkZKSkZGSkZGRkZGRkZGRkpKSkpKSkpKbpOTs
+9+wHBwcHBwfs7Ozs7Af3XFRNVVRUVEtMVE1NVqdnZmdenqamn56eXlZeXlaXTk5OTk5PT09PT09P
+T09PT09PTw9PT09PT05Vnvb/9vb/////////////////////////////////////////////////
+//////////////////////////////////////////////////8AAP//////////////////////
+////////////////////////////////////////////////////////////9v///wmSkpKRkZGS
+kpGRkZGRkZKRkpqRkZKSUZvtCf/////////////////////////2XVZOTlVVVU5OTk5WVvb29vb2
+9vb29vb29vb29vb29u/vplZWTk5XTk9PDw8PD09PT09PT09PT09OTp7v//b/////////////////
+////////////////////////////////////////////////////////////////////////////
+//////8AAP//////////////////////////////////////////////////////////////////
+///////////////2////9ZKSkpGRkZGSkpGRkZGRkpGSkZGSm+MHCf//////////////////////
+///////2Xk5PT09OTk9PTk5OVfb29vb2///////////29vb29vb2/wfv76ZWVk5OVw8PD09PT09P
+T09PT09PT02e9v/2////////////////////////////////////////////////////////////
+//////////////////////////////////////8AAP//////////////////////////////////
+//////////////////////////////////////////////////8IkpGSkZGRkZGRkZGRkZGRmpKS
+kpLt9v/////////////////////////////////2Xk9PTw8PDw9PT09OVfb29vb/////////////
+//////b29vb2//bv755ODg4PT09PT08PD09PT09PT09WXvb2////////9v//////////////////
+//////////////////////////////////////////////////////////////////////8AAP//
+////////////////////////////////////////////////////////////////////////////
+/////wmSkpGRkZGRkZGRkZGRkZGakZKS5Pb////////2///////2//////////////////b2Xk9P
+Tw8PDw8PD09OVfb/////////////////////////////9vb29vbnVlZPTk9PT09PT09PT09PTw5X
+Vp729v//////////////////////////////////////////////////////////////////////
+//////////////////////////8AAP//////////////////////////////////////////////
+////////////////////////////////////9puSkpGRkZGRkZGRkZGRkZKRkqMH////////9vb/
+////////////////////////9vb2Xk9PT09PT09PDw9OVfb/////////////////9vb/////9vb/
+///29vb/9u9WVk5PT09PT09PT09PTw9PVk2e//b/////////////////////////////////////
+//////////////////////////////////////////////////////////8AAP//////////////
+////////////////////////////////////////////////////////////////////7FGSkZKR
+kZGRkZKRkZGRkpKS7P//9v//9vb2////////////////////////////9vb2Xk9PT09PT09PD05O
+Vfb///////////b2//////////////b29vb////29v/vVU5PT0/5T09PT09PTw9PTlZN7///////
+////////////////////////////////////////////////////////////////////////////
+//////////////8AAP//////////////////////////////////////////////////////////
+///////////////2//////8JkZqRkZGSkpKSkpKRkpmSklIH////////////////////////////
+//////////////b2Xk9PT09PT09PT05OVfb////////////////////////////////////////2
+76ZVTw/5Tw8PTw9PTw9PT09PVvb29v//////////////////////////////////////////////
+//////////////////////////////////////////////8AAP//////////////////////////
+////////////////////////////////////////////////9v////aakZKRkZKSkpKSkpKRmpGS
+m/////////////////////////////////////////////b2Xk9PT09PT09PT09OVfb/////////
+////////////////////////////////9vavVk5PDw8PT09PTw8PT09PTlb29vb2////////////
+////////////////////////////////////////////////////////////////////////////
+//8AAP//////////////////////////////////////////////////////////////////////
+/////////6SSkpKRkpGRkpKRkZGZkpKb9v//////////////////////////////////////////
+//b2Xk9PT09PT09PT09OVfb/////////////////////////////////////////9vb2p1ZOT08P
+T09PT09PT09PTk6v9v//////////////////////////////////////////////////////////
+//////////////////////////////////8AAP//////////////////////////////////////
+//////////////////////////////////////b/B5KSkpGSkpKRkZGRkZGSkpv2////////////
+//////////////////////////////////b2Xk9PT09PT09PT09OVfb/////////////////////
+//////////////////////b29q9OTk9PT09PT09PT09PT05N//b2////////////////////////
+//////////////////////////////////////////////////////////////////8AAP//////
+///////////////////////////////////////////////////////////////////////2m5KR
+kZKSkZKRkZGRkZGRm/b/9vb///////////////////////////////////////////b2Xk9PT09P
+T09PT09OVfb/////////////////////////////////////////////9v+3TU1PT09PT09PTw8P
+Tw9Wnv/2////////////////////////////////////////////////////////////////////
+//////////////////////8AAP//////////////////////////////////////////////////
+///////////////////////////sUpKSkpKRkpGRkZGRkZFS9v//////////////////////////
+//////////////////////b2Xk9PT09PT09PT09OVfb/////////////////////////////////
+////////////9vb/p1ZOT09PT09PTw8PD09OTe//9v//////////////////////////////////
+//////////////////////////////////////////////////////8AAP//////////////////
+/////////////////////////////////////////////////////////wmSkpKSkpGRkZGRkZKR
+UZII//////////////////////////////////////////////////b2Xk9PT09PT09PT09OVfb/
+//////////////////////////////////////////////b29p5OV09PT09PTw8PDw8PTl72////
+////////////////////////////////////////////////////////////////////////////
+//////////8AAP//////////////////////////////////////////////////////////////
+/////////////+yRkZKSkpGRkZGRkZKSmuz/////////////////////////////////////////
+//////////b2Xk9PT09PT09PT09OVfb/////////////////////////////////////////////
+//b29vZWVk8PT09PTw8PDw9PT1bv9v//////////////////////////////////////////////
+//////////////////////////////////////////8AAP//////////////////////////////
+////////////////////////////////////////////CZqSkZKSkpGRkZGRklGSm///////////
+//////////////////////////////////////////b2Xk9PT09PT09PT09OVfb/////////////
+///////////////////////////////////29v/vVU5PD09PTw8PD09PT06e9vb/////////////
+//////////////////////////////////////////////////////////////////////////8A
+AP//////////////////////////////////////////////////////////////////////////
+7pKSkZKSkpGRkZGRkpGSB/////////////////////////////////////////////////////b2
+Xk9PT09PT09PT09OVfb/////////////////////////////////////////////////9vb/nk1O
+T09PT09PT09PT09W7///9v//////////////////////////////////////////////////////
+//////////////////////////////8AAP//////////////////////////////////////////
+///////////////////////////////2m5GSkpGSkpGRkZGSkpLk////////////////////////
+//////////////////////////////b2Xk9PT09PT09PT09OVfb/////////////////////////
+//////////////////////////b29l5OT09PT09PT09PT09On///9v/2////////////////////
+//////////////////////////////////////////////////////////////8AAP//////////
+//////////////////////////////////////////////////////////////8HkpGSkpGSkpGR
+kZGSkZsI//b///////////////////////////////////////////////////b2Xk9PT09PT09P
+T09OVfb////////////////////////////////////////////////////2/+9OT09PT09PT09P
+T09PTu//9v/2////////////////////////////////////////////////////////////////
+//////////////////8AAP//////////////////////////////////////////////////////
+///////////////2//+jkpKRkpGSkZGRkZGSku3///b/////////////////////////////////
+//////////////////b2Xk9PT09PT09PT09OVfb/////////////////////////////////////
+//////b////////29vaeTk8PT09PT09PT09PTq//9v//////////////////////////////////
+//////////////////////////////////////////////////8AAP//////////////////////
+///////////////////////////////////////////////2//aSkpKRkpGRkZGRkZKSW/b/////
+//////////////////////////////////////////////////b2Xk9PT09PT09PT09OVfb/////
+//////////////////////////////////////b/////////9v+vVU9PT09PT08PT09PTl729v//
+////////////////////////////////////////////////////////////////////////////
+//////8AAP//////////////////////////////////////////////////////////////////
+//////WSkpKRkpGRkZGRkZKSpP//////////////////////////////////////////////////
+//////b2Xk9PT09PT09PT09OVfb///////////////////////////////////////////b/////
+//b///b2XU9PT09PT09PT09PTlbv9v//////////////////////////////////////////////
+//////////////////////////////////////8AAP//////////////////////////////////
+/////////////////////////////////////6OSkpKRkpGRkZGRkZKaCP//////////////////
+//////////////////////////////////////b2Xk9PT09PT09PT09OVfb/////////////////
+//////////////////////////b2////////9vb/p05PT09PT09PT09PTlbn9vb/////////////
+//////////////////////////////////////////////////////////////////////8AAP//
+////////////////////////////////////////////////////////////////9v//9puSkZGR
+kpGRkZGRkZKj//////b///////////////////////////////////////////////////b2Xk9P
+T09PT09PT09OVfb///////////////////////////////////////////b29v////////b29k5P
+T09PT09PT09PT1Ze9vb2////////////////////////////////////////////////////////
+//////////////////////////8AAP//////////////////////////////////////////////
+////////////////////////CJKSkZGSkZKRkZGRkor1////9v//////////////////////////
+//////////////////////////b2Xk9PT09PT09PT09OVfb/////////////////////////////
+//////////////b29v/////////29l5OT09PT09PT09PT05W9vb/////////////////////////
+//////////////////////////////////////////////////////////8AAP//////////////
+////////////////////////////////////////////////////////7ZKSkZGRkZGRkZGRkpL2
+//////////////////////////////////////////////////////////b2Xk9PT09PT09PT09O
+Vfb/////////////////////////////////////////9vb29v//////////9udWT09PT09PT09P
+T09O7/b/////////////////////////////////////////////////////////////////////
+//////////////8AAP//////////////////////////////////////////////////////////
+////////////95KSkZGRkZGRkZKRkpr2///2////////////////////////////////////////
+//////////////b2Xk9PT09PT09PT09OVfb/////////////////////////////////////////
+//b/////////////9u9WTk8PT09PT09PT09Op///////////////////////////////////////
+//////////////////////////////////////////////8AAP//////////////////////////
+///////////////////////////////////////////2m5KRkZGRkZGRkZGSkuP///b2////////
+//////////////////////////////////////////////b2Xk9PT09PT09PT09OVfb/////////
+//////////////////////////////////////////////////ZeVg8PT09PT09PT09OXf//////
+////////////////////////////////////////////////////////////////////////////
+//8AAP/////////////////////////////////////////////////////////////////2///2
+m5KRkZGRkZGRkpGSUvf///b2////////////////////////////////////////////////////
+//b2Xk9PT09PT09PT09OVfb/////////////////////////////////////////////////////
+//////+mTk8PT09PT09PD09PVf/2////////////////////////////////////////////////
+//////////////////////////////////8AAP//////////////////////////////////////
+//////////////////////////////8IkpKRkZGRkZGRkpGSiQf/////////////////////////
+//////////////////////////////////b2Xk9PT09PT09PT09OVfb/////////////////////
+//////////////////////////////////////+vTk9PD09PT08PDw9XVfb2////////////////
+//////////////////////////////////////////////////////////////////8AAP//////
+//////////////////////////////////////////////////////////////8HkpGRkZGRkZGR
+kZKSkgj///////////////////////////////////////////////////////////b2Xk9PT09P
+T09PT09OVfb///////////////////////////////////////////////////////////+3Tg9P
+D09PT08PDw8OVe/2////////////////////////////////////////////////////////////
+//////////////////////8AAP//////////////////////////////////////////////////
+///////////////2//8HkpKRkZGRkpGRkZKSkvb///b2////////////////////////////////
+//////////////////////b2Xk9PT09PT09PT09OVfb/////////////////////////////////
+///////////////////////////vVU9PD09PT09PD08PVe/29v//////////////////////////
+////////////9v////////////////////////////////////////8AAP//////////////////
+//////b/9v/////////////////////////////////////////skpGSkZGRkpGRkZKSm/b///b/
+//////////////////////////////////////////////////////b2Xk9PT09PT09PT09OVfb2
+////////////////////////////////////////////////////////////VVdPT09PT09PT09P
+Ta//////9vb2////////////////////////////9vb29v//////////////////////////////
+//////////8AAP//////////////////////////9v//9v//////////////////////////////
+///2//bkkpGRkZGRkpGRkZKSm/b///b/////////////////////////////////////////////
+//////////b2Xk9PT09PT09PT09OVfb2////////////////////////////////////////////
+//////////////b/VVZPT09PT09PT09PVqf/9v////////////////////////////////b/9v//
+//////////////////////////////////////////8AAP/////////////////////////2////
+///////////////////////////////////////kkZKRkZGRkpKRkpKR4/////b/////////////
+//////////////////////////////////////////b2Xk9PT09PT09PT09OVfb2////////////
+//////////////////////////////////////////////b/Xk5PT09PT09PT09OVq//////////
+//////////////////////////////////////////////////////////////////////////8A
+AP////////////////////////b2///////////////////////////////////////////skZKR
+kZGRkpKRkZKS4/////b///////////////////////////////////////////////////////b2
+Xk9PT09PT09PT09OVfb2////////////////////////////////////////////////////////
+//b/lk5PT09PT09PTw9PTeb/////////////////////////////////////////////////////
+//////////////////////////////8AAP/////////////////////////2//8ICPb29vb29vb2
+9vb29vb29vb29vb29vb29vb2CAnjkZGRkZGRkpKRkZKS4v////b/////////////////////////
+//////////////////////////////b2Xk9PT09PT09PT09OVfb2////////////////////////
+//////////////////////////////////b/lk5PD09PT09PTw9XTp4H9vb29vb29vb29vb29vb2
+9vb29vb29vb29vb29ggH//////////////////////////////////////////8AAP//////////
+///////////////2/wikUlubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm1pam5uakpGRkZGRkpKSkZKS
+4/////b///////////////////////////////////////////////////////b2Xk9PT09PT09P
+T09OVfb2//////////////////////////////////////////////////////////b/nk5PD09P
+T09PT08PTlRTk1pbW5ubm5ubm5ubm5ubm5ubm5ubm5ubm1ubUlqb9v//////////////////////
+//////////////////8AAP////////////////////////b///YICAgICAgICAgICAgICAgICAgI
+CAgICAgICAgICAjkkpGRkZGRkpKRkZKS4/////b/////////////////////////////////////
+//////////////////b2Xk9PT09PT09PT09OVvb/////////////////////////////////////
+//////////////////////b/nk5PT09PT09PT09PTqYIBwgICAgICAgICAgICAgICAgICAgICAgI
+CAgICAgI9v////////////////////////////////////////8AAP//////////////////////
+//b///b////////////////////////////////////////skZGRkZGRkpKRkZKSm/b///b/////
+//////////////////////////////////////////////////b2Xk9PT09PT09PT09OVvb/////
+//////////////////////////////////////////////////////b/Vk5PD09PT09PTw9PVub/
+//////////////////////////////////////////b/////////////////////////////////
+//////8AAP////////////////////////b2////////////////////////////////////////
+9v/smpKRkZGRkpKRkZKSm/b///b/////////////////////////////////////////////////
+//////b2Xk9PT09PT09PT09OVvb/////////////////////////////////////////////////
+//////////b/TVdPD09PT09PTw9PTq7/////////////////////////////////////////////
+//////////////////////////////////////8AAP//////////////////////////////////
+///////////////////////////////2//8HkpKRkZGRkpGRkZGSkgj///b/////////////////
+//////////////////////////////////////b2Xk9PT09PT09PT09OVvb/////////////////
+//////////////////////////////////////////b2TU8PT09PT09PT09PTq//////////////
+//////////////////////b/9v////////////////////////////////////////////8AAP//
+//////////////////////b2///////////////////////////////////////2//8HkpKSkZGR
+kpGRkZGSkgj///b///////////////////////////////////////////////////////b2Xk9P
+T09PT09PT09OVvb///////////////////////////////////////////////////////////bv
+TU8PT09PT09PTw9PVu//////////////////////////////////////9v//9vb/////////////
+//////////////////////////8AAP//////////////////////////9v//////////////////
+///////////////////2//8Ik5GSkZGRkZGRkZKSigf/////////////////////////////////
+//////////////////////////b2Xk9PT09PT09PT09OVvb/////////////////////////////
+//////////////////////////////bvTk4PT09PT09PT09XTe//////////////////////////
+//////////b/////9v////////////////////////////////////////8AAP//////////////
+///////////////////////////////////////////////////2///2m5KSkZGRkZGRkZKRkuT/
+//b///////////////////////////////////////////////////////b2Xk9PT09PT09PT09O
+Vfb2//////////////////////////////////////////////////////////+uVk8PD09PT09P
+D09XVe/2////////////////////////////////////////////////////////////////////
+//////////////8AAP//////////////////////////////////////////////////////////
+///////////2m5KSkZGRkZGRkZKRUpv/////////////////////////////////////////////
+//////////////b2Xk9PT09PT09PT09OVfb2////////////////////////////////////////
+//////////////////+eVk8PD09PT09PT09XTf//////////////////////////////////////
+//////////////////////////////////////////////8AAP//////////////////////////
+///////////////////////////////////////29v//95KSkZGRkZGRkpKRkpr2//b/9v//////
+//////////////////////////////////////////////b2Xk9PT09PT09PT09OVfb2////////
+////////////////////////9gf///////////////////////ZVVk8PT09PT09PT09Onv//////
+////////////////////////////////////////////////////////////////////////////
+//8AAP//////////////////////////////////////////////////////////////////////
+7ZKSkZGRkZGRkZGSkpII//b/////////////////////////////////////////////////////
+//b2Xk9PT09PT09PT09OVfb2////////////////////////////////B0n/////////////////
+////9vZWTk8PT09PT09PT09Op///////////////////////////////////////////////////
+//////////////////////////////////8AAP//////////////////////////////////////
+////////////////////////////////CJqSkpGRkZGRkZGSkZLt//b/9v//////////////////
+//////////////////////////////////b2Xk9PT09PT09PT09OVfb2////////////////////
+////////////9vb/////////////////////9qdWT09PT09PT09PT09O5///////////////////
+//////////////////////////////////////////////////////////////////8AAP//////
+///////////////////////////////////////////////////////////2////9puSkpGRkZGS
+kZKSkZKb////9v////////////////////////////////////////////////////b2Xk9PT09P
+T09PT09OVfb2////////////////////////////////////////////////////////9p5WT09P
+T09PT09PT0+W9vb2////////////////////////////////////////////////////////////
+//////////////////////8AAP//////////////////////////////////////////////////
+////////////////9v////eSkpGSkZGRkZGRkZKSCP//9v//////////////////////////////
+//////////////////////b2Xk9PT09PT09PT09OVfb2////////////////////////////////
+///////////////////////29lZOT09PT08PT09PT06e9v//9v//////////////////////////
+//////////////////////////////////////////////////////8AAP//////////////////
+////////////////////////////////////////////////9v///weKkZKSkZKRkZGRkZGSpP/2
+//////////////////////////////////////////////////////b2Xk9PT09PT09PT09OVfb2
+//////////////////////////////////////////////////////b/705PT09PDw8PT09PTlam
+9v//////////////////////////////////////////////////////////////////////////
+//////////8AAP//////////////////////////////////////////////////////////////
+//////////aSkpGRkpGRkZGRkZGSW/b2////////////////////////////////////////////
+//////////b2Xk9PT09PT09PT09OVfb2////////////////////////////////////////////
+//////////b/Vk5PT0dPTw8PD09PTlbv9v/2////////////////////////////////////////
+//////////////////////////////////////////8AAP//////////////////////////////
+//////////////////////////////////////////+jUZGRkpGRkZGRkZGSku3/////////////
+//////////////////////////////////////////b2Xk9PT09PT09PT09OVfb2////////////
+///////////////////////////////////////2//bvTk9PT09PT08PD09PTl729v//////9v//
+//////////////////////////////////////////////////////////////////////////8A
+AP/////////////////////////////////////////////////////////////////////////1
+kZKSkZKRkZGRkZGRkpv///////////////////////////////////////////////////////b2
+Xk9PT09PT09PT09OVfb2//////////////////////////////////////////b////////29gem
+Tg4PT09PTw8PD09PTqf29vb/////9v//////////////////////////////////////////////
+//////////////////////////////8AAP//////////////////////////////////////////
+//////////////////////////b////2m5KRkZGRkpGRkZGRkpHt////////////////////////
+//////////////////////////////b2Xk9PT09PT09PT09OVfb2////////////////////////
+//////////////////b///////b2/+9OTk9PT09PT08PD09OVgf2////////////////////////
+//////////////////////////////////////////////////////////////8AAP//////////
+////////////////////////////////////////////////////////////////9ZKRkpGRkpGR
+kZGSkZKS9v/29vb///////////////////////////////////////////////b2Xk9PT09PT09P
+T09PVfb2///////////////////////////////////////////2///////29l5XT09PT09PT09P
+Dw9OXv//////////////////////////////////////////////////////////////////////
+//////////////////8AAP//////////////////////////////////////////////////////
+////////////////////CZqRkZKRkpGRkZGRkpGSo//29vb/9v//////////////////////////
+//////////////////b2Xk9PT09PT09PT09PVvb2////////////////////////////////////
+//////b///////b/701PT09PT09PT09PT05Vr///////////////////////////////////////
+//////////////////////////////////////////////////8AAP//////////////////////
+/////////////////////////////////////////////////////6SRkZGRkZGRkZGRkZKSkvT/
+9v//9v////////////////////////////////////////////b2Xk9PT09PT09PT09PVvb2////
+////////////////////////////////////////////9vbvVU5PD09PT09PT08PT1Ze9vb/////
+////////////////////////////////////////////////////////////////////////////
+//////8AAP//////////////////////////////////////////////////////////////////
+/////////wmSkpKRkZGRkZGSkZKRkpL2//b///b/////////////////////////////////////
+//////b2Xk9PT09PT09PT09PVvb2////////////////////////////////////////////////
+9v+nTk9PT09PT09PT09PTlbv9v//////////////////////////////////////////////////
+//////////////////////////////////////8AAP//////////////////////////////////
+///////////////////////////////////////////jkZGRkZGRkZGRkpGSkZKb9v////b29v//
+//////////////////////////////////////b2Xk9PT09PT09PT09PVvb2////////////////
+////////////////////////////////9qdOT09PD09PT09PD09XTlb29v//////////////////
+//////////////////////////////////////////////////////////////////////8AAP//
+////////////////////////////////////////////////////////////////////////9v/2
+mpKSkZGRkZGRkZGRkZKS5P////b29vb///////////////////////////////////////b2Xk9P
+T09PT09PT09PVvb2//////////////////////////////////////////////b271VXT08PT09P
+Tw8PDw9OVe/2////////////////////////////////////////////////////////////////
+//////////////////////////8AAP//////////////////////////////////////////////
+///////////////////////////////295KSkpKRkZGRkZGRkZKSkvf////2////////////////
+//////////////////////////b2Xk9PT09PT09PT09PVvb2////////////////////////////
+//////////////b/9v/vXk5OT09PT09PDw8PD09OZv/2////////////////////////////////
+//////////////////////////////////////////////////////////8AAP//////////////
+////////////////////////////////////////////////////////////////9puRkpGSkZGR
+kZGRkZGSkpH3////////9v////////////////////////////////////b2Xk9PT09PT09PT09P
+Vvb2///////////////////////////////////////////29vZeTk9PT09PT09PTw8PT05NCP//
+////////////////////////////////////////////////////////////////////////////
+//////////////8AAP//////////////////////////////////////////////////////////
+////////////////9v/2/weJkpKRkpGRkZGRkZGRkpGa9f//////////////////////////////
+//////////////b2Xk9PT09PT09PT09PVvb2////////////////////////////////////////
+//b/9l1WT09PT09PT09PDw9PTlWe////////////////////////////////////////////////
+//////////////////////////////////////////////8AAP//////////////////////////
+///////////////////////////////////////////////29v/////tkpKRkpGRkZGRkZGSkZGS
+ivf///b/9vb///////////////////////////////////b2Xk9PT09PT09PT09PVvb2////////
+////////////////////////////9v//9vbnVk5PT09PT09PT09PD09XTl72///2////////////
+////////////////////////////////////////////////////////////////////////////
+//8AAP//////////////////////////////////////////////////////////////////////
+///29vb////2m5KSkpKRkZGRkpGRkZGRkoqj9v//////////////////////////////////////
+//b2Xk9PT09PT09PT09PVvb2////////////////////////////////////////9u9eTk9PT09P
+T09PT09PT09OXe/2///2////////////////////////////////////////////////////////
+//////////////////////////////////8AAP//////////////////////////////////////
+///////////////////////////////////29v/2///2CFKSkpKRkZGSkpGRkZGSkpGSmwf///b/
+//////////////////////////////////b2Xk9PT09PT09PT09PVvb2////////////////////
+////////////////9v//rl1WR09PD09PT09PT09PT09Or//////29v//////////////////////
+//////////////////////////////////////////////////////////////////8AAP//////
+////////////////////////////////////////////////////////////////////////////
+/wiSkpKSkZGRkZKRkZGRkZGRkpKs9v////b29vb2//////////////////////////b2Xk9PT09P
+T09PD09WVvb2////////////////////////9vb//////////+9eTU9PT09PT09PT09PT09PTlWm
+////////////////////////////////////////////////////////////////////////////
+//////////////////////8AAP//////////////////////////////////////////////////
+///////////////////////////////////1kpGRkpKRkpKRkZGRkZGRkVGRm/f2///////29v//
+//////b29v//9vb29vb///b2Vk9PT09PT09PT09OVvb29v////b2////////9v////////b2///2
+9v/2plZWT09PT09PT09PTw8PT09OTab29v//////////////////////////////////////////
+//////////////////////////////////////////////////////8AAP//////////////////
+///////////////////////////////////////////////////////////////2//b/7ZKSmpGS
+kZKRkZGRkZGSkZKSkpGb9/////b///////////////////////////b2Vk9PT09PT09PT05OVfb/
+///////////////////////////29v//9u9VVk4OT09PT09PT09PT09PT05NVu/29v//////////
+////////////////////////////////////////////////////////////////////////////
+//////////8AAP//////////////////////////////////////////////////////////////
+///////////////////////2//dRkpKSkpGRkZGRkZGRkZGSkpKSkpqkCfb/////////////////
+////////9vb2X05PT09PT09PT05WVfb/////////////////////9vb29v//9u/nXlZWT09PD09P
+T09PDw8PT09PT06e7/b29v//////////////////////////////////////////////////////
+//////////////////////////////////////////8AAP//////////////////////////////
+///////////////////////////////////////////////////////2///3UZKRkpGRkZGRkZGR
+kpKSkpGRkZKSkprsB/b2///////////////////////2Xk4OT09PT09PT05OVvb2////////////
+//////b29v/29vbvpl5WTk5OTw9PT09PTw8PDw8PT09PVp7v//b2////////////////////////
+//////////////////////////////////////////////////////////////////////////8A
+AP//////////////////////////////////////////////////////////////////////////
+////////9vb/9v//9ZKSkpKRkZGRkZGRkZGSkZKSkZGRkZKSkpub5PcHBwgI9gkJCQkJCQkJ9gjv
+nVZOT09PT09PT09OXvb//////////////////+/v9u/vpp5OTk9PT09PD09PT09PTw8PDw9PT05O
+nu/29vb/////////////////////////////////////////////////////////////////////
+//////////////////////////////8AAP//////////////////////////////////////////
+///////////////////////////////////////////////2/weakZKSkpKRkZGRkZGRkZGRkZGR
+kZGSkpKSkpKSkpKSmpqampqampqampOTU01OTk9PT/kPT09OV5+vr6+vr6+vr6+np6efX19WVlZO
+Tk5PT08PDw8PT09PT09PTw8PDw9PVlWm7///////////////////////////////////////////
+//////////////////////////////////////////////////////////////8AAP//////////
+////////////////////////////////////////////////////////////////////////////
+////9v/2m5KSkZKSkpGRkZGRkZGRkZGRkZGSkpKSkpKSkpKSkpKSkpKSkpKSkpKSU1RVTk9PTw8P
+D09PT09OTk5OTk5OTk5OTk5OTk5PT09PT09PDw8PDw9PT09PT09PD09PT09XVqf2////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////8AAP//////////////////////////////////////////////////////
+///////////////////////////////////2//////WSkpKSkpKRkZGRkZGRkZGRkZGRkZGRkZGS
+kpKSkpKSkpKSkpKSkpKSklNLTU5OTw8PTw8PT09PT09PT09PT09PT09PT09PT09PDw8PDw8PDw9P
+T09PT09PT09PT05e7//29v//////////////////////////////////////////////////////
+//////////////////////////////////////////////////8AAP//////////////////////
+//////////////////////////////////////////////////////////////////////////8J
+mlKakpGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkpKSkZGRkZGSkpKSkpKTS01OTk9PTw9PT09PT09P
+T09PT09PT09PT09PT09PTw8PDw9PT09PT09PT09PT05WVZ729vb2////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////8AAP//////////////////////////////////////////////////////////////////
+//////////////////////////////b/9geakpGSkpKSkpKSkZGRkZGRkZGRkZGRkZGRkZGRkpKS
+kpKSkpGRkZGSk0xNTk5OD09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PTlam
+7/b29vb/9v//////////////////////////////////////////////////////////////////
+//////////////////////////////////////8AAP//////////////////////////////////
+////////////////////////////////////////////////////////////9vb/////7ZKKkpKS
+kpKSkpGRkZGRkZGRkZGRkpGRkZGSkpKSkpKSkpKRkZGRkktLVVZOT09PD09PT09PT09PD09PT09P
+T09PT09PT09PT09PT09PT09PT09OVu/2//b2////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////8AAP//
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////b3mpKSkpKSkpGRkZGSkZGRkZGRkZGRkZGRkZGRkZGRkpGSkZGS
+kZJTS0xVVk5PT/kPDw9PT09PDw8PDw8PT09PT09PDw9PT09PT09PT1dOTlXv7/b29v//////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////8AAP//////////////////////////////////////////////
+////////////////////////////////////////////////////////////CAejkpKRkZKSkpGR
+kZGRkZGRkpKSkZGRkZGRkZGRkZGSkpKRkZGSUktMVVZODw/5Dw9PT09PT09PT09PT09PT09PTw8P
+T09PT09WTU6e7+//9v//////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////8AAP//////////////
+////////////////////////////////////////////////////////////////////////////
+////////9vb/////////CO3bmpGRkZKSkpGSkpKRkZGSkpKSkZGRkZGRkZKRkpKRkZGRkpJLTFZO
+T09PT09PT09PT09PT09PT09PT09PTk5PT09OTlaWpu/2//b29vb2////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////8AAP//////////////////////////////////////////////////////////
+////////////////////////////////////////9vb29vb29v//////9vXsm5KSkZGSkpKSkpKS
+kpKSkpKSkpKSkpKSkpKRkZGRkZKSTExNTk9XT09PT09PT09PT09PT09PT09XV1ZOTk6np+f29vb2
+//b/////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////8AAP//////////////////////////
+///////////////////////////////////////////////////////////////////////29vb2
+9vb////2///////////2CAespKObm5qbmpKSkpKSkpKSmpKbkpGRkZGRkZGSkktTVVZWVlZWVlZO
+VlZOTlZVTlZWVk5WXabv7+////////b/////9v//////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//8AAP//////////////////////////////////////////////////////////////////////
+////////////////////////////9v/29v//9v//9v//////////////////9v/29ggICAgICAgI
+CAgIkpKSkZGRkZGRkZJSU66mnp6enp6enp6enqau7+/vCPb29v/2///29v//////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////8AAP//////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////2m5KSkpGRkZGRkZGSW/b29vb29vb29vb29vb/9vb2
+9vb29vb2////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////8AAP//////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////9v/2m5KSkpKS
+kpKSkZGSm/b///b29vb29vb29vb29vb///////b2////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////8AAP//////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////9v/2m5KSkpKSkpKSkpKSm/b///////b29v////////////////b2////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////8AAP//////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////9v/2m5GSkZKSkpKSkpKSm/b/
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////8AAP//////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////9v/2m5GRkZGRkpKSkpKSm/b/////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////8AAP//////////////////////////////
+////////////////////////////////////////////////////////////////////9v//////
+////9vb////////////////////////////////////2mpGRkZGRkZGRkZGSo/b/////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////8A
+AP//////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////2
+m5GRkZGRkZGRkZGSW/b/9vb/////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////8AAP//////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////9v/2m5GRkZGRkZKSkZKSm/b/9vb2////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////8AAP//////////
+////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////2m5GRkZGRkZKS
+kZKSm/b///b2////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////8AAP//////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+///////////////////2m5GRkZGRkZKSkZKSmvb/////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////8AAP//////////////////////
+////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////2m5KSkZGRkZGRkZKSmvb/////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////8AAP//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////b2////////////
+///////2m5KSkZGRkZGRkZGSmvb/////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////8AAP//////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////9vb2//b////29vb29vb29vb29vb29vb2///2m5KRkZGRkZGRkZGRmv/////2//////b29vb2
+9vb29vb/9v////b/////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////8AAP//
+////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////29vb2//b/////9vb2////////////////9vb2m5KS
+kZGRkZGRkpKSm/b////2////////////////////////////9v//////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////8AAP//////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////29vb2////
+///////////////////////////2WpKSkZGRkZGRkpKSmvb/////////////////////////////
+///2////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////8AAP//////////////
+////////////////////////////////////////////////////////////////////////////
+///////////////////////29v//////////////////////////////////m5KRkZGRkZGRkZKR
+m//////////////////////////////////2////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////8AAP//////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////2rKSkpKSkpKSkpKSk
+pKSkpKSkpKSko6SkkpKSkZGRkZGRkpGSkaOkpKSkpKSkpKSkpKSkpKSkpKSkpKSk7f//////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////8AAP//////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////m5GSkpKSkpKSkpKSkpKSkpKSkpKSkpKRkZGRkZGRkZGRkZGSmpKSkpKSkpGR
+kpKSkpKSkpKSkpKSklJSm//2////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//8AAP//////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////2mlGSkpGSkpKSkpKSkpKSkpKSkpKS
+kZKRkpGRkZGRkZGRkZGRkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSpP//////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////8AAP//////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+9v/2mpKRkZGSkpKSkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGR
+kZGRkpKS5P//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////8AAP//////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////9v/2mpKRkZGRkpKSkZGRkZGRkZGRkZGRkZGRkZGRkZGR
+kZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkpKS5P//////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////8AAP//////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////2mpKRkZGR
+kZKRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGS5P//
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////8AAP//////////////////
+////////////////////////////////////////////////////////////////////////////
+///////////////////////2mpKRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGR
+kZGRkZGRkZGRkZGRkZGRkZGRkZGS5P//////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////8AAP//////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////2mpKSkZGRkZGRkZGRkZGR
+kZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGS5P//////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////8AAP//////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////mpKSkpGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGR
+kZGRkZGRkZGRkZGSpP//////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////8A
+AP//////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////2////m5KSkpKSkpKSkpKSkpKSkpKSkpKSkpKS
+kpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpJSpP//////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////8AAP//////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////2
+m5KSkpKSmpqakpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKS
+kpKS5P/2////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////8AAP//////////
+////////////////////////////////////////////////////////////////////////////
+///////////////////////////29v//9v//CQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJ
+CQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJ///29v/2////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////8AAP//////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////2////////////
+//////////////////////////////////////////////////////////////////////b2////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////8AAP//////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////9v//////////////////////////////////////////////////////////
+////////////////////////9vb29v//////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////8AAP//////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////9v/////////////2////////////
+//////////////////////////////////////////////////////////b2////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////8AAP//////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////8AAP//
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////8AAP//////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////8AAP//////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////8AAP//////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////8AAP//////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//8AAP//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////8AAP//////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////8AAP//////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////8AAP//////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////8AAP//////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////8AAP//////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////8AAP//////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////8A
+AP//////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////8AAP//////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////8AAP//////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////8AAP//////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////8AAP//////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////8AAP//////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////8AAP//////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////8AAP//
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////8AAP//////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////8AAP//////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////8AAP//////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////8AAA==</image>
+                  </value>
+               </draw>
+               <draw minH="0.291in" name="T1" w="160.734mm" x="43.94mm" y="6.431mm">
+                  <value>
+                     <text xliff:rid="E58DEF22-9E66-4A28-9C40-AF847BE89A92">DELVAL FLOW CONTROLS PRIVATE LIMITED</text>
+                  </value>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  <font baselineShift="0pt" size="20pt" typeface="Times New Roman" weight="bold"/>
+                  <traversal>
+                     <traverse ref="T2[0]"/>
+                  </traversal>
+               </draw>
+               <draw minH="0.16in" name="T2" w="5.366in" x="52.99mm" y="14.338mm">
+                  <value>
+                     <text xliff:rid="D20F6DFF-83D3-4C67-BEF6-6A146231712A">"B Cube" Building,Bavdhan,Opposite Bavdhan Police Station,</text>
+                  </value>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  <font baselineShift="0pt" size="11pt" typeface="Times New Roman" weight="bold"/>
+                  <traversal>
+                     <traverse ref="T3[0]"/>
+                  </traversal>
+               </draw>
+               <draw minH="0.16in" name="T3" w="1.608in" x="100.102mm" y="19.353mm">
+                  <value>
+                     <text xliff:rid="D0F65228-D45D-42AC-BFEC-0E15D44568E2">Pune-411021,India</text>
+                  </value>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  <font baselineShift="0pt" size="11pt" typeface="Times New Roman" weight="bold"/>
+                  <traversal>
+                     <traverse ref="T4[0]"/>
+                  </traversal>
+               </draw>
+               <draw minH="0.262in" name="T4" w="3.95in" x="71.384mm" y="24.926mm">
+                  <value>
+                     <text xliff:rid="34B79F5B-E484-411F-924B-76F28E47E2F3">Beneficiary Payment Advice</text>
+                  </value>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  <font baselineShift="0pt" size="18pt" typeface="Times New Roman" weight="bold"/>
+                  <traversal>
+                     <traverse ref="T5[0]"/>
+                  </traversal>
+               </draw>
+               <draw h="5.552mm" name="T5" w="33.026mm" x="175.06mm" y="45.191mm">
+                  <value>
+                     <text xliff:rid="798A628F-17F9-461D-968B-B966FEC6408E">Vendor Code:</text>
+                  </value>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  <font baselineShift="0pt" size="12pt" typeface="Times New Roman" weight="bold"/>
+                  <traversal>
+                     <traverse ref="T6[0]"/>
+                  </traversal>
+                  <?renderCache.bounds 93617 15738 0 0 0 0 0 0?>
+                  <?renderCache.textRun 12 Vendor Code: 0 0 11279 0 0 0 "Times New Roman" 1 0 12000 ISO-8859-1?></draw>
+               <draw h="4.763mm" name="T6" w="69.983mm" x="208.03mm" y="45.565mm">
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-decoration:none;letter-spacing:0in"><span xfa:embed="#floatingField026500" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                     </exData>
+                  </value>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  <font baselineShift="0pt" size="12pt" typeface="Times New Roman"/>
+               </draw>
+               <draw h="11.697mm" hAlign="center" name="Text1" w="282.067mm" x="1.213mm" y="69.381mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-decoration:none;letter-spacing:0in"><span xfa:embed="#floatingField026962" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                     </exData>
+                  </value>
+                  <font baselineShift="0pt" size="12pt" typeface="Times New Roman"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.7542mm"/>
+                  <border>
+                     <edge/>
+                     <corner thickness="0.175mm"/>
+                     <fill/>
+                  </border>
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+               </draw>
+               <draw h="14.65mm" name="T10" w="144.356mm" x="27.747mm" y="50.403mm">
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in"><span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField019169" xfa:embedMode="raw" xfa:embedType="uri"/><span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField015724" xfa:embedMode="raw" xfa:embedType="uri"/><span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField011478" xfa:embedMode="raw" xfa:embedType="uri"/><span xfa:embed="#floatingField029358" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                     </exData>
+                  </value>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  <font baselineShift="0pt" size="12pt" typeface="Times New Roman"/>
+               </draw>
+               <draw minH="0.175in" name="T9" w="22.864mm" x="4.956mm" y="53.019mm">
+                  <value>
+                     <text xliff:rid="1B8C69E1-C1D0-49E7-9C60-C2761E2D45E7">Address :</text>
+                  </value>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  <font baselineShift="0pt" size="12pt" typeface="Times New Roman" weight="bold"/>
+               </draw>
+               <draw h="4.763mm" name="T8" w="156.431mm" x="15.474mm" y="45.136mm">
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-decoration:none;letter-spacing:0in"><span xfa:embed="#floatingField006334" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                     </exData>
+                  </value>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  <font baselineShift="0pt" size="12pt" typeface="Times New Roman"/>
+               </draw>
+               <draw minH="0.175in" name="T7" w="10.162mm" x="5.387mm" y="45.136mm">
+                  <value>
+                     <text xliff:rid="7317F566-3D5C-423D-B368-104F052317E9">To:</text>
+                  </value>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  <font baselineShift="0pt" size="12pt" typeface="Times New Roman" weight="bold"/>
+               </draw>
+               <draw h="25.4mm" name="Rectangle1" w="172.409mm" x="1.149mm" y="43.877mm">
+                  <value>
+                     <rectangle>
+                        <edge/>
+                        <corner radius="5.08mm"/>
+                     </rectangle>
+                  </value>
+               </draw>
+               <draw h="25.4mm" name="Rectangle2" w="109.645mm" x="173.686mm" y="43.878mm">
+                  <value>
+                     <rectangle>
+                        <edge/>
+                        <corner radius="5.08mm"/>
+                     </rectangle>
+                  </value>
+               </draw>
+               <?templateDesigner expand 0?></subform>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <desc>
+         <text name="creator">DVBASIS </text>
+      </desc>
+      <proto/>
+      <subform layout="tb" minH="30.141mm" w="281.618mm">
+         <bind match="none"/>
+         <traversal>
+            <traverse operation="first" ref="FINAL_TABLE[0]"/>
+         </traversal>
+         <subform layout="tb" name="FINAL_TABLE" w="281.618mm">
+            <bind match="none"/>
+            <traversal>
+               <traverse operation="first" ref="IT_FINAL[0]"/>
+            </traversal>
+            <subform columnWidths="26.009mm 26.823mm 14.451mm 29.643mm 29.665mm 30.385mm 26.675mm 29.266mm 34.824mm 34.406mm" layout="table" name="IT_FINAL">
+               <subform id="DATA_ID" layout="row" name="DATA">
+                  <assist role="TH"/>
+                  <draw h="11.642mm">
+                     <ui>
+                        <textEdit>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <value>
+                        <text xliff:rid="18ED54B0-A87E-4BE0-9F59-8F460C4E55BF">Invoice  No</text>
+                     </value>
+                     <font baselineShift="0pt" size="11pt" typeface="Times New Roman" weight="bold"/>
+                     <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.175mm"/>
+                     </border>
+                     <keep intact="none"/>
+                  </draw>
+                  <draw>
+                     <font baselineShift="0pt" typeface="Times New Roman"/>
+                     <value>
+                        <exData contentType="text/html" xliff:rid="93C9260D-5D1C-42BE-A095-37500087CA1F">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-valign:middle;text-align:center;font-size:11pt;font-weight:bold;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span>Inv Date</p></body>
+                        </exData>
+                     </value>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <keep intact="none"/>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.175mm"/>
+                     </border>
+                     <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+                  </draw>
+                  <draw>
+                     <font baselineShift="0pt" typeface="Times New Roman"/>
+                     <value>
+                        <exData contentType="text/html" xliff:rid="E5383711-1EA7-442A-8704-57DD9D35178B">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-valign:middle;text-align:center;font-size:11pt;font-weight:bold;text-decoration:none;letter-spacing:0in">Document Type</p></body>
+                        </exData>
+                     </value>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <keep intact="none"/>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.175mm"/>
+                     </border>
+                     <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+                  </draw>
+                  <draw>
+                     <font baselineShift="0pt" typeface="Times New Roman"/>
+                     <value>
+                        <exData contentType="text/html" xliff:rid="FCD2AEAE-751A-449D-A02E-E3723B47FC84">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-valign:middle;text-align:center;font-size:11pt;font-weight:bold;text-decoration:none;letter-spacing:0in">DType</p><p style="text-valign:middle;text-align:center;font-size:11pt;font-weight:bold;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span>DelVal<span style="xfa-spacerun:yes"> </span></p><p style="text-valign:middle;text-align:center;font-size:11pt;font-weight:bold;text-decoration:none;letter-spacing:0in">Doc Date</p></body>
+                        </exData>
+                     </value>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <keep intact="none"/>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.175mm"/>
+                     </border>
+                     <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+                  </draw>
+                  <draw>
+                     <font baselineShift="0pt" typeface="Times New Roman"/>
+                     <value>
+                        <exData contentType="text/html" xliff:rid="3C374C18-C3A6-488E-97FD-07E50E03704D">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-valign:middle;text-align:center;font-size:11pt;font-weight:bold;text-decoration:none;letter-spacing:0in">DType<span style="xfa-spacerun:yes"> </span></p><p style="text-valign:middle;text-align:center;font-size:11pt;font-weight:bold;text-decoration:none;letter-spacing:0in">DelVal</p><p style="text-valign:middle;text-align:center;font-size:11pt;font-weight:bold;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span>Doc No</p></body>
+                        </exData>
+                     </value>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <keep intact="none"/>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.175mm"/>
+                     </border>
+                     <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+                  </draw>
+                  <draw>
+                     <font baselineShift="0pt" typeface="Times New Roman"/>
+                     <value>
+                        <exData contentType="text/html" xliff:rid="105EE832-FBC6-47CD-A5D4-BBEEC366A803">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-valign:middle;text-align:center;font-size:11pt;font-weight:bold;text-decoration:none;letter-spacing:0in">Gross</p></body>
+                        </exData>
+                     </value>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <keep intact="none"/>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.175mm"/>
+                     </border>
+                     <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+                  </draw>
+                  <draw>
+                     <font baselineShift="0pt" typeface="Times New Roman"/>
+                     <value>
+                        <exData contentType="text/html" xliff:rid="597E26D1-D68B-4108-967A-7D6852388087">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-valign:middle;text-align:center;font-size:11pt;font-weight:bold;text-decoration:none;letter-spacing:0in">TDS</p></body>
+                        </exData>
+                     </value>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <keep intact="none"/>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.175mm"/>
+                     </border>
+                     <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+                  </draw>
+                  <draw>
+                     <font baselineShift="0pt" typeface="Times New Roman"/>
+                     <value>
+                        <exData contentType="text/html" xliff:rid="8D4B8E02-F3B8-4A42-BE8B-46C4768D09C4">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-valign:middle;text-align:center;font-size:11pt;font-weight:bold;text-decoration:none;letter-spacing:0in">Rejection DN</p></body>
+                        </exData>
+                     </value>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <keep intact="none"/>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.175mm"/>
+                     </border>
+                     <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+                  </draw>
+                  <draw>
+                     <font baselineShift="0pt" typeface="Times New Roman"/>
+                     <value>
+                        <exData contentType="text/html" xliff:rid="E55191A6-B155-4FBA-AEF2-E288F0FBFB33">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-valign:middle;text-align:center;font-size:11pt;font-weight:bold;text-decoration:none;letter-spacing:0in">Net Payment</p></body>
+                        </exData>
+                     </value>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <keep intact="none"/>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.175mm"/>
+                     </border>
+                     <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+                  </draw>
+                  <draw w="1.291931in">
+                     <font baselineShift="0pt" typeface="Times New Roman"/>
+                     <value>
+                        <exData contentType="text/html" xliff:rid="21957A88-021A-48B8-AE59-0EE7F4E53F98">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-valign:middle;text-align:center;font-size:11pt;font-weight:bold;text-decoration:none;letter-spacing:0in">Balance</p></body>
+                        </exData>
+                     </value>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <keep intact="none"/>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.175mm"/>
+                     </border>
+                     <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+                  </draw>
+                  <border>
+                     <edge/>
+                     <corner thickness="0.175mm"/>
+                  </border>
+                  <traversal>
+                     <traverse operation="first" ref="#draw[0]"/>
+                  </traversal>
+                  <keep intact="none"/>
+                  <occur max="-1"/>
+                  <bind match="dataRef" ref="$record.IT_FINAL"/>
+                  <?templateDesigner expand 0?></subform>
+               <subform layout="row" name="DATA">
+                  <field access="readOnly" h="9mm" id="floatingField024464" name="XBLNR" presence="hidden" w="62mm" x="0mm" y="0mm">
+                     <ui>
+                        <textEdit>
+                           <border>
+                              <edge stroke="lowered"/>
+                           </border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <text maxChars="16"/>
+                     </value>
+                     <bind match="dataRef" ref="$.DATA[*].XBLNR"/>
+                     <caption>
+                        <value>
+                           <text xliff:rid="30FBEB12-DFAD-4775-81CD-CAEF0252648E">Reference</text>
+                        </value>
+                     </caption>
+                     <desc>
+                        <text name="Schema Annotation">Reference Document Number</text>
+                     </desc>
+                  </field>
+                  <draw h="7.006mm">
+                     <font baselineShift="0pt" typeface="Times New Roman"/>
+                     <value>
+                        <exData contentType="text/html" xliff:rid="135B79E1-E620-43F0-BA25-029D15069BE8">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in"><span xfa:embed="#floatingField024464" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                        </exData>
+                     </value>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.7542mm"/>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.175mm"/>
+                     </border>
+                     <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+                     <keep intact="none"/>
+                  </draw>
+                  <field access="readOnly" h="9mm" id="floatingField005705" name="BUDAT" presence="hidden" w="62mm" x="0mm" y="0mm">
+                     <ui>
+                        <dateTimeEdit>
+                           <border>
+                              <edge stroke="lowered"/>
+                           </border>
+                           <margin/>
+                        </dateTimeEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <date/>
+                     </value>
+                     <caption>
+                        <value>
+                           <text xliff:rid="B47A59D0-3631-40E4-9BDD-7664B582D55A">Pstng Date</text>
+                        </value>
+                     </caption>
+                     <desc>
+                        <text name="Schema Annotation">Posting Date in the Document</text>
+                     </desc>
+                     <validate nullTest="error"/>
+                     <bind match="dataRef" ref="$.DATA[*].BUDAT">
+                        <picture>date{YYYY-MM-DD}</picture>
+                     </bind>
+                     <format>
+                        <picture>date{DD.MM.YYYY}</picture>
+                     </format>
+                  </field>
+                  <draw h="7.006mm">
+                     <font baselineShift="0pt" typeface="Times New Roman"/>
+                     <value>
+                        <exData contentType="text/html" xliff:rid="60E5DE65-C21F-4723-B341-47A0EEA481E3">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in"><span xfa:embed="#floatingField005705" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                        </exData>
+                     </value>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.7542mm"/>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.175mm"/>
+                     </border>
+                     <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+                     <keep intact="none"/>
+                  </draw>
+                  <field access="readOnly" h="9mm" id="floatingField023281" name="BLART" presence="hidden" w="62mm" x="0mm" y="0mm">
+                     <ui>
+                        <textEdit>
+                           <border>
+                              <edge stroke="lowered"/>
+                           </border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <text maxChars="2"/>
+                     </value>
+                     <bind match="dataRef" ref="$.DATA[*].BLART"/>
+                     <caption>
+                        <value>
+                           <text xliff:rid="0331CFA2-A1E9-40CC-B4D9-80DB3D3EBEA9">Doc. Type</text>
+                        </value>
+                     </caption>
+                     <desc>
+                        <text name="Schema Annotation">Document Type</text>
+                     </desc>
+                  </field>
+                  <draw h="7.006mm">
+                     <font baselineShift="0pt" typeface="Times New Roman"/>
+                     <value>
+                        <exData contentType="text/html" xliff:rid="94DA55F9-04D0-4C00-A193-DA6202348E79">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in"><span xfa:embed="#floatingField023281" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                        </exData>
+                     </value>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.7542mm"/>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.175mm"/>
+                     </border>
+                     <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+                     <keep intact="none"/>
+                  </draw>
+                  <field access="readOnly" h="9mm" id="floatingField016827" name="BLDAT" presence="hidden" w="62mm" x="0mm" y="0mm">
+                     <ui>
+                        <dateTimeEdit>
+                           <border>
+                              <edge stroke="lowered"/>
+                           </border>
+                           <margin/>
+                        </dateTimeEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <date/>
+                     </value>
+                     <caption>
+                        <value>
+                           <text xliff:rid="E3DC7FE8-5937-436C-8DF6-7B20B5CBC3F0">Doc. Date</text>
+                        </value>
+                     </caption>
+                     <desc>
+                        <text name="Schema Annotation">Document Date in Document</text>
+                     </desc>
+                     <validate nullTest="error"/>
+                     <bind match="dataRef" ref="$.DATA[*].BLDAT">
+                        <picture>date{YYYY-MM-DD}</picture>
+                     </bind>
+                     <format>
+                        <picture>date{DD.MM.YYYY}</picture>
+                     </format>
+                  </field>
+                  <draw h="7.006mm">
+                     <font baselineShift="0pt" typeface="Times New Roman"/>
+                     <value>
+                        <exData contentType="text/html" xliff:rid="6BF2FA88-09DC-4F64-B4ED-F42DC9D3C123">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in"><span xfa:embed="#floatingField016827" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                        </exData>
+                     </value>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.7542mm"/>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.175mm"/>
+                     </border>
+                     <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+                     <keep intact="none"/>
+                  </draw>
+                  <field access="readOnly" h="9mm" id="floatingField009961" name="BELNR" presence="hidden" w="62mm" x="0mm" y="0mm">
+                     <ui>
+                        <textEdit>
+                           <border>
+                              <edge stroke="lowered"/>
+                           </border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <text maxChars="10"/>
+                     </value>
+                     <bind match="dataRef" ref="$.DATA[*].BELNR"/>
+                     <caption>
+                        <value>
+                           <text xliff:rid="5F3A0350-8144-40D2-825F-8B67B0759BFC">DocumentNo</text>
+                        </value>
+                     </caption>
+                     <desc>
+                        <text name="Schema Annotation">Document Number of an Accounting Document</text>
+                     </desc>
+                  </field>
+                  <draw h="7.006mm" w="1.181375in">
+                     <font baselineShift="0pt" typeface="Times New Roman"/>
+                     <value>
+                        <exData contentType="text/html" xliff:rid="7284ED34-9B9F-44D2-A65C-A0D0D5C837F5">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in"><span xfa:embed="#floatingField009961" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                        </exData>
+                     </value>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.7542mm"/>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.175mm"/>
+                     </border>
+                     <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+                     <keep intact="none"/>
+                  </draw>
+                  <field access="readOnly" h="9mm" id="floatingField000491" name="GROSS_DMBTR" presence="hidden" w="62mm" x="0mm" y="0mm">
+                     <ui>
+                        <numericEdit>
+                           <border>
+                              <edge stroke="lowered"/>
+                           </border>
+                           <margin/>
+                        </numericEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <decimal leadDigits="21"/>
+                     </value>
+                     <caption>
+                        <value>
+                           <text xliff:rid="5B6F2A9B-0634-475C-8CFD-1473BC3D2B21">Loc. Curr. Amount</text>
+                        </value>
+                     </caption>
+                     <desc>
+                        <text name="Schema Annotation">Amount in local currency</text>
+                     </desc>
+                     <validate nullTest="error"/>
+                     <bind match="dataRef" ref="$.DATA[*].GROSS_DMBTR"/>
+                     <format>
+                        <picture>num{z,zz,zz9.99}</picture>
+                     </format>
+                  </field>
+                  <draw h="7.006mm">
+                     <font baselineShift="0pt" typeface="Times New Roman"/>
+                     <value>
+                        <exData contentType="text/html" xliff:rid="E92D8FFE-9F6B-4874-A404-C3F15DA2EA9E">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in"><span xfa:embed="#floatingField000491" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                        </exData>
+                     </value>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.7542mm"/>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.175mm"/>
+                     </border>
+                     <para hAlign="right" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+                     <keep intact="none"/>
+                  </draw>
+                  <field access="readOnly" h="9mm" id="floatingField011942" name="TDS_DMBTR" presence="hidden" w="62mm" x="0mm" y="0mm">
+                     <ui>
+                        <numericEdit>
+                           <border>
+                              <edge stroke="lowered"/>
+                           </border>
+                           <margin/>
+                        </numericEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <decimal leadDigits="21"/>
+                     </value>
+                     <caption>
+                        <value>
+                           <text xliff:rid="B2C73F59-B1C3-4488-BADC-A3979F57EE29">Loc. Curr. Amount</text>
+                        </value>
+                     </caption>
+                     <desc>
+                        <text name="Schema Annotation">Amount in local currency</text>
+                     </desc>
+                     <validate nullTest="error"/>
+                     <bind match="dataRef" ref="$.DATA[*].TDS_DMBTR"/>
+                     <format>
+                        <picture>num{z,zz,zz9.99}</picture>
+                     </format>
+                  </field>
+                  <draw h="7.006mm">
+                     <font baselineShift="0pt" typeface="Times New Roman"/>
+                     <value>
+                        <exData contentType="text/html" xliff:rid="99590882-5878-4596-8E58-C88A8D82A181">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in"><span xfa:embed="#floatingField011942" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                        </exData>
+                     </value>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.7542mm"/>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.175mm"/>
+                     </border>
+                     <para hAlign="right" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+                     <keep intact="none"/>
+                  </draw>
+                  <field access="readOnly" h="9mm" id="floatingField005436" name="REJECTION_DMBTR" presence="hidden" w="62mm" x="0mm" y="0mm">
+                     <ui>
+                        <numericEdit>
+                           <border>
+                              <edge stroke="lowered"/>
+                           </border>
+                           <margin/>
+                        </numericEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <decimal leadDigits="21"/>
+                     </value>
+                     <caption>
+                        <value>
+                           <text xliff:rid="549883D0-30B5-432E-98FF-BC45E55B6E18">Loc. Curr. Amount</text>
+                        </value>
+                     </caption>
+                     <desc>
+                        <text name="Schema Annotation">Amount in local currency</text>
+                     </desc>
+                     <validate nullTest="error"/>
+                     <bind match="dataRef" ref="$.DATA[*].REJECTION_DMBTR"/>
+                     <format>
+                        <picture>num{z,zz,zz9.99}</picture>
+                     </format>
+                  </field>
+                  <draw h="7.006mm">
+                     <font baselineShift="0pt" typeface="Times New Roman"/>
+                     <value>
+                        <exData contentType="text/html" xliff:rid="04B38C7D-793C-4EF9-83E3-A796CC4DEB39">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in"><span xfa:embed="#floatingField005436" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                        </exData>
+                     </value>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.7542mm"/>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.175mm"/>
+                     </border>
+                     <para hAlign="right" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+                     <keep intact="none"/>
+                  </draw>
+                  <field access="readOnly" h="9mm" id="floatingField032391" name="NET_DMBTR" presence="hidden" w="62mm" x="0mm" y="0mm">
+                     <ui>
+                        <numericEdit>
+                           <border>
+                              <edge stroke="lowered"/>
+                           </border>
+                           <margin/>
+                        </numericEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <decimal leadDigits="21"/>
+                     </value>
+                     <caption>
+                        <value>
+                           <text xliff:rid="0CDEA89D-E3D2-455B-9FA0-F28DB2BAF010">Loc. Curr. Amount</text>
+                        </value>
+                     </caption>
+                     <desc>
+                        <text name="Schema Annotation">Amount in local currency</text>
+                     </desc>
+                     <validate nullTest="error"/>
+                     <bind match="dataRef" ref="$.DATA[*].NET_DMBTR"/>
+                     <format>
+                        <picture>num{z,zz,zz9.99}</picture>
+                     </format>
+                  </field>
+                  <draw h="7.006mm">
+                     <font baselineShift="0pt" typeface="Times New Roman"/>
+                     <value>
+                        <exData contentType="text/html" xliff:rid="85758386-9725-49CD-B295-B909E135109F">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in"><span xfa:embed="#floatingField032391" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                        </exData>
+                     </value>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.7542mm"/>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.175mm"/>
+                     </border>
+                     <para hAlign="right" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+                     <keep intact="none"/>
+                  </draw>
+                  <field access="readOnly" h="9mm" id="floatingField014604" name="BALANCE" presence="hidden" w="62mm" x="0mm" y="0mm">
+                     <ui>
+                        <numericEdit>
+                           <border>
+                              <edge stroke="lowered"/>
+                           </border>
+                           <margin/>
+                        </numericEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <decimal leadDigits="21"/>
+                     </value>
+                     <caption>
+                        <value>
+                           <text xliff:rid="43601381-AD10-47CA-B749-59E831EF8BD7">Loc. Curr. Amount</text>
+                        </value>
+                     </caption>
+                     <desc>
+                        <text name="Schema Annotation">Amount in local currency</text>
+                     </desc>
+                     <validate nullTest="error"/>
+                     <bind match="dataRef" ref="$.DATA[*].BALANCE"/>
+                     <format>
+                        <picture>num{z,zz,zz9.99}</picture>
+                     </format>
+                  </field>
+                  <draw h="7.006mm" w="1.291931in">
+                     <font baselineShift="0pt" typeface="Times New Roman"/>
+                     <value>
+                        <exData contentType="text/html" xliff:rid="979CA839-AFB7-4925-AFC5-46E4A5560431">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in"><span xfa:embed="#floatingField014604" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                        </exData>
+                     </value>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.7542mm"/>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.175mm"/>
+                     </border>
+                     <para hAlign="right" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+                     <keep intact="none"/>
+                  </draw>
+                  <assist role="TR"/>
+                  <occur max="-1"/>
+                  <bind match="none"/>
+                  <border>
+                     <edge/>
+                     <corner thickness="0.175mm"/>
+                  </border>
+                  <?templateDesigner expand 0?>
+                  <keep intact="none"/>
+               </subform>
+               <bind match="dataRef" ref="$.IT_FINAL"/>
+               <desc>
+                  <text name="Schema Annotation">ZPAYMENT ADVICE TABLE TYPE</text>
+               </desc>
+               <traversal>
+                  <traverse operation="first" ref="DATA[0]"/>
+               </traversal>
+               <overflow leader="DATA[0]" target="PageArea1.ContentArea1"/>
+               <occur max="-1"/>
+               <breakBefore target="PageArea1.ContentArea1" targetType="contentArea"/>
+               <?templateDesigner expand 1?></subform>
+            <subform columnWidths="126.418mm 30.479mm 26.823mm 29.266mm 34.99mm 34.12mm" layout="table" name="Table2">
+               <border>
+                  <edge/>
+               </border>
+               <subform layout="row" name="Row1" x="0.026mm" y="0mm">
+                  <assist role="TR"/>
+                  <draw h="8.941mm" name="Cell1" w="4.985986in">
+                     <border>
+                        <edge/>
+                        <corner thickness="0.1778mm"/>
+                     </border>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <font baselineShift="0pt" typeface="Times New Roman" weight="bold"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="9B35E3D5-0C14-4B2D-8BE6-F09A646099C9">Total</text>
+                     </value>
+                  </draw>
+                  <field access="readOnly" h="9mm" id="floatingField028145" name="LV_GROSS" presence="hidden" w="62mm" y="0mm">
+                     <ui>
+                        <numericEdit>
+                           <border>
+                              <edge stroke="lowered"/>
+                           </border>
+                           <margin/>
+                        </numericEdit>
+                     </ui>
+                     <font typeface="Courier New" weight="bold"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <decimal leadDigits="21"/>
+                     </value>
+                     <caption>
+                        <value>
+                           <text xliff:rid="FA32F5CE-5B8F-4C39-9A97-EEFA84211AF1">Loc. Curr. Amount</text>
+                        </value>
+                     </caption>
+                     <desc>
+                        <text name="Schema Annotation">Amount in local currency</text>
+                     </desc>
+                     <validate nullTest="error"/>
+                     <bind match="dataRef" ref="$.LV_GROSS">
+                        <picture>num{zz,zz,zz,zz9.99}</picture>
+                     </bind>
+                     <format>
+                        <picture>num{zz,zz,zz,zz9.99}</picture>
+                     </format>
+                  </field>
+                  <draw h="8.941mm" name="Cell2">
+                     <border>
+                        <edge/>
+                        <corner thickness="0.1778mm"/>
+                     </border>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <font baselineShift="0pt" typeface="Times New Roman" weight="bold"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para hAlign="right" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-decoration:none;letter-spacing:0in"><span xfa:embed="#floatingField028145" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                        </exData>
+                     </value>
+                  </draw>
+                  <field access="readOnly" h="9mm" id="floatingField002995" name="LV_TDS" presence="hidden" w="62mm" y="0mm">
+                     <ui>
+                        <numericEdit>
+                           <border>
+                              <edge stroke="lowered"/>
+                           </border>
+                           <margin/>
+                        </numericEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <decimal leadDigits="21"/>
+                     </value>
+                     <caption>
+                        <value>
+                           <text xliff:rid="AB5C2FE6-10D0-4024-95B8-078C5E6CE66F">Loc. Curr. Amount</text>
+                        </value>
+                     </caption>
+                     <desc>
+                        <text name="Schema Annotation">Amount in local currency</text>
+                     </desc>
+                     <validate nullTest="error"/>
+                     <bind match="dataRef" ref="$.LV_TDS">
+                        <picture>num{zz,zz,zz,zz9.99}</picture>
+                     </bind>
+                     <format>
+                        <picture>num{zz,zz,zz,zz9.99}</picture>
+                     </format>
+                  </field>
+                  <draw h="8.941mm" name="Cell3">
+                     <border>
+                        <edge/>
+                        <corner thickness="0.1778mm"/>
+                     </border>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <font baselineShift="0pt" typeface="Times New Roman" weight="bold"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para hAlign="right" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-decoration:none;letter-spacing:0in"><span xfa:embed="#floatingField002995" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                        </exData>
+                     </value>
+                  </draw>
+                  <field access="readOnly" h="9mm" id="floatingField000153" name="LV_REJECTION" presence="hidden" w="62mm" y="0mm">
+                     <ui>
+                        <numericEdit>
+                           <border>
+                              <edge stroke="lowered"/>
+                           </border>
+                           <margin/>
+                        </numericEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <decimal leadDigits="21"/>
+                     </value>
+                     <caption>
+                        <value>
+                           <text xliff:rid="FCA59E08-9D2D-49E9-AE3E-259B7FE4791B">Loc. Curr. Amount</text>
+                        </value>
+                     </caption>
+                     <desc>
+                        <text name="Schema Annotation">Amount in local currency</text>
+                     </desc>
+                     <validate nullTest="error"/>
+                     <bind match="dataRef" ref="$.LV_REJECTION">
+                        <picture>num{zz,zz,zz,zz9.99}</picture>
+                     </bind>
+                     <format>
+                        <picture>num{zz,zz,zz,zz9.99}</picture>
+                     </format>
+                  </field>
+                  <draw h="8.941mm" name="Cell4">
+                     <border>
+                        <edge/>
+                        <corner thickness="0.1778mm"/>
+                     </border>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <font baselineShift="0pt" typeface="Times New Roman" weight="bold"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para hAlign="right" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-decoration:none;letter-spacing:0in"><span xfa:embed="#floatingField000153" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                        </exData>
+                     </value>
+                  </draw>
+                  <field access="readOnly" h="9mm" id="floatingField000292" name="LV_TOTAL" presence="hidden" w="62mm" y="0mm">
+                     <ui>
+                        <numericEdit>
+                           <border>
+                              <edge stroke="lowered"/>
+                           </border>
+                           <margin/>
+                        </numericEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <decimal leadDigits="21"/>
+                     </value>
+                     <caption>
+                        <value>
+                           <text xliff:rid="1FDF5212-E4C2-4E1E-99CA-250F9529E93F">Loc. Curr. Amount</text>
+                        </value>
+                     </caption>
+                     <desc>
+                        <text name="Schema Annotation">Amount in local currency</text>
+                     </desc>
+                     <validate nullTest="error"/>
+                     <bind match="dataRef" ref="$.LV_TOTAL">
+                        <picture>num{zz,zz,zz,zz9.99}</picture>
+                     </bind>
+                     <format>
+                        <picture>num{zz,zz,zz,zz9.99}</picture>
+                     </format>
+                  </field>
+                  <draw h="8.941mm" name="Cell5">
+                     <border>
+                        <edge/>
+                        <corner thickness="0.1778mm"/>
+                     </border>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <font baselineShift="0pt" typeface="Times New Roman" weight="bold"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para hAlign="right" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-decoration:none;letter-spacing:0in"><span xfa:embed="#floatingField000292" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                        </exData>
+                     </value>
+                  </draw>
+                  <field access="readOnly" h="9mm" id="floatingField012382" name="LV_BALANCE" presence="hidden" w="62mm" y="0mm">
+                     <ui>
+                        <numericEdit>
+                           <border>
+                              <edge stroke="lowered"/>
+                           </border>
+                           <margin/>
+                        </numericEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <decimal leadDigits="21"/>
+                     </value>
+                     <caption>
+                        <value>
+                           <text xliff:rid="F9298B99-2D44-405A-AC76-CEA75F480B68">Loc. Curr. Amount</text>
+                        </value>
+                     </caption>
+                     <desc>
+                        <text name="Schema Annotation">Amount in local currency</text>
+                     </desc>
+                     <validate nullTest="error"/>
+                     <bind match="dataRef" ref="$.LV_BALANCE">
+                        <picture>num{zz,zz,zz,zz9.99}</picture>
+                     </bind>
+                     <format>
+                        <picture>num{zz,zz,zz,zz9.99}</picture>
+                     </format>
+                  </field>
+                  <draw h="8.941mm" name="Cell6" w="1.3in">
+                     <border>
+                        <edge/>
+                        <corner thickness="0.1778mm"/>
+                     </border>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <font baselineShift="0pt" typeface="Times New Roman" weight="bold"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para hAlign="right" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-decoration:none;letter-spacing:0in"><span xfa:embed="#floatingField012382" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                        </exData>
+                     </value>
+                  </draw>
+                  <border>
+                     <edge presence="hidden"/>
+                  </border>
+                  <bind match="none"/>
+                  <traversal>
+                     <traverse operation="first" ref="Cell1[0]"/>
+                  </traversal>
+                  <?templateDesigner expand 1?></subform>
+               <keep intact="contentArea"/>
+               <bind match="none"/>
+               <?templateDesigner rowpattern first:1, next:1, firstcolor:f0f0f0, nextcolor:ffffff, apply:0?>
+               <?templateDesigner expand 0?>
+               <traversal>
+                  <traverse operation="first" ref="Row1[0]"/>
+               </traversal>
+            </subform>
+            <?templateDesigner expand 1?></subform>
+         <occur max="-1"/>
+         <?templateDesigner expand 1?></subform>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Arial" 0 0 ISO-8859-1 4 152 38 0003001100130014001B0024002600270029002F003100330035003600370039003C003D004200440046004700480049004A004B004C004F00500051005200530055005600570058005B005C .018ACDFLNPRSTVYZ_acdefghilmnoprstuxy?>
+      <?renderCache.subset "Courier New" 1 0 ISO-8859-1 4 48 12 0003001100240026002F0046005000510052005500570058 .ACLcmnortu?>
+      <?renderCache.subset "Times New Roman" 0 0 ISO-8859-1 4 132 33 000300060014002400250026002700280029002A002C002D002F003000310032003300350036003700380039003B003C003D0042004400480049004A0052005E0060 #1ABCDEFGIJLMNOPRSTUVXYZ_aefgo{}?>
+      <?renderCache.subset "Times New Roman" 1 0 ISO-8859-1 4 208 52 00030005000F00100013001400150017001D002400250026002700280029002A002C002D002F00300031003200330035003600370039003A0042004400450046004700480049004A004B004C004D004F005000510052005300550056005700580059005C005E0060 ",-0124:ABCDEFGIJLMNOPRSTVW_abcdefghijlmnoprstuvy{}?></subform>
+   <?templateDesigner SaveTaggedPDF 1?>
+   <?templateDesigner SavePDFWithEmbeddedFonts 1?>
+   <?templateDesigner FormTargetVersion 28?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?>
+   <?templateDesigner Zoom 50?></template>
+<config xmlns="http://www.xfa.org/schema/xci/2.8/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+      <common>
+         <template>
+            <base>https://vhdvfdevap01.sap.delvalflow.com:44300/sap/bc/fp/form/layout/</base>
+         </template>
+      </common>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <pdf>
+         <!--  [0..n]  -->
+         <version>1.7</version>
+         <adobeExtensionLevel>3</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data>
+            <xsl>
+               <uri/>
+            </xsl>
+            <outputXSL>
+               <uri/>
+            </outputXSL>
+         </data>
+      </common>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+</config>
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+   <xfa:data xfa:dataNode="dataGroup"/>
+   <dd:dataDescription xmlns:dd="http://ns.adobe.com/data-description/" dd:name="data">
+      <data>
+         <WA_HEADER_DETAILS>
+            <LIFNR/>
+            <NAME1/>
+            <STREET/>
+            <CITY1/>
+            <POST_CODE1/>
+            <BUTXT/>
+            <AUGBL/>
+            <AUGDT/>
+            <TIME_ZONE/>
+            <BELNR/>
+            <BANKL/>
+            <BANKN/>
+            <XBLNR/>
+            <DMBTR/>
+            <WAERS/>
+         </WA_HEADER_DETAILS>
+         <LV_PAY_STR/>
+         <IT_FINAL dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <XBLNR/>
+               <BUDAT/>
+               <BELNR/>
+               <BLDAT/>
+               <GROSS_DMBTR/>
+               <TDS_DMBTR/>
+               <REJECTION_DMBTR/>
+               <NET_DMBTR/>
+               <BSCHL/>
+               <BLART/>
+               <AUGBL/>
+               <BALANCE/>
+               <SGTXT/>
+               <PARTAMT/>
+               <WAERS/>
+            </DATA>
+         </IT_FINAL>
+         <LV_GROSS/>
+         <LV_TDS/>
+         <LV_REJECTION/>
+         <LV_TOTAL/>
+         <LV_BALANCE/>
+      </data>
+   </dd:dataDescription>
+</xfa:datasets>
+<sourceSet xmlns="http://www.xfa.org/schema/xfa-source-set/2.8/"/>
+<connectionSet xmlns="http://www.xfa.org/schema/xfa-connection-set/2.8/">
+   <xsdConnection dataDescription="data" name="ZF_PAYMENT_ADVICE_PART">
+      <uri/>
+      <rootElement>data</rootElement>
+   </xsdConnection>
+</connectionSet>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale desc="English (India)" name="en_IN">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE D MMMM YYYY</datePattern>
+         <datePattern name="long">D MMMM YYYY</datePattern>
+         <datePattern name="med">DD-MMM-YY</datePattern>
+         <datePattern name="short">DD/MM/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A Z</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$ z,zz,zz9.99</numberPattern>
+         <numberPattern name="percent">z,zz,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">Rs.</currencySymbol>
+         <currencySymbol name="isoname">INR</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+         <typeface name="Adobe Devanagari"/>
+      </typefaces>
+   </locale>
+</localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c015 81.161580, 2017/12/01-01:38:21        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:dc="http://purl.org/dc/elements/1.1/" rdf:about="">
+         <xmp:CreatorTool>Adobe LiveCycle Designer 11.0</xmp:CreatorTool>
+         <xmp:MetadataDate>2025-07-23T08:58:31Z</xmp:MetadataDate>
+         <pdf:Producer>Adobe LiveCycle Designer 11.0</pdf:Producer>
+         <xmpMM:DocumentID>uuid:3e9d2f21-47ea-4c02-ac13-7fc23e3c16ae</xmpMM:DocumentID>
+         <dc:creator>
+            <rdf:Seq>
+               <rdf:li>DVBASIS </rdf:li>
+            </rdf:Seq>
+         </dc:creator>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+<PDFSecurity xmlns="http://ns.adobe.com/xtd/" accessibleContent="1" change="1" contentCopy="1" documentAssembly="1" formFieldFilling="1" metadata="1" modifyAnnots="1" print="1" printHighQuality="1"/></xdp:xdp>

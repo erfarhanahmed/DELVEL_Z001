@@ -1,0 +1,217 @@
+*&---------------------------------------------------------------------*
+*& Report ZPP_SOS04_IND_BOM_WIP_N_SAN_PL
+*&---------------------------------------------------------------------*
+*&
+*&---------------------------------------------------------------------*
+REPORT ZPP_SOS04_IND_BOM_WIP_N_SAN_PL.
+
+INCLUDE ZPP_SOS04_IND_BOM_WIP_N_SAN_DD.
+INCLUDE ZPP_SOS04_IND_BOM_WIP_N_SAN_SS.
+
+
+****-------------------------------------------------------------
+CALL FUNCTION 'TH_WPINFO'
+  TABLES
+    WPLIST     = IT_WPINFO
+  EXCEPTIONS
+    SEND_ERROR = 1
+    OTHERS     = 2.
+IF SY-SUBRC <> 0.
+* Implement suitable error handling here
+ENDIF.
+
+DELETE IT_WPINFO WHERE WP_TYP <> 'BGD' OR WP_STATUS <> 'Waiting'.
+DESCRIBE TABLE IT_WPINFO LINES DATA(LV_AVAILABLEWP).
+LV_AVAILABLEWP = LV_AVAILABLEWP / 2.
+
+*SELECT  A~VBELN,
+*        A~POSNR,
+*        A~MATNR,
+*        A~LFSTA,
+*        A~WERKS,
+*        B~EDATU
+*  INTO  TABLE @DATA(IT_FINAL)
+*  FROM VBAP AS A
+*  JOIN VBEP AS B ON A~VBELN = B~VBELN
+*                 AND A~POSNR = B~POSNR
+*   WHERE A~VBELN IN @S_VBELN
+*     AND A~WERKS EQ @P_WERKS
+*     AND A~MATNR IN @S_MATNR
+*     AND B~EDATU IN @S_EDATU.
+*SELECT *
+*        FROM VBAK
+*        INTO TABLE @DATA(IT_FINAL)
+*        WHERE VBELN IN @S_VBELN.
+
+  SELECT A~VBELN A~POSNR A~MATNR A~LFSTA
+         A~ARKTX A~WERKS A~MEINS A~DELDATE A~RECEIPT_DATE A~LGORT  "LGORT ADDED BY JYOTI ON 11.06.2024
+         D~EDATU D~WMENG D~ETENR "C~LFSTA
+         F~OMENG
+         G~PLIFZ
+     INTO CORRESPONDING FIELDS OF TABLE GT_MAIN   ##TOO_MANY_ITAB_FIELDS
+     FROM VBAP AS A
+*     JOIN VBUP AS C ON C~VBELN = A~VBELN
+*                   AND C~POSNR = A~POSNR
+     JOIN VBEP AS D ON A~VBELN = D~VBELN
+                   AND A~POSNR = D~POSNR
+     JOIN VBBE AS F ON A~VBELN = F~VBELN
+                   AND A~POSNR = F~POSNR
+                   AND D~ETENR = F~ETENR
+     JOIN MARC AS G ON A~MATNR = G~MATNR
+     WHERE A~VBELN IN S_VBELN
+       AND A~WERKS = P_WERKS
+       AND A~LFSTA NE 'C'
+       AND A~MATNR IN S_MATNR
+       AND D~EDATU IN S_EDATU
+       AND D~WMENG NE 0
+       AND D~ETTYP = 'CP'
+       AND G~WERKS = P_WERKS.
+
+*       AND g~werks = p_werks.
+*       AND g~werks = p_werks.
+  SORT GT_MAIN BY VBELN POSNR MATNR.
+  GT_MAIN_copy = GT_MAIN.
+*  DELETE ADJACENT DUPLICATES FROM GT_MAIN COMPARING ALL FIELDS.
+DELETE ADJACENT DUPLICATES FROM GT_MAIN COMPARING vbeln.
+*  SORT IT_FINAL BY VBELN POSNR MATNR.
+*  DELETE ADJACENT DUPLICATES FROM IT_FINAL COMPARING ALL FIELDS.
+
+*DESCRIBE TABLE IT_FINAL LINES DATA(LV_LINES).
+DESCRIBE TABLE GT_MAIN LINES DATA(LV_LINES).
+LV_PER_CHUNK = LV_LINES DIV 25. "LV_AVAILABLEWP.
+LV_REMAINDER = LV_LINES MOD 25. "LV_AVAILABLEWP.
+IF LV_PER_CHUNK = 0.
+  LV_PER_CHUNK = 1.
+ENDIF.
+
+*LV_PER_CHUNK = 1.
+
+SYSTEM = 'ZSOS_parallel_generators'.
+
+DATA: lv_index11 TYPE i.
+*LOOP AT IT_FINAL INTO DATA(WA_FINAL).
+
+LOOP AT GT_MAIN INTO DATA(WA_FINAL).
+  LV_INDEX =  LV_INDEX + 1.
+
+  R_VBELN-SIGN = 'I'.
+  R_VBELN-OPTION = 'EQ'.
+  R_VBELN-LOW = WA_FINAL-VBELN.
+  APPEND R_VBELN.
+
+*  LOOP AT gt_main_copy INTO DATA(wa_final1) WHERE vbeln = WA_FINAL-vbeln.
+*  lv_index11  = sy-tabix.
+*  s_mat-SIGN = 'I'.
+*  s_mat-OPTION = 'EQ'.
+*  s_mat-LOW = WA_FINAL-matnr.
+*  APPEND s_mat.
+*  DELETE gt_main_copy INDEX lv_index11.
+*  CLEAR:WA_FINAL1.
+*  ENDLOOP.
+
+
+  IF ( LV_INDEX MOD LV_PER_CHUNK = 0 AND LV_INDEX < LV_LINES )  OR ( LV_INDEX = LV_LINES ).
+    INDEX = INDEX + 1.
+    CONCATENATE 'ZSOSBOM' INDEX INTO TASKNAME.
+    CALL FUNCTION 'ZFM_SOS04_IND_BOM_WIP_N_SA'
+      STARTING NEW TASK TASKNAME
+      DESTINATION 'NONE'
+      PERFORMING PROCESS_PARALLEL ON END OF TASK
+      EXPORTING
+        WERKS    = P_WERKS
+        P_HDONLY = P_HDONLY
+        P_NOZERO = P_NOZERO
+        P_DOWN   = P_DOWN
+        P_HIDDEN = 'X'
+      TABLES
+        R_VBELN  = R_VBELN[]
+        R_MATNR  = s_mat[]
+        R_EDATU  = S_EDATU[].
+    CASE SY-SUBRC.
+      WHEN 0.
+        SND_JOBS = SND_JOBS + 1.
+      WHEN 1 OR 2.
+        MESSAGE MESS TYPE 'I'.
+      WHEN 3.
+        IF SND_JOBS >= 1 AND
+        EXC_FLAG = 0.
+          EXC_FLAG = 1.
+          WAIT UNTIL RCV_JOBS >= SND_JOBS UP TO 10 SECONDS.
+        ENDIF.
+        IF SY-SUBRC = 0.
+          EXC_FLAG = 0.
+        ELSE.
+          MESSAGE 'Resource failure' TYPE 'I'.
+        ENDIF.
+      WHEN OTHERS.
+        MESSAGE 'Other error' TYPE 'I'.
+    ENDCASE.
+    CLEAR:R_VBELN[],R_VBELN,s_mat.
+  ENDIF.
+  CLEAR:WA_FINAL.
+ENDLOOP.
+
+WAIT UNTIL RCV_JOBS >= SND_JOBS.
+*sort GT_LIST2 BY idnrk .
+LOOP AT GT_LIST2 INTO DATA(WA_GT_LIST2).
+  COLLECT WA_GT_LIST2 INTO GT_LIST.
+  CLEAR:WA_GT_LIST2.
+ENDLOOP.
+
+LOOP AT gt_list_ap INTO DATA(wa_GT_LS).
+COLLECT wa_GT_LS into gt_list3.
+CLEAR:wa_GT_LS.
+ENDLOOP.
+*SORT GT_COMPS BY VBELN POSNR MATNR.
+CLEAR:  P_HIDDEN.
+PERFORM COMPLETE_DATA IN PROGRAM ZPP_SOS04_IND_BOM_WIP_N_SAN_P1 USING P_WERKS  P_HIDDEN  CHANGING GT_LIST3[]
+                                                                                                GT_OUTPUT_DWN[]
+                                                                                                GT_COMPS[]
+                                                                                                GT_WIP1[].
+
+PERFORM DOWN_SET IN PROGRAM ZPP_SOS04_IND_BOM_WIP_N_SAN_P1  TABLES GT_OUTPUT_DWN USING P_FOLDER.
+
+FORM PROCESS_PARALLEL USING TASKNAME.
+
+  RCV_JOBS = RCV_JOBS + 1.
+
+  RECEIVE RESULTS FROM FUNCTION 'ZFM_SOS04_IND_BOM_WIP_N_SA'
+  IMPORTING
+   LV_JSON         =  LV_XML
+  LV_JSON_GT_COMPS =  LV_XML_GT_COMPS
+  LV_JSON_GT_WIP1  = LV_JSON_GT_WIP1
+  LV_JSON_GT_LIST_AP = LV_JSON_GT_LIST_AP.
+
+  FUNCTIONCALL1 = DONE.
+
+
+  CALL TRANSFORMATION ID
+    SOURCE XML LV_XML
+    RESULT MY_TABLE = GT_LIST1[] .
+  APPEND LINES OF GT_LIST1[] TO GT_LIST2[].
+
+  CALL TRANSFORMATION ID
+   SOURCE XML LV_XML_GT_COMPS
+   RESULT MY_TABLE = GT_COMPS1[].
+  APPEND LINES OF GT_COMPS1[] TO  GT_COMPS.
+
+CALL TRANSFORMATION ID
+   SOURCE XML LV_JSON_GT_WIP1
+   RESULT MY_TABLE = GT_WIP1_1[].
+  APPEND LINES OF GT_WIP1_1[] TO  GT_WIP1.
+
+  CALL TRANSFORMATION ID
+    SOURCE XML LV_JSON_GT_LIST_AP
+    RESULT MY_TABLE = gt_list_ap1[] .
+  APPEND LINES OF gt_list_ap1[] TO gt_list_ap[].
+
+  CLEAR:LV_XML,
+        LV_XML_GT_COMPS,
+        LV_JSON_GT_WIP1,
+        LV_JSON_GT_LIST_AP,
+        GT_WIP1_1,
+        GT_LIST1,
+        GT_LIST1[],
+        GT_COMPS1[],
+        gt_list_ap1.
+ENDFORM.

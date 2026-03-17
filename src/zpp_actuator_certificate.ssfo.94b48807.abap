@@ -1,0 +1,29 @@
+
+LOOP AT IT_FINAL INTO WA_FINAL.
+*  BREAK-POINT.
+V_QTY = trunc( WA_FINAL-LFIMG ).
+CONDENSE V_QTY.
+ENDLOOP.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

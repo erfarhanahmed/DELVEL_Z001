@@ -1,0 +1,61 @@
+DATA: L_WERKS TYPE WERKS_D,
+L_ADRNR TYPE ADRNR,
+L_COUNTRY TYPE LAND1.
+types : begin of t_vbelv,
+          vbelv type VBELN_VON,
+        end of t_vbelv.
+data : it_so type table of t_vbelv.
+
+SELECT SINGLE WERKS
+INTO L_WERKS
+FROM LIPS
+WHERE VBELN = IS_DLV_DELNOTE-HD_GEN-DELIV_NUMB.
+
+************************************************
+SELECT SINGLE VBELV
+FROM VBFA
+INTO V_SO
+WHERE VBELN = IS_DLV_DELNOTE-HD_GEN-DELIV_NUMB.
+
+IF SY-SUBRC = 0.
+  SELECT SINGLE AUDAT
+  FROM VBAK
+  INTO V_DATE
+  WHERE VBELN = V_SO.
+
+  SELECT SINGLE VSART ZTERM INCO1 INCO2
+  FROM VBKD
+  INTO (V_VSART,V_ZTERM,V_INCO1,V_INCO2)
+  WHERE VBELN = V_SO.
+
+  IF SY-SUBRC = 0.
+    IF V_VSART is initial.
+      SELECT SINGLE VSART
+        INTO V_VSART
+        FROM VBKD
+        join vbfa on vbfa~vbelv = vbkd~vbeln
+        WHERE VBfa~VBELN = IS_DLV_DELNOTE-HD_GEN-DELIV_NUMB
+          and vsart ne space.
+    endif.
+    IF not V_VSART is initial.
+      SELECT SINGLE BEZEI
+      FROM T173T
+      INTO V_BEZEI
+      WHERE VSART = V_VSART
+      AND SPRAS = sy-langu.
+    endif.
+
+    SELECT SINGLE VTEXT
+    FROM TVZBT
+    INTO V_VTEXT
+    WHERE SPRAS = 'EN'
+    AND ZTERM = V_ZTERM.
+  ENDIF.
+ENDIF.
+
+SELECT SINGLE VBELN ERDAT
+FROM VBFA
+INTO (V_INVOICE ,V_ERDAT)
+WHERE VBELV = IS_DLV_DELNOTE-HD_GEN-DELIV_NUMB
+AND ( VBTYP_N = 'M'
+OR VBTYP_N = 'U').

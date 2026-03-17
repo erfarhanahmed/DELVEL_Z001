@@ -1,0 +1,14 @@
+*&---------------------------------------------------------------------*
+*& Report ZUS_MATERIAL_EXTENSION_BAPI
+*&---------------------------------------------------------------------*
+*&
+*&---------------------------------------------------------------------*
+REPORT ZUS_MATERIAL_EXTENSION_BAPI.
+INCLUDE ZUS_MATERIAL_EXTENSION_TOP.
+*INCLUDE ZMATERIAL_EXTENSION_BAPI_TOP.
+INCLUDE ZUS_MATERIAL_EXTENSION_SEL.
+*INCLUDE ZMATERIAL_EXTENSION_BAPI_SEL.
+INCLUDE ZUS_MATERIAL_EXTENSION_DATA.
+*INCLUDE ZMATERIAL_EXTENSION_BAPI_DATA.
+INCLUDE ZUS_MATERIAL_EXTENSION_SUB.
+*INCLUDE ZMATERIAL_EXTENSION_BAPI_SUB.

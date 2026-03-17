@@ -1,0 +1,10 @@
+"Name: \PR:SAPMV45A\FO:USEREXIT_NEW_PRICING_VBAP\SE:BEGIN\EI
+ENHANCEMENT 0 ZENH_SO_COPY_PRICE_FOR_CTBG.
+
+*IF *vbap-matnr+0(4) = 'CTBG'.
+*IF *vbap-matnr <> vbap-MATNR.
+* new_pricing = 'C'.
+*ENDIF.
+*ENDIF.
+
+ENDENHANCEMENT.

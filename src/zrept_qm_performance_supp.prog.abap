@@ -1,0 +1,123 @@
+
+*&---------------------------------------------------------------------*
+*& Report ZREPT_QM_PERFORMANCE_SUPP
+*&---------------------------------------------------------------------*
+*&
+*&---------------------------------------------------------------------*
+REPORT ZREPT_QM_PERFORMANCE_SUPP.
+TABLES : LFA1, ANLC.
+TYPES : BEGIN OF STR_PERIOD,
+          START_DT TYPE DATUM,
+          END_DT   TYPE DATUM,
+          MONTH    TYPE CHAR10,
+        END OF STR_PERIOD.
+
+DATA : LT_MON_FINAL TYPE TABLE OF ZSTR_QM_SUPP_REP,
+       LS_MON_FINAL TYPE ZSTR_QM_SUPP_REP,
+       LT_YR_FINAL  TYPE TABLE OF ZSTR_QM_SUPP_REP1,
+       LS_YR_FINAL  TYPE ZSTR_QM_SUPP_REP1.
+DATA : LT_TEMP   TYPE TABLE OF ZZ_QM_SUPP_MON_CONSUME_CDS,
+       LT_PERIOD TYPE TABLE OF STR_PERIOD,
+       LS_PERIOD TYPE STR_PERIOD.
+DATA:P_MONTH1 LIKE VVIS_SOPTI-SMONTH.
+DATA: LO_ALV TYPE REF TO CL_SALV_TABLE.
+
+DATA : LV_PERIOD1_NAME  TYPE SCRTEXT_m,
+       LV_PERIOD2_NAME  TYPE SCRTEXT_m,
+       LV_PERIOD3_NAME  TYPE SCRTEXT_m,
+       LV_PERIOD4_NAME  TYPE SCRTEXT_m,
+       LV_PERIOD5_NAME  TYPE SCRTEXT_m,
+       LV_PERIOD6_NAME  TYPE SCRTEXT_m,
+       LV_PERIOD7_NAME  TYPE SCRTEXT_m,
+       LV_PERIOD8_NAME  TYPE SCRTEXT_m,
+       LV_PERIOD9_NAME  TYPE SCRTEXT_m,
+       LV_PERIOD10_NAME TYPE SCRTEXT_m,
+       LV_PERIOD11_NAME TYPE SCRTEXT_m,
+       LV_PERIOD12_NAME TYPE SCRTEXT_m.
+
+data : lv_flag1 TYPE char1,
+      lv_flag2 TYPE char1,
+      lv_flag3 TYPE char1,
+      lv_flag4 TYPE char1,
+      lv_flag5 TYPE char1,
+      lv_flag6 TYPE char1,
+      lv_flag7 TYPE char1,
+      lv_flag8 TYPE char1,
+      lv_flag9 TYPE char1,
+      lv_flag10 TYPE char1,
+      lv_flag11 TYPE char1,
+      lv_flag12 TYPE char1.
+
+* Structures for ALV control parameters
+DATA: ls_layout   TYPE slis_layout_alv,
+      lt_fieldcat TYPE slis_t_fieldcat_alv,
+      ls_fieldcat TYPE slis_fieldcat_alv,
+      lt_events   TYPE slis_t_event.
+
+* Global variable to hold the program name
+DATA: gv_repid TYPE sy-repid.
+
+
+SELECTION-SCREEN BEGIN OF BLOCK BLK1 WITH FRAME TITLE TEXT-001.
+  PARAMETERS: P_MONTH TYPE ISELLIST-MONTH.
+  PARAMETERS: P_YEAR TYPE APYEAR DEFAULT sy-datum+0(4).
+  SELECT-OPTIONS : S_LIFNR FOR LFA1-LIFNR NO INTERVALS.
+
+SELECTION-SCREEN END OF BLOCK BLK1.
+
+AT SELECTION-SCREEN ON VALUE-REQUEST FOR P_MONTH.
+  PERFORM F4_MONTH.
+
+AT SELECTION-SCREEN ON VALUE-REQUEST FOR P_YEAR.
+  PERFORM F4_YEARS.
+
+START-OF-SELECTION.
+  IF P_MONTH IS NOT INITIAL.
+    DATA(LV_MON_FLAG) = ABAP_TRUE.
+  ELSE.
+    DATA(LV_YEAR_FLAG) = ABAP_TRUE.
+  ENDIF.
+
+  IF LV_MON_FLAG = ABAP_TRUE.
+    PERFORM GET_PERIOD.
+    LOOP AT LT_PERIOD INTO LS_PERIOD.
+      PERFORM GET_DETAILS.
+      PERFORM FILL_DATA.
+    ENDLOOP.
+    PERFORM DISPLAY_ALV.
+  ENDIF.
+
+  IF LV_YEAR_FLAG = ABAP_TRUE.
+    PERFORM GET_PERIOD.
+    LOOP AT LT_PERIOD INTO LS_PERIOD.
+      PERFORM GET_DETAILS.
+      PERFORM FILL_DATA.
+      PERFORM FILL_YEARLY_DATA.
+      PERFORM period_counter.
+    ENDLOOP.
+       PERFORM Avg_calc.
+    PERFORM DISPLAY_YEARLY_ALV.
+  ENDIF.
+
+  CLEAR : LT_PERIOD, P_YEAR, P_MONTH, LT_PERIOD, LT_YR_FINAL,LT_MON_FINAL.
+
+
+  INCLUDE ZI_QM_PERF_SUPP_FILL_DATA.
+
+  INCLUDE ZI_QM_PERF_SUPP_DISP_ALV.
+
+  INCLUDE ZI_QM_PERF_SUPP_F4_YEARS.
+
+  INCLUDE ZI_QM_PERF_SUPP_F4_MONTH.
+
+  INCLUDE ZI_QM_PERF_SUPP_GET_DETAILS.
+
+  INCLUDE ZI_QM_PERF_SUPP_GET_PERIOD.
+
+  INCLUDE ZI_QM_PERF_SUPP_FILL_YEAR_DATA.
+
+  INCLUDE ZI_QM_PERF_SUPP_YR_DISP_ALV.
+
+INCLUDE zi_qm_perf_supp_period_counter.
+
+INCLUDE zi_qm_perf_supp_avg_cal.
